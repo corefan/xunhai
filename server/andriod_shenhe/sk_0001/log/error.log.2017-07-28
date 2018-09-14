@@ -1,0 +1,62 @@
+2017-07-28 15:29:04 [ERROR]心跳加速：10009 time=1522
+2017-07-28 20:51:07 [ERROR]baseMarket is null with id is 4103
+2017-07-28 20:52:25 [ERROR]baseMarket is null with id is 4103
+2017-07-28 20:52:31 [ERROR]baseMarket is null with id is 4103
+2017-07-28 20:52:43 [ERROR]baseMarket is null with id is 4103
+2017-07-28 20:53:11 [ERROR]baseMarket is null with id is 4103
+2017-07-28 20:57:23 [ERROR]baseMarket is null with id is 4103
+2017-07-28 21:23:27 [ERROR]角色昵称已存在 :低级暗巫
+2017-07-28 21:29:42 [ERROR]其他异常:userId:10011
+java.lang.NullPointerException
+	at com.service.impl.ProtoBuilderService.buildPlayerCommonMsg(ProtoBuilderService.java:131)
+	at com.service.impl.LoginService.enterGame(LoginService.java:334)
+	at com.action.LoginAction.enterGame(LoginAction.java:50)
+	at com.command.login.EnterGameCMD.excute(EnterGameCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:435)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-28 21:29:46 [ERROR]其他异常:userId:10011
+java.lang.NullPointerException
+	at com.service.impl.ProtoBuilderService.buildPlayerCommonMsg(ProtoBuilderService.java:131)
+	at com.service.impl.LoginService.enterGame(LoginService.java:334)
+	at com.action.LoginAction.enterGame(LoginAction.java:50)
+	at com.command.login.EnterGameCMD.excute(EnterGameCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:435)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-28 21:30:59 [ERROR]其他异常:userId:10011
+java.lang.NullPointerException
+	at com.service.impl.ProtoBuilderService.buildPlayerCommonMsg(ProtoBuilderService.java:131)
+	at com.service.impl.LoginService.enterGame(LoginService.java:334)
+	at com.action.LoginAction.enterGame(LoginAction.java:50)
+	at com.command.login.EnterGameCMD.excute(EnterGameCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:435)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)

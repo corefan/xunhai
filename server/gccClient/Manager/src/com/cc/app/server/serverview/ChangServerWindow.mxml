@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:mx="library://ns.adobe.com/flex/mx" title="修改服务器" width="1100" height="800"  color="0x000000" borderAlpha="0.15" creationComplete="creationCompleteHandler()" close="closeBtn_clickHandler()">
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.server.ServerControlEvent;
+			import com.cc.core.Globals;
+			import com.cc.core.util.PopUpEffect;
+			
+			import spark.events.IndexChangeEvent;
+			
+			private var data:Object;
+			
+			private function updateSelection(e:IndexChangeEvent):void
+			{
+//				currSel.text = "Current Product = " + myDDL.selectedItem.product;
+//				currPrc.text = "Price = $" + myDDL.selectedItem.price;
+			}
+
+			
+			private function creationCompleteHandler():void
+			{
+//				var list:ArrayCollection = ServerModel.instance.serverList;
+//				var nameList:ArrayCollection = new ArrayCollection();
+//				for each(var obj:Object in list){
+//					nameList.addItem(obj.name);
+//				}
+//				
+//				selectBox.dataProvider = nameList;
+//				selectBox.selectedIndex = 0;
+			}
+			
+			private function closeBtn_clickHandler():void
+			{
+//				PopUpManager.removePopUp(this);
+				PopUpEffect.Hide(this);
+			}
+			
+			public function setUserInfo(obj:Object):void
+			{
+				this.data = obj;
+				serverNo.text = obj.serverNo;
+				serverName.text = obj.serverName;
+				agent.text = obj.agent;
+				gameSite.text = obj.gameSite;
+				gameHost.text = obj.gameHost;
+				gameInnerIp.text = obj.gameInnerIp;
+				gamePort.text = obj.gamePort;
+				webPort.text = obj.webPort;
+				assets.text = obj.assets;
+				openServerDate.text = obj.openServerDate;
+				megerServerDate.text = obj.megerServerDate;
+				state.text = obj.state;
+				severState.text = obj.severState;
+				severType.text = obj.severType;
+
+			}
+			
+			private function changBtnClickHandler():void
+			{
+
+				var oldgamesite:String = this.data.gameSite;
+				
+
+				
+				Globals.instance.context.dispatchEvent(new ServerControlEvent(ServerControlEvent.MODIFY_SERVER,{oldGameSite:oldgamesite, serverNo:serverNo.text, serverName:serverName.text, agent:agent.text, gameSite:gameSite.text, gameHost:gameHost.text, gameInnerIp:gameInnerIp.text, gamePort:gamePort.text, webPort:webPort.text, assets:assets.text, openServerDate:openServerDate.text, megerServerDate:megerServerDate.text, state:state.text, severState:severState.text, severType:severType.text}));
+			
+				this.closeBtn_clickHandler();
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 更改用户界面 -->
+	</fx:Declarations>
+	
+	<s:VGroup width="100%" height="100%">
+		<s:HGroup>
+			<s:Label x="60" y="80" width="320" height="23" fontSize="14" text="服务器编号：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="serverNo" x="180" y="80" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="230" width="320" height="23" fontSize="14" text="游戏服名称：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="serverName" x="180" y="230" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="200" width="320" height="23" fontSize="14" text="运营商：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="agent" x="180" y="200" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="20" width="320" height="23" fontSize="14" text="游戏站点：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="gameSite" x="180" y="20" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="260" width="320" height="23" fontSize="14" text="公网IP：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="gameHost" x="180" y="260" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="290" width="320" height="23" fontSize="14" text="内网ip：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="gameInnerIp" x="180" y="290" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="320" width="320" height="23" fontSize="14" text="游戏服端口：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="gamePort" x="180" y="320" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="350" width="320" height="23" fontSize="14" text="WEB服务端口：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="webPort" x="180" y="350" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="500" y="20" width="320" height="23" fontSize="14" text="资源地址：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="assets" x="620" y="20" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="410" width="320" height="23" fontSize="14" text="开服时间：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="openServerDate" x="180" y="410" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="440" width="320" height="23" fontSize="14" text="合服时间：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="megerServerDate" x="180" y="440" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="170" width="320" height="23" fontSize="14" text="服务器是否开启（0停止 1正常）：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="state" x="180" y="170" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="170" width="460" height="23" fontSize="14" text="服务器状态(0.测试 1.流畅2：拥挤3.火爆 )：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="severState" x="180" y="170" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Label x="60" y="170" width="320" height="23" fontSize="14" text="服务器类型(0.普通 1.新服 2.推荐)：" textAlign="center" verticalAlign="middle"/>
+			<s:TextInput id="severType" x="180" y="170" width="300" height="23" fontSize="14"  textAlign="center"/>
+		</s:HGroup>
+		<s:HGroup>
+			<s:Button x="400" y="700" label="修改" click="changBtnClickHandler()"/>
+			<s:Button x="540" y="700" label="取消" click="closeBtn_clickHandler()"/>
+		</s:HGroup>
+	</s:VGroup>
+</s:TitleWindow>

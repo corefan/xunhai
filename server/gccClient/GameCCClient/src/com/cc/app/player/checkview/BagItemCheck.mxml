@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="536" height="478" title="背包物品查看" close="closeHandler(event)" creationComplete="titlewindow1_creationCompleteHandler(event)">
+	<fx:Script>
+		<![CDATA[
+			import com.cc.core.util.PopUpEffect;
+			
+			import mx.collections.ArrayCollection;
+			import mx.events.CloseEvent;
+			import mx.events.FlexEvent;
+			
+			public var dataArr:ArrayCollection;
+			
+			public function initData(arr:ArrayCollection):void
+			{
+				myDataGrid.dataProvider = arr;
+			}
+			
+			private function closeHandler(event:CloseEvent):void
+			{
+				PopUpEffect.Hide(this);
+			}
+			
+			private function titlewindow1_creationCompleteHandler(event:FlexEvent):void
+			{
+				myDataGrid.dataProvider = dataArr;
+			}
+			
+		]]>
+	</fx:Script>
+	
+	
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:Label x="8" y="2" width="74" height="30" text="物品列表：" verticalAlign="middle"/>
+	<s:DataGrid id="myDataGrid" x="23" y="40" width="488" height="390" requestedRowCount="4" textAlign="center">
+		<s:columns>
+			<s:ArrayList>
+				<s:GridColumn dataField="name" headerText="物品名称">
+					<s:headerRenderer>  
+						<fx:Component>
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+				
+				<s:GridColumn dataField="num" headerText="物品数量（个）">
+					<s:headerRenderer>  
+						<fx:Component>
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+				
+				<s:GridColumn dataField="des" headerText="备注">
+					<s:headerRenderer>  
+						<fx:Component>
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+				
+			</s:ArrayList>
+		</s:columns>
+	</s:DataGrid>
+</s:TitleWindow>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Panel xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="625" title="第一步">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.item.PlayerList;
+			import com.cc.app.item.model.ItemModel;
+			import com.cc.core.util.MessageUtil;
+			
+			import mx.controls.Alert;
+			import mx.events.CloseEvent;
+			import mx.events.ItemClickEvent;
+			import mx.managers.PopUpManager;
+			
+			public var itemList:Array;
+			
+			private function handlePayment(event:ItemClickEvent):void
+			{
+				
+			}
+			
+			protected function button1_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				
+			}
+			
+			public var addItemView:AddItemView;
+			private function addItemBtn_clickHandler(event:MouseEvent):void
+			{
+//				this.clearItemState();
+				
+				addItemView = new AddItemView();
+				PopUpManager.addPopUp(addItemView,this,true);
+				PopUpManager.centerPopUp(addItemView);
+			}
+			
+			private function clearItemState():void
+			{
+				for each(var obj:Object in ItemModel.instance.itemConfList){
+					obj.checked = false;
+					obj.num = 0;
+				}
+			}
+			
+			public var playerItemView:PlayerList;
+			private function addPlayerBtn_clickHandler(event:MouseEvent):void
+			{
+				if(itemListDG.dataProvider == null){
+					MessageUtil.showFaultMessage("请先选择要发送的物品");
+					return;
+				}
+				
+				if(allRb.selected){
+					MessageUtil.showFaultMessage("你已选择全服发送，无需再选择玩家");
+					return;
+				}
+				
+				playerItemView = new PlayerList();
+				PopUpManager.addPopUp(playerItemView,this,true);
+				PopUpManager.centerPopUp(playerItemView);
+			}
+			
+			protected function clearItemBtn_clickHandler(event:MouseEvent):void
+			{
+				Alert.yesLabel = "确定";
+				Alert.noLabel = "取消";
+				Alert.show("你确定要清空数据？","温馨提示",Alert.YES|Alert.NO,this,alertCloseHandler1);
+			}
+			
+			
+			private function alertCloseHandler1(e:CloseEvent):void
+			{
+				if(e.detail == Alert.YES){
+					itemListDG.dataProvider = null;
+				}
+			}
+			
+			protected function clearPlayerBtn_clickHandler(event:MouseEvent):void
+			{
+				Alert.yesLabel = "确定";
+				Alert.noLabel = "取消";
+				Alert.show("你确定要清空数据？","温馨提示",Alert.YES|Alert.NO,this,alertCloseHandler2);
+			}
+			
+			private function alertCloseHandler2(e:CloseEvent):void
+			{
+				if(e.detail == Alert.YES){
+					playerDg.dataProvider = null;
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+		<s:RadioButtonGroup id="paymentType" selectedValue="0" itemClick="handlePayment(event);"/>
+	</fx:Declarations>
+	
+	<s:DataGrid id="itemListDG" x="23" y="37" width="400" height="208" requestedRowCount="4">
+		<s:columns>
+			<s:ArrayList>
+				<s:GridColumn dataField="id" width="80" headerText="物品ID"></s:GridColumn>
+				<s:GridColumn dataField="name" headerText="物品名称" width="160"></s:GridColumn>
+				<s:GridColumn dataField="num" width="60" headerText="数量"></s:GridColumn>
+				<s:GridColumn dataField="" width="80" headerText="操作">
+					
+					<s:itemRenderer>  
+						<fx:Component>  
+							<s:GridItemRenderer>  
+								<fx:Script>
+									<![CDATA[
+										import mx.controls.Alert;
+										import mx.events.CloseEvent;
+										
+										
+										public function deleteHandler():void 
+										{
+											/* Alert.yesLabel = "确定";
+											Alert.noLabel = "取消";
+											Alert.show("确定删除该用户？","温馨提示",Alert.YES|Alert.NO,this,alertCloseHandler); */
+											var index:int = outerDocument.itemListDG.dataProvider.getItemIndex(data);
+											outerDocument.itemListDG.dataProvider.removeItemAt(index);
+										}
+										
+										private function alertCloseHandler(e:CloseEvent):void
+										{
+											if(e.detail == Alert.YES){
+												
+											}
+										}
+									]]>
+								</fx:Script>
+								
+								<s:Button label="删除" click="deleteHandler()"/>
+							</s:GridItemRenderer>
+						</fx:Component>  
+					</s:itemRenderer>  
+				</s:GridColumn>
+			</s:ArrayList>
+		</s:columns>
+	</s:DataGrid>
+	<s:DataGrid id="playerDg" x="23" y="313" width="600" height="232" requestedRowCount="4">
+		<s:columns>
+			<s:ArrayList>
+				<s:GridColumn dataField="playerId" width="80" headerText="用户ID"></s:GridColumn>
+				<s:GridColumn dataField="name" width="160" headerText="玩家昵称"></s:GridColumn>
+				<s:GridColumn dataField="userName" width="260" headerText="账号"></s:GridColumn>
+				<s:GridColumn dataField="" width="80" headerText="操作">
+					<s:itemRenderer>  
+						<fx:Component>  
+							<s:GridItemRenderer>  
+								<fx:Script>
+									<![CDATA[
+										import mx.controls.Alert;
+										import mx.events.CloseEvent;
+										
+										
+										public function deleteHandler2():void 
+										{
+											/* Alert.yesLabel = "确定";
+											Alert.noLabel = "取消";
+											Alert.show("确定删除该用户？","温馨提示",Alert.YES|Alert.NO,this,alertCloseHandler); */
+											var index:int = outerDocument.playerDg.dataProvider.getItemIndex(data);
+											outerDocument.playerDg.dataProvider.removeItemAt(index);
+										}
+										
+										private function alertCloseHandler(e:CloseEvent):void
+										{
+											if(e.detail == Alert.YES){
+												
+											}
+										}
+									]]>
+								</fx:Script>
+								
+								<s:Button label="删除" click="deleteHandler2()"/>
+							</s:GridItemRenderer>
+						</fx:Component>  
+					</s:itemRenderer>  
+				</s:GridColumn>
+			</s:ArrayList>
+		</s:columns>
+	</s:DataGrid>
+	<s:Label x="24" y="10" width="70" height="20" text="物品列表：" verticalAlign="middle"/>
+<!--	<s:Label x="440" y="40" width="402" height="20" color="0xff0000" text="警告：如果是全服发送物品，请不要选择装备（全服不支持装备发送）" verticalAlign="middle"/>-->
+	<s:Label x="24" y="280" width="70" height="20" text="玩家列表：" verticalAlign="middle"/>
+	<s:Button id="addItemBtn" x="313" y="8" label="添加物品" click="addItemBtn_clickHandler(event)"/>
+	<s:Button id="addPlayerBtn" x="313" y="280" label="添加玩家" click="addPlayerBtn_clickHandler(event)"/>
+	<!--<s:Button id="clearDataBtn" x="311" y="662" label="清空数据" click="clearDataBtn_clickHandler(event)"/>-->
+	
+	<s:HGroup x="95" y="280" width="160" height="24">
+		<s:RadioButton groupName="paymentType"
+					   id="playerRb" 
+					   value="0" 
+					   label="玩家"
+					   width="80"/>
+		<s:RadioButton groupName="paymentType" 
+					   id="allRb" 
+					   value="1"
+					   label="全服" 
+					   width="80"/>
+	</s:HGroup>
+
+	<s:Button id="clearItemBtn" x="238" y="8" label="清空数据" click="clearItemBtn_clickHandler(event)"/>
+	<s:Button id="clearPlayerBtn" x="239" y="280" label="清空数据" click="clearPlayerBtn_clickHandler(event)"/>
+	
+	<s:Label x="440" y="280" width="402" height="20" color="0xff0000" text="提示：全服发物品只发一周内上线过的角色" verticalAlign="middle"/>
+</s:Panel>

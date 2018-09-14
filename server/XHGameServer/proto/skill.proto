@@ -1,0 +1,38 @@
+option java_package="com.message";
+option java_outer_classname="SkillProto";
+
+message PlayerSkillMsg{	
+	optional int32 skillId = 1;   //技能编号
+	optional int32 mastery = 2;   //当前熟练度	
+	optional int32 mwSkillId = 3; //铭文技能编号
+}
+
+message C_GetPlayerSkills{ //获取玩家技能列表
+
+}
+
+message C_CreatePlayerSkill{ //学习技能
+	optional int32 skillId = 1; //技能编号	
+}
+
+message S_CreatePlayerSkill { //学习技能返回
+	optional PlayerSkillMsg playerSkill = 1; //新的技能
+}
+
+message C_UpgradePlayerSkill{//升级技能
+	optional int32 skillId = 1; //技能编号	
+}
+
+message S_UpgradePlayerSkill{//升级技能返回
+	optional int32 skillId = 1; //改变前技能编号	
+	optional PlayerSkillMsg newPlayerSkill = 2; //新的技能		
+}
+
+message S_SynPlayerSkill{ //同步技能信息
+	repeated PlayerSkillMsg playerSkill = 1;
+}
+
+message C_AddSkillMastery{ //使用物品添加技能熟练度
+	optional int32 skillId = 1;   //技能编号
+	optional int32 itemId = 2;    //物品ID
+}

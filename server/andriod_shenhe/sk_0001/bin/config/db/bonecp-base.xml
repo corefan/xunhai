@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bonecp-config>
+	<default-config>
+		<!-- 分区数 -->
+		<property name="partitionCount">1</property>
+		<!-- 每个分区最小连接数 -->
+		<property name="minConnectionsPerPartition">2</property>
+		<!-- 每个分区最大连接数 -->
+		<property name="maxConnectionsPerPartition">5</property>
+		<!-- 分区连接增长数 -->
+		<property name="acquireIncrement ">2</property>
+	</default-config>
+</bonecp-config>
+

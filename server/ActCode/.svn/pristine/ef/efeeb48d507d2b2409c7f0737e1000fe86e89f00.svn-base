@@ -1,0 +1,90 @@
+package com.constant;
+
+/**
+ * @author barsk
+ * 2014-5-20
+ * 激活码类型	
+ */
+public class CodeConstant {
+
+	/** bug建议大礼包 */
+	public static final int CODE_10 = 10;
+	/** 好友齐闯大礼包 */
+	public static final int CODE_20 = 20;
+	/** 百事可通礼包 */
+	public static final int CODE_30 = 30;
+	/** amz礼包 */
+	public static final int CODE_40 = 40;
+	/** 论坛活跃礼包 */
+	public static final int CODE_50 = 50;
+	/** 新手礼包  */
+	public static final int CODE_60 = 60;
+	/** 超级会员礼包 */
+	public static final int CODE_70 = 70;
+	/** 俄罗斯礼包 */
+	public static final int CODE_80 = 80;
+	/** fbbug礼包 */
+	public static final int CODE_90 = 90;
+	/** 圣诞礼包 */
+	public static final int CODE_100 = 100;
+	/** 神之王座07073独家礼包 */
+	public static final int CODE_110 = 110;
+	/** 神之王座40407独家礼包 */
+	public static final int CODE_120 = 120;
+	/** 神之王座265G独家礼包 */
+	public static final int CODE_130 = 130;
+	/** 神之王座媒体礼包 */
+	public static final int CODE_140 = 140;
+	/** 补偿礼包 */
+	public static final int CODE_150 = 150;
+	/** 累计1000元礼包 */
+	public static final int CODE_160 = 160;
+	/** 累计3000元礼包 */
+	public static final int CODE_170 = 170;
+	/** 累计5000元礼包 */
+	public static final int CODE_180 = 180;
+	/** 累计7000元礼包 */
+	public static final int CODE_190 = 190;
+	/** 累计10000元礼包 */
+	public static final int CODE_200 = 200;
+	/** 国庆媒体礼包一 */
+	public static final int CODE_210 = 210;
+	/** 国庆媒体礼包二 */
+	public static final int CODE_220 = 220;
+	/** 国庆媒体礼包三 */
+	public static final int CODE_230 = 230;
+	/** 公民礼包 */
+	public static final int CODE_240 = 240;
+	/** 贵族礼包 */
+	public static final int CODE_250 = 250;
+	/** 皇室礼包 */
+	public static final int CODE_260 = 260;
+	/** 媒体礼包1 */
+	public static final int CODE_310 = 310;
+	/** 媒体礼包2 */
+	public static final int CODE_320 = 320;
+	/** 媒体礼包3 */
+	public static final int CODE_330 = 330;
+	/** 媒体礼包4 */
+	public static final int CODE_340 = 340;
+	/** 新浪抢购礼包 */
+	public static final int CODE_350 = 350;
+	/** 新浪至尊礼包*/
+	public static final int CODE_360 = 360;
+	/** 积分商城礼包*/
+	public static final int CODE_370 = 370;
+	/** 微信礼包*/
+	public static final int CODE_380 = 380;
+	/** 加群礼包*/
+	public static final int CODE_390 = 390;
+	/** 多玩礼包1 */
+	public static final int CODE_400 = 400;
+	/** 多玩礼包2 */
+	public static final int CODE_410 = 410;
+	/** 多玩礼包3 */
+	public static final int CODE_420 = 420;
+	
+	/** 海外激活码 */
+	public static final int CODE_2000 = 2000;
+	
+}

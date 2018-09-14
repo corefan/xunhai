@@ -1,0 +1,19 @@
+2017-07-20 00:41:54 [ERROR]其他异常:userId:0
+java.lang.NullPointerException
+	at com.service.impl.SceneService.enterScene(SceneService.java:361)
+	at com.action.SceneAction.enterScene(SceneAction.java:38)
+	at com.command.scene.EnterSceneCMD.excute(EnterSceneCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:429)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-20 17:20:13 [ERROR]心跳加速：10045 time=2477
+2017-07-20 17:37:18 [ERROR]心跳加速：10045 time=8947

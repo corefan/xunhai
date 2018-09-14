@@ -1,0 +1,1 @@
+sh ctrl.sh start

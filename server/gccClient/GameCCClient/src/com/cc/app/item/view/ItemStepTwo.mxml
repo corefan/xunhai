@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Panel xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="625" title="第二步">
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	
+	
+	<s:Label x="45" y="31" width="45" height="20" text="标题：" fontWeight="bold" fontFamily="宋体" verticalAlign="middle"/>
+	<s:Label x="45" y="65" width="45" height="20" text="内容：" fontWeight="bold" fontFamily="宋体" verticalAlign="middle"/>
+	<s:Label x="45" y="246" width="45" height="20" text="原因：" fontWeight="bold" fontFamily="宋体" verticalAlign="middle"/>
+	<s:TextInput id="titleText" x="90" y="30" width="146"/>
+	<s:TextArea id="conText" x="89" y="73" width="295" height="152"/>
+	<s:TextArea id="causeText" x="89" y="249" width="295" height="152"/>
+	
+	
+</s:Panel>

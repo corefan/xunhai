@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:mx="library://ns.adobe.com/flex/mx" title="修改权限" width="414" height="452"  color="0x000000" borderAlpha="0.15" creationComplete="creationCompleteHandler()" close="closeBtn_clickHandler()">
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.control.UserControlEvent;
+			import com.cc.app.control.model.UserModel;
+			import com.cc.core.Globals;
+			import com.cc.core.util.PopUpEffect;
+			
+			import mx.collections.ArrayCollection;
+			
+			import spark.components.CheckBox;
+			import spark.events.IndexChangeEvent;
+			
+			private var data:Object;
+			private var checkBoxs:Vector.<CheckBox>;
+			
+			private function updateSelection(e:IndexChangeEvent):void
+			{
+//				currSel.text = "Current Product = " + myDDL.selectedItem.product;
+//				currPrc.text = "Price = $" + myDDL.selectedItem.price;
+			}
+
+			
+			private function creationCompleteHandler():void
+			{
+				var list:ArrayCollection = UserModel.instance.competenceList;
+				if(list == null)return;
+				tileGroup.removeAllElements();
+				checkBoxs = new Vector.<CheckBox>();
+				var checkBox:CheckBox;
+				for(var i:int = 0 ; i < list.length ; i++){
+					checkBox  = new CheckBox();
+					checkBox.label = list[i].name;
+					checkBox.name = list[i].authorityID;
+					tileGroup.addElement(checkBox);
+					checkBoxs.push(checkBox);
+				}
+			}
+			
+			private function closeBtn_clickHandler():void
+			{
+//				PopUpManager.removePopUp(this);
+				PopUpEffect.Hide(this);
+			}
+			
+			public function setRoleInfo(obj:Object):void
+			{
+				this.data = obj;
+				roleName.text = this.data.name;
+			}
+			
+			private function changBtnClickHandler():void
+			{
+//				private JSONObject updateRole(int roleID, String name, String authorityIDs)
+
+				var name:String = roleName.text;
+				var authorityIDs:String = "";
+				for each(var box:CheckBox in checkBoxs){
+					if(box.selected){
+						authorityIDs += box.name+",";
+					}
+				}
+				
+				Globals.instance.context.dispatchEvent(new UserControlEvent(UserControlEvent.MODIFY_ROLE,{roleID:this.data.roleID,name:name,authorityIDs:authorityIDs}));
+				this.closeBtn_clickHandler();
+			}
+			
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 更改用户界面 -->
+	</fx:Declarations>
+	<s:Button x="125" y="387" label="修改" click="changBtnClickHandler()"/>
+	<s:Button x="224" y="387" label="取消" click="closeBtn_clickHandler()"/>
+	<s:TextInput id="roleName" x="140" y="23" width="120" height="23" fontSize="14" restrict="^/w+$" textAlign="center"/>
+	<s:Label x="33" y="24" width="94" height="23" fontSize="14" text="修改角色名：" textAlign="center" verticalAlign="middle"/>
+	
+	<s:Label x="35" y="61" width="189" height="23" fontSize="14" text="选择操作权限：（多选）" textAlign="left" verticalAlign="middle"/>
+	<s:TileGroup id="tileGroup" x="34" y="90" width="347" height="285">
+		<!--<s:CheckBox label="用户管理"/>
+		<s:CheckBox label="系统管理"/>
+		<s:CheckBox label="系统公告"/>-->
+	</s:TileGroup>
+	
+</s:TitleWindow>

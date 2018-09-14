@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="730" height="508">
+	
+	<fx:Script>
+		<![CDATA[
+            import com.cc.app.main.MainModel;
+            import com.cc.app.notice.NoticeEvent;
+            import com.cc.app.player.PlayerEvent;
+            import com.cc.core.Globals;
+            import com.cc.core.constant.OptTypeConstant;
+            import com.cc.core.util.MessageUtil;
+            
+            import mx.controls.Alert;
+            import mx.events.CloseEvent;
+            import mx.utils.StringUtil;
+			
+			private var sendTime:Number;
+			
+			/** 发送系统公告 */
+			protected function sendNotice(event:MouseEvent):void
+			{
+				var date:Date = new Date();
+				if (date.time - sendTime < 60*1000) return;
+				
+				var notice:String = noticeTxt.text;
+				notice = StringUtil.trim(notice);
+				if (notice == "") {
+                    MessageUtil.showFaultMessage("不能发送空消息");
+                    return;
+                }
+				
+				if (notice.length >= 2000) {
+					MessageUtil.showFaultMessage("发送内容不要超过2000个字符");
+					return;
+				}
+                
+                if (MainModel.instance.currentModel == 3) {
+                    Alert.show("确定发送及时公告给【全平台】吗？", "温馨提示", Alert.YES | Alert.NO, this, alertHandler);
+                } else {
+                    Alert.show("确定发送及时公告给【全服】吗？", "温馨提示", Alert.YES | Alert.NO, this, alertHandler);
+                }
+			}
+            
+            private function alertHandler(e:CloseEvent):void {
+                if (e.detail == Alert.YES) {
+                    var notice:String = noticeTxt.text;
+                    notice = StringUtil.trim(notice);
+                    this.dispatchEvent(new NoticeEvent(NoticeEvent.SEND_NOTICE,{optType:OptTypeConstant.NOTICE_1,content:notice}));	
+                    sendTime = new Date().time;
+                }
+            }
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:Button id="sendNoticeBtn" x="295" y="387" height="30" label="发送公告" fontSize="16" click="sendNotice(event)"/>
+	<s:Label x="175" y="31" width="334" height="45" color="#F03908" fontSize="18" text="非管理员请勿操作(1分钟可发送一次)"
+			 textAlign="center" verticalAlign="middle"/>
+	<s:TextArea id="noticeTxt" x="175" y="99" width="334" height="241" fontSize="14"/>
+</s:Group>

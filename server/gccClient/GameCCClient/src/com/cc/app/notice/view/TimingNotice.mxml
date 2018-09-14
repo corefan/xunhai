@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.cc.core.util.PopUpEffect;
+			
+			import mx.collections.ArrayCollection;
+			import mx.core.FlexGlobals;
+			import mx.managers.PopUpManager;
+			
+			private var addNotice:AddTimingNotice = new AddTimingNotice();
+			
+			private function addClickHandler(event:MouseEvent):void
+			{
+				PopUpEffect.Show(addNotice,this);
+				addNotice.x=FlexGlobals.topLevelApplication.stage.stageWidth/2-addNotice.width/2;
+				addNotice.y=FlexGlobals.topLevelApplication.stage.stageHeight/2-addNotice.height/2;
+			}
+			
+			private function buildToolTip(item:Object,col:GridColumn):String
+			{ 
+				var myString:String = item.content;
+				return myString;  
+			} 
+			
+			public function initData(data:Object):void
+			{
+				var arr:Array = JSON.parse(data.systemNoticeList) as Array;
+				var list:ArrayCollection = new ArrayCollection();
+				for each(var obj:Object in arr){
+					list.addItem(obj);
+				}
+				myDataGrid.dataProvider = list;
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+		<!--定时公告-->
+	</fx:Declarations>
+	<s:Panel x="0" y="0" width="100%" height="100%" title="定时系统公告管理">
+		<s:DataGrid id="myDataGrid" x="24" y="80" width="851" height="367" requestedRowCount="4" textAlign="center">
+			<s:columns>
+				<s:ArrayList>
+					
+					<s:GridColumn width="80" dataField="systemNoticeID" headerText="公告编号">
+						<s:headerRenderer>
+							<fx:Component>
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>
+					
+					<s:GridColumn width="300" dataField="content" headerText="公告内容" showDataTips="true" dataTipFunction="buildToolTip">
+						<s:headerRenderer>  
+							<fx:Component>
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>
+					
+					<s:GridColumn width="120" dataField="startTime" headerText="开始时间">
+						<s:headerRenderer>  
+							<fx:Component>
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>
+					
+					<s:GridColumn width="120" dataField="endTime" headerText="结束时间">
+						<s:headerRenderer>  
+							<fx:Component>
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>
+					
+					<s:GridColumn width="120" dataField="frequeny" headerText="发送间隔（秒）">
+						<s:headerRenderer>  
+							<fx:Component>
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>
+					
+					<s:GridColumn width="109" dataField="dataField3" headerText="操作">
+						<s:headerRenderer>  
+							<fx:Component>
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+						
+						<s:itemRenderer>  
+							<fx:Component>  
+								<s:GridItemRenderer>  
+									<fx:Script>
+										<![CDATA[
+											import com.cc.app.control.UserControlEvent;
+											import com.cc.app.notice.NoticeEvent;
+											import com.cc.core.Globals;
+											
+											import mx.controls.Alert;
+											import mx.events.CloseEvent;
+											
+											public function deletNotice():void
+											{
+												Alert.yesLabel = "确定";
+												Alert.noLabel = "取消";
+												Alert.show("确定删除该公告？","温馨提示",Alert.YES|Alert.NO,this,alertCloseHandler);
+											}
+											
+											private function alertCloseHandler(e:CloseEvent):void
+											{
+												if(e.detail == Alert.YES){
+													Globals.instance.context.dispatchEvent(new NoticeEvent(NoticeEvent.DEL_NOTICE,{systemNoticeId:data.systemNoticeID}));
+												}
+											}
+										]]>
+									</fx:Script>
+									
+									<s:HGroup y="2" width="100%" horizontalAlign="center">
+										<!--<s:Button label="修改" click="changNotice()"/>-->
+										<s:Button label="删除" click="deletNotice()"/>
+									</s:HGroup>  
+								</s:GridItemRenderer>
+							</fx:Component>  
+						</s:itemRenderer>  
+						
+					</s:GridColumn>
+				</s:ArrayList>
+			</s:columns>
+		</s:DataGrid>
+		<s:Button x="25" y="36" label="添加公告" click="addClickHandler(event)"/>
+	</s:Panel>
+</s:Group>

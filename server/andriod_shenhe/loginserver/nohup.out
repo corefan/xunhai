@@ -1,0 +1,20 @@
+352 [main] INFO org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+356 [main] INFO org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+369 [main] INFO org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+370 [main] INFO org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.0 created.
+371 [main] INFO org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+372 [main] INFO org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 3 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+372 [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+372 [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.0
+381 [main] INFO org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+509 [main] INFO org.eclipse.jetty.server.Server - jetty-8.1.12.v20130726
+715 [main] INFO org.eclipse.jetty.util.ssl.SslContextFactory - Enabled Protocols [SSLv2Hello, TLSv1, TLSv1.1, TLSv1.2] of [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+732 [main] INFO org.eclipse.jetty.server.AbstractConnector - Started SslSocketConnector@0.0.0.0:8181
+745 [main] INFO org.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8000

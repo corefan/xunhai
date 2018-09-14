@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" width="650" height="500" title="光翼日志查看" close="closeHandler(event)" creationComplete="titlewindow1_creationCompleteHandler(event)">
+	<fx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			import mx.events.CloseEvent;
+			import mx.events.FlexEvent;
+			import mx.managers.PopUpManager;
+			
+			public var dataArr:ArrayCollection;
+			
+			private function closeHandler(event:CloseEvent):void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			
+			public function initData(arr:ArrayCollection):void
+			{
+				myDataGrid.dataProvider = arr;
+			}
+			
+			protected function titlewindow1_creationCompleteHandler(event:FlexEvent):void
+			{
+				myDataGrid.dataProvider = dataArr;
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:DataGrid id="myDataGrid" x="57" y="46" width="544" height="365" requestedRowCount="4" textAlign="center" verticalCenter="10" horizontalCenter="0">
+		<s:columns>
+			<s:ArrayList>
+				<s:GridColumn dataField="sweetyID" headerText="光翼编号">
+					<s:headerRenderer>  
+						<fx:Component>  
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+				
+				<s:GridColumn dataField="sweetyName" headerText="光翼名字">
+					<s:headerRenderer>  
+						<fx:Component>  
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+				
+				<s:GridColumn dataField="exp" headerText="经验">
+					<s:headerRenderer>  
+						<fx:Component>  
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+				
+				<s:GridColumn dataField="createTime" headerText="时间">
+					<s:headerRenderer>  
+						<fx:Component>  
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+				
+			</s:ArrayList>
+		</s:columns>
+	</s:DataGrid>
+</s:TitleWindow>

@@ -1,0 +1,94 @@
+option java_package="com.message";
+option java_outer_classname="TradingProto";
+import "player.proto";
+
+message PlayerTradeEquipmentMsg{
+	required int64 playerEquipmentId = 1; 		 	  // 玩家装备唯一编号
+	optional int32 equipmentId = 2;        			  // 装备基础编号	
+	optional int32 equipType = 3;          			  // 装备部位	
+	optional int32 holeNum = 4;     	  		 // 装备孔位数	
+	optional int32 score = 5;				 // 装备评分
+	repeated SynPlayerPropertyMsg addPropertyMsg = 6; // 装备附加属性消息	
+	optional int32 isBinding = 8; // 是否绑定(1:是 0：否)
+}
+
+message PlayerTradeBagMsg{
+	required int64 playerBagId = 1; // 玩家交易背包唯一编号
+	optional int32 goodsType = 2;   // 物品类别 (1:装备 2：药品 3：材料)	
+	optional int64 itemId = 3;      // 物品编号 (或装备唯一编号)	
+	optional int32 num = 4;         // 数量
+	optional int32 isBinding = 5;   // 是否绑定(1:是 0：否)	
+	optional int32 price = 6;       // 装备价格 
+	optional int64 overTime = 7;    // 交易过期时间	
+	optional int32 state = 8; 		// 状态 (0:空置, 1:正常)
+}
+
+message  C_GetPlayerTradeList{ //玩家个人交易信息 	
+
+}
+
+message  S_GetPlayerTradeList{ //玩家个人交易信息	
+	repeated PlayerTradeBagMsg listPlayerTradebag = 1;  
+	repeated PlayerTradeEquipmentMsg listPlayerTradeEquipment = 2;	
+}
+
+message  C_GetTradeList{ //交易信息 (分页) 寄售
+	optional int32 type = 1;        // 交易类型ID(1:装备， 2:道具)
+	optional int32 typeId = 2;   	// 物品类型tradeType 或 装备部位equipType
+	optional int32 start = 3; 		// 起始
+	optional int32 offset = 4;      // 数量
+}
+
+message  S_SynTradeList{ //交易行信息改变通知
+	repeated PlayerTradeBagMsg listPlayerTradebag = 1;  
+	repeated PlayerTradeEquipmentMsg listPlayerTradeEquipment = 2;	
+}
+
+message C_TradeBuy{ //购买
+	optional int64 playerBagId = 1;		// 背包唯一ID
+	optional int32 num = 2;				// 物品数量	
+}
+
+message  S_TradeBuy{ //购买
+	optional PlayerTradeBagMsg playerTradeBag = 1;        // 出售背包数据
+}
+
+message  C_TradeSell{ //出售-上架	
+	optional int64 playerBagId = 1;		// 背包唯一ID
+	optional int32 num = 2;				// 物品数量		
+	optional int32 price = 3; 			// 物品单个售价
+}
+
+message  S_TradeSell{ //出售-上架	
+	optional PlayerTradeBagMsg playerTradeBag = 1;        // 出售背包数据
+	optional PlayerTradeEquipmentMsg playerTradeEquipment = 2;  // 出售装备数据
+}
+
+
+message  C_OffShelf{ //下架
+	optional int64 playerBagId = 1;   //背包唯一ID	
+}
+
+message  S_OffShelf{ //下架
+	optional PlayerTradeBagMsg playerTradeBag = 1;        // 下架背包数据
+}
+
+message  C_ExtendGrid{ //扩展货架
+		
+}
+
+message  S_ExtendGrid{ //扩展货架
+	optional int32 gridNum = 1; 		// 当前货架格子数
+}
+
+message  C_SystemItemBuy{ //购买		
+	optional int32 itemId = 1; 		// 物品编号	
+	optional int32 num = 2; 		// 物品数量
+}
+
+message C_ReUpShelf{ //重新上架
+	optional int64 playerTradeBagId = 1;   //交易背包唯一ID	
+}	
+message S_ReUpShelf{ //重新上架
+	optional PlayerTradeBagMsg playerTradeBag = 1;   // 上架架背包数据
+}

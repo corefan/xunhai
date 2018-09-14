@@ -1,0 +1,32 @@
+package com.core;
+
+import org.eclipse.jetty.client.HttpClient;
+import org.eclipse.jetty.util.thread.QueuedThreadPool;
+
+public class HttpClientFactory {
+
+	private static HttpClient httpClient;
+
+	private HttpClientFactory(){
+
+	}
+
+	public static HttpClient getInstance() {
+
+		try {
+			if (httpClient == null) {
+				httpClient = new HttpClient();
+				httpClient.setConnectorType(HttpClient.CONNECTOR_SELECT_CHANNEL);
+				httpClient.setMaxConnectionsPerAddress(20);
+				httpClient.setThreadPool(new QueuedThreadPool(50));
+				httpClient.setTimeout(5000);
+				httpClient.start();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return httpClient;
+	}
+
+}

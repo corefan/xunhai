@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" width="750" height="500" title="登陆日志查看" close="closeHandler(event)" creationComplete="titlewindow1_creationCompleteHandler(event)">
+	<fx:Script>
+		<![CDATA[
+            import mx.collections.ArrayCollection;
+            import mx.events.CloseEvent;
+            import mx.events.FlexEvent;
+            import mx.managers.PopUpManager;
+			
+			public var dataArr:ArrayCollection;
+            
+            private var urlVariables:URLVariables;  
+            private var url:String = "http://int.dpool.sina.com.cn/iplookup/iplookup.php";
+            private var request:URLRequest;
+            private var urlLoader:URLLoader;
+            private var ipArr:Array;
+            private var resultArr:Array;
+			
+			private function closeHandler(event:CloseEvent):void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			
+			public function initData(arr:ArrayCollection):void
+			{
+                dataArr = arr;
+                resultArr = new Array();
+                ipArr = arr.toArray();
+                
+                urlVariables = new URLVariables();
+                urlVariables.format = "json";
+                
+                request = new URLRequest(url);
+                request.method = URLRequestMethod.POST;
+                
+                urlLoader = new URLLoader();
+                urlLoader.addEventListener(Event.COMPLETE, urlResponseHandler);
+                
+                if (ipArr.length > 0) {
+                    var obj:Object = ipArr.shift();
+                    resultArr.push(obj);
+                    urlVariables.ip = obj.loginIP;
+                    request.data = urlVariables
+                    urlLoader.load(request);
+                }
+                
+				myDataGrid.dataProvider = arr;
+			}
+            
+            protected function setData(arr:ArrayCollection):void {
+                myDataGrid.dataProvider = arr;
+            }
+			
+			protected function titlewindow1_creationCompleteHandler(event:FlexEvent):void
+			{
+				myDataGrid.dataProvider = dataArr;
+			}
+            
+            private function urlResponseHandler(e:Event):void  {
+                var loader:URLLoader = URLLoader(e.target);
+                var obj:Object = JSON.parse(loader.data);
+                var result:String = obj.country + obj.province + obj.city;
+                resultArr[resultArr.length - 1].loginAddress = result;
+                    
+                if (ipArr.length > 0) {
+                    var obj1:Object = ipArr.shift();
+                    resultArr.push(obj1);
+                    urlVariables.ip = obj1.loginIP;
+                    request.data = urlVariables
+                    urlLoader.load(request);
+                } else {
+                    urlLoader.removeEventListener(Event.COMPLETE, urlResponseHandler);
+                    dataArr.source = resultArr;
+                    setData(dataArr);
+                }
+            }
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	
+	<s:DataGrid id="myDataGrid" x="41" y="46" width="668" height="365" requestedRowCount="4" textAlign="center" editable="true">
+		<s:columns>
+			<s:ArrayList>
+				<s:GridColumn dataField="loginIP" headerText="登陆IP">
+					<s:headerRenderer>  
+						<fx:Component>  
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+                
+                <s:GridColumn dataField="loginAddress" headerText="登陆地址">
+                    <s:headerRenderer>  
+                        <fx:Component>  
+                            <s:DefaultGridHeaderRenderer>  
+                                <s:labelDisplay>  
+                                    <s:Label id="labelDisplay2"  
+                                             verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+                                             textAlign="center" fontWeight="bold" verticalAlign="middle"  
+                                             maxDisplayedLines="1" showTruncationTip="true" />  
+                                </s:labelDisplay>  
+                            </s:DefaultGridHeaderRenderer>  
+                        </fx:Component>  
+                    </s:headerRenderer>
+                </s:GridColumn>
+				
+				<s:GridColumn dataField="loginTime" headerText="登陆时间">
+					<s:headerRenderer>  
+						<fx:Component>  
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+				
+				<s:GridColumn dataField="logoutTime" headerText="离线时间">
+					<s:headerRenderer>  
+						<fx:Component>  
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+				
+				<s:GridColumn width="100" dataField="onlineTime" headerText="在线时长（秒）">
+					<s:headerRenderer>  
+						<fx:Component>  
+							<s:DefaultGridHeaderRenderer>  
+								<s:labelDisplay>  
+									<s:Label id="labelDisplay2"  
+											 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+											 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+											 maxDisplayedLines="1" showTruncationTip="true" />  
+								</s:labelDisplay>  
+							</s:DefaultGridHeaderRenderer>  
+						</fx:Component>  
+					</s:headerRenderer>
+				</s:GridColumn>
+			</s:ArrayList>
+		</s:columns>
+	</s:DataGrid>
+	
+</s:TitleWindow>

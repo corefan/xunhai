@@ -1,0 +1,34 @@
+2017-07-18 11:22:11 [WARN ]拾取太远了 333.28216273902206
+2017-07-18 16:22:05 [WARN ]消息解析异常:userId:0
+com.google.protobuf.InvalidProtocolBufferException: Protocol message tag had invalid wire type.
+	at com.google.protobuf.InvalidProtocolBufferException.invalidWireType(InvalidProtocolBufferException.java:78)
+	at com.google.protobuf.UnknownFieldSet$Builder.mergeFieldFrom(UnknownFieldSet.java:498)
+	at com.google.protobuf.GeneratedMessage$Builder.parseUnknownField(GeneratedMessage.java:439)
+	at com.message.LoginProto$C_LoginGame$Builder.mergeFrom(LoginProto.java:473)
+	at com.message.LoginProto$C_LoginGame$Builder.mergeFrom(LoginProto.java:1)
+	at com.google.protobuf.AbstractMessage$Builder.mergeFrom(AbstractMessage.java:300)
+	at com.google.protobuf.AbstractMessage$Builder.mergeFrom(AbstractMessage.java:1)
+	at com.google.protobuf.AbstractMessageLite$Builder.mergeFrom(AbstractMessageLite.java:162)
+	at com.google.protobuf.AbstractMessage$Builder.mergeFrom(AbstractMessage.java:716)
+	at com.google.protobuf.AbstractMessage$Builder.mergeFrom(AbstractMessage.java:1)
+	at com.google.protobuf.AbstractMessageLite$Builder.mergeFrom(AbstractMessageLite.java:153)
+	at com.google.protobuf.AbstractMessage$Builder.mergeFrom(AbstractMessage.java:709)
+	at com.message.LoginProto$C_LoginGame.parseFrom(LoginProto.java:254)
+	at com.service.impl.LoginService.login(LoginService.java:84)
+	at com.action.LoginAction.login(LoginAction.java:30)
+	at com.command.login.LoginGameCMD.excute(LoginGameCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:429)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-18 17:12:59 [WARN ]拾取太远了 421.0463157421045
+2017-07-18 17:19:09 [WARN ]拾取太远了 575.2955762040935
+2017-07-18 17:19:09 [WARN ]拾取太远了 627.041465933474

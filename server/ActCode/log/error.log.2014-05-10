@@ -1,0 +1,8 @@
+2014-05-10 17:46:01 [ERROR]Unknown column 'TYPE_NUM' in 'field list'
+java.sql.BatchUpdateException: Unknown column 'TYPE_NUM' in 'field list'
+	at com.mysql.jdbc.StatementImpl.executeBatch(StatementImpl.java:1067)
+	at com.jolbox.bonecp.StatementHandle.executeBatch(StatementHandle.java:446)
+	at com.db.SimpleSqlSessionTemplate.batchInsert(SimpleSqlSessionTemplate.java:284)
+	at com.dao.BatchExcuteDAO.batchCreate(BatchExcuteDAO.java:20)
+	at com.service.impl.BatchExcuteService.batchInsert(BatchExcuteService.java:29)
+	at com.util.CodeUtil.main(CodeUtil.java:84)

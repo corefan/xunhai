@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx"
+         xmlns:components="com.cc.core.components.*"
+         xmlns:item="com.cc.app.item.*"
+         width="100%"
+         height="100%"
+         xmlns:view="com.cc.app.item.view.*">
+
+    <fx:Script>
+        <![CDATA[
+            import com.cc.app.item.event.ItemEvent;
+            import com.cc.app.main.MainModel;
+            import com.cc.core.Globals;
+            import com.cc.core.util.MessageUtil;
+
+            import mx.collections.ArrayCollection;
+
+            private var viewIndex:int = 0;
+
+            public function updateItemInfo():void {
+
+            }
+
+            private var stepOneItems:ArrayCollection = new ArrayCollection();
+
+            public function updateSendItemInfo(ac:ArrayCollection):void {
+                if (stepOneView.itemListDG.dataProvider != null)
+                    stepOneView.itemListDG.dataProvider.removeAll();
+
+                stepOneView.itemListDG.dataProvider = ac;
+            }
+
+            private function nextBtn_clickHandler(event:MouseEvent):void {
+                // TODO Auto-generated method stub
+                viewIndex++;
+                if (viewIndex >= 1) {
+
+                    if (stepOneView.itemListDG.dataProvider == null) {
+                        MessageUtil.showFaultMessage("待发送物品列表不能为空");
+                        return;
+                    }
+
+                    if (stepOneView.playerRb.selected && stepOneView.playerDg.dataProvider == null) {
+                        MessageUtil.showFaultMessage("玩家列表不能为空");
+                        return;
+                    }
+
+                    if (viewIndex == 2) {
+
+                        if (stepTwoView.titleText.text == "" || stepTwoView.conText.text == "" || stepTwoView.causeText.
+                            text == "") {
+                            MessageUtil.showFaultMessage("标题、内容、原因不能为空");
+                            return;
+                        }
+
+                        this.saveSendInfo();
+                    }
+                    viewIndex = 1;
+                }
+                if (viewIndex == 1) {
+                    stepTwoView.visible = true;
+                    stepOneView.visible = false;
+                }
+            }
+
+            public function initView():void {
+                viewIndex = 0;
+                stepTwoView.visible = false;
+                stepOneView.visible = true;
+            }
+
+            private function preBtn_clickHandler(event:MouseEvent = null):void {
+                viewIndex--;
+                if (viewIndex <= 0)
+                    viewIndex = 0;
+                if (viewIndex == 0) {
+                    stepTwoView.visible = false;
+                    stepOneView.visible = true;
+                }
+            }
+
+            private function saveSendInfo():void {
+                /* 	String appType = req.getParameter("appType");
+                    String playerIDList = req.getParameter("playerIDList");
+                    String itemList = req.getParameter("itemList");
+                    String content = req.getParameter("content");
+                    String reason = req.getParameter("reason"); */
+                var obj:Object = new Object();
+                if (stepOneView.playerRb.selected) {
+                    obj.appType = stepOneView.playerRb.value;
+                }
+                if (stepOneView.allRb.selected) {
+                    obj.appType = stepOneView.allRb.value;
+                }
+
+                obj.receiveNames = MainModel.instance.receiveNames;
+                obj.itemList = stepOneView.itemList;
+
+                obj.title = stepTwoView.titleText.text;
+                obj.content = stepTwoView.conText.text;
+                obj.reason = stepTwoView.causeText.text;
+
+                Globals.instance.context.dispatchEvent(new ItemEvent(ItemEvent.SAVE_SEND_ITEMINFO, obj));
+            }
+
+            public function clearTitleText():void {
+                this.preBtn_clickHandler();
+                stepTwoView.titleText.text = "";
+                stepTwoView.conText.text = "";
+                stepTwoView.causeText.text = "";
+            }
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+        <!-- 将非可视元素（例如服务、值对象）放在此处 -->
+    </fx:Declarations>
+    <s:Panel x="0"
+             y="0"
+             id="dataPanel"
+             width="100%"
+             height="100%"
+             title="物品管理"
+             visible="true">
+
+        <view:ItemStepOne id="stepOneView"
+                          visible="true">
+        </view:ItemStepOne>
+
+        <view:ItemStepTwo id="stepTwoView"
+                          visible="false">
+
+        </view:ItemStepTwo>
+
+        <s:Label x="22"
+                 y="630"
+                 width="374"
+                 height="20"
+                 text="第一步：1.选择物品 > 2.选择玩家（或者全服） 第二步：填写主题"
+                 textAlign="left"
+                 verticalAlign="middle"/>
+        <s:Button id="nextBtn"
+                  x="483"
+                  y="630"
+                  label="下一步"
+                  click="nextBtn_clickHandler(event)"/>
+        <s:Button id="preBtn"
+                  x="402"
+                  y="630"
+                  label="上一步"
+                  click="preBtn_clickHandler(event)"/>
+    </s:Panel>
+
+</s:Group>

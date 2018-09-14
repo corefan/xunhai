@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" title="添加用户" width="284" height="204" color="0x000000" borderAlpha="0.15" creationComplete="creationCompleteHandler()" close="closeBtn_clickHandler()">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.control.UserControlEvent;
+			import com.cc.app.control.model.UserModel;
+			import com.cc.core.Globals;
+			import com.cc.core.util.PopUpEffect;
+			
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			import mx.managers.PopUpManager;
+			
+			import spark.events.IndexChangeEvent;
+			private function addBtn_clickHandler():void
+			{
+				var name:String = userName.text;
+				var password:String = passWord.text;
+				var roleId:int = (selectBox.selectedIndex+1);
+				
+				Globals.instance.context.dispatchEvent(new UserControlEvent(UserControlEvent.ADD_USER,{userName:name,passWord:password,roleID:roleId}));
+				
+				this.closeBtn_clickHandler();
+			}
+			
+			private function closeBtn_clickHandler():void
+			{
+//				PopUpManager.removePopUp(this);
+				PopUpEffect.Hide(this);
+			}
+			
+			private function updateSelection(e:IndexChangeEvent):void
+			{
+				
+			}
+			
+			private function creationCompleteHandler():void
+			{
+				var list:ArrayCollection = UserModel.instance.roleList;
+				var nameList:ArrayCollection = new ArrayCollection();
+				for each(var obj:Object in list){
+					nameList.addItem(obj.name);
+				}
+				
+				selectBox.dataProvider = nameList;
+				selectBox.selectedIndex = 0;
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	
+	<s:Button id="addBtn" x="47" y="129" label="添加" click="addBtn_clickHandler()"/>
+	<s:Button id="cancel" x="147" y="129" label="取消" click="closeBtn_clickHandler()"/>
+	<s:Label x="21" y="18" width="76" height="23" fontSize="14" text="用户名：" textAlign="center" verticalAlign="middle"/>
+	<s:Label x="31" y="50" width="69" height="23" fontSize="14" text="密码：" textAlign="center" verticalAlign="middle"/>
+	<s:Label x="28" y="81" width="76" height="23" fontSize="14" text="角色：" textAlign="center" verticalAlign="middle"/>
+	<s:DropDownList id="selectBox" x="105" y="83" change="updateSelection(event)"
+					labelField="role" selectedIndex="0"></s:DropDownList>
+	<s:TextInput id="userName" x="105" y="17" width="101" restrict="a-zA-Z0-9"/>
+	<s:TextInput id="passWord" x="105" y="50" width="101" restrict="a-zA-Z0-9"/>
+	
+</s:TitleWindow>

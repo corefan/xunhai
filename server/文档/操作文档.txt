@@ -1,0 +1,105 @@
+设置linux系统编码：
+vi   /etc/sysconfig/i18n
+LANG="en_US.UTF-8"
+
+安装上传下载：
+yum install lrzsz -y
+安装解压缩
+yum install -y unzip zip
+
+
+zip -r server.zip server/
+scp /home/server.zip root@172.19.209.150:/home/
+
+复制jdk包：
+scp /usr/java/jdk-7u80-linux-x64.tar.gz root@172.19.209.150:/usr/java/
+
+安装jdk：http://www.linuxidc.com/Linux/2016-09/134941.htm
+
+tar -zxvf jdk-8u161-linux-x64.tar.gz
+
+vi /etc/profile
+
+JAVA_HOME=/home/java/jdk1.8.0_161
+JRE_HOME=/home/java/jdk1.8.0_161/jre
+CLASS_PATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+export JAVA_HOME JRE_HOME CLASS_PATH PATH
+
+source /etc/profile
+
+
+*************CentOS6 mysql安装****************
+http://www.cnblogs.com/xiaoluo501395377/archive/2013/04/07/3003278.html
+
+*************CentOS7 mysql安装****************
+https://www.cnblogs.com/joah-q/p/7774274.html
+
+*************mysql乱码设置****************
+vim  /etc/my.cnf
+[client]
+default-character-set=utf8
+[mysqld]
+max_allowed_packet=512M
+character-set-server=utf8
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+user=mysql
+#Disabling symbolic-links is recommended to prevent assorted security risks symbolic-links=0
+[mysql]
+no-auto-rehash
+default-character-set=utf8
+[mysqld_safe]
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+
+
+开放远程权限
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'IDENTIFIED BY 'XHgame@2018' WITH GRANT OPTION; 
+FLUSH PRIVILEGES;
+
+重启service mysqld restart
+
+show variables like 'character%';
+
+tomcat性能优化 https://renwole.com/archives/361
+安装tomcat-native
+./configure --with-ssl=/usr/local/openssl --with-apr=/usr/local/apr/bin/apr-1-config --with-java-home=/home/java/jdk1.8.0_161
+
+************jvm监控*****************
+touch jstatd.all.policy
+vim jstatd.all.policy
+grant codebase "file:/home/java/jdk1.8.0_161/lib/tools.jar" {
+    permission java.security.AllPermission;
+};
+chmod +x jstatd.all.policy 
+
+**********************redis*******************
+安装redis https://blog.csdn.net/dream_an/article/details/77199462
+yum install gcc tcl
+
+redis.conf配置：
+bind xxx
+port xxx
+daemonize yes
+pidfile xxx.pid
+logfile /home/java/redis-1.0.8/redis-cluster/10001/
+屏蔽save
+stop-writes-on-bgsave-error no
+rdbcompression no
+rdbchecksum no
+dir /home/java/redis-1.0.8/redis-cluster/10000/
+cluster-enabled yes
+requirepass Ken@2018
+masterauth Ken@2018
+appendonly no
+
+增删节点：https://blog.csdn.net/u011204847/article/details/51307044
+
+reids-cli.exe -h 192.168.1.200 -p 6379
+auth passWord
+flushall
+
+nohup src/redis-server redis-cluster/10001/redis.conf > redis-cluster/10001/redis-server.out 2>&1 &
+
+mmo设计与实现   https://max.book118.com/html/2015/1230/32328881.shtm

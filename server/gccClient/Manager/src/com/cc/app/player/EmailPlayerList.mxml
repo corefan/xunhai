@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:s="library://ns.adobe.com/flex/spark"
+               xmlns:mx="library://ns.adobe.com/flex/mx"
+               width="562"
+               height="500"
+               title="玩家列表"
+               close="closeHandler()">
+    <fx:Script>
+        <![CDATA[
+            import com.cc.app.item.event.ItemEvent;
+            import com.cc.app.main.MainModel;
+            import com.cc.app.player.PlayerEvent;
+            import com.cc.core.Globals;
+
+            import mx.collections.ArrayCollection;
+            import mx.managers.PopUpManager;
+
+            public var playerNames:Array = [];
+
+            private function closeHandler():void {
+                PopUpManager.removePopUp(this);
+            }
+
+            private function checkPlayer():void {
+                var value:String = playerName.text;
+                if (value == null || value == "")
+                    return;
+                Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.EMAIL_SEARCH_PLAYER, {searchType: 1, searchValue: value}));
+            }
+
+            public function onSearchPlayer(data:Object):void {
+
+            }
+
+            private function sureBtnClickHandler(event:MouseEvent):void {
+                var ac:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in myDataGrid.dataProvider) {
+                    if (obj.isSelect) {
+                        ac.addItem(obj);
+                    }
+                }
+
+                Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.EMAIL_SELECT_PLAYER, ac));
+
+                this.closeHandler();
+            }
+        ]]>
+    </fx:Script>
+    <fx:Declarations>
+        <!-- 将非可视元素（例如服务、值对象）放在此处 -->
+    </fx:Declarations>
+    <s:DataGrid id="myDataGrid"
+                x="80"
+                y="79"
+                width="403"
+                height="337"
+                requestedRowCount="4"
+                textAlign="center">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="name"
+                              headerText="玩家名字"
+                              width="150">
+                    <s:headerRenderer>
+                        <fx:Component>
+                            <s:DefaultGridHeaderRenderer>
+                                <s:labelDisplay>
+                                    <s:Label id="labelDisplay2"
+                                             verticalCenter="1"
+                                             left="0"
+                                             right="0"
+                                             top="0"
+                                             bottom="0"
+                                             textAlign="center"
+                                             fontWeight="bold"
+                                             verticalAlign="middle"
+                                             maxDisplayedLines="1"
+                                             showTruncationTip="true"/>
+                                </s:labelDisplay>
+                            </s:DefaultGridHeaderRenderer>
+                        </fx:Component>
+                    </s:headerRenderer>
+                </s:GridColumn>
+                <s:GridColumn dataField="userName"
+                              headerText="玩家账号"
+                              width="150">
+                    <s:headerRenderer>
+                        <fx:Component>
+                            <s:DefaultGridHeaderRenderer>
+                                <s:labelDisplay>
+                                    <s:Label id="labelDisplay2"
+                                             verticalCenter="1"
+                                             left="0"
+                                             right="0"
+                                             top="0"
+                                             bottom="0"
+                                             textAlign="center"
+                                             fontWeight="bold"
+                                             verticalAlign="middle"
+                                             maxDisplayedLines="1"
+                                             showTruncationTip="true"/>
+                                </s:labelDisplay>
+                            </s:DefaultGridHeaderRenderer>
+                        </fx:Component>
+                    </s:headerRenderer>
+                </s:GridColumn>
+                <s:GridColumn dataField="dataField3"
+                              headerText="操作"
+                              width="100">
+                    <s:headerRenderer>
+                        <fx:Component>
+                            <s:DefaultGridHeaderRenderer>
+                                <s:labelDisplay>
+                                    <s:Label id="labelDisplay2"
+                                             verticalCenter="1"
+                                             left="0"
+                                             right="0"
+                                             top="0"
+                                             bottom="0"
+                                             textAlign="center"
+                                             fontWeight="bold"
+                                             verticalAlign="middle"
+                                             maxDisplayedLines="1"
+                                             showTruncationTip="true"/>
+                                </s:labelDisplay>
+                            </s:DefaultGridHeaderRenderer>
+                        </fx:Component>
+                    </s:headerRenderer>
+
+                    <s:itemRenderer>
+                        <fx:Component>
+                            <s:GridItemRenderer>
+                                <fx:Script>
+                                    <![CDATA[
+                                        import spark.components.gridClasses.GridColumn;
+
+                                        private function changeHandler(event:Event):void {
+                                            var cb:CheckBox = event.currentTarget as CheckBox;
+                                            data.isSelect = cb.selected;
+                                        }
+                                    ]]>
+                                </fx:Script>
+
+                                <s:HGroup y="2"
+                                          width="100"
+                                          horizontalAlign="center">
+                                    <s:CheckBox change="changeHandler(event)"
+                                                selected="false"/>
+                                </s:HGroup>
+                            </s:GridItemRenderer>
+                        </fx:Component>
+                    </s:itemRenderer>
+
+                </s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+    <s:Button id="sureBtn"
+              x="247"
+              y="429"
+              width="77"
+              height="27"
+              label="确认"
+              fontSize="14"
+              click="sureBtnClickHandler(event)"/>
+    <s:Label x="62"
+             y="36"
+             width="161"
+             height="24"
+             text="输入玩家名（模糊搜索）："
+             verticalAlign="middle"/>
+    <s:TextInput id="playerName"
+                 x="214"
+                 y="36"
+                 width="163"/>
+    <s:Button x="404"
+              y="36"
+              label="查询"
+              click="checkPlayer()"/>
+
+</s:TitleWindow>

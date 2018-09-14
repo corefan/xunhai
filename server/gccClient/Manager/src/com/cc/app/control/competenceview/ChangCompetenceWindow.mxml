@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:mx="library://ns.adobe.com/flex/mx" title="修改权限" width="316" height="244"  color="0x000000" borderAlpha="0.15" creationComplete="creationCompleteHandler()" close="closeBtn_clickHandler()">
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.control.UserControlEvent;
+			import com.cc.core.Globals;
+			
+			import mx.managers.PopUpManager;
+			
+			import spark.components.CheckBox;
+			import spark.events.IndexChangeEvent;
+			
+			private var data:Object;
+			private var checkBoxs:Vector.<CheckBox>;
+			
+			private function updateSelection(e:IndexChangeEvent):void
+			{
+//				currSel.text = "Current Product = " + myDDL.selectedItem.product;
+//				currPrc.text = "Price = $" + myDDL.selectedItem.price;
+			}
+
+			
+			private function creationCompleteHandler():void
+			{
+//				var list:ArrayCollection = UserModel.instance.competenceList;
+//				if(list == null)return;
+//				tileGroup.removeAllElements();
+//				checkBoxs = new Vector.<CheckBox>();
+//				var checkBox:CheckBox;
+//				for(var i:int = 0 ; i < list.length ; i++){
+//					checkBox  = new CheckBox();
+//					checkBox.label = list[i].name;
+//					checkBox.name = list[i].authorityID;
+//					tileGroup.addElement(checkBox);
+//					checkBoxs.push(checkBox);
+//				}
+			}
+			
+			private function closeBtn_clickHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			
+			public function setRoleInfo(obj:Object):void
+			{
+				this.data = obj;
+				currentName.text = this.data.name;
+			}
+			
+			private function changBtnClickHandler():void
+			{
+//				private JSONObject updateAuthority(int authorityID, String name)
+				var name:String = competenceName.text;
+				Globals.instance.context.dispatchEvent(new UserControlEvent(UserControlEvent.MODIFY_COMPETENCE,{authorityID:this.data.authorityID,name:name}));
+				this.closeBtn_clickHandler();
+			}
+			
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 更改用户界面 -->
+	</fx:Declarations>
+	<s:Button x="71" y="155" label="修改" click="changBtnClickHandler()"/>
+	<s:Button x="170" y="155" label="取消" click="closeBtn_clickHandler()"/>
+	<s:TextInput id="competenceName" x="146" y="90" width="120" height="23" fontSize="14" restrict="^/w+$" textAlign="center"/>
+	<s:Label x="49" y="90" width="94" height="23" fontSize="14" text="修改权限名：" textAlign="center" verticalAlign="middle"/>
+	<s:Label x="49" y="49" width="94" height="23" fontSize="14" text="当前权限名：" textAlign="center" verticalAlign="middle"/>
+	<s:Label id="currentName" x="146" y="49" width="121" height="23" fontSize="14" textAlign="center"
+			 verticalAlign="middle"/>
+	
+</s:TitleWindow>

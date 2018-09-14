@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%" creationComplete="onCreate()">
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.control.competenceview.CompetenceControl;
+			import com.cc.app.control.roleview.RoleControl;
+			import com.cc.app.control.userlog.UserLog;
+			import com.cc.app.control.userview.UserControl;
+			import com.cc.app.dealData.DealData;
+			import com.cc.app.item.AuditItemLogView;
+			import com.cc.app.item.AuditItemView;
+			import com.cc.app.item.Item;
+			import com.cc.app.monitor.view.ChatMonitor;
+			import com.cc.app.notice.view.Notice;
+			import com.cc.app.notice.view.TimingNotice;
+			import com.cc.app.player.Player;
+			import com.cc.app.player.SendEmail;
+			import com.cc.app.server.serverview.ServerControl;
+			import com.cc.core.constant.ModuleConstant;
+			import com.cc.core.manager.WindowManager;
+			import com.cc.core.util.AppUtil;
+			import com.cc.core.util.TimeUtil;
+			
+			import spark.events.IndexChangeEvent;
+			
+			
+			
+			private const HOUR_MASK:String = "00";
+			private const MIN_MASK:String = "00";
+			private const SEC_MASK:String = "00";
+			private const TIMER_INTERVAL:int = 1000;
+			private const TIMER_REFRESH:int = 30000;
+			
+			private var timer:Timer;
+			
+			[Bindable]
+			private var modeDataList:ArrayCollection = new ArrayCollection();
+			
+			private function onCreate():void{
+				WindowManager.instance.contentPanel = contentPanel;
+				
+				var list:Array = MainModel.instance.authorityIDList;
+				var obj:Object;
+				var data:Object = new Object();
+				var ids:Array;
+                
+				for each(obj in list){
+					if(obj.type == ModuleConstant.AUTHORITY_1){
+						ids = JSON.parse(obj.authorityList) as Array;
+						for each(var obj1:Object in ids){
+							userRegister.addItem(obj1);
+						}
+					}else if(obj.type == ModuleConstant.AUTHORITY_2){
+						ids = JSON.parse(obj.authorityList) as Array;
+						for each(var obj2:Object in ids){
+							user.addItem(obj2);
+						}
+					}else if(obj.type == ModuleConstant.AUTHORITY_3){
+						ids = JSON.parse(obj.authorityList) as Array;
+						for each(var obj3:Object in ids){
+							item.addItem(obj3);
+						}
+					}else if(obj.type == ModuleConstant.AUTHORITY_4){
+						ids = JSON.parse(obj.authorityList) as Array;
+						for each(var obj4:Object in ids){
+							sqlSelect.addItem(obj4);
+						}
+					}else if(obj.type == ModuleConstant.AUTHORITY_5){
+						ids = JSON.parse(obj.authorityList) as Array;
+						for each(var obj5:Object in ids){
+							dealData.addItem(obj5);
+						}
+					}else if(obj.type == ModuleConstant.AUTHORITY_6){
+						ids = JSON.parse(obj.authorityList) as Array;
+						for each(var obj6:Object in ids){
+							dataMonitor.addItem(obj6);
+						}
+					}else if(obj.type == ModuleConstant.AUTHORITY_7){
+						ids = JSON.parse(obj.authorityList) as Array;
+						for each(var obj7:Object in ids){
+							serverRegister.addItem(obj7);
+						}
+					}
+				}
+				
+//				data.type = 101;
+//				selectPanel(data);
+				
+				if(currentTime != null){
+					this.updateTimer();
+				}
+				
+				timer = new Timer(TIMER_INTERVAL);
+				timer.addEventListener(TimerEvent.TIMER, updateTimer);
+				timer.start();
+				
+				this.initAgentList();
+				this.initServerList();
+				this.initModeList();
+			}
+			
+			/**
+			 * 模式
+			 * */
+			private function initModeList():void {
+				var mode1:Object = new Object();
+				mode1.label = "单个区";
+				mode1.value = 1;
+				
+				var mode2:Object = new Object();
+				mode2.label = "单个运营商";
+				mode2.value = 2;
+				
+				modeDataList.addItem(mode1);
+				modeDataList.addItem(mode2);
+				if (MainModel.instance.roleID <= 2) {
+					var mode3:Object = new Object();
+					mode3.label = "全部运营商";
+					mode3.value = 3;
+					modeDataList.addItem(mode3);
+				}
+					
+				
+				modeList.dataProvider = modeDataList;
+				modeList.selectedIndex = 0;
+				
+				MainModel.instance.currentModel = modeList.selectedIndex+1;
+			}
+			
+			/**
+			 * 初始化运营商列表
+			 */
+			private function initAgentList():void {
+				var agentAC:ArrayCollection = new ArrayCollection();
+				var agentStr:Array = MainModel.instance.agent.split(",");
+				for each(var agent:String in agentStr){
+					var agentObj:Object = new Object();
+					agentObj.label = agent;
+					agentObj.value = agent;
+					agentAC.addItem(agentObj);
+				}
+				agentList.dataProvider = agentAC;
+				agentList.selectedIndex = 0;
+				MainModel.instance.currentAgent = agentAC[0].value;
+			}
+			
+			/**
+			 * 初始化服务器列表
+			 */
+			private function initServerList():void{
+				var serverAC:ArrayCollection = new ArrayCollection();
+				for each(var obj:Object in MainModel.instance.gameSiteAC){
+					if(obj.agent == MainModel.instance.currentAgent){
+						var serverObj:Object = new Object();
+						serverObj.label = obj.siteName;
+						serverObj.value = obj.gameSite;
+						serverAC.addItem(serverObj);
+					}
+				}
+				
+				if(serverAC.length == 0){
+					var object:Object = new Object();
+					object.label = "无";
+					object.value = "";
+					serverAC.addItem(object);
+				}
+				
+				serverList.dataProvider = serverAC;
+				serverList.selectedIndex = 0;
+				MainModel.instance.currentGameSite = serverAC[0].value;
+				MainModel.instance.currentSiteName = serverAC[0].label;
+				
+			}
+			
+			protected function updateTimer(event:TimerEvent = null):void
+			{
+				var d:Date = new Date();
+				var hour:String = String((HOUR_MASK + d.hours)).substr(-HOUR_MASK.length);
+				var min:String = String((MIN_MASK + d.minutes)).substr(-MIN_MASK.length);//substr的用法
+				var sec:String = String((SEC_MASK + d.seconds)).substr(-SEC_MASK.length);
+				currentTime.text = TimeUtil.formatColumnDate2(d) + "  " + hour + ":" + min + ":" + sec;
+			}
+			
+			protected function changeHandler(event:IndexChangeEvent):void
+			{
+				var list:List = event.currentTarget as List;
+				selectPanel(list.selectedItem);
+			}
+			
+			protected function onClick(event:MouseEvent):void{
+				var list:List = event.currentTarget as List;
+				selectPanel(list.selectedItem);
+			}
+			
+			private function selectPanel(data:Object):void{
+				if(data == null) return;
+				switch(data.type){
+					case 100:
+						//服务器管理
+						WindowManager.instance.showContent(AppUtil.getAppByClass(ServerControl));
+						break;
+					case 101:
+						//用户管理
+						WindowManager.instance.showContent(AppUtil.getAppByClass(UserControl));
+						break;
+					case 102:
+						//权限查询
+						WindowManager.instance.showContent(AppUtil.getAppByClass(CompetenceControl));
+						break;
+					case 103:
+						//日志查询
+						WindowManager.instance.showContent(AppUtil.getAppByClass(UserLog));
+						break;
+					case 104:
+						//日志查询
+						WindowManager.instance.showContent(AppUtil.getAppByClass(RoleControl));
+						break;
+					case 201:
+						//玩家管理
+						WindowManager.instance.showContent(AppUtil.getAppByClass(Player));
+						break;
+					case 202:
+						//封停IP
+						//WindowManager.instance.showContent(AppUtil.getAppByClass(BanIP));
+						break;
+                    case 203:
+                        // 发送邮件
+                        WindowManager.instance.showContent(AppUtil.getAppByClass(SendEmail));
+                        break;
+					case 301:
+						//发送物品申请
+						WindowManager.instance.showContent(AppUtil.getAppByClass(Item));
+						break;
+					case 302:
+						//发放物品审核
+						WindowManager.instance.showContent(AppUtil.getAppByClass(AuditItemView));
+						break;
+					case 303:
+						//发放日志列表
+						WindowManager.instance.showContent(AppUtil.getAppByClass(AuditItemLogView));
+						break;
+					case 501:
+						WindowManager.instance.showContent(AppUtil.getAppByClass(DealData));
+						break;
+					case 502:
+						WindowManager.instance.showContent(AppUtil.getAppByClass(Notice));
+						break;
+					case 503:
+						//WindowManager.instance.showContent(AppUtil.getAppByClass(TimingNotice));
+						break;
+					case 601:
+						//聊天监控
+						WindowManager.instance.showContent(AppUtil.getAppByClass(ChatMonitor));
+						break;
+				}
+			}
+			
+			private function modeList_changeHandler(event:IndexChangeEvent):void
+			{
+				MainModel.instance.currentModel = modeList.selectedIndex+1;
+			}
+			
+			private function serverList_changeHandler(event:IndexChangeEvent):void
+			{
+				MainModel.instance.currentGameSite = serverList.selectedItem.value;
+				MainModel.instance.currentSiteName = serverList.selectedItem.label;
+			}
+			
+			private function agentList_changeHandler(event:IndexChangeEvent):void
+			{
+				var agent:String = agentList.selectedItem.value;
+				MainModel.instance.currentAgent = agent;
+				this.initServerList();
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		
+		<s:ArrayCollection id="serverRegister">
+			<!--<fx:Object label="服务器管理" type="100" />-->
+		</s:ArrayCollection>
+		
+		<s:ArrayCollection id="userRegister">
+	<!--		<fx:Object label="用户管理" type="101" />
+			<fx:Object label="权限管理" type="102" />
+			<fx:Object label="日志查询" type="103" />
+			<fx:Object label="角色管理" type="104" />-->
+		</s:ArrayCollection>
+		
+		<s:ArrayCollection id="user">
+	<!--		<fx:Object label="玩家管理" type="201" />
+			<fx:Object label="封停IP" type="202" />-->
+		</s:ArrayCollection>
+		
+		<s:ArrayCollection id="item">
+		<!--	<fx:Object label="发送物品申请" type="301"/>
+			<fx:Object label="发放审核管理" type="302"/>-->
+		</s:ArrayCollection>
+		
+		<s:ArrayCollection id="sqlSelect">
+		<!--	<fx:Object label="SQL执行" type="401" />
+			<fx:Object label="查询列表" type="402" />
+			<fx:Object label="操作日志" type="403" />-->
+		</s:ArrayCollection>
+		
+		<s:ArrayCollection id="dealData">
+	<!--		<fx:Object label="数据处理" type="501" />
+			<fx:Object label="及时系统公告" type="502" />
+			<fx:Object label="定时系统公告" type="503" />-->
+		</s:ArrayCollection>
+		<s:ArrayCollection id="dataMonitor">
+		</s:ArrayCollection>
+
+	</fx:Declarations>
+	
+	<s:Panel title="功能界面" width="100%" height="100%" >
+		
+		<mx:Accordion width="225" height="100%" id="ncContainer" headerStyleName="myAccordionHeader" fontSize="16" fontWeight="bold">
+			
+			<s:NavigatorContent id="serverNc" width="100%" height="100%" label="服务器管理" fontSize="16" fontWeight="bold">
+				<s:List id="serverBar" fontSize="14" dataProvider="{serverRegister}"
+						width="100%" height="100%" labelField="label" change="changeHandler(event)" click="onClick(event)" >
+					<s:layout>
+						<s:VerticalLayout/>
+					</s:layout>
+				</s:List>
+			</s:NavigatorContent>
+			
+			<s:NavigatorContent id="playerNc" width="100%" height="100%" fontSize="16"  label="玩家管理" fontWeight="bold">
+				<s:List id="btnBar1" fontSize="14" dataProvider="{user}" 
+						width="100%" height="100%" labelField="label" change="changeHandler(event)" click="onClick(event)" >
+					<s:layout>
+						<s:VerticalLayout/>
+					</s:layout>
+				</s:List>
+			</s:NavigatorContent>
+			
+			<s:NavigatorContent id="itemNc" width="100%" height="100%" fontSize="16"  label="物品发放" visible="false" fontWeight="bold">
+				<s:List id="btnBar2" fontSize="14" dataProvider="{item}" 
+						width="100%" height="100%" labelField="label" change="changeHandler(event)" click="onClick(event)" >
+					<s:layout>
+						<s:VerticalLayout/>
+					</s:layout>
+				</s:List>
+			</s:NavigatorContent>
+			
+			<s:NavigatorContent id="sqlList" width="100%" height="100%" fontSize="16"  label="数据查询" fontWeight="bold">
+				<s:List id="btnBar5" fontSize="14" dataProvider="{sqlSelect}"
+						width="100%" height="100%" labelField="label" change="changeHandler(event)" click="onClick(event)" >
+					<s:layout>
+						<s:VerticalLayout/>
+					</s:layout>
+				</s:List>
+			</s:NavigatorContent>
+			
+			<s:NavigatorContent id="dealDataNc" width="100%" height="100%" fontSize="16"  label="数据处理" fontWeight="bold">
+				<s:List id="btnBar8" fontSize="14" dataProvider="{dealData}"
+						width="100%" height="100%" labelField="label" change="changeHandler(event)" click="onClick(event)" >
+					<s:layout>
+						<s:VerticalLayout/>
+					</s:layout>
+				</s:List>
+			</s:NavigatorContent>
+			
+			<s:NavigatorContent id="userNc" width="100%" height="100%" label="用户管理" fontSize="16" fontWeight="bold">
+				<s:List id="userBar" fontSize="14" dataProvider="{userRegister}"
+						width="100%" height="100%" labelField="label" change="changeHandler(event)" click="onClick(event)" >
+					<s:layout>
+						<s:VerticalLayout/>
+					</s:layout>
+				</s:List>
+			</s:NavigatorContent>
+			
+			<s:NavigatorContent id="dataMonitorNc" width="100%" height="100%" fontSize="16" fontWeight="bold" label="数据监控">
+				<s:List id="btnBar9" fontSize="14" dataProvider="{dataMonitor}"
+						width="100%" height="100%" labelField="label" change="changeHandler(event)" click="onClick(event)" >
+					<s:layout>
+						<s:VerticalLayout/>
+					</s:layout>
+				</s:List>
+			</s:NavigatorContent>
+		</mx:Accordion>
+		
+		<s:Label x="339" y="-25" width="81" height="18" text="选择模式：" fontSize="16"  verticalAlign="middle"/>
+		<s:DropDownList id="modeList" x="422" y="-27" change="modeList_changeHandler(event)"></s:DropDownList>
+		
+		<s:Label x="589" y="-25" width="81" height="18" text="运营商："  fontSize="16"  verticalAlign="middle"/>
+		<s:DropDownList id="agentList" x="662" y="-27" change="agentList_changeHandler(event)"></s:DropDownList>
+		
+		<s:Label x="819" y="-25" width="81" height="18" text="服务器：" fontSize="16"  verticalAlign="middle"/>
+		<s:DropDownList id="serverList" x="888" y="-27" width="150" change="serverList_changeHandler(event)"></s:DropDownList>
+		
+		<s:Group x="230" id="contentPanel" width="100%" height="100%" fontSize="14" >
+		</s:Group>
+		<s:Label id="currentTime" y="-27" width="161" height="21" fontSize="16" fontWeight="bold" right="10"
+				 text="2012/12/12 00:00:00" verticalAlign="middle"/>
+	
+	</s:Panel>
+</s:Group>

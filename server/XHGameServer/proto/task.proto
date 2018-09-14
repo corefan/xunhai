@@ -1,0 +1,58 @@
+option java_package="com.message";
+option java_outer_classname="TaskProto";
+
+
+message PlayerTaskMsg { //任务数据
+	optional int32 taskId=1; //任务ID
+	optional int32 type=2; //任务大类型 1:主线任务2:支线任务
+	optional int32 currentNum=3; //当前任务完成值
+	optional int32 taskState=4; //任务状态（0：未完成  1：完成）	
+}
+
+message C_SubmitTask { //提交任务
+	optional int32 taskId=1; //提交任务编号
+}
+
+message S_SubmitTask {//提交任务返回
+	optional int32 taskId = 1; //提交任务编号
+	repeated PlayerTaskMsg playerTask = 2; //新接玩家任务列表
+}
+
+message S_SynTaskTrack { // 同步任务追踪
+	optional PlayerTaskMsg playerTask=1; //任务数据
+}
+
+message C_CompleteTask { // 完成任务（当前只有npc对话任务应用）
+	optional int32 taskId=1; //任务编号
+}
+
+
+message C_GetDailyTaskList{ //获取每日任务列表
+	
+}
+
+message C_RefrshDailyTask{ //刷新每日任务列表
+	optional int32 type = 1; //刷新类型 (1:免费, 2:元宝)	
+}
+
+message C_AcceptDailyTask{ //接受每日任务
+	optional int32 taskId = 1; //任务编号	
+}
+
+message C_AbandonTask{ //放弃任务
+	optional int32 taskId = 1; //任务编号	
+}
+
+message S_AbandonTask{ //放弃任务
+	optional int32 taskId = 1; //任务编号	
+}
+
+message S_SynDailyTaskList{ //同步每日任务列表
+	optional int32 dailyTaskNum = 1; //已接取每日任务次数	
+	optional int32 dailyRefNum = 2;  //剩余免费刷新次数
+	repeated int32 taskIds = 3;		 //面板三条任务数据	
+}
+
+message C_AcceptWeekTask{ //接受环任务
+
+}

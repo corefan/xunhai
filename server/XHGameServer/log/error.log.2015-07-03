@@ -1,0 +1,12 @@
+2015-07-03 18:16:27 [ERROR]Unknown column 'EXPIRATION_TIME' in 'field list' Query: SELECT SHOP_ITEM_ID AS shopItemID, ITEM_ID AS itemID, ORIG_BIND_DIAMOND AS origBindDiamond,BIND_DIAMOND AS bindDiamond, ORIG_DIAMOND AS origDiamond, DIAMOND AS diamond, STATE AS state, SHOP_PAGE AS shopPage, EXPIRATION_TIME AS expirationTime FROM T_BASE_SHOP_ITEM Parameters: []
+java.sql.SQLException: Unknown column 'EXPIRATION_TIME' in 'field list' Query: SELECT SHOP_ITEM_ID AS shopItemID, ITEM_ID AS itemID, ORIG_BIND_DIAMOND AS origBindDiamond,BIND_DIAMOND AS bindDiamond, ORIG_DIAMOND AS origDiamond, DIAMOND AS diamond, STATE AS state, SHOP_PAGE AS shopPage, EXPIRATION_TIME AS expirationTime FROM T_BASE_SHOP_ITEM Parameters: []
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:225)
+	at com.db.SimpleSqlSessionTemplate.selectList(SimpleSqlSessionTemplate.java:379)
+	at com.dao.ShopItemDAO.getShopItemList(ShopItemDAO.java:18)
+	at com.service.impl.ShopService.initShopItemCache_base(ShopService.java:49)
+	at com.common.ServiceCollection.initBaseCache(ServiceCollection.java:315)
+	at com.common.ServiceCollection.initialize(ServiceCollection.java:264)
+	at com.core.GameServer.startServer(GameServer.java:67)
+	at com.core.GameServer.main(GameServer.java:48)

@@ -1,0 +1,26 @@
+option java_package="com.message";
+option java_outer_classname="FurnaceProto";
+
+message PlayerFurnaceMsg{ //玩家熔炉信息	
+	optional int32 furnaceId = 1; // 熔炉编号	
+	optional int32 stage = 2; // 当前阶段	
+	optional int32 star = 3; // 当前星级	
+	optional int32 piece = 4; // 拥有碎片数	
+} 
+ 
+message C_GetPlayerFurnaceList{ // 玩家已激活熔炉列表
+	
+}
+
+message S_GetPlayerFurnaceList{ // 玩家已激活列表
+	repeated PlayerFurnaceMsg furnaceList = 1; 
+}
+
+message C_UpgradeFurnace{ //升级熔炉
+	optional int32 furnaceId = 1; // 熔炉编号		
+}
+
+message S_UpgradeFurnace{ //升级熔炉	
+	optional PlayerFurnaceMsg playerFurnace = 1; 	
+}
+

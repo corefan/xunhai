@@ -1,0 +1,431 @@
+option java_package="com.message";
+option java_outer_classname="GuildProto";
+
+message GuildMsg{ //都护府信息
+	optional int64 guildId = 1;     // 都护府编号		
+	optional string guildName = 2; 	// 都护府名称	
+	optional string notice = 3; 	// 都护府公告
+	optional int32 level = 4;       // 都护府等级
+	optional int32 memberNum = 5;   // 成员人数
+	optional int64 headerId = 6;    // 都护玩家编号		
+	optional string headerName = 7; // 都护名称	
+	optional int32 battleValue = 8;  // 战斗力
+	optional int32 autoJoin = 9;    // 是否勾选自动加入 1：是
+	optional int32 autoMinLv = 10;  // 最小设定等级
+	optional int32 autoMaxLv = 11;  // 最大设定等级
+	optional int32 money = 12;     // 资金
+	optional int32 buildNum = 13;  // 建设度
+	optional int64 createTime = 15;  // 创建时间搓
+	optional int32 applyFlag = 16;   // 是否已申请  1：是			
+}
+
+message GuildPlayerMsg{ //都护府成员信息
+	optional int64 playerId = 1;   		// 玩家编号ID	
+	optional string playerName = 2; 	// 玩家名称
+	optional int32 level = 3;      		// 玩家等级	
+	optional int32 career = 4;     		// 玩家职业
+	optional int32 battleValue = 5;         // 玩家战力
+	optional int32 roleId = 6;	 	// 都护府职位（0：见习成员 1：普通成员 2：副都护 3：都护）
+	optional int64 joinTime = 7;  	        // 入帮时间	
+	optional int64 exitTime = 8;  	        // 离线时间(为0则在线）	
+	optional int32 ticket = 9;	 	// 继任票数
+	optional int32 contribution = 10;	 // 贡献
+	optional int32 weekMoney = 11;	 	 // 本周资金
+	optional int32 weekBuildNum = 12;	 // 本周建设
+}
+
+message GuildWarMsg{ //宣战信息
+	optional int64 guildId = 1;     // 都护府编号		
+	optional string guildName = 2; 	// 都护府名称	
+	optional int32 level = 3;       // 都护府等级	
+	optional int32 battleValue = 4;  // 战斗力
+	optional int64 endWarTime = 5;   // 宣战结束时间搓 （0代表没有宣战过）		
+}
+
+message ApplyPlayerMsg{  //申请者信息	
+	required int64 playerId = 1;    //角色编号
+	optional string playerName = 2; //角色名称
+	optional int32 level = 3;      	//角色等级		
+	optional int32 career = 4;      //职业	
+	optional int32 battleValue = 5; // 玩家战力
+	optional int64 exitTime = 6;  	// 离线时间(为0则在线）				
+}
+
+message C_GetGuildList{ //都护府列表
+
+}
+message S_GetGuildList{ //都护府列表返回
+	repeated GuildMsg guilds = 1;
+}
+
+message C_GetGuild{ //获取都护府信息
+	
+}
+message S_GetGuild{ //获取都护府信息返回
+	optional GuildMsg guild = 1;
+	optional int32 roleId = 2; //个人职位
+	optional int32 contribution = 3;// 贡献
+}
+
+message C_CreateGuild{ //创建都护府
+	optional string guildName = 1; 	// 都护府名称	
+	optional string notice = 2; 	// 都护府公告	
+} 
+message S_CreateGuild{ //创建都护府返回
+
+}
+
+message C_ModifyNotice{ //修改公告
+	optional string notice = 1; 	// 都护府公告
+}
+message S_ModifyNotice{ //修改公告
+	optional string notice = 1; 	// 都护府公告
+}
+
+message C_GetGuildPlayerList{ //获取成员列表
+
+}
+message S_GetGuildPlayerList{ //获取成员列表
+ 	repeated GuildPlayerMsg guildPlayers = 1; //成员
+	optional int32 onlineNum = 2;	 	  // 在线人数
+}
+
+message C_ApplyGuild{ //申请都护府
+	optional int64 guildId = 1;     // 都护府编号		
+}
+message S_ApplyGuild{ //申请都护府返回
+	optional int64 guildId = 1;     // 都护府编号		
+}
+message C_QuickApply{//一键申请都护府
+	
+}
+message S_QuickApply{//一键申请都护府
+	repeated int64 guildIds = 1;  // 申请的都护府编号列表	
+}
+
+message C_GetApplyList{ //申请列表
+	
+}
+message S_GetApplyList{ //申请列表
+	repeated ApplyPlayerMsg applyers = 1;	//申请者信息
+}
+
+message C_AgreeApply{ //同意申请
+	optional int64 applyId = 1;     // 申请者玩家编号	
+}
+message S_AgreeApply{ //同意申请
+	optional int64 applyId = 1;     // 申请者玩家编号	
+}
+message C_RefuseApply{ //拒绝申请
+	optional int64 applyId = 1;     // 申请者玩家编号	
+}
+message S_RefuseApply{ //拒绝申请
+	optional int64 applyId = 1;     // 申请者玩家编号	
+}
+message C_ClearApplys{ //清空申请列表
+	
+}
+message S_ClearApplys{ //清空申请列表
+	
+}
+message C_AutoApply{ //设置自动接受申请
+	optional int32 selected = 1;     // 勾选自动 1：是 0：取消
+	optional int32 autoMinLv = 2;     // 最小设置等级
+	optional int32 autoMaxLv = 3;     // 最大设置等级
+}
+message S_AutoApply{ //设置自动接受申请
+	optional int32 selected = 1;     // 勾选自动 1：是 0：取消
+	optional int32 autoMinLv = 2;     // 最小设置等级
+	optional int32 autoMaxLv = 3;     // 最大设置等级
+}
+
+message C_InviteJoin{ //邀请进入都护府
+	optional int64 invitedId = 1;     // 被邀请玩家编号
+}
+message S_InviteJoin{ //邀请进入都护府
+	optional int64 invitedId = 1;     // 被邀请玩家编号
+}
+message S_OfferInviteJoin{ //通知被邀请者
+	optional int64 guildId = 1;     // 都护府编号		
+	optional string guildName = 2; 	// 都护府名称	
+	optional int64 inviteId = 3;    // 邀请者玩家编号
+	optional string inviteName = 4; // 邀请者名字	
+}
+message C_AgreeInviteJoin{ //同意邀请进入
+	optional int64 guildId = 1;     // 都护府编号	
+}
+message S_AgreeInviteJoin{ //同意邀请进入
+	optional int64 guildId = 1;     // 都护府编号	
+}
+
+message C_QuitGuild{ //退出都护府
+
+}
+message S_QuitGuild{ //退出都护府
+
+}
+
+message C_ChangeGuilder{ //转让帮主
+	optional int64 targetId = 1;     // 目标玩家编号	
+}
+message S_ChangeGuilder{ //转让帮主
+	optional int64 targetId = 1;     // 目标玩家编号	
+}
+
+message C_KickGuild{ //踢出帮派
+	optional int64 targetId = 1;     // 目标玩家编号	
+}
+message S_KickGuild{ //踢出帮派
+	optional int64 targetId = 1;     // 目标玩家编号	
+}
+
+message C_ChangeGuildRole{ //任免职位
+	optional int64 targetId = 1;     // 目标玩家编号
+	optional int32 newRoleId = 2;     // 新职位（0：见习成员 1：普通成员 2：副都护 3：都护）
+}
+message S_ChangeGuildRole{ //任免职位
+	optional int64 targetId = 1;     // 目标玩家编号
+	optional int32 newRoleId = 2;     // 新职位（0：见习成员 1：普通成员 2：副都护 3：都护）
+}
+
+message C_UpgradeGuild{ //升级帮派
+	
+}
+message S_UpgradeGuild{ //升级帮派
+	
+}
+
+message DonateTimesMsg{
+	optional int32 id = 1;     // 捐献配置编号	
+	optional int32 times = 2;  // 今日捐献次数
+}
+message C_GetDonateTimes{ //获取捐献各次数
+		
+}
+message S_GetDonateTimes{ //获取捐献各次数
+	repeated DonateTimesMsg donateTimes = 1;  // 各次数列表		
+}
+message C_Donate{ //捐献
+	optional int32 id = 1;     // 捐献配置编号
+}
+message S_Donate{ //捐献
+	optional int32 id = 1;     // 捐献配置编号
+}
+
+message C_GetGuildWarList{ //宣战信息列表
+	
+}
+
+message S_GetGuildWarList{ //宣战信息列表
+	repeated GuildWarMsg guilds = 1;  	
+}
+
+message C_GuildWar{ //发起宣战
+	optional int64 guildId = 1;     // 都护府编号		
+}
+
+message S_GuildWar{ //发起宣战
+	optional int64 guildId = 1;     // 都护府编号
+	optional int64 endWarTime = 2;   // 宣战结束时间搓 
+}
+
+message GuildSkillMsg{ //都护府技能信息
+ 	optional int32 type = 1;     // 技能类型
+	optional int32 level = 2;     // 技能等级
+}
+
+message C_GetGuildSkills{ //已学习和研发的技能列表
+
+}
+
+message S_GetGuildSkills{ //获取已学习和研发的技能列表
+	repeated GuildSkillMsg playerGuildSkills = 1; //已学习技能列表
+	repeated GuildSkillMsg guildSkills = 2;      //已研发技能列表
+}
+
+message C_UpgradeGuildSkill{ //研发都护府技能
+	optional int32 type = 1;     // 技能类型
+}
+message S_UpgradeGuildSkill{ //研发都护府技能
+	optional int32 type = 1;     // 技能类型
+	optional int32 level = 2;     // 技能等级	
+}
+
+message C_StudyGuildSkill{ //学习都护府技能
+	optional int32 type = 1;     // 技能类型
+}
+message S_StudyGuildSkill{ //学习都护府技能
+	optional int32 type = 1;     // 技能类型
+	optional int32 level = 2;     // 技能等级	
+}
+
+
+message GuildFightMsg{ //已报名信息
+	optional string guildName = 1;  // 都护府名	
+	optional string unionName = 2;  // 联盟名
+	optional int32  createFlag = 3;  // 是否盟主	
+}
+
+message UnionMsg{ //联盟信息
+	optional int64  unionId = 1;  // 联盟编号
+	optional string unionName = 2;  // 联盟名
+	optional int32 applyFlag = 3;   // 是否已申请  1：是		
+}
+
+message ApplyUnionMsg{ //已申请联盟都护府信息
+	optional int64  guildId = 1;  // 都护府编号
+	optional string guildName = 2;  // 都护府名	
+	optional int32 agreeFlag = 3;  // 是否有权操作同意 1：是
+}
+
+message C_GetGuildFightData{ //城战面板数据
+	
+}
+
+message S_GetGuildFightData{ //城战面板数据
+	optional int32 state = 1;       // 0：平常状态 1：报名状态  2：战前准备  3：开始状态 
+	optional string defendName = 2;  // 守城方
+	optional string attackName = 3;  // 攻城方
+}
+
+message C_GetGuildFights{ //已报名攻城列表
+	
+}
+message S_GetGuildFights{ //已报名攻城列表
+	repeated GuildFightMsg guildFights = 1;
+}
+
+
+message C_GetUnions{ //联盟列表
+
+}
+message S_GetUnions{ //联盟列表
+	optional int64  myUnionId = 1;  // 已加入的联盟
+	repeated UnionMsg unions = 2;  	//联盟列表
+	repeated ApplyUnionMsg applys = 3;  	//联盟列表		
+}
+
+message C_ApplyGuildFight{ //报名城战
+	
+}
+
+message S_ApplyGuildFight{ //报名城战
+	
+}
+
+message C_CreateUnion{ //创建联盟  成功返回联盟列表
+	optional string unionName = 1;  // 联盟名
+}
+
+message C_ApplyUnion{ //申请联盟
+	optional int64  unionId = 1;  // 联盟编号	
+}
+message S_ApplyUnion{ //申请联盟
+	optional int64  unionId = 1;  // 联盟编号	
+}
+
+message C_AgreeJoinUnion{ //同意加入联盟 （只要有权操作， 点击同意就自觉清理当前条）
+	optional int64  guildId = 1;  // 都护府编号	
+}
+message S_AgreeJoinUnion{ //同意加入联盟
+	optional int64  guildId = 1;  // 都护府编号	
+}
+
+message C_SubmitItem { //提交攻城令
+	optional int32  itemNum = 1;  // 提交的数量
+}
+message S_SubmitItem { //提交攻城令
+
+}
+
+message C_EnterGuildFight{ //进入城战
+
+}
+
+message C_GetRevenueData{ //获取税收面板数据
+
+}
+
+message S_GetRevenueData { //获取税收面板数据
+	optional string guildName = 1;  // 占城都护府
+	optional string headerName = 2;  // 城主名称
+	optional int32  allRevenue = 3;  // 昨日总税收额
+	optional int32  revenue = 4;   	 // 未领取税收额
+	optional int32  salaryNum = 5;   // 剩余俸禄份数
+	optional int32  salary = 6;   	 // 可领取俸禄额
+	optional int32  openFB = 7;   	 // 是否开启了凌烟阁 1：是	
+}
+
+message C_ReceiveRevenue { //领取税收
+	
+}
+message S_ReceiveRevenue { //领取税收
+	
+}
+message C_ReceiveSalary { //领取俸禄
+	
+}
+message S_ReceiveSalary { //领取俸禄
+	optional int32  salaryNum = 1;   // 剩余俸禄份数		
+}
+
+message C_ReceiveGift { //领取礼包
+	
+}
+message S_ReceiveGift { //领取礼包
+	
+}
+
+message GuildBuyMsg{ //优惠购买记录
+	optional int32  itemId = 1;   // 物品编号
+	optional int32  buyNum = 2;   // 已被购买个数	
+}
+
+message C_GetGuildBuyData{ //优惠购买记录
+	
+}
+
+message S_GetGuildBuyData{ //优惠购买记录
+	repeated GuildBuyMsg guildBuys = 1;  	//记录列表	
+}
+
+message C_GuildBuy{ //优惠购买
+	optional int32  itemId = 1;   // 物品编号
+	optional int32  itemNum = 2;   // 输入数量	
+}
+message S_GuildBuy{ //优惠购买
+	optional GuildBuyMsg  guildBuy = 1;   // 记录	
+}
+
+message C_GuildFB{ //凌烟阁
+	optional int32  type = 1;   // 1：开启  2：进入	
+}
+message S_GuildFB{ //凌烟阁
+	optional int32  type = 1;   // 1：开启  2：进入	
+}
+
+message C_GetManorData{ //获取领地面板数据
+
+}
+message S_GetManorData{ //获取领地面板数据
+	optional int32  callNum = 1;   //今日领地已召唤次数	
+	optional int32  feedNum = 2;   //当前喂养精华数量	
+}
+
+message C_GuildManor{ //进入领地
+
+}
+
+message C_CallManorBoss{ //召唤boss
+
+}
+message S_CallManorBoss{ //成功召唤boss  callNum++  feedNum=0
+
+}
+
+message C_FeedManorBoss{ //喂养boss
+	optional int32  itemNum = 1;   //道具数量	
+}
+message S_FeedManorBoss{ //喂养boss
+	optional int32  feedNum = 1;   //当前喂养精华数量	
+}

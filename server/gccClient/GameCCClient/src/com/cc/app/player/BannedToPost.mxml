@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" width="358" height="200" title="玩家禁言" color="0x000000" borderAlpha="0.15" creationComplete="creationCompleteHandler()" close="closeBtn_clickHandler()">
+	
+	<fx:Script>
+		<![CDATA[
+            import com.cc.core.Globals;
+            
+            import mx.collections.ArrayCollection;
+            import mx.managers.PopUpManager;
+			
+			[Bindable]
+			public var playerObj:Object;
+			
+			private function closeBtn_clickHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			
+			private function creationCompleteHandler():void
+			{
+			}
+			
+			public function setInfo(obj:Object):void
+			{
+				this.playerObj = obj;
+				playerName.text = playerObj.playerName;
+			}
+			
+			private function okBtn_clickHandler():void
+			{
+				Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.JIN_YAN,{playerID:playerObj.playerID,banTime:int(banTime.text)}));
+				this.closeBtn_clickHandler();
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:Label x="84" y="24" width="64" height="24" text="玩家名字：" verticalAlign="middle"/>
+	<s:Label id="playerName" x="150" y="25" width="138" height="24" verticalAlign="middle"/>
+	<s:Label x="84" y="60" width="64" height="24" text="禁言时间：" verticalAlign="middle"/>
+    <s:TextInput id="banTime" x="150" y="60" width="100" height="22" fontSize="14" maxChars="32"/>
+    <s:Label x="255" y="60" width="64" height="24" text="分" verticalAlign="middle"/>
+	<s:Button id="okBtn" x="90" y="104" label="确定" click="okBtn_clickHandler()"/>
+	<s:Button id="cancel" x="189" y="104" label="取消" click="closeBtn_clickHandler()"/>
+	
+</s:TitleWindow>

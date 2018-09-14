@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="400" height="300" addedToStage="addedToStageHandler(event)" keyDown="buttonkeyDownHandler(event)">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.cc.core.conf.Config;
+			import com.cc.core.manager.AlignType;
+			import com.cc.core.manager.StageManager;
+			import com.cc.core.manager.WindowManager;
+			import com.cc.core.util.DisplayUtil;
+			import flash.events.KeyboardEvent;
+			
+			protected function onLogin():void
+			{
+				var userName:String = nameTxt.text;
+				var password:String = passwordTxt.text;
+				this.dispatchEvent(new LoginEvent(LoginEvent.LOGIN, {userName:userName, password:password}));
+			}
+			
+			
+			public function close():void {
+				WindowManager.instance.hide(this);
+			}
+			
+			private function addedToStageHandler(event:Event):void
+			{
+				StageManager.regResize(onResizeHandler);
+			}
+			
+			private function onResizeHandler():void
+			{
+				var rect:Rectangle = new Rectangle(Config.offsetX, Config.offsetY, Config.width, Config.height);
+				DisplayUtil.align(this, rect, AlignType.MIDDLE_CENTER);
+			}
+			
+			private function buttonkeyDownHandler(event:KeyboardEvent):void
+			{
+				if(event.keyCode == 13){
+					this.onLogin();
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+	</fx:Declarations>
+	<s:Panel id="myPanel" width="400" height="300" horizontalCenter="0" title="中控后台系统" verticalCenter="0">
+		<s:layout>
+			<s:BasicLayout/>
+		</s:layout>
+			<s:HGroup x="113" y="70" verticalAlign="middle">
+				<s:Label text="帐号：" />
+                <s:TextInput id="nameTxt" width="100" text=""/>
+			</s:HGroup>
+			<s:HGroup x="113" y="120" verticalAlign="middle">
+				<s:Label text="密码：" />
+            	<s:TextInput  id="passwordTxt" width="100" text="" displayAsPassword="true"/>
+			</s:HGroup>
+			<s:Button x="152" y="176" label="登录" click="onLogin()"/>
+	</s:Panel>
+</s:Group>

@@ -1,0 +1,60 @@
+option java_package="com.message";
+option java_outer_classname="VipProto";
+
+message S_ActiviteVip {
+	optional int32 vipId = 1; //激活的vipID
+	optional int64 invalidTime = 2; //过期时间
+	optional int32 rewardState = 3; //激活奖励领取状态(0:不可领取, 1:可领取 , 2:已领取[0,0,0])
+	optional int32 playerVipLevel = 4; //玩家当前的等级
+}
+
+message C_GetVipActReward { //领取VIP奖励
+	optional int32 vipId = 1; //vipID
+}
+
+message S_GetVipActReward {	
+	optional int32 vipId = 1; //vipID
+	optional int32 rewardState = 2; //激活奖励领取状态
+}
+
+
+message C_GetPlayerVip { //获取玩家VIP信息
+	
+}
+message S_GetPlayerVip { //获取玩家VIP信息
+	optional int32 vipLevel = 1; //vip等级
+	optional int64 invalidTime = 2; //过期时间
+	repeated int32 rewardState = 3; //奖励领取状态 (0:不可领取, 1:可领取 , 2:已领取[0,0,0])
+}
+
+
+message C_GetDailyReward { //领取每日奖励
+	
+}
+message S_GetDailyReward {	
+	optional int32 state = 1; //奖励领取状态 (0:未领取, 1:已领取）
+}
+
+
+message C_GetDailyRewardState { //每日奖励领取状态
+	
+}
+message S_GetDailyRewardState {	
+	optional int32 state = 1; //每日奖励领取状态 (0:未领取, 1:已领取)
+}
+
+
+message C_GetVipWelfare { //每日VIP福利领取
+	
+}
+message S_GetVipWelfare {	
+	optional int32 state = 1; //每日VIP福利领取状态 (0:未领取, 1:已领取）
+}
+
+
+message C_GetVipWelfareState { //每日VIP福利领取状态
+	
+}
+message S_GetVipWelfareState {	
+	optional int32 state = 1; //每日奖励领取状态 (0:未领取, 1:已领取)
+}

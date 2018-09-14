@@ -1,0 +1,13 @@
+2017-07-15 00:00:02 [ERROR]Unknown column 'day' in 'field list' Query: UPDATE player_sign SET day = 0, reward = null where state = 0  Parameters: []
+java.sql.SQLException: Unknown column 'day' in 'field list' Query: UPDATE player_sign SET day = 0, reward = null where state = 0  Parameters: []
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:490)
+	at org.apache.commons.dbutils.QueryRunner.update(QueryRunner.java:376)
+	at com.db.SimpleSqlSessionTemplate.update(SimpleSqlSessionTemplate.java:136)
+	at com.dao.sign.PlayerSignDAO.resetAllPlayerSign(PlayerSignDAO.java:25)
+	at com.service.impl.SignService.quartzDaily(SignService.java:218)
+	at com.quartz.daily.DailyQuartz.dealDailyOneDetail(DailyQuartz.java:83)
+	at com.quartz.daily.DailyQuartz.common(DailyQuartz.java:36)
+	at com.quartz.daily.DailyQuartz.execute(DailyQuartz.java:30)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:207)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560)

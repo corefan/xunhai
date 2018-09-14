@@ -1,0 +1,36 @@
+2018-07-12 11:53:20 [ERROR]其他异常:userId:22 playerId:18605125140482 msgId:31049
+java.lang.NullPointerException
+	at com.service.impl.GuildService.studyGuildSkill(GuildService.java:1717)
+	at com.action.GuildAction.studyGuildSkill(GuildAction.java:494)
+	at com.core.GameCommandService.executeDisruptorCommand(GameCommandService.java:703)
+	at com.core.disruptor.GameDataHandler.onDisruptorData(GameDataHandler.java:18)
+	at com.core.disruptor.DisruptorMsgHandler.onEvent(DisruptorMsgHandler.java:12)
+	at com.core.disruptor.DisruptorMsgHandler.onEvent(DisruptorMsgHandler.java:1)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:138)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-07-12 11:53:24 [ERROR]其他异常:userId:22 playerId:18605125140482 msgId:31049
+java.lang.NullPointerException
+	at com.service.impl.GuildService.studyGuildSkill(GuildService.java:1717)
+	at com.action.GuildAction.studyGuildSkill(GuildAction.java:494)
+	at com.core.GameCommandService.executeDisruptorCommand(GameCommandService.java:703)
+	at com.core.disruptor.GameDataHandler.onDisruptorData(GameDataHandler.java:18)
+	at com.core.disruptor.DisruptorMsgHandler.onEvent(DisruptorMsgHandler.java:12)
+	at com.core.disruptor.DisruptorMsgHandler.onEvent(DisruptorMsgHandler.java:1)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:138)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-07-12 11:54:54 [ERROR]其他异常:userId:22 playerId:18605125140482 msgId:31049
+java.lang.NullPointerException
+	at com.service.impl.GuildService.studyGuildSkill(GuildService.java:1717)
+	at com.action.GuildAction.studyGuildSkill(GuildAction.java:494)
+	at com.core.GameCommandService.executeDisruptorCommand(GameCommandService.java:703)
+	at com.core.disruptor.GameDataHandler.onDisruptorData(GameDataHandler.java:18)
+	at com.core.disruptor.DisruptorMsgHandler.onEvent(DisruptorMsgHandler.java:12)
+	at com.core.disruptor.DisruptorMsgHandler.onEvent(DisruptorMsgHandler.java:1)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:138)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)

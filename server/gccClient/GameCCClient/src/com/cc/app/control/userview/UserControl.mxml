@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%" creationComplete="creationCompleteHandler()">
+	
+	<fx:Script>
+		<![CDATA[          
+			import com.cc.app.control.model.UserModel;
+			import com.cc.core.Globals;
+			import com.cc.core.util.PopUpEffect;
+			
+			import mx.collections.ArrayCollection;
+			import mx.core.FlexGlobals;
+			import mx.events.FlexEvent;
+			import mx.managers.PopUpManager;
+			
+			private var addPop:AddUserWindow = new AddUserWindow();
+			
+			private function datagrid1_creationCompleteHandler():void
+			{
+				
+			}
+			
+			public function initData(obj:Object):void
+			{
+				var list:ArrayCollection = new ArrayCollection();
+				var arr:Array = JSON.parse(obj.dataList) as Array;
+				if(arr == null || arr.length == 0)return;
+				for each(var obj:Object in arr){
+					list.addItem(obj);
+				}
+				myDataGrid.dataProvider = list;
+			}
+			
+			private function addUserBtn_clickHandler():void
+			{
+				PopUpEffect.Show(addPop,this);
+			}
+			
+			private function creationCompleteHandler():void
+			{
+				
+			}
+			
+		]]>
+	</fx:Script>
+
+	
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	
+	
+	<s:Panel id="myPanel" x="0" y="0" title="用户管理界面" width="100%" height="100%">
+		<s:DataGrid id="myDataGrid" x="132" y="47" width="585" height="595"
+					creationComplete="datagrid1_creationCompleteHandler()" requestedRowCount="4"
+					textAlign="center">
+			<s:columns>
+				<s:ArrayList id="arrList">
+					<s:GridColumn id="userId" width="80" dataField="userID" headerText="用户ID">
+						<s:headerRenderer>  
+							<fx:Component>
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>
+					
+					<s:GridColumn id="userName" width="80" dataField="userName" headerText="用户名">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>
+					
+	<!--				<s:GridColumn id="passWord" width="100" dataField="password" headerText="密码">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>-->
+					
+					<s:GridColumn width="80" dataField="roleName" headerText="角色">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>
+					<!--<s:GridColumn width="80" dataField="Silver" headerText="创建时间"></s:GridColumn>
+					<s:GridColumn width="80" dataField="Bronze" headerText="最后登陆"></s:GridColumn>-->
+					<s:GridColumn width="240" headerText="操作">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+						
+						<s:itemRenderer>  
+							<fx:Component>  
+								<s:GridItemRenderer>  
+									<fx:Script>
+										<![CDATA[
+											import com.cc.app.control.UserControlEvent;
+											import com.cc.core.Globals;
+											import com.cc.core.util.PopUpEffect;
+											
+											import mx.controls.Alert;
+											import mx.core.FlexGlobals;
+											import mx.events.CloseEvent;
+											import mx.managers.PopUpManager;
+											
+											public var changPop:ChangUserWindow = new ChangUserWindow();
+											
+											public function changUserInfo():void 
+											{
+//												Globals.instance.context.dispatchEvent(new UserControlEvent(UserControlEvent.GET_QUXIAN_LIST));
+												
+												var pop:ChangUserWindow = new ChangUserWindow();
+//												PopUpManager.addPopUp(pop,this,true);
+												PopUpEffect.Show(pop,this);
+												pop.x=FlexGlobals.topLevelApplication.stage.stageWidth/2-pop.width/2;
+												pop.y=FlexGlobals.topLevelApplication.stage.stageHeight/2-pop.height/2; 
+												pop.setUserInfo(data);
+												
+											}
+											
+											public function deleteCache():void 
+											{
+												Alert.yesLabel = "确定";
+												Alert.noLabel = "取消";
+												Alert.show("确定删除该用户？","温馨提示",Alert.YES|Alert.NO,this,alertCloseHandler);
+											}
+											
+											private function alertCloseHandler(e:CloseEvent):void
+											{
+												if(e.detail == Alert.YES){
+													Globals.instance.context.dispatchEvent(new UserControlEvent(UserControlEvent.DEL_USER,{userID:data.userID}));
+												}
+											}
+										]]>
+									</fx:Script>
+									
+									<s:HGroup y="2" width="250" horizontalAlign="center">
+										<s:Button label="编辑用户" click="changUserInfo()"/>
+										<s:Button label="删除用户" click="deleteCache()"/>
+									</s:HGroup>  
+								</s:GridItemRenderer>
+							</fx:Component>  
+						</s:itemRenderer>  
+					</s:GridColumn>
+				</s:ArrayList>
+			</s:columns>
+<!--			<s:typicalItem>
+				<fx:Object dataField1="示例数据111" dataField2="示例数据222" dataField3="示例数据333"></fx:Object>
+			</s:typicalItem>
+			<s:ArrayList id="arrlist">
+				<fx:Object dataField1="数据1" dataField2="数据1" dataField3="数据1"></fx:Object>
+				<fx:Object dataField1="数据2" dataField2="数据2" dataField3="数据2"></fx:Object>
+				<fx:Object dataField1="数据3" dataField2="数据3" dataField3="数据3"></fx:Object>
+				<fx:Object dataField1="数据4" dataField2="数据4" dataField3="数据4"></fx:Object>
+			</s:ArrayList>-->
+		</s:DataGrid>
+		<s:Button id="addUserBtn" x="37" y="49" width="77" height="32" label="添加用户" click="addUserBtn_clickHandler()"/>
+		<s:Label x="218" y="7" width="371" height="32" color="#0808F7" fontSize="16" text="用户管理" fontWeight="bold"
+				 textAlign="center" verticalAlign="middle"/>
+	</s:Panel>
+</s:Group>

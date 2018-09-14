@@ -1,0 +1,599 @@
+#!/bin/bash
+#重要！！合服后在获取数据信息时，需要更改截取的字段，当前截取的字段是"state"
+source /etc/profile
+START=$(date "+%s")
+SQL_HOST=127.0.0.1
+SQL_PORT=3306
+SQL_USER=root
+SQL_PASSWD=sktb
+SERVER_GROUP=group
+SQL_UPDATE=update.sql
+SQL_SK_BASE=sk_base.sql
+DATA_DIR=/update
+SERVER_PATH=/home/server
+CLIENT_PATH=/home/client/data
+GS_PATH=$SERVER_PATH/gccserver
+LS_PATH=$SERVER_PATH/loginserver
+PS_PATH=$SERVER_PATH/payserver
+LOG_PATH=/var/log/sktb_log
+[[ ! -d $LOG_PATH ]] && mkdir -p $LOG_PATH
+export TOP_PID=$$
+trap 'exit 1' TERM
+
+function USE_HELP () {
+cat <<EOF
+Usage:
+skctl 	[gccserver] [loginserver] [payserver] [skserver [1] [2-4] [2,3,5]] {[start] [stop] [status] [update] [push]}]
+		[skclient] [sqlskbase] [sqlupdate] {update}
+    gccserver,			全局配置服务器
+    loginserver,		日志服务器
+    payserver,			支付服务器
+    gameserver,			游戏服务器
+    gameclient,			游戏客户端
+    sqlskbase,			sql基础信息更新
+    sqldb,				sql动态信息更新
+
+
+举例:
+	#更新第1和第3台游戏服务器
+	skctl gameserver 1,3 update
+
+	#启动第1到第3台游戏服务器
+	skctl gameserver 1-3 start
+
+	#查询支付服务器状态
+	skctl payserver statu
+
+	#更新游戏客户端
+	skctl gameclient update
+
+	#更新sql基础信息
+	skctl sqlskbase update
+EOF
+}
+
+# 参数$1为更新包名称（例：sk_0001）
+function check_md5 () {
+	ls $DATA_DIR/$1 &>/dev/null
+	if [[ $? -eq "0" ]]; then
+		md5sum -c $DATA_DIR/${1%.*}.md5 &>/dev/null
+		[[ $? == "0" ]] && echo "消息！更新文件$DATA_DIR/${1}验证正确！" || (echo "错误！！更新文件$DATA_DIR/$1校验错误，请手动上传！！" ; kill -s TERM $TOP_PID)
+	else
+		echo "消息！不存在此更新文件：$DATA_DIR/$1"
+		kill -s TERM $TOP_PID
+	fi
+}
+
+# 参数$1为服务名称（例：sk_0001），返回1表示$1的服务进程启动，返回0表示未启动
+function check_java () {
+	PIDFILE=$SERVER_PATH/$1/pidfile
+	S_PID=$(awk 'NR==1{print $1}' $PIDFILE)
+	ps -e | grep ${S_PID} &>/dev/null
+	if [[ $? == "0" ]]; then
+		return 1
+	else
+		return 0
+	fi
+}
+
+# 检查$1的服务状态，参数$1为服务名称（例：sk_0001）
+function check_status () {
+	S_PID=$(awk 'NR==1{print $1}' $SERVER_PATH/$1/pidfile)
+    ps -e | grep $S_PID &>/dev/null && echo "当前$1服务为启动状态！" || echo "当前$1服务为停止状态！"
+}
+
+# 参数$1为服务名称（例：sk_0001）
+function start_server () {
+	check_java $1
+	if [[ $? == 0 ]]; then
+		cd $SERVER_PATH/$1
+	    sh $SERVER_PATH/$1/ctrl.sh start 
+		check_java $1
+		[[ $? == "1" ]] && echo "消息！$1服务已启动！" || echo "错误！！$1服务启动失败！！"
+	else 
+		echo "警告！当前$1服务状态为启动！"
+	fi
+}
+
+# 参数$1为服务名称（例：sk_0001）
+function stop_server () {
+	check_java $1
+	if [[ $? == 0 ]]; then	
+        echo "警告！当前$1状态为停止！"
+    else
+		S_PID=$(awk 'NR==1{print $1}' $SERVER_PATH/$1/pidfile)
+	    kill -15 $S_PID
+	    [[ $? == "0" ]] && echo "消息！$1服务已停止！" || echo "错误！！$1服务停止失败！！"
+    fi
+}
+
+# 参数$1为服务名称（例：sk_0001）
+function update_server () {
+	check_java $1
+	if [[ $? == 0 ]]; then
+		echo "错误！！当前$1状态为启动，无法替换更新包！！"
+		kill -s TERM $TOP_PID
+	else 
+		UPDATE_FILES=${1}.zip
+		check_md5 $UPDATE_FILES
+		cp -rf $SERVER_PATH/$1/bin{,_bak} &>/dev/null
+		if [[ $? == "0" ]]; then 
+			unzip -oq $DATA_DIR/$UPDATE_FILES -d $SERVER_PATH/$1/ 2>> $LOG_PATH/update_server_$1_err.log
+			[[ $? == "0" ]] && echo "消息！更新$1目录下bin目录文件成功！" || echo "消息！更新$1目录下bin目录文件失败！"
+		else
+			echo "错误！！备份$1目录下bin目录时出错！！"
+		fi
+	fi	
+}
+
+# 参数$1为服务IP地址
+function update_client () {
+	for i in {"android.zip","ios.zip"}; do
+		check_md5 $i
+		ansible $SERVER_GROUP -m shell -a "[[ ! -d /home/client/data/${i%.*} ]] && mkdir -p /home/client/data/${i%.*} || cp -rf /home/client/data/${i%.*}{,_bak}" >>$LOG_PATH/update_client.log
+		date >>$LOG_PATH/update_client.log && ansible $SERVER_GROUP -m unarchive -a "src=$DATA_DIR/$i dest=$CLIENT_PATH/${i%.*}/" >>$LOG_PATH/update_client.log 2>$LOG_PATH/update_client_err.log
+		[[ $? == "0" && ! -s $LOG_PATH/update_client_err.log ]] && echo "消息！${i%.*}客户端更新成功！" || echo "错误！！${i%.*}客户端更新失败！!"
+	done
+}
+
+# 此函数直接执行sk_base.sql语句
+function sqlskbase () {	
+	UPDATE_FILES=$DATA_DIR/$SQL_SK_BASE
+	if [[ -f $UPDATE_FILES ]]; then
+		check_md5 $SQL_SK_BASE
+		echo "正在导入sk_base.sql静态数据..."
+		mysql -h$SQL_HOST -P$SQL_PORT -u$SQL_USER -p$SQL_PASSWD sk_base < $UPDATE_FILES 2>> $LOG_PATH/sqlskbase_err.log
+		[[ $? == "0" ]] && echo "消息！数据库sk_base更新成功！！" || echo "错误！！数据库sk_base更新失败！！" 
+	else
+		echo "错误！！动态更新语句sk_base.sql不存在！"
+	fi
+}
+
+# 此函数直接执行sk_update.sql语句
+function sqldb () {
+	if [[ -f $DATA_DIR/$SQL_UPDATE ]]; then
+		check_md5 $SQL_UPDATE	
+		HOST=$(awk '/'$1'/{print $2}' $INFO)
+		for i in  $(mysql -h$HOST -P$SQL_PORT -u$SQL_USER -p$SQL_PASSWD -e "show databases;" | awk '/sk_game_/'); do
+			if [[ $(echo ${1##*_}) == $(echo ${i##*_}) ]]; then
+				echo "正在导入update.sql动态语句到$i"
+				mysql -h$HOST -P$SQL_PORT -u$SQL_USER -p$SQL_PASSWD $i < $DATA_DIR/$SQL_UPDATE	2>> $LOG_PATH/sqldb_${i}_err.log
+				[[ $? == "0" ]] && echo "消息！数据库$i更新成功!" || echo "错误！！数据库$i更新失败！" 
+			fi
+		done
+		wait
+	else
+		echo "错误！！动态更新语句update.sql不存在！"
+	fi
+}
+
+function merge_db () {
+	SIP=$(awk '/sk_'$(printf "%04d" $1)'/{print $2}' $INFO)
+	if [[ -n $SIP ]]; then
+		SDB=sk_game_$(printf "%04d" $1)
+		DDB=sk_game_$(printf "%04d" $2)
+		mysqldump -t -h$SIP -P${SQL_PORT} -u${SQL_USER} -p${SQL_PASSWD} $SDB | mysql -h$DIP -P${SQL_PORT} -u${SQL_USER} -p${SQL_PASSWD} $DDB 2>$LOG_PATH/merge_${SDB}_err.log
+		if [[ $? == "0" && ! -s $LOG_PATH/merge_${1}_err.log ]]; then
+			echo "消息！数据库$SDB合并到$DDB成功！"
+		else
+			echo "错误！！数据库$SDB合并到$DDB失败！"
+		fi
+	else
+		echo "警告！！源数据库$SDB不存在或已合并！"
+	fi
+}
+
+# 参数$1为服务名列表（例：sk_0001）
+function start_sk_server () {
+	for i in $1; do
+		HOST=$(awk '/'$i'/{print $2}' $INFO)
+		ansible $HOST -m shell -a "ps -ef | grep $i | grep -v grep" &>>$LOG_PATH/gameserver_start.log
+		if [[ $? == "0" ]]; then
+			echo "警告！当前$i服务状态为启动！"
+		else
+			ansible $HOST -m shell -a "cd $SERVER_PATH/$i/ && sh $SERVER_PATH/$i/ctrl.sh start" &>>$LOG_PATH/gameserver_start.log
+			ansible $HOST -m shell -a "ps -ef | grep $i | grep -v grep" &>>$LOG_PATH/gameserver_start.log
+			[[ $? == "0" ]] && echo "消息！服务$i在IP为$HOST的服务器启动成功！" || echo "错误！！服务$i在IP为$HOST的服务器启动失败！！"
+		fi
+	done
+}
+
+# 参数$1为服务名列表（例：sk_0001）
+function stop_sk_server () {
+	for i in $1; do
+		HOST=$(awk '/'$i'/{print $2}' $INFO)
+		ansible $HOST -m shell -a "ps -ef | grep $i | grep -v grep" &>>$LOG_PATH/gameserver_stop.log
+		if [[ $? == "0" ]]; then
+			ansible $HOST -m shell -a "kill -15 $(awk 'NR==1{print $1}' $SERVER_PATH/$1/pidfile)" &>>$LOG_PATH/gameserver_stop.log
+			ansible $HOST -m shell -a "ps -ef | grep $i | grep -v grep" >>$LOG_PATH/gameserver_stop.log 2> $LOG_PATH/gameserver_stop_${i}_err.log
+			[[ $? == "0" && ! -s $LOG_PATH/gameserver_stop_${i}_err.log ]] && echo "消息！服务$i启动成功！" || echo "错误！！服务$i启动失败！！"
+		else
+			echo "警告！当前$1状态为停止！"
+		fi
+	done
+}
+
+# 参数$1为服务名列表（例：sk_0001）
+function status_sk_server () {
+	for i in $1; do
+		HOST=$(awk '/'$i'/{print $2}' $INFO)
+		ansible $HOST -m shell -a "ps -ef | grep $i | grep -v grep" &>>$LOG_PATH/gameserver_status.log
+		if [[ $? == "0" ]]; then
+			echo "当前$i服务为启动状态！" 
+		else
+			echo "当前$i服务为停止状态！"
+		fi
+	done
+}
+
+# 参数$1为服务名列表（例：sk_0001）
+function update_sk_server () {
+	for i in $1; do
+		HOST=$(awk '/'$i'/{print $2}' $INFO)
+		ansible $HOST -m shell -a "[[ -d $SERVER_PATH/$i/bin_bak ]] && rm -rf $SERVER_PATH/$i/bin_bak && cp -rf $SERVER_PATH/$i/bin{,_bak} || cp -rf $SERVER_PATH/$i/bin{,_bak}" >>$LOG_PATH/update_sk_server.log 2>$LOG_PATH/update_sk_server_${i}_err.log
+		ansible $HOST -m shell -a "unzip -oq $DATA_DIR/skgame.zip -d $SERVER_PATH/$i/" >>$LOG_PATH/update_sk_server.log 2>$LOG_PATH/update_sk_server_${i}_err.log
+		[[ $? == "0" && ! -s $LOG_PATH/update_sk_server_$i_err.log ]] && echo "消息！服务端更新包在IP为$HOST目录为${i}的服务器更新成功！" || echo "错误！！服务端更新包在IP为$HOST目录为${i}的服务器更新失败！！"
+	done
+}
+
+
+case $1 in
+	gccserver )
+		case $2 in
+			start )
+				start_server gccserver
+				;;
+			stop )
+				stop_server	gccserver
+				;;
+			status )
+				check_status gccserver
+				;;
+			update )
+				update_server gccserver
+				;;
+			* )
+				echo "Invalid Option!!"
+				USE_HELP && exit 1
+				;;
+		esac
+		;;
+	loginserver )
+		case $2 in
+			start )
+				start_server loginserver
+				;;
+			stop )
+				stop_server loginserver
+				;;
+			status )
+				check_status loginserver
+				;;
+			update )
+				update_server loginserver
+				;;
+			* )
+				echo "Invalid Option!!"
+				USE_HELP && exit 1
+				;;
+		esac
+		;;
+	payserver )
+		case $2 in
+			start )
+				start_server payserver
+				;;
+			stop )
+				stop_server payserver
+				;;
+			status )
+				check_status payserver
+				;;
+			update )
+				update_server payserver
+				;;
+			* )
+				echo "Invalid Option!!"
+				USE_HELP && exit 1
+				;;
+		esac
+		;;
+	gameserver )
+		INFO=/tmp/.info.txt
+		mysql -h${SQL_HOST} -P${SQL_PORT} -u${SQL_USER} -p${SQL_PASSWD} sk_gcc -e "select gameSite,gameInnerIp,state from config_server where state=1"| column -t >$INFO
+		[[ $? == "0" ]] || (echo "错误！获取gccserver数据库信息失败！！"; kill -s TERM $TOP_PID)
+		S_NAME=$(awk 'NR>1{print $1}' $INFO | sort | uniq)
+
+		if [[ $2 = "push" ]]; then
+			RIP=$(awk 'NR>1{print $2}' $INFO | sort | uniq)
+			for i in $RIP; do
+				ansible $i -m copy -a "src=$DATA_DIR/skgame.zip dest=$DATA_DIR/" >>$LOG_PATH/gameserver_push.log 2>/tmp/.err.log
+				[[ $? == "0" && ! -s /tmp/.err.log ]] && echo "消息！服务端更新文件上传至$i成功!" || echo "错误！！服务端更新文件上传至$i失败！！"
+			done
+		elif [[ $2 = "update" ]]; then
+			update_sk_server "$S_NAME"
+		elif [[ $2 = "start" ]]; then
+			start_sk_server "$S_NAME"
+		elif [ "$2" -eq "$2" ] 2>/dev/null ; then
+			case $3 in
+					start )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$2" == "$SN" ]]; then
+								start_sk_server $a
+							fi
+						done
+						;;
+					stop )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$2" == "$SN" ]]; then
+								stop_sk_server $a
+							fi
+						done
+						;;
+					status )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$2" == "$SN" ]]; then
+								status_sk_server $a
+							fi
+						done
+						;;
+					update )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$2" == "$SN" ]]; then
+								update_sk_server $a
+							fi
+						done
+						;;
+					* )
+						echo "Invalid Option!!"
+						USE_HELP && exit 1
+						;;
+			esac
+		elif [[ "$2" =~ "-" ]]; then
+			M=$(echo ${2%-*})
+			N=$(echo ${2#*-})
+			for i in $(seq $M $N); do
+				case $3 in
+					start )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								start_sk_server $a
+							fi
+						done
+						;;
+					stop )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								stop_sk_server $a
+							fi
+						done
+						;;
+					status )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								status_sk_server $a
+							fi
+						done
+						;;
+					update )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								update_sk_server $a
+							fi
+						done
+						;;
+					* )
+						echo "Invalid Option!!"
+						USE_HELP && exit 1
+						;;
+				esac
+			done
+		elif [[ $2 =~ "," ]]; then
+			OLD_IFS=$IFS
+			IFS=","
+			for i in $2; do
+				IFS=$OLD_IFS
+				case $3 in
+					start )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								start_sk_server $a
+							fi
+						done
+						;;
+					stop )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								stop_sk_server $a
+							fi
+						done
+						;;
+					status )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								status_sk_server $a
+							fi
+						done
+						;;
+					update )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								update_sk_server $a
+							fi
+						done
+						;;
+					* )
+						echo "Invalid Option!!"
+						USE_HELP && exit 1
+						;;
+				esac
+			done
+		fi			
+		;;
+	gameclient )
+		case $2 in
+			update )
+				update_client
+			;;
+			* )
+				echo "Invalid Option!!"
+				USE_HELP && exit 1
+			;;
+		esac
+		;;		
+	sqlskbase )
+		INFO=/tmp/.info.txt
+		mysql -h${SQL_HOST} -P${SQL_PORT} -u${SQL_USER} -p${SQL_PASSWD} sk_gcc -e "select gameSite,gameInnerIp,state from config_server where state=1"| column -t >$INFO
+		[[ $? == "0" ]] || (echo "错误！获取gccserver数据库信息失败！！"; kill -s TERM $TOP_PID)
+		S_NAME=$(awk 'NR>1{print $1}' $INFO | sort | uniq)
+
+		case $2 in
+			backup )
+				echo "数据库备份功能正在完善中"
+				;;
+			update )
+				sqlskbase
+				;;
+			* )
+				echo "Invalid Option!!"
+				USE_HELP && exit 1
+				;;
+		esac
+		;;
+	sqldb )
+		INFO=/tmp/.info.txt
+		mysql -h${SQL_HOST} -P${SQL_PORT} -u${SQL_USER} -p${SQL_PASSWD} sk_gcc -e "select gameSite,gameInnerIp,state from config_server where state=1"| column -t >$INFO
+		[[ $? == "0" ]] || (echo "错误！获取gccserver数据库信息失败！！"; kill -s TERM $TOP_PID)
+		S_NAME=$(awk 'NR>1{print $1}' $INFO | sort | uniq)
+
+		if [[ $2 == "backup" ]]; then
+			echo "数据库备份功能正在完善中"
+		elif [[ $2 == "update" ]]; then
+			for i in $S_NAME; do
+				sqldb $i 
+			done
+		elif [ "$2" -eq "$2" ] 2>/dev/null ; then
+			case $3 in
+				backup )
+					echo "数据库备份功能正在完善中"
+					;;
+				update )
+					for a in ${S_NAME}; do
+						SN=$(echo ${a#*_}|sed 's/^0*//g')
+						if [[ "$2" == "$SN" ]]; then
+							sqldb  $a
+						fi
+					done
+					;;
+				* )
+					echo "Invalid Option!!"
+					USE_HELP && exit 1
+					;;
+			esac
+		elif [[ "$2" =~ "-" ]]; then
+			M=$(echo ${2%-*})
+			N=$(echo ${2#*-})
+			for i in $(seq $M $N); do
+				case $3 in
+					backup )
+						echo "数据库备份功能正在完善中"
+						;;
+					update )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								sqldb  $a
+							fi
+						done
+						;;
+					* )
+						echo "Invalid Option!!"
+						USE_HELP && exit 1
+						;;
+				esac
+			done
+		elif [[ $2 =~ "," ]]; then
+			OLD_IFS=$IFS
+			IFS=","
+			for i in $2; do
+				IFS=$OLD_IFS
+				case $3 in
+					backup )
+						echo "数据库备份功能正在完善中"
+						;;
+					update )
+						for a in ${S_NAME}; do
+							SN=$(echo ${a#*_}|sed 's/^0*//g')
+							if [[ "$i" == "$SN" ]]; then
+								sqldb $a
+							fi
+						done
+						;;
+					* )
+						echo "Invalid Option!!"
+						USE_HELP && exit 1
+						;;
+				esac
+			done
+		fi			
+		;;
+	merge )
+		INFO=/tmp/.info.txt
+		mysql -h${SQL_HOST} -P${SQL_PORT} -u${SQL_USER} -p${SQL_PASSWD} sk_gcc -e "select gameSite,gameInnerIp,state from config_server where state=1"| column -t >$INFO
+		[[ $? == "0" ]] || (echo "错误！获取gccserver数据库信息失败！！"; kill -s TERM $TOP_PID)
+		S_NAME=$(awk 'NR>1{print $1}' $INFO | sort | uniq)
+		RIP=$(awk 'NR>1{print $2}' $INFO | sort | uniq)
+
+		if [[ $3 == "to" ]] && [ "$4" -eq "$4" ]; then
+			for DIP in $RIP; do
+				#判断以第四个参数为编号的数据库是否存在
+				if mysql -h$DIP -P$SQL_PORT -u$SQL_USER -p$SQL_PASSWD -e "use sk_game_$(printf "%04d" $4);" &>/dev/null; then
+					if [ "$2" -eq "$2" ] 2>/dev/null ; then
+						merge_db $2 $4
+					elif [[ "$2" =~ "-" ]]; then
+						M=$(echo ${2%-*})
+						N=$(echo ${2#*-})
+						for i in $(seq $M $N); do
+							merge_db $i $4
+						done
+					elif [[ $2 =~ "," ]]; then
+						OLD_IFS=$IFS
+						IFS=","
+						for i in $2; do
+							IFS=$OLD_IFS
+							merge_db $i $4
+						done					
+					fi
+				else
+					echo "错误！！目标数据库不存在！"
+				fi
+			done
+		else
+			echo "Invalid Option!!"
+			USE_HELP && exit 1			
+		fi
+		;;
+	-h )
+		USE_HELP
+		exit 0
+		;;
+	* )
+		echo "Invalid Option!!"
+		USE_HELP && exit 1
+		;;
+esac
+
+END=$(date "+%s")
+echo "此次用时共计：$( expr $END - $START)s"

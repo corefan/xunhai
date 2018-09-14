@@ -1,0 +1,46 @@
+package com.quartz;
+
+import org.quartz.CronScheduleBuilder;
+import org.quartz.CronTrigger;
+import org.quartz.JobBuilder;
+import org.quartz.JobDetail;
+import org.quartz.Scheduler;
+import org.quartz.SchedulerFactory;
+import org.quartz.TriggerBuilder;
+import org.quartz.impl.StdSchedulerFactory;
+
+
+/**
+ * @author ken
+ * 2014-4-23
+ * 调度	
+ */
+public class QuartzService {
+
+	private static Scheduler scheduler = null;
+
+	public static void start() throws Exception {
+
+		SchedulerFactory factory = new StdSchedulerFactory();
+
+		scheduler = factory.getScheduler();
+
+//		// 5分钟调度
+//		JobDetail fiveMinDetail = JobBuilder.newJob(FiveMinQuartz.class).withIdentity("fiveMinDetail", "quartzGroup").build();
+//				CronTrigger fiveMinTrigger = TriggerBuilder.newTrigger().withIdentity("fiveMinTrigger", "quartzGroup")
+//						.withSchedule(CronScheduleBuilder.cronSchedule("13 3/5 * * * ?")).build();
+//				scheduler.scheduleJob(fiveMinDetail, fiveMinTrigger);
+
+		// 半小时调度
+		JobDetail halfHourDetail = JobBuilder.newJob(HalfHourQuartz.class).withIdentity("halfHourDetail", "quartzGroup").build();
+		CronTrigger halfHourTrigger = TriggerBuilder.newTrigger().withIdentity("halfHourTrigger", "quartzGroup")
+				.withSchedule(CronScheduleBuilder.cronSchedule("5 26/30 * * * ?")).build();
+		scheduler.scheduleJob(halfHourDetail, halfHourTrigger);
+
+		scheduler.start();
+	}
+	
+	public static void stop() throws Exception { 
+		scheduler.shutdown(true);
+	}
+}

@@ -1,0 +1,19 @@
+option java_package="com.message";
+option java_outer_classname="WeekactivityProto";
+message ActivityMsg{ // 活动信息
+	optional int32 id = 1; // 活动编号
+	optional int32 enterCount = 2; // 已进入次数
+	optional int32 state = 3; //活动状态 0:开启 1:关闭
+}
+
+message C_GetActivityList { //获取活动列表
+	
+}
+
+message S_GetActivityList { //获取活动列表
+	repeated ActivityMsg activitys = 1; 
+}
+
+message C_EnterActivity{ //进入活动
+	optional int32 id = 1; // 活动编号	
+}

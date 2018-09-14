@@ -1,0 +1,65 @@
+package com.core;
+
+import java.util.concurrent.TimeUnit;
+
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.servlet.ServletHolder;
+import org.eclipse.jetty.util.thread.ExecutorThreadPool;
+
+import com.common.Config;
+import com.core.servlet.CodeServlet;
+import com.core.servlet.FilterServlet;
+
+/**
+ * @author barsk
+ * 2014-3-7
+ * web服务
+ */
+public class WebServer {
+
+	private static Server server;
+
+	private static int REQUEST_SIZE = 8192;
+
+	/**
+	 * 开启服务
+	 * */
+	public static void startServer() {
+
+		try {
+			
+			server = new Server(Config.ACT_CODE_PORT);
+			server.getConnectors()[0].setRequestHeaderSize(REQUEST_SIZE);
+			
+			// 线程
+			ExecutorThreadPool executorThreadPool = new ExecutorThreadPool(20, 100, 10, TimeUnit.MINUTES);
+			
+			ServletContextHandler contextHandler = new ServletContextHandler(ServletContextHandler.SESSIONS);
+			contextHandler.setContextPath("/");
+			
+			contextHandler.addFilter(FilterServlet.class, "/*", null);
+			// 注册servlet
+			contextHandler.addServlet(new ServletHolder(new CodeServlet()), "/code");
+
+			server.setThreadPool(executorThreadPool);
+			server.setHandler(contextHandler);
+			server.start();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 停止服务
+	 * */
+	public static void stopServer() {
+		
+		try {
+			server.stop();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+}

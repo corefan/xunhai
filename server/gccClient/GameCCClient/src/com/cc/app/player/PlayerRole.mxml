@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" width="358" height="264" title="修改玩家角色" color="0x000000" borderAlpha="0.15" creationComplete="creationCompleteHandler()" close="closeBtn_clickHandler()">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.player.model.PlayerModel;
+			import com.cc.core.Globals;
+			
+			import mx.collections.ArrayCollection;
+			import mx.managers.PopUpManager;
+			
+			[Bindable]
+			private var nameList:ArrayCollection = new ArrayCollection(["玩家","GM","引导员","内部账号"]);
+			public var playerObj:Object;
+			
+			private function closeBtn_clickHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			
+			private function creationCompleteHandler():void
+			{
+				dropList.dataProvider = nameList;
+				dropList.selectedIndex = 0;
+			}
+			
+			public function setInfo(obj:Object):void
+			{
+				this.playerObj = obj;
+				playerName.text = playerObj.playerName;
+				currentRole.text = PlayerModel.getTypeName(playerObj.playerType);
+			}
+			
+			private function addBtn_clickHandler():void
+			{
+				var index:int = dropList.selectedIndex + 1;
+				var typeName:String = PlayerModel.getTypeName(index);
+				Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.UPDATE_PLYAER_ROLE,{playerID:playerObj.playerID,name:playerObj.playerName,playerType:index,typeName:typeName}));
+				
+				this.closeBtn_clickHandler();
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:Label x="72" y="24" width="64" height="24" text="玩家名字：" verticalAlign="middle"/>
+	<s:Label id="playerName" x="149" y="23" width="138" height="24" verticalAlign="middle"/>
+	<s:Label id="currentRole" x="149" y="60" width="138" height="24" verticalAlign="middle"/>
+	<s:Label x="71" y="60" width="64" height="24" text="当前角色：" verticalAlign="middle"/>
+	<s:Label x="84" y="120" width="64" height="24" text="修改角色：" verticalAlign="middle"/>
+	<s:DropDownList id="dropList" x="162" y="121" selectedIndex="0"></s:DropDownList>
+	<s:Button id="addBtn" x="90" y="184" label="修改" click="addBtn_clickHandler()"/>
+	<s:Button id="cancel" x="189" y="184" label="取消" click="closeBtn_clickHandler()"/>
+	
+</s:TitleWindow>

@@ -1,0 +1,40 @@
+package com.constant;
+
+/**
+ * @author barsk
+ * 2014-5-20
+ * 激活码类型	
+ */
+public class CodeConstant {
+
+	/** bug建议大礼包 */
+	public static final int CODE_10 = 10;
+	/** 好友齐闯大礼包 */
+	public static final int CODE_20 = 20;
+	/** 百事可通礼包 */
+	public static final int CODE_30 = 30;
+	/** 神秘礼包 */
+	public static final int CODE_40 = 40;
+	/** 论坛礼包 */
+	public static final int CODE_50 = 50;
+	/** 新手礼包  */
+	public static final int CODE_60 = 60;
+	/** 超级会员礼包 */
+	public static final int CODE_70 = 70;
+	/** 神之王座Cwan独家礼包 */
+	public static final int CODE_80 = 80;
+	/** 神之王座叶子猪独家礼包 */
+	public static final int CODE_90 = 90;
+	/** 神之王座17173独家礼包 */
+	public static final int CODE_100 = 100;
+	/** 神之王座07073独家礼包 */
+	public static final int CODE_110 = 110;
+	/** 神之王座40407独家礼包 */
+	public static final int CODE_120 = 120;
+	/** 神之王座265G独家礼包 */
+	public static final int CODE_130 = 130;
+	/** 神之王座媒体礼包 */
+	public static final int CODE_140 = 140;
+	/** 补偿礼包 */
+	public static final int CODE_150 = 150;
+}

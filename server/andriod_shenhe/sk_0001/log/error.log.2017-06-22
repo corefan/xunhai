@@ -1,0 +1,2491 @@
+2017-06-22 09:04:57 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useGiftItem(BagService.java:1248)
+	at com.service.impl.BagService.useItem(BagService.java:331)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 09:11:47 [ERROR]其他异常:playerID:5836
+java.lang.NullPointerException
+	at com.service.impl.BagService.useGiftItem(BagService.java:1248)
+	at com.service.impl.BagService.useItem(BagService.java:331)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 09:11:48 [ERROR]其他异常:playerID:5836
+java.lang.NullPointerException
+	at com.service.impl.BagService.useGiftItem(BagService.java:1248)
+	at com.service.impl.BagService.useItem(BagService.java:331)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 09:11:48 [ERROR]其他异常:playerID:5836
+java.lang.NullPointerException
+	at com.service.impl.BagService.useGiftItem(BagService.java:1248)
+	at com.service.impl.BagService.useItem(BagService.java:331)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 09:17:31 [ERROR]其他异常:playerID:5836
+java.lang.NullPointerException
+	at com.service.impl.TradeService.getPlayerTradeList(TradeService.java:582)
+	at com.action.TradeAction.getPlayerTradeList(TradeAction.java:96)
+	at com.command.trading.GetPlayerTradeListCMD.excute(GetPlayerTradeListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 09:41:41 [ERROR]其他异常:playerID:5834
+java.lang.NullPointerException
+	at com.service.impl.TradeService.getPlayerTradeList(TradeService.java:582)
+	at com.action.TradeAction.getPlayerTradeList(TradeAction.java:96)
+	at com.command.trading.GetPlayerTradeListCMD.excute(GetPlayerTradeListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 09:51:02 [ERROR]tidyBag ITEM is null with id is 11435
+2017-06-22 10:19:06 [ERROR]tidyBag ITEM is null with id is 11496
+2017-06-22 10:24:37 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:38 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:24:38 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:38 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:40 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:41 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:42 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:42 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:44 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:44 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:24:45 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:46 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:47 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:47 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:49 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:50 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:50 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:50 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:24:51 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:53 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:54 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:55 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:57 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:24:57 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:57 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:58 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:24:59 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:00 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:00 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:02 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:03 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:25:03 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:04 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:05 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:06 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:06 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:08 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:09 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:25:09 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:10 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:10 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:12 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:12 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:13 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:14 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:15 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:15 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:15 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:25:17 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:17 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:18 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:19 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:21 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:21 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:22 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:22 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:25:23 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:24 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:24 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:26 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:27 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:28 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:28 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:25:28 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:30 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:30 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:31 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:32 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:34 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:34 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:35 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:25:35 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:36 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:37 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:37 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:39 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:40 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:41 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:25:41 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:41 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:43 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:44 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:44 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:46 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:46 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:47 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:48 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:25:48 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:49 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:49 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:51 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:51 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:52 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:53 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:54 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:25:54 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:54 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:56 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:56 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:57 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:58 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:59 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:25:59 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:00 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:26:01 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:02 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:02 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:04 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:04 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:05 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:06 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:26:06 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:07 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:07 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:09 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:09 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:10 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:11 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:12 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:12 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:13 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:26:14 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:14 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:15 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:16 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:17 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:17 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:19 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:26:19 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:20 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:20 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:26:22 [ERROR]其他异常:playerID:5868
+java.lang.NullPointerException
+2017-06-22 10:54:10 [ERROR]其他异常:playerID:5872
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BattleService.dealSkill(BattleService.java:415)
+	at com.service.impl.BattleService.useSkill(BattleService.java:317)
+	at com.action.BattleAction.skillResult(BattleAction.java:64)
+	at com.command.battle.SkillResultCMD.excute(SkillResultCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:54:15 [ERROR]其他异常:playerID:5872
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BattleService.dealSkill(BattleService.java:415)
+	at com.service.impl.BattleService.useSkill(BattleService.java:317)
+	at com.action.BattleAction.skillResult(BattleAction.java:64)
+	at com.command.battle.SkillResultCMD.excute(SkillResultCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:54:22 [ERROR]其他异常:playerID:5872
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BattleService.dealSkill(BattleService.java:415)
+	at com.service.impl.BattleService.useSkill(BattleService.java:317)
+	at com.action.BattleAction.skillResult(BattleAction.java:64)
+	at com.command.battle.SkillResultCMD.excute(SkillResultCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:54:34 [ERROR]其他异常:playerID:5872
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BattleService.dealSkill(BattleService.java:415)
+	at com.service.impl.BattleService.useSkill(BattleService.java:317)
+	at com.action.BattleAction.skillResult(BattleAction.java:64)
+	at com.command.battle.SkillResultCMD.excute(SkillResultCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:54:37 [ERROR]其他异常:playerID:5872
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BattleService.dealSkill(BattleService.java:415)
+	at com.service.impl.BattleService.useSkill(BattleService.java:317)
+	at com.action.BattleAction.skillResult(BattleAction.java:64)
+	at com.command.battle.SkillResultCMD.excute(SkillResultCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:54:42 [ERROR]其他异常:playerID:5872
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BattleService.dealSkill(BattleService.java:415)
+	at com.service.impl.BattleService.useSkill(BattleService.java:317)
+	at com.action.BattleAction.skillResult(BattleAction.java:64)
+	at com.command.battle.SkillResultCMD.excute(SkillResultCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:54:53 [ERROR]其他异常:playerID:5872
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BattleService.dealSkill(BattleService.java:415)
+	at com.service.impl.BattleService.useSkill(BattleService.java:317)
+	at com.action.BattleAction.skillResult(BattleAction.java:64)
+	at com.command.battle.SkillResultCMD.excute(SkillResultCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:55:43 [ERROR]其他异常:playerID:5872
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BattleService.dealSkill(BattleService.java:415)
+	at com.service.impl.BattleService.useSkill(BattleService.java:317)
+	at com.action.BattleAction.skillResult(BattleAction.java:64)
+	at com.command.battle.SkillResultCMD.excute(SkillResultCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 10:55:58 [ERROR]其他异常:playerID:5872
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BattleService.dealSkill(BattleService.java:415)
+	at com.service.impl.BattleService.useSkill(BattleService.java:317)
+	at com.action.BattleAction.skillResult(BattleAction.java:64)
+	at com.command.battle.SkillResultCMD.excute(SkillResultCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:05:14 [ERROR]tidyBag ITEM is null with id is 11502
+2017-06-22 11:35:19 [ERROR]monster is null with monsterId is 340031 and refreshMonsterId is 400901
+2017-06-22 11:35:19 [ERROR]其他异常:playerID:5834
+java.lang.NullPointerException
+	at com.service.impl.MonsterService.initMonsterPuppets(MonsterService.java:672)
+	at com.service.impl.MonsterService.refreshMonsters(MonsterService.java:483)
+	at com.service.impl.SceneService.initScene(SceneService.java:258)
+	at com.service.impl.SceneService.enterScene(SceneService.java:412)
+	at com.service.impl.InstanceService.enterInstance(InstanceService.java:191)
+	at com.action.InstanceAction.enterInstance(InstanceAction.java:36)
+	at com.command.instance.EnterInstanceCMD.excute(EnterInstanceCMD.java:11)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:49:52 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:49:54 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:49:54 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:49:55 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:49:56 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:49:56 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:49:56 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:49:57 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:49:58 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:49:59 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:49:59 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:00 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:01 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:01 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:02 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:03 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:03 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:04 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:05 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:05 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:06 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:07 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:08 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:08 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:08 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:09 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:10 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:11 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:12 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:12 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:13 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:14 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:14 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:14 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:15 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:16 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:17 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:17 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:18 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:19 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:20 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:21 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:21 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:21 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:22 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:23 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:23 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:24 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:25 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:26 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:26 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:27 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:27 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:28 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:28 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:29 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:30 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:31 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:32 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:32 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:33 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:33 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:34 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:35 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:35 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:36 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:37 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:37 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:38 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:39 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:40 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:40 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:41 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:41 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:42 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:43 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:44 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:44 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:45 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:46 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:46 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:46 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:47 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:48 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:49 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:50 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:50 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:51 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:52 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:52 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:53 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:53 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:54 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:55 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:55 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:56 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:57 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:58 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:59 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:50:59 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:50:59 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:00 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:01 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:02 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:02 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:03 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:04 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:04 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:05 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:51:05 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:06 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:07 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:08 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:08 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:09 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:10 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:10 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:11 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:11 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:51:12 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:13 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:13 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:14 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:15 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:16 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:17 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:17 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:18 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:51:18 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:19 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:19 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:20 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:21 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:22 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:22 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:24 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:25 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:25 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:51:25 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:25 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:26 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:27 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:28 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:28 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:29 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:30 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:31 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:31 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:51:31 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:32 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:33 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:34 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:34 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:35 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:36 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:37 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:51:37 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:37 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:38 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:39 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:40 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:40 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:41 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:42 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:42 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:43 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:51:44 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:44 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:45 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:46 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:46 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:47 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:48 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:49 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:49 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:51:49 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:50 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:51 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:52 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:53 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:53 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:54 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:55 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:55 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:56 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:51:56 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:57 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:58 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:58 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:51:59 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:00 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:00 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:01 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:02 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:02 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:03 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:04 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:04 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:05 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:06 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:07 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:07 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:08 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:09 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:09 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:10 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:10 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:11 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:12 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:13 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:13 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:14 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:15 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:15 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:16 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:16 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:17 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:18 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:18 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:19 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:20 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:21 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:21 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:22 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:22 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:23 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:24 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:25 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:25 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:26 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:27 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:27 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:27 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:28 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:29 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:30 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:31 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:31 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:32 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:33 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:33 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:34 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:34 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:35 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:36 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:37 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:38 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:38 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:39 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:40 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:40 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:40 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:41 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:42 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:43 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:43 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:44 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:45 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:45 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:46 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:47 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:47 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:48 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:49 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:49 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:50 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:51 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:52 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:52 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:52 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:53 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:54 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:55 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:55 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:56 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:57 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:58 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:58 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:52:58 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:52:59 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:00 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:01 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:01 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:02 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:03 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:04 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:05 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:05 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:53:05 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:06 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:07 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:07 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:08 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:09 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:10 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:10 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:11 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:53:11 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:12 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:13 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:14 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:14 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:15 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:16 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:16 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:17 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:53:17 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:18 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:19 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:19 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:20 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:21 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:22 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:23 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:23 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:53:23 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:24 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:25 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:25 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:26 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:27 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:28 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:28 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:29 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:53:29 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:30 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:31 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:32 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:32 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:33 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:34 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:34 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:35 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:36 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:53:36 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:37 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:37 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:38 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:39 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:40 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:41 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:41 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:42 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:42 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:53:43 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:43 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:44 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:45 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:46 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:46 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:47 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:48 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:48 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:53:49 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:50 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:50 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:51 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:52 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:52 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:53 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:54 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:54 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:53:55 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:55 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:56 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:57 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:58 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:59 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:53:59 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:00 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:00 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:54:01 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:01 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:02 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:03 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:04 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:04 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:05 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:06 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:07 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:07 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:54:08 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:08 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:09 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:10 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:10 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:11 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:12 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:13 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:13 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:54:13 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:14 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:15 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:16 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:17 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:17 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:18 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:19 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:21 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:21 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.BagService.useAddMpItem(BagService.java:1205)
+	at com.service.impl.BagService.useItem(BagService.java:307)
+	at com.action.BagAction.useItem(BagAction.java:64)
+	at com.command.bag.UseItemCMD.excute(UseItemCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 11:54:22 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 11:54:23 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+2017-06-22 14:04:50 [ERROR]其他异常:playerID:5834
+java.lang.NullPointerException
+	at com.service.impl.TradeService.getPlayerTradeList(TradeService.java:582)
+	at com.action.TradeAction.getPlayerTradeList(TradeAction.java:96)
+	at com.command.trading.GetPlayerTradeListCMD.excute(GetPlayerTradeListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 14:59:09 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.TradeService.getPlayerTradeList(TradeService.java:582)
+	at com.action.TradeAction.getPlayerTradeList(TradeAction.java:96)
+	at com.command.trading.GetPlayerTradeListCMD.excute(GetPlayerTradeListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 15:07:19 [ERROR]其他异常:playerID:5834
+java.lang.NullPointerException
+	at com.service.impl.TradeService.getPlayerTradeList(TradeService.java:582)
+	at com.action.TradeAction.getPlayerTradeList(TradeAction.java:96)
+	at com.command.trading.GetPlayerTradeListCMD.excute(GetPlayerTradeListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 15:08:18 [ERROR]其他异常:playerID:5834
+java.lang.NullPointerException
+	at com.service.impl.TradeService.getPlayerTradeList(TradeService.java:582)
+	at com.action.TradeAction.getPlayerTradeList(TradeAction.java:96)
+	at com.command.trading.GetPlayerTradeListCMD.excute(GetPlayerTradeListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 15:10:37 [ERROR]其他异常:playerID:0
+java.lang.NullPointerException
+	at com.service.impl.LoginService.loginAgain(LoginService.java:168)
+	at com.action.LoginAction.loginAgain(LoginAction.java:85)
+	at com.command.login.LoginAgainCMD.excute(LoginAgainCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 15:28:49 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.TradeService.getPlayerTradeList(TradeService.java:582)
+	at com.action.TradeAction.getPlayerTradeList(TradeAction.java:96)
+	at com.command.trading.GetPlayerTradeListCMD.excute(GetPlayerTradeListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 15:29:32 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.TradeService.getPlayerTradeList(TradeService.java:582)
+	at com.action.TradeAction.getPlayerTradeList(TradeAction.java:96)
+	at com.command.trading.GetPlayerTradeListCMD.excute(GetPlayerTradeListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 15:44:18 [ERROR]tidyBag ITEM is null with id is 11577
+2017-06-22 16:54:59 [ERROR]buff结算异常:sk_0001_3_73153
+java.lang.ArithmeticException: / by zero
+	at com.service.impl.MonsterService.addPlayerExp(MonsterService.java:600)
+	at com.service.impl.BattleService.attack(BattleService.java:482)
+	at com.service.impl.BuffService.dealAbidanceBuff(BuffService.java:394)
+	at com.service.impl.BuffService.dealBuff(BuffService.java:340)
+	at com.service.impl.BattleService.dealBuff(BattleService.java:1280)
+	at com.scene.SceneAiHandler.run(SceneAiHandler.java:62)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 17:20:10 [ERROR]其他异常:playerID:5837
+java.lang.ArithmeticException
+2017-06-22 17:20:46 [ERROR]其他异常:playerID:5837
+java.lang.NullPointerException
+	at com.service.impl.TradeService.getPlayerTradeList(TradeService.java:582)
+	at com.action.TradeAction.getPlayerTradeList(TradeAction.java:96)
+	at com.command.trading.GetPlayerTradeListCMD.excute(GetPlayerTradeListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:397)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-22 17:21:36 [ERROR]其他异常:playerID:5837
+java.lang.ArithmeticException

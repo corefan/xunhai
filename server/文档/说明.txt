@@ -1,0 +1,32 @@
+以下目录都是对unity StreamingAssets 进行对比生成结果补丁包
+
+android 最终服务器android资源目录
+ios 最终服务器ios资源目录
+
+
+androiddebug vs androiddebugres[x][*res PC本地对比对象可以不用复制过来]
+androidrealse vs androidrealseres[x][*res PC本地对比对象可以不用复制过来]
+
+ios 相关 同 android
+
+iosdebug vs iosdebugres[x][*res PC本地对比对象可以不用复制过来]
+iosrealse vs iosrealseres[x][*res PC本地对比对象可以不用复制过来]
+
+以上版本生成工具全用了 VersionTool.exe
+
+对比关系：
+androiddebug vs androiddebugres
+androidrealse vs androidrealseres
+iosdebug vs iosdebugres
+iosrealse vs iosrealseres
+
+*android vs androidrealse
+*ios vs iosrealse
+
+外网服
+_kf 外网开发测试服 (资源补丁不带后缀默认)
+_wd 稳定服（正式服）
+_ml 马来服 _en 英文服 _vn 越服 _ko 韩服 _tl 泰服
+
+内网服
+skgame_xxxx_xx.xx 为例命名

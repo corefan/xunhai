@@ -1,0 +1,51 @@
+<project name="seawar" default="build" basedir=".">
+	<property name="FLEX_HOME" value="C:\Program Files (x86)\Adobe\Adobe Flash Builder 4.7\sdks\4.6.0" />
+
+	<property name="PUBLIC_ROOT" value="D:\work\project\gcc\client\GameCCClient" />
+
+	<property name="APP_ROOT" value="D:\work\project\gcc\client\GameCCClient" />
+
+	<property name="APP_SRC" value="${APP_ROOT}/src" />
+	<property name="APP_BIN" value="${APP_ROOT}/bin" />
+	<property name="APP_LIBS" value="${APP_ROOT}/libs" />
+	<property name="APP_REPORT" value="${APP_ROOT}/report" />
+	
+	<property name="MAIN_FILE" value="GameCCClient" />
+	
+	<property name="ant.lib.dir" value="${FLEX_HOME}/ant/lib" />
+	<path id="ant.classpath">
+		<fileset dir="${ant.lib.dir}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="init">
+		<taskdef resource="flexTasks.tasks" classpathref="ant.classpath" />
+		<!--<taskdef resource="net/sf/antcontrib/antcontrib.properties" classpath="./build/libs/ant-contrib-1.0b3.jar" />-->
+	</target>
+
+	<target name="build" depends="init,compileProject">
+		<mxmlc file="${APP_SRC}/${MAIN_FILE}.mxml" output="${APP_BIN}/${MAIN_FILE}.swf" accessible="true" debug="false" >
+		  <!--加载Flex配置文件，如果您有特殊需求（比如要保留自定义的Metadata标签，则可以设置自己定义的Flex配置文件）-->
+		  <load-config filename="${FLEX_HOME}/frameworks/flex-config.xml"/>
+			<compiler.library-path dir="${FLEX_HOME}/frameworks" append="true">  
+					<include name="libs" />  
+			</compiler.library-path> 
+		  <source-path path-element="${APP_SRC}"/>
+		  <library-path dir="${APP_LIBS}" includes="*" append="true"/>
+		</mxmlc>
+	
+		<copy todir="${PUBLIC_ROOT}/" overwrite="true">
+			<fileset dir="${APP_BIN}/" includes="**/*" >
+				<modified update="true" seldirs="true" cache="propertyfile" algorithm="digest" comparator="equal">
+					<param name="cache.cachefile" value="cache.properties" />
+					<param name="algorithm.algorithm" value="MD5" />
+				</modified>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="compileProject">
+	</target>	
+	
+</project>

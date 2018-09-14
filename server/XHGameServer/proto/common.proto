@@ -1,0 +1,12 @@
+option java_package="com.message";
+option java_outer_classname="CommonProto";
+
+
+message C_GetServerTime{ //心跳  一分钟调用一次
+
+}
+
+message S_GetServerTime{
+	optional int64 serverTime = 1;          // 服务器时间
+}
+

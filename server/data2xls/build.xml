@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<project name="data2xls" basedir="." default="buildjar">
+    <property name="src.dir" value="./src"/>
+	<property name="libs" value="./libs"/>	
+	<property name="build.dir" value="./bin"/>
+	<property name="dist.dir" value="./dist"/>
+	<property name="conf.dir" value="./conf"/>
+	<property name="jdk.lib" value="%JAVA_HOME%/lib"/>
+	
+	<!-- Compile all of the task object classes -->
+	<target name="buildjar">	
+		<antcall target="clean"></antcall>
+		<mkdir dir="${build.dir}"/>
+		<javac encoding="utf8" srcdir="${src.dir}" destdir="${build.dir}">
+			<classpath>	 			
+				<fileset dir="${libs}">
+					<include name="**/*.jar"/>
+				</fileset>				
+			</classpath>
+		</javac>
+		<mkdir dir="${dist.dir}"/>
+		<jar jarfile="${dist.dir}/data2xls.jar" manifest="manifest.mf" basedir="${dist.dir}">
+			<fileset dir="${build.dir}">
+				<include name="**/*.class"/>
+			</fileset>
+		</jar>
+		<copy todir="${dist.dir}">
+			<fileset dir="${build.dir}">
+				<include name="**/*.jar"/>
+			</fileset>
+			<fileset dir="${basedir}">
+				<include name="**/*.bat"/>
+			</fileset>
+		</copy>	
+		<mkdir dir="${dist.dir}/${libs}"/>
+		<copy todir="${dist.dir}/${libs}">
+			<fileset dir="${libs}">
+				<include name="**/*.jar"/>
+			</fileset>
+		</copy>	
+		<mkdir dir="${dist.dir}/${conf.dir}"/>
+		<copy todir="${dist.dir}/${conf.dir}">	
+			<fileset dir="${basedir}/${conf.dir}" >
+				<include name="**/*.xml"/>
+				<include name="**/*.list"/>
+			</fileset>
+		</copy>	
+	</target>
+	<target name="clean">
+		<delete dir="${build.dir}" failonerror="false" quiet="true"/>
+		<delete dir="${dist.dir}" failonerror="false" quiet="true"/>
+	</target>
+</project>

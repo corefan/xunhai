@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkButtonSkin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				   xmlns:s="library://ns.adobe.com/flex/spark" 
+				   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="40" minHeight="24" alpha.disabled="0.5">
+	<fx:Metadata>
+		<![CDATA[ 
+			[HostComponent("spark.components.Button")]
+		]]>
+	</fx:Metadata>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+			[Bindable]
+			public var bgColor:uint;
+			
+			protected override function initializationComplete():void
+			{
+				bgColor=hostComponent.getStyle("chromeColor");
+				useChromeColor = false;
+				super.initializationComplete();
+			}
+			
+			protected function labelDisplay_creationCompleteHandler(event:FlexEvent):void
+			{
+				// TODO Auto-generated method stub
+				labelDisplay.text = hostComponent.label;
+			}
+			
+		]]>
+ </fx:Script>
+	
+	<fx:Declarations>
+		<!-- 自定义按钮皮肤 -->
+	</fx:Declarations>
+	
+	<!-- 按钮的基本状态 -->
+	<s:states>
+		<s:State name="up" />
+		<s:State name="over" />
+		<s:State name="down" />
+		<s:State name="disabled" />
+	</s:states>
+	
+	<!-- 附件一个矩形,最外层-->
+	<s:Rect id="shadow" left="0" right="0" top="0" bottom="0" radiusX="2">
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="{bgColor}" 
+								 color.down="haloBlue"
+								 alpha.down="0.8" />
+				<!--<s:GradientEntry color="0xFFFFFF" 
+								 color.down="haloBlue" 
+								 alpha.down="0.8" />-->
+			</s:LinearGradient>
+		</s:fill>
+	</s:Rect>
+	
+	<!-- 附件矩形-->
+	<s:Rect id="fill" left="1" right="1" top="1" bottom="1" radiusX="2">
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="0xFFFFFF" 
+								 color.over="0xBBBDBD" 
+								 color.down="haloBlue" 
+								 alpha="0.85" />
+				<s:GradientEntry color="0xD8D8D8" 
+								 color.over="0x9FA0A1" 
+								 color.down="haloBlue" 
+								 alpha="0.85" />
+			</s:LinearGradient>
+		</s:fill>
+	</s:Rect>
+	
+	<!-- 附件矩形 弱色显示-->
+	<s:Rect id="lowlight" left="1" right="1" top="1" bottom="1" radiusX="2">
+		<s:fill>
+			<s:LinearGradient rotation="270">
+				<s:GradientEntry color="{bgColor}" alpha="0.0627" />
+				<s:GradientEntry color="0xFFFFFF" alpha="0" />
+			</s:LinearGradient>
+		</s:fill>
+	</s:Rect>
+	
+	<!-- 附件矩形 高亮显示-->
+	<s:Rect id="highlight" left="1" right="1" top="1" bottom="1" radiusX="2">
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="{bgColor}"
+								 alpha.over="0.22" 
+								 alpha.down="0.12"/>
+				<s:GradientEntry color="0xFFFFFF"/>
+			</s:LinearGradient>
+		</s:fill>
+	</s:Rect>
+	
+	<!-- 附件矩形-->
+	<s:Rect id="highlightStroke" left="1" right="1" top="1" bottom="1" radiusX="2" excludeFrom="down">
+		<s:stroke>
+			<s:LinearGradientStroke rotation="90" weight="1">
+				<s:GradientEntry color="0xFFFFFF" alpha.over="0.22" />
+				<s:GradientEntry color="0xD8D8D8" alpha.over="0.22" />
+			</s:LinearGradientStroke>
+		</s:stroke>
+	</s:Rect>
+	
+	<!-- 附件矩形 鼠标按下,高亮显示-->
+<!--	<s:Rect id="hldownstroke1" left="1" right="1" top="1" bottom="1" radiusX="2" includeIn="down">
+		<s:stroke>
+			<s:LinearGradientStroke rotation="90" weight="1">
+				<s:GradientEntry color="0xff0033" alpha="0.25" ratio="0.0" />
+				<s:GradientEntry color="0xff0033" alpha="0.25" ratio="0.001" />
+				<s:GradientEntry color="0xff0033" alpha="0.07" ratio="0.0011" />
+				<s:GradientEntry color="0xff0033" alpha="0.07" ratio="0.965" />
+				<s:GradientEntry color="0xff0033" alpha="0.00" ratio="0.9651" />
+			</s:LinearGradientStroke>
+		</s:stroke>
+	</s:Rect>-->
+<!--	<s:Rect id="hldownstroke2" left="2" right="2" top="2" bottom="2" radiusX="2" includeIn="down">
+		<s:stroke>
+			<s:LinearGradientStroke rotation="90" weight="1">
+				<s:GradientEntry color="0xff0033" alpha="0.09" ratio="0.0" />
+				<s:GradientEntry color="0xff0033" alpha="0.00" ratio="0.0001" />
+			</s:LinearGradientStroke>
+		</s:stroke>
+	</s:Rect>-->
+	
+	<!-- 附件矩形-->
+	<s:Rect id="border" left="1" right="1" top="1" bottom="1" width="69" height="20" radiusX="2">
+		<s:stroke>
+			<s:LinearGradientStroke rotation="90" weight="1">
+				<s:GradientEntry color="0xFFFFFF" 
+								 alpha="0.5625"
+								 alpha.down="0.6375" />
+				<s:GradientEntry color="0xFFFFFF" 
+								 alpha="0.75" 
+								 alpha.down="0.85" />
+			</s:LinearGradientStroke>
+		</s:stroke>
+	</s:Rect>
+	
+	<!-- 文本显示 -->
+	<s:Label id="labelDisplay"
+			 left="12" right="12" top="0" bottom="0" horizontalCenter="0" verticalCenter="0" 
+			 maxDisplayedLines="0" textAlign="center" verticalAlign="middle" creationComplete="labelDisplay_creationCompleteHandler(event)">
+		
+	</s:Label>
+	
+</s:SparkButtonSkin>

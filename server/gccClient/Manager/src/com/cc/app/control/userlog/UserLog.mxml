@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%" creationComplete="creationCompleteHandler()" keyDown="buttonkeyDownHandler(event)">
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.control.UserControlEvent;
+			import com.cc.core.Globals;
+			import com.cc.core.util.MessageUtil;
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			
+			import spark.events.GridEvent;
+			
+			private function creationCompleteHandler():void
+			{
+				
+			}
+			
+			private function buttonkeyDownHandler(event:KeyboardEvent):void
+			{
+				if(event.keyCode == 13){
+					this.clickHandler();
+				}
+			}
+			
+			private function clickHandler():void
+			{
+				if(nameInput.text == ""){
+					Alert.show("请输入用户名","温馨提示");
+					return;
+				}
+				var name:String = nameInput.text;
+				Globals.instance.context.dispatchEvent(new UserControlEvent(UserControlEvent.CHECK_USER_LOG,{name:name}));
+			}
+			
+			public function initData(obj:Object):void
+			{
+				var list:ArrayCollection = new ArrayCollection();
+				var arr:Array = JSON.parse(obj.dataList) as Array;
+				if(arr.length == 0){
+					MessageUtil.showFaultMessage("没有查询到数据");
+				}
+				for each(var obj:Object in arr){
+					list.addItem(obj);
+				}
+				myDataGrid.dataProvider = list;
+			}
+			
+			private function buildToolTip(item:Object,col:GridColumn):String
+			{ 
+				return item.detail;  
+			} 
+			
+			private function myDataGrid_gridClickHandler(event:GridEvent):void
+			{
+				var dg:DataGrid  = event.currentTarget as DataGrid;
+				if(dg.selectedItem == null)return;
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	
+	<s:Panel x="0" y="0" width="100%" height="100%" title="用户日志查看">
+		<s:DataGrid id="myDataGrid" x="70" y="50" width="744" height="525"
+					gridClick="myDataGrid_gridClickHandler(event)" requestedRowCount="4"
+					textAlign="center">
+			<s:columns>
+				<s:ArrayList>
+					<s:GridColumn width="80" dataField="userID" headerText="用户ID">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay1"
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer> 
+					</s:GridColumn>
+					<s:GridColumn width="80" dataField="userName" headerText="用户名">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay2"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer> 
+					</s:GridColumn>
+					<s:GridColumn width="80" dataField="opt" headerText="操作类型">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay3"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>
+						</s:headerRenderer>
+					</s:GridColumn>
+					
+					<s:GridColumn width="120" dataField="optIp" headerText="IP地址">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay3"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>
+						</s:headerRenderer>
+					</s:GridColumn>
+					
+					<s:GridColumn width="200" dataField="content" headerText="操作描述" showDataTips="true" dataTipFunction="buildToolTip">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay4"
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer> 
+					</s:GridColumn>
+					<s:GridColumn width="180" dataField="createTime" headerText="操作时间">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay5"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer> 
+					</s:GridColumn>
+			<!--		<s:GridColumn width="65" dataField="Bronze" headerText="备注">
+						<s:headerRenderer>  
+							<fx:Component>  
+								<s:DefaultGridHeaderRenderer>  
+									<s:labelDisplay>  
+										<s:Label id="labelDisplay6"  
+												 verticalCenter="1" left="0" right="0" top="0" bottom="0"  
+												 textAlign="center" fontWeight="bold" verticalAlign="middle"  
+												 maxDisplayedLines="1" showTruncationTip="true" />  
+									</s:labelDisplay>  
+								</s:DefaultGridHeaderRenderer>  
+							</fx:Component>  
+						</s:headerRenderer>
+					</s:GridColumn>-->
+				</s:ArrayList>
+			</s:columns>
+		</s:DataGrid>
+		<s:TextInput id="nameInput" x="379" y="9" width="155" height="32"/>
+		<s:Label x="300" y="10" width="81" height="32" text="输入用户名:" verticalAlign="middle"/>
+		<s:Button x="561" y="12" height="28" label="查询" click="clickHandler()"/>
+	</s:Panel>
+</s:Group>

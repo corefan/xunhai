@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx"  width="100%"
+		 height="100%" creationComplete="onCreate(event)">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.main.MainModel;
+			import com.cc.app.monitor.event.ChatMonitorEvent;
+			import com.cc.core.constant.OptTypeConstant;
+			import com.cc.core.util.MessageUtil;
+			import com.cc.app.monitor.ChatItemRenderer;
+			
+			import mx.collections.ArrayCollection;
+			import mx.collections.IList;
+			import mx.events.FlexEvent;
+			
+			// 监控列表
+			private var monitorArr:ArrayCollection = new ArrayCollection();
+			
+			// 定时器
+			private var timer:Timer;
+			private const TIMER_INTERVAL:int = 16000;
+			private var firstFlag:String = "1";
+			
+			// 显示数据数量
+			private const SHOW_NUM:int = 100;
+			
+			/**
+			 * 添加监听
+			 * */
+			public function addMonitor(id:int):void {
+				
+				var gameSite:String = MainModel.instance.currentGameSite;
+				if(gameSite == "") {
+					MessageUtil.showFaultMessage("请选择服务器");
+					return;
+				}
+				
+				for (var i:int=0; i<monitorArr.length;i++) {
+					var obj:Object = monitorArr.getItemAt(i);
+					if (obj.gameSite == gameSite) {
+						MessageUtil.showFaultMessage("当前服务器已在监控中");
+						return;
+					}
+				}
+				
+				var nowTime:Date = new Date(); 
+				// 只能监听最近7天开服的服务器
+				for each(var obj2:Object in MainModel.instance.gameSiteAC){
+					if (obj2.gameSite == gameSite) {
+						if (nowTime.time/1000 - obj2.openTime > 7*24*60*60) {
+							MessageUtil.showFaultMessage("只能监听最近7天开服的服务器");
+							return;
+						}
+					}
+				}
+				
+				switch (id) {
+					case 1:
+						addbtn1.visible = false;
+						removebtn1.visible = true;
+						panel1.title = MainModel.instance.currentSiteName;
+						break;
+					case 2:
+						addbtn2.visible = false;
+						removebtn2.visible = true;
+						panel2.title = MainModel.instance.currentSiteName;
+						break;
+					case 3:
+						addbtn3.visible = false;
+						removebtn3.visible = true;
+						panel3.title = MainModel.instance.currentSiteName;
+						break;
+					case 4:
+						addbtn4.visible = false;
+						removebtn4.visible = true;
+						panel4.title = MainModel.instance.currentSiteName;
+						break;
+					case 5:
+						addbtn5.visible = false;
+						removebtn5.visible = true;
+						panel5.title = MainModel.instance.currentSiteName;
+						break;
+					case 6:
+						addbtn6.visible = false;
+						removebtn6.visible = true;
+						panel6.title = MainModel.instance.currentSiteName;
+						break;
+				}
+				
+				var newObj:Object = new Object();
+				newObj.id = id; 
+				newObj.firstFlag = "1"; 
+				newObj.gameSite = gameSite;
+				newObj.siteName = MainModel.instance.currentSiteName;
+				monitorArr.addItem(newObj);
+				
+				MessageUtil.showFaultMessage("监控已添加，数据可能会有延迟，请耐心等待.");
+			}
+			
+			/** 移除监听 */
+			public function removeMonitor(id:int):void {
+				
+				for (var i:int=0; i<monitorArr.length;i++) {
+					var obj:Object = monitorArr.getItemAt(i);
+					if (obj.id == id) {
+						monitorArr.removeItemAt(i);
+						break;
+					}
+				}
+				
+				switch (id) {
+					case 1:
+						addbtn1.visible = true;
+						removebtn1.visible = false;
+						panel1.title = "";
+						if (dataList1.dataProvider) {
+							dataList1.dataProvider.removeAll();
+						}
+						break;
+					case 2:
+						addbtn2.visible = true;
+						removebtn2.visible = false;
+						panel2.title = "";
+						if (dataList2.dataProvider) {
+							dataList2.dataProvider.removeAll();
+						}
+						break;
+					case 3:
+						addbtn3.visible = true;
+						removebtn3.visible = false;
+						panel3.title = "";
+						if (dataList3.dataProvider) {
+							dataList3.dataProvider.removeAll();
+						}
+						break;
+					case 4:
+						addbtn4.visible = true;
+						removebtn4.visible = false;
+						panel4.title = "";
+						if (dataList4.dataProvider) {
+							dataList4.dataProvider.removeAll();
+						}
+						break;
+					case 5:
+						addbtn5.visible = true;
+						removebtn5.visible = false;
+						panel5.title = "";
+						if (dataList5.dataProvider) {
+							dataList5.dataProvider.removeAll();
+						}
+						break;
+					case 6:
+						addbtn6.visible = true;
+						removebtn6.visible = false;
+						panel6.title = "";
+						if (dataList6.dataProvider) {
+							dataList6.dataProvider.removeAll();
+						}
+						break;
+				}
+			}
+			
+			protected function onCreate(event:FlexEvent):void
+			{
+				timer = new Timer(TIMER_INTERVAL);
+				timer.addEventListener(TimerEvent.TIMER, updateTimer);
+				timer.start();
+				
+			}
+			
+			/** 定时器 */
+			protected function updateTimer(event:TimerEvent = null):void
+			{
+				for (var i:int=0; i<monitorArr.length;i++) {
+					var obj:Object = monitorArr.getItemAt(i);
+					var flag:String = obj.firstFlag;
+					this.dispatchEvent(new ChatMonitorEvent(ChatMonitorEvent.REQ_CHAT_INFO,{optType:OptTypeConstant.CHAT_MONITOR_1,gameSite:obj.gameSite,firstFlag:flag}));	
+					if ("1" == flag) {
+						obj.firstFlag = "0";
+					}
+				}
+			}
+			
+			/** 返回聊天信息 */
+			public function addChatInfo(data:Object):void {
+				
+				var gameSite:String = data.gameSite;
+				var arr:Array = JSON.parse(data.dataList) as Array;
+				var list:ArrayCollection = new ArrayCollection();
+				for each (var o:Object in arr) {
+					o.gameSite = gameSite;
+					list.addItem(o);
+				}
+				
+				var id:int=0;
+				for (var i:int=0; i<monitorArr.length;i++) {
+					var obj:Object = monitorArr.getItemAt(i);
+					if (obj.gameSite == gameSite) {
+						id = obj.id;
+						break;
+					}
+				}
+				
+				if (id == 0) return;
+				
+				var showList:IList;
+				var length:int = 0;
+				var index:int = 0;
+				switch (id) {
+				case 1:
+					if (dataList1.dataProvider) {
+						showList = dataList1.dataProvider;
+						for each (var c1:Object in list) {
+							showList.addItem(c1);
+							//dataList1.dataProvider.addItem(c1);
+						}
+						length = showList.length;
+						if (length > SHOW_NUM) {
+							for (index=0;index < length - SHOW_NUM; index++) {
+								showList.removeItemAt(index);
+							}
+						}
+						
+						dataList1.dataProvider = showList;
+					} else {
+						dataList1.dataProvider = list;
+					}
+					break;
+				case 2:
+					if (dataList2.dataProvider) {
+						showList = dataList2.dataProvider;
+						for each (var c2:Object in list) {
+							showList.addItem(c2);
+							//dataList1.dataProvider.addItem(c2);
+						}
+						length = showList.length;
+						if (length > SHOW_NUM) {
+							for (index=0;index < length - SHOW_NUM; index++) {
+								showList.removeItemAt(index);
+							}
+						}
+						
+						dataList2.dataProvider = showList;
+					} else {
+						dataList2.dataProvider = list;
+					}
+					break;
+				case 3:
+					if (dataList3.dataProvider) {
+						showList = dataList3.dataProvider;
+						for each (var c3:Object in list) {
+							showList.addItem(c3);
+							//dataList1.dataProvider.addItem(c3);
+						}
+						length = showList.length;
+						if (length > SHOW_NUM) {
+							for (index=0;index < length - SHOW_NUM; index++) {
+								showList.removeItemAt(index);
+							}
+						}
+						
+						dataList3.dataProvider = showList;
+					} else {
+						dataList3.dataProvider = list;
+					}
+					break;
+				case 4:
+					if (dataList4.dataProvider) {
+						showList = dataList4.dataProvider;
+						for each (var c4:Object in list) {
+							showList.addItem(c4);
+							//dataList4.dataProvider.addItem(c4);
+						}
+						length = showList.length;
+						if (length > SHOW_NUM) {
+							for (index=0;index < length - SHOW_NUM; index++) {
+								showList.removeItemAt(index);
+							}
+						}
+						
+						dataList4.dataProvider = showList;
+					} else {
+						dataList4.dataProvider = list;
+					}
+					break;
+				case 5:
+					if (dataList5.dataProvider) {
+						showList = dataList5.dataProvider;
+						for each (var c5:Object in list) {
+							showList.addItem(c5);
+							//dataList5.dataProvider.addItem(c5);
+						}
+						length = showList.length;
+						if (length > SHOW_NUM) {
+							for (index=0;index < length - SHOW_NUM; index++) {
+								showList.removeItemAt(index);
+							}
+						}
+						
+						dataList5.dataProvider = showList;
+					} else {
+						dataList5.dataProvider = list;
+					}
+					break;
+				case 6:
+					if (dataList6.dataProvider) {
+						showList = dataList6.dataProvider;
+						for each (var c6:Object in list) {
+							showList.addItem(c6);
+							//dataList6.dataProvider.addItem(c6);
+						}
+						length = showList.length;
+						if (length > SHOW_NUM) {
+							for (index=0;index < length - SHOW_NUM; index++) {
+								showList.removeItemAt(index);
+							}
+						}
+						
+						dataList6.dataProvider = showList;
+					} else {
+						dataList6.dataProvider = list;
+					}
+					break;
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+		
+		<s:Panel title="聊天大厅" width="100%" height="100%" x="0" y="0">
+			<s:layout>
+				<s:TileLayout requestedColumnCount="2" requestedRowCount="3">
+				</s:TileLayout>
+			</s:layout>
+			<s:Panel id="panel1" width="450" height="250">
+				<s:Button id="addbtn1" label="添加监控" width="100" height="30" click="addMonitor(1)"/>
+				<s:Button id="removebtn1" visible="false" label="移除监控" width="100" height="30" click="removeMonitor(1)"/>
+				<s:List x="0" y="35" width="100%" height="180" id="dataList1" itemRenderer="com.cc.app.monitor.ChatItemRenderer">
+					
+				</s:List>
+			</s:Panel>	
+			<s:Panel id="panel2" width="450" height="250">
+				<s:Button id="addbtn2" label="添加监控" width="100" height="30" click="addMonitor(2)"/>
+				<s:Button id="removebtn2" visible="false" label="移除监控" width="100" height="30" click="removeMonitor(2)"/>
+				<s:List x="0" y="35" width="100%" height="180" id="dataList2" itemRenderer="com.cc.app.monitor.ChatItemRenderer">
+					
+				</s:List>
+			</s:Panel>	
+			<s:Panel id="panel3" width="450" height="250">
+				<s:Button id="addbtn3" label="添加监控" width="100" height="30" click="addMonitor(3)"/>
+				<s:Button id="removebtn3" visible="false" label="移除监控" width="100" height="30" click="removeMonitor(3)"/>
+				<s:List x="0" y="35" width="100%" height="180" id="dataList3" itemRenderer="com.cc.app.monitor.ChatItemRenderer">
+					
+				</s:List>
+			</s:Panel>	
+			<s:Panel id="panel4" width="450" height="250">
+				<s:Button id="addbtn4" label="添加监控" width="100" height="30" click="addMonitor(4)"/>
+				<s:Button id="removebtn4" visible="false" label="移除监控" width="100" height="30" click="removeMonitor(4)"/>
+				<s:List x="0" y="35" width="100%" height="180" id="dataList4" itemRenderer="com.cc.app.monitor.ChatItemRenderer">
+					
+				</s:List>
+			</s:Panel>	
+			<s:Panel id="panel5" width="450" height="250">
+				<s:Button id="addbtn5" label="添加监控" width="100" height="30" click="addMonitor(5)"/>
+				<s:Button id="removebtn5" visible="false" label="移除监控" width="100" height="30" click="removeMonitor(5)"/>
+				<s:List x="0" y="35" width="100%" height="180" id="dataList5" itemRenderer="com.cc.app.monitor.ChatItemRenderer">
+					
+				</s:List>
+			</s:Panel>	
+			<s:Panel id="panel6" width="450" height="250">
+				<s:Button id="addbtn6" label="添加监控" width="100" height="30" click="addMonitor(6)"/>
+				<s:Button id="removebtn6" visible="false" label="移除监控" width="100" height="30" click="removeMonitor(6)"/>
+				<s:List x="0" y="35" width="100%" height="180" id="dataList6" itemRenderer="com.cc.app.monitor.ChatItemRenderer">
+					
+				</s:List>
+			</s:Panel>	
+		</s:Panel>
+</s:Group>

@@ -1,0 +1,259 @@
+option java_package="com.message";
+option java_outer_classname="ActivityProto";
+message RewardMsg{
+	optional int32 id = 1; // 奖励ID
+	optional int32 state = 2; //0:不可领 1:可领取，2:已领取
+}
+
+message C_GetReward {//领取在线奖励
+	optional int32 id = 1; // 奖励ID	
+}
+message S_GetReward {//领取在线奖励
+	optional RewardMsg reward = 1; // 奖励ID	
+}
+
+message C_GetRewardList { //已领取在线奖励ID列表
+	
+}
+message S_SynRewardList { //奖励ID列表
+	optional int32 onlineTime = 1; // 玩家每天在线时间(秒)	
+	repeated RewardMsg rewardList = 2; //奖励ID列表
+}
+
+message C_GetPayActData{ //获取充值活动相关数据
+	
+}
+message S_GetPayActData{ //获取充值活动相关数据	
+	optional int32 totalRrecharge = 1;      // 累计充值总金额
+	optional int32 dailyRrecharge = 2;      // 每天累计充值金额
+	optional int32 totalSpend = 3;      	// 累计消费金额
+	optional int32 isbuyGrowthFund = 4;     // 是否已购买成长基金	
+	optional int32 buyGrowthFundNum = 5;    // 购买成长基金总人数
+	repeated int32 trRewardList = 6;        // 已领取累计充值奖励列表
+	repeated int32 drRewardList = 7;      	// 已领取每天累计充值奖励列表	
+	repeated int32 gfRewardList = 8;        // 已领取成长基金ID列表
+	repeated int32 nwRewardList = 9;        // 已领取全民福利ID列表
+	repeated int32 tsRewardList = 10;       // 已领取累计消费奖励列表
+}
+
+message C_GetFristPayReward{ //获取首冲奖励
+	optional int32 id = 1; // 奖励ID
+}
+message S_GetFristPayReward{ //获取首冲奖励
+	optional int32 id = 1; // 奖励ID
+}
+
+message C_GetTotalRrechargeReward{ //获取累计充值奖励
+	optional int32 id = 1; // 奖励ID
+}
+message S_GetTotalRrechargeReward{ //获取累计充值奖励
+	optional int32 id = 1; // 奖励ID
+}
+
+message C_GetDailyRrechargeReward{ //获取每天累计充值奖励
+	optional int32 id = 1; // 奖励ID
+}
+message S_GetDailyRrechargeReward{ //获取每天累计充值奖励
+	optional int32 id = 1; // 奖励ID	
+}
+
+message C_GetGrowthFund{ //领取成长基金
+	optional int32 id = 1; // 奖励ID
+}
+message S_GetGrowthFund{ //领取成长基金
+	optional int32 id = 1; // 奖励ID	
+}
+
+message C_GetNationalWelfare{ //领取全民福利
+	optional int32 id = 1; // 奖励ID
+}
+message S_GetNationalWelfare{ //领取全民福利
+	optional int32 id = 1; // 奖励ID	
+}
+
+message C_GetTurntableData{ //获取转盘相关数据
+	
+}
+message S_GetTurntableData{ //获取转盘相关数据
+	optional int32 fristTurntableState = 1; // 首次转盘抽奖状态 (0: 未使用, 1:已使用)
+	repeated int32 trIdList = 2;   // 转盘奖励 
+}
+
+message C_TurntableDraw{ //转盘抽奖
+	optional int32 type = 1;       //抽奖类型（1: 首抽, 2: 非元宝, 3: 元宝）
+}
+message S_TurntableDraw{ //转盘抽奖
+	optional int32 rewardId = 1;   //抽中的奖励ID
+}
+
+message TurnRecMsg{
+	optional int64 playerId = 1;    // 玩家ID
+	optional string playerName = 2; // 玩家名字
+	optional int32 rewardId = 3;	// 奖励ID
+}
+message C_GetTurnRecList{ //获取转盘抽奖榜单信息
+	optional int32 start = 1; // 起始
+	optional int32 offset = 2; // 数量
+}
+message S_GetTurnRecList{ //获取转盘抽奖榜单信息
+	repeated TurnRecMsg turnRecList = 1; // 转盘奖励榜单列表
+}
+
+message C_GetTombData{ //陵墓面板数据
+	
+}
+message S_GetTombData{ //陵墓面板数据
+	repeated int32 tombIdList = 1;   // 所有墓室编号 
+	repeated int32 usedTombIdList = 2;  // 已探索过的墓室编号数组 0代表未探索
+	optional int32 tombNum = 3; // 已完成陵墓数
+	optional int32 greenNum = 4; // 绿色宝数	
+	optional int32 blueNum = 5;  // 蓝色宝数
+	optional int32 violetNum = 6; // 紫色宝数	
+	optional int32 orangeNum = 7; // 橙色宝数		
+}
+
+message C_Tomb{ //探索陵室
+	optional int32 tombIndex = 1;  // 墓室下标 （从0开始）
+}
+
+message S_Tomb{ //探索陵室
+	optional int32 tombIndex = 1;  	// 墓室下标 （从0开始）
+	optional int32 tombId = 2; 	 	// 墓室奖励编号  
+	optional int32 tombNum = 3; 	// 已完成陵墓数
+	optional int32 greenNum = 4; 	// 绿色宝数	
+	optional int32 blueNum = 5;  	// 蓝色宝数
+	optional int32 violetNum = 6; 	// 紫色宝数	
+	optional int32 orangeNum = 7; 	// 橙色宝数
+}
+
+message C_ChangeTomb{ //切换陵墓
+
+}
+message S_ChangeTomb{ //切换陵墓
+	repeated int32 tombIdList = 1;   // 所有墓室编号 
+	repeated int32 usedTombIdList = 2;  // 已探索过的墓室编号数组 0代表未探索
+}
+
+
+message C_GetTotalSpendReward{ //获取累计消费奖励
+	optional int32 id = 1; // 奖励ID
+}
+message S_GetTotalSpendReward{ //获取累计消费奖励
+	optional int32 id = 1; // 奖励ID
+}
+
+message C_BuyGrowthFound{ //购买成长基金
+	
+}
+message S_BuyGrowthFound{ //购买成长基金
+	optional int32 state = 1; //0:成功 1:失败
+}
+
+message C_GetOpenServerData{ //获取开服七天乐数据
+	
+}
+message S_GetOpenServerData{ //获取开服七天乐数据
+	optional int32 state = 1; 		//累计登陆天数
+	optional int32 addLoginDay = 2; //累计登陆天数
+	repeated int32 rewardList = 3;	// 已领取累计登录奖励
+}
+
+message C_GetOpenServerReward{ //领取开服七天乐奖励
+	optional int32 id = 1; //奖励ID
+}
+message S_GetOpenServerReward{ //领取开服七天乐奖励
+	optional int32 id = 1; //奖励ID
+}
+
+message C_GetSevenPayData{ //获取七天累计充值数据	
+}
+message S_GetSevenPayData{ //获取七天累计充值数据
+	optional int32 sevenPay = 1; //累计充值金额
+	repeated int32 rewardList = 2;	// 已领取累计登录奖励
+}
+
+message C_BuyArtifactData{ //获取购买神器数据	
+}
+message S_BuyArtifactData{ //获取购买神器数据	
+	optional int32 buyArtifactState = 1;    // 购买神器状态（0:未购买 1:已购买）
+	optional int32 buyArtActState = 2;    	// 购买神器活动状态（0:未开启 1:开启）
+}
+
+message C_GetFristPayData{ //获取首充相关数据
+	
+}
+message S_GetFristPayData{ //获取首充相关数据
+	optional int32 fristPayRewardState = 1; // 首冲奖励状态（0:不可领 1:可领取，2:已领取）	
+}
+
+message C_GetGiftAward{ //获取礼包码奖励
+	optional string giftCode = 1; // 礼包码	
+}
+message S_GetGiftAward{ //获取礼包码奖励
+	optional int32 state = 1; // 礼包码领奖状态（0:成功 1:失败）	
+}
+
+message C_GetLevelAward{ //获取冲级奖励
+	optional int32 id = 1; // 奖励ID
+}
+message S_GetLevelAward{ //获取冲级奖励
+	optional int32 id = 1;  // 奖励ID
+	optional int32 num = 2; // 已领取次数
+}
+
+message RewardDataMsg{
+	optional int32 id = 1;  // 奖励ID
+	optional int32 num = 2; //已领取奖励数量
+}
+
+message C_GetLevelAwardData{ //获取冲级奖励数据
+	
+}
+message S_GetLevelAwardData{ //获取冲级奖励数据
+	repeated int32 ownRewardList = 1;	// 玩家自己已领取冲级奖励列表
+	repeated RewardDataMsg allRewardList = 2;	// 全服已领取冲级奖励列表	
+}
+
+message C_GetBattleValueAward{ //获取战力奖励
+	optional int32 id = 1; // 奖励ID
+}
+message S_GetBattleValueAward{ //获取战力奖励
+	optional int32 id = 1;  // 奖励ID
+	optional int32 num = 2; // 已领取次数
+}
+
+message C_GetBVAwardData{ //获取战力奖励数据
+	
+}
+message S_GetBVAwardData{ //获取战力奖励数据
+	repeated int32 ownRewardList = 1;	// 玩家自己已领取战力奖励列表
+	repeated RewardDataMsg allRewardList = 2;	// 全服已领取战力奖励列表
+}
+
+message C_GetIdentCheckInfo{ //获取实名认证信息
+	
+}
+message S_GetIdentCheckInfo{ //获取实名认证信息
+	optional int32 icState = 1; 	// 实名认证状态
+	optional int32 rewardState = 2; // 实名认证奖励领取状态(0: 未领, 1: 已领）
+}
+
+message C_IdentityCheck{ //实名认证
+	optional string identity = 1; 	// 身份证ID
+	optional string realName = 2; 	// 姓名	
+}
+
+message S_IdentityCheck{ //实名认证
+	optional int32 icState = 1; 	// 实名认证状态(0: 未认证, 1: 认证)
+}
+
+message C_GetIdCheckAward{ //获取实名认证奖励
+	optional int32 rewardId = 1; 	//奖励ID	
+}
+message S_GetIdCheckAward{ //获取实名认证奖励	
+	optional int32 rewardState = 1; // 实名认证奖励领取状态(0: 未领, 1: 已领）
+}
+
+message S_OnlineTip{ //在线时长提示
+	optional int32 onlineTime = 1; 	// 在线时长(小时)
+}

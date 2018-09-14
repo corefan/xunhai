@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" title="添加角色" width="414" height="464" color="0x000000" borderAlpha="0.15" creationComplete="creationCompleteHandler()" close="closeBtn_clickHandler()">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.control.UserControlEvent;
+			import com.cc.app.control.model.UserModel;
+			import com.cc.core.Globals;
+			import com.cc.core.util.PopUpEffect;
+			
+			import mx.collections.ArrayCollection;
+			
+			import spark.components.CheckBox;
+			import spark.events.IndexChangeEvent;
+			
+			private var checkBoxs:Vector.<CheckBox>;
+			
+			private function addBtn_clickHandler():void
+			{
+//				private JSONObject createRole(String name, String authorityIDs)
+				var name:String = roleName.text;
+				var authorityIDs:String = "";
+				for each(var box:CheckBox in checkBoxs){
+					if(box.selected){
+						authorityIDs += box.name+",";
+					}
+				}
+				
+				Globals.instance.context.dispatchEvent(new UserControlEvent(UserControlEvent.ADD_ROLE,{name:name,authorityIDs:authorityIDs}));
+				this.closeBtn_clickHandler();
+			}
+			
+			private function closeBtn_clickHandler():void
+			{
+//				PopUpManager.removePopUp(this);
+				PopUpEffect.Hide(this);
+			}
+			
+			private function updateSelection(e:IndexChangeEvent):void
+			{
+				
+			}
+			
+			private function creationCompleteHandler():void
+			{
+				var list:ArrayCollection = UserModel.instance.roleList;
+				var nameList:ArrayCollection = new ArrayCollection();
+				for each(var obj:Object in list){
+					nameList.addItem(obj.name);
+				}
+				
+				selectBox.dataProvider = nameList;
+				selectBox.selectedIndex = 0;
+		
+				this.setQuxianList();
+			}
+			
+			public function setQuxianList():void
+			{
+				var list:ArrayCollection = UserModel.instance.competenceList;
+				if(list == null)return;
+				tileGroup.removeAllElements();
+				checkBoxs = new Vector.<CheckBox>();
+				var checkBox:CheckBox;
+				for(var i:int = 0 ; i < list.length ; i++){
+					checkBox  = new CheckBox();
+					checkBox.label = list[i].name;
+					checkBox.name = list[i].authorityID;
+					tileGroup.addElement(checkBox);
+					checkBoxs.push(checkBox);
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	
+	<s:Button id="addBtn" x="122" y="399" label="添加" click="addBtn_clickHandler()"/>
+	<s:Button id="cancel" x="221" y="399" label="取消" click="closeBtn_clickHandler()"/>
+	<s:Label x="21" y="28" width="104" height="23" fontSize="14" text="添加角色名：" textAlign="center" verticalAlign="middle"/>
+	<s:Label x="21" y="63" width="104" height="23" fontSize="14" text="已有角色名：" textAlign="center" verticalAlign="middle"/>
+	<s:Label x="31" y="93" width="189" height="23" fontSize="14" text="选择操作权限：（多选）" textAlign="left" verticalAlign="middle"/>
+	<s:TextInput id="roleName" x="128" y="29"/>
+	<s:DropDownList id="selectBox" x="127" y="64" change="updateSelection(event)"
+					labelField="role" selectedIndex="0"></s:DropDownList>
+	<s:TileGroup id="tileGroup" x="31" y="124" width="361" height="265">
+		<!--<s:CheckBox label="用户管理"/>
+		<s:CheckBox label="系统管理"/>
+		<s:CheckBox label="系统公告"/>-->
+	</s:TileGroup>
+	
+</s:TitleWindow>

@@ -1,0 +1,65 @@
+2018-08-28 16:43:01 [ERROR]异常:
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:512)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:105)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:71)
+	at com.db.GccSqlSessionTemplate.getInstance(GccSqlSessionTemplate.java:36)
+	at com.db.GccSqlSessionTemplate.getConnection(GccSqlSessionTemplate.java:54)
+	at com.db.SimpleSqlSessionTemplate.selectList(SimpleSqlSessionTemplate.java:336)
+	at com.dao.BaseDataDAO.listBaseServerConfigs(BaseDataDAO.java:53)
+	at com.service.impl.BaseDataService.initData(BaseDataService.java:23)
+	at com.common.Config.initGame(Config.java:58)
+	at com.common.Config.init(Config.java:39)
+	at com.core.LoginServer.start(LoginServer.java:36)
+	at com.core.LoginServer.main(LoginServer.java:26)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:95)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:101)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:341)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:506)
+	... 11 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 27 more
+2018-08-28 16:43:01 [ERROR]服务启动失败:
+java.lang.NullPointerException
+	at com.db.GccSqlSessionTemplate.getConnection(GccSqlSessionTemplate.java:54)
+	at com.db.SimpleSqlSessionTemplate.selectList(SimpleSqlSessionTemplate.java:336)
+	at com.dao.BaseDataDAO.listBaseServerConfigs(BaseDataDAO.java:53)
+	at com.service.impl.BaseDataService.initData(BaseDataService.java:23)
+	at com.common.Config.initGame(Config.java:58)
+	at com.common.Config.init(Config.java:39)
+	at com.core.LoginServer.start(LoginServer.java:36)
+	at com.core.LoginServer.main(LoginServer.java:26)

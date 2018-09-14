@@ -1,0 +1,17 @@
+2018-05-28 19:15:35 [ERROR]monster is null with monsterId is 1320321 and refreshMonsterId is 1200302
+2018-05-28 19:15:35 [ERROR]其他异常:userId:11 playerId:18389488369665 msgId:4000
+java.lang.NullPointerException
+	at com.service.impl.MonsterService.initMonsterPuppets(MonsterService.java:742)
+	at com.service.impl.MonsterService.refreshMonsters(MonsterService.java:503)
+	at com.service.impl.SceneService.initScene(SceneService.java:304)
+	at com.service.impl.SceneService.enterScene(SceneService.java:496)
+	at com.service.impl.SceneService.enterScene(SceneService.java:414)
+	at com.action.SceneAction.enterScene(SceneAction.java:51)
+	at com.core.GameCommandService.executeDisruptorCommand(GameCommandService.java:79)
+	at com.core.disruptor.GameDataHandler.onDisruptorData(GameDataHandler.java:18)
+	at com.core.disruptor.DisruptorMsgHandler.onEvent(DisruptorMsgHandler.java:12)
+	at com.core.disruptor.DisruptorMsgHandler.onEvent(DisruptorMsgHandler.java:1)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:138)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)

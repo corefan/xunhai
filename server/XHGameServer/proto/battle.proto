@@ -1,0 +1,64 @@
+option java_package="com.message";
+option java_outer_classname="BattleProto";
+import "scene.proto";
+import "buff.proto";
+
+message C_SynSkill{ //同步技能
+	required string guid=1; // 技能使用者
+	optional int32 skillId=2; // 技能编号
+	optional int32 type=3; //施法类型 
+	optional int32 direction=4; // 攻击朝向
+	optional Vector3Msg targetPoint=5; // 目标释放点
+	optional string targetId=6; //受击目标 
+}
+
+message S_SynSkill{ //同步技能
+	required string guid=1; // 技能使用者
+	optional int32 skillId=2; // 技能编号
+	optional int32 type=3; //施法类型 
+	optional int32 direction=4; // 攻击朝向
+	optional Vector3Msg targetPoint=5; // 目标释放点
+	optional string targetId=6; //受击目标 
+	optional int32 wigId = 7; //地效唯一编号
+}
+
+message SkillEffectMsg {
+	optional string targetId=1; // 受击方
+	optional int32 dmg=2; // 伤害
+	optional int32 hp=3; // 受击者剩余血量
+	optional int32 fightResult = 4; //攻击结果0-成功 1-MISS 2-暴击
+}
+
+message C_SkillResult{ //技能结果
+	required string guid=1; // 技能使用者
+	optional int32 skillId=2; // 技能编号
+	repeated string targetIds = 3; //技能影响目标列表
+	optional int32	accountModelId = 4; //技能伤害模块编号
+	optional int32	wigId = 5; //地效唯一编号
+}
+
+message S_SkillResult{ //技能结果
+	required string guid=1; // 攻击发动方
+	optional int32 skillId=2; // 技能编号
+	repeated SkillEffectMsg skillEffect=5; // 目标列表受击效果
+	optional int32	wigId = 6; //地效唯一编号
+	optional int32	accountModelId = 7; //技能伤害模块编号	
+	repeated BuffMsg buffList=8; // buff列表
+}
+
+message C_Revive { //复活
+	optional int32 type=1; // 复活类型(1.免费 2.道具复活 3.钻石复活)
+}
+
+message S_Revive {
+	required string guid=1; // 复活者
+	optional int32 hp = 2;   //当前血量
+	optional int32 mp = 3;   //当前魔法
+	optional int32 hpMax = 4;   //血量最大值
+	optional int32 mpMax = 5;   //魔法最大值
+	optional int32 type = 6;   //复活类型(1.免费 2.道具复活 3.钻石复活)
+}
+
+message C_ChangePkModel{ //切换pk模式
+	optional int32 pkModel = 1;   //切换pk模式	
+}

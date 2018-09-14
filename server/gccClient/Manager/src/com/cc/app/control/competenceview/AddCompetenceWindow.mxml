@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" title="添加用户" width="284" height="194" color="0x000000" borderAlpha="0.15" addedToStage="titlewindow1_addedToStageHandler()" creationComplete="creationCompleteHandler()" close="closeBtn_clickHandler()">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.control.UserControlEvent;
+			import com.cc.app.control.model.UserModel;
+			import com.cc.core.Globals;
+			
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			import mx.managers.PopUpManager;
+			
+			import spark.components.CheckBox;
+			import spark.events.IndexChangeEvent;
+			
+			private var checkBoxs:Vector.<CheckBox>;
+			
+			private function addBtn_clickHandler():void
+			{
+//				private JSONObject createAuthority(String name)
+
+				var name:String = competenceName.text;
+				
+				Globals.instance.context.dispatchEvent(new UserControlEvent(UserControlEvent.ADD_COMPETENCE,{name:name}));
+				this.closeBtn_clickHandler();
+			}
+			
+			private function closeBtn_clickHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			
+			private function updateSelection(e:IndexChangeEvent):void
+			{
+				
+			}
+			
+			private function creationCompleteHandler():void
+			{
+				this.setSelectBox();
+			}
+			
+			private function setSelectBox():void
+			{
+				var list:ArrayCollection = UserModel.instance.competenceList;
+				if(list == null)return;
+				var nameList:ArrayCollection = new ArrayCollection();
+				for each(var obj:Object in list){
+					nameList.addItem(obj.name);
+				}
+				
+				if(selectBox == null)return;
+				
+				selectBox.dataProvider = nameList;
+				selectBox.selectedIndex = 0;
+			}
+			
+			private function titlewindow1_addedToStageHandler():void
+			{
+				this.setSelectBox();
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	
+	<s:Button id="addBtn" x="57" y="117" label="添加" click="addBtn_clickHandler()"/>
+	<s:Button id="cancel" x="156" y="117" label="取消" click="closeBtn_clickHandler()"/>
+	<s:Label x="21" y="28" width="104" height="23" fontSize="14" text="添加权限名：" textAlign="center" verticalAlign="middle"/>
+	<s:Label x="21" y="63" width="104" height="23" fontSize="14" text="已有权限名：" textAlign="center" verticalAlign="middle"/>
+	<s:TextInput id="competenceName" x="128" y="29"/>
+	<s:DropDownList id="selectBox" x="127" y="64" change="updateSelection(event)"
+					labelField="role" selectedIndex="0"></s:DropDownList>
+	
+</s:TitleWindow>

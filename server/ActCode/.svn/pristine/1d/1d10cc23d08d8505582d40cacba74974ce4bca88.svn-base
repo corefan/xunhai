@@ -1,0 +1,38 @@
+2014-05-12 12:18:13 [ERROR]Unknown column 'TYPE_NUM' in 'field list' Query: SELECT CODE_ID AS codeID, CODE AS code, SITE AS site, TYPE AS type, REWARD_TYPE AS rewardType, TYPE_NUM AS typeNum, EXCLUSIVE AS exclusive FROM T_ACT_CODE WHERE STATE = 0 Parameters: []
+java.sql.SQLException: Unknown column 'TYPE_NUM' in 'field list' Query: SELECT CODE_ID AS codeID, CODE AS code, SITE AS site, TYPE AS type, REWARD_TYPE AS rewardType, TYPE_NUM AS typeNum, EXCLUSIVE AS exclusive FROM T_ACT_CODE WHERE STATE = 0 Parameters: []
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:225)
+	at com.db.SimpleSqlSessionTemplate.selectList(SimpleSqlSessionTemplate.java:366)
+	at com.dao.CodeDAO.getCodeList(CodeDAO.java:27)
+	at com.service.impl.CodeService.initActCodeCache(CodeService.java:31)
+	at com.common.ServiceCollection.initCache(ServiceCollection.java:25)
+	at com.core.ActCodeServer.start(ActCodeServer.java:20)
+	at com.core.ActCodeServer.main(ActCodeServer.java:32)
+2014-05-12 12:18:13 [ERROR]服务启动失败:
+java.lang.NullPointerException
+	at com.service.impl.CodeService.initActCodeCache(CodeService.java:32)
+	at com.common.ServiceCollection.initCache(ServiceCollection.java:25)
+	at com.core.ActCodeServer.start(ActCodeServer.java:20)
+	at com.core.ActCodeServer.main(ActCodeServer.java:32)
+2014-05-12 21:10:05 [ERROR]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'xxx' at line 1
+java.sql.BatchUpdateException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'xxx' at line 1
+	at com.mysql.jdbc.StatementImpl.executeBatch(StatementImpl.java:1067)
+	at com.jolbox.bonecp.StatementHandle.executeBatch(StatementHandle.java:446)
+	at com.db.SimpleSqlSessionTemplate.batchUpdate(SimpleSqlSessionTemplate.java:164)
+	at com.db.SimpleSqlSessionTemplate.batchExcute(SimpleSqlSessionTemplate.java:227)
+	at com.dao.BatchExcuteDAO.batchExcute(BatchExcuteDAO.java:16)
+	at com.service.impl.BatchExcuteService.batchUpdate(BatchExcuteService.java:22)
+	at com.service.impl.SynDataService.synUpdateData(SynDataService.java:32)
+	at com.service.impl.SynDataService.update_fiveMinData(SynDataService.java:23)
+	at com.quartz.FiveMinQuartz.execute(FiveMinQuartz.java:23)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:207)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560)
+2014-05-12 22:29:54 [ERROR]Unknown column 'NUM' in 'field list'
+java.sql.BatchUpdateException: Unknown column 'NUM' in 'field list'
+	at com.mysql.jdbc.StatementImpl.executeBatch(StatementImpl.java:1067)
+	at com.jolbox.bonecp.StatementHandle.executeBatch(StatementHandle.java:446)
+	at com.db.SimpleSqlSessionTemplate.batchInsert(SimpleSqlSessionTemplate.java:283)
+	at com.dao.BatchExcuteDAO.batchCreate(BatchExcuteDAO.java:20)
+	at com.service.impl.BatchExcuteService.batchInsert(BatchExcuteService.java:29)
+	at com.util.CodeUtil.main(CodeUtil.java:84)

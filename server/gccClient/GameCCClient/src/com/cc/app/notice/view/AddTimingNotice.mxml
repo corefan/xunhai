@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" width="700" height="564" title="添加系统公告界面" creationComplete="initData()" close="closeHandler()">
+	
+	<fx:Script>
+		<![CDATA[
+            import com.cc.app.main.MainModel;
+            import com.cc.app.notice.NoticeEvent;
+            import com.cc.core.Globals;
+            import com.cc.core.util.DateTimeUtil;
+            import com.cc.core.util.PopUpEffect;
+            
+            import mx.collections.ArrayCollection;
+            import mx.controls.Alert;
+            import mx.events.CloseEvent;
+            import mx.utils.StringUtil;
+			
+			[Bindable]
+			private var timeList:ArrayCollection = new ArrayCollection(["1分钟","5分钟","1小时","4小时"]);
+			
+			[Bindable]
+			private var startHourList:ArrayCollection = new ArrayCollection();
+			
+			[Bindable]
+			private var startMinList:ArrayCollection = new ArrayCollection();
+			
+			private function initData():void {
+				
+				for (var i:int=1;i<=23;i++) {
+					var hour1:Object = new Object();
+					hour1.label = i;
+					hour1.value = i;
+					
+					startHourList.addItem(hour1);
+				}
+				
+				for (var j:int=1;j<=59;j++) {
+					var min1:Object = new Object();
+					min1.label = j;
+					min1.value = j;
+					
+					startMinList.addItem(min1);
+				}
+			}
+			
+			
+			private function addBtn_clickHandler(event:MouseEvent):void
+			{
+				if(intervalTime.selectedIndex < 0)return;
+				var time:int = getIntervalSecond(intervalTime.selectedIndex);
+				
+				if(startDate.selectedDate > endDate.selectedDate){
+					Alert.show("结束时间必须大于开始时间","温馨提示");
+					return;
+				}
+				
+				var startTime:String = startDate.text;
+				var endTime:String = endDate.text;
+				var content:String = StringUtil.trim(contextArea.text);
+				if(content == "" || content.length == 0){
+					Alert.show("请输入公告内容","温馨提示");
+					return;
+				}
+                
+				if (startHour.selectedIndex < 0) {
+					Alert.show("请选择开始小时","温馨提示");
+					return;
+				}
+				if (startMin.selectedIndex < 0) {
+					Alert.show("请选择开始分钟","温馨提示");
+					return;
+				}
+				if (endHour.selectedIndex < 0) {
+					Alert.show("请选择结束小时","温馨提示");
+					return;
+				}
+				if (endMin.selectedIndex < 0) {
+					Alert.show("请选择结束分钟","温馨提示");
+					return;
+				}
+				
+                if (MainModel.instance.currentModel == 3) {
+                    Alert.show("确定发送该定时公告给【全平台】吗？", "温馨提示", Alert.YES | Alert.NO, this, alertHandler);
+                } else {
+                    Alert.show("确定发送该定时公告给【全服】吗？", "温馨提示", Alert.YES | Alert.NO, this, alertHandler);
+                }
+				
+			}
+            
+            private function alertHandler(e:CloseEvent):void {
+                if (e.detail == Alert.YES) {
+                    var time:int = getIntervalSecond(intervalTime.selectedIndex);
+                    var startTime:String = startDate.text;
+                    var endTime:String = endDate.text;
+					
+					startTime += " "+ startHour.selectedItem.value+":"+startMin.selectedItem.value+":00";
+					endTime += " "+endHour.selectedItem.value+":"+endMin.selectedItem.value+":00";
+                    var content:String = StringUtil.trim(contextArea.text);
+                    Globals.instance.context.dispatchEvent(new NoticeEvent(NoticeEvent.ADD_NOTICE,{content:content,frequency:time,startTime:startTime,endTime:endTime}));
+                    this.closeHandler();
+                }
+            }
+			
+			private function closeHandler():void
+			{
+				PopUpEffect.Hide(this);
+			}
+			
+			private function getIntervalSecond(index:int):int
+			{
+				var second:int = 60;
+				switch(index){
+					case 0:
+						second = 60;
+						break;
+					case 1:
+						second = 5*60;
+						break;
+					case 2:
+						second = 60*60;
+						break;
+					case 3:
+						second = 240*60;
+						break;
+				}
+				return second;
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:DropDownList id="intervalTime" x="106" y="23" dataProvider="{timeList}" selectedIndex="0"></s:DropDownList>
+	<s:Label x="37" y="23" width="64" height="21" text="间隔时间：" verticalAlign="middle"/>
+	<s:Label x="231" y="22" width="292" height="21" text="（公告发送间隔时间）" verticalAlign="middle"/>
+	<s:Label x="37" y="60" width="64" height="21" text="开始日期：" verticalAlign="middle"/>
+	<s:Label x="37" y="95" width="64" height="21" text="结束日期：" verticalAlign="middle"/>
+	<s:Label x="35" y="136" width="97" height="27" fontSize="14" text="公告内容：" verticalAlign="middle"/>
+	<mx:DateField id="startDate" x="107" y="58" textAlign="center" formatString="YYYY-MM-DD"
+				  dayNames='["日","一","二","三","四","五","六"]'
+				  monthNames='["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]' 
+				  yearNavigationEnabled="true" selectedDate="{new Date()}"/>
+	
+	<s:DropDownList id="startHour" x="230" y="58" dataProvider="{startHourList}" labelField="label" selectedIndex="0" prompt="选择开始小时"></s:DropDownList>
+	<s:DropDownList id="startMin" x="350" y="58" dataProvider="{startMinList}" labelField="label" selectedIndex="0" prompt="选择开始分钟"></s:DropDownList>
+	
+	<mx:DateField id="endDate" x="107" y="94" textAlign="center" formatString="YYYY-MM-DD" selectedDate="{DateTimeUtil.addDaysByDateTime(new Date(),1)}"
+				  dayNames='["日","一","二","三","四","五","六"]'
+				  monthNames='["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]' 
+				  yearNavigationEnabled="true"/>
+	<s:DropDownList id="endHour" x="230" y="94" dataProvider="{startHourList}" labelField="label" selectedIndex="0" prompt="选择结束小时"></s:DropDownList>
+	<s:DropDownList id="endMin" x="350" y="94" dataProvider="{startMinList}" labelField="label" selectedIndex="0" prompt="选择结束分钟"></s:DropDownList>
+	<s:TextArea id="contextArea" x="44" y="167" width="609" height="316"/>
+	<s:Button id="addBtn" x="216" y="497" label="添加" click="addBtn_clickHandler(event)"/>
+	<s:Button id="noBtn" x="409" y="498" label="取消" click="closeHandler()"/>
+	
+</s:TitleWindow>

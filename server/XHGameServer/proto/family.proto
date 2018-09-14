@@ -1,0 +1,106 @@
+option java_package="com.message";
+option java_outer_classname="FamilyProto";
+message FamilyPlayerMsg{
+	optional int64 playerId = 1;   		// 角色编号ID	
+	optional int32 familyPosId = 2;	 	// 角色家族职位	
+	optional int32 familySortId = 3; 	// 角色家族排序位	
+	optional string familyTitle = 4; 	// 角色家族称谓
+	optional string playerName = 5; 	// 角色名称		
+	optional int32 level = 6;      		// 角色等级
+	optional int32 online = 7; 			// 角色在线状态	
+	optional int32 career = 8;     		// 职业	
+	optional int32 dressStyle = 9;  	// 外形
+	optional int32 weaponStyle = 10;    // 武器外形(装备基础ID)
+	optional int64 exitTime = 11;  	    // 离线时间	
+	optional int32 wingStyle = 12; //羽翼外形编号
+}
+
+message C_GetFamilyInfo{ // 获取家族信息
+	
+}
+
+message S_SynFamilyInfo{ // 获取家族信息  综合同步数据
+	optional int64 playerFamilyId = 1; 	// 家族唯一ID
+	optional string familyName = 2; 	 	// 家族名称
+	optional string familyNotice = 3;  	// 家族公告
+	repeated FamilyPlayerMsg listFamilyPlayer = 4; //家族玩家列表
+}
+
+message C_CreateFamily{ // 创建家族  所有人S_SynFamilyInfo
+	optional string familyName = 1;  // 家族名称	
+}
+
+message S_CreateFamily{ // 创建家族  
+	
+}
+
+message C_DisbandFamily{ // 解散家族
+	
+}
+
+message S_DisbandFamily{ // 同步在家族内所有玩家，家族解散
+
+}
+
+message C_InviteJoinFamily{ // 邀请加入家族
+	optional int64 friendId = 1;   		// 邀请的角色编号ID
+}
+
+message S_SynInviteJoinFamily{ //同步邀请消息给所有被邀请的玩家
+	optional int64 playerFamilyId = 1; 	  // 家族唯一ID
+	optional string familyName = 2; 	  // 家族名称
+	optional int64 playerId = 3;          // 邀请者编号ID
+	optional string playerName = 4;       // 邀请者名字	
+}
+
+message C_InviteMsgDeal{ // 邀请信息处理  同意情况下所有人同步S_SynFamilyInfo   服务端飘字S_Exception_Server
+	optional int64 playerFamilyId = 1;      // 家族唯一ID
+	optional int32 state = 2;				// 0:拒绝，1:同意
+}
+
+
+message C_ExitFamily{ // 退出家族
+	
+}
+
+message S_ExitFamily{ // 个人数据删除  其他人推送S_SynFamilyInfo  服务端飘字S_Exception_Server
+
+}
+
+message C_ChangeFamilyLeader{ // 族长转让  所有人同步S_SynFamilyInfo  服务端飘字S_Exception_Server
+	optional int64 newLeaderPlayerId = 1;   		// 新族长的角色编号ID	
+}
+
+message C_ChangeFamilySortId{ // 切换家族排位  所有人同步S_SynFamilyInfo  
+	repeated int32 sortId = 1;   		// 改变的角色排位信息
+}
+
+message S_ChangeFamilySortId{ // 切换家族排位  所有人同步S_SynFamilyInfo  
+	optional int32 state = 1;   		// 0: 成功， 1: 失败
+}
+
+message C_ChangeFamilyNotice{ // 编辑家族公告	所有人同步S_SynFamilyInfo
+	optional string msg = 1; 	        // 公告内容
+}
+
+
+message C_KickFamilyPlayer{ // 踢出家族成员	 服务端飘字S_Exception_Server
+	optional int64 kickPlayerId = 1;   		// 踢出的角色编号ID	
+}
+
+message S_KickFamilyPlayer{ // 推送被踢者  其他人推送S_SynFamilyInfo
+
+}
+
+message C_ChangeFamilyPlayerTitle{ // 修改成员称谓 所有人同步S_SynFamilyInfo
+	optional int64 changePlayerId = 1;   		// 修改的角色编号ID	
+	optional string title = 2; 			        // 称谓
+}
+
+message C_FamilyFB{ //家族副本
+	optional int32  type = 1;   // 1：开启  2：进入	
+}
+message S_FamilyFB{ //家族副本
+	optional int32  type = 1;   // 1：开启  2：进入	
+}
+

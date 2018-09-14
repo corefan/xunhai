@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="448" height="36" initialize="initData()">
+	<fx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			
+			public var pageCount:int = 10;// 每页包含的记录数，默认6条
+			public var curPage:int; // 当前页码
+			public var totalPage:int; // 总页数
+			public var totalCount:int; // 总记录条数
+			public var localFunction:Function;
+			
+			
+			public function initData():void
+			{
+				totalCount = 0;
+				totalPage = 0;
+				curPage = 0;
+				inputpage.minimum=0;
+				inputpage.maximum= 0;
+				pagedetail.text = "第 0 页/共 0 页 共 0 条记录";
+			}
+			
+			public function rangPage(len:int):void
+			{
+				totalCount = len;
+				totalPage = (totalCount + pageCount -1)/pageCount;
+				setPager(0);
+				inputpage.minimum=1;
+				inputpage.maximum= totalPage;
+			}
+			
+			public function setPager(value:int):void
+			{
+				if(value <0 || (value+1)>totalPage){
+					return;
+				}
+				curPage = value;
+				// 计算跳转到页面中的第一条记录所在记录中是第几条记录
+				var curNum : int = value*pageCount;
+				var temp:int=curPage+1;
+				pagedetail.text = "第 "+temp+" 页/共 "+totalPage+" 页 共 "+totalCount+" 条记录";
+				
+				if(temp>0 && temp<=this.totalPage){ 
+					if(this.localFunction!=null){ 
+						localFunction(temp);
+					}
+				} 
+			}
+			
+		]]>
+	</fx:Script>
+	
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<mx:HBox verticalAlign="middle" horizontalAlign="center" width="100%" height="100%">
+		<mx:Label text="第 0 页/共 0 页" id="pagedetail" />
+		<mx:LinkButton label="首页" click="setPager(0);" />
+		<mx:LinkButton label="上一页" click="setPager(curPage - 1);" />
+		<mx:LinkButton label="下一页" click="setPager(curPage + 1);" />
+		<mx:LinkButton label="末页" click="setPager(totalPage - 1);" />
+		<mx:NumericStepper id="inputpage" stepSize="1" minimum="0" maximum="0" />
+		<mx:LinkButton label="跳转" click="setPager(inputpage.value - 1);" />
+	</mx:HBox>
+	
+</mx:VBox>

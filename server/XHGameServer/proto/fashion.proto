@@ -1,0 +1,35 @@
+option java_package="com.message";
+option java_outer_classname="FashionProto";
+
+message PlayerFashionMsg{ //时装信息	
+	optional int32 fashionId = 1; // 时装编号	
+	optional int32 dressFlag = 2; // 是否装备  1：是		
+} 
+ 
+message C_GetFashionList{
+	
+}
+
+message S_SynFashionList{
+	repeated PlayerFashionMsg fashionList = 1; // 时装列表
+}
+
+message S_AddFashion{ // 激活新的时装
+	optional int32 fashionId = 1; // 时装编号	 
+}
+
+message C_PutonFashion{ //装备时装
+	optional int32 fashionId = 1; // 时装编号		
+}
+
+message S_PutonFashion{ //装备时装返回	
+	optional int32 fashionId = 1; // 时装编号	
+}
+
+message C_PutdownFashion{ //卸下时装	
+	optional int32 fashionId = 1; // 时装编号		
+}
+
+message S_PutdownFashion{ //卸下时装	
+	optional int32 fashionId = 1; // 时装
+}

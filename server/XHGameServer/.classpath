@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/bcprov-jdk16-145.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/flex-messaging-common.jar"/>
+	<classpathentry kind="lib" path="lib/flex-messaging-core.jar"/>
+	<classpathentry kind="lib" path="lib/flex-messaging-opt.jar"/>
+	<classpathentry kind="lib" path="lib/flex-messaging-proxy.jar"/>
+	<classpathentry kind="lib" path="lib/flex-messaging-remoting.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbutils-1.5.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-2.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-jobs-2.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-simple-1.6.6.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/disruptor-3.2.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/disruptor-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-httpclient-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/json.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-annotations-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-client-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-continuation-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-http-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-io-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-security-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-server-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-servlet-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-servlets-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-util-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-xml-8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/netty-all-4.1.4.Final.jar" sourcepath="lib/netty-all-4.1.4.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-buffer-4.1.4.Final.jar"/>
+	<classpathentry kind="lib" path="lib/HikariCP-2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.46-bin.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool2-2.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/jedis-2.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx"  minWidth="955" minHeight="600" 
+					   xmlns:local="*"
+					   addedToStage="onCreate()">
+	<fx:Declarations>
+		<local:GameCCClientContext id="context" contextView="{this}"/>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.login.Login;
+			import com.cc.core.Globals;
+			import com.cc.core.conf.Config;
+			import com.cc.core.manager.AlignType;
+			import com.cc.core.manager.LayerDef;
+			import com.cc.core.manager.LayerManager;
+			import com.cc.core.manager.StageManager;
+			import com.cc.core.manager.WindowManager;
+			import com.cc.core.net.GameCCSocket;
+			import com.cc.core.util.AppUtil;
+			
+			import mx.events.FlexEvent;
+			
+			private function onCreate():void{
+				//初始config.xml
+				
+				//initConfig();
+				
+				setup();
+			}  
+			private function setup():void{
+				Security.loadPolicyFile("xmlsocket://10.25.219.23:843");
+				
+				stage.showDefaultContextMenu = false;
+				LayerManager.instance.addLayerByView(scene, LayerDef.SCENE, true);
+				LayerManager.instance.addLayerByView(sceneUI, LayerDef.SCENE_UI, true);
+				StageManager.setup(this.stage);
+				WindowManager.instance.show(AppUtil.getAppByClass(Login),true,LayerDef.SCENE,AlignType.MIDDLE_CENTER,null,false);
+				Globals.instance.context = context;	
+				Globals.instance.maskCanvas = maskCanvas;
+				
+				//连接Socket  改到登录那里连接了
+				if(GameCCSocket.instance.connected == false){
+					Globals.instance.setBusy = true;
+					//trace(Config.host+" "+Config.port);
+					GameCCSocket.instance.connect(Config.host, Config.port);
+				}
+				
+			}
+			
+			private function initConfig():void{
+				var loader:URLLoader = new URLLoader();
+				loader.dataFormat = URLLoaderDataFormat.BINARY;
+				loader.addEventListener(Event.COMPLETE, configLoaded);
+				loader.load(new URLRequest("config/config.xml"));
+			}
+			private function configLoaded(e:Event):void{
+				var bytes:ByteArray = e.target.data as ByteArray;
+				var xml:XML = new XML(bytes);
+				Config.host = String(xml.server);
+				Config.key = String(xml.key);
+				Config.assets = String(xml.asssetsStr);
+				Config.port = int(xml.port);
+				
+				setup();	
+			}
+			
+			protected function application1_showHandler(event:FlexEvent):void
+			{
+				// TODO Auto-generated method stub
+				
+			}
+			
+		]]>
+	</fx:Script>
+	<s:Group id="scene" width="100%" height="100%" />
+	<s:Group id="sceneUI" width="100%" height="100%" />
+	<s:BorderContainer id="maskCanvas" width="100%" height="100%" visible="false" backgroundAlpha="0.3" backgroundColor="0xffffff" />
+</s:WindowedApplication>

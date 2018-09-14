@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:mx="library://ns.adobe.com/flex/mx" title="修改权限" width="316" height="212"  color="0x000000" borderAlpha="0.15" creationComplete="creationCompleteHandler()" close="closeBtn_clickHandler()">
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.control.UserControlEvent;
+			import com.cc.app.control.model.UserModel;
+			import com.cc.core.Globals;
+			import com.cc.core.util.PopUpEffect;
+			
+			import mx.collections.ArrayCollection;
+			import mx.managers.PopUpManager;
+			
+			import spark.events.IndexChangeEvent;
+			
+			private var data:Object;
+			
+			private function updateSelection(e:IndexChangeEvent):void
+			{
+//				currSel.text = "Current Product = " + myDDL.selectedItem.product;
+//				currPrc.text = "Price = $" + myDDL.selectedItem.price;
+			}
+
+			
+			private function creationCompleteHandler():void
+			{
+				var list:ArrayCollection = UserModel.instance.roleList;
+				var nameList:ArrayCollection = new ArrayCollection();
+				for each(var obj:Object in list){
+					nameList.addItem(obj.name);
+				}
+				
+				selectBox.dataProvider = nameList;
+				selectBox.selectedIndex = 0;
+			}
+			
+			private function closeBtn_clickHandler():void
+			{
+//				PopUpManager.removePopUp(this);
+				PopUpEffect.Hide(this);
+			}
+			
+			public function setUserInfo(obj:Object):void
+			{
+				this.data = obj;
+				userName.text = obj.userName;
+//				passWord.text = obj.password;
+			}
+			
+			private function changBtnClickHandler():void
+			{
+//				private JSONObject updateUser(int userID, String userName, String password, int roleID)
+				var userId:int = this.data.userID;
+				var username:String = this.data.userName;
+				var word:String = passWord.text;
+				var roleId:int = (selectBox.selectedIndex+1);
+
+				Globals.instance.context.dispatchEvent(new UserControlEvent(UserControlEvent.MODIFY_USER,{userID:userId,userName:username,password:word,roleID:roleId}));
+			
+				this.closeBtn_clickHandler();
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 更改用户界面 -->
+	</fx:Declarations>
+	<s:Button x="68" y="135" label="修改" click="changBtnClickHandler()"/>
+	<s:Button x="167" y="135" label="取消" click="closeBtn_clickHandler()"/>
+	<s:Label id="userName" x="140" y="20" width="100" height="23" fontSize="14" textAlign="center" verticalAlign="middle"/>
+	<s:TextInput id="passWord" x="140" y="56" width="120" height="23" fontSize="14" restrict="^/w+$" textAlign="center"/>
+	<s:Label x="61" y="19" width="76" height="23" fontSize="14" text="用户名：" textAlign="center" verticalAlign="middle"/>
+	<s:Label x="54" y="91" width="76" height="23" fontSize="14" text="分配角色：" textAlign="center" verticalAlign="middle"/>
+	<s:Label x="54" y="57" width="76" height="23" fontSize="14" text="修改密码：" textAlign="center" verticalAlign="middle"/>
+	<s:DropDownList id="selectBox" x="140" y="91" selectedIndex="0" labelField="role" change="updateSelection(event)"></s:DropDownList>
+	
+</s:TitleWindow>

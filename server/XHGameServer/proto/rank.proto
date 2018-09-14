@@ -1,0 +1,57 @@
+option java_package="com.message";
+option java_outer_classname="RankProto";
+
+message BattleValueRankMsg { //战力榜信息
+	optional int32 rank = 1;     //	排名
+	optional int64 playerId = 2; // 玩家编号
+	optional string playerName = 3; // 玩家名称
+	optional int32 career = 4;     //玩家职业  
+	optional int32 level = 5;      //玩家等级
+	optional string guildName = 6;   //公会名称
+	optional int32 value = 7;  //战力
+}
+
+message EquipRankMsg {  //装备榜信息
+	optional int32 rank = 1;     //	排名
+	optional int64 playerId = 2; // 玩家编号
+	optional string playerName = 3; // 玩家名称
+	optional int32 career = 4;     //玩家职业  
+	optional int32 level = 5;      //玩家等级
+	optional string guildName = 6;   //公会名称
+	optional int32 value = 7;  //装备总评分
+}
+
+message GoldRankMsg {  //财富榜信息
+	optional int32 rank = 1;     //	排名
+	optional int64 playerId = 2; // 玩家编号
+	optional string playerName = 3; // 玩家名称
+	optional int32 career = 4;     //玩家职业  
+	optional int32 level = 5;      //玩家等级
+	optional string guildName = 6;   //公会名称
+	optional int32 value = 7;  //金币总数
+}
+
+message C_GetRankList {  // 获取排行榜
+	optional int32 type = 1; // 1：战力榜 2：神兵榜  3：财富榜
+	optional int32 career = 2; // 职业 0全部
+	optional int32 start=3; // 起始
+	optional int32 offset=4; // 数量
+}
+
+message S_BattleValueRank {  // 战力榜
+	repeated BattleValueRankMsg rankList=1; //排行列表
+	optional int32 myRank = 2; // 我的排名 0：未上榜
+	optional int32 myValue = 3; // 我的数值 
+}
+
+message S_EquipRank {  // 神兵榜
+	repeated EquipRankMsg rankList=1; //排行列表
+	optional int32 myRank = 2; // 我的排名 0：未上榜
+	optional int32 myValue = 3; // 我的数值 
+}
+
+message S_GoldRank {  // 财富榜
+	repeated GoldRankMsg rankList=1; //排行列表
+	optional int32 myRank = 2; // 我的排名 0：未上榜
+	optional int32 myValue = 3; // 我的数值 
+}

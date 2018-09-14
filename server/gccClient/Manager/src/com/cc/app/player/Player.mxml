@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx"
+         width="100%"
+         height="100%"
+         creationComplete="creationCompleteHandler(event)"
+         keyDown="group1_keyDownHandler(event)">
+
+    <fx:Script>
+        <![CDATA[
+			import com.cc.app.main.Main;
+			import com.cc.app.player.checkview.BagItemCheck;
+			import com.cc.app.player.checkview.ConsumeCheck;
+			import com.cc.app.player.checkview.EquipmentFMLogCheck;
+			import com.cc.app.player.checkview.GoddessLogCheck;
+			import com.cc.app.player.checkview.LoginLogCheck;
+			import com.cc.app.player.checkview.MagicLogCheck;
+			import com.cc.app.player.checkview.MountLogCheck;
+			import com.cc.app.player.checkview.PayCheck;
+			import com.cc.app.player.checkview.PetLogCheck;
+			import com.cc.app.player.checkview.SweetyLogCheck;
+			import com.cc.app.player.model.PlayerModel;
+			import com.cc.core.conf.Config;
+			import com.cc.core.manager.WindowManager;
+			import com.cc.core.util.AppUtil;
+			import com.cc.core.util.PopUpEffect;
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			import mx.core.FlexGlobals;
+			import mx.events.FlexEvent;
+			import mx.managers.PopUpManager;
+			
+			import spark.components.TitleWindow;
+			import spark.events.IndexChangeEvent;
+
+            private var bagWindow:BagItemCheck;
+            private var consumeWindow:ConsumeCheck;
+            private var loginWindow:LoginLogCheck;
+            private var payWindow:PayCheck;
+			
+			private var goddessLogWin:GoddessLogCheck;
+			private var sweetyLogWin:SweetyLogCheck;
+			private var mountLogWin:MountLogCheck;
+			private var petLogWin:PetLogCheck;
+			private var magicLogWin:MagicLogCheck;
+			private var equipmentFmLogWin:EquipmentFMLogCheck;
+
+            [Bindable]
+			public var labels:ArrayCollection = new ArrayCollection([{label: "角色名(模糊)", type: 1}, {label: "用户编号(userId)", type: 2},
+				{label: "角色编号(playerId)", type: 3}]);
+
+            public var window:TitleWindow;
+
+            public function searchPlayer():void {
+                var type:int = combox_type.selectedItem.type;
+
+                var value:String = searchText.text;
+
+                if (value == null || value == "")
+                    return;
+                if (type == 3) {
+                    if (isNaN(Number(value))) {
+                        searchText.text = "";
+                        return;
+                    }
+                }
+                this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER, {searchType: type, searchValue: value}));
+            }
+
+            public function onSearchPlayer(data:String):void {
+                if (data) {
+                    var list:ArrayCollection = new ArrayCollection();
+                    var arr:Array = JSON.parse(data) as Array;
+                    var playerObj:Object;
+                    for (var i:int = 0; i < arr.length; i++) {
+                        playerObj = arr[i];
+                        playerObj.typeName = PlayerModel.getTypeName(playerObj.playerType);
+                        list.addItem(arr[i]);
+                    }
+                    playerGrid.dataProvider = list;
+                }
+
+            }
+
+            public function close():void {
+                playerGrid.dataProvider = new ArrayCollection();
+                WindowManager.instance.hide(this);
+            }
+
+            public function backToMain():void {
+                close();
+                WindowManager.instance.show(AppUtil.getAppByClass(Main), false);
+            }
+
+            protected function combox_changeHandler(event:IndexChangeEvent):void {
+                var type:int = combox_type.selectedItem.type;
+                var searchValue:String = searchText.text;
+                if (searchValue && type == 3) {
+                    if (isNaN(Number(searchValue))) {
+                        searchText.text = "";
+                    }
+                }
+            }
+
+            protected function playerGrid_clickHandler(event:MouseEvent):void {
+                var gc:DataGrid = event.currentTarget as DataGrid;
+                if (gc.selectedItem == null)
+                    return;
+            }
+
+            private var myContextMenu:ContextMenu;
+
+            private function creationCompleteHandler(event:FlexEvent):void {
+                myContextMenu = new ContextMenu();
+                FlexGlobals.topLevelApplication.contextMenu.hideBuiltInItems();
+                var item:ContextMenuItem = new ContextMenuItem("背包物品查询");
+                var item1:ContextMenuItem = new ContextMenuItem("登录日志查询");
+                var item2:ContextMenuItem = new ContextMenuItem("消费记录查询");
+                var item3:ContextMenuItem = new ContextMenuItem("充值记录查询");
+				
+                var item4:ContextMenuItem = new ContextMenuItem("女神日志查询");
+                var item5:ContextMenuItem = new ContextMenuItem("光翼日志查询");
+                var item6:ContextMenuItem = new ContextMenuItem("坐骑日志查询");
+                var item7:ContextMenuItem = new ContextMenuItem("精灵日志查询");
+                var item8:ContextMenuItem = new ContextMenuItem("魔法阵日志查询");
+                var item9:ContextMenuItem = new ContextMenuItem("装备进阶/附魔日志查询");
+                //默认的菜单项 
+                var contextMenuCustomItems:Array = FlexGlobals.topLevelApplication.contextMenu.customItems;
+                contextMenuCustomItems.push(item);
+                contextMenuCustomItems.push(item1);
+                contextMenuCustomItems.push(item2);
+                contextMenuCustomItems.push(item3);
+				
+                contextMenuCustomItems.push(item4);
+                contextMenuCustomItems.push(item5);
+                contextMenuCustomItems.push(item6);
+                contextMenuCustomItems.push(item7);
+                contextMenuCustomItems.push(item8);
+                contextMenuCustomItems.push(item9);
+				
+				
+                //监听选择菜单项后的事件 
+                item.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+                item1.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+                item2.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+                item3.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+				
+                item4.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+                item5.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+                item6.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+                item7.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+                item8.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+                item9.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, itemSelectedHandler);
+				
+				
+                //监听右键菜单弹出后的事件 
+                myContextMenu.addEventListener(ContextMenuEvent.MENU_SELECT, menuSelectedHandler);
+                playerGrid.contextMenu = myContextMenu;
+            }
+
+            private function itemSelectedHandler(event:ContextMenuEvent):void {
+                var contextItem:ContextMenuItem = event.currentTarget as ContextMenuItem;
+                var index:int = FlexGlobals.topLevelApplication.contextMenu.customItems.indexOf(contextItem);
+                playerGrid.selectedItem;
+                if (playerGrid.selectedIndex < 0) {
+                    Alert.show("请先左键点击选中玩家项", "温馨提示");
+                    return;
+                }
+
+                switch (index) {
+                    case 0:
+                        //背包物品查询
+                        if (bagWindow == null) {
+                            bagWindow = new BagItemCheck();
+                        }
+                        this.showWindow(bagWindow);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.
+                                    playerID}, 106));
+                        break;
+                    case 1:
+                        //登录日志查询
+						if (loginWindow == null) {
+							loginWindow = new LoginLogCheck();
+						}
+                        this.showWindow(loginWindow);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.playerID},107));
+                        break;
+                    case 2:
+                        //消费记录查询
+                        if (consumeWindow == null) {
+                            consumeWindow = new ConsumeCheck();
+                        }
+                        this.showWindow(consumeWindow);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.
+                                    playerID}, 108));
+                        break;
+                    case 3:
+                        //充值记录查询
+						if (payWindow == null) {
+							payWindow = new PayCheck();
+						}
+                        this.showWindow(payWindow);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.
+                                    playerID}, 109));
+                        break;
+                    case 4:
+                        //女神日志记录查询
+						if (goddessLogWin == null) {
+							goddessLogWin = new GoddessLogCheck();
+						}
+                        this.showWindow(goddessLogWin);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.
+                                    playerID}, 130));
+                        break;
+                    case 5:
+                        //翅膀日志记录查询
+						if (sweetyLogWin == null) {
+							sweetyLogWin = new SweetyLogCheck();
+						}
+                        this.showWindow(sweetyLogWin);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.
+                                    playerID}, 131));
+                        break;
+                    case 6:
+                        //坐骑日志记录查询
+						if (mountLogWin == null) {
+							mountLogWin = new MountLogCheck();
+						}
+                        this.showWindow(mountLogWin);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.
+                                    playerID}, 132));
+                        break;
+                    case 7:
+                        //精灵日志记录查询
+						if (petLogWin == null) {
+							petLogWin = new PetLogCheck();
+						}
+                        this.showWindow(petLogWin);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.
+                                    playerID}, 133));
+                        break;
+                    case 8:
+                        //魔法阵日志记录查询
+						if (magicLogWin == null) {
+							magicLogWin = new MagicLogCheck();
+						}
+                        this.showWindow(magicLogWin);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.
+                                    playerID}, 134));
+                        break;
+                    case 9:
+                        //装备附魔日志记录查询
+						if (equipmentFmLogWin == null) {
+							equipmentFmLogWin = new EquipmentFMLogCheck();
+						}
+                        this.showWindow(equipmentFmLogWin);
+                        this.dispatchEvent(new PlayerEvent(PlayerEvent.SEARCH_PLAYER_DATA_LOG, {playerID: playerGrid.selectedItem.
+                                    playerID}, 135));
+                        break;
+                }
+            }
+
+            private function showWindow(window:TitleWindow):void {
+                PopUpEffect.Show(window, this, true);
+            }
+
+            private function menuSelectedHandler(event:ContextMenuEvent):void {
+                var item:ContextMenuItem = myContextMenu.customItems[0] as ContextMenuItem;
+                if (playerGrid.selectedIndex >= 0) {
+                    item.visible = true;
+                } else {
+                    item.visible = false;
+                }
+            }
+
+            public function setCheckWindowInfo():void {
+
+            }
+
+            public function setPlayerBagItemInfo(data:Object):void {
+                var arr:Array = JSON.parse(data.dataList) as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in arr) {
+                    list.addItem(obj);
+                }
+
+                /* 	if(bagWindow == null){
+                        bagWindow =  new BagItemCheck();
+                    }
+                    PopUpEffect.Show(bagWindow,this,true); */
+                bagWindow.initData(list);
+            }
+
+            public function setPlayerConsumeInfo(data:Object):void {
+                var arr:Array = data.costDiamondLogList as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in arr) {
+                    list.addItem(obj);
+                }
+                consumeWindow.initData(list);
+
+            }
+
+            public function setPlayerPayInfo(data:Object):void {
+                var arr:Array = data.payLogList as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                var sum:int = 0;
+                for each (var obj:Object in arr) {
+                    list.addItem(obj);
+                    sum += int(obj.amount);
+                }
+                /* 			if(payWindow == null){
+                                payWindow =  new PayCheck();
+                            }
+                            PopUpEffect.Show(payWindow,this,true); */
+                payWindow.initData(list, sum);
+            }
+
+            public function setPlayerLoginInfo(data:Object):void {
+                var arr:Array = data.loginLogList as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in arr) {
+//                    obj.loginAddress = 
+                    list.addItem(obj);
+                }
+//                if(loginWindow == null){
+//                    loginWindow = new LoginLogCheck();
+//                }
+//                PopUpEffect.Show(loginWindow,this,true); 
+                loginWindow.initData(list);
+            }
+			
+            public function setGoddessLogInfo(data:Object):void {
+                var arr:Array = data.goddessLogList as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in arr) {
+                    list.addItem(obj);
+                }
+                goddessLogWin.initData(list);
+            }
+            public function setSweetyLogInfo(data:Object):void {
+                var arr:Array = data.sweetyLogList as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in arr) {
+                    list.addItem(obj);
+                }
+                sweetyLogWin.initData(list);
+            }
+            public function setMountLogInfo(data:Object):void {
+                var arr:Array = data.mountLogList as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in arr) {
+                    list.addItem(obj);
+                }
+                mountLogWin.initData(list);
+            }
+            public function setPetLogInfo(data:Object):void {
+                var arr:Array = data.petLogList as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in arr) {
+                    list.addItem(obj);
+                }
+                petLogWin.initData(list);
+            }
+            public function setMagicLogInfo(data:Object):void {
+                var arr:Array = data.magicLogList as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in arr) {
+                    list.addItem(obj);
+                }
+                magicLogWin.initData(list);
+            }
+            public function setEquipmentFmLogInfo(data:Object):void {
+                var arr:Array = data.equipmentLogList as Array;
+                var list:ArrayCollection = new ArrayCollection();
+                for each (var obj:Object in arr) {
+                    list.addItem(obj);
+                }
+                equipmentFmLogWin.initData(list);
+            }
+			
+            protected function group1_keyDownHandler(event:KeyboardEvent):void {
+                if (event.keyCode == 13) {
+                    this.searchPlayer();
+                }
+            }
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+    </fx:Declarations>
+    <s:Panel x="0"
+             y="0"
+             title="玩家管理"
+             width="99%"
+             height="100%">
+        <s:Button x="367"
+                  y="28"
+                  width="78"
+                  height="30"
+                  label="查询"
+                  click="searchPlayer()"
+                  fontSize="14"/>
+
+        <s:DataGrid id="playerGrid"
+                    x="10"
+                    y="86"
+                    textAlign="center"
+                    width="90%"
+                    height="494"
+                    editable="true"
+                    gridClick="playerGrid_clickHandler(event)">
+            <s:columns>
+                <s:ArrayList>
+                    <s:GridColumn dataField="playerID"
+                                  id="playerID"
+                                  headerText="玩家编号">
+                    </s:GridColumn>
+                    <s:GridColumn dataField="playerName"
+                                  headerText="玩家名字">
+                    </s:GridColumn>
+                    <s:GridColumn dataField="userName"
+                                  headerText="用户编号">
+                    </s:GridColumn>
+					<s:GridColumn dataField="site"
+								  headerText="区服"
+								  editable="false">
+					</s:GridColumn>
+                    <s:GridColumn dataField="typeName"
+                                  headerText="职业"
+                                  editable="false">
+                        <s:itemRenderer>
+                            <fx:Component>
+                                <s:GridItemRenderer>
+                                    <fx:Script>
+                                        <![CDATA[
+                                            override public function set data(value:Object):void {
+                                                if (value != null) {
+//													玩家1GM2引导员3内部账号4机器人5封停账号6
+                                                    var color:String = "#000000";
+													var careerName:String = "无";
+                                                    if (value.career == 1) {
+                                                        color = "#f6c11e";
+														careerName = "战士";
+                                                    }else if (value.career == 2) {
+														color = "#498f24";
+														careerName = "法师";
+													}else if (value.career == 3) {
+														color = "#ba00ff";
+														careerName = "暗巫";
+													}
+                                                    roleLb.htmlText = "<font color = '" + color + "'>" + careerName +
+                                                        "</font>";
+                                                }
+                                            }
+                                        ]]>
+                                    </fx:Script>
+
+                                    <s:HGroup width="100%"
+                                              height="100%"
+                                              verticalAlign="middle"
+                                              horizontalAlign="center">
+                                        <mx:Label id="roleLb"
+                                                  color="0xff0000"/>
+                                    </s:HGroup>
+                                </s:GridItemRenderer>
+                            </fx:Component>
+                        </s:itemRenderer>
+                    </s:GridColumn>
+                    <s:GridColumn dataField="onLine"
+                                  headerText="在线"
+                                  editable="false">
+                        <s:itemRenderer>
+                            <fx:Component>
+                                <s:GridItemRenderer>
+                                    <fx:Script>
+                                        <![CDATA[
+                                            override public function set data(value:Object):void {
+                                                if (value != null) {
+                                                    //玩家1GM2引导员3内部账号4机器人5封停账号6
+                                                    var color:String = "#000000";
+                                                    if (value.onLineFlag == 0) {
+                                                        //不在线
+                                                    } else {
+                                                        color = "#6acd28";
+                                                    }
+                                                    onlineLb.htmlText = "<font color = '" + color + "'>" + value.onLine +
+                                                        "</font>";
+                                                }
+                                            }
+                                        ]]>
+                                    </fx:Script>
+
+                                    <s:HGroup width="100%"
+                                              height="100%"
+                                              verticalAlign="middle"
+                                              horizontalAlign="center">
+                                        <mx:Label id="onlineLb"
+                                                  color="0xff0000"/>
+                                    </s:HGroup>
+                                </s:GridItemRenderer>
+                            </fx:Component>
+                        </s:itemRenderer>
+                    </s:GridColumn>
+                    <s:GridColumn dataField="stateName"
+                                  headerText="状态"
+                                  editable="false">
+                        <s:itemRenderer>
+                            <fx:Component>
+                                <s:GridItemRenderer>
+                                    <fx:Script>
+                                        <![CDATA[
+                                            override public function set data(value:Object):void {
+                                                if (value != null) {
+                                                    //玩家1GM2引导员3内部账号4机器人5封停账号6
+                                                    var color:String = "#000000";
+                                                    if (value.playerType == 6 || value.stateName == "禁言") {
+                                                        color = "#ff0000";
+                                                    }
+                                                    stateLb.htmlText = "<font color = '" + color + "'>" + value.stateName +
+                                                        "</font>";
+                                                }
+                                            }
+                                        ]]>
+                                    </fx:Script>
+
+                                    <s:HGroup width="100%"
+                                              height="100%"
+                                              verticalAlign="middle"
+                                              horizontalAlign="center">
+                                        <mx:Label id="stateLb"
+                                                  color="0xff0000"/>
+                                    </s:HGroup>
+                                </s:GridItemRenderer>
+                            </fx:Component>
+                        </s:itemRenderer>
+                    </s:GridColumn>
+
+                    <s:GridColumn dataField="level"
+                                  headerText="等级"
+                                  editable="false">
+                    </s:GridColumn>
+                    <s:GridColumn dataField="battleValue"
+                                  headerText="战斗力"
+                                  editable="false">
+                    </s:GridColumn>
+
+					<s:GridColumn dataField="diamond" headerText="元宝" editable="false"></s:GridColumn>
+					<s:GridColumn dataField="money"  headerText="金币" editable="false"></s:GridColumn>
+					
+					<!-- <s:GridColumn dataField="bindDiamond"  headerText="绑钻"></s:GridColumn>
+					<s:GridColumn dataField="mc"  headerText="魔晶"></s:GridColumn>  -->
+					
+                    <s:GridColumn dataField="logoutTime"
+                                  width="120"
+                                  headerText="离线时间"
+                                  editable="false">
+                    </s:GridColumn>
+                    <s:GridColumn dataField="createTime"
+                                  width="120"
+                                  headerText="创建时间"
+                                  editable="false">
+                    </s:GridColumn>
+                    <s:GridColumn headerText="操作"
+                                  editable="false" visible="false">
+                        <s:itemRenderer>
+                            <fx:Component>
+                                <s:GridItemRenderer>
+                                    <fx:Script>
+                                        <![CDATA[
+											import com.cc.core.constant.OptTypeConstant;
+                                            import com.cc.core.conf.Config;
+                                            import mx.events.CloseEvent;
+                                            import com.cc.app.player.BannedToPost;
+                                            import com.cc.app.player.PlayerRole;
+                                            import com.cc.app.player.PlayerEvent;
+                                            import com.cc.app.player.model.PlayerModel;
+                                            import com.cc.core.Globals;
+                                            import com.cc.core.util.Base64;
+
+                                            import mx.controls.Alert;
+                                            import mx.core.FlexGlobals;
+                                            import mx.managers.PopUpManager;
+
+                                            public function fenghao(e:MouseEvent):void {
+
+                                                Alert.yesLabel = "确定";
+                                                Alert.noLabel = "取消";
+                                                var text:String = "";
+                                                if (data.state == 1 || data.state == 3) {
+                                                    text = "你确定封号？";
+                                                } else {
+                                                    text = "你确定解封？";
+                                                }
+                                                Alert.show(text, "温馨提示", Alert.YES | Alert.NO, this, closeHandler);
+                                            }
+
+                                            private function closeHandler(e:CloseEvent):void {
+                                                if (e.detail == Alert.YES) {
+                                                    if (data.state == 1 || data.state == 3) {
+                                                        Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.
+                                                            FENG_HAO, data.playerID));
+                                                    } else {
+                                                        Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.
+                                                            JIE_FENG, data.playerID));
+                                                    }
+                                                }
+                                            }
+
+                                            public function deleteCache(e:MouseEvent):void {
+                                                Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.DELETE_CACHE,
+                                                    data.playerID));
+                                            }
+
+                                            private function loginHandler(event:MouseEvent):void {
+                                                var host:String = PlayerModel.instance.host;
+//												var host:String = "14.18.236.140";
+                                                var port:String = PlayerModel.instance.port;
+                                                var assets:String = PlayerModel.instance.assets;
+                                                var server:String = host + "|" + port + "|" + assets;
+                                                assets = decodeURIComponent(assets);
+//												var server:String = "14.18.236.140|9000|http%3A%2F%2Fres.s.2181.com%2Fgame%2F";
+                                                server = Base64.encode(server);
+                                                var usrID:String = data.userName; //jeffry0007
+//                                                var site:String = PlayerModel.instance.site;
+                                                var site:String = data.site;
+                                                var url:String = Config.assets + "?user=" + usrID + "&server=" + server + "&site=" +
+                                                    site + "&key=" + Config.key;
+                                                var u:URLRequest = new URLRequest(url);
+                                                navigateToURL(u, "_blank");
+                                            }
+
+                                            private var roleView:PlayerRole = new PlayerRole();
+
+                                            private function updateRole(event:MouseEvent):void {
+                                                PopUpManager.addPopUp(roleView, this, true);
+                                                roleView.x = FlexGlobals.topLevelApplication.stage.stageWidth / 2 - roleView.
+                                                    width / 2;
+                                                roleView.y = FlexGlobals.topLevelApplication.stage.stageHeight / 2 - roleView.
+                                                    height / 2;
+                                                roleView.setInfo(data);
+                                            }
+
+                                            private var bannedToPostView:BannedToPost = new BannedToPost();
+
+                                            private function bannedToPost(event:MouseEvent):void {
+                                                if (data.state == 2 || data.state == 3) {
+                                                    Alert.yesLabel = "确定";
+                                                    Alert.noLabel = "取消";
+                                                    var text:String = "";
+                                                    text = "你确定解禁？";
+                                                    Alert.show(text, "温馨提示", Alert.YES | Alert.NO, this, closeHandler2);
+                                                } else {
+                                                    PopUpManager.addPopUp(bannedToPostView, this, true);
+                                                    bannedToPostView.x = FlexGlobals.topLevelApplication.stage.stageWidth /
+                                                        2 - bannedToPostView.width / 2;
+                                                    bannedToPostView.y = FlexGlobals.topLevelApplication.stage.stageHeight /
+                                                        2 - bannedToPostView.height / 2;
+                                                    bannedToPostView.setInfo(data);
+                                                }
+                                            }
+
+                                            private function closeHandler2(e:CloseEvent):void {
+                                                if (e.detail == Alert.YES) {
+                                                    Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.
+                                                        JIE_JIN, data.playerID));
+                                                }
+                                            }
+
+                                            private function playerCheckHandler(event:MouseEvent):void {
+                                                var currentBtn:Button = event.currentTarget as Button;
+                                                switch (currentBtn.id) {
+                                                    case "btn1":
+                                                        //背包物品查询
+                                                        Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.
+															SEARCH_PLAYER_DATA_LOG, {playerID: data.playerID}, OptTypeConstant.PLAYER_6));
+                                                        break;
+                                                    case "btn2":
+                                                        //登录日志查询
+                                                        Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.
+															SEARCH_PLAYER_DATA_LOG, {playerID: data.playerID}, OptTypeConstant.PLAYER_7));
+                                                        break;
+                                                    case "btn3":
+                                                        //消费记录查询
+                                                        Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.
+															SEARCH_PLAYER_DATA_LOG, {playerID: data.playerID}, OptTypeConstant.PLAYER_8));
+                                                        break;
+                                                    case "btn4":
+                                                        //充值记录查询
+                                                        Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.
+															SEARCH_PLAYER_DATA_LOG, {playerID: data.playerID}, OptTypeConstant.PLAYER_9));
+                                                        break;
+                                                    case "btn5":
+                                                        //女神日志记录查询
+                                                        Globals.instance.context.dispatchEvent(new PlayerEvent(PlayerEvent.
+															SEARCH_PLAYER_DATA_LOG, {playerID: data.playerID}, OptTypeConstant.PLAYER_LOG_30));
+                                                        break;
+                                                }
+                                            }
+                                        ]]>
+                                    </fx:Script>
+
+                                    <s:HGroup>
+                                        <s:Button label="封号/解封"
+                                                  click="fenghao(event)"/>
+                                        <s:Button label="删除缓存"
+                                                  click="deleteCache(event)" toolTip="删除缓存前，请先封号。删除缓存后5分钟再解封,否则数据会异常"/>
+                                        <s:Button label="一键登录"
+                                                  click="loginHandler(event)"/>
+                                        <s:Button label="修改"
+                                                  click="updateRole(event)"/>
+                                        <s:Button label="禁言/解禁"
+                                                  click="bannedToPost(event)"/>
+                                        <!--				<s:Button label="背包物品" click="playerCheckHandler(event)" id="btn1"/>
+                                                        <s:Button label="充值记录" click="playerCheckHandler(event)" id="btn2"/>
+                                                        <s:Button label="消费记录" click="playerCheckHandler(event)" id="btn3"/>
+                                                        <s:Button label="登录日志" click="playerCheckHandler(event)" id="btn4"/>-->
+                                    </s:HGroup>
+                                </s:GridItemRenderer>
+                            </fx:Component>
+                        </s:itemRenderer>
+                    </s:GridColumn>
+                </s:ArrayList>
+            </s:columns>
+        </s:DataGrid>
+        <s:ComboBox id="combox_type"
+                    x="17"
+                    y="28"
+                    width="143"
+                    height="30"
+                    dataProvider="{labels}"
+                    fontSize="14"
+                    selectedIndex="0"
+                    change="combox_changeHandler(event)"/>
+        <s:TextInput id="searchText"
+                     x="181"
+                     y="28"
+                     width="180"
+                     height="30"
+                     fontSize="14"
+                     maxChars="32"/>
+    </s:Panel>
+</s:Group>

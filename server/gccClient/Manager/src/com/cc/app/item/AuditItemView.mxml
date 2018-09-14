@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%">
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			
+			public function setAuditInfo(list:Array):void
+			{
+				var ac:ArrayCollection = new ArrayCollection();
+				for each(var obj:Object in list){
+					if(obj.state == 1){//1申请2通过3拒绝
+                        obj.receiver = "";
+                        if (obj.receiveNames != null && obj.receiveNames != "null" && obj.receiveNames != "") {
+                            obj.receiver = obj.receiveNames;
+                        } else if (obj.agent != null && obj.agent != "") {
+                            obj.receiver = obj.agent;
+                        } else if (obj.gameSite != null &&　obj.gameSite != "") {
+                            obj.receiver = obj.gameSite;
+                        }
+						ac.addItem(obj);
+					}
+				}
+				myDG.dataProvider = ac;
+			}
+			
+			private function buildToolTip(item:Object,col:GridColumn):String
+			{ 
+				return item.showTip;  
+			} 
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+		<!-- 待审核列表 -->
+	</fx:Declarations>
+	<s:Panel title="待审核列表" width="100%" height="100%">
+		<s:DataGrid id="myDG" x="22" y="24" width="1128" height="370" requestedRowCount="4">
+			<s:columns>
+				<s:ArrayList>
+					<s:GridColumn dataField="userID" headerText="用户ID"></s:GridColumn>
+					<s:GridColumn dataField="name" headerText="申请人"></s:GridColumn>
+					<s:GridColumn dataField="title" headerText="标题"></s:GridColumn>
+					<s:GridColumn dataField="content" headerText="内容"></s:GridColumn>
+					<s:GridColumn dataField="reason" headerText="原因"></s:GridColumn>
+                    <s:GridColumn dataField="receiver" headerText="接受者"></s:GridColumn>
+					<s:GridColumn dataField="detail" headerText="备注" width="200" showDataTips="true" dataTipFunction="buildToolTip"></s:GridColumn>
+					<s:GridColumn dataField="appDate" headerText="时间"></s:GridColumn>
+					
+					<s:GridColumn dataField="dataField3" headerText="操作">
+						<s:itemRenderer>
+							<fx:Component>  
+								<s:GridItemRenderer>  
+									<fx:Script>
+										<![CDATA[
+											import com.cc.app.control.UserControlEvent;
+											import com.cc.app.item.event.ItemEvent;
+											import com.cc.core.Globals;
+											import com.cc.core.util.PopUpEffect;
+											
+											import mx.controls.Alert;
+											import mx.core.FlexGlobals;
+											import mx.events.CloseEvent;
+											import mx.managers.PopUpManager;
+											
+											public function onAgreeHandler():void 
+											{
+												Alert.yesLabel = "确定";
+												Alert.noLabel = "取消";
+												Alert.show("确定同意发送物品？","温馨提示",Alert.YES|Alert.NO,this,alertCloseHandler);
+											}
+											
+											private function alertCloseHandler(e:CloseEvent):void
+											{
+												if(e.detail == Alert.YES){
+													Globals.instance.context.dispatchEvent(new ItemEvent(ItemEvent.AGREE_SEND_ITEM,{appItemID:data.appItemID,state:2}));
+												}
+											}
+											
+											public function onRejectHandler():void 
+											{
+												Alert.yesLabel = "确定";
+												Alert.noLabel = "取消";
+												Alert.show("确定拒绝发送物品？","温馨提示",Alert.YES|Alert.NO,this,alertCloseHandler1);
+											}
+											
+											private function alertCloseHandler1(e:CloseEvent):void
+											{
+												if(e.detail == Alert.YES){
+													Globals.instance.context.dispatchEvent(new ItemEvent(ItemEvent.REJECT_SEND_ITEM,{appItemID:data.appItemID,state:3}));
+												}
+											}
+										]]>
+									</fx:Script>
+									
+									<s:HGroup x="10" y="2" width="140" horizontalAlign="center">
+										<s:Button label="同意" click="onAgreeHandler()"/>
+										<s:Button label="拒绝" click="onRejectHandler()"/>
+									</s:HGroup>  
+								</s:GridItemRenderer>
+							</fx:Component>  
+						</s:itemRenderer>
+							
+					</s:GridColumn>
+				</s:ArrayList>
+			</s:columns>
+		</s:DataGrid>
+	</s:Panel>
+	
+
+	
+	
+	
+	
+</s:Group>

@@ -1,0 +1,62 @@
+操作前， 打开 GameConst.lua AppConst.cs 检查一下所要发版本的 ip，端口，资源路径， 调试模式， 平台等等常量设置
+windows 本地调试或编译运行
+	打开unity项目skgame
+		选择菜单 “File”-> "Build Settings..." 弹出面板中检查是否为 PC，Mac&Linux平台，如果是，再执行以下操作
+		如果不是，则选择 PC，Mac&Linux 平台点击切换
+		
+		project面板中输入“AppConst” 会自动VS打开Appconst.cs代码，把里面的[改成true] DebugMode = true;
+		然后选择Unity左上菜单“LuaFramework” -> build windows resources -> 等待编译完成 
+			-> (如果没有报错)运行unity ，看效果
+			-> (如果报错或运行出错)，将错误红色信息发至技术群让相关人员解决
+		
+Android 版本发布
+	打开unity项目skgame
+		选择菜单 “File”-> "Build Settings..." 弹出面板中检查是否为 Android|ios 平台，如果是，再执行以下操作
+		如果不是，则选择 Android|ios 平台 点击切换
+		project面板中输入 “ AppConst ” 会自动VS打开Appconst.cs代码，把里面的[改成true] DebugMode = false;
+		然后选择Unity左上菜单“LuaFramework” -> build android|iphone resources -> 等待编译完成
+			-> (如果没有报错, 可能出现生成 Lua/xxxx/..文件说在使用中无法删除的报错，可以忽略) 
+			-> (如果报错或运行出错)，将错误红色信息发至技术群让相关人员解决
+		如果不想打包发布有热更新功能的程序，在 选择菜单 “File”-> "Build Settings..." ->"Player settings..."->Inspetor面板中，“Other Settings” -> 预编译处理（Script Define Symbols）中相应改成如下之一：
+				安卓|iOS (把 ONLINE 去掉即为局域网测试更新资源， 但是，要在appconst.cs设置好能访问的路径位置)
+				1、外网开发版本 ASYNC_MODE;ERROR_CHECK_MODE;ONLINE 或 ASYNC_MODE;ERROR_CHECK_MODE;ONLINE;ONLINE_KAIFA (带热更新)
+				2、外网稳定版本 ASYNC_MODE;ERROR_CHECK_MODE;ONLINE;ONLINE_WENDING  (带热更新)
+				3、外网开发版本 ASYNC_MODE;ERROR_CHECK_MODE;ONLINE;SyncLocal 或 ASYNC_MODE;ERROR_CHECK_MODE;ONLINE;ONLINE_KAIFA;SyncLocal (不带热更新)
+				4、外网稳定版本 ASYNC_MODE;ERROR_CHECK_MODE;ONLINE;ONLINE_WENDING;SyncLocal  (不带热更新)
+				
+	*【高级操作 更新补丁生成，E:\server\PHPnow-1.5.6\htdocs\data 具体看此目录下的txt说明】
+		前端热更新
+		E:\server\PHPnow-1.5.6\htdocs\data\VersionTool.exe 不用填写任何信息
+		已经安装了上次apk的手机，直接运行游戏就可以了 
+		
+	
+	打包ipa(前提已经申请好了开发者账号) :上面步骤unity进行打包 --> build iphone res --> build 
+					--> iOS xcode 工程（realse）-> 打开xcode工程，把里面的xxx/ios/framework/Plugines/ *.bundle [mac电脑的运行环境]（目前只有tolau.bundle）删除
+					--> build settings 设置参数
+							-> enable bitcode(no)
+							-> code signing identity (全为 iOS Developer)
+					--> build phases 设置必要的插件库
+							-> Link Binary with librarys 添加 libz.tbd, storekit.framework (其他一般默认就好了)
+					
+					配置完成
+					打包ipa -> 菜单（product） -> archive -> exprot... -> save for ad hoc -->一路next --> ... ->  --> ok! (中间有几个确定身份的，都允许就可以了)
+							
+			打包
+	打包iOS xcode工程时，注意事项：
+		
+		
+		
+		
+		
+		
+		
+		
+		sublimetext 快捷键
+
+ctrl+p 打开指定的代码文件 xxxxclass 如果 搜索到的类再后面再加个#号也能指定到接口，如： xxxxclass#function
+ctrl+shift+r 打开指定代码文件中的接口 xxxclass:functionName
+ctrl+g 跳转指定行
+ctrl+f 搜索 ctrl+h 替换 当前文件内容
+ctrl+shift+f 搜索｜替换 相关文件内容
+
+ctrl+alt+(1,2,3,4,5,6,7,8) 多窗口布局显示

@@ -1,0 +1,67 @@
+2017-07-21 11:05:04 [ERROR]心跳加速：10055 time=8689
+2017-07-21 11:21:44 [ERROR]心跳加速：10041 time=9887
+2017-07-21 12:48:04 [ERROR]心跳加速：10048 time=6878
+2017-07-21 15:40:37 [ERROR]心跳加速：10041 time=3800
+2017-07-21 16:08:09 [ERROR]心跳加速：10048 time=125
+2017-07-21 16:39:33 [ERROR]其他异常:userId:10043
+java.lang.NullPointerException
+	at com.service.impl.ProtoBuilderService.buildEnemyMsg(ProtoBuilderService.java:780)
+	at com.action.EnemyAction.getEnemyList(EnemyAction.java:48)
+	at com.command.enemy.GetEnemyListCMD.excute(GetEnemyListCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:429)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-21 16:56:32 [ERROR]心跳加速：10043 time=9447
+2017-07-21 17:08:48 [ERROR]顶号：119.137.52.124
+2017-07-21 18:00:55 [ERROR]其他异常:userId:10045
+java.lang.NullPointerException
+	at com.message.FriendProto$S_ApplyDeal$Builder.setFriendMsg(FriendProto.java:6171)
+	at com.action.FriendActoin.applyDeal(FriendActoin.java:163)
+	at com.command.friend.ApplyDealCMD.excute(ApplyDealCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:429)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-21 20:12:17 [ERROR]其他异常:userId:10060
+java.lang.NullPointerException
+	at org.jboss.netty.util.internal.ConcurrentHashMap.hashOf(ConcurrentHashMap.java:139)
+	at org.jboss.netty.util.internal.ConcurrentHashMap.get(ConcurrentHashMap.java:791)
+	at com.service.impl.SceneService.getSceneModel(SceneService.java:342)
+	at com.service.impl.SceneService.getNearbyPlayerIds(SceneService.java:622)
+	at com.service.impl.PlayerService.synPlayerPropertyToAll(PlayerService.java:778)
+	at com.service.impl.BuffService.changeProValue(BuffService.java:326)
+	at com.service.impl.BuffService.addBuffValue(BuffService.java:162)
+	at com.service.impl.BuffService.dealLogin(BuffService.java:541)
+	at com.service.impl.SceneService.initPlayerPuppet(SceneService.java:1085)
+	at com.service.impl.SceneService.enterScene(SceneService.java:425)
+	at com.action.SceneAction.enterScene(SceneAction.java:38)
+	at com.command.scene.EnterSceneCMD.excute(EnterSceneCMD.java:10)
+	at com.core.GameCommandService.executeCommand(GameCommandService.java:429)
+	at com.core.GameDataHandler.onData(GameDataHandler.java:17)
+	at com.core.GameMessageHandler.messageReceived(GameMessageHandler.java:72)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at com.core.GameMessageHandler.handleUpstream(GameMessageHandler.java:60)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43)
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)

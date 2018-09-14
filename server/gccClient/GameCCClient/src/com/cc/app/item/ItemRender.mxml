@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="350" height="30">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.main.MainModel;
+			import com.cc.core.Globals;
+			import com.cc.core.manager.WindowManager;
+			import com.cc.core.util.MessageUtil;
+			
+			import flash.net.sendToURL;
+			
+			import spark.events.TextOperationEvent;
+			
+			public var itemData:Object;
+			
+			public function initData(data:Object):void {
+				this.itemData = data;
+				
+				itemName.text = data.name;
+				if (itemData.type > 1) {
+					itemType.text = "道具";
+				} else {
+					itemType.text = "装备";
+				}
+			}
+			
+			/** 选中 */
+			private function onSelect(event:MouseEvent):void {
+				if (checkBox.selected) {
+					MainModel.instance.itemIDNum++;
+					if (MainModel.instance.itemIDNum > 10) {
+						checkBox.selected = false;
+						MainModel.instance.itemIDNum--;
+						MessageUtil.showFaultMessage("最多发送10种物品");
+						return;
+					}
+				} else {
+					MainModel.instance.itemIDNum--;
+					num.text = "";
+					
+					// 删除选中
+					var selectList:Array = MainModel.instance.sendItemList;
+					for (var i:int=0;i<selectList.length;i++) {
+						var obj : Object = selectList[i];
+						if (obj.itemId == itemData.id) {
+							MainModel.instance.sendItemList.splice(i,1);
+							break;
+						}
+					}
+				}
+			}
+			
+			protected function num_changeHandler(event:TextOperationEvent):void
+			{
+				if (!checkBox.selected) {
+					num.text = "";
+					return;
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:CheckBox id="checkBox" x="14" y="1" width="40" height="28" fontSize="14" click="onSelect(event)"/>
+	<s:Label id="itemName" x="60" y="1" width="120" height="28" fontSize="14" textAlign="center"
+			 verticalAlign="middle"/>
+	<s:Label id="itemType" x="190" y="1" width="80" height="28" fontSize="14" textAlign="center"
+			 verticalAlign="middle"/>
+	<s:TextInput id="num" x="302" y="1" width="40" height="28" fontSize="14" 
+				 textAlign="center" maxChars="2" restrict="0-9" change="num_changeHandler(event)"/>
+</s:ItemRenderer>

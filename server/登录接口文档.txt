@@ -1,0 +1,91 @@
+
+密钥loginKey=QYQDGAMEDshEFWOKE7Y6GAEDE-WAN-0668-2625-7DGAMESZEFovDDe777
+
+注册：
+http://192.168.0.150:8000/register?userName=xxx&passWord=123456&time=123456789&sign=aaa
+
+参数：
+userName: 账号
+passWord：密码
+time：当前时间戳
+sign：MD5(userName+passWord+time+loginKey)
+
+返回json：result 0：注册成功  1：账号为空  2：密码为空  3：密码长度有误  4：账号已被注册  5：注册失败
+	  userId:账号唯一标示
+
+登录：
+http://192.168.0.150:8000/login?userName=xxx&passWord=123456&tourist=0&time=123456789&sign=aaa
+
+参数：
+userName: 账号
+passWord：密码
+tourist：是否游客登录   1：是
+time：当前时间戳
+sign：MD5(userName+passWord+tourist+time+loginKey)
+
+
+返回json：result 0：登录成功  1：账号为空  2：密码为空  3：密码长度有误  4：账号未注册  5：密码错误 6：登录失败 
+      userId:账号唯一标示
+      key：随机密钥（存起来，登录游戏用到）
+      time：加密时间（存起来，登录游戏用到）
+	  telePhone: 绑定的手机号码
+      sign：加密签名（存起来，登录游戏用到）	
+      serverList:服务器列表
+{
+serverNo：服务器编号
+serverName：服务器名称
+gameHost：服务器ip
+gamePort：服务器端口
+severState：服务器状态 (0.测试 1.流畅2：拥挤3.火爆  4.维护中 5.关闭)
+severType：服务器类型(0.普通 1.新服 2.推荐)
+loginFlag：是否登录过  1：是  0：否
+endStopTime:维护结束时间搓
+openServerDate:开服时间搓
+}
+
+
+游客绑定：
+http://192.168.0.150:8000/binding?userName=xxx&newUserName=xxx&newPassWord=123456&time=123456789&sign=aaa
+
+参数：
+userName: 游客账号
+newUserName：新账号
+newPassWord：新密码
+time：当前时间戳
+sign：MD5(userName+newUserName+newPassWord+time+loginKey)
+
+返回json：result 0：绑定成功  1：参数有误  2：密码长度有误  3：账号有误  
+
+
+
+找回密码：
+http://192.168.0.150:8000/retPassword?userName=xxx&telePhone=xxx&time=123456789&sign=aaa
+
+参数：
+userName: 账号
+telePhone: 绑定的手机号码
+time：当前时间戳
+sign：MD5(userName+telePhone+time)
+
+返回json：result 0：找回成功  1：参数有误  2：电话号码有误  3：账号有误 4：找回密码短信发送有误
+
+
+
+修改密码：
+http://192.168.0.150:8000/changePassword?userName=xxx&oldPwd=xxx&newPwd=123456789&sign=aaa
+
+参数：
+userName: 账号
+oldPwd: 旧密码
+newPwd：新密码
+sign：MD5(userName+oldPwd+newPwd)
+
+返回json：result 0：成功  1: 参数有误 2：账号有误  3：旧密码有误 4：新密码不合法
+
+上传错误日志：
+http://192.168.0.150:8000/clientErrorLog?content=aaa
+
+参数：
+content: 错误详细内容
+
+返回json：result 0：上传成功, 1:已有记录

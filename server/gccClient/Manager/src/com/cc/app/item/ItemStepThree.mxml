@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 xmlns:item="com.cc.app.item.*"
+		 xmlns:components="com.cc.core.components.*"
+		 width="100%" height="85%">
+	<fx:Script>
+		<![CDATA[
+			import com.cc.app.item.model.ItemModel;
+			
+			import mx.collections.ArrayCollection;
+			
+			import spark.events.GridEvent;
+			
+			private var myData:ArrayCollection = new ArrayCollection();
+			
+			[Bindable]
+			public var types:ArrayCollection = new ArrayCollection([{type:0,typeName:"全部"},{type:1,typeName:"道具"},{type:2,typeName:"装备"}]);
+			
+			private function datagrid1_gridClickHandler(event:GridEvent):void
+			{
+				var dg:DataGrid = event.currentTarget as DataGrid;
+				if(dg.selectedItem == null)return;
+				
+				this.getItemsByType(dg.selectedItem.type);
+//				itemDG.dataProvider = myData;
+				
+				this.onPageBarHandler();
+			}
+			
+			private function getItemsByType(type:int):void
+			{
+				myData.removeAll();
+				var arr:Array = ItemModel.instance.itemConfList;
+				var obj:Object;
+				if(type == 0){
+					for each(obj in arr){
+						myData.addItem(obj);
+					}
+				}else if(type == 1){
+					for each(obj in arr){
+						if(obj.type > 1){
+							myData.addItem(obj);
+						}
+					}
+				}else if(type == 2){
+					for each(obj in arr){
+						if(obj.type == 1){
+							myData.addItem(obj);
+						}
+					}
+				}
+				pageBar.rangPage(myData.length);
+			}
+			
+			public var currentData:ArrayCollection = new ArrayCollection();
+			private function onPageBarHandler(pageNum:int = 1):void
+			{
+				currentData.removeAll();
+				var index:int;
+				var obj:Object;
+				for(var i:int = 0 ; i < 10 ; i++){
+					index = (pageNum-1)*10+i;
+					if(index < myData.length){
+						obj = myData[index];
+//						obj.checked = false;
+						currentData.addItem(obj);
+					}
+				}
+				
+				itemDG.dataProvider = currentData;
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:Panel width="128" height="100%" dropShadowVisible="false">
+		<s:DataGrid x="0" y="0" width="100%" requestedRowCount="4" dataProvider="{types}" gridClick="datagrid1_gridClickHandler(event)">
+			<s:columns>
+				<s:ArrayList>
+					<s:GridColumn dataField="typeName" headerText="物品类型"></s:GridColumn>
+				</s:ArrayList>
+			</s:columns>
+		</s:DataGrid>
+	</s:Panel>
+	
+	<s:Panel x="135" width="706" height="100%" dropShadowVisible="false">
+		<s:DataGrid id="itemDG" x="0" y="0" width="704" height="287" requestedRowCount="4">
+			<s:columns>
+				<s:ArrayList>
+					<s:GridColumn dataField="id" headerText="物品ID" width="104"></s:GridColumn>
+					<s:GridColumn dataField="name" headerText="物品名称" width="104"></s:GridColumn>
+					<!--<s:GridColumn dataField="num" headerText="数量" width="104">
+					</s:GridColumn>
+					<s:GridColumn dataField="context" headerText="备注" width="104"></s:GridColumn>-->
+					<s:GridColumn dataField="" headerText="操作">
+						<s:itemRenderer>  
+							<fx:Component>  
+								<s:GridItemRenderer>  
+									<fx:Script>
+										<![CDATA[
+											import mx.collections.ArrayCollection;
+											
+											private function checkHandler(event:MouseEvent):void
+											{
+												data.checked = !data.checked;
+												cb.selected = data.checked;
+												
+												var ac:ArrayCollection = outerDocument.currentData;
+												for each(var obj:Object in ac){
+													if(obj.id == data.id){
+														obj.checked = data.checked;
+													}
+												}
+//												outerDocument.itemDG.dataProvider = ac;
+											}
+											
+										]]>
+									</fx:Script>
+									
+									<s:HGroup y="2" width="250" horizontalAlign="center">
+										<s:CheckBox id="cb" click="checkHandler(event)"/>
+									</s:HGroup>  
+								</s:GridItemRenderer>
+							</fx:Component>  
+						</s:itemRenderer>  
+					</s:GridColumn>
+				</s:ArrayList>
+			</s:columns>
+		</s:DataGrid>
+		<components:PageBar id="pageBar" x="86" y="295" width="550" height="36" localFunction="onPageBarHandler">
+		</components:PageBar>
+	</s:Panel>
+	
+	
+</s:Group>

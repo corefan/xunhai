@@ -1,0 +1,26 @@
+2018-04-11 19:34:15 [ERROR]异常:com.domain.player.PlayerProperty@165e6665
+java.sql.BatchUpdateException: Unknown column 'rebirth' in 'field list'
+	at com.mysql.jdbc.StatementImpl.executeBatch(StatementImpl.java:1067)
+	at com.jolbox.bonecp.StatementHandle.executeBatch(StatementHandle.java:424)
+	at com.db.SimpleSqlSessionTemplate.batchUpdate(SimpleSqlSessionTemplate.java:211)
+	at com.db.SimpleSqlSessionTemplate.batchExcute(SimpleSqlSessionTemplate.java:281)
+	at com.dao.BatchExcuteDAO.batchExcute(BatchExcuteDAO.java:15)
+	at com.service.impl.BatchExcuteService.batchUpdate(BatchExcuteService.java:24)
+	at com.service.impl.SynDataService.synUpdateData(SynDataService.java:111)
+	at com.service.impl.SynDataService.update_fiveOneData(SynDataService.java:63)
+	at com.quartz.minute.FiveMinuteQuartz.execute(FiveMinuteQuartz.java:34)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:207)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560)
+2018-04-11 19:44:15 [ERROR]异常:com.domain.player.PlayerProperty@75885dd3
+java.sql.BatchUpdateException: Unknown column 'rebirth' in 'field list'
+	at com.mysql.jdbc.StatementImpl.executeBatch(StatementImpl.java:1067)
+	at com.jolbox.bonecp.StatementHandle.executeBatch(StatementHandle.java:424)
+	at com.db.SimpleSqlSessionTemplate.batchUpdate(SimpleSqlSessionTemplate.java:211)
+	at com.db.SimpleSqlSessionTemplate.batchExcute(SimpleSqlSessionTemplate.java:281)
+	at com.dao.BatchExcuteDAO.batchExcute(BatchExcuteDAO.java:15)
+	at com.service.impl.BatchExcuteService.batchUpdate(BatchExcuteService.java:24)
+	at com.service.impl.SynDataService.synUpdateData(SynDataService.java:111)
+	at com.service.impl.SynDataService.update_fiveOneData(SynDataService.java:63)
+	at com.quartz.minute.FiveMinuteQuartz.execute(FiveMinuteQuartz.java:34)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:207)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:560)

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bonecp-config>
+	<default-config>
+		<!-- 分区数 -->
+		<property name="partitionCount">1</property>
+		<!-- 每个分区最小连接数 -->
+		<property name="minConnectionsPerPartition">1</property>
+		<!-- 每个分区最大连接数 -->
+		<property name="maxConnectionsPerPartition">3</property>
+		<!-- 分区连接增长数 -->
+		<property name="acquireIncrement ">1</property>
+		<!-- 获取连接超时时间：毫秒 -->
+		<property name="connectionTimeout">120000</property>
+	</default-config>
+</bonecp-config>
+

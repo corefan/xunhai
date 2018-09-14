@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:mx="library://ns.adobe.com/flex/mx" 
+				autoDrawBackground="true">
+	<fx:Script>
+		<![CDATA[
+			import com.cc.core.constant.OptTypeConstant;
+			import com.cc.core.net.GameCCSocket;
+			
+			public var chatInfo:Object;
+			
+			override public function set data(value:Object):void{
+				this.chatInfo = value;
+				
+				if (!chatInfo) return;
+				
+				var txt:String = "";
+				if (chatInfo.vipLevel) {
+					//txt += "<font size = '12' color = '#fff600'> [V] </font>";
+					txt += "[V]";
+				}
+				
+				var color:Array = getColor(chatInfo.chatType);
+				txt += "<font size = '12' color = '"+color[0]+"'>" + chatInfo.sendPlayerName + "</font>";
+				if (chatInfo.receiveName) {
+					txt += " 对 "+ "<font size = '12' color = '"+color[0]+"'>" + chatInfo.receiveName + "</font>";
+				} 
+				txt += " 说:";
+				txt += "<font size = '12' color = '"+color[1]+"'>" + chatInfo.content + "</font>";
+				
+				chatText.htmlText = txt;
+				chatText.toolTip = chatInfo.content;
+			}
+			
+			public function getColor(chatType:int):Array {
+				
+				var arr:Array = new Array();
+				if (chatType == 2) {
+					arr[0] = "#EB9504";
+					arr[1] = "#EB9504";
+				} else if (chatType == 3) {
+					arr[0] = "#00DEFF";
+					arr[1] = "#00FF00";
+				} else {
+					arr[0] = "#F43DFF";
+					arr[1] = "#F43DFF";
+				}
+				
+				return arr;
+			}
+			
+			public function fenghao(event:MouseEvent):void {
+				
+				var data:Object = new Object();
+				data.gameSite = chatInfo.gameSite;
+				data.playerID = chatInfo.sendPlayerID;
+				data.optType = OptTypeConstant.PLAYER_3;
+				var param:Object = JSON.stringify(data);
+				GameCCSocket.instance.send(OptTypeConstant.PLAYER_3, param.toString());
+				
+			}
+			
+		]]>
+	</fx:Script>
+	<mx:Label id="chatText" x="2" y="3" width="360" textAlign="left"/>
+	<s:Button x="375" y="2" width="50" label="封号" click="fenghao(event)"/>
+</s:ItemRenderer>

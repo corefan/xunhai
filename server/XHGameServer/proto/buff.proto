@@ -1,0 +1,24 @@
+option java_package="com.message";
+option java_outer_classname="BuffProto";
+
+message BuffMsg { //24+2个字符串
+	optional int32 id=1; // 唯一编号
+	optional string attackGuid=2; // 使用方
+	optional string targetGuid=3; // 受击方
+	optional int32 buffId=4; // buff编号
+	optional int32 type=5;   // buff类型
+	optional int64 endTime = 6; //结束时间  -1：永久  0：移除 
+	optional int32 hpShow=7; // 非0情况下  持续加减血飘字
+}
+
+message S_SynBuff{ //同步buff
+	repeated BuffMsg buffList = 1; //buff列表	
+}
+
+message C_AutoAddHpMp{ // 调息buff添加
+	
+}
+
+message C_BreakAddHpMp{ // 中断调息buff
+	
+}
