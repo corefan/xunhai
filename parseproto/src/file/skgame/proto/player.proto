@@ -1,0 +1,145 @@
+
+message PlayerMsg {  //登录界面显示角色信息
+	required int64 playerId = 1;// 角色编号
+	required string playerName = 2; // 角色名称
+	optional int32 career = 3; // 角色职业
+	optional int32 level = 4; // 角色等级
+	optional int32 weaponStyle = 5; //武器外形(装备基础ID)
+	optional int32 dressStyle = 6; //服装外形编号
+	optional int32 wingStyle = 7; //羽翼外形编号
+	optional int64 loginTime = 8; //最近登录时间	
+	optional int64 createTime = 9; //角色创建时间
+}
+
+message SynPlayerPropertyMsg { //属性键值对
+	optional int32 propertyId = 1; //属性编号 对应属性表
+	optional int32 propertyValue = 2; //属性值
+}
+
+message PlayerCommonMsg {
+	optional string guid=1; // 全局唯一编号
+	optional int32 severNo=2; // 服务器编号
+	optional int32 gold=3; // 金币
+	optional int32 diamond = 4; // 钻石
+	optional int32 stone = 5;   // 宝玉
+	repeated SynPlayerPropertyMsg playerPropertyMsg=20; // 玩家属性消息
+}
+
+message S_SynPlayerProperty{ //同步玩家属性
+	required string guid = 1; //全局唯一编号
+	repeated SynPlayerPropertyMsg playerPropertyMsg=2; // 玩家属性消息
+}
+
+
+message C_Pay{  //充值
+ 	optional int32 payItemId = 1; //商品编号
+	optional int32 payType = 2; //支付方式  1：支付宝 2：微信 3：苹果 
+}
+
+message S_Pay{
+ 	optional int32 payItemId = 1; //商品编号
+	optional int32 payType = 2; //支付方式  1：支付宝 2：微信 3：苹果 
+	optional string payInfo=3; // 支付信息	
+}
+
+message C_GetFristPayIdList{  //获取已首冲过的商品id列表
+ 	
+}
+message S_GetFristPayIdList{ 
+ 	repeated int32 payItemId = 1; //获取已首冲过的商品id列表
+}
+
+message S_FinishPay{ 
+ 	optional int32 payItemId = 1;    //完成发货的商品ID	
+}
+
+message C_GetMonthCardInfo{  //获取月卡信息		
+}
+message S_GetMonthCardInfo{  //获取月卡信息
+	optional int64 vaildTimeTime = 1; 	//月卡到期时间
+	optional int32 state = 2; 	//月卡奖励领取状态	
+}
+
+message C_GetMonthCardAward{  //获取月卡奖励
+}
+message S_GetMonthCardAward{  //获取月卡奖励
+	optional int32 state = 1; 	//月卡奖励领取状态(0: 未领取, 1: 已领取)
+}
+
+message C_QuickTips{ //玩家信息提示框
+	optional int64 playerId = 1; //角色编号	
+}
+
+message S_QuickTips{
+	optional int64 playerId = 1;     //角色编号
+	optional string playerName = 2;  //角色名称	
+	optional int32 playerLevel = 3;  //角色等级	
+	optional int32 career = 4;       //角色职业
+	optional string familyName = 5;  //角色家族名称
+	optional int32 teamId = 6;       //角色队伍编号	
+}
+
+
+
+message C_GetBindInfo{ //获取绑定信息
+	
+}
+message S_GetBindInfo{ //获取绑定信息
+	optional int64 telePhone = 1; 	// 手机号码
+	optional int32 rewardState = 2; // 绑定奖励领取状态 （0: 未领， 1: 已领）
+}
+
+message C_GetValidateCode{  //获取验证码
+ 	optional int64 telePhone = 1; // 手机号码	
+}
+message S_GetValidateCode{  //获取验证码
+	optional int64 telePhone = 1;   // 手机号码	
+ 	optional string bizId = 2; 		// 流水号
+}
+
+message C_BindPhone{ //绑定	
+	optional int64 telePhone = 1;  // 手机号码	
+	optional string bizId = 2;        // 流水号	
+ 	optional int32 code = 3; 	// 验证码
+}
+
+message S_BindPhone{ //绑定	
+	optional int64 telePhone = 1; 	// 手机号码
+}
+
+message C_GetBindReward{ //领取绑定奖励
+		
+}
+message S_GetBindReward{ //领取绑定奖励
+	optional int32 rewardState = 1; // 绑定奖励领取状态 （0: 未领， 1: 已领）
+}
+
+message C_SetIsAcceptChat{ //设置是否接受陌生人信息
+	optional int32 state = 1; 	//0 : 接受（默认为0）, 1: 拒绝	
+}
+message S_SetIsAcceptChat{ //设置是否接受陌生人信息
+	optional int32 state = 1; 	//0 : 接受（默认为0）, 1: 拒绝	
+}
+
+message C_SetIsAcceptApply{ //设置是否接受好友申请
+	optional int32 state = 1; 	//0 : 接受（默认为0）, 1: 拒绝	
+}
+message S_SetIsAcceptApply{ //设置是否接受好友申请
+	optional int32 state = 1; 	//0 : 接受（默认为0）, 1: 拒绝	
+}
+
+message C_GetPlayerOptional{ //设置信息	
+}
+message S_GetPlayerOptional{ //设置信息
+	optional int32 isAcceptChat = 1;  //是否接受陌生人信息 0 : 接受（默认为0）, 1: 拒绝	
+	optional int32 isAcceptApply = 2; //是否接受好友申请 0 : 接受（默认为0）, 1: 拒绝
+}
+
+
+message S_SynPlayerTitle{ //设置信息
+	optional string guid = 1;  // 全局ID
+	optional int32 type = 2;   // 称谓类型 (1: 家族)
+	optional string title = 3; // 称谓描述
+	optional int32 sortId = 4; // 家族排位ID
+}
+

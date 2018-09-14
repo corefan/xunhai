@@ -1,0 +1,96 @@
+import "player.proto";
+import "bag.proto";
+import "skill.proto";
+import "task.proto";
+import "equipment.proto";
+import "sign.proto";
+import "furnace.proto";
+
+message C_LoginGame { // 登录游戏
+	required int64 userId = 1; //用户标号
+	required string key = 3; // 随机秘钥
+	optional string time = 4; // 时间
+	optional string sign = 5; // 签名
+	optional int32 serverNo = 6; // 服务器编号
+}
+
+
+message S_LoginGame{ // 登录游戏
+	repeated PlayerMsg playerMsgs = 1; //拥有的角色列表
+}
+
+
+message C_CreatePlayer { // 创建角色
+	optional int32 serverNo=1; // 服务器编号
+	optional int32 career=2; // 职业
+	required string playerName=3; // 玩家名字
+	optional int64 telePhone = 4; // 手机号码
+}
+
+message S_CreatePlayer { // 创建角色成功
+	optional PlayerMsg playerMsg = 1; //返回角色信息
+}
+
+message C_DeletePlayer{ //删除角色
+	required int64 playerId = 1;// 角色编号
+}
+
+message S_DeletePlayer{ //删除角色
+	required int64 playerId = 1;// 角色编号
+}
+
+
+message C_EnterGame{ //进入游戏
+	required int64 playerId = 1;// 角色编号	
+	optional int64 telePhone = 2; // 电话号码
+}
+
+
+message LoginMsg {
+	optional PlayerCommonMsg playerCommonMsg=1; // 玩家一般信息
+	optional int32 mapId = 2; // 副本ID
+	optional int64 serverTime = 3; // 服务器时间
+}
+message S_EnterGame{
+	optional LoginMsg loginMsg = 1 ; //进入游戏获取角色基础信息
+}
+
+message S_ExitGame{ //退出游戏(顶号或封号)
+	
+}
+
+message S_StopServer{ //停服维护
+	optional int64 endStopTime = 1; //维护结束时间搓
+}
+
+message C_EnterComplete{ //进入游戏完成后 拿取数据
+	
+}
+
+message C_LoginAgain{ //断线重连  返回S_EnterGame
+	required int64 userId = 1; //用户标号
+	required string key = 3; // 随机秘钥
+	optional string time = 4; // 时间
+	optional string sign = 5; // 签名
+	required int64 playerId = 6;// 角色编号
+	optional int32 serverNo = 7; // 服务器编号	
+}
+
+message S_EnterComplete{ //进入游戏完成后 拿取数据
+	optional int32 testSwitch=1; // 外挂开关   1：开启
+	optional int32 bagGrid=2; // 背包格子数
+	repeated PlayerBagMsg listPlayerBags = 3; //背包列表
+	repeated PlayerEquipmentMsg listPlayerEquipments = 4; //装备列表
+	repeated DrugLumnMsg hpDrugLumns = 5; //三个红药栏
+	repeated DrugLumnMsg mpDrugLumns = 6; //三个蓝药栏
+	repeated PlayerSkillMsg listPlayerSkills = 7; //已学会技能列表	
+	optional int32 haveNewMail=8; // 是否有新邮件	
+	optional int32 haveMailTotalNum = 9; 	// 邮件总数	
+	repeated PlayerTaskMsg listPlayerTasks = 10; //任务列表
+	optional int32 equipmentGrid = 11; // 装备货架格子数	
+	repeated PlayerWeaponEffectMsg listPlayerWeaponEffect = 12; //武器铭文效果列表
+	optional int64 playerFamilyId = 13; // 玩家家族唯一ID
+	optional SignMsg signMsg = 14;      // 签到数据获取	
+	optional int32 curLayerId = 15;     //大荒塔层数
+	repeated PlayerFurnaceMsg furnaceList = 16; 
+}

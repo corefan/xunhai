@@ -1,0 +1,278 @@
+import "buff.proto";
+import "player.proto";
+import "equipment.proto";
+import "wakan.proto";
+import "furnace.proto";
+
+enum PuppetStateEnum { //单位状态
+	STAND = 0; //待机状态
+	MOVING = 1; //移动状态
+}
+
+enum GoodsType{ //资源类型
+	EQUIPMENT = 1; //装备
+	ITEM = 2;      //道具
+	MONEY = 3;    //金币 
+	DIAMOND = 4;  //钻石
+	BIND_DIAMOND = 5; //绑钻
+	CONTRIBUTION = 6; //贡献
+	HONOR = 7;    //荣誉
+	EXPERIENCE = 8; //经验
+	STONE = 9; //宝玉
+	BOX = 12; //宝箱
+	
+}
+message Vector3Msg { //位置
+	required int32 x = 1;
+	required int32 y = 2;
+	required int32 z = 3;
+}
+
+message WigSkillInfoMsg{ //地效持续技能 12 + list(12) + 1个字符串
+	required string guid=1; // 技能使用者	
+	optional int32 skillId=2; // 技能编号
+	optional Vector3Msg targetPoint=3; // 目标释放点	
+	optional int32 leftTime=4; // 剩余时间 毫秒
+	optional int32 wigId = 7; //地效唯一编号
+}
+
+message CollectItemInfoMsg{ 
+	optional int32 playerCollectId = 1; // 采集唯一编号
+	optional int32 collectId = 2;       // 采集ID
+}
+
+message DropItemInfoMsg{ //掉落物品 16 + list(12) + 1个字符串
+
+	required int32 dropId = 1;  //掉落全局编号
+	optional string targetGuid = 2;  //掉落者
+	optional int32 itemId = 3;   //物品编号
+	optional int32 num = 4;   //掉落数量		
+	optional int32 goodsType = 5;   //资源类型
+	optional Vector3Msg dropPosition = 6;   //掉落位置	
+}
+
+message PlayerPuppetMsg{ //场景玩家数据  88 + 3个字符串 + list(12) + list(24 字节 + 2个字符串)
+	required string guid = 1;  			//全局编号
+	required int64 eid = 2;    			//实体编号 如玩家id 怪物id
+	optional string name = 3;   		//单位名称
+	optional int32 type = 4;   			//单位类型
+	optional int32 level = 5;  			//等级
+	optional int32 dressStyle = 6;   	//外形
+	optional Vector3Msg position = 7;   //位置
+	optional int32 direction = 8;   	//方向
+	optional int32 moveSpeed = 9;   	//移动速度
+	optional int32 hp = 12;  			//当前血量
+	optional int32 mp = 13;   			//当前魔法
+	optional int32 hpMax = 14;   		//血量最大值
+	optional int32 mpMax = 15;   		//魔法最大值
+	optional int32 state = 16;			//单位状态
+	optional int32 career = 17;  		//职业
+	optional int32 weaponStyle = 18;    //武器外形(装备基础ID)
+	optional int64 guildId = 19;   		//帮派编号
+	optional string guildName = 20;   	//帮派名称
+	optional int32 teamId = 21;   		//队伍编号
+	optional int32 pkModel = 22;   	    //PK模式 从1开始
+	optional int32 pkValue = 23;   		//PK值
+	optional int32 nameColor = 24;   	//名字颜色  1：白色 2：灰色 3：红色
+	repeated BuffMsg buffList=25;       //buff列表
+	optional int32 stage = 26;  	    //段位
+	optional int32 wingStyle = 27; 		//羽翼外形编号	
+	optional string familyName = 28; 	//家族名称
+	optional int32 familySortId = 29;   //角色家族排序位	
+	optional int32 battleValue = 30;    //角色战力	
+}
+
+message MonsterPuppetMsg{ //场景怪物数据 44个字节 + 2个字符串 + list(12) + list(24 字节 + 2个字符串)
+	required string guid = 1;  //全局编号
+	required int32 eid = 2;    //实体编号 如玩家id 怪物id
+	optional string name = 3;   //单位名称
+	optional int32 type = 4;   //单位类型
+	optional int32 level = 5;   //等级
+	optional int32 dressStyle = 6;   //外形
+	optional Vector3Msg position = 7;   //位置
+	optional int32 direction = 8;   //方向
+	optional int32 moveSpeed = 9;   //移动速度
+	optional int32 hp = 12;   //当前血量
+	optional int32 mp = 13;   //当前魔法
+	optional int32 hpMax = 14;   //血量最大值
+	optional int32 mpMax = 15;   //魔法最大值
+	optional int32 state = 16;//单位状态
+	repeated BuffMsg buffList=17; // buff列表
+}
+
+message BeckonPuppetMsg{ //场景召唤怪数据 48 个字节 + 3个字符串 + list(12) + list(24 字节 + 2个字符串)
+	required string ownerGuid = 1;  //所属主人
+	required string guid = 2;  //全局编号
+	required int32 eid = 3;    //实体编号 怪物id
+	optional string name = 4;   //单位名称
+	optional int32 type = 5;   //单位类型
+	optional int32 level = 6;   //等级
+	optional int32 dressStyle = 7;   //外形
+	optional Vector3Msg position = 8;   //位置
+	optional int32 direction = 9;   //方向
+	optional int32 moveSpeed = 10;   //移动速度
+	optional int32 hp = 11;   //当前血量
+	optional int32 mp = 12;   //当前魔法
+	optional int32 hpMax = 13;   //血量最大值
+	optional int32 mpMax = 14;   //魔法最大值
+	optional int32 state = 15;//单位状态
+	repeated BuffMsg buffList=16; // buff列表
+	optional int32 pkModel = 17;   //PK模式 从1开始
+}
+
+message TPPostionMsg{ //队伍同场景玩家位置信息
+	optional int64 playerId = 1; //角色编号	
+	required int32 x = 2;
+	required int32 y = 3;
+	required int32 z = 4;
+}
+
+message MonsterStateMsg{ //怪物状态
+	optional int32 refreshId = 1;  //刷怪编号
+	optional int32 state = 2;      //怪物状态 (0: 正常, 1:死亡)
+}
+
+message C_EnterScene{ //进入场景
+	required int32 mapId = 1;    //地图编号
+	optional int32 transferId = 2; //传送门编号
+}
+
+message S_EnterScene{ //进入场景
+	required int32 mapId = 1;    //地图编号
+	optional int64 endTime = 2; // >0 副本结束时间戳 	
+	optional PlayerPuppetMsg playerPuppet = 3; //主角
+	optional int64 headerId = 4; // 守城都护玩家编号  （主城展示npc用）
+}
+
+message C_GetSceneElementList{ //获取区域元素列表
+	
+}
+
+message S_GetSceneElementList{ //获取区域元素列表 286 固定字节 + 10 个固定字符串 + n*(24 字节 + 2个字符串)
+	repeated PlayerPuppetMsg listPlayerPuppets = 2; //场景玩家列表   	100字节 + 3个字符串 + list(24 字节 + 2个字符串)
+	repeated MonsterPuppetMsg listMonsterPuppets = 3; //场景怪物列表 	66字节 + 2个字符串 +  list(24 字节 + 2个字符串)
+	repeated DropItemInfoMsg listDropItemInfos = 4; //场景掉落列表   	28字节 + 1个字符串
+	repeated WigSkillInfoMsg listWigSkillInfos = 5; //地效持续技能列表  24字节 + 1个字符串
+	repeated CollectItemInfoMsg listCollectItemInfos = 6; //采集列表    8字节
+	repeated BeckonPuppetMsg listBeckonPuppets = 7; //场景召唤怪列表 	60字节 + 3个字符串 + list(24 字节 + 2个字符串)
+}
+
+message S_AddPlayerPuppets{ //添加角色列表
+	repeated PlayerPuppetMsg listPlayerPuppets = 1; //场景玩家列表
+}
+
+message S_AddMonsterPuppets{ //添加怪物列表
+	repeated MonsterPuppetMsg listMonsterPuppets = 1; //场景怪物列表
+}
+
+message S_AddBeckonPuppets{ //添加召唤兽列表
+	repeated BeckonPuppetMsg listBeckonPuppets = 1; //场景召唤怪物列表
+}
+
+message S_RemovePuppets{ //移除玩家或怪物列表
+	repeated string guids = 1;  //单位唯一编号
+}
+
+message C_CheckPuppets{ //检测残留单位（怪物和召唤兽）
+	repeated string guids = 1;  //单位唯一编号	
+}
+
+message S_AddDropItemInfos{ //添加掉落列表
+	repeated DropItemInfoMsg listDropItemInfos = 1; //场景掉落列表
+}
+
+message S_RemoveDropItemInfos{//移除掉落列表
+	repeated int32 dropIds = 1; //掉落唯一编号
+}
+
+message S_AddWigSkillInfos{ //添加地效列表
+	repeated WigSkillInfoMsg listWigSkillInfos = 1; //地效持续技能列表	
+}
+
+message S_RemoveWigSkillInfos{ //移除地效列表
+	repeated int32 wigIds = 1; //地效唯一编号	
+}
+
+message S_AddCollectItemInfos{ //添加采集物列表
+	repeated CollectItemInfoMsg listCollectItemInfos = 1; //采集列表	
+}
+
+message S_RemoveCollectItemInfos{ //移除采集物列表
+	repeated int32 playerCollectIds = 1; // 采集唯一编号	
+}
+
+message C_SynPosition{ //同步位置状态
+	required string guid = 1;  //全局编号
+	required int32 state = 2;//单位状态
+	required Vector3Msg position = 3;   //位置
+	required int32 direction = 4;   //方向	
+}
+
+message S_SynPosition{ //同步位置状态
+	required string guid = 1;  //全局编号	
+	optional int32 state = 2;//单位状态
+	optional Vector3Msg position = 3;   //位置
+	optional int32 direction = 4;   //方向	
+}
+
+message C_UpdatePosition{ //更新最新位置
+	required string guid = 1;  //全局编号		
+	required Vector3Msg position = 2;   //位置
+	required int32 direction = 3;   //方向	
+}
+
+message S_UpdatePosition{ //更新最新位置
+	required string guid = 1;  //全局编号		
+	required Vector3Msg position = 2;   //位置
+	required int32 direction = 3;   //方向	
+}
+
+message C_Pickup{ //拾取物品
+	required int32 dropId = 1;  //掉落全局编号	
+}
+
+message S_Pickup{//拾取物品成功
+	required int32 dropId = 1;  //掉落全局编号
+}
+
+message C_ShowPlayer{
+	optional int64 playerId = 1; //角色编号	
+}
+
+message S_ShowPlayer{
+	optional string guid = 1;  //全局编号
+	optional int32 severNo = 2; //服务器编号
+	optional int64 playerId = 3; //角色编号
+	optional string playerName = 4; // 角色名称	
+	optional int32 career = 5; // 角色职业	
+	optional int32 vipLevel = 6; // 角色vip等级	
+	optional int64 playerFamilyId = 7; // 角色家族ID	
+	optional string familyName = 8; // 角色家族名称
+	optional int32 familySortId = 9; // 角色排位
+	repeated SynPlayerPropertyMsg playerPropertyMsg = 10; //玩家属性消息
+	repeated PlayerEquipmentMsg listPlayerEquipments = 11; //玩家装备
+	repeated WakanMsg listWakans = 12; //玩家注灵信息
+	optional int64 guildId = 13;   		//帮派编号
+	optional string guildName = 14;   	//帮派名称
+	repeated PlayerFurnaceMsg furnaceList = 15; 
+}
+
+message C_SynMonsterState{ //同步怪物状态
+	
+}
+message S_SynMonsterState{ //同步怪物状态
+	repeated MonsterStateMsg monsterStates = 1;
+}
+
+message S_TransferNotice{ //传送通知
+	optional int32 type = 1;  //1:队伍  2：家族  3：帮派
+	optional int32 iconId = 2;  //物品图标 用于显示
+	optional string playerName = 3;  //召唤者名称
+	optional int32 toMapId = 4;  //传送目标地图	
+	required Vector3Msg toPosition = 5;   //传送位置		
+}
+
+message C_Transfer{ //传送
+	optional int32 toMapId = 1;  //传送目标地图	
+	required Vector3Msg toPosition = 2;   //传送位置	
+}

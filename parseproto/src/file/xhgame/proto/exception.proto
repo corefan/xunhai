@@ -1,0 +1,8 @@
+
+message S_Exception { //
+	optional int32 code = 1; // 异常编号
+}
+
+message S_Exception_Server{ //服务端组装文字提示
+	optional string msg = 1; // 飘字通知	
+}

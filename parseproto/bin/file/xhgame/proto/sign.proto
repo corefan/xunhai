@@ -1,0 +1,23 @@
+
+message SignMsg {
+	optional int32 signNum = 1;      // 签到次数(包含补签次数)
+	optional int32 reSignNum = 2;    // 已补签次数(仅用于计算补签消耗)
+	optional int32 day = 3;          // 当前日期（号）
+	optional int32 state = 4;        // 当前日期签到状态 0 :未签到, 1: 已签到
+	optional int32 conSignDay = 5;   // 连续签到天数
+	repeated int32 rewardList = 6;   // 已领取的连续签到奖励列表 
+}
+
+message C_Sign {  // 签到/补签
+	
+}
+message S_SynSign {  // 签到
+	optional SignMsg signMsg = 1; // 签到返回数据 
+}
+
+message C_GetConSignReward {  // 领取连续签到奖励
+	optional int32 signNum = 1;      // 连续签到次数
+}
+message S_GetConSignReward {  // 领取连续签到奖励
+	optional int32 signNum = 1;      // 连续签到奖励次数
+}

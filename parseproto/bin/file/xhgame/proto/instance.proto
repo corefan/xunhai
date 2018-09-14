@@ -1,0 +1,41 @@
+
+message S_InstanceEnd{ //副本结束包  （清掉剩余怪物）
+	optional int32 destroyTime = 1; // >0 副本销毁时间(毫秒) 
+	optional int32 result = 2; //1 成功  2： 失败
+}
+
+
+message IntancePanelMsg{ //副本界面信息
+	optional int32 mapId = 1;   //开启的地图编号		
+	optional int32 enterCount = 2;   //已进入次数	
+}
+message C_GetOpenMapList{ //取开启的副本列表
+
+}
+
+message S_GetOpenMapList{ //取开启的副本列表
+	repeated IntancePanelMsg intancePanelMsgs = 1;  //副本信息	
+}
+
+message C_EnterInstance{ //进入副本入口
+	required int32 mapId = 1;    //地图编号		
+}
+
+message TeamInsStateMsg{ //队员进入状态信息
+	optional int64 teamPlayerId = 1;//队员编号列表	
+	optional int32 state = 2;  //0:未选  1：同意  2：拒绝	
+}
+
+message S_SynTeamState{ //多人副本通知
+	repeated TeamInsStateMsg teamInsStates = 1;//各队员状态列表	
+	optional int32 mapId = 2;//地图编号	
+}
+
+message C_AgreeEnter{ //同意进入
+	optional int32 state = 1;  //1：同意  2：拒绝		
+}
+
+message C_QuitInstance{ //退出副本
+	
+}
+

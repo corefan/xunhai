@@ -1,0 +1,51 @@
+import "player.proto";
+message PlayerEquipmentMsg{
+	required int64 playerEquipmentId = 1; 		 	  // 玩家装备唯一编号
+	optional int32 equipmentId = 2;        			  // 装备基础编号	
+	optional int32 equipType = 3;          			  // 装备部位
+	optional int32 state = 4;                   	  // 装备状态 (1:背包 2:穿戴)
+	optional int32 holeNum = 5;     	  		 	  // 装备孔位数
+	repeated SynPlayerPropertyMsg addPropertyMsg = 6; // 装备附加属性消息
+	optional int32 score = 7;// 装备评分
+	optional int32 isBinding = 8; // 是否绑定(1:是 0：否)
+}
+
+message PlayerWeaponEffectMsg{
+	optional int32 holeId = 1;      //孔位ID
+	optional int32 effectId = 2;    //效果编号ID
+	optional int32 type = 3;    	//1:技能  2：属性
+	optional int32 baseId = 4; 	//技能基础编号或属性编号
+	optional int32 proValue = 5; 	//技能下标或属性值
+}
+
+message C_PutOnEquipment{ //穿装备
+	optional int64 playerEquipmentId=1; //玩家装备编号	
+}
+
+message C_PutDownEquipment{ //脱装备
+	optional int64 playerEquipmentId=1; //玩家装备编号		
+}
+
+message C_Epigraph { //铭文装备
+	optional int64 playerEquipmentId = 1; // 装备唯一编号
+	optional int32 holeId = 2; 	      // 装备孔位编号
+	optional int64 playerBagId = 3;      // 使用的铭文id	
+}
+
+message S_Epigraph {	
+	optional int32 holeId = 1; 	      // 装备孔位编号
+}
+
+message S_SynPlayerWeaponEffect {	// 同步主武器铭文信息	
+	repeated PlayerWeaponEffectMsg effectMsg = 1;     // 武器铭文信息 
+}
+
+																
+message C_ShowEquipment{
+	optional int64 showPlayerId = 1; //角色编号	 
+	optional int64 playerEquipmentId = 2;  // 玩家装备唯一编号
+}
+
+message S_ShowEquipment{
+	optional PlayerEquipmentMsg showEquipment = 1; 		 	  // 玩家装备信息
+}

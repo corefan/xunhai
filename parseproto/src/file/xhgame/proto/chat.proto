@@ -1,0 +1,79 @@
+enum ParamType { // 参数类型
+	PARAM = 1;     	// 组合显示信息参数,纯显示 
+	PLAYER = 2; 	// 玩家名：点击弹出玩家通用信息框  playerId,0,playerName
+	ITEM = 3;       // 物品名：点击弹出物品tips        itemId,0,""
+	EQUIPMENT = 4;  // 装备名：点击弹出装备tips        playerId, equipId, playerEquipId
+	TEAM = 5;	    // 组队申请链接：点击发送组队申请  teamId, 0, "<申请入队>"
+	WING = 6;		// 羽翼 查询羽翼                   baseId,0,""
+	FASHION = 7;	// 时装 查询时装                   baseId,0,""
+	SCENE = 8;	    // 场景名称                        0, 0, mapName	
+	FAMILY = 9;	    // 家族                           
+	VOICE = 10;		// 语音                      
+	GUILD = 11;     //都护府：点击发送帮派申请
+}
+
+
+message  C_Chat{ //聊天	
+	optional int32 type = 1; 	   // 消息类型(类型说明 1:世界,2:家族,3:组队,4:私人,5:系统,6:附近,7:喇叭)	
+	optional string content = 2;   // 消息内容	
+	optional int64 toPlayerId = 3; // 接受者玩家ID (仅用于私聊)
+	optional string param = 4;  // 参数{{ParamType, int, int, string},{ParamType, int, int, string}}
+}
+
+message  S_Chat{ //聊天	
+	optional int64 sendPlayerId = 1;     // 角色编号
+	optional int32 sendPlayerCareer = 2; // 角色职业	
+	optional string sendPlayerName = 3;  // 角色名字
+	optional int32 sendPlayerLevel = 4; // 角色等级
+	optional int32 sendPlayerTitle =5;  // 角色的称谓	
+	optional int32 sendPlayerVip =6;    // 角色的vip
+	optional int64 toPlayerId = 7;		// 接受者玩家ID (仅用于私聊，系统个人信息)
+	optional string toPlayerName = 8;	// 接受者玩家名字 (仅用于私聊，系统个人信息)
+	optional int32 type = 9; 	  		// 消息类型(类型说明 1:世界,2:工会,3:组队,4:私人,5:系统,6:附近)	
+	optional int32 msgId = 10;     		// 消息ID	
+	optional string content = 11;  		// 消息内容
+	optional string param = 12; 		// 参数[列表]
+}
+
+message S_SynNotic{ //公告
+	optional int32 msgId = 1;       // 消息ID		
+	optional string param = 2;  // 参数{type, int, int, string}
+}
+
+message C_PostVoice{ //上传语音信息
+	optional string id = 1;      // 语音序列ID(玩家ID+时间戳)
+	optional bytes voice = 2;  	 // 语音内容
+}
+message S_PostVoice{ //上传语音信息
+	optional string id = 1;      // 语音序列ID(玩家ID+时间戳)	
+}
+
+message C_GetVoice{ //获取语音信息
+	optional string id = 1;       // 语音序列ID	
+}
+message S_GetVoice{ //获取语音信息
+	optional bytes voice = 1;  	 // 语音内容
+}
+
+message OfflineMsg{
+	optional int64 sendPlayerId = 1;     // 角色编号
+	optional int32 sendPlayerCareer = 2; // 角色职业	
+	optional string sendPlayerName = 3;  // 角色名字
+	optional int32 sendPlayerLevel = 4;  // 角色等级	
+	optional int32 sendPlayerVip = 5;    // 角色的vip
+	repeated ChatInfoMsg chatInfos = 6;
+}
+
+message ChatInfoMsg{
+	optional string content = 1;  		// 消息内容
+	optional string param = 2; 			// 参数[列表]
+	optional int64 cerateTime = 3;  	// 消息创建时间
+}
+
+
+message C_GetOfflineInfo{ //获取离线信息
+	
+}
+message S_GetOfflineInfo{ //获取离线信息
+	repeated OfflineMsg offlines = 1;	// 离线信息列表
+}

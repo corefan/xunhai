@@ -1,0 +1,28 @@
+
+message S_TowerEnd{ //大荒塔结算  
+	optional int32 result = 1; //1 成功  2： 失败
+	optional int32 curLayerId = 2; //当前层数
+	optional string rewardInfo = 3; //奖励信息  参考邮件附件	
+}
+
+message C_EnterTower{ //进入大荒塔
+	
+}
+
+message C_QuitTower{ //退出大荒塔
+	
+}
+
+message C_ResetTower{ //重置大荒塔
+	
+}
+
+
+message C_GetShenjingData{ //获取神境面板数据
+	
+}
+message S_GetShenjingData{ //获取神境面板数据
+	optional int32 huanjingState = 1;   //幻境状态  1：开启  0结束
+	optional int64 huanjingEndTime = 2;  //幻境结束时间搓	
+}
+

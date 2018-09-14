@@ -1,0 +1,113 @@
+import "equipment.proto";
+message PlayerBagMsg{
+	required int64 playerBagId = 1; // 玩家背包唯一编号
+	optional int32 goodsType = 2; // 物品类别 (1:装备 2：药品 3：材料)	
+	optional int64 itemId = 3;    // 物品编号 (或装备唯一编号)
+	optional int32 itemIndex = 4; // 物品索引下标
+	optional int32 num = 5;       // 数量
+	optional int32 isBinding = 6; // 是否绑定(1:是 0：否)
+	optional int32 state = 7; // 物品状态 (1:背包)
+}
+
+message IndexBagMsg {
+	optional int32 itemIndex=1; // 物品下标
+	optional PlayerBagMsg playerBag = 2; // 玩家背包
+}
+
+message DrugLumnMsg{ //药品栏
+	optional int32 itemIndex=1; // 物品下标	
+	optional int32 itemId=2; // 物品编号
+}
+
+message C_TidyBag { //整理背包
+
+}
+
+message C_SellItem { //出售物品
+	required int64 playerBagId=1; // 玩家背包编号
+}
+
+message C_UseItem{ //使用道具
+	required int64 playerBagId=1; // 玩家背包编号
+	required int32 num = 2; //使用数量	
+}
+
+message S_UseItem{ //使用道具
+	required int32 itemId = 1; // 物品编号
+	required int32 num = 2;    //使用数量	
+}
+
+
+message C_PutonDrug{ //装备药品
+	optional int32 type=1; // 操作药品栏 1：红药栏  2：蓝药栏	
+	optional int32 itemId=2; // 物品编号	
+}
+message S_PutonDrug{ //装备药品返回
+	optional int32 type=1; // 操作红药栏	
+	optional DrugLumnMsg drugLumn=2; // 药品栏	
+}
+
+message C_PutdownDrug{ //卸下药品
+	optional int32 type=1; // 操作药品栏 1：红药栏  2：蓝药栏
+	optional int32 itemId=2; // 物品编号		
+}
+message S_PutdownDrug{ //卸下药品返回
+	optional int32 type=1; // 操作红药栏	
+	optional DrugLumnMsg drugLumn=2; // 药品栏	
+}
+
+message S_SynBagItem{ //同步背包物品
+	repeated PlayerBagMsg listPlayerBags = 1; //背包列表
+	repeated PlayerEquipmentMsg listPlayerEquipments = 2; //装备
+	optional int32 tigTag = 3; //提示标识 0:默认提示, 1:不提示
+}
+
+message C_FuseItem{ //铭文石合成
+	optional int32 itemId = 1;  // 合成的物品id
+}
+
+message S_FuseItem{
+
+}
+
+message C_Compose{ //合成
+	optional int32 itemId = 1;  // 合成的物品id
+}
+
+message S_Compose{ //合成
+	
+}
+
+message C_AutoDecompose{ //一键分解
+	repeated int32 rareId = 1;  // 色阶ID
+}
+
+message S_AutoDecompose{ //一键分解
+	repeated int64 playerBagId = 1;  // 分解的背包格子ID
+}
+
+message C_Decompose{ //分解
+	repeated int64 playerBagId = 1;  // 分解的背包格子ID
+}
+
+message S_Decompose{ //分解
+	repeated int64 playerBagId = 1;  // 分解的背包格子ID
+}
+
+message C_AutoRefine{ //一键提炼
+	repeated int32 rareId = 1;  // 色阶ID
+}
+
+message S_AutoRefine{ //一键提炼
+	repeated int64 playerBagId = 1;  // 提炼的背包格子ID
+}
+
+message C_Refine{ //提炼
+	repeated int64 playerBagId = 1;  // 提炼的背包格子ID
+}
+
+message S_Refine{ //提炼
+	repeated int64 playerBagId = 1;  // 提炼的背包格子ID
+}
+
+

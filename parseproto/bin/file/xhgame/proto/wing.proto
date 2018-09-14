@@ -1,0 +1,53 @@
+
+message WingMsg{
+	optional int32 wingId = 1; // 羽翼ID
+	optional int32 star = 2;   // 星星数
+	optional int32 wingValue = 3; //当前羽灵值	
+	optional int32 dressFlag = 4; //是否穿戴 1: 已穿戴
+}
+
+message C_GetWingList {
+	
+}
+
+message S_SynWingList { //羽翼数据改变
+	repeated WingMsg listWing = 1; //羽翼列表
+	optional int32 totalWingValue = 2; // 总羽灵值
+}
+
+message S_AddWing{ // 激活新的羽翼
+	optional int32 wingId = 1; // 羽翼ID	 
+}
+
+message C_PutonWing{ //装备羽翼	
+	optional int32 wingId = 1; // 羽翼编号		
+}
+
+message S_PutonWing{ //装备羽翼	
+	optional int32 wingId = 1; // 羽翼编号		
+}
+
+message C_PutdownWing{ //卸下羽翼	
+	optional int32 wingId = 1; // 羽翼编号		
+}
+message S_PutdownWing{ //装备羽翼	
+	optional int32 wingId = 1; // 羽翼编号		
+}
+
+message C_Evolve{   // 羽化
+	optional int32 type = 1; 	// 羽化类型（1:羽灵, 2:羽毛）	
+	optional int32 wingId = 2; 	// 羽翼编号	
+	optional int32 itemId = 3;  // 羽毛ID	
+}
+message S_Evolve{   // 羽化
+	optional WingMsg wingMsg = 1; // 羽翼编号	
+	optional int32 totalWingValue = 2; // 总羽灵值	
+}
+
+message C_UnEvolve{   // 羽翼降解
+	optional int32 wingId = 1; // 羽翼编号		
+}
+message S_UnEvolve{   // 羽翼降解
+	optional WingMsg wingMsg = 1; // 羽翼信息
+	optional int32 totalWingValue = 2; // 总羽灵值
+}

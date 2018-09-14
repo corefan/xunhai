@@ -1,0 +1,24 @@
+
+message WakanMsg{ //注灵
+	optional int32 posId = 1;  // 装备位ID
+	optional int32 wakanLevel = 2; // 注灵等级	
+	optional int32 wakanValue = 3; //灵力值
+}
+
+message C_WakanList{ //装备位注灵信息列表
+	
+}
+
+message S_WakanList{ //注灵
+	repeated WakanMsg wakanList = 1; //装备位注灵信息列表
+}
+
+message C_TakeWakan{ //注灵
+	optional int32 posId = 1;   // 装备位ID(1=头盔,2=上装,3=下装,4=项链,5=护腕,6=戒指,7=主武器,8=副武器)
+	repeated int32 listItems = 2;  // 灵石ID
+}
+
+message S_TakeWakan{ //注灵
+	optional int32 isCrit  = 1; // 是否暴击（0:未暴击, 1: 暴击）
+	optional WakanMsg wakanMsg = 2; //装备位信息
+}

@@ -1,0 +1,18 @@
+
+message  C_StartCollect{ //开始采集
+	optional int32 playerCollectId = 1;       // 采集唯一编号
+}
+
+message  S_StartCollect{ //开始采集	
+	optional int32 playerCollectId = 1;       // 采集唯一编号	
+	optional int32 state = 2;				  // 0: 可采, 1：不可采 
+}
+
+message  C_InterruptCollect{ //中断采集
+	optional int32 playerCollectId = 1;       // 采集唯一编号
+}
+
+message  S_EndCollect{ //结束采集	
+	optional int32 playerCollectId = 1;       // 采集唯一编号
+}
+

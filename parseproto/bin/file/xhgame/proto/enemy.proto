@@ -1,0 +1,36 @@
+
+message EnemyMsg {
+	optional int64 enemyPlayerId = 1;    // 玩家角色编号
+	optional string enemyPlayerName = 2; // 玩家角色名称
+	optional int32 level = 3;            // 玩家等级
+	optional int32 career = 4;           // 玩家职业
+	optional string familyName = 5;      // 家族名称
+	optional int32 isOnline = 6;         // 是否在线
+	optional int64 createTime = 7;       // 仇敌生成时间
+}
+
+message C_GetEnemyList {
+	
+}
+
+message S_SynEnemyList { //仇敌列表
+	repeated EnemyMsg listEnemy = 1; //仇敌列表
+}
+
+message C_DeleteEnemy { // 删除仇敌
+	optional int64 enemyPlayerId = 1;   // 玩家角色编号
+}
+
+message S_DeleteEnemy { // 删除仇敌
+	optional int64 enemyPlayerId = 1;   // 玩家角色编号
+}
+
+message C_TrackEnemy { // 追踪仇敌
+	optional int64 enemyPlayerId = 1;   // 玩家角色编号
+}
+
+message S_TrackEnemy { // 追踪仇敌
+	optional int64 enemyPlayerId = 1;   // 玩家角色编号
+	optional string playerName = 2; // 玩家角色名称
+	optional int32 mapId = 3;   // 玩家所在地图ID
+}

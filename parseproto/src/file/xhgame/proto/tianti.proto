@@ -1,0 +1,102 @@
+message RankMsg{
+	optional int32 rank = 1;     //	排名
+	optional int64 playerId = 2; // 玩家编号
+	optional string playerName = 3; // 玩家名称
+	optional int32 career = 4;   //玩家职业  
+	optional int32 level = 5;    //玩家等级
+	optional int32 stage = 6;    //段位
+	optional int32 star = 7;     //星级
+}
+
+message LoadPkPlayerMsg{
+	optional string guid = 1;		// 全局编号
+	optional int64 playerId = 2;    // 玩家编号
+	optional string playerName = 3; // 玩家名称
+	optional int32 career = 4;      // 玩家职业  
+	optional int32 level = 5;       // 玩家等级
+	optional int32 stage = 6;       // 段位
+	optional int32 star = 7;        // 星级
+}
+
+message PKRewardMsg{	
+	optional int32 goodsType = 1; // 物品类别 (1:装备,2:物品,3:金币,4:钻石,5:代金卷,6:贡献值,7:荣誉值,8:经验)	
+	optional int64 itemId = 2;    // 物品编号 (基础编号)
+	optional int32 num = 3;       // 数量	
+}
+message EndPKPlayerMsg{
+	optional string guid = 1;  		  // 全局编号
+	optional int64 playerId = 2;      // 玩家编号
+	optional int32 state = 3;   	  // 战斗状态（0: 成功, 1: 失败）
+	optional int32 useTime = 4; 	  // 耗时
+	optional int32 score = 5;         // 获得积分
+	optional int32 WinNum = 6;        // 连胜或连败次数（1：连胜次数， -1: 连败次数）
+	repeated PKRewardMsg rewards = 7; // 获得奖励	
+	optional int32 destroyTime = 8;	  // >0 副本销毁时间(毫秒) 
+}
+
+message C_GetTianti{ //获取面板数据
+	
+}
+message S_GetTianti{
+	optional int32 stage = 1; //段位 1开始
+	optional int32 star = 2; //星级 0
+	optional int32 killNum = 5; //杀人	
+	optional int32 deadNum = 6; //死亡
+	optional int64 startTime = 7; //开始时间	
+	optional int64 endTime = 8; //结束时间	
+	repeated int32 stages = 9;    // 已领取段位奖励列表
+	optional int32 tiantiNum = 10; //噬魂殿领奖次数
+	optional int32 score = 11;   //当前积分
+}
+
+message C_GetRankPageList { //获取排行列表 分页
+	optional int32 start=1; // 起始
+	optional int32 offset=2; // 数量
+}
+
+message S_GetRankPageList { //获取排行列表 分页
+	repeated RankMsg rankList=1; //排行列表
+	optional int32 totalNum=2; // 总数量
+	optional int32 myRank = 3; // 我的排名 0：未上榜
+}
+
+message C_Match{ //开始匹配
+	
+}
+message S_Match{ //开始匹配
+	optional int32 state = 1;   	  // 战斗状态（0: 成功, 1: 失败）
+}
+
+message C_CancelMatch{ //取消匹配
+
+}
+message S_CancelMatch{ //取消匹配
+
+}
+
+message C_GiveUp{ //认输
+
+}
+
+message S_SynLoadPkPlayer{ //进入竞技场加载信息
+	repeated LoadPkPlayerMsg pkPlayers = 1;
+}
+message S_SynEndTiantiPkPlayer{ //同步玩家竞技场结算信息
+	optional EndPKPlayerMsg pkPlayers = 1;
+}
+
+message C_UseTiantiItem{ //使用竞技场初始物品
+	optional int32 itemId = 1; // 物品编号
+	optional int32 num = 2;    // 使用数量	
+}
+message S_UseTiantiItem{ //使用竞技场初始物品
+	optional int32 itemId = 1; // 物品编号
+	optional int32 num = 2;    // 当前物品剩余数量	
+}
+
+message C_GetStageReward{ // 领取段位奖励
+	optional int32 stage = 1; //段位 1开始
+}
+message S_GetStageReward{ // 领取段位奖励
+	optional int32 stage = 1;  // 段位
+}

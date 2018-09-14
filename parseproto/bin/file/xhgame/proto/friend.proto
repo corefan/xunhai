@@ -1,0 +1,68 @@
+message FriendMsg{  //好友信息	
+	required int64 playerId = 1;    //角色编号
+	optional string playerName = 2; //角色名称	
+	optional int32 level = 3;      	//角色等级
+	optional int64 exitTime = 4; 	//角色离线时间(为0则在线）
+	optional int32 career = 5;      //职业
+    optional int64 playerFamilyId = 6; // 角色家族ID	
+	optional string familyName = 7;    // 角色家族名称	
+}
+
+message ApplyMsg{  //消息信息	
+	required int64 playerId = 1;    //角色编号
+	optional string playerName = 2; //角色名称
+	optional int32 level = 3;      	//角色等级		
+	optional int32 career = 4;      //职业	
+	optional int64 time = 5;        //申请时间			
+}
+
+message C_ApplyAddFriend{  //申请添加好友	
+	required int64 applyPlayerId = 1; //申请人的角色编号	
+}
+message S_ApplyAddFriend{  //申请添加好友返回	
+	required ApplyMsg applyMsg = 1; //申请人消息的信息		
+}	
+
+message C_FriendList{  //获取好友列表	
+	required int32 type = 1; //好友列表类型 1:好友; 2: 江湖好友 3: 推荐添加玩家列表		
+}
+message S_FriendList{  //申请添加好友返回
+	required int32 type = 1; //好友列表类型 1:好友; 2: 江湖好友 3: 推荐添加玩家列表		
+	repeated FriendMsg friendList = 2; //好友列表				
+}
+
+message C_ApplyMsgList{ //申请消息列表	
+} 
+message S_ApplyMsgList{  //申请消息列表返回
+	repeated ApplyMsg applyMsgList = 1; //消息列表				
+}
+
+message C_DeleteFriend{ //删除好友	
+	required int64 deletePlayerId = 1;// 要删除的角色编号		
+}
+message S_DeleteFriend{  //删除好友返回	
+	required int64 deletePlayerId = 1;// 角色编号		
+}
+
+message C_SerachFriend{ //搜索角色	
+	required string playerName = 1; // 搜索的角色名称	
+}
+message S_SerachFriend{  //搜索角色返回
+	optional FriendMsg friendMsg = 1; //角色信息				
+}
+
+message C_ApplyDeal{  //好友消息处理	
+	required int64 applyPlayerId = 1 ;// 申请人的角色编号		
+	optional int32 state = 2;        //0:拒绝， 1:同意
+}
+message S_ApplyDeal{  //好友消息处理	
+	optional int32 state = 1;
+	optional FriendMsg friendMsg = 2; //角色信息 (申请人和接收人的信息都要回发)
+}
+
+
+message C_DeleteAllApply{ //清空申请消息列表	
+}
+ 
+message C_AgreeAllApply{ //同意所有申请	
+} 

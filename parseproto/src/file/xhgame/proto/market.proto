@@ -1,0 +1,24 @@
+
+message MarketItemMsg {
+	optional int32 marketId = 1;    // 商城物品编号ID	
+	optional int32 curBuyNum = 2;   // 当前购买次数	
+}
+
+message C_GetMarketItemList { // 商城物品列表
+
+}
+
+message S_GetMarketItemList {
+	repeated MarketItemMsg marketItemList = 1; // 商城物品列表	
+}
+
+message C_MarketBuy { // 商城物品购买
+	optional int32 marketId = 1;    // 商城物品编号ID	
+	optional int32 num = 2;         // 购买数量	
+	optional bool useFlag = 3;   // 是否快捷使用
+}
+
+message S_MarketBuy { // 商城物品购买
+	optional int32 marketId = 1;  // 商城物品编号ID	
+	optional int32 curBuyNum = 2;   // 当前购买次数			
+}

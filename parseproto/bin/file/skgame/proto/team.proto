@@ -1,0 +1,178 @@
+import "scene.proto";
+
+message TeamPlayerMsg{  //队员信息	
+	optional int64 playerId = 1;    //角色编号
+	optional string playerName = 2; //角色名称	
+	optional int32 teamIndex = 3;    //位置下标 从1开始
+	optional bool captain = 4;    //是否队长
+	optional int32 level = 5;      	//角色等级
+	optional int32 online = 6; 	//角色在线状态	
+	optional int32 career = 7;      //职业	
+	optional int32 mapId = 8;      //所在地图
+	optional int32 battleValue = 9;  //战力
+	optional int32 dressStyle = 10;   //外形
+	optional int32 weaponStyle = 11;   //武器外形(装备基础ID)
+	optional int32 hp = 12;     //当前血量
+	optional int32 maxHp = 13;     //最大血量
+	optional int32 vipLevel = 14;     //vip等级
+}
+
+message InvitePlayerMsg{ //邀请界面玩家信息
+	optional int64 playerId = 1;    //角色编号
+	optional string playerName = 2; //角色名称
+	optional int32 level = 3;      	//角色等级
+	optional int32 career = 4;      //职业	
+	optional string guildName = 5;  //公会名称	
+}
+
+message TeamMsg{ //队伍信息
+	required int32 teamId = 1; //队伍唯一编号
+	optional int64 playerId = 2;    //队长编号
+	optional string playerName = 3; //队长名称
+	optional int32 level = 4;      	//队长等级
+	optional int32 career = 5;      //队长职业	
+	optional int32 playerNum = 6;    //队伍当前人数
+	optional int32 activityId = 7;     //活动编号	
+	optional int32 minLevel = 8;     //最低等级
+	optional int64 createTime = 9;     //队伍创建时间
+}
+
+message S_SynTeamPlayerHp{ //同步队员血量显示
+	optional int64 playerId = 2;    //队员编号
+	optional int32 hp = 12;     //当前血量
+	optional int32 maxHp = 13;     //最大血量		
+}
+
+message C_GetTeamList{ //组队大厅列表
+	optional int32 activityId = 1;     //活动编号		
+}
+
+message S_GetTeamList{ //组队大厅列表
+	repeated TeamMsg teamList = 1;     //队伍列表		
+}
+
+message C_CreateTeam{ //创建队伍
+	
+}
+
+message S_SynTeam{ //同步队伍
+	required int32 teamId = 1; //队伍唯一编号
+	optional int32 activityId = 2;     //活动编号	
+	optional int32 minLevel = 3;     //最低等级	
+	optional int32 state = 4;     //0：正常 1：满员	
+	repeated TeamPlayerMsg listTeamPlayers = 5; //队员列表
+}
+
+message C_GetInviteList{ //获取社交邀请列表
+	optional int32 type=1; // 分类 1：好友  2：氏族 3：家族
+	optional int32 start=2; // 起始
+	optional int32 offset=3; // 数量
+}
+
+message S_GetInviteList{ //获取社交邀请列表
+	optional int32 type=1; // 分类 1：好友  2：氏族 3：家族
+	repeated InvitePlayerMsg invitePageList=2; //列表
+	optional int32 playerNum=3; // 数量
+}
+
+message C_Invite{ //发起邀请
+	optional int64 inviterId = 1;     //受邀请者编号		
+}
+message S_Invite{ //发起邀请回复
+		
+}
+
+message S_HasNewInvite{ //有新邀请通知
+	required int32 teamId = 1; 		//队伍唯一编号
+	optional string playerName = 2; //队长角色名称
+	optional int32 playerLevel = 3; //队长等级
+	optional int32 minLevel = 4;  	//队伍最低限制等级
+	optional int32 activityId = 5;  //活动编号	
+}
+
+message C_AgreeInvite{ //同意邀请
+	required int32 teamId = 1; //队伍唯一编号	
+}
+
+message C_ChangeTarget{ //修改队伍目标
+	optional int32 activityId = 1;   //活动编号	
+	optional int32 minLevel = 2;     //最低等级	
+}
+
+message C_QuitTeam{ //退出队伍
+
+}
+message S_QuitTeam{ //退出队伍
+
+}
+
+message C_KickTeamPlayer{ //踢除队员
+	optional int64 playerId = 1;    //队员编号	
+}
+message S_KickTeamPlayer{ //踢除队员
+		
+}
+
+message C_ChangeCaptain{ //转让队长
+	optional int64 playerId = 1;    //队员编号	
+}
+
+//*******************新增***************************
+
+message C_ApplyJoinTeam { //申请加入队伍
+	required int32 teamId = 1; //队伍唯一编号	
+}
+message S_ApplyJoinTeam { //申请加入队伍
+	
+}
+
+message C_GetTeamApplyList{ //获取申请加入队伍消息
+	
+}
+message S_GetTeamApplyList{ //获取申请加入队伍消息
+	repeated InvitePlayerMsg applyList = 2; //列表
+}
+
+message C_ClearTeamApplyList{ //清空申请消息
+	
+}
+
+message C_ApplyJoinTeamDeal { //加入队伍信息处理
+	optional int64 applyPlayerId = 1; //申请玩家编号	
+	optional int32 state = 2; //消息处理状态(0:拒绝, 1:同意)
+}
+message S_ApplyJoinTeamDeal { //加入队伍信息处理
+	optional int64 applyPlayerId = 1; //申请玩家编号	
+	optional string playerName = 2; //队长角色名称
+	optional int32 state = 3; //消息处理状态(0:拒绝, 1:同意)
+}
+
+message C_PlayerAutoMatch { //玩家自动匹配队伍
+	optional int32 activityId = 1;     //活动编号		
+}
+
+message C_TeamAutoMatch { //队伍自动匹配玩家
+	optional int32 state = 1; //是否自动匹配  1：是
+}
+
+
+message C_Follow { //跟随
+	optional int32 state = 1; //跟随状态 0:不跟随, 1:跟随
+}
+
+message C_AutoAgreeApply { //自动同意申请
+	
+}
+message S_AutoAgreeApply { //自动同意申请
+	optional int32 state = 1; //同意状态 0:不自动同意, 1:自动同意
+}
+
+
+message C_GetCaptainPostion { //获取队长位置信息
+	
+}
+
+message S_GetCaptainPostion { //获取队长位置信息
+	optional Vector3Msg position = 1;//位置
+	optional int32 mapId = 2; // 场景ID
+}
