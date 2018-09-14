@@ -1,0 +1,73 @@
+--[[
+	id:int#ID
+	word:string#表情文字
+	describe:string#描述
+]]
+
+local cfg={
+	[1]={
+		id=1,
+		word="请教",
+		describe="『@name』双手抱拳朗声道，在下『@name』，未请教。"
+	},
+	[2]={
+		id=2,
+		word="凝视",
+		describe="『@name』目光如炬，静静地注视着眼前的一切。"
+	},
+	[3]={
+		id=3,
+		word="邀战",
+		describe="『@name』操着浓重的地方口音朗声道：“还~有~谁~”"
+	},
+	[4]={
+		id=4,
+		word="壁咚",
+		describe="『@name』将你压在墙边，用蛤蟆似的目光看着你。"
+	},
+	[5]={
+		id=5,
+		word="哭泣",
+		describe="『@name』蹲在墙角抱着双腿，默默地流泪。"
+	},
+	[6]={
+		id=6,
+		word="再会",
+		describe="『@name』越上房梁向众人说道，今日就此别过。"
+	},
+	[7]={
+		id=7,
+		word="抢肉",
+		describe="『@name』出手，电光火石间将抢走了最大的一块牛肉。"
+	},
+	[8]={
+		id=8,
+		word="比试",
+		describe="『@name』亮出兵器，朗声道，如不服气，我们再来比划比划。"
+	},
+	[9]={
+		id=9,
+		word="鼓掌",
+		describe="『@name』率先鼓掌，顿时掌声如雷鸣般响起。"
+	},
+	[10]={
+		id=10,
+		word="受伤",
+		describe="『@name』捂着胸口，低声说道：“快，扶我去窑子。”"
+	},
+	[11]={
+		id=11,
+		word="受挫",
+		describe="『@name』蹲在墙角，手指在地上不停打圈。"
+	},
+	[12]={
+		id=12,
+		word="安慰",
+		describe="『@name』抱住你，拍了拍你水牛般的肩膀。"
+	}
+}
+
+function cfg:Get( key )
+	return cfg[key]
+end
+return cfg

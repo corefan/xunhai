@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<proxool-config>
+
+	<proxool>
+		<alias>xh_base</alias>
+		<driver-url>
+			jdbc:mysql://192.168.0.200:3306/xh_base?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+		</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="root" />
+		</driver-properties>
+		<house-keeping-test-sql>
+			select CURRENT_DATE
+		</house-keeping-test-sql>
+		<house-keeping-sleep-time>60</house-keeping-sleep-time>
+		<prototype-count>2</prototype-count>
+		<minimum-connection-count>2</minimum-connection-count>
+		<maximum-connection-count>20</maximum-connection-count>
+		<simultaneous-build-throttle>200</simultaneous-build-throttle>
+		<maximum-connection-lifetime>
+			3600000
+		</maximum-connection-lifetime>
+		<maximum-active-time>1800000</maximum-active-time>
+	</proxool>
+</proxool-config>
