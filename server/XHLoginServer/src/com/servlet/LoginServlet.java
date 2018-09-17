@@ -315,7 +315,6 @@ public class LoginServlet extends HttpServlet {
 			param.append("&token=").append(token);
 			
 			String js = HttpUtil.sendGet(url, param.toString());
-			System.out.println("返回结果js="+js);
 			if(js == null){
 				//登录失败
 				result.put("result", 6);

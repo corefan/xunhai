@@ -257,7 +257,6 @@ public class PayServlet extends AbstractServlet {
 		JSONObject msgJson = dealMsg2(req);
 		
 		String reqUrl = msgJson.toString();
-		System.out.println("reqUrl = "+reqUrl);
 		
 		String cpOrderId = msgJson.getString("cpOrderId");
 		String userId = msgJson.getString("userId");
