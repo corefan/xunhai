@@ -1,0 +1,6 @@
+framework module GameUser_framwork {
+  umbrella header "GameUser_framwork.h"
+
+  export *
+  module * { export * }
+}

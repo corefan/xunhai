@@ -1,0 +1,6 @@
+framework module GameFramework {
+  umbrella header "GameFramework.h"
+
+  export *
+  module * { export * }
+}

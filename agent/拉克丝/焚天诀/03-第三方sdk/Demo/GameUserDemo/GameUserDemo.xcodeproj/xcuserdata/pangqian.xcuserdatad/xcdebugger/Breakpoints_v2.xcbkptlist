@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GameUserDemo/ViewController.m"
+            timestampString = "552383262.4390171"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "-YvGameUserLoginResp:result:msg:token:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GameUserDemo/AppDelegate.m"
+            timestampString = "552383270.223261"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "-persistentContainer"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AppDelegate persistentContainer]"
+                  moduleName = "GameUserDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pangqian/Documents/WorkSpace/%E6%B5%8B%E8%AF%95/%E5%A4%96%E5%8C%85/%E6%B7%B7%E6%B7%86%E5%B7%A5%E5%85%B7/%E7%99%BB%E9%99%86%E6%94%AF%E4%BB%98SDK/%5B%E7%83%88%E7%84%B0%E9%A3%8E%E6%9A%B4%5DSDK%E4%BB%A5%E5%8F%8A%E6%B8%B8%E6%88%8F%E5%8F%82%E6%95%B0/Demo/GameUserDemo/GameUserDemo/AppDelegate.m"
+                  timestampString = "552383270.566363"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[AppDelegate persistentContainer]_block_invoke"
+                  moduleName = "GameUserDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pangqian/Documents/WorkSpace/%E6%B5%8B%E8%AF%95/%E5%A4%96%E5%8C%85/%E6%B7%B7%E6%B7%86%E5%B7%A5%E5%85%B7/%E7%99%BB%E9%99%86%E6%94%AF%E4%BB%98SDK/%5B%E7%83%88%E7%84%B0%E9%A3%8E%E6%9A%B4%5DSDK%E4%BB%A5%E5%8F%8A%E6%B8%B8%E6%88%8F%E5%8F%82%E6%95%B0/Demo/GameUserDemo/GameUserDemo/AppDelegate.m"
+                  timestampString = "552383270.568648"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

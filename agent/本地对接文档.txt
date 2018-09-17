@@ -1,0 +1,96 @@
+
+
+=====================东海运营  https://github.com/donghaigame/iOS-DHSDKDemo ========================
+
+gameId：86
+subGameId：149
+api_key：b04781b991d8352c50aa5f399fbfabe2
+
+登录
+http://192.168.0.200:8000/login?userId=xxx&userName=xxx&time=123456789&sign=aaa
+
+参数：
+userId: 账号编号
+userName：账号密码
+time：当前时间戳
+sign：MD5(userId+userName+time+loginKey)
+
+返回json：result 0：登录成功  1：账号为空  2：密码为空  3：密码长度有误  4：账号未注册  5：密码错误 6：登录失败 
+      userId:账号唯一标示
+      key：随机密钥（存起来，登录游戏用到）
+      time：加密时间（存起来，登录游戏用到）
+      telePhone: 绑定的手机号码
+      sign：加密签名（存起来，登录游戏用到）	
+      serverList:服务器列表
+{
+serverNo：服务器编号
+serverName：服务器名称
+gameHost：服务器ip
+gamePort：服务器端口
+severState：服务器状态 (0.测试 1.流畅2：拥挤3.火爆  4.维护中 5.关闭)
+severType：服务器类型(0.普通 1.新服 2.推荐)
+loginFlag：是否登录过  1：是  0：否
+endStopTime:维护结束时间搓
+openServerDate:开服时间搓
+}
+
+
+支付
+
+message S_Pay{
+ 	optional int32 payItemId = 1; //商品编号
+	optional int32 payType = 2; //支付方式  1：支付宝 2：微信 3：苹果 
+	optional string payInfo=3; // 支付信息
+	optional string cpOrderId=4; // cp方自己的订单号	
+}
+
+获取到服务端给的信息后,再调用运营商SDK  注意：调用前productId内购编号需要根据不同马甲包配置起来  根据我们的商品编号一一对应
+totalFee商品价格单位是分
+customInfo = payInfo;
+cpOrderId = cpOrderId;
+productId = map[payItemId]
+
+
+
+
+================================云游运营====================================
+登录
+http://192.168.0.200:8000/login?uid=xxx&token=xxx
+
+参数说明：
+uid:  客户端从运营商SDK拿到的账户名
+token：客户端从运营商SDK拿到的token
+
+返回json：result 0：登录成功  1：账号为空  2：密码为空  3：密码长度有误  4：账号未注册  5：密码错误 6：登录失败 
+      userId:账号唯一标示
+      key：随机密钥（存起来，登录游戏用到）
+      time：加密时间（存起来，登录游戏用到）
+      telePhone: 绑定的手机号码
+      sign：加密签名（存起来，登录游戏用到）	
+      serverList:服务器列表
+{
+serverNo：服务器编号
+serverName：服务器名称
+gameHost：服务器ip
+gamePort：服务器端口
+severState：服务器状态 (0.测试 1.流畅2：拥挤3.火爆  4.维护中 5.关闭)
+severType：服务器类型(0.普通 1.新服 2.推荐)
+loginFlag：是否登录过  1：是  0：否
+endStopTime:维护结束时间搓
+openServerDate:开服时间搓
+}
+
+
+支付
+message S_Pay{
+ 	optional int32 payItemId = 1; //商品编号
+	optional int32 payType = 2; //支付方式  1：支付宝 2：微信 3：苹果 
+	optional string payInfo=3; // 支付信息
+	optional string cpOrderId=4; // cp方自己的订单号	
+}
+
+获取到服务端给的信息后,再调用运营商SDK  注意：调用前ProductID内购编号需要根据不同马甲包配置起来  根据我们的商品编号一一对应
+
+Price商品价格单位是元
+Game_trade_no = cpOrderId
+ProductID = map[payItemId]

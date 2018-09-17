@@ -1,0 +1,6 @@
+framework module aa_GameSDK {
+  umbrella header "aa_GameSDK.h"
+
+  export *
+  module * { export * }
+}
