@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="366,114">
+  <displayList>
+    <image id="n0" name="bg" src="keyenis" pkg="0tyncec1" xy="0,0" size="367,115"/>
+    <text id="n3" name="equipName" xy="114,21" size="77,28" font="方正粗圆简体" fontSize="24" strokeColor="#002b2b" strokeSize="2" text="灵魂刀"/>
+    <text id="n4" name="powerText" xy="114,72" size="125,24" font="方正粗圆简体" fontSize="20" color="#545e6c" ubb="true" text="战斗力:99999"/>
+    <component id="n8" name="upORdown" src="gv0l3p" xy="238,70">
+      <relation target="n4" sidePair="left-right"/>
+    </component>
+    <component id="n1" name="equipBtn" src="tnbmnka" pkg="0tyncec1" xy="267,40" size="88,45">
+      <Button title="装备" icon="ui://0tyncec1gk0nnie" selectedTitle="卸下" selectedIcon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n10" name="icon" src="ek9hnha" pkg="0tyncec1" xy="18,12"/>
+    <graph id="n9" name="clickMask" xy="5,3" size="234,107" locked="true" type="rect" lineColor="#00000000" fillColor="#00ffffff"/>
+  </displayList>
+</component>

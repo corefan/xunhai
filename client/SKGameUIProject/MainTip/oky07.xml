@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <graph id="n10" name="alpha" xy="0,0" size="1334,750" type="rect" lineSize="0" lineColor="#01000000" fillColor="#80000000"/>
+    <image id="n2" name="bg" src="csuxnlk" pkg="0tyncec1" xy="399,250" size="601,240"/>
+    <text id="n3" name="titleTxt" xy="484,255" size="430,31" font="方正粗圆简体" fontSize="24" color="#d2dae0" align="center" vAlign="middle" autoSize="none" text="标题文字"/>
+    <richtext id="n12" name="titleExplain" xy="431,304" size="533,115" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="none" text="内容"/>
+    <component id="n13" name="btnConfirm" src="l2b8nnq" pkg="0tyncec1" xy="576,425" size="243,46">
+      <relation target="" sidePair="bottom-bottom,center-center"/>
+      <Button title="确定" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>

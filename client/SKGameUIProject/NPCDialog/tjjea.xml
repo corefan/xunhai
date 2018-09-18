@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" designImage="ui://y1al0f5qtjjen" designImageAlpha="80">
+  <displayList>
+    <image id="n1" name="img_bg" src="tjjeh" xy="1,540" size="1333,210"/>
+    <image id="n3" name="img_npc_name_bg" src="tjjek" xy="164,563"/>
+    <graph id="n2" name="model_npc" xy="74,607" size="100,93" visible="false"/>
+    <text id="n4" name="label_npc_name" xy="327,567" size="221,36" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="陆金所老板娘"/>
+    <text id="n5" name="label_npc_dialog" xy="329,626" size="831,119" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="幽幽世外隔人间，不忍戚戚乱世烟"/>
+    <component id="n6" name="button_skip" src="tjjeo" xy="1160,25"/>
+    <component id="n10" name="button_mask" src="910zt" xy="0,547" size="1334,202"/>
+    <component id="n7" name="task_state_select" src="tjjep" xy="1017,284"/>
+    <component id="n8" name="button_next" src="tfo1dj" pkg="0tyncec1" xy="1166,692"/>
+  </displayList>
+</component>

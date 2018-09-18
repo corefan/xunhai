@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="646,544">
+  <displayList>
+    <image id="n0" name="n1" src="ci33f" xy="-17,-2" size="672,543"/>
+    <text id="n1" name="n1" xy="37,21" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="none" text="长安占城："/>
+    <text id="n2" name="n2" xy="37,58" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="height" text="长安城主："/>
+    <text id="n4" name="n4" xy="37,189" size="159,29" font="方正粗圆简体" fontSize="22" text="都护府城战收益"/>
+    <image id="n5" name="n5" src="jsucnhh" pkg="0tyncec1" xy="29,170" size="582,2"/>
+    <image id="n6" name="n6" src="jsucnhh" pkg="0tyncec1" xy="29,462" size="582,2"/>
+    <text id="n7" name="t1" xy="187,21" size="337,29" font="方正粗圆简体" fontSize="22" color="#0033cc" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n8" name="t2" xy="187,58" size="337,29" font="方正粗圆简体" fontSize="22" color="#e6e600" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n9" name="t3" xy="64,101" size="517,63" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <component id="n11" name="b1" src="jyjf12" xy="27,231" size="590,35">
+      <Label title="都护府每日税收" titleColor="#336600"/>
+    </component>
+    <component id="n12" name="b2" src="jyjf12" xy="27,271" size="590,35">
+      <Label title="都护府成员俸禄" titleColor="#336600"/>
+    </component>
+    <component id="n13" name="b3" src="jyjf12" xy="27,312" size="590,35">
+      <Label title="领取城战称霸礼包" titleColor="#336600"/>
+    </component>
+    <component id="n15" name="b5" src="jyjf12" xy="27,354" size="590,35">
+      <Label title="优惠购买" titleColor="#336600"/>
+    </component>
+    <component id="n18" name="b6" src="jyjf12" xy="27,401" size="590,42">
+      <Label title="开启凌烟阁" titleColor="#ffcc66"/>
+    </component>
+    <component id="n14" name="b4" src="jyjf12" xy="27,477" size="590,44">
+      <Label title="都护府城战介绍" titleColor="#333333" icon="ui://0tyncec1pu0xnq5"/>
+    </component>
+    <component id="n16" name="close" src="t5hdnfq" pkg="0tyncec1" xy="593,-6" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+  </displayList>
+</component>

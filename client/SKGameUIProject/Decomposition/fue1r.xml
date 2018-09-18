@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="27,27" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="5v99nkd" xy="0,0" pkg="0tyncec1">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="n2" src="5v99nkd" xy="0,0" pkg="0tyncec1">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3" name="n3" src="5v99nkd" xy="0,0" pkg="0tyncec1">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4" name="n4" src="5v99nkd" xy="0,0" pkg="0tyncec1">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n5" name="title" xy="26,0" size="54,27" font="方正粗圆简体" fontSize="20" vAlign="middle" autoSize="none" singleLine="true" text="白色">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n6" name="icon" xy="0,0" size="27,27" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n7" name="gou" src="5v99nkf" xy="-3,-4" pkg="0tyncec1"/>
+  </displayList>
+  <Button/>
+</component>

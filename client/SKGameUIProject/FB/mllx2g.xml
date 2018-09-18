@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="655,318">
+  <displayList>
+    <image id="n0" name="n0" src="mllx2e" xy="0,0"/>
+    <image id="n6" name="n6" src="mllx2f" xy="36,58" size="151,35" group="n8"/>
+    <text id="n7" name="title" xy="45,64" size="130,26" group="n8" font="方正粗圆简体" fontSize="22" color="#00834d" align="center" vAlign="middle" autoSize="none" text="秘境"/>
+    <group id="n8" name="n8" xy="36,58" size="151,35"/>
+    <text id="n9" name="desc" xy="36,107" size="568,79" font="方正粗圆简体" fontSize="22" color="#003341" autoSize="none" text="射发射发发生发放射发射发发生发放射发射发发生发放射发射发发生发放射发射发发生发放射发射发发生发放发生发放射发射发发生发放"/>
+    <image id="n10" name="n10" src="hx0xnip" pkg="0tyncec1" xy="164,192"/>
+    <text id="n11" name="hasLabel" xy="36,211" size="142,26" font="方正粗圆简体" fontSize="22" color="#0586ab" text="持有的千叶街:"/>
+    <text id="n12" name="count" xy="222,211" size="29,26" font="方正粗圆简体" fontSize="22" color="#0586ab" text="20"/>
+    <loader id="n13" name="icon" xy="180,203" size="40,40" fill="scale"/>
+    <component id="n14" name="btn1" src="mllx2h" xy="98,266"/>
+    <component id="n15" name="btn2" src="mllx2i" xy="332,266"/>
+    <component id="n16" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="514,6" size="151,88">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>

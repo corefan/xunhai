@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="7dvfcqzn" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="jg8t0" name="image" folder=""/>
+    <folder id="jg8t1" name="component" folder=""/>
+    <image id="jg8t4" name="1" folder="jg8t0" qualityOption="source" file="jg8t4.png" size="39,40" exported="true"/>
+    <image id="jg8t6" name="fight" folder="jg8t0" qualityOption="source" file="jg8t6.png" size="29,27"/>
+    <image id="jg8t8" name="wardbg" folder="jg8t0" qualityOption="source" file="jg8t8.png" size="62,60" scale="9grid" scale9grid="16,15,30,30"/>
+    <image id="jg8ta" name="headbg" folder="jg8t0" qualityOption="source" file="jg8ta.png" size="216,254"/>
+    <image id="jg8tc" name="myRank" folder="jg8t0" qualityOption="source" file="jg8tc.png" size="27,18"/>
+    <image id="jg8td" name="line" folder="jg8t0" qualityOption="source" file="jg8td.png" size="816,2"/>
+    <image id="jg8te" name="bg" folder="jg8t0" qualityOption="source" file="jg8te.png" size="600,232"/>
+    <image id="jg8tg" name="3" folder="jg8t0" qualityOption="source" file="jg8tg.png" size="39,40" exported="true"/>
+    <image id="jg8ti" name="2" folder="jg8t0" qualityOption="source" file="jg8ti.png" size="39,40" exported="true"/>
+    <component id="jg8tl" name="RankHead" folder="jg8t1" file="jg8tl.xml" exported="true"/>
+    <component id="jg8tm" name="RankItem" folder="jg8t1" file="jg8tm.xml" exported="true"/>
+    <image id="qjbsp" name="btn_1" folder="jg8t0" qualityOption="source" file="qjbsp.png" size="234,62" exported="true" scale="9grid" scale9grid="59,16,118,14"/>
+    <component id="ygx0r" name="RankContent" folder="jg8t1" file="ygx0r.xml" exported="true"/>
+    <component id="er75s" name="RankColName" folder="jg8t1" file="er75s.xml" exported="true"/>
+    <component id="er75t" name="RankColRank" folder="jg8t1" file="er75t.xml" exported="true"/>
+    <component id="er75u" name="RankColNormal" folder="jg8t1" file="er75u.xml" exported="true"/>
+    <component id="er75v" name="RankColCareer" folder="jg8t1" file="er75v.xml" exported="true"/>
+    <component id="wjp8w" name="RankTop" folder="jg8t1" file="wjp8w.xml"/>
+    <image id="uchh10" name="wodezhanli" folder="jg8t0" qualityOption="source" file="uchh10.png" size="39,39"/>
+    <image id="uchh11" name="wodepaiming" folder="jg8t0" qualityOption="source" file="uchh11.png" size="39,39"/>
+    <image id="uchh13" name="diyiming" folder="jg8t0" qualityOption="source" file="uchh13.png" size="308,542"/>
+    <image id="uchh14" name="ditu" folder="jg8t0" qualityOption="source" file="uchh14.png" size="675,230"/>
+    <image id="uchh15" name="disanming" folder="jg8t0" qualityOption="source" file="uchh15.png" size="290,272"/>
+    <image id="uchh16" name="dierming" folder="jg8t0" qualityOption="source" file="uchh16.png" size="290,272"/>
+  </resources>
+  <publish name="Rank" genCode="true"/>
+</packageDescription>

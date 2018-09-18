@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="bzlrokop" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="k3gy1" name="HeadName" folder="k3gy7" file="k3gy1.xml" exported="true"/>
+    <folder id="k3gy3" name="img" folder=""/>
+    <image id="k3gy6" name="progress_small_player" folder="k3gy3" qualityOption="source" file="k3gy6.png" size="91,7" scale="9grid" scale9grid="2,1,87,5"/>
+    <folder id="k3gy7" name="compoment" folder=""/>
+    <component id="k3gy8" name="HpBar" folder="k3gy7" file="k3gy8.xml" exported="true"/>
+    <component id="k3gy9" name="MpBar" folder="k3gy7" file="k3gy9.xml" exported="true"/>
+    <image id="zaobb" name="bg" folder="k3gy3" qualityOption="source" file="zaobb.png" size="6,10" scale="9grid" scale9grid="1,1,4,8"/>
+    <image id="zaobe" name="otherhp" folder="k3gy3" qualityOption="source" file="zaobe.png" size="91,7" scale="9grid" scale9grid="3,2,3,3"/>
+    <component id="zaobf" name="HpBarOther" folder="k3gy7" file="zaobf.xml" exported="true"/>
+    <image id="zaobg" name="playermp" folder="k3gy3" qualityOption="source" file="zaobg.png" size="91,4" scale="9grid" scale9grid="2,1,87,2"/>
+    <component id="lvfkj" name="DropItem" folder="k3gy7" file="lvfkj.xml" exported="true"/>
+    <image id="vwzwk" name="dropbg" folder="k3gy3" qualityOption="source" file="vwzwk.png" size="16,13" scale="9grid" scale9grid="3,3,10,7"/>
+  </resources>
+  <publish name="Map" genCode="true"/>
+</packageDescription>

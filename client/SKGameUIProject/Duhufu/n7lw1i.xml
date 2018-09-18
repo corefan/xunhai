@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="739,108" extention="Label">
+  <displayList>
+    <image id="n69" name="n69" src="ci33e" xy="0,0" size="739,108" locked="true"/>
+    <image id="n78" name="n78" src="pu0xnq6" pkg="0tyncec1" xy="15,10"/>
+    <image id="n82" name="n82" src="jsucnhh" pkg="0tyncec1" xy="119,52" size="397,2"/>
+    <text id="n84" name="txtCost" xy="581,10" size="141,33" font="方正粗圆简体" fontSize="26" color="#006633" autoSize="none" text="0&#xA;"/>
+    <loader id="n85" name="iconCost" xy="528,6" size="43,41" url="ui://j7ibmhypolnb2k" fill="scaleFree"/>
+    <text id="n86" name="txtSW" xy="114,66" size="144,34" font="方正粗圆简体" fontSize="18" color="#336600" leading="0" autoSize="none" text="贡献：0&#xA;"/>
+    <text id="n87" name="txtZJ" xy="416,66" size="161,34" font="方正粗圆简体" fontSize="18" color="#336600" leading="0" autoSize="none" text="资金：0"/>
+    <text id="n88" name="txtJSD" xy="261,66" size="152,34" font="方正粗圆简体" fontSize="18" color="#336600" leading="0" autoSize="none" text="建设度：0"/>
+    <text id="n89" name="title" xy="115,14" size="402,39" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" text="金币捐献"/>
+    <loader id="n91" name="icon" xy="15,12" size="88,88" align="center" vAlign="middle" fill="scaleFree"/>
+    <component id="n22" name="btn" src="jyjfz" xy="578,45" size="152,56">
+      <Button title="已达上限"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1071,608" designImage="ui://1m5molo6kftjd" designImageAlpha="80">
+  <displayList>
+    <image id="n0" name="bg" src="j67wnhe" pkg="0tyncec1" xy="0,52" size="1071,556"/>
+    <text id="n3" name="labelCycleNum" xy="0,11" size="257,34" font="方正粗圆简体" fontSize="24" color="#2e3334" autoSize="none" text="当前环数 0/4"/>
+    <text id="n1" name="labelRefershTime" xy="776,8" size="154,34" font="方正粗圆简体" fontSize="24" color="#2e3334" ubb="true" autoSize="none" text="免费刷新  (3)"/>
+    <component id="n2" name="buttonRefersh" src="kftjg" xy="930,0" size="91,46">
+      <Button title="刷新"/>
+    </component>
+    <loader id="n6" name="loaderConsume" xy="855,0" size="45,33"/>
+  </displayList>
+</component>

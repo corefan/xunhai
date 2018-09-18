@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="967,585">
+  <controller name="hpCtrl" pages="0,,1,,2," selected="0"/>
+  <controller name="mpCtrl" pages="0,0,1,1,2,2" selected="0"/>
+  <displayList>
+    <component id="n12" name="sound" src="ockmo" xy="11,0" size="131,50" group="n97">
+      <Label title="声音"/>
+    </component>
+    <component id="n79" name="cb0" src="ockmn" xy="74,59" size="151,31" group="n97">
+      <Label title="开启音乐"/>
+    </component>
+    <component id="n80" name="cb1" src="ockmn" xy="336,58" size="150,31" group="n97">
+      <Label title="开启音效"/>
+    </component>
+    <image id="n20" name="line" src="igkdnlb" pkg="0tyncec1" xy="0,102" size="967,3" group="n97">
+      <relation target="n79" sidePair="top-bottom"/>
+    </image>
+    <group id="n97" name="n97" xy="0,0" size="967,105" collapsed="true"/>
+    <component id="n29" name="chat" src="ockmo" xy="11,107" size="131,50" group="n98">
+      <Label title="社交"/>
+    </component>
+    <component id="n76" name="cb2" src="ockmn" xy="73,171" size="218,31" group="n98">
+      <Label title="拒绝陌生人消息"/>
+    </component>
+    <component id="n102" name="cb3" src="ockmn" xy="369,170" size="200,31" group="n98">
+      <Label title="拒绝好友申请"/>
+    </component>
+    <image id="n26" name="line" src="igkdnlb" pkg="0tyncec1" xy="0,216" size="967,3" group="n98">
+      <relation target="n76" sidePair="top-bottom"/>
+    </image>
+    <group id="n98" name="n98" xy="0,107" size="967,112" collapsed="true"/>
+    <component id="n77" name="cb4" src="ockmn" xy="76,283" size="148,31" group="n99">
+      <Label title="血条"/>
+    </component>
+    <component id="n75" name="cb5" src="ockmn" xy="324,282" size="141,31" group="n99">
+      <Label title="名字"/>
+    </component>
+    <component id="n78" name="cb6" src="ockmn" xy="590,282" size="164,31" group="n99" visible="false">
+      <Label title="小地图" titleColor="#545e6c"/>
+    </component>
+    <component id="n32" name="show" src="ockmo" xy="11,221" size="131,50" group="n99">
+      <Label title="显示"/>
+    </component>
+    <image id="n33" name="line" src="igkdnlb" pkg="0tyncec1" xy="0,332" size="967,3" group="n99">
+      <relation target="n77" sidePair="top-bottom"/>
+    </image>
+    <group id="n99" name="n99" xy="0,221" size="967,114" collapsed="true"/>
+    <component id="n39" name="drinkDrug" src="ockmo" xy="13,346" size="179,50" group="n41">
+      <Label title="自动喝药"/>
+    </component>
+    <component id="n94" name="selectBox1" src="iw5w1f" xy="57,400" group="n84"/>
+    <component id="n81" name="blood30" src="ljea19" xy="79,412" size="155,29" group="n84">
+      <Button checked="true" title="30% 血量" controller="hpCtrl" page="0"/>
+    </component>
+    <component id="n82" name="blood50" src="ljea19" xy="360,413" size="155,29" group="n84">
+      <Button title="50% 血量" controller="hpCtrl" page="1"/>
+    </component>
+    <component id="n83" name="blood80" src="ljea19" xy="640,412" size="164,29" group="n84">
+      <Button title="80% 血量" controller="hpCtrl" page="2"/>
+    </component>
+    <group id="n84" name="n84" xy="57,400" size="758,55" group="n41" collapsed="true"/>
+    <component id="n95" name="selectBox2" src="iw5w1f" xy="57,448" group="n88"/>
+    <component id="n85" name="mf30" src="ljea19" xy="79,464" size="155,29" group="n88">
+      <Button checked="true" title="30% 法力" controller="mpCtrl" page="0"/>
+    </component>
+    <component id="n86" name="mf50" src="ljea19" xy="360,463" size="155,29" group="n88">
+      <Button title="50% 法力" controller="mpCtrl" page="1"/>
+    </component>
+    <component id="n87" name="mf80" src="ljea19" xy="640,463" size="164,29" group="n88">
+      <Button title="80% 法力" controller="mpCtrl" page="2"/>
+    </component>
+    <group id="n88" name="n88" xy="57,448" size="758,55" group="n41" collapsed="true"/>
+    <group id="n41" name="n41" xy="13,346" size="802,157" collapsed="true"/>
+    <component id="n96" name="bandAccBtn" src="ockmt" xy="450,527" group="n100" visible="false">
+      <Button title="绑定账号"/>
+    </component>
+    <component id="n61" name="callGMBtn" src="ockmt" xy="627,527" group="n100" visible="false">
+      <Button title="联系客服"/>
+    </component>
+    <component id="n62" name="escGameBtn" src="ljeaw" xy="804,527" group="n100" visible="false"/>
+    <group id="n100" name="n100" xy="450,527" size="483,58" collapsed="true"/>
+  </displayList>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="r72i7j9w" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="ywac1" name="img" folder=""/>
+    <component id="ywacj" name="MailItem" folder="" file="ywacj.xml" exported="true"/>
+    <image id="n0ef3i" name="read" folder="ywac1" qualityOption="source" file="n0ef3i.png" size="58,56" exported="true"/>
+    <image id="n0ef3j" name="new" folder="ywac1" qualityOption="source" file="n0ef3j.png" size="72,46" exported="true"/>
+    <component id="n0ef3p" name="MailPanel" folder="" file="n0ef3p.xml" exported="true"/>
+    <image id="k7r94f" name="dakai" folder="ywac1" qualityOption="source" file="k7r94f.png" size="36,37" exported="true"/>
+    <image id="k7r94g" name="guanbi" folder="ywac1" qualityOption="source" file="k7r94g.png" size="34,37" exported="true"/>
+  </resources>
+  <publish name="Mail"/>
+</packageDescription>

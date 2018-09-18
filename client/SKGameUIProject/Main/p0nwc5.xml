@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="444,27" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <richtext id="n4" name="text" xy="71,2" size="369,24" font="方正粗圆简体" fontSize="20" color="#c6d6db" leading="4" autoSize="height" text=""/>
+    <loader id="n5" name="icon" xy="12,3" size="50,24" url="ui://0042gnitom7mbt" vAlign="middle" fill="scale"/>
+  </displayList>
+  <Button/>
+  <relation target="n4" sidePair="bottomext-bottom%"/>
+</component>

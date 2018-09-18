@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="0042gnit" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="huhh0" name="image" folder=""/>
+    <folder id="mrlja" name="btn" folder=""/>
+    <image id="joca2m" name="txt_quest" folder="huhh0" qualityOption="source" file="joca2m.png" size="54,27"/>
+    <image id="joca2n" name="split_name" folder="huhh0" qualityOption="source" file="joca2n.png" size="247,1"/>
+    <image id="joca2o" name="sp_1" folder="huhh0" qualityOption="source" file="joca2o.png" size="73,131"/>
+    <image id="joca2p" name="resource_icon" folder="huhh0" qualityOption="source" file="joca2p.png" size="55,55"/>
+    <image id="joca2q" name="progress_sur" folder="huhh0" qualityOption="source" file="joca2q.png" size="31,13" scale="9grid" scale9grid="8,4,16,8"/>
+    <image id="joca2s" name="joy_move" folder="huhh0" qualityOption="source" file="joca2s.png" size="56,56"/>
+    <image id="joca2t" name="joy_bg" folder="huhh0" qualityOption="source" file="joca2t.png" size="155,155"/>
+    <image id="joca2u" name="func_icon_2" folder="huhh0" qualityOption="source" file="joca2u.png" size="90,90"/>
+    <image id="joca2v" name="func_icon_1" folder="huhh0" qualityOption="source" file="joca2v.png" size="90,90"/>
+    <image id="joca38" name="txt_team" folder="huhh0" qualityOption="source" file="joca38.png" size="53,27"/>
+    <image id="f8wj3x" name="func_icon_shangcheng" folder="huhh0" qualityOption="source" file="f8wj3x.png" size="100,100"/>
+    <image id="f8wj3y" name="func_icon_mengyou" folder="huhh0" qualityOption="source" file="f8wj3y.png" size="100,100"/>
+    <image id="f8wj40" name="func_icon_gonghui" folder="huhh0" qualityOption="source" file="f8wj40.png" size="100,100"/>
+    <image id="f8wj41" name="func_icon_beibao" folder="huhh0" qualityOption="source" file="f8wj41.png" size="100,100"/>
+    <image id="f8wj42" name="func_icon_tianshu" folder="huhh0" qualityOption="source" file="f8wj42.png" size="100,100"/>
+    <image id="f8wj43" name="func_icon_taofa" folder="huhh0" qualityOption="source" file="f8wj43.png" size="100,100"/>
+    <image id="gvm84d" name="skill_1" folder="huhh0" qualityOption="source" file="gvm84d.png" size="100,100"/>
+    <image id="gvm84f" name="progress_cd" folder="huhh0" qualityOption="source" file="gvm84f.png" size="92,91"/>
+    <image id="gvm84h" name="skill_2" folder="huhh0" qualityOption="source" file="gvm84h.png" size="100,100"/>
+    <image id="gvm84j" name="skill_3" folder="huhh0" qualityOption="source" file="gvm84j.png" size="100,100"/>
+    <image id="gvm84l" name="skill_4" folder="huhh0" qualityOption="source" file="gvm84l.png" size="83,83"/>
+    <image id="gvm84n" name="skill_attack" folder="huhh0" qualityOption="source" file="gvm84n.png" size="176,176"/>
+    <image id="gvm84q" name="medice_icon2(2)" folder="huhh0" qualityOption="source" file="gvm84q.png" size="60,80"/>
+    <image id="gvm84v" name="medice_icon1(2)" folder="huhh0" qualityOption="source" file="gvm84v.png" size="60,80"/>
+    <image id="gvm850" name="buff_icon1" folder="huhh0" qualityOption="source" file="gvm850.png" size="30,30"/>
+    <image id="gvm852" name="role_icon1(3)" folder="huhh0" qualityOption="source" file="gvm852.png" size="87,105" exported="true"/>
+    <component id="gvm853" name="ProgressPlayerLife" folder="gvm85s" file="gvm853.xml" exported="true"/>
+    <component id="gvm855" name="ProgressPlayerMagic" folder="gvm85s" file="gvm855.xml"/>
+    <image id="gvm858" name="组 7(2)" folder="huhh0" qualityOption="source" file="gvm858.png" size="146,87"/>
+    <image id="gvm85b" name="progress_patnerlife" folder="huhh0" qualityOption="source" file="gvm85b.png" size="51,6"/>
+    <image id="gvm85d" name="progress_patnermagic" folder="huhh0" qualityOption="source" file="gvm85d.png" size="26,4"/>
+    <component id="gvm85g" name="MonsterHeadComponent" folder="gvm85s" file="gvm85g.xml" exported="true"/>
+    <component id="gvm85i" name="ProgressMonsterLife" folder="gvm85s" file="gvm85i.xml"/>
+    <image id="gvm85o" name="frame_progress" folder="huhh0" qualityOption="source" file="gvm85o.png" size="70,10" scale="9grid" scale9grid="18,3,36,6"/>
+    <image id="gvm85p" name="progress_player_sur" folder="huhh0" qualityOption="source" file="gvm85p.png" size="71,6"/>
+    <folder id="gvm85s" name="compoment" folder=""/>
+    <component id="gvm861" name="BtnAgentia" folder="" file="gvm861.xml" exported="true"/>
+    <image id="gvm863" name="zd_jncd" folder="huhh0" qualityOption="source" file="gvm863.png" size="89,87"/>
+    <image id="gvm86c" name="skill_12" folder="huhh0" qualityOption="source" file="gvm86c.png" size="100,100"/>
+    <image id="gvm86e" name="progress_cd2" folder="huhh0" qualityOption="source" file="gvm86e.png" size="92,91"/>
+    <image id="gvm86g" name="skill_22" folder="huhh0" qualityOption="source" file="gvm86g.png" size="100,100"/>
+    <image id="gvm86i" name="skill_32" folder="huhh0" qualityOption="source" file="gvm86i.png" size="100,100"/>
+    <image id="gvm86k" name="skill_42" folder="huhh0" qualityOption="source" file="gvm86k.png" size="100,100"/>
+    <image id="gvm86m" name="skill_attack2" folder="huhh0" qualityOption="source" file="gvm86m.png" size="176,176"/>
+    <component id="tvxi6s" name="BtnSkill" folder="" file="tvxi6s.xml" exported="true"/>
+    <component id="tvxi6u" name="BtnAttack" folder="" file="tvxi6u.xml" exported="true"/>
+    <image id="skyz70" name="func_icon_ruqin" folder="huhh0" qualityOption="source" file="skyz70.png" size="100,100"/>
+    <component id="io2p7a" name="BuffDescItem" folder="" file="io2p7a.xml" exported="true"/>
+    <image id="vc6k7e" name="zd_jncd2" folder="" qualityOption="source" file="vc6k7e.png" size="157,157"/>
+    <image id="anfh7f" name="resource_icon_coin" folder="huhh0" qualityOption="source" file="anfh7f.png" size="55,55" exported="true"/>
+    <component id="xyqw7s" name="hpBar" folder="gvm85s" file="xyqw7s.xml"/>
+    <image id="xyqw7y" name="progress_monster_bg(3)" folder="xyqw89" qualityOption="source" file="xyqw7y.png" size="436,56" exported="true"/>
+    <image id="xyqw7z" name="progress_monster_sur(3)" folder="xyqw89" qualityOption="source" file="xyqw7z.png" size="414,37" exported="true"/>
+    <component id="xyqw80" name="bossBar" folder="gvm85s" file="xyqw80.xml"/>
+    <folder id="xyqw89" name="newimage" folder=""/>
+    <image id="xyqw8g" name="skill_cd" folder="xyqw89" qualityOption="source" file="xyqw8g.png" size="100,100" exported="true"/>
+    <image id="xyqw8h" name="skill_attack(2)" folder="xyqw89" qualityOption="source" file="xyqw8h.png" size="187,187" exported="true"/>
+    <image id="xyqw8i" name="skill_small" folder="xyqw89" qualityOption="source" file="xyqw8i.png" size="100,100" exported="true"/>
+    <image id="xyqw8j" name="skill_cd_chant" folder="xyqw89" qualityOption="source" file="xyqw8j.png" size="21,22" exported="true"/>
+    <image id="xyqw8l" name="progress_hp_enemy" folder="xyqw89" qualityOption="source" file="xyqw8l.png" size="91,7" exported="true"/>
+    <image id="xyqw8m" name="progress_di_friend" folder="xyqw89" qualityOption="source" file="xyqw8m.png" size="95,11" exported="true"/>
+    <image id="xyqw8n" name="progress_hp_friend" folder="xyqw89" qualityOption="source" file="xyqw8n.png" size="91,7" exported="true"/>
+    <image id="xyqw8o" name="progress_di_self" folder="xyqw89" qualityOption="source" file="xyqw8o.png" size="95,16" exported="true"/>
+    <image id="xyqw8p" name="progress_mp" folder="xyqw89" qualityOption="source" file="xyqw8p.png" size="91,4" exported="true"/>
+    <image id="xyqw8q" name="progress_hp_self" folder="xyqw89" qualityOption="source" file="xyqw8q.png" size="91,7" exported="true"/>
+    <image id="bhdd91" name="skill_cd_chant(2)" folder="huhh0" qualityOption="source" file="bhdd91.png" size="21,22"/>
+    <image id="bhdd92" name="skill_cd(2)" folder="huhh0" qualityOption="source" file="bhdd92.png" size="100,100"/>
+    <image id="bhdd93" name="skill_attack(3)" folder="huhh0" qualityOption="source" file="bhdd93.png" size="157,157"/>
+    <image id="bhdd94" name="skill_small(2)" folder="huhh0" qualityOption="source" file="bhdd94.png" size="92,92"/>
+    <image id="wdv796" name="button_yao(2)" folder="huhh0" qualityOption="source" file="wdv796.png" size="94,94"/>
+    <image id="wdv797" name="hongyao" folder="huhh0" qualityOption="source" file="wdv797.png" size="82,82" exported="true"/>
+    <image id="wdv798" name="lanyao" folder="huhh0" qualityOption="source" file="wdv798.png" size="82,82" exported="true"/>
+    <image id="p5ff99" name="button_battle_automatic2" folder="huhh0" qualityOption="source" file="p5ff99.png" size="122,122" exported="true"/>
+    <image id="lskq9a" name="skill_small_di" folder="huhh0" qualityOption="source" file="lskq9a.png" size="92,92"/>
+    <image id="lskq9b" name="skill_attack_di" folder="huhh0" qualityOption="source" file="lskq9b.png" size="157,157"/>
+    <image id="urre9d" name="bg_dikuang" folder="huhh0" qualityOption="source" file="urre9d.png" size="444,114" scale="9grid" scale9grid="0,79,444,8"/>
+    <image id="urre9e" name="示意图" folder="huhh0" qualityOption="source" file="urre9e.png" size="1335,754"/>
+    <image id="kita9f" name="progress_monster_sur2" folder="huhh0" qualityOption="source" file="kita9f.png" size="414,37"/>
+    <component id="nh7oa6" name="SlowlyBar" folder="gvm85s" file="nh7oa6.xml"/>
+    <component id="nh7oa7" name="ProgressMonsterLifeSlowly" folder="gvm85s" file="nh7oa7.xml" exported="true"/>
+    <image id="j7sca8" name="文字色号" folder="xyqw89" qualityOption="source" file="j7sca8.png" size="1336,751"/>
+    <image id="p8e4ac" name="di" folder="huhh0" qualityOption="source" file="p8e4ac.png" size="203,27" exported="true"/>
+    <image id="p8e4ad" name="ceng" folder="huhh0" qualityOption="source" file="p8e4ad.png" size="26,25" exported="true"/>
+    <component id="eg11aj" name="MainCityUI" folder="" file="eg11aj.xml" exported="true"/>
+    <component id="eg11ak" name="PlayerInfo" folder="" file="eg11ak.xml" exported="true"/>
+    <component id="eg11am" name="MiniMap" folder="" file="eg11am.xml" exported="true"/>
+    <component id="eg11an" name="FightController" folder="" file="eg11an.xml" exported="true"/>
+    <component id="eg11ap" name="SwitchBtn" folder="" file="eg11ap.xml" exported="true"/>
+    <component id="eg11ar" name="BtnFunction" folder="" file="eg11ar.xml" exported="true"/>
+    <image id="n2myas" name="菜单下拉收起按钮" folder="xyqw89" qualityOption="source" file="n2myas.png" size="69,69" exported="true"/>
+    <image id="xn3sat" name="noUse" folder="huhh0" qualityOption="source" file="xn3sat.png" size="92,92"/>
+    <image id="ckrkax" name="蓝条" folder="xyqw89" qualityOption="source" file="ckrkax.png" size="247,17" exported="true" scale="9grid" scale9grid="62,5,124,10"/>
+    <component id="ckrkb0" name="mpBar" folder="gvm85s" file="ckrkb0.xml"/>
+    <component id="ckrkb1" name="ExpBar" folder="" file="ckrkb1.xml"/>
+    <image id="ckrkb2" name="经验条底（1334X6）" folder="xyqw89" qualityOption="source" file="ckrkb2.png" size="10,6" exported="true" scale="9grid" scale9grid="3,0,5,6"/>
+    <image id="ckrkb3" name="经验条（1334X6）" folder="xyqw89" qualityOption="source" file="ckrkb3.png" size="10,6" exported="true" scale="9grid" scale9grid="3,0,3,6"/>
+    <image id="ckrkb4" name="分割线" folder="xyqw89" qualityOption="source" file="ckrkb4.png" size="2,6" exported="true"/>
+    <component id="ckrkb5" name="PlayerExpBar" folder="" file="ckrkb5.xml"/>
+    <component id="hudkb6" name="TaskTeam" folder="" file="hudkb6.xml" exported="true"/>
+    <image id="hudkb8" name="收起展开按钮" folder="huhh0" qualityOption="source" file="hudkb8.png" size="23,26"/>
+    <image id="hudkb9" name="收起按钮底" folder="huhh0" qualityOption="source" file="hudkb9.png" size="42,68" scale="9grid" scale9grid="1,23,40,22"/>
+    <image id="hudkba" name="任务追踪底框" folder="huhh0" qualityOption="source" file="hudkba.png" size="294,9" scale="9grid" scale9grid="1,0,221,9"/>
+    <image id="hudkbb" name="任务按钮未选中（42X134）" folder="huhh0" qualityOption="source" file="hudkbb.png" size="42,62" scale="9grid" scale9grid="5,23,32,14"/>
+    <image id="hudkbc" name="任务按钮（42X134）" folder="huhh0" qualityOption="source" file="hudkbc.png" size="42,62" scale="9grid" scale9grid="5,23,32,14"/>
+    <image id="hudkbd" name="队伍按钮未选中（42X134）" folder="huhh0" qualityOption="source" file="hudkbd.png" size="42,61" scale="9grid" scale9grid="2,21,38,18"/>
+    <image id="hudkbe" name="队伍按钮（42X134）" folder="huhh0" qualityOption="source" file="hudkbe.png" size="42,61" scale="9grid" scale9grid="2,21,38,18"/>
+    <image id="o6dhbg" name="任务追踪示意图" folder="huhh0" qualityOption="source" file="o6dhbg.png" size="486,364"/>
+    <component id="o6dhbh" name="ButtonExtend" folder="gvm85s" file="o6dhbh.xml" exported="true"/>
+    <component id="o6dhbi" name="ButtonTeam" folder="gvm85s" file="o6dhbi.xml" exported="true"/>
+    <component id="o6dhbj" name="ButtonTask" folder="gvm85s" file="o6dhbj.xml" exported="true"/>
+    <component id="o6dhbk" name="TaskTraceList" folder="gvm85s" file="o6dhbk.xml" exported="true"/>
+    <component id="uujrbl" name="TaskTraceItem" folder="gvm85s" file="uujrbl.xml" exported="true"/>
+    <image id="uujrbm" name="示意图(3)" folder="huhh0" qualityOption="source" file="uujrbm.png" size="1338,757"/>
+    <component id="om7mbn" name="ChatMain" folder="" file="om7mbn.xml" exported="true"/>
+    <image id="om7mbu" name="自动战斗按钮" folder="huhh0" qualityOption="source" file="om7mbu.png" size="125,34"/>
+    <image id="om7mbv" name="语音说话按钮" folder="huhh0" qualityOption="source" file="om7mbv.png" size="30,32"/>
+    <image id="om7mbw" name="邮件功能按钮" folder="huhh0" qualityOption="source" file="om7mbw.png" size="93,34"/>
+    <image id="om7mbx" name="底（501X138）" folder="huhh0" qualityOption="source" file="om7mbx.png" size="31,20" scale="9grid" scale9grid="8,5,16,10"/>
+    <component id="om7mby" name="BtnExtend" folder="mrlja" file="om7mby.xml"/>
+    <component id="om7mbz" name="BtnEmail" folder="mrlja" file="om7mbz.xml"/>
+    <component id="om7mc0" name="BtnAuto" folder="mrlja" file="om7mc0.xml"/>
+    <component id="om7mc1" name="BtnVoiceWorld" folder="mrlja" file="om7mc1.xml"/>
+    <component id="p0nwc5" name="MainChatItem" folder="" file="p0nwc5.xml" exported="true"/>
+    <image id="rt4bc7" name="技能-能量球 125x125" folder="huhh0" qualityOption="source" file="rt4bc7.png" size="157,157"/>
+    <component id="gv0lc8" name="FunctionBtn" folder="" file="gv0lc8.xml" exported="true"/>
+    <component id="gv0lce" name="ActivityBtn" folder="" file="gv0lce.xml" exported="true"/>
+    <image id="gv0lcg" name="go_city" folder="xyqw89" qualityOption="source" file="gv0lcg.png" size="62,68" exported="true"/>
+    <image id="mlf3cn" name="left_top_head_bg" folder="xyqw89" qualityOption="source" file="mlf3cn.png" size="349,126" exported="true"/>
+    <image id="mlf3co" name="hp_bar" folder="xyqw89" qualityOption="source" file="mlf3co.png" size="211,16" exported="true"/>
+    <image id="mlf3cp" name="mp_bar" folder="xyqw89" qualityOption="source" file="mlf3cp.png" size="214,16" exported="true"/>
+    <image id="ldfucr" name="前往组队" folder="huhh0" qualityOption="source" file="ldfucr.png" size="32,31"/>
+    <image id="ldfucs" name="底" folder="huhh0" qualityOption="source" file="ldfucs.png" size="177,40"/>
+    <image id="ldfuct" name="创建队伍" folder="huhh0" qualityOption="source" file="ldfuct.png" size="32,31"/>
+    <image id="ldfucv" name="死亡标识" folder="huhh0" qualityOption="source" file="ldfucv.png" size="21,22"/>
+    <image id="ldfucw" name="队长标识" folder="huhh0" qualityOption="source" file="ldfucw.png" size="16,16"/>
+    <image id="ldfucx" name="底(2)" folder="huhh0" qualityOption="source" file="ldfucx.png" size="235,40"/>
+    <component id="ldfud2" name="BtnTeam" folder="mrlja" file="ldfud2.xml" exported="true"/>
+    <image id="nv56d3" name="pk_btn_bg" folder="xyqw89" qualityOption="source" file="nv56d3.png" size="50,26" scale="9grid" scale9grid="23,10,4,6"/>
+    <image id="nv56d4" name="pk_item_bg" folder="xyqw89" qualityOption="source" file="nv56d4.png" size="245,4" scale="9grid" scale9grid="62,1,124,2"/>
+    <image id="nv56d5" name="pk_bg" folder="xyqw89" qualityOption="source" file="nv56d5.png" size="9,9" scale="9grid" scale9grid="3,3,3,3"/>
+    <component id="nv56d6" name="PkModel" folder="gvm85s" file="nv56d6.xml" exported="true"/>
+    <image id="nv56d7" name="箭头按钮" folder="xyqw89" qualityOption="source" file="nv56d7.png" size="18,11" exported="true"/>
+    <component id="nv56d8" name="samllArrowBtn" folder="mrlja" file="nv56d8.xml"/>
+    <component id="nv56d9" name="PkContent" folder="gvm85s" file="nv56d9.xml" exported="true"/>
+    <component id="nv56db" name="PkItem" folder="gvm85s" file="nv56db.xml" exported="true"/>
+    <component id="nv56dc" name="PkSelect" folder="gvm85s" file="nv56dc.xml" exported="true"/>
+    <image id="sgyodd" name="地图名称+换线（226X32）" folder="xyqw89" qualityOption="source" file="sgyodd.png" size="120,32" exported="true" scale="9grid" scale9grid="98,0,7,32"/>
+    <component id="sgyode" name="FBFlag" folder="" file="sgyode.xml" exported="true"/>
+    <image id="sgyodi" name="功能图标按钮" folder="xyqw89" qualityOption="source" file="sgyodi.png" size="117,104" exported="true"/>
+    <image id="88mbdj" name="副本返回按钮" folder="xyqw89" qualityOption="source" file="88mbdj.png" size="86,86" exported="true"/>
+    <component id="88mbdk" name="QuitFBBtn" folder="" file="88mbdk.xml"/>
+    <image id="utkidu" name="teamHp" folder="huhh0" qualityOption="source" file="utkidu.png" size="148,9" scale9grid="37,0,74,9"/>
+    <image id="utkidv" name="死亡标识(2)" folder="huhh0" qualityOption="source" file="utkidv.png" size="21,22"/>
+    <image id="utkidw" name="队长标识(2)" folder="huhh0" qualityOption="source" file="utkidw.png" size="16,16"/>
+    <image id="utkidx" name="底(3)" folder="huhh0" qualityOption="source" file="utkidx.png" size="235,40"/>
+    <component id="nuxfe2" name="TeamHpBar" folder="gvm85s" file="nuxfe2.xml" exported="true"/>
+    <component id="z03ee4" name="PlayerFuncPanel" folder="" file="z03ee4.xml" exported="true"/>
+    <component id="z03ee6" name="PlayerFunBtn" folder="" file="z03ee6.xml" exported="true"/>
+    <component id="g9qxe8" name="TeamItem" folder="gvm85s" file="g9qxe8.xml" exported="true"/>
+    <folder id="imsze9" name="relife" folder=""/>
+    <folder id="imszea" name="img" folder="imsze9"/>
+    <folder id="imszeb" name="com" folder="imsze9"/>
+    <image id="imszec" name="huanhundan" folder="imszea" qualityOption="source" file="imszec.png" size="80,80"/>
+    <image id="imszed" name="fuhuoanniu" folder="imszea" qualityOption="source" file="imszed.png" size="141,139"/>
+    <image id="imszef" name="fuhuodi" folder="imszea" qualityOption="source" file="imszef.png" size="612,356"/>
+    <image id="imszeg" name="wenzi" folder="imszea" qualityOption="source" file="imszeg.png" size="183,99"/>
+    <component id="imszeh" name="ReLifeBtnPanel" folder="imszeb" file="imszeh.xml" exported="true"/>
+    <component id="imszei" name="ReLifePanel" folder="imszeb" file="imszei.xml" exported="true"/>
+    <component id="cdsbej" name="ReLifeBtn" folder="imszeb" file="cdsbej.xml"/>
+    <image id="lcykek" name="示意图(2)" folder="" qualityOption="source" file="lcykek.png" size="404,149"/>
+    <component id="fx79el" name="BuffUIItem" folder="" file="fx79el.xml" exported="true"/>
+    <component id="fx79em" name="BuffDescPanel" folder="" file="fx79em.xml"/>
+    <component id="fx79en" name="BuffDescItems" folder="" file="fx79en.xml" exported="true"/>
+    <component id="ukjyel" name="QuickEquipCell" folder="gvm85s" file="ukjyel.xml" exported="true"/>
+    <image id="cq4geo" name="x" folder="huhh0" qualityOption="source" file="cq4geo.png" size="43,44"/>
+    <image id="f50ner" name="1" folder="huhh0" qualityOption="source" file="f50ner.png" size="182,123" scale="9grid" scale9grid="46,31,92,62"/>
+    <component id="t02wes" name="BtnHide" folder="" file="t02wes.xml" exported="true"/>
+    <component id="9l3bet" name="MapScalPanel" folder="" file="9l3bet.xml" exported="true"/>
+    <component id="9l3beu" name="SmallMap" folder="" file="9l3beu.xml" exported="true"/>
+    <image id="9l3bev" name="2102" folder="" qualityOption="source" file="9l3bev.png" size="1200,1000"/>
+    <image id="jsyyey" name="chooseBg" folder="huhh0" qualityOption="source" file="jsyyey.png" size="219,204" scale="9grid" scale9grid="79,67,60,36"/>
+    <image id="ms5pez" name="示意图(4)" folder="" qualityOption="source" file="ms5pez.png" size="1334,750"/>
+    <component id="nc9af0" name="ClickChoose" folder="" file="nc9af0.xml" exported="true"/>
+    <image id="nnjff1" name="btn_renshu" folder="huhh0" qualityOption="source" file="nnjff1.png" size="125,34"/>
+    <component id="nnjff2" name="BtnRenshu" folder="mrlja" file="nnjff2.xml"/>
+    <component id="nnjff3" name="PlayerInfoRight" folder="" file="nnjff3.xml" exported="true"/>
+    <image id="lnqzf4" name="tishi4" folder="huhh0" qualityOption="source" file="lnqzf4.png" size="24,24" exported="true"/>
+    <image id="lnqzf5" name="btn_siliaotishi" folder="huhh0" qualityOption="source" file="lnqzf5.png" size="43,34" exported="true"/>
+    <image id="lnqzf6" name="tishidi" folder="huhh0" qualityOption="source" file="lnqzf6.png" size="529,44" exported="true"/>
+    <image id="lnqzf7" name="tubiao" folder="huhh0" qualityOption="source" file="lnqzf7.png" size="30,27" exported="true"/>
+    <component id="lnqzf8" name="btn_siliaoTip" folder="" file="lnqzf8.xml" exported="true"/>
+  </resources>
+  <publish name="Main"/>
+</packageDescription>

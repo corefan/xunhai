@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="0tyncec1" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="huhh2" name="btn" folder="yweka"/>
+    <folder id="yweka" name="ui_component" folder=""/>
+    <image id="me2f1c" name="bg_resource" folder="wo2u2j" qualityOption="source" file="me2f1c.png" size="62,34" scale="9grid" scale9grid="22,9,19,15" exported="true" includedInAtlas="1"/>
+    <component id="ppo026" name="CustomJoystick" folder="t5hdnfn" file="ppo026.xml" exported="true"/>
+    <component id="ppo02g" name="CustomJoystickTumb" folder="t5hdnfn" file="ppo02g.xml"/>
+    <image id="ppo02h" name="joystickCircle" folder="gvrnnh6" qualityOption="source" file="ppo02h.png" size="56,56"/>
+    <image id="ppo02i" name="joystickBg" folder="gvrnnh6" qualityOption="source" file="ppo02i.png" size="155,155"/>
+    <folder id="wo2u2j" name="bg" folder=""/>
+    <folder id="wo2u2k" name="btn" folder=""/>
+    <image id="o49v4g" name="line05" folder="gvrnnh6" qualityOption="source" file="o49v4g.png" size="387,3" exported="true" scale="9grid" scale9grid="97,1,194,2"/>
+    <image id="o49v4h" name="line11" folder="gvrnnh6" qualityOption="source" file="o49v4h.png" size="231,10" exported="true" scale="9grid" scale9grid="58,5,116,2"/>
+    <folder id="pqvb5m" name="critFontImage" folder="t5hdngt"/>
+    <image id="pqvb5n" name="crit_number_0" folder="pqvb5m" qualityOption="source" file="pqvb5n.png" size="31,32"/>
+    <image id="pqvb5o" name="crit_number_9" folder="pqvb5m" qualityOption="source" file="pqvb5o.png" size="31,32"/>
+    <image id="pqvb5p" name="crit_number_8" folder="pqvb5m" qualityOption="source" file="pqvb5p.png" size="31,32"/>
+    <image id="pqvb5q" name="crit_number_7" folder="pqvb5m" qualityOption="source" file="pqvb5q.png" size="31,32"/>
+    <image id="pqvb5r" name="crit_number_6" folder="pqvb5m" qualityOption="source" file="pqvb5r.png" size="31,32"/>
+    <image id="pqvb5s" name="crit_number_5" folder="pqvb5m" qualityOption="source" file="pqvb5s.png" size="31,32"/>
+    <image id="pqvb5t" name="crit_number_4" folder="pqvb5m" qualityOption="source" file="pqvb5t.png" size="31,32"/>
+    <image id="pqvb5u" name="crit_number_3" folder="pqvb5m" qualityOption="source" file="pqvb5u.png" size="31,32"/>
+    <image id="pqvb5v" name="crit_number_2" folder="pqvb5m" qualityOption="source" file="pqvb5v.png" size="31,32"/>
+    <image id="pqvb5w" name="crit_number_1" folder="pqvb5m" qualityOption="source" file="pqvb5w.png" size="31,32"/>
+    <image id="pqvb5x" name="crit_txt_baoji" folder="pqvb5m" qualityOption="source" file="pqvb5x.png" size="92,52"/>
+    <folder id="pqvb5y" name="monsterDamageFontImage" folder="t5hdngt"/>
+    <folder id="pqvb6a" name="playerDamageFontImage" folder="t5hdngt"/>
+    <folder id="pqvb6n" name="addHpFontImage" folder="t5hdngt"/>
+    <image id="pqvb6o" name="addHp_number_2" folder="pqvb6n" qualityOption="source" file="pqvb6o.png" size="25,26"/>
+    <image id="pqvb6p" name="addHp_number_1" folder="pqvb6n" qualityOption="source" file="pqvb6p.png" size="25,26"/>
+    <image id="pqvb6q" name="addHp_number_0" folder="pqvb6n" qualityOption="source" file="pqvb6q.png" size="25,26"/>
+    <image id="pqvb6r" name="addHp_plus" folder="pqvb6n" qualityOption="source" file="pqvb6r.png" size="25,26"/>
+    <image id="pqvb6s" name="addHp_number_9" folder="pqvb6n" qualityOption="source" file="pqvb6s.png" size="25,26"/>
+    <image id="pqvb6t" name="addHp_number_8" folder="pqvb6n" qualityOption="source" file="pqvb6t.png" size="25,26"/>
+    <image id="pqvb6u" name="addHp_number_7" folder="pqvb6n" qualityOption="source" file="pqvb6u.png" size="25,26"/>
+    <image id="pqvb6v" name="addHp_number_6" folder="pqvb6n" qualityOption="source" file="pqvb6v.png" size="25,26"/>
+    <image id="pqvb6w" name="addHp_number_5" folder="pqvb6n" qualityOption="source" file="pqvb6w.png" size="25,26"/>
+    <image id="pqvb6x" name="addHp_number_4" folder="pqvb6n" qualityOption="source" file="pqvb6x.png" size="25,26"/>
+    <image id="pqvb6y" name="addHp_number_3" folder="pqvb6n" qualityOption="source" file="pqvb6y.png" size="25,26"/>
+    <image id="pqvb70" name="63" folder="t5hdngt" qualityOption="source" file="pqvb70.png" size="37,47"/>
+    <image id="pqvb71" name="62" folder="t5hdngt" qualityOption="source" file="pqvb71.png" size="37,47"/>
+    <image id="pqvb72" name="61" folder="t5hdngt" qualityOption="source" file="pqvb72.png" size="37,47"/>
+    <image id="pqvb73" name="60" folder="t5hdngt" qualityOption="source" file="pqvb73.png" size="37,47"/>
+    <image id="pqvb74" name="69" folder="t5hdngt" qualityOption="source" file="pqvb74.png" size="37,47"/>
+    <image id="pqvb75" name="68" folder="t5hdngt" qualityOption="source" file="pqvb75.png" size="37,47"/>
+    <image id="pqvb76" name="67" folder="t5hdngt" qualityOption="source" file="pqvb76.png" size="37,47"/>
+    <image id="pqvb77" name="66" folder="t5hdngt" qualityOption="source" file="pqvb77.png" size="37,47"/>
+    <image id="pqvb78" name="65" folder="t5hdngt" qualityOption="source" file="pqvb78.png" size="37,47"/>
+    <image id="pqvb79" name="64" folder="t5hdngt" qualityOption="source" file="pqvb79.png" size="37,47"/>
+    <folder id="pqvb7b" name="fightOtherFontImage" folder="t5hdngt"/>
+    <image id="pqvb7c" name="txt_gedang" folder="pqvb7b" qualityOption="source" file="pqvb7c.png" size="131,48"/>
+    <font id="pqvb7d" name="num_AddHpFont" folder="t5hdnfn" file="pqvb7d.fnt" exported="true"/>
+    <font id="pqvb7e" name="num_6" folder="t5hdnfn" file="pqvb7e.fnt" exported="true"/>
+    <font id="pqvb7f" name="num_CritFont" folder="t5hdnfn" file="pqvb7f.fnt" exported="true"/>
+    <font id="pqvb7g" name="num_MonsterDamageFont" folder="t5hdnfn" file="pqvb7g.fnt" exported="true"/>
+    <font id="pqvb7h" name="num_PlayerDamageFont" folder="t5hdnfn" file="pqvb7h.fnt" exported="true"/>
+    <font id="pqvb7i" name="num_FightOtherFont" folder="t5hdnfn" file="pqvb7i.fnt" exported="true"/>
+    <image id="xnis91" name="red_tips" folder="gvrnnh6" qualityOption="source" file="xnis91.png" size="20,20" exported="true"/>
+    <image id="w8d697" name="字体规范" folder="huhh2" qualityOption="source" file="w8d697.jpg" size="898,3141"/>
+    <image id="p5ffak" name="89" folder="t5hdngt" qualityOption="source" file="p5ffak.png" size="18,27"/>
+    <image id="p5ffal" name="88" folder="t5hdngt" qualityOption="source" file="p5ffal.png" size="19,26"/>
+    <image id="p5ffam" name="87" folder="t5hdngt" qualityOption="source" file="p5ffam.png" size="19,26"/>
+    <image id="p5ffan" name="86" folder="t5hdngt" qualityOption="source" file="p5ffan.png" size="18,27"/>
+    <image id="p5ffao" name="85" folder="t5hdngt" qualityOption="source" file="p5ffao.png" size="17,27"/>
+    <image id="p5ffap" name="84" folder="t5hdngt" qualityOption="source" file="p5ffap.png" size="19,27"/>
+    <image id="p5ffaq" name="83" folder="t5hdngt" qualityOption="source" file="p5ffaq.png" size="19,27"/>
+    <image id="p5ffar" name="82" folder="t5hdngt" qualityOption="source" file="p5ffar.png" size="19,26"/>
+    <image id="p5ffas" name="81" folder="t5hdngt" qualityOption="source" file="p5ffas.png" size="10,27"/>
+    <image id="p5ffat" name="80" folder="t5hdngt" qualityOption="source" file="p5ffat.png" size="19,27"/>
+    <font id="p5ffau" name="num_8" folder="t5hdnfn" file="p5ffau.fnt" exported="true"/>
+    <font id="p8e4ax" name="num_7" folder="t5hdnfn" file="p8e4ax.fnt" exported="true"/>
+    <image id="p8e4az" name="70" folder="t5hdngt" qualityOption="source" file="p8e4az.png" size="30,37"/>
+    <image id="p8e4b0" name="79" folder="t5hdngt" qualityOption="source" file="p8e4b0.png" size="30,37"/>
+    <image id="p8e4b1" name="78" folder="t5hdngt" qualityOption="source" file="p8e4b1.png" size="30,37"/>
+    <image id="p8e4b2" name="77" folder="t5hdngt" qualityOption="source" file="p8e4b2.png" size="30,37"/>
+    <image id="p8e4b3" name="76" folder="t5hdngt" qualityOption="source" file="p8e4b3.png" size="30,37"/>
+    <image id="p8e4b4" name="75" folder="t5hdngt" qualityOption="source" file="p8e4b4.png" size="30,37"/>
+    <image id="p8e4b5" name="74" folder="t5hdngt" qualityOption="source" file="p8e4b5.png" size="30,37"/>
+    <image id="p8e4b6" name="73" folder="t5hdngt" qualityOption="source" file="p8e4b6.png" size="30,37"/>
+    <image id="p8e4b7" name="72" folder="t5hdngt" qualityOption="source" file="p8e4b7.png" size="30,37"/>
+    <image id="p8e4b8" name="71" folder="t5hdngt" qualityOption="source" file="p8e4b8.png" size="30,37"/>
+    <image id="s6ejbb" name="字号字色示意图" folder="wo2u2j" qualityOption="source" file="s6ejbb.png" size="1334,752"/>
+    <folder id="rdc8bq" name="message" folder=""/>
+    <component id="rdc8br" name="MsgUI" folder="rdc8bq" file="rdc8br.xml" exported="true"/>
+    <component id="rdc8bs" name="RollMsgUI" folder="rdc8bq" file="rdc8bs.xml" exported="true"/>
+    <component id="rdc8bt" name="TipsMsgUI" folder="rdc8bq" file="rdc8bt.xml" exported="true"/>
+    <component id="rdc8bu" name="TipsMsgItem" folder="rdc8bq" file="rdc8bu.xml" exported="true"/>
+    <component id="rdc8bv" name="MultyHitItem" folder="yweka" file="rdc8bv.xml" exported="true"/>
+    <image id="rdc8bw" name="txt_lianji2" folder="yweka" qualityOption="source" file="rdc8bw.png" size="277,80"/>
+    <component id="rdc8bx" name="MultyHit" folder="yweka" file="rdc8bx.xml" exported="true"/>
+    <image id="u0dhc1" name="btn_close0" folder="x0conj5" qualityOption="source" file="u0dhc1.png" size="108,72" exported="true"/>
+    <image id="jqanc9" name="rb_000" folder="x0conj5" qualityOption="source" file="jqanc9.png" size="139,105" exported="true" scale="9grid" scale9grid="32,24,61,60"/>
+    <image id="jqanca" name="line12" folder="gvrnnh6" qualityOption="source" file="jqanca.png" size="110,2" exported="true"/>
+    <image id="n2mycf" name="txtBg0" folder="t5hdngu" qualityOption="source" file="n2mycf.png" size="187,39" scale="9grid" scale9grid="47,14,94,12" exported="true"/>
+    <image id="n2mycg" name="yuanbao" folder="gvrnnh6" qualityOption="source" file="n2mycg.png" size="43,38" exported="true"/>
+    <image id="n2mych" name="bg_small0" folder="t5hdngu" qualityOption="source" file="n2mych.png" size="751,42" exported="true" includedInAtlas="1"/>
+    <image id="n2myci" name="btnAddBg0" folder="x0conj5" qualityOption="source" file="n2myci.png" size="33,33" exported="true"/>
+    <image id="ckrkcx" name="3+" folder="t5hdngt" qualityOption="source" file="ckrkcx.png" size="19,25"/>
+    <image id="ckrkcy" name="3-" folder="t5hdngt" qualityOption="source" file="ckrkcy.png" size="19,25"/>
+    <image id="uwggde" name="grid_selected" folder="t5hdngu" qualityOption="source" file="uwggde.png" size="102,102" exported="true" scale="9grid" scale9grid="40,40,22,22"/>
+    <image id="uwggdg" name="bg_middle0" folder="t5hdngu" qualityOption="source" file="uwggdg.png" size="276,97" scale="9grid" scale9grid="115,45,52,16" exported="true" includedInAtlas="1"/>
+    <image id="tfo1di" name="task_arrow" folder="wo2u2k" qualityOption="source" file="tfo1di.png" size="59,45" exported="true"/>
+    <component id="tfo1dj" name="ButtonArrow" folder="huhh2" file="tfo1dj.xml" exported="true"/>
+    <image id="tfo1dk" name="scroll_arrow" folder="wo2u2k" qualityOption="source" file="tfo1dk.png" size="31,53" exported="true"/>
+    <component id="tfo1dl" name="ButtonNextPage" folder="huhh2" file="tfo1dl.xml" exported="true"/>
+    <component id="tfo1dm" name="ButtonPrevPage" folder="huhh2" file="tfo1dm.xml" exported="true"/>
+    <component id="tfo1do" name="ButtonYellow" folder="huhh2" file="tfo1do.xml" exported="true"/>
+    <image id="hhg0ds" name="5i" folder="t5hdngt" qualityOption="source" file="hhg0ds.png" size="104,53"/>
+    <image id="hhg0dt" name="59" folder="t5hdngt" qualityOption="source" file="hhg0dt.png" size="34,42"/>
+    <image id="hhg0du" name="58" folder="t5hdngt" qualityOption="source" file="hhg0du.png" size="34,42"/>
+    <image id="hhg0dv" name="57" folder="t5hdngt" qualityOption="source" file="hhg0dv.png" size="34,42"/>
+    <image id="hhg0dw" name="56" folder="t5hdngt" qualityOption="source" file="hhg0dw.png" size="34,42"/>
+    <image id="hhg0dx" name="55" folder="t5hdngt" qualityOption="source" file="hhg0dx.png" size="34,42"/>
+    <image id="hhg0dy" name="54" folder="t5hdngt" qualityOption="source" file="hhg0dy.png" size="34,42"/>
+    <image id="hhg0dz" name="53" folder="t5hdngt" qualityOption="source" file="hhg0dz.png" size="34,42"/>
+    <image id="hhg0e0" name="52" folder="t5hdngt" qualityOption="source" file="hhg0e0.png" size="34,42"/>
+    <image id="hhg0e1" name="51" folder="t5hdngt" qualityOption="source" file="hhg0e1.png" size="34,42"/>
+    <image id="hhg0e2" name="50" folder="t5hdngt" qualityOption="source" file="hhg0e2.png" size="34,42"/>
+    <image id="hhg0e3" name="5+" folder="t5hdngt" qualityOption="source" file="hhg0e3.png" size="34,42"/>
+    <image id="hhg0e4" name="4-" folder="t5hdngt" qualityOption="source" file="hhg0e4.png" size="34,42"/>
+    <image id="hhg0e5" name="4i" folder="t5hdngt" qualityOption="source" file="hhg0e5.png" size="104,53"/>
+    <image id="hhg0e6" name="49" folder="t5hdngt" qualityOption="source" file="hhg0e6.png" size="34,42"/>
+    <image id="hhg0e7" name="48" folder="t5hdngt" qualityOption="source" file="hhg0e7.png" size="34,42"/>
+    <image id="hhg0e8" name="47" folder="t5hdngt" qualityOption="source" file="hhg0e8.png" size="34,42"/>
+    <image id="hhg0e9" name="46" folder="t5hdngt" qualityOption="source" file="hhg0e9.png" size="34,42"/>
+    <image id="hhg0ea" name="45" folder="t5hdngt" qualityOption="source" file="hhg0ea.png" size="34,42"/>
+    <image id="hhg0eb" name="44" folder="t5hdngt" qualityOption="source" file="hhg0eb.png" size="34,42"/>
+    <image id="hhg0ec" name="43" folder="t5hdngt" qualityOption="source" file="hhg0ec.png" size="34,42"/>
+    <image id="hhg0ed" name="42" folder="t5hdngt" qualityOption="source" file="hhg0ed.png" size="34,42"/>
+    <image id="hhg0ee" name="41" folder="t5hdngt" qualityOption="source" file="hhg0ee.png" size="34,42"/>
+    <image id="hhg0ef" name="40" folder="t5hdngt" qualityOption="source" file="hhg0ef.png" size="34,42"/>
+    <font id="hhg0eg" name="num_5" folder="t5hdnfn" file="hhg0eg.fnt" exported="true"/>
+    <font id="hhg0eh" name="num_4" folder="t5hdnfn" file="hhg0eh.fnt" exported="true"/>
+    <image id="n3qsneq" name="btnBg_001" folder="x0conj5" qualityOption="source" file="n3qsneq.png" size="36,63" scale="9grid" scale9grid="16,16,3,31" exported="true"/>
+    <image id="n3qsner" name="btnBg_000" folder="x0conj5" qualityOption="source" file="n3qsner.png" size="34,52" scale="9grid" scale9grid="14,14,5,23" exported="true"/>
+    <component id="gp6dnfh" name="ReturnCutDownBar" folder="yweka" file="gp6dnfh.xml"/>
+    <image id="gp6dnfi" name="collocet_pro_bar" folder="x0conjn" qualityOption="source" file="gp6dnfi.png" size="307,11" exported="true"/>
+    <image id="gp6dnfj" name="collocet_pro_bar_bg" folder="x0conjn" qualityOption="source" file="gp6dnfj.png" size="58,23" exported="true" scale="9grid" scale9grid="20,0,14,23"/>
+    <component id="gp6dnfk" name="ReturnCutDownFBar" folder="yweka" file="gp6dnfk.xml"/>
+    <component id="gp6dnfl" name="ReturnCDBar" folder="yweka" file="gp6dnfl.xml" exported="true"/>
+    <folder id="t5hdnfm" name="AImge" folder=""/>
+    <folder id="t5hdnfn" name="ACommUI" folder=""/>
+    <component id="t5hdnfo" name="AwardIcon" folder="t5hdnfn" file="t5hdnfo.xml" exported="true"/>
+    <component id="t5hdnfp" name="CircleHeadComponent" folder="t5hdnfn" file="t5hdnfp.xml" exported="true"/>
+    <component id="t5hdnfq" name="CustomBtn0" folder="t5hdnfn" file="t5hdnfq.xml" exported="true"/>
+    <component id="t5hdnfs" name="CustomButton0" folder="t5hdnfn" file="t5hdnfs.xml" exported="true"/>
+    <component id="t5hdnft" name="CustomButton1" folder="t5hdnfn" file="t5hdnft.xml" exported="true"/>
+    <component id="t5hdnfu" name="CustomLayerH" folder="t5hdnfn" file="t5hdnfu.xml" exported="true"/>
+    <component id="t5hdnfv" name="CustomLayerHV" folder="t5hdnfn" file="t5hdnfv.xml" exported="true"/>
+    <component id="t5hdnfw" name="CustomLayerV" folder="t5hdnfn" file="t5hdnfw.xml" exported="true"/>
+    <component id="t5hdnfx" name="CustomLayerN" folder="t5hdnfn" file="t5hdnfx.xml" exported="true"/>
+    <component id="t5hdnfy" name="CustomSprite0" folder="t5hdnfn" file="t5hdnfy.xml" exported="true"/>
+    <component id="t5hdnfz" name="HeadIcon" folder="t5hdnfn" file="t5hdnfz.xml" exported="true"/>
+    <image id="t5hdng0" name="headBg" folder="t5hdngu" qualityOption="source" file="t5hdng0.png" size="80,80" exported="true"/>
+    <component id="t5hdng1" name="LevelComponent" folder="t5hdnfn" file="t5hdng1.xml" exported="true"/>
+    <image id="t5hdng2" name="levelBg" folder="t5hdngu" qualityOption="source" file="t5hdng2.png" size="32,32" exported="true"/>
+    <font id="t5hdng3" name="num_0" folder="t5hdnfn" file="t5hdng3.fnt" exported="true"/>
+    <image id="t5hdng4" name="00" folder="t5hdngt" qualityOption="source" file="t5hdng4.png" size="61,72"/>
+    <image id="t5hdng5" name="01" folder="t5hdngt" qualityOption="source" file="t5hdng5.png" size="61,72"/>
+    <image id="t5hdng6" name="02" folder="t5hdngt" qualityOption="source" file="t5hdng6.png" size="61,72"/>
+    <image id="t5hdng7" name="03" folder="t5hdngt" qualityOption="source" file="t5hdng7.png" size="61,72"/>
+    <image id="t5hdng8" name="04" folder="t5hdngt" qualityOption="source" file="t5hdng8.png" size="61,72"/>
+    <image id="t5hdng9" name="05" folder="t5hdngt" qualityOption="source" file="t5hdng9.png" size="61,72"/>
+    <image id="t5hdnga" name="06" folder="t5hdngt" qualityOption="source" file="t5hdnga.png" size="61,72"/>
+    <image id="t5hdngb" name="07" folder="t5hdngt" qualityOption="source" file="t5hdngb.png" size="61,72"/>
+    <image id="t5hdngc" name="08" folder="t5hdngt" qualityOption="source" file="t5hdngc.png" size="61,72"/>
+    <image id="t5hdngd" name="09" folder="t5hdngt" qualityOption="source" file="t5hdngd.png" size="61,72"/>
+    <font id="t5hdnge" name="num_1" folder="t5hdnfn" file="t5hdnge.fnt" exported="true"/>
+    <image id="t5hdngf" name="10" folder="t5hdngt" qualityOption="source" file="t5hdngf.png" size="34,47"/>
+    <image id="t5hdngg" name="11" folder="t5hdngt" qualityOption="source" file="t5hdngg.png" size="34,47"/>
+    <image id="t5hdngh" name="12" folder="t5hdngt" qualityOption="source" file="t5hdngh.png" size="34,47"/>
+    <image id="t5hdngi" name="13" folder="t5hdngt" qualityOption="source" file="t5hdngi.png" size="34,47"/>
+    <image id="t5hdngj" name="14" folder="t5hdngt" qualityOption="source" file="t5hdngj.png" size="34,47"/>
+    <image id="t5hdngk" name="15" folder="t5hdngt" qualityOption="source" file="t5hdngk.png" size="34,47"/>
+    <image id="t5hdngl" name="16" folder="t5hdngt" qualityOption="source" file="t5hdngl.png" size="34,47"/>
+    <image id="t5hdngm" name="17" folder="t5hdngt" qualityOption="source" file="t5hdngm.png" size="34,47"/>
+    <image id="t5hdngn" name="18" folder="t5hdngt" qualityOption="source" file="t5hdngn.png" size="34,47"/>
+    <image id="t5hdngo" name="19" folder="t5hdngt" qualityOption="source" file="t5hdngo.png" size="34,47"/>
+    <font id="t5hdngp" name="num_2" folder="t5hdnfn" file="t5hdngp.fnt" exported="true"/>
+    <image id="t5hdngq" name="21" folder="t5hdngt" qualityOption="source" file="t5hdngq.png" size="87,89"/>
+    <image id="t5hdngr" name="22" folder="t5hdngt" qualityOption="source" file="t5hdngr.png" size="87,89"/>
+    <image id="t5hdngs" name="23" folder="t5hdngt" qualityOption="source" file="t5hdngs.png" size="87,89"/>
+    <folder id="t5hdngt" name="num" folder="t5hdnfm"/>
+    <folder id="t5hdngu" name="bg" folder="t5hdnfm"/>
+    <component id="mkaznh2" name="CustomMenuItem" folder="t5hdnfn" file="mkaznh2.xml" exported="true"/>
+    <image id="mkaznh3" name="menuItemBg0" folder="x0conj5" qualityOption="source" file="mkaznh3.png" size="58,55" scale="9grid" scale9grid="22,18,13,15" exported="true"/>
+    <component id="gvrnnh4" name="MoneyLabelComp" folder="t5hdnfn" file="gvrnnh4.xml" exported="true"/>
+    <folder id="gvrnnh6" name="other" folder="t5hdnfm"/>
+    <component id="gvrnnh7" name="RadioBtn0" folder="t5hdnfn" file="gvrnnh7.xml" exported="true"/>
+    <component id="gvrnnh8" name="CustomBigGround" folder="t5hdnfn" file="gvrnnh8.xml" exported="true"/>
+    <component id="ek9hnha" name="GoodsItem" folder="t5hdnfn" file="ek9hnha.xml" exported="true"/>
+    <component id="deqznhb" name="CustomTabbarBtn" folder="t5hdnfn" file="deqznhb.xml" exported="true"/>
+    <image id="j67wnhd" name="bg_itemcell" folder="t5hdngu" qualityOption="source" file="j67wnhd.png" size="48,46" exported="true" scale="9grid" scale9grid="16,15,16,15"/>
+    <image id="j67wnhe" name="bg_gridpanel" folder="t5hdngu" qualityOption="source" file="j67wnhe.png" size="56,56" exported="true" scale="9grid" scale9grid="14,14,28,28"/>
+    <image id="jsucnhf" name="txtBg1" folder="t5hdngu" qualityOption="source" file="jsucnhf.png" size="20,12" exported="true" scale="9grid" scale9grid="5,4,9,4"/>
+    <image id="jsucnhg" name="line10" folder="gvrnnh6" qualityOption="source" file="jsucnhg.png" size="16,622" exported="true" scale="9grid" scale9grid="4,156,8,312"/>
+    <image id="jsucnhh" name="line01" folder="gvrnnh6" qualityOption="source" file="jsucnhh.png" size="110,2" exported="true" scale="9grid" scale9grid="28,1,56,1"/>
+    <image id="jsucnhi" name="line00" folder="gvrnnh6" qualityOption="source" file="jsucnhi.png" size="138,2" exported="true" scale="9grid" scale9grid="35,1,70,1"/>
+    <image id="uedbnhx" name="line03" folder="gvrnnh6" qualityOption="source" file="uedbnhx.png" size="24,2" scale="9grid" scale9grid="6,1,12,1" exported="true"/>
+    <image id="uedbnhy" name="lineP0" folder="gvrnnh6" qualityOption="source" file="uedbnhy.png" size="12,12" exported="true"/>
+    <image id="uedbnhz" name="line02" folder="gvrnnh6" qualityOption="source" file="uedbnhz.png" size="5,2" scale9grid="0,0,5,2" scale="9grid" exported="true"/>
+    <component id="uedbni0" name="line0001" folder="t5hdnfn" file="uedbni0.xml" exported="true"/>
+    <image id="gk0nni9" name="bg_alpha" folder="t5hdngu" qualityOption="source" file="gk0nni9.png" size="13,11" exported="true" scale="9grid" scale9grid="6,4,3,2"/>
+    <image id="gk0nnia" name="title_bg" folder="t5hdngu" qualityOption="source" file="gk0nnia.png" size="217,52" exported="true" scale="9grid" scale9grid="55,13,110,26"/>
+    <image id="gk0nnid" name="line_fenge" folder="gvrnnh6" qualityOption="source" file="gk0nnid.png" size="20,607" exported="true"/>
+    <image id="gk0nnie" name="btn_erji2" folder="x0conj5" qualityOption="source" file="gk0nnie.png" size="39,46" exported="true" scale="9grid" scale9grid="16,11,8,25"/>
+    <image id="gk0nnif" name="btn_erji1" folder="x0conj5" qualityOption="source" file="gk0nnif.png" size="39,46" exported="true" scale="9grid" scale9grid="17,11,4,25"/>
+    <component id="gk0nnig" name="RadioBtn1" folder="t5hdnfn" file="gk0nnig.xml" exported="true"/>
+    <folder id="sbfonih" name="Accordion" folder="t5hdnfn"/>
+    <component id="sbfonii" name="AccordionBtn" folder="sbfonih" file="sbfonii.xml" exported="true"/>
+    <component id="sbfonij" name="AccordionCellItem" folder="sbfonih" file="sbfonij.xml" exported="true"/>
+    <image id="sbfonik" name="line3" folder="gvrnnh6" qualityOption="source" file="sbfonik.png" size="163,2" exported="true"/>
+    <component id="sbfonil" name="AccordionCellItems" folder="sbfonih" file="sbfonil.xml" exported="true"/>
+    <component id="sbfonim" name="AccordionHeadItem" folder="sbfonih" file="sbfonim.xml" exported="true"/>
+    <image id="sbfonin" name="arrow2" folder="gvrnnh6" qualityOption="source" file="sbfonin.png" size="13,8" exported="true"/>
+    <image id="hx0xnip" name="line_fenge1" folder="gvrnnh6" qualityOption="source" file="hx0xnip.png" size="286,11" exported="true" scale9grid="72,3,144,6"/>
+    <image id="keyenir" name="itemBg01" folder="x0conj5" qualityOption="source" file="keyenir.png" size="64,64" scale="9grid" scale9grid="22,22,20,20" exported="true"/>
+    <image id="keyenis" name="itemBg00" folder="x0conj5" qualityOption="source" file="keyenis.png" size="64,64" exported="true" scale="9grid" scale9grid="22,22,20,20"/>
+    <image id="x0coniw" name="bg_sub" folder="t5hdngu" qualityOption="source" file="x0coniw.png" size="631,107" exported="true" scale="9grid" scale9grid="271,55,108,11" includedInAtlas="1"/>
+    <image id="x0conix" name="bg_sub_ditu" folder="t5hdngu" qualityOption="source" file="x0conix.png" size="40,38" exported="true" scale="9grid" scale9grid="10,10,20,20"/>
+    <image id="x0conj0" name="btn_001" folder="x0conj5" qualityOption="source" file="x0conj0.png" size="41,58" exported="true" scale9grid="18,24,5,10" scale="9grid"/>
+    <image id="x0conj1" name="btn_000" folder="x0conj5" qualityOption="source" file="x0conj1.png" size="41,58" exported="true" scale="9grid" scale9grid="18,24,5,10"/>
+    <image id="x0conj4" name="btnBg_002" folder="x0conj5" qualityOption="source" file="x0conj4.png" size="36,63" exported="true" scale="9grid" scale9grid="17,18,2,26"/>
+    <folder id="x0conj5" name="btn" folder="t5hdnfm"/>
+    <image id="x0conj6" name="juanzhou" folder="t5hdngu" qualityOption="source" file="x0conj6.png" size="397,601" exported="true" includedInAtlas="1"/>
+    <image id="x0conj7" name="3i" folder="t5hdngt" qualityOption="source" file="x0conj7.png" size="75,34"/>
+    <image id="x0conj8" name="39" folder="t5hdngt" qualityOption="source" file="x0conj8.png" size="24,29"/>
+    <image id="x0conj9" name="38" folder="t5hdngt" qualityOption="source" file="x0conj9.png" size="24,29"/>
+    <image id="x0conja" name="37" folder="t5hdngt" qualityOption="source" file="x0conja.png" size="24,29"/>
+    <image id="x0conjb" name="36" folder="t5hdngt" qualityOption="source" file="x0conjb.png" size="24,29"/>
+    <image id="x0conjc" name="35" folder="t5hdngt" qualityOption="source" file="x0conjc.png" size="24,29"/>
+    <image id="x0conjd" name="34" folder="t5hdngt" qualityOption="source" file="x0conjd.png" size="24,29"/>
+    <image id="x0conje" name="33" folder="t5hdngt" qualityOption="source" file="x0conje.png" size="24,29"/>
+    <image id="x0conjf" name="32" folder="t5hdngt" qualityOption="source" file="x0conjf.png" size="24,29"/>
+    <image id="x0conjg" name="31" folder="t5hdngt" qualityOption="source" file="x0conjg.png" size="24,29"/>
+    <image id="x0conjh" name="30" folder="t5hdngt" qualityOption="source" file="x0conjh.png" size="24,29"/>
+    <font id="x0conjj" name="num_3" folder="t5hdnfn" file="x0conjj.fnt" exported="true"/>
+    <folder id="x0conjk" name="ditu" folder="t5hdnfm"/>
+    <image id="x0conjl" name="zhezhao" folder="x0conjk" qualityOption="source" file="x0conjl.png" size="13,10" exported="true" scale="9grid" scale9grid="4,3,6,4"/>
+    <folder id="x0conjm" name="zhuangshi" folder="t5hdnfm"/>
+    <folder id="x0conjn" name="jindutiao" folder="t5hdnfm"/>
+    <image id="x0conjo" name="shuye3" folder="x0conjm" qualityOption="source" file="x0conjo.png" size="186,173" exported="true" includedInAtlas="1"/>
+    <image id="x0conjp" name="shuye2" folder="x0conjm" qualityOption="source" file="x0conjp.png" size="137,56" exported="true" includedInAtlas="1"/>
+    <image id="x0conjq" name="shuye1" folder="x0conjm" qualityOption="source" file="x0conjq.png" size="137,63" exported="true" includedInAtlas="1"/>
+    <image id="x0conjr" name="yuyi2" folder="x0conjn" qualityOption="source" file="x0conjr.png" size="9,10" exported="true" scale="9grid" scale9grid="3,4,3,3"/>
+    <image id="x0conjs" name="yuyi1" folder="x0conjn" qualityOption="source" file="x0conjs.png" size="458,30" exported="true" scale="9grid" scale9grid="27,7,402,16"/>
+    <image id="x0conju" name="paixu_01" folder="x0conj5" qualityOption="source" file="x0conju.png" size="11,41" exported="true" scale="9grid" scale9grid="4,11,4,22"/>
+    <image id="x0conjv" name="paixu_00" folder="x0conj5" qualityOption="source" file="x0conjv.png" size="11,41" exported="true" scale="9grid" scale9grid="4,11,3,22"/>
+    <image id="x0conjw" name="txtBg_num" folder="t5hdngu" qualityOption="source" file="x0conjw.png" size="29,44" exported="true" scale="9grid" scale9grid="8,11,13,22"/>
+    <image id="x0conjx" name="txtBg_type" folder="t5hdngu" qualityOption="source" file="x0conjx.png" size="195,20" exported="true" scale="9grid" scale9grid="91,5,27,10"/>
+    <image id="x0conjy" name="numAdd" folder="x0conj5" qualityOption="source" file="x0conjy.png" size="62,63" exported="true"/>
+    <image id="x0conjz" name="numSub" folder="x0conj5" qualityOption="source" file="x0conjz.png" size="62,63" exported="true"/>
+    <image id="x0conk0" name="numUp" folder="x0conj5" qualityOption="source" file="x0conk0.png" size="62,63" exported="true"/>
+    <image id="x0conk1" name="numBg" folder="x0conj5" qualityOption="source" file="x0conk1.png" size="62,63" exported="true" scale="9grid" scale9grid="16,16,32,32"/>
+    <component id="x0conk2" name="NumberBar" folder="t5hdnfn" file="x0conk2.xml" exported="true"/>
+    <component id="x0conk3" name="NumberBar2" folder="t5hdnfn" file="x0conk3.xml" exported="true"/>
+    <component id="x0conk4" name="NumberTypeBtn" folder="t5hdnfn" file="x0conk4.xml"/>
+    <image id="oox7nk5" name="selectBg1_1" folder="t5hdngu" qualityOption="source" file="oox7nk5.png" size="28,43" scale="9grid" scale9grid="8,10,12,23" exported="true"/>
+    <image id="oox7nk6" name="selectBg1_2" folder="t5hdngu" qualityOption="source" file="oox7nk6.png" size="28,43" scale="9grid" scale9grid="8,10,12,24" exported="true"/>
+    <image id="igzgnk7" name="lock" folder="gvrnnh6" qualityOption="source" file="igzgnk7.png" size="50,59" exported="true"/>
+    <component id="tnbmnka" name="CustomButton2" folder="t5hdnfn" file="tnbmnka.xml" exported="true"/>
+    <component id="5v99nkb" name="CustomProgess" folder="t5hdnfn" file="5v99nkb.xml" exported="true"/>
+    <image id="5v99nkc" name="line04" folder="gvrnnh6" qualityOption="source" file="5v99nkc.png" size="2,3" exported="true" scale="9grid" scale9grid="1,1,1,2"/>
+    <image id="5v99nkd" name="checkBox" folder="x0conj5" qualityOption="source" file="5v99nkd.png" size="27,27" exported="true"/>
+    <image id="5v99nke" name="radio" folder="x0conj5" qualityOption="source" file="5v99nke.png" size="29,29" exported="true"/>
+    <image id="5v99nkf" name="tick" folder="x0conj5" qualityOption="source" file="5v99nkf.png" size="36,32" exported="true"/>
+    <component id="5v99nkh" name="CustomRadio" folder="t5hdnfn" file="5v99nkh.xml" exported="true"/>
+    <image id="kftjnki" name="btn02" folder="x0conj5" qualityOption="source" file="kftjnki.png" size="135,46" exported="true" scale="9grid" scale9grid="34,12,68,24"/>
+    <image id="eieknkm" name="table" folder="gvrnnh6" qualityOption="source" file="eieknkm.png" size="410,56" scale="9grid" scale9grid="103,14,206,16" exported="true" includedInAtlas="1"/>
+    <image id="eieknkn" name="itembg1" folder="t5hdngu" qualityOption="source" file="eieknkn.png" size="33,32" scale="9grid" scale9grid="9,9,15,14" exported="true"/>
+    <image id="eieknko" name="font_yizhuangbei" folder="gvrnnh6" qualityOption="source" file="eieknko.png" size="70,70" exported="true"/>
+    <component id="skqrnkp" name="CustomButton3" folder="t5hdnfn" file="skqrnkp.xml" exported="true"/>
+    <image id="skqrnkq" name="btnBg_003" folder="x0conj5" qualityOption="source" file="skqrnkq.png" size="126,41" exported="true"/>
+    <component id="lwwwnks" name="CustomCheckBox0" folder="t5hdnfn" file="lwwwnks.xml" exported="true"/>
+    <component id="nf8gnkt" name="CustomLabel0" folder="t5hdnfn" file="nf8gnkt.xml" exported="true"/>
+    <component id="nf8gnku" name="CustomLabel1" folder="t5hdnfn" file="nf8gnku.xml" exported="true"/>
+    <image id="mx4pnkv" name="shuliandu2" folder="x0conjn" qualityOption="source" file="mx4pnkv.png" size="35,11" scale="9grid" scale9grid="9,3,18,4" exported="true"/>
+    <image id="mx4pnkw" name="shuliandu" folder="x0conjn" qualityOption="source" file="mx4pnkw.png" size="35,13" scale="9grid" scale9grid="9,2,18,9" exported="true"/>
+    <image id="mx4pnkx" name="star2" folder="gvrnnh6" qualityOption="source" file="mx4pnkx.png" size="42,41" exported="true"/>
+    <image id="mx4pnky" name="star1" folder="gvrnnh6" qualityOption="source" file="mx4pnky.png" size="42,41" exported="true"/>
+    <image id="mx4pnl0" name="font_yiguoqi" folder="gvrnnh6" qualityOption="source" file="mx4pnl0.png" size="71,70" exported="true"/>
+    <image id="uchhnl1" name="bannerBlue" folder="gvrnnh6" qualityOption="source" file="uchhnl1.png" size="3,34" scale="9grid" scale9grid="1,7,1,20" exported="true"/>
+    <image id="uchhnl2" name="bannerYellow" folder="gvrnnh6" qualityOption="source" file="uchhnl2.png" size="3,34" scale="9grid" scale9grid="1,7,1,20" exported="true"/>
+    <image id="uchhnl3" name="bannerGray" folder="gvrnnh6" qualityOption="source" file="uchhnl3.png" size="9,34" scale="9grid" scale9grid="3,9,3,18" exported="true"/>
+    <image id="c4eznl4" name="baidi" folder="x0conjk" qualityOption="source" file="c4eznl4.png" size="45,14" exported="true" scale="9grid" scale9grid="12,4,21,6"/>
+    <component id="mouenl5" name="CustomTipLayer" folder="t5hdnfn" file="mouenl5.xml" exported="true"/>
+    <image id="rgh0nl6" name="btn_jia" folder="x0conj5" qualityOption="source" file="rgh0nl6.png" size="47,47" exported="true"/>
+    <image id="rgh0nl7" name="itembg2" folder="t5hdngu" qualityOption="source" file="rgh0nl7.png" size="29,27" scale="9grid" scale9grid="8,7,13,13" gridTile="15" exported="true"/>
+    <image id="rgh0nl8" name="itembg3" folder="t5hdngu" qualityOption="source" file="rgh0nl8.png" size="19,21" scale="9grid" scale9grid="5,6,9,9" exported="true"/>
+    <image id="c18wnl9" name="gray" folder="t5hdngu" qualityOption="source" file="c18wnl9.png" size="26,22" exported="true" scale="9grid" scale9grid="7,6,14,12"/>
+    <image id="c18wnla" name="arrow1" folder="gvrnnh6" qualityOption="source" file="c18wnla.png" size="13,8" exported="true"/>
+    <image id="igkdnlb" name="line06" folder="gvrnnh6" qualityOption="source" file="igkdnlb.png" size="201,2" exported="true" scale="9grid" scale9grid="51,1,102,1"/>
+    <image id="w3wlnlc" name="hehua" folder="x0conjm" qualityOption="source" file="w3wlnlc.png" size="306,183" exported="true" includedInAtlas="1"/>
+    <image id="w3wlnld" name="goods_title_bg01" folder="t5hdngu" qualityOption="source" file="w3wlnld.png" size="112,40" exported="true" scale="9grid" scale9grid="47,10,23,16"/>
+    <image id="z03enle" name="bg_sub01" folder="t5hdngu" qualityOption="source" file="z03enle.png" size="315,255" exported="true" scale="9grid" scale9grid="114,82,83,68" includedInAtlas="1"/>
+    <image id="z03enlf" name="mingzidi" folder="x0conjk" qualityOption="source" file="z03enlf.png" size="259,9" exported="true" scale="9grid" scale9grid="65,3,130,3"/>
+    <component id="z03enli" name="HeadIcon2" folder="t5hdnfn" file="z03enli.xml" exported="true"/>
+    <component id="9u5tnlj" name="CustomCheckLabel" folder="t5hdnfn" file="9u5tnlj.xml" exported="true"/>
+    <image id="csuxnlk" name="tip_bg" folder="t5hdngu" qualityOption="source" file="csuxnlk.png" size="481,88" exported="true" scale="9grid" scale9grid="198,47,81,7" includedInAtlas="1"/>
+    <image id="csuxnll" name="title_bg1" folder="t5hdngu" qualityOption="source" file="csuxnll.png" size="307,44" exported="true" scale="9grid" scale9grid="96,10,117,22"/>
+    <image id="oqbynlm" name="btnBg_004" folder="x0conj5" qualityOption="source" file="oqbynlm.png" size="92,92" exported="true"/>
+    <image id="ovhpnlm" name="btn_fenye1" folder="x0conj5" qualityOption="source" file="ovhpnlm.png" size="40,47" exported="true" scale="9grid" scale9grid="16,12,8,23"/>
+    <image id="ovhpnlp" name="btn_fenye2" folder="x0conj5" qualityOption="source" file="ovhpnlp.png" size="34,42" exported="true" scale="9grid" scale9grid="15,8,4,25"/>
+    <image id="s7fmnlq" name="arrow_10" folder="gvrnnh6" qualityOption="source" file="s7fmnlq.png" size="23,27" exported="true"/>
+    <image id="s7fmnlr" name="arrow_00" folder="gvrnnh6" qualityOption="source" file="s7fmnlr.png" size="23,27" exported="true"/>
+    <image id="s4zfnls" name="arrow3" folder="gvrnnh6" qualityOption="source" file="s4zfnls.png" size="52,31" exported="true"/>
+    <component id="a8b4nlt" name="CustomCheckBox1" folder="t5hdnfn" file="a8b4nlt.xml" exported="true"/>
+    <component id="a8b4nlu" name="CustomProgess1" folder="t5hdnfn" file="a8b4nlu.xml" exported="true"/>
+    <image id="a8b4nlv" name="jiaHao" folder="x0conj5" qualityOption="source" file="a8b4nlv.png" size="43,42" exported="true"/>
+    <image id="a8b4nlw" name="jiaHaoBg" folder="x0conj5" qualityOption="source" file="a8b4nlw.png" size="99,99" exported="true"/>
+    <component id="a8b4nlx" name="BtnJiaHao" folder="t5hdnfn" file="a8b4nlx.xml" exported="true"/>
+    <component id="sw74nlz" name="CustomRadio1" folder="t5hdnfn" file="sw74nlz.xml" exported="true"/>
+    <component id="sw74nm0" name="CustomRadio2" folder="t5hdnfn" file="sw74nm0.xml" exported="true"/>
+    <image id="ih4gnm1" name="mianyi" folder="pqvb5m" qualityOption="source" file="ih4gnm1.png" size="94,52"/>
+    <image id="of36nm2" name="btnBg_005" folder="x0conj5" qualityOption="source" file="of36nm2.png" size="106,104" exported="true"/>
+    <image id="v6jenm3" name="line13" folder="gvrnnh6" qualityOption="source" file="v6jenm3.png" size="13,3" exported="true" scale="9grid" scale9grid="4,1,5,1"/>
+    <image id="g9qxnm4" name="teamLeaderSign" folder="gvrnnh6" qualityOption="source" file="g9qxnm4.png" size="34,30" exported="true"/>
+    <component id="i342nm5" name="CustomSprite" folder="t5hdnfn" file="i342nm5.xml" exported="true"/>
+    <component id="ockmnmb" name="CustomCheckBox" folder="t5hdnfn" file="ockmnmb.xml" exported="true"/>
+    <image id="uq4wnmc" name="bg_04" folder="t5hdngu" qualityOption="source" file="uq4wnmc.png" size="14,558" exported="true" scale="9grid" scale9grid="4,140,8,280" includedInAtlas="1"/>
+    <image id="uq4wnme" name="btn_zhanghao" folder="wo2u2k" qualityOption="source" file="uq4wnme.png" size="45,48" exported="true"/>
+    <image id="uq4wnmf" name="fengexian2" folder="gvrnnh6" qualityOption="source" file="uq4wnmf.png" size="16,1" exported="true"/>
+    <image id="uq4wnmg" name="1liuchang" folder="gvrnnh6" qualityOption="source" file="uq4wnmg.png" size="24,24" exported="true"/>
+    <image id="uq4wnmh" name="3huobao" folder="gvrnnh6" qualityOption="source" file="uq4wnmh.png" size="24,24" exported="true"/>
+    <image id="uq4wnmi" name="2yongji" folder="gvrnnh6" qualityOption="source" file="uq4wnmi.png" size="24,24" exported="true"/>
+    <component id="tebrnmj" name="CustomRollLabel" folder="t5hdnfn" file="tebrnmj.xml" exported="true"/>
+    <image id="hmasnmn" name="btn_2" folder="x0conj5" qualityOption="source" file="hmasnmn.png" size="222,67" exported="true"/>
+    <image id="ea8vnmo" name="btnBg_06" folder="x0conj5" qualityOption="source" file="ea8vnmo.png" size="93,95" exported="true" scale="9grid" scale9grid="20,20,53,55"/>
+    <image id="ea8vnmp" name="btnBg_07" folder="x0conj5" qualityOption="source" file="ea8vnmp.png" size="93,95" exported="true" scale="9grid" scale9grid="24,24,48,48"/>
+    <image id="rnfrnmq" name="shuliangdi" folder="x0conjk" qualityOption="source" file="rnfrnmq.png" size="204,5" scale="9grid" scale9grid="51,2,102,1" exported="true"/>
+    <image id="hclvnmr" name="btn_guanbi" folder="wo2u2k" qualityOption="source" file="hclvnmr.png" size="57,58" exported="true"/>
+    <component id="rfrrnms" name="TrumpetMsgUI" folder="rdc8bq" file="rfrrnms.xml" exported="true"/>
+    <image id="i4ccnmu" name="90" folder="t5hdngt" qualityOption="source" file="i4ccnmu.png" size="27,36"/>
+    <image id="i4ccnmv" name="99" folder="t5hdngt" qualityOption="source" file="i4ccnmv.png" size="27,36"/>
+    <image id="i4ccnmw" name="98" folder="t5hdngt" qualityOption="source" file="i4ccnmw.png" size="27,36"/>
+    <image id="i4ccnmx" name="97" folder="t5hdngt" qualityOption="source" file="i4ccnmx.png" size="27,36"/>
+    <image id="i4ccnmy" name="96" folder="t5hdngt" qualityOption="source" file="i4ccnmy.png" size="27,36"/>
+    <image id="i4ccnmz" name="95" folder="t5hdngt" qualityOption="source" file="i4ccnmz.png" size="27,36"/>
+    <image id="i4ccnn0" name="94" folder="t5hdngt" qualityOption="source" file="i4ccnn0.png" size="27,36"/>
+    <image id="i4ccnn1" name="93" folder="t5hdngt" qualityOption="source" file="i4ccnn1.png" size="27,36"/>
+    <image id="i4ccnn2" name="92" folder="t5hdngt" qualityOption="source" file="i4ccnn2.png" size="27,36"/>
+    <image id="i4ccnn3" name="91" folder="t5hdngt" qualityOption="source" file="i4ccnn3.png" size="27,36"/>
+    <font id="i4ccnn4" name="num_9" folder="t5hdnfn" file="i4ccnn4.fnt" exported="true"/>
+    <component id="ydonnn5" name="CustomBtn2" folder="t5hdnfn" file="ydonnn5.xml" exported="true"/>
+    <component id="prinnn6" name="CustomSubWinBg" folder="t5hdnfn" file="prinnn6.xml" exported="true"/>
+    <component id="zk42nn7" name="CustomBtn3" folder="t5hdnfn" file="zk42nn7.xml" exported="true"/>
+    <image id="zk42nn8" name="background—template" folder="" qualityOption="source" file="zk42nn8.png" size="1222,710" exported="true"/>
+    <image id="f6sann9" name="tabDi0" folder="x0conjk" qualityOption="source" file="f6sann9.png" size="293,42" exported="true"/>
+    <image id="dmzwnna" name="btn_1" folder="x0conj5" qualityOption="source" file="dmzwnna.png" size="222,67" exported="true"/>
+    <component id="s1mjnnb" name="CustomSubWinBg2" folder="t5hdnfn" file="s1mjnnb.xml" exported="true"/>
+    <image id="f06tnnc" name="qitapaihang" folder="x0conj5" qualityOption="source" file="f06tnnc.png" size="32,32" exported="true"/>
+    <component id="f06tnnd" name="InfoBtn" folder="t5hdnfn" file="f06tnnd.xml" exported="true"/>
+    <component id="f06tnne" name="DescPanel" folder="t5hdnfn" file="f06tnne.xml" exported="true"/>
+    <image id="w6zznnf" name="teamMateSign" folder="gvrnnh6" qualityOption="source" file="w6zznnf.png" size="34,30" exported="true"/>
+    <image id="hrgcnng" name="tipsBg" folder="t5hdngu" qualityOption="source" file="hrgcnng.png" size="79,70" exported="true" scale="9grid" scale9grid="23,23,33,24"/>
+    <image id="s8z9nnh" name="fenyezhuangshi" folder="x0conjm" qualityOption="source" file="s8z9nnh.png" size="215,94" exported="true" includedInAtlas="1"/>
+    <image id="v83rnni" name="jihuo" folder="gvrnnh6" qualityOption="source" file="v83rnni.png" size="259,67" exported="true"/>
+    <image id="v83rnnj" name="jihuodi" folder="gvrnnh6" qualityOption="source" file="v83rnnj.png" size="244,41" exported="true" scale="9grid" scale9grid="83,11,96,22"/>
+    <image id="oe8ynnk" name="shanglakuang" folder="x0conjk" qualityOption="source" file="oe8ynnk.png" size="23,23" exported="true" scale="9grid" scale9grid="5,5,13,13"/>
+    <image id="sdusnnl" name="hechengditu" folder="x0conjk" qualityOption="source" file="sdusnnl.png" size="67,68" exported="true" scale="9grid" scale9grid="21,28,24,13"/>
+    <image id="sdusnnm" name="hechengditu2" folder="x0conjk" qualityOption="source" file="sdusnnm.png" size="15,15" exported="true" scale="9grid" scale9grid="4,4,8,8"/>
+    <image id="sdusnnn" name="zhuangshi1" folder="gvrnnh6" qualityOption="source" file="sdusnnn.png" size="17,18" exported="true"/>
+    <image id="t02wnno" name="zhujiemian" folder="gvrnnh6" qualityOption="source" file="t02wnno.png" size="15,26" exported="true"/>
+    <image id="t02wnnp" name="btn_zhujiemian" folder="x0conj5" qualityOption="source" file="t02wnnp.png" size="31,61" exported="true"/>
+    <component id="l2b8nnq" name="CustomBtn1" folder="t5hdnfn" file="l2b8nnq.xml" exported="true"/>
+    <image id="mcq1nns" name="beibaozhezhao" folder="x0conjk" qualityOption="source" file="mcq1nns.png" size="7,7" exported="true"/>
+    <font id="ltlvnnt" name="TestFont" folder="t5hdnfn" file="ltlvnnt.fnt" exported="true"/>
+    <image id="ltlvno6" name="monster_number_4" folder="pqvb5y" qualityOption="source" file="ltlvno6.png" size="24,25"/>
+    <image id="ltlvno7" name="monster_number_3" folder="pqvb5y" qualityOption="source" file="ltlvno7.png" size="24,25"/>
+    <image id="ltlvno8" name="monster_number_2" folder="pqvb5y" qualityOption="source" file="ltlvno8.png" size="24,25"/>
+    <image id="ltlvno9" name="monster_number_1" folder="pqvb5y" qualityOption="source" file="ltlvno9.png" size="24,25"/>
+    <image id="ltlvnoa" name="monster_number_0" folder="pqvb5y" qualityOption="source" file="ltlvnoa.png" size="24,25"/>
+    <image id="ltlvnob" name="monster_minus_Sign" folder="pqvb5y" qualityOption="source" file="ltlvnob.png" size="24,25"/>
+    <image id="ltlvnoc" name="monster_plus" folder="pqvb5y" qualityOption="source" file="ltlvnoc.png" size="29,30"/>
+    <image id="ltlvnod" name="monster_number_9" folder="pqvb5y" qualityOption="source" file="ltlvnod.png" size="24,25"/>
+    <image id="ltlvnoe" name="monster_number_8" folder="pqvb5y" qualityOption="source" file="ltlvnoe.png" size="24,25"/>
+    <image id="ltlvnof" name="monster_number_7" folder="pqvb5y" qualityOption="source" file="ltlvnof.png" size="24,25"/>
+    <image id="ltlvnog" name="monster_number_6" folder="pqvb5y" qualityOption="source" file="ltlvnog.png" size="24,25"/>
+    <image id="ltlvnoh" name="monster_number_5" folder="pqvb5y" qualityOption="source" file="ltlvnoh.png" size="24,25"/>
+    <image id="ltlvnoi" name="player_plus" folder="pqvb6a" qualityOption="source" file="ltlvnoi.png" size="29,30"/>
+    <image id="ltlvnoj" name="player_number_9" folder="pqvb6a" qualityOption="source" file="ltlvnoj.png" size="24,25"/>
+    <image id="ltlvnok" name="player_number_8" folder="pqvb6a" qualityOption="source" file="ltlvnok.png" size="24,25"/>
+    <image id="ltlvnol" name="player_number_7" folder="pqvb6a" qualityOption="source" file="ltlvnol.png" size="24,25"/>
+    <image id="ltlvnom" name="player_number_6" folder="pqvb6a" qualityOption="source" file="ltlvnom.png" size="24,25"/>
+    <image id="ltlvnon" name="player_number_5" folder="pqvb6a" qualityOption="source" file="ltlvnon.png" size="24,25"/>
+    <image id="ltlvnoo" name="player_number_4" folder="pqvb6a" qualityOption="source" file="ltlvnoo.png" size="24,25"/>
+    <image id="ltlvnop" name="player_number_3" folder="pqvb6a" qualityOption="source" file="ltlvnop.png" size="24,25"/>
+    <image id="ltlvnoq" name="player_number_2" folder="pqvb6a" qualityOption="source" file="ltlvnoq.png" size="24,25"/>
+    <image id="ltlvnor" name="player_number_1" folder="pqvb6a" qualityOption="source" file="ltlvnor.png" size="24,25"/>
+    <image id="ltlvnos" name="player_number_0" folder="pqvb6a" qualityOption="source" file="ltlvnos.png" size="24,25"/>
+    <image id="ltlvnot" name="player_minus_Sign" folder="pqvb6a" qualityOption="source" file="ltlvnot.png" size="24,25"/>
+    <image id="c8esnou" name="btn_tishi" folder="x0conj5" qualityOption="source" file="c8esnou.png" size="35,36" exported="true"/>
+    <image id="c8esnov" name="dikuang" folder="x0conjk" qualityOption="source" file="c8esnov.png" size="147,18" exported="true" scale="9grid" scale9grid="37,6,74,4"/>
+    <image id="rmqhnow" name="105" folder="t5hdngt" qualityOption="source" file="rmqhnow.png" size="16,22"/>
+    <image id="rmqhnox" name="104" folder="t5hdngt" qualityOption="source" file="rmqhnox.png" size="16,22"/>
+    <image id="rmqhnoy" name="103" folder="t5hdngt" qualityOption="source" file="rmqhnoy.png" size="16,22"/>
+    <image id="rmqhnoz" name="102" folder="t5hdngt" qualityOption="source" file="rmqhnoz.png" size="16,22"/>
+    <image id="rmqhnp0" name="101" folder="t5hdngt" qualityOption="source" file="rmqhnp0.png" size="16,22"/>
+    <image id="rmqhnp1" name="100" folder="t5hdngt" qualityOption="source" file="rmqhnp1.png" size="16,22"/>
+    <image id="rmqhnp2" name="109" folder="t5hdngt" qualityOption="source" file="rmqhnp2.png" size="16,22"/>
+    <image id="rmqhnp3" name="108" folder="t5hdngt" qualityOption="source" file="rmqhnp3.png" size="16,22"/>
+    <image id="rmqhnp4" name="107" folder="t5hdngt" qualityOption="source" file="rmqhnp4.png" size="16,22"/>
+    <image id="rmqhnp5" name="106" folder="t5hdngt" qualityOption="source" file="rmqhnp5.png" size="16,22"/>
+    <font id="rmqhnp6" name="num_10" folder="t5hdnfn" file="rmqhnp6.fnt" exported="true"/>
+    <image id="h2penpr" name="119" folder="t5hdngt" qualityOption="source" file="h2penpr.png" size="19,21"/>
+    <image id="h2penps" name="118" folder="t5hdngt" qualityOption="source" file="h2penps.png" size="19,21"/>
+    <image id="h2penpt" name="117" folder="t5hdngt" qualityOption="source" file="h2penpt.png" size="19,21"/>
+    <image id="h2penpu" name="116" folder="t5hdngt" qualityOption="source" file="h2penpu.png" size="19,21"/>
+    <image id="h2penpv" name="115" folder="t5hdngt" qualityOption="source" file="h2penpv.png" size="19,21"/>
+    <image id="h2penpw" name="114" folder="t5hdngt" qualityOption="source" file="h2penpw.png" size="19,21"/>
+    <image id="h2penpx" name="113" folder="t5hdngt" qualityOption="source" file="h2penpx.png" size="19,21"/>
+    <image id="h2penpy" name="112" folder="t5hdngt" qualityOption="source" file="h2penpy.png" size="19,21"/>
+    <image id="h2penpz" name="111" folder="t5hdngt" qualityOption="source" file="h2penpz.png" size="19,21"/>
+    <image id="h2penq0" name="110" folder="t5hdngt" qualityOption="source" file="h2penq0.png" size="19,21"/>
+    <font id="h2penq1" name="num_11" folder="t5hdnfn" file="h2penq1.fnt" exported="true"/>
+    <image id="ktxinq2" name="bg_alpha1" folder="t5hdngu" qualityOption="source" file="ktxinq2.png" size="554,4" exported="true" scale="9grid" scale9grid="67,1,5,1"/>
+    <image id="js4ynq3" name="gantanhao" folder="gvrnnh6" qualityOption="source" file="js4ynq3.png" size="20,20" exported="true"/>
+    <image id="vrddnq4" name="relifeDi" folder="x0conjk" qualityOption="source" file="vrddnq4.png" size="31,29" exported="true" scale="9grid" scale9grid="8,8,16,16"/>
+    <image id="pu0xnq5" name="wenghao" folder="gvrnnh6" qualityOption="source" file="pu0xnq5.png" size="39,41" exported="true"/>
+    <image id="pu0xnq6" name="grid_cell_bg" folder="t5hdngu" qualityOption="source" file="pu0xnq6.png" size="90,90" exported="true"/>
+    <image id="pu0xnq7" name="jiantou2" folder="gvrnnh6" qualityOption="source" file="pu0xnq7.png" size="52,31" exported="true"/>
+    <image id="pu0xnq8" name="beibaowenzidi" folder="t5hdngu" qualityOption="source" file="pu0xnq8.png" size="105,18" scale="9grid" scale9grid="4,5,97,8" exported="true"/>
+    <image id="pu0xnq9" name="txtBg2" folder="t5hdngu" qualityOption="source" file="pu0xnq9.png" size="183,34" exported="true" scale="9grid" scale9grid="46,9,92,18"/>
+    <image id="cnepnqa" name="titlebg" folder="t5hdngu" qualityOption="source" file="cnepnqa.png" size="118,13" scale="9grid" scale9grid="30,2,58,5" exported="true"/>
+    <image id="cnepnqb" name="di" folder="t5hdngu" qualityOption="source" file="cnepnqb.png" size="1071,556" exported="true" scale="9grid" scale9grid="268,139,536,278"/>
+    <image id="zf9fnqc" name="selected" folder="x0conj5" qualityOption="source" file="zf9fnqc.png" size="64,62" scale="9grid" scale9grid="16,15,32,33" exported="true"/>
+    <component id="hymbnqd" name="CustomIconI" folder="t5hdnfn" file="hymbnqd.xml" exported="true"/>
+    <image id="s9mpnqe" name="x" folder="x0conj5" qualityOption="source" file="s9mpnqe.png" size="43,44" exported="true"/>
+    <component id="la7znqg" name="CustomSliderBar" folder="t5hdnfn" file="la7znqg.xml" exported="true"/>
+  </resources>
+  <publish name="Common" genCode="true"/>
+</packageDescription>

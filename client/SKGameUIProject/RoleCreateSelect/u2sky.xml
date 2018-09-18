@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1344,750" designImage="ui://5gey1uxreca839" designImageAlpha="12">
+  <controller name="c1" pages="0,,1,,2,,3," selected="0"/>
+  <displayList>
+    <component id="n0" name="button_back" src="u2sku" xy="51,592"/>
+    <component id="n8" name="label_name_input" src="u2sk11" xy="1000,489"/>
+    <component id="n9" name="button_random" src="t5hdnfq" pkg="0tyncec1" xy="1253,477" size="67,65">
+      <Button icon="ui://5gey1uxreca82l"/>
+    </component>
+    <image id="n24" name="image_skill_preview_bg" src="eca82k" xy="968,25" size="351,431"/>
+    <component id="n10" name="skill_preview_list" src="u2sk12" xy="997,303"/>
+    <loader id="n18" name="image_role_name" xy="1044,38" size="50,50" url="ui://5gey1uxri18p3u"/>
+    <image id="n19" name="image_attrbution_bg" src="eca82g" xy="984,63"/>
+    <text id="n13" name="label_profession_attr" xy="994,85" size="29,141" font="方正粗圆简体" fontSize="22" color="#e4e6f0" leading="0" autoSize="none" text="战士·肉盾"/>
+    <graph id="n14" name="image_role_3D_model" xy="608,480" size="100,100"/>
+    <component id="n27" name="model_touch" src="pp933k" xy="392,47" size="556,549"/>
+    <component id="n20" name="button_role0" src="x7u03h" xy="44,55">
+      <Button checked="true" controller="c1" page="0"/>
+    </component>
+    <component id="n21" name="button_role1" src="x7u03h" xy="9,179">
+      <Button controller="c1" page="1"/>
+    </component>
+    <component id="n22" name="button_role2" src="x7u03h" xy="11,303">
+      <Button controller="c1" page="2"/>
+    </component>
+    <component id="n23" name="button_role3" src="x7u03h" xy="41,427" touchable="false">
+      <Button checked="true"/>
+    </component>
+    <component id="n26" name="button_role_create" src="pp933j" xy="1041,552"/>
+    <text id="n28" name="label_career_desc" xy="1051,241" size="215,59" font="方正粗圆简体" fontSize="22" color="#e4e6f0" autoSize="none" text="一剑西来寒风啸&#xA;    满城霜花尽飘摇"/>
+  </displayList>
+</component>

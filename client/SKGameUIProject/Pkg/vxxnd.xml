@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="460,590" extention="Label">
+  <displayList>
+    <image id="n9" name="n1" src="gk0nni9" pkg="0tyncec1" xy="12,228" size="435,353" locked="true"/>
+    <image id="n0" name="n0" src="gk0nnia" pkg="0tyncec1" xy="121,14" locked="true"/>
+    <text id="n2" name="title" xy="132,19" size="196,40" locked="true" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text=""/>
+    <text id="n3" name="txtDesc" xy="35,71" size="390,60" locked="true" font="方正粗圆简体" fontSize="20" color="#43596b" vAlign="middle" autoSize="none" text=""/>
+    <component id="n4" name="cell1" src="gk0ng" xy="49,133">
+      <Label title="1"/>
+    </component>
+    <component id="n5" name="cell2" src="gk0ng" xy="182,133">
+      <Label title="2"/>
+    </component>
+    <component id="n6" name="cell3" src="gk0ng" xy="315,133">
+      <Label title="3"/>
+    </component>
+    <component id="n8" name="layer" src="t5hdnfw" pkg="0tyncec1" xy="17,235" size="427,342"/>
+  </displayList>
+</component>

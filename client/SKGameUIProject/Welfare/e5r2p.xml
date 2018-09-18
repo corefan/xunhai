@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="215,52" extention="Button">
+  <displayList>
+    <image id="n1" name="n1" src="x0conj0" pkg="0tyncec1" xy="0,-1" size="215,52"/>
+    <text id="n2" name="txtChange" xy="19,11" size="101,28" font="方正粗圆简体" fontSize="24" color="#fff9e3" ubb="true" strokeColor="#6d4f41" strokeSize="2" text="更换陵墓"/>
+    <loader id="n3" name="icon_cost" xy="121,0" size="50,50"/>
+    <text id="n4" name="txt_cost_num" xy="169,10" size="31,28" font="方正粗圆简体" fontSize="24" color="#fff9e3" strokeColor="#6d4f41" strokeSize="2" text="10"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

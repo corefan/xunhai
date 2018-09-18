@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="180,55" extention="Button">
+  <displayList>
+    <image id="n84" name="icon" src="i4ccy" xy="0,0" size="180,55"/>
+    <text id="n85" name="title" xy="10,9" size="158,34" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

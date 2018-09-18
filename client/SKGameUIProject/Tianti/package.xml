@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="mrcfhfsp" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="t5hd0" name="images" folder=""/>
+    <component id="t5hd1" name="TiantiPanel" folder="" file="t5hd1.xml" exported="true"/>
+    <component id="t5hd2" name="TiantiInfoUI" folder="" file="t5hd2.xml" exported="true"/>
+    <component id="t5hd3" name="TiantiItem" folder="" file="t5hd3.xml" exported="true"/>
+    <component id="t5hd4" name="TiantiRankUI" folder="" file="t5hd4.xml" exported="true"/>
+    <component id="t5hd5" name="TiantiAwardUI" folder="" file="t5hd5.xml" exported="true"/>
+    <component id="t5hd1h" name="TiantiTitleUI" folder="" file="t5hd1h.xml" exported="true"/>
+    <image id="t5hd1u" name="装饰花纹" folder="t5hd0" qualityOption="source" file="t5hd1u.png" size="101,7"/>
+    <image id="t5hd1w" name="星星2" folder="t5hd0" qualityOption="source" file="t5hd1w.png" size="46,46"/>
+    <image id="t5hd1x" name="星星" folder="t5hd0" qualityOption="source" file="t5hd1x.png" size="46,46" scale="tile"/>
+    <image id="t5hd1y" name="星星（彩色）" folder="t5hd0" qualityOption="source" file="t5hd1y.png" size="46,46" scale9grid="12,12,24,24"/>
+    <image id="t5hd1z" name="下底（1334X186）" folder="t5hd0" qualityOption="source" file="t5hd1z.png" size="473,23" scale="9grid" scale9grid="125,11,219,8"/>
+    <image id="t5hd20" name="天梯" folder="t5hd0" qualityOption="source" file="t5hd20.png" size="128,67"/>
+    <image id="t5hd21" name="天人积分进度条底" folder="t5hd0" qualityOption="source" file="t5hd21.png" size="152,152"/>
+    <image id="t5hd22" name="天人积分进度条" folder="t5hd0" qualityOption="source" file="t5hd22.png" size="120,120" scale9grid="30,30,60,60"/>
+    <image id="t5hd25" name="进度条发光" folder="t5hd0" qualityOption="source" file="t5hd25.png" size="24,24"/>
+    <image id="t5hd28" name="段位图标底框" folder="t5hd0" qualityOption="source" file="t5hd28.png" size="339,335" scale9grid="85,84,170,168"/>
+    <image id="t5hd2a" name="分割线-小" folder="t5hd0" qualityOption="source" file="t5hd2a.png" size="8,2" scale="tile"/>
+    <image id="t5hd2c" name="底（398X750）" folder="t5hd0" qualityOption="source" file="t5hd2c.png" size="141,18" scale="9grid" scale9grid="100,6,11,6"/>
+    <image id="t5hd2d" name="标识" folder="t5hd0" qualityOption="source" file="t5hd2d.png" size="176,114"/>
+    <image id="t5hd2e" name="文字底" folder="t5hd0" qualityOption="source" file="t5hd2e.png" size="15,14" scale="9grid" scale9grid="4,4,7,6"/>
+    <image id="t5hd2f" name="文字" folder="t5hd0" qualityOption="source" file="t5hd2f.png" size="186,39"/>
+    <image id="t5hd2g" name="列表选中(630X107)" folder="t5hd0" qualityOption="source" file="t5hd2g.png" size="264,107" scale="9grid" scale9grid="121,16,44,11"/>
+    <image id="t5hd2h" name="列表未选中(630X107)" folder="t5hd0" qualityOption="source" file="t5hd2h.png" size="264,107" scale="9grid" scale9grid="105,16,64,9"/>
+    <image id="t5hd2i" name="横向分割线-小" folder="t5hd0" qualityOption="source" file="t5hd2i.png" size="8,2" scale="tile"/>
+    <image id="t5hd2k" name="好友添加按钮" folder="t5hd0" qualityOption="source" file="t5hd2k.png" size="69,69"/>
+    <image id="t5hd2m" name="底" folder="t5hd0" qualityOption="source" file="t5hd2m.png" size="27,27" scale="9grid" scale9grid="8,8,11,11"/>
+    <image id="t5hd2n" name="底(666X750)" folder="t5hd0" qualityOption="source" file="t5hd2n.png" size="191,12" scale="9grid" scale9grid="150,5,21,2"/>
+    <component id="t5hd2p" name="TiantiBtnOpenInfo" folder="" file="t5hd2p.xml" exported="true"/>
+    <component id="t5hd2q" name="TiantiBtnOpenRank" folder="" file="t5hd2q.xml" exported="true"/>
+    <component id="t5hd2s" name="TiantiStar" folder="" file="t5hd2s.xml" exported="true"/>
+    <component id="t5hd2t" name="TiantiEdgeUI" folder="" file="t5hd2t.xml" exported="true"/>
+    <component id="t5hd2u" name="TiantiOwnerRankItem" folder="" file="t5hd2u.xml" exported="true"/>
+    <component id="t5hd2v" name="TiantiBtnClose" folder="" file="t5hd2v.xml" exported="true"/>
+    <component id="t5hd2w" name="TiantiLevelLogo" folder="" file="t5hd2w.xml" exported="true"/>
+    <image id="t5hd2x" name="竖排分割线-小" folder="t5hd0" qualityOption="source" file="t5hd2x.png" size="2,8" scale="tile"/>
+    <component id="t5hd2y" name="TiantiBar" folder="" file="t5hd2y.xml" exported="true"/>
+    <image id="z7y030" name="guanbianniu" folder="t5hd0" qualityOption="source" file="z7y030.png" size="109,44"/>
+    <image id="z7y031" name="cemiananniu" folder="t5hd0" qualityOption="source" file="z7y031.png" size="47,278"/>
+    <image id="z7y032" name="zhandouxinxi" folder="t5hd0" qualityOption="source" file="z7y032.png" size="30,93"/>
+    <image id="z7y033" name="paihangban" folder="t5hd0" qualityOption="source" file="z7y033.png" size="30,72"/>
+    <image id="z7y034" name="jiantou" folder="t5hd0" qualityOption="source" file="z7y034.png" size="33,55"/>
+    <image id="z7y038" name="di2" folder="t5hd0" qualityOption="source" file="z7y038.png" size="49,42" scale="9grid" scale9grid="13,11,26,22"/>
+    <image id="z7y039" name="di" folder="t5hd0" qualityOption="source" file="z7y039.png" size="50,53" scale="9grid" scale9grid="13,14,18,23"/>
+    <image id="apkz3a" name="pipeizhandou" folder="t5hd0" qualityOption="source" file="apkz3a.png" size="129,32" exported="true"/>
+    <image id="apkz3b" name="quxiaopipei" folder="t5hd0" qualityOption="source" file="apkz3b.png" size="130,32" exported="true"/>
+    <image id="apkz3c" name="pipeizhong" folder="t5hd0" qualityOption="source" file="apkz3c.png" size="339,338"/>
+    <component id="uo353d" name="PoPFinishTianti" folder="" file="uo353d.xml" exported="true"/>
+    <image id="uo353e" name="win" folder="" qualityOption="source" file="uo353e.png" size="390,250"/>
+    <image id="uo353f" name="3" folder="" qualityOption="source" file="uo353f.png" size="103,32" scale="9grid" scale9grid="26,8,52,16"/>
+    <image id="uo353g" name="fail" folder="" qualityOption="source" file="uo353g.png" size="390,250"/>
+    <image id="uo353h" name="8" folder="" qualityOption="source" file="uo353h.png" size="234,58"/>
+    <image id="uo353i" name="jiesuandi" folder="t5hd0" qualityOption="source" file="uo353i.png" size="612,356"/>
+    <image id="uo353j" name="shengli" folder="t5hd0" qualityOption="source" file="uo353j.png" size="180,46"/>
+    <image id="uo353k" name="shibai" folder="t5hd0" qualityOption="source" file="uo353k.png" size="181,46"/>
+    <image id="uo353l" name="zhuangshi" folder="t5hd0" qualityOption="source" file="uo353l.png" size="181,15"/>
+    <image id="heji3m" name="jindutiao" folder="t5hd0" qualityOption="source" file="heji3m.png" size="212,212"/>
+    <image id="heji3n" name="zhuangshi1" folder="t5hd0" qualityOption="source" file="heji3n.png" size="252,116"/>
+    <image id="heji3o" name="jifendi" folder="t5hd0" qualityOption="source" file="heji3o.png" size="74,26"/>
+    <image id="heji3p" name="zuanshi" folder="t5hd0" qualityOption="source" file="heji3p.png" size="71,43" exported="true"/>
+    <image id="heji3q" name="tianren" folder="t5hd0" qualityOption="source" file="heji3q.png" size="71,43" exported="true"/>
+    <image id="heji3r" name="qingtong" folder="t5hd0" qualityOption="source" file="heji3r.png" size="71,43" exported="true"/>
+    <image id="heji3s" name="huangjin" folder="t5hd0" qualityOption="source" file="heji3s.png" size="71,43" exported="true"/>
+    <image id="heji3t" name="bojin" folder="t5hd0" qualityOption="source" file="heji3t.png" size="71,43" exported="true"/>
+    <image id="heji3u" name="baiyin" folder="t5hd0" qualityOption="source" file="heji3u.png" size="71,43" exported="true"/>
+  </resources>
+  <publish name="Tianti"/>
+</packageDescription>

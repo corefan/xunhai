@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="529,44" extention="Button">
+  <displayList>
+    <image id="n27" name="n27" src="lnqzf6" pkg="0042gnit" xy="0,0"/>
+    <image id="n28" name="n28" src="lnqzf7" pkg="0042gnit" xy="177,9"/>
+    <text id="n29" name="n29" xy="210,11" size="105,27" font="方正粗圆简体" fontSize="20" color="#545e6c" text="有人私聊你"/>
+    <image id="n30" name="n30" src="lnqzf4" pkg="0042gnit" xy="319,11"/>
+    <text id="n31" name="numSiliaoTxt" xy="319,9" size="25,26" fontSize="16" color="#fffefe" align="center" vAlign="middle" autoSize="none" strokeColor="#871515" strokeSize="2" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.97"/>
+</component>

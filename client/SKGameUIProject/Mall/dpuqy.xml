@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <image id="n33" name="n33" src="x0coniw" pkg="0tyncec1" xy="412,101" size="551,585"/>
+    <image id="n38" name="hehua" src="w3wlnlc" pkg="0tyncec1" xy="563,147" size="267,159" aspect="true"/>
+    <text id="n6" name="opoInfo" xy="495,306" size="400,70" font="方正粗圆简体" fontSize="20" color="#545e6c" align="center" ubb="true" autoSize="none" text=""/>
+    <text id="n28" name="sortInfo" xy="496,382" size="399,34" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="限时7天、2折、热销"/>
+    <text id="n32" name="limitBuy" xy="610,568" size="164,29" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <image id="n41" name="n41" src="x0conjx" pkg="0tyncec1" xy="539,424" size="361,65"/>
+    <component id="n34" name="numBar" src="x0conk2" pkg="0tyncec1" xy="594,424">
+      <Label maxLength="3" keyboardType="2"/>
+    </component>
+    <component id="n35" name="buyBtn" src="tnbmnka" pkg="0tyncec1" xy="605,598" size="176,48">
+      <Button title="购买" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <text id="n5" name="popTitle" xy="505,267" size="387,30" group="n37" font="方正粗圆简体" fontSize="24" color="#1e67af" align="center" vAlign="middle" ubb="true" autoSize="height" strokeColor="#626161" strokeSize="2" text=""/>
+    <group id="n37" name="n37" xy="505,267" size="387,28" collapsed="true"/>
+    <component id="n40" name="labelBar" src="nf8gnkt" pkg="0tyncec1" xy="483,498" size="412,63"/>
+    <text id="n36" name="putawayText" xy="460,444" size="101,34" font="方正粗圆简体" fontSize="24" color="#2e3341" align="right" vAlign="middle" autoSize="none" text="数量:"/>
+    <component id="n43" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="833,103" size="135,87">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>

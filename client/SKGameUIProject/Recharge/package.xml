@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="wvu017cp" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="ts5t0" name="RechargeDailyPanel" folder="ts5t7" file="ts5t0.xml" exported="true"/>
+    <folder id="ts5t1" name="img" folder=""/>
+    <image id="ts5t2" name="860X601" folder="ts5t1" qualityOption="source" file="ts5t2.png" size="860,326" scale="9grid" scale9grid="150,202,584,72"/>
+    <image id="ts5t5" name="shuqiandi" folder="ts5t1" qualityOption="source" file="ts5t5.png" size="173,439"/>
+    <image id="ts5t6" name="meirichongzhi" folder="ts5t1" qualityOption="source" file="ts5t6.png" size="117,34"/>
+    <folder id="ts5t7" name="com" folder=""/>
+    <component id="ts5t8" name="RewardItem" folder="ts5t7" file="ts5t8.xml" exported="true"/>
+    <image id="ts5t9" name="1" folder="ts5t1" qualityOption="source" file="ts5t9.png" size="27,87"/>
+    <image id="ts5td" name="yilingqu" folder="ts5t1" qualityOption="source" file="ts5td.png" size="94,40"/>
+    <image id="ts5te" name="biaozhi" folder="ts5t1" qualityOption="source" file="ts5te.png" size="45,110"/>
+    <image id="ts5tf" name="6" folder="ts5t1" qualityOption="source" file="ts5tf.png" size="27,84"/>
+    <image id="ts5tg" name="5" folder="ts5t1" qualityOption="source" file="ts5tg.png" size="27,84"/>
+    <image id="ts5th" name="4" folder="ts5t1" qualityOption="source" file="ts5th.png" size="27,84"/>
+    <image id="ts5ti" name="3" folder="ts5t1" qualityOption="source" file="ts5ti.png" size="27,84"/>
+    <image id="ts5tj" name="2" folder="ts5t1" qualityOption="source" file="ts5tj.png" size="27,84"/>
+    <image id="ts5to" name="233X336" folder="ts5t1" qualityOption="source" file="ts5to.png" size="233,105" scale="9grid" scale9grid="59,80,118,10"/>
+    <component id="ts5tp" name="GrowUpPanel" folder="ts5t7" file="ts5tp.xml" exported="true"/>
+    <component id="ts5tr" name="JijinItem" folder="ts5t7" file="ts5tr.xml"/>
+    <component id="oyvms" name="AllWelfareItem" folder="ts5t7" file="oyvms.xml"/>
+    <image id="mj4wt" name="861X601" folder="ts5t1" qualityOption="source" file="mj4wt.png" size="861,327" scale="9grid" scale9grid="350,268,207,27"/>
+    <image id="ozvku" name="861X601_" folder="ts5t1" qualityOption="source" file="ozvku.png" size="861,327" scale="9grid" scale9grid="216,275,432,21"/>
+    <component id="pzhgu" name="SevenRechargeContent" folder="ts5t7" file="pzhgu.xml" exported="true"/>
+    <folder id="pzhgv" name="SevenRecharge" folder="ts5t1"/>
+    <image id="pzhgw" name="×Öɫ×ֺÅ" folder="pzhgv" qualityOption="source" file="pzhgw.png" size="1334,750"/>
+    <image id="pzhgx" name="ʾÒâͼ" folder="pzhgv" qualityOption="source" file="pzhgx.png" size="1334,750"/>
+    <image id="pzhgy" name="zaisong" folder="pzhgv" qualityOption="source" file="pzhgy.png" size="71,72" exported="true"/>
+    <image id="pzhgz" name="yifa" folder="pzhgv" qualityOption="source" file="pzhgz.png" size="71,72" exported="true"/>
+    <image id="pzhg10" name="song" folder="pzhgv" qualityOption="source" file="pzhg10.png" size="66,67" exported="true"/>
+    <image id="pzhg11" name="qianwangchongzhi" folder="pzhgv" qualityOption="source" file="pzhg11.png" size="131,32"/>
+    <image id="pzhg12" name="bg_qitianleiji" folder="pzhgv" qualityOption="source" file="pzhg12.png" size="861,602"/>
+    <image id="pzhg13" name="bg_liebiao" folder="pzhgv" qualityOption="source" file="pzhg13.png" size="267,365"/>
+    <image id="pzhg14" name="170X25" folder="pzhgv" qualityOption="source" file="pzhg14.png" size="170,2" scale="9grid" scale9grid="33,0,112,2"/>
+    <image id="pzhg15" name="100yuan" folder="pzhgv" qualityOption="source" file="pzhg15.png" size="145,26" exported="true"/>
+    <image id="pzhg16" name="60yuan" folder="pzhgv" qualityOption="source" file="pzhg16.png" size="133,26" exported="true"/>
+    <image id="pzhg17" name="30yuan" folder="pzhgv" qualityOption="source" file="pzhg17.png" size="133,26" exported="true"/>
+    <image id="pzhg18" name="bg_qitiandandu" folder="pzhgv" qualityOption="source" file="pzhg18.png" size="932,609"/>
+    <component id="pzhg19" name="SevenRechargeCell" folder="ts5t7" file="pzhg19.xml"/>
+    <component id="pzhg1a" name="SevenRechargeItem" folder="ts5t7" file="pzhg1a.xml"/>
+    <component id="i50c1b" name="SevenRechargePop" folder="ts5t7" file="i50c1b.xml" exported="true"/>
+    <image id="o9jh1c" name="btn_guanbi" folder="pzhgv" qualityOption="source" file="o9jh1c.png" size="50,52"/>
+    <image id="h2pe1d" name="leijichong" folder="pzhgv" qualityOption="source" file="h2pe1d.png" size="75,26"/>
+    <image id="h2pe1e" name="yuan" folder="pzhgv" qualityOption="source" file="h2pe1e.png" size="28,25"/>
+  </resources>
+  <publish name="Recharge"/>
+</packageDescription>

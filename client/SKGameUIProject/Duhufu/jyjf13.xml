@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="159,53" extention="Button">
+  <displayList>
+    <image id="n71" name="n71" src="x0conk1" pkg="0tyncec1" xy="0,0" size="159,53">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n101" name="title" xy="1,5" size="154,42" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" text="声望商店">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="0.80"/>
+</component>

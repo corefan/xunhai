@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="201,29" extention="Label">
+  <displayList>
+    <text id="n37" name="n37" xy="59,0" size="55,28" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="充值">
+      <relation target="n38" sidePair="right-left"/>
+    </text>
+    <text id="n38" name="title" xy="109,0" size="10,28" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n39" name="n39" xy="116,0" size="31,28" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="元">
+      <relation target="n38" sidePair="left-right"/>
+    </text>
+  </displayList>
+</component>

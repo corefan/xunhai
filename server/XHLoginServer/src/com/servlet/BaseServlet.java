@@ -4,7 +4,12 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.math.BigInteger;
+import java.net.URLEncoder;
 import java.nio.charset.Charset;
+import java.security.MessageDigest;
+import java.util.Calendar;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -23,7 +28,7 @@ public class BaseServlet extends HttpServlet {
 
 	
 	/** 初始化 */
-	public void initReqResp(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void initReqResp(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		req.setCharacterEncoding("UTF-8");
 
@@ -33,8 +38,22 @@ public class BaseServlet extends HttpServlet {
 		resp.setStatus(HttpServletResponse.SC_OK);
 	}
 	
+	/**
+	 * 发送信息
+	 */
+	protected void postData(HttpServletResponse response, String result) throws IOException {
+		response.setCharacterEncoding("UTF-8");
+		//response.setContentType("text/html");
+		response.setStatus(HttpServletResponse.SC_OK);
+		PrintWriter out = response.getWriter();
+		out.print(result);
+		out.flush();
+		out.close();
+	}
+	
+	
 	/** 解析消息 */
-	public JSONObject dealMsg(HttpServletRequest req) {
+	protected JSONObject dealMsg(HttpServletRequest req) {
 		
 		JSONObject jsonObject = null;
 		OutputStream os = null;
@@ -69,4 +88,36 @@ public class BaseServlet extends HttpServlet {
 
 		return jsonObject;
 	}
+	
+	/**
+	 * md5
+	 */
+	protected String getMD5(String str) {
+	    try {
+	        MessageDigest md = MessageDigest.getInstance("MD5");
+	        md.update(str.getBytes());
+	        return new BigInteger(1, md.digest()).toString(16);
+	    } catch (Exception e) {
+
+	    }
+	    
+	    return "";
+	}
+	
+	protected String GetEncode(String str)
+	{
+		try {
+			return URLEncoder.encode(str,"utf-8");
+		} catch (Exception e) {
+		}
+		return "";
+	}
+	
+	/**
+	 * 时间搓  秒
+	 */
+	protected int ParseNow()
+    {
+    	return (int) (Calendar.getInstance().getTimeInMillis() / 1000);
+    }
 }

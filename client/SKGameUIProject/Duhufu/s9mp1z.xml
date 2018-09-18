@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="934,686" extention="Label">
+  <displayList>
+    <image id="n0" name="n0" src="z03enle" pkg="0tyncec1" xy="-17,-7" size="961,701">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1" name="n1" src="cnepnqb" pkg="0tyncec1" xy="5,5" size="923,640">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n2" name="icon" xy="45,8" size="842,633" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <richtext id="n3" name="title" xy="45,37" size="841,589" font="方正粗圆简体" fontSize="22" ubb="true" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+    <component id="n4" name="pre" src="jyjf12" xy="36,648" size="75,33">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Label title="&lt;&lt;"/>
+    </component>
+    <component id="n5" name="nxt" src="jyjf12" xy="813,648" size="75,33">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Label title=">>"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="949,200">
+  <displayList>
+    <loader id="n0" name="Bg" xy="0,1" size="948,198" url="ui://wetrdvlhlgaa17" align="center" vAlign="middle"/>
+    <text id="n1" name="FbName" xy="26,19" size="125,28" font="方正粗圆简体" fontSize="24" color="#2e3341" text="热浪的沙漠"/>
+    <text id="n3" name="FbLevel" xy="27,58" size="141,24" font="方正粗圆简体" fontSize="20" color="#fe2626" text="怪物战力: 2888"/>
+    <component id="n7" name="EnterBtn" src="skqrnkp" pkg="0tyncec1" xy="827,30" size="109,137">
+      <Button title="挑战" titleColor="#2e3341" icon="ui://wetrdvlhftdy2n"/>
+    </component>
+    <component id="n11" name="rewardConn" src="t5hdnfx" pkg="0tyncec1" xy="29,191"/>
+    <image id="n10" name="imgGray" src="c18wnl9" pkg="0tyncec1" xy="0,-2" size="952,204"/>
+    <text id="n6" name="txtUnlock" xy="389,80" size="169,44" font="方正粗圆简体" fontSize="40" color="#ffffff" ubb="true" strokeColor="#1c1b1b" strokeSize="3" text="20级解锁"/>
+  </displayList>
+</component>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="215,282" initName="typeBar">
+  <displayList>
+    <image id="n21" name="n21" src="x0conjw" xy="0,2" size="215,282" group="n22" locked="true"/>
+    <component id="n7" name="t7" src="x0conk4" xy="12,11" group="n22" locked="true">
+      <Button title="7"/>
+    </component>
+    <component id="n8" name="t8" src="x0conk4" xy="77,11" group="n22" locked="true">
+      <Button title="8"/>
+    </component>
+    <component id="n9" name="t6" src="x0conk4" xy="142,76" group="n22" locked="true">
+      <Button title="6"/>
+    </component>
+    <component id="n10" name="t5" src="x0conk4" xy="77,76" group="n22" locked="true">
+      <Button title="5"/>
+    </component>
+    <component id="n11" name="t4" src="x0conk4" xy="12,76" group="n22" locked="true">
+      <Button title="4"/>
+    </component>
+    <component id="n12" name="t9" src="x0conk4" xy="142,11" group="n22" locked="true">
+      <Button title="9"/>
+    </component>
+    <component id="n13" name="t2" src="x0conk4" xy="77,141" group="n22" locked="true">
+      <Button title="2"/>
+    </component>
+    <component id="n14" name="t1" src="x0conk4" xy="12,141" group="n22" locked="true">
+      <Button title="1"/>
+    </component>
+    <component id="n15" name="t3" src="x0conk4" xy="142,141" group="n22" locked="true">
+      <Button title="3"/>
+    </component>
+    <component id="n17" name="t0" src="x0conk4" xy="77,206" group="n22" locked="true">
+      <Button title="0"/>
+    </component>
+    <component id="n16" name="tDo" src="x0conk4" xy="143,206" group="n22">
+      <Button title="退出"/>
+    </component>
+    <component id="n19" name="tDel" src="x0conk4" xy="12,206" group="n22">
+      <Button title="删除"/>
+    </component>
+    <group id="n22" name="n22" xy="0,2" size="215,282"/>
+  </displayList>
+</component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <graph id="n0" name="n0" xy="0,0" pivot="0.5,0.5" size="1334,750" scale="1.5,1.5" type="rect" lineSize="0" lineColor="#80000000" fillColor="#80000000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <image id="n1" name="n1" src="imszef" xy="361,168" group="n11"/>
+    <image id="n2" name="n2" src="imszeg" xy="568,162" group="n11"/>
+    <image id="n3" name="n3" src="imszec" xy="613,288" group="n11"/>
+    <component id="n4" name="btn1" src="skqrnkp" pkg="0tyncec1" xy="481,429" size="122,42" group="n11">
+      <Button title="还魂复活" titleColor="#000000" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n5" name="btn2" src="skqrnkp" pkg="0tyncec1" xy="603,429" size="122,42" group="n11">
+      <Button title="等待观战" titleColor="#000000" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n6" name="btn3" src="skqrnkp" pkg="0tyncec1" xy="727,429" size="122,42" group="n11">
+      <Button title="退出副本" titleColor="#000000" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <text id="n7" name="desc" xy="451,389" size="413,28" group="n11" font="方正粗圆简体" fontSize="20" color="#fff9b7" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n11" name="reliftPanel" xy="361,162" size="612,362" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n12" name="reliftBtn" src="cdsbej" xy="586,417">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>

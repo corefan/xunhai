@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,70" initName="0">
+  <displayList>
+    <image id="n0" name="n0" src="uchhp" xy="0,0"/>
+    <image id="n4" name="n4" src="c4eznl4" pkg="0tyncec1" xy="4,71" size="62,28"/>
+    <text id="n5" name="levelTxt" xy="1,73" size="69,28" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="2级&#xA;"/>
+    <graph id="n7" name="downEft" xy="32,32" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <loader id="n1" name="icon" xy="0,0" size="68,68" align="center" vAlign="middle" fill="scaleFree"/>
+    <graph id="n6" name="upEft" xy="32,32" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <image id="n3" name="select" src="uchhn" xy="-11,-7"/>
+  </displayList>
+</component>

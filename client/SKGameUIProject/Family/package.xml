@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="j7ibmhyp" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="i4cc0" name="Component" folder=""/>
+    <folder id="i4cc1" name="Image" folder=""/>
+    <component id="i4cc2" name="FamilyCreatePanel" folder="i4cck" file="i4cc2.xml" exported="true"/>
+    <folder id="i4cci" name="Creat" folder="i4cc1"/>
+    <folder id="i4ccj" name="Main" folder="i4cc1"/>
+    <folder id="i4cck" name="Creat" folder="i4cc0"/>
+    <folder id="i4ccl" name="Main" folder="i4cck"/>
+    <image id="i4ccm" name="1" folder="i4cci" qualityOption="source" file="i4ccm.png" size="323,32"/>
+    <image id="i4ccn" name="排名标识" folder="i4ccj" qualityOption="source" file="i4ccn.png" size="36,42"/>
+    <image id="i4cco" name="底图" folder="i4cci" qualityOption="source" file="i4cco.png" size="959,525"/>
+    <image id="i4ccp" name="按钮标识" folder="i4cci" qualityOption="source" file="i4ccp.png" size="24,22"/>
+    <image id="i4ccq" name="按钮" folder="i4cci" qualityOption="source" file="i4ccq.png" size="49,50" scale9grid="13,13,26,26"/>
+    <image id="i4ccr" name="创建家族界面" folder="i4cci" qualityOption="source" file="i4ccr.png" size="1334,750"/>
+    <image id="i4ccs" name="字色字号2" folder="i4ccj" qualityOption="source" file="i4ccs.png" size="1334,750"/>
+    <image id="i4cct" name="字色字号1" folder="i4cci" qualityOption="source" file="i4cct.png" size="1334,750"/>
+    <image id="i4ccu" name="家族管理" folder="i4ccj" qualityOption="source" file="i4ccu.png" size="1334,750"/>
+    <image id="i4ccv" name="放弃创建" folder="i4cci" qualityOption="source" file="i4ccv.png" size="1334,750"/>
+    <image id="i4ccw" name="创建家族提示" folder="i4cci" qualityOption="source" file="i4ccw.png" size="1334,750"/>
+    <image id="i4ccx" name="个人信息名字底" folder="i4ccj" qualityOption="source" file="i4ccx.png" size="259,35"/>
+    <image id="i4ccy" name="个人信息按钮(179X55)" folder="i4ccj" qualityOption="source" file="i4ccy.png" size="58,55" scale="9grid" scale9grid="16,17,25,22"/>
+    <image id="i4ccz" name="底框花纹(959X16)" folder="i4ccj" qualityOption="source" file="i4ccz.png" size="167,16" scale="9grid" scale9grid="42,4,84,8"/>
+    <image id="i4cc10" name="1(2)" folder="i4ccj" qualityOption="source" file="i4cc10.png" size="55,173"/>
+    <image id="i4cc11" name="6字色字号" folder="i4ccj" qualityOption="source" file="i4cc11.png" size="1334,750"/>
+    <image id="i4cc12" name="6" folder="i4ccj" qualityOption="source" file="i4cc12.png" size="1334,750"/>
+    <image id="i4cc13" name="5字色字号" folder="i4ccj" qualityOption="source" file="i4cc13.png" size="1334,750"/>
+    <image id="i4cc14" name="5" folder="i4ccj" qualityOption="source" file="i4cc14.png" size="1334,750"/>
+    <image id="i4cc15" name="4字色字号" folder="i4ccj" qualityOption="source" file="i4cc15.png" size="1334,750"/>
+    <image id="i4cc16" name="4" folder="i4ccj" qualityOption="source" file="i4cc16.png" size="1334,750"/>
+    <image id="i4cc17" name="3字色字号" folder="i4ccj" qualityOption="source" file="i4cc17.png" size="1334,750"/>
+    <image id="i4cc18" name="3" folder="i4ccj" qualityOption="source" file="i4cc18.png" size="1334,750"/>
+    <image id="i4cc19" name="2字色字号" folder="i4ccj" qualityOption="source" file="i4cc19.png" size="1334,750"/>
+    <image id="i4cc1a" name="2" folder="i4ccj" qualityOption="source" file="i4cc1a.png" size="1334,750"/>
+    <image id="i4cc1b" name="1字色字号" folder="i4ccj" qualityOption="source" file="i4cc1b.png" size="1334,750"/>
+    <image id="i4cc1c" name="1(3)" folder="i4ccj" qualityOption="source" file="i4cc1c.png" size="1334,750"/>
+    <component id="i4cc1j" name="BtnCreatPay" folder="i4cck" file="i4cc1j.xml"/>
+    <component id="i4cc1k" name="InputFName" folder="i4cck" file="i4cc1k.xml"/>
+    <component id="i4cc1o" name="CustomButton" folder="i4cck" file="i4cc1o.xml"/>
+    <component id="i4cc1p" name="FamilyMainPanel" folder="i4ccl" file="i4cc1p.xml" exported="true"/>
+    <component id="e9ze1r" name="FamilyCell" folder="i4ccl" file="e9ze1r.xml" exported="true"/>
+    <component id="e9ze1u" name="BtnGG" folder="i4ccl" file="e9ze1u.xml"/>
+    <component id="e9ze23" name="BtnDown" folder="i4ccl" file="e9ze23.xml"/>
+    <component id="e9ze24" name="BtnUp" folder="i4ccl" file="e9ze24.xml"/>
+    <image id="e9ze25" name="pen" folder="i4ccj" qualityOption="source" file="e9ze25.png" size="25,26" exported="true"/>
+    <component id="e9ze26" name="Pen" folder="i4ccl" file="e9ze26.xml"/>
+    <component id="e9ze27" name="FamilyItem" folder="i4ccl" file="e9ze27.xml" exported="true"/>
+    <component id="oh4u28" name="FamilyHYItem" folder="i4ccl" file="oh4u28.xml" exported="true"/>
+    <component id="oh4u29" name="btnSubInfo" folder="i4ccl" file="oh4u29.xml"/>
+    <component id="8s1o2a" name="btnBJ" folder="i4ccl" file="8s1o2a.xml"/>
+    <component id="8s1o2d" name="FamilySubCreatePanel" folder="i4cck" file="8s1o2d.xml" exported="true"/>
+    <component id="8s1o2e" name="FamilyComCreatePanel" folder="i4cck" file="8s1o2e.xml" exported="true"/>
+    <component id="8s1o2f" name="FamilyYQPanel" folder="i4cck" file="8s1o2f.xml" exported="true"/>
+    <component id="8s1o2g" name="FamilyPWPanel" folder="i4ccl" file="8s1o2g.xml" exported="true"/>
+    <component id="8s1o2h" name="FamilyGGPanel" folder="i4ccl" file="8s1o2h.xml" exported="true"/>
+    <component id="8s1o2i" name="FamilyHYPanel" folder="i4ccl" file="8s1o2i.xml" exported="true"/>
+    <component id="8s1o2j" name="FamilySubPanel" folder="i4ccl" file="8s1o2j.xml" exported="true"/>
+    <image id="olnb2k" name="gold" folder="i4ccj" qualityOption="source" file="olnb2k.png" size="43,38"/>
+    <component id="olnb2l" name="btnClose" folder="i4ccl" file="olnb2l.xml"/>
+    <image id="a4f92m" name="内有附件标识" folder="i4ccj" qualityOption="source" file="a4f92m.png" size="20,20"/>
+  </resources>
+  <publish name="Family" genCode="true"/>
+</packageDescription>

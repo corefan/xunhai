@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ixdopynl" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="hb6f0" name="Image" folder=""/>
+    <image id="hb6f7" name="x" folder="hb6f0" qualityOption="source" file="hb6f7.png" size="43,44" exported="true"/>
+    <component id="hb6f8" name="EquipmentInfoTips" folder="" file="hb6f8.xml" exported="true"/>
+    <component id="hb6f9" name="EquipmentInfoTipsTop" folder="" file="hb6f9.xml" exported="true"/>
+    <component id="hb6fb" name="TipsSplitLine" folder="" file="hb6fb.xml"/>
+    <component id="fqe0c" name="EquipmentInfoCompareTips" folder="" file="fqe0c.xml" exported="true"/>
+    <component id="qwdnl" name="PowerTips" folder="" file="qwdnl.xml" exported="true"/>
+    <image id="erysm" name="底" folder="hb6f0" qualityOption="source" file="erysm.png" size="285,27" exported="true"/>
+    <image id="erysn" name="底(2)" folder="hb6f0" qualityOption="source" file="erysn.png" size="285,28" exported="true"/>
+    <component id="m24po" name="AutoRunTips" folder="" file="m24po.xml" exported="true"/>
+    <folder id="d0fhp" name="example" folder=""/>
+    <image id="d0fhr" name="铭文技能TIP（字色字号）" folder="d0fhp" qualityOption="source" file="d0fhr.png" size="828,551"/>
+    <image id="d0fhs" name="确认提示tip" folder="d0fhp" qualityOption="source" file="d0fhs.png" size="1332,749"/>
+    <image id="u3j6w" name="auto_find" folder="hb6f0" qualityOption="source" file="u3j6w.png" size="217,83" exported="true"/>
+    <image id="vl9cx" name="1" folder="d0fhp" qualityOption="source" file="vl9cx.png" size="514,291"/>
+    <component id="vl9cy" name="RoleSkillTips" folder="" file="vl9cy.xml" exported="true"/>
+    <component id="6rikz" name="AutoFightTips" folder="" file="6rikz.xml" exported="true"/>
+    <image id="6rik10" name="auto_fight" folder="hb6f0" qualityOption="source" file="6rik10.png" size="217,83" exported="true"/>
+    <component id="owh811" name="EquipmentInfoTips_Extra" folder="" file="owh811.xml"/>
+    <component id="owh812" name="EquipmentInfoTips_Wakan" folder="" file="owh812.xml"/>
+    <component id="owh813" name="EquipmentInfoTips_Brand" folder="" file="owh813.xml"/>
+    <component id="owh815" name="EquipmentInfoTips_ExtraItem" folder="" file="owh815.xml"/>
+    <component id="owh816" name="EquipmentInfoTips_WakanItem" folder="" file="owh816.xml"/>
+    <image id="owh817" name="41123" folder="hb6f0" qualityOption="source" file="owh817.png" size="78,78"/>
+    <component id="owh818" name="EquipmentInfoTips_Base" folder="" file="owh818.xml"/>
+    <component id="owh819" name="EquipmentInfoTips_BaseItem" folder="" file="owh819.xml"/>
+    <component id="i9rp1a" name="EquipmentInfoTips_BrandItem" folder="" file="i9rp1a.xml" exported="true"/>
+    <component id="cbu01c" name="EquipmentInfoTips_BrandEmptyItem" folder="" file="cbu01c.xml" exported="true"/>
+    <component id="roks1d" name="LoginNameTips" folder="" file="roks1d.xml" exported="true"/>
+  </resources>
+  <publish name="Tips" genCode="true"/>
+</packageDescription>

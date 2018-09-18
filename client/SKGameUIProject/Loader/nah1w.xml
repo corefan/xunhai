@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <graph id="n2" name="imgBG" xy="0,0" size="1334,750" hideByEditor="true" type="rect" lineSize="0"/>
+    <image id="n1" name="imgGameName" src="kn8vz" xy="373,245"/>
+  </displayList>
+  <transition name="fadeIn">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="0" endValue="1" duration="48" ease="Quad.In"/>
+    <item time="0" type="Alpha" target="n2" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
+    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
+    <item time="48" type="Alpha" target="n0" tween="true" startValue="1" ease="Quad.In"/>
+    <item time="48" type="Alpha" target="n1" tween="true" startValue="1" ease="Linear"/>
+    <item time="48" type="Alpha" target="n2" tween="true" startValue="1" ease="Linear"/>
+  </transition>
+  <transition name="fadeOut">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="1" endValue="0" duration="48"/>
+    <item time="0" type="Alpha" target="n2" tween="true" startValue="1" endValue="0" duration="48" ease="Linear"/>
+    <item time="0" type="Alpha" target="n1" tween="true" startValue="1" endValue="0" duration="48" ease="Linear"/>
+    <item time="48" type="Alpha" target="n0" tween="true" startValue="0"/>
+    <item time="48" type="Alpha" target="n1" tween="true" startValue="0" ease="Linear"/>
+    <item time="48" type="Alpha" target="n2" tween="true" startValue="0" ease="Linear"/>
+  </transition>
+</component>

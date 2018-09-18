@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="486,335" opaque="false" extention="Button" designImageAlpha="35">
+  <controller name="c1" pages="2,,3," selected="0"/>
+  <displayList>
+    <image id="n12" name="bg_btn_extend" src="hudkb9" xy="0,40" group="n13"/>
+    <component id="n9" name="button_task" src="o6dhbj" xy="0,85" group="n13">
+      <Button checked="true" controller="c1" page="2"/>
+    </component>
+    <component id="n10" name="button_team" src="o6dhbi" xy="0,200" group="n13">
+      <Button controller="c1" page="3"/>
+    </component>
+    <component id="n11" name="taskConn" src="o6dhbk" xy="43,62" group="n13">
+      <gearDisplay controller="c1" pages="2"/>
+    </component>
+    <component id="n16" name="teamConn" src="t5hdnfw" pkg="0tyncec1" xy="43,60" size="284,252" group="n13">
+      <gearDisplay controller="c1" pages="3"/>
+    </component>
+    <image id="n17" name="teamTip" src="xnis91" pkg="0tyncec1" xy="25,219" group="n13" visible="false"/>
+    <group id="n13" name="group_need_move" xy="0,40" size="347,294" advanced="true"/>
+    <component id="n8" name="button_extend" src="o6dhbh" xy="0,40"/>
+  </displayList>
+  <Button/>
+  <transition name="effect_move_out">
+    <item time="0" type="XY" target="n13" tween="true" startValue="0,40" endValue="-347,40" duration="12"/>
+    <item time="12" type="XY" target="n13" tween="true" startValue="-347,40" ease="Quad.In"/>
+  </transition>
+  <transition name="effect_rotate_out">
+    <item time="0" type="Skew" target="n8" value="0,0"/>
+    <item time="0" type="XY" target="n8" value="0,40"/>
+    <item time="12" type="Skew" target="n8" value="0,180"/>
+    <item time="12" type="XY" target="n8" tween="true" startValue="42,40" ease="Quad.InOut"/>
+  </transition>
+  <transition name="effect_move_in">
+    <item time="0" type="XY" target="n13" tween="true" startValue="-347,40" endValue="0,40" duration="12"/>
+    <item time="12" type="XY" target="n13" tween="true" startValue="0,40" ease="Quad.In"/>
+  </transition>
+  <transition name="effect_rotate_in">
+    <item time="12" type="Skew" target="n8" value="0,0"/>
+    <item time="12" type="XY" target="n8" tween="true" startValue="0,40"/>
+  </transition>
+</component>

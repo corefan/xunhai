@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="529,44">
+  <displayList>
+    <component id="n0" name="btn_siliao" src="lnqz3m" xy="0,0"/>
+    <component id="n3" name="btnClose" src="skqrnkp" pkg="0tyncec1" xy="479,0" size="50,44">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="1" endValue="0.41" duration="18"/>
+    <item time="18" type="Alpha" target="n0" tween="true" startValue="0.41" endValue="1" duration="18"/>
+  </transition>
+</component>

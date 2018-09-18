@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,635" designImage="ui://wvu017cpts5t4" designImageOffsetX="-311" designImageOffsetY="-105" designImageAlpha="18">
+  <displayList>
+    <image id="n21" name="n21" src="pzhg18" xy="-12,8" hideByEditor="true" visible="false"/>
+    <image id="n15" name="n15" src="pzhg12" xy="21,4"/>
+    <image id="n3" name="n3" src="gk0nnid" pkg="0tyncec1" xy="0,28" size="20,588" scale="0.9,1"/>
+    <component id="n4" name="btnRechardDaily" src="skqrnkp" pkg="0tyncec1" xy="343,534" size="215,65">
+      <Button titleColor="#000000" icon="ui://0tyncec1dmzwnna"/>
+    </component>
+    <text id="n5" name="n5" xy="651,547" size="129,28" font="方正粗圆简体" fontSize="18" color="#ffa800" vAlign="middle" ubb="true" autoSize="none" text="已累计充值："/>
+    <text id="n7" name="rechardNumDaily" xy="758,550" size="110,22" font="方正粗圆简体" fontSize="18" color="#ffa800" vAlign="middle" ubb="true" autoSize="height" text="1000000"/>
+    <text id="n8" name="n8" xy="47,541" size="112,25" font="方正粗圆简体" fontSize="18" color="#1eff00" vAlign="middle" autoSize="none" strokeColor="#240000" strokeSize="2" text="活动时间："/>
+    <text id="n9" name="textTime" xy="129,541" size="182,25" font="方正粗圆简体" fontSize="18" color="#1eff00" vAlign="middle" ubb="true" autoSize="none" strokeColor="#240000" strokeSize="2" text="12月11日-12月17日">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n16" name="textDesc" xy="67,564" size="193,25" font="方正粗圆简体" fontSize="18" color="#1eff00" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#240000" strokeSize="2" text="(奖励通过邮件发放)">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n17" name="n17" xy="424,539" size="50,50" touchable="false" url="ui://wvu017cppzhg11" align="center" vAlign="middle"/>
+    <component id="n18" name="cell1" src="pzhg19" xy="38,157"/>
+    <component id="n19" name="cell2" src="pzhg19" xy="317,156"/>
+    <component id="n20" name="cell3" src="pzhg19" xy="596,155"/>
+  </displayList>
+</component>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="985,591" opaque="false" designImage="ui://zuudarvckxsydf" designImageOffsetX="-127" designImageOffsetY="-138" designImageAlpha="0">
+  <displayList>
+    <text id="n7" name="n7" xy="12,5" size="297,31" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="首次充值有额外元宝赠送！"/>
+    <component id="n36" name="cell101" src="kxsycx" xy="-16,12" group="n42">
+      <Button icon="ui://zuudarvckxsyct"/>
+    </component>
+    <group id="n42" name="n42" xy="-16,12" size="288,293"/>
+    <component id="n43" name="cell102" src="kxsycx" xy="224,12" group="n48">
+      <Button icon="ui://zuudarvckxsyct"/>
+    </component>
+    <group id="n48" name="n48" xy="224,12" size="288,293"/>
+    <component id="n50" name="cell103" src="kxsycx" xy="464,12" group="n55">
+      <Button icon="ui://zuudarvckxsyct"/>
+    </component>
+    <group id="n55" name="n55" xy="464,12" size="288,293"/>
+    <component id="n57" name="cell104" src="kxsycx" xy="705,12" group="n59">
+      <Button icon="ui://zuudarvckxsyct"/>
+    </component>
+    <group id="n59" name="n59" xy="705,12" size="288,293"/>
+    <component id="n60" name="cell105" src="kxsycn" xy="9,308" size="328,273" group="n61">
+      <Button icon="ui://zuudarvc10j1c7"/>
+    </component>
+    <group id="n61" name="n61" xy="9,308" size="328,273"/>
+    <component id="n29" name="cell106" src="kxsycn" xy="330,308" group="n31">
+      <Button icon="ui://zuudarvc10j1c7"/>
+    </component>
+    <group id="n31" name="n31" xy="330,308" size="328,278"/>
+    <component id="n32" name="cell107" src="kxsycn" xy="650,308" group="n34">
+      <Button icon="ui://zuudarvc10j1c7"/>
+    </component>
+    <group id="n34" name="n34" xy="650,308" size="328,278"/>
+  </displayList>
+</component>

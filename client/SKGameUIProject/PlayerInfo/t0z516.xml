@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <component id="n0" name="bg" src="u0dhbz" pkg="0tyncec1" xy="0,0"/>
+    <image id="n13" name="VerLine" src="d3t62p" pkg="0pzzz7o0" xy="751,86"/>
+    <component id="n2" name="RightBtnBar" src="pdi63" xy="1098,110"/>
+    <component id="n6" name="PlayerRole" src="pdi68" xy="459,94" size="226,597" group="n9"/>
+    <component id="n8" name="expProBar" src="pdi6c" xy="454,638" group="n9">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <image id="n10" name="barBg" src="pdi6f" xy="381,629" group="n9"/>
+    <text id="n11" name="PlayerLevel" xy="393,627" size="55,28" group="n9" font="方正粗圆简体" fontSize="24" text="15级"/>
+    <group id="n9" name="PlayerProp" xy="381,94" size="347,597" advanced="true" collapsed="true"/>
+    <component id="n12" name="PropInfo" src="cws9g" xy="764,80"/>
+    <component id="n14" name="PlayerEquipList" src="n1gaq" xy="175,180"/>
+    <image id="n15" name="NameBg" src="n1gas" xy="166,104" group="n17"/>
+    <text id="n16" name="PlayerName" xy="238,109" size="75,28" group="n17" font="方正粗圆简体" fontSize="24" color="#2e3341" text="角色名">
+      <relation target="n15" sidePair="center-center"/>
+    </text>
+    <group id="n17" name="PlayerNameGroup" xy="166,104" size="225,36" advanced="true" collapsed="true"/>
+  </displayList>
+</component>

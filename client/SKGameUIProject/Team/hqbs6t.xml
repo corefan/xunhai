@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="473,44" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n2" name="n0" src="jsucnhh" pkg="0tyncec1" xy="29,42" size="257,2" scale="1.4,1"/>
+    <image id="n0" name="selected" src="n3qsner" pkg="0tyncec1" xy="9,1" size="230,44" scale="2,1">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <richtext id="n1" name="title" xy="36,6" size="399,33" touchable="false" font="方正粗圆简体" fontSize="20" color="#3e3e3e" align="center" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="567,70" extention="Button" designImage="ui://s68puhqjhmasz" bgColor="#000000">
+  <displayList>
+    <image id="n3" name="bg" src="v18512" xy="0,0" size="567,70"/>
+    <loader id="n4" name="loaderState" xy="21,17" size="39,39" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n5" name="labelServerName" xy="82,13" size="321,45" font="方正粗圆简体" fontSize="28" color="#ffffff" vAlign="middle" autoSize="none" text=""/>
+    <image id="n7" name="imgSelectServer" src="hmas11" xy="407,19"/>
+    <image id="n8" name="n8" src="v2kx1g" xy="534,13"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.98"/>
+</component>

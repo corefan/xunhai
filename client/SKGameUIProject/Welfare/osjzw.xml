@@ -1,0 +1,12 @@
+<component size="144,64" extention="Button" initName="btn">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n5" name="icon" xy="0,0" size="144,64" touchable="false" url="ui://j7ibmhypi4cc1h" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="144,64" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

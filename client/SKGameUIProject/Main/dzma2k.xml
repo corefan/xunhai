@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="68,173" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="mrljh" xy="0,0" pivot="0.5,0.5"/>
+    <image id="n3" name="n3" src="mrlji" xy="21,58" pivot="0.5,0.5" rotation="180">
+      <gearLook controller="button" pages="1" values="1,0,0" default="1,180,0"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

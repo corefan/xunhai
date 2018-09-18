@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="175,490">
+  <controller name="c1" pages="0,,1,,2," selected="2"/>
+  <displayList>
+    <image id="n5" name="n5" src="xv56q" xy="2,-1" size="170,490"/>
+    <component id="n2" name="n2" src="syw818" xy="11,9">
+      <Button title="好友" selectedTitle="好友" controller="c1" page="0"/>
+    </component>
+    <component id="n3" name="n3" src="syw818" xy="11,89">
+      <Button title="工会" controller="c1" page="1"/>
+    </component>
+    <component id="n4" name="n4" src="syw818" xy="12,170">
+      <Button checked="true" title="我的组队" controller="c1" page="2"/>
+    </component>
+  </displayList>
+</component>

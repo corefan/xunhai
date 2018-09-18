@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="572,634">
+  <displayList>
+    <image id="n1" name="bg_01" src="o8xhy" xy="0,6" size="568,628"/>
+    <component id="n2" name="closeBtn" src="o8xhz" xy="521,0"/>
+    <image id="n4" name="bg_02" src="o8xh10" xy="25,94" size="518,508" visible="false"/>
+    <list id="n5" name="list" xy="33,142" size="502,421" overflow="scroll" margin="0,0,0,0" lineGap="5" defaultItem="ui://0tnseunohrbp1b">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n6" name="bg_head" src="o8xh11" xy="122,29"/>
+    <text id="n7" name="label" xy="254,39" size="63,30" font="方正粗圆简体" fontSize="26" color="#cdbf87" letterSpacing="3" text="组队"/>
+    <image id="n8" name="bg_03" src="o8xhn" xy="180,104" size="110,32" group="n11"/>
+    <image id="n9" name="bg_04" src="o8xhn" xy="289,104" size="110,32" group="n11" flip="hz"/>
+    <text id="n10" name="teamName" xy="193,105" size="197,26" group="n11" font="方正粗圆简体" fontSize="22" color="#cdbf87" letterSpacing="2" text="太阳出来我爬山坡"/>
+    <group id="n11" name="n11" xy="180,104" size="219,32"/>
+  </displayList>
+</component>

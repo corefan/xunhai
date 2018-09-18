@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="519,527" designImage="ui://qr7fvjxirj72c" designImageAlpha="0">
+  <displayList>
+    <image id="n2" name="bg0" src="xy1x8" xy="0,0" group="n6"/>
+    <image id="n0" name="bg1" src="xy1x6" xy="93,41" group="n6"/>
+    <image id="n1" name="bg2" src="xy1x7" xy="51,3" group="n6"/>
+    <group id="n6" name="groupBG" xy="0,0" size="519,527" advanced="true" collapsed="true"/>
+    <component id="n9" name="layer_items" src="t5hdnfx" pkg="0tyncec1" xy="0,0"/>
+    <component id="n7" name="btnComposition" src="rj72d" xy="187,484"/>
+    <graph id="n8" name="effect_root" xy="0,0" size="1,1"/>
+    <loader id="n10" name="loader_consume_icon" xy="209,425" size="39,36"/>
+    <text id="n11" name="label_consume_cnt" xy="247,430" size="196,31" font="方正粗圆简体" fontSize="24" color="#ffffff" ubb="true" autoSize="none" text=""/>
+  </displayList>
+</component>

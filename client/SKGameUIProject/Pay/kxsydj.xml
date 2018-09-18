@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="213,32" extention="Label">
+  <displayList>
+    <image id="n38" name="n38" src="10j1c1" xy="0,2" size="188,30" group="n42"/>
+    <text id="n39" name="n39" xy="16,2" size="99,28" group="n42" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="height" text="每天领">
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n40" name="title" xy="87,-1" size="75,36" group="n42" font="ui://0tyncec1i4ccnn4" fontSize="30" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="n39" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n41" name="n41" xy="142,2" size="71,28" group="n42" font="方正粗圆简体" fontSize="24" color="#2e3341" align="right" autoSize="height" text="元宝">
+      <relation target="" sidePair="right-right,top-top"/>
+    </text>
+    <group id="n42" name="n42" xy="0,-1" size="213,36"/>
+  </displayList>
+</component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="g35bobp2" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="l1qp0" name="Component" folder=""/>
+    <folder id="l1qp1" name="Image" folder=""/>
+    <image id="l1qp2" name="font_ylq" folder="l1qp1" qualityOption="source" file="l1qp2.png" size="107,61"/>
+    <image id="l1qp3" name="font_ljzx" folder="l1qp1" qualityOption="source" file="l1qp3.png" size="89,24"/>
+    <image id="l1qp6" name="title_bg" folder="l1qp1" qualityOption="source" file="l1qp6.png" size="863,152"/>
+    <image id="l1qp7" name="online_bg" folder="l1qp1" qualityOption="source" file="l1qp7.png" size="128,48"/>
+    <image id="l1qp8" name="在线奖励" folder="l1qp1" qualityOption="source" file="l1qp8.png" size="1334,750"/>
+    <component id="l1qp9" name="OnlineRewardContent" folder="l1qp0" file="l1qp9.xml" exported="true"/>
+    <component id="l1qpe" name="OnlineRewardItem" folder="l1qp0" file="l1qpe.xml" exported="true"/>
+    <component id="l1qpf" name="ButtonGet" folder="l1qp0" file="l1qpf.xml" exported="true"/>
+    <component id="e5r2g" name="TombContent" folder="l1qp0" file="e5r2g.xml" exported="true"/>
+    <image id="e5r2h" name="示意图2" folder="l1qp1" qualityOption="source" file="e5r2h.png" size="1334,750"/>
+    <image id="e5r2i" name="示意图" folder="l1qp1" qualityOption="source" file="e5r2i.png" size="1334,750"/>
+    <image id="e5r2j" name="bg_lmtb" folder="l1qp1" qualityOption="source" file="e5r2j.png" size="855,594"/>
+    <component id="e5r2k" name="TombCell" folder="l1qp0" file="e5r2k.xml" exported="true"/>
+    <image id="e5r2l" name="btn_mushi2" folder="l1qp1" qualityOption="source" file="e5r2l.png" size="139,118" exported="true"/>
+    <image id="e5r2m" name="btn_mushi1" folder="l1qp1" qualityOption="source" file="e5r2m.png" size="119,126" exported="true"/>
+    <image id="e5r2n" name="bg_tbxx" folder="l1qp1" qualityOption="source" file="e5r2n.png" size="233,493"/>
+    <image id="e5r2o" name="bg_170X287" folder="l1qp1" qualityOption="source" file="e5r2o.png" size="170,51" scale="9grid" scale9grid="43,36,86,10"/>
+    <component id="e5r2p" name="ChangeTombBtn" folder="l1qp0" file="e5r2p.xml"/>
+    <component id="e5r2q" name="TombRewardShow" folder="l1qp0" file="e5r2q.xml" exported="true"/>
+    <component id="osjzr" name="TombPopLayer" folder="l1qp0" file="osjzr.xml" exported="true"/>
+    <component id="osjzw" name="BtnGG" folder="" file="osjzw.xml"/>
+    <component id="jui0x" name="TurnContent" folder="l1qp0" file="jui0x.xml" exported="true"/>
+    <image id="jui0y" name="turn_示意图" folder="l1qp1" qualityOption="source" file="jui0y.png" size="1334,750"/>
+    <image id="jui0z" name="turn_zhuanpandi" folder="l1qp1" qualityOption="source" file="jui0z.png" size="555,526"/>
+    <image id="jui010" name="turn_zhuanpan" folder="l1qp1" qualityOption="source" file="jui010.png" size="450,450"/>
+    <image id="jui011" name="turn_zhizhen" folder="l1qp1" qualityOption="source" file="jui011.png" size="72,64"/>
+    <image id="jui012" name="turn_xuanzhong" folder="l1qp1" qualityOption="source" file="jui012.png" size="110,106"/>
+    <image id="jui013" name="turn_caidai" folder="l1qp1" qualityOption="source" file="jui013.png" size="555,526"/>
+    <image id="jui014" name="turn_btn_dianjichoujiang" folder="l1qp1" qualityOption="source" file="jui014.png" size="186,186"/>
+    <image id="jui015" name="turn_bg_ditu" folder="l1qp1" qualityOption="source" file="jui015.png" size="861,602"/>
+    <component id="jui016" name="TurnBg" folder="l1qp0" file="jui016.xml"/>
+    <component id="jui017" name="TurnRewardCell" folder="l1qp0" file="jui017.xml"/>
+    <component id="jui018" name="TurnHistoryCell" folder="l1qp0" file="jui018.xml" exported="true"/>
+    <image id="c8es19" name="wenzidi" folder="l1qp1" qualityOption="source" file="c8es19.png" size="376,32"/>
+  </resources>
+  <publish name="Welfare"/>
+</packageDescription>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="538,610" designImageAlpha="23">
+  <displayList>
+    <image id="n3" name="big_bg" src="q9hq9" xy="9,0" size="518,610"/>
+    <image id="n4" name="right_jiaobiao" src="q9hqa" xy="511,1"/>
+    <image id="n7" name="left_jiaobiao" src="q9hqa" xy="26,2" skew="0,180"/>
+    <image id="n25" name="bg" src="fue1u" xy="0,20"/>
+    <component id="n26" name="btnDecomposition" src="fue1x" xy="175,86">
+      <Button icon="ui://q13jjk9jfue1v"/>
+    </component>
+    <image id="n29" name="bottom_bg0" src="rj7210" xy="9,299" size="521,309"/>
+    <image id="n30" name="bottom_bg1" src="rj7211" xy="8,509"/>
+    <image id="n28" name="bottom_bg2" src="keyenis" pkg="0tyncec1" xy="12,302" size="511,202"/>
+    <image id="n9" name="bottom_bg3" src="q9hqb" xy="10,264"/>
+    <image id="n12" name="bottom_bg4" src="uedbnhx" pkg="0tyncec1" xy="22,430" size="495,2"/>
+    <image id="n17" name="bottom_bg5" src="q9hqf" xy="50,540"/>
+    <component id="n36" name="btnOneKeyDecomposition" src="tjdu14" xy="389,526" size="122,55">
+      <Button title="一键分解"/>
+    </component>
+    <component id="n19" name="btnTips" src="q9hqg" xy="39,533"/>
+    <component id="n32" name="layer_items" src="t5hdnfx" pkg="0tyncec1" xy="16,303" size="499,197"/>
+    <component id="n21" name="buttonTick0" src="fue1r" xy="129,541">
+      <Button title="白色" titleColor="#ffffff"/>
+    </component>
+    <component id="n22" name="buttonTick1" src="fue1r" xy="212,541">
+      <Button title="绿色" titleColor="#3dc576"/>
+    </component>
+    <component id="n23" name="buttonTick2" src="fue1r" xy="295,541">
+      <Button title="蓝色" titleColor="#66a7ff"/>
+    </component>
+    <text id="n27" name="labelDesc" xy="31,442" size="469,46" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" autoSize="none" text="分解装备可得注灵石"/>
+    <graph id="n31" name="effect_root1" xy="18,305" size="1,1"/>
+    <graph id="n33" name="effect_root2" xy="18,305" size="1,1"/>
+    <graph id="n34" name="effect_root3" xy="18,305" size="1,1"/>
+    <graph id="n35" name="effect_root4" xy="18,305" size="1,1"/>
+  </displayList>
+</component>

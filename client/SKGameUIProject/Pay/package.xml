@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="zuudarvc" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="10j1c0" name="Image" folder=""/>
+    <image id="10j1c1" name="wenzidi" folder="10j1c0" qualityOption="source" file="10j1c1.png" size="188,9" scale="9grid" scale9grid="47,3,94,3"/>
+    <image id="10j1c2" name="tuijian" folder="10j1c0" qualityOption="source" file="10j1c2.png" size="71,70"/>
+    <image id="10j1c4" name="kehuode2" folder="10j1c0" qualityOption="source" file="10j1c4.png" size="70,26"/>
+    <image id="10j1c5" name="kehuode1" folder="10j1c0" qualityOption="source" file="10j1c5.png" size="73,29"/>
+    <image id="10j1c6" name="big2" folder="10j1c0" qualityOption="source" file="10j1c6.png" size="329,279" scale9grid="0,0,6,6"/>
+    <image id="10j1c7" name="big1" folder="10j1c0" qualityOption="source" file="10j1c7.png" size="323,273" scale="tile"/>
+    <image id="10j1ca" name="zungui" folder="10j1c0" qualityOption="source" file="10j1ca.png" size="71,70"/>
+    <image id="10j1cb" name="yuanbao6" folder="10j1c0" qualityOption="source" file="10j1cb.png" size="197,160"/>
+    <image id="10j1cc" name="yuanbao5" folder="10j1c0" qualityOption="source" file="10j1cc.png" size="174,151"/>
+    <image id="10j1cd" name="yuanbao4" folder="10j1c0" qualityOption="source" file="10j1cd.png" size="184,137"/>
+    <image id="10j1ce" name="yuanbao3" folder="10j1c0" qualityOption="source" file="10j1ce.png" size="181,148"/>
+    <image id="10j1cf" name="yuanbao2" folder="10j1c0" qualityOption="source" file="10j1cf.png" size="165,123"/>
+    <image id="10j1cg" name="yuanbao1" folder="10j1c0" qualityOption="source" file="10j1cg.png" size="171,94"/>
+    <image id="10j1ch" name="youhui" folder="10j1c0" qualityOption="source" file="10j1ch.png" size="71,70"/>
+    <component id="kxsyci" name="PayPanel" folder="kxsycj" file="kxsyci.xml" exported="true"/>
+    <folder id="kxsycj" name="Component" folder=""/>
+    <component id="kxsycn" name="PayCellMonth" folder="kxsycj" file="kxsycn.xml"/>
+    <image id="kxsyct" name="big3" folder="10j1c0" qualityOption="source" file="kxsyct.png" size="288,293"/>
+    <image id="kxsycv" name="shouchong" folder="10j1c0" qualityOption="source" file="kxsycv.png" size="63,73"/>
+    <component id="kxsycx" name="PayCellSimple" folder="kxsycj" file="kxsycx.xml"/>
+    <component id="kxsycy" name="FirstSong" folder="kxsycj" file="kxsycy.xml"/>
+    <component id="kxsycz" name="ChongZhi" folder="kxsycj" file="kxsycz.xml"/>
+    <component id="kxsyd0" name="CanGetSimple" folder="kxsycj" file="kxsyd0.xml"/>
+    <component id="kxsyd1" name="CanGetMonth" folder="kxsycj" file="kxsyd1.xml"/>
+    <component id="kxsyd2" name="Red" folder="kxsycj" file="kxsyd2.xml"/>
+    <component id="kxsyd3" name="NowGet" folder="kxsycj" file="kxsyd3.xml"/>
+    <image id="kxsydf" name="示意图" folder="10j1c0" qualityOption="source" file="kxsydf.png" size="1334,750"/>
+    <image id="kxsydg" name="字色字号" folder="10j1c0" qualityOption="source" file="kxsydg.png" size="1334,750"/>
+    <component id="kxsydi" name="Red1" folder="kxsycj" file="kxsydi.xml"/>
+    <component id="kxsydj" name="Red2" folder="kxsycj" file="kxsydj.xml"/>
+    <image id="iw5wdl" name="3zhifubao" folder="10j1c0" qualityOption="source" file="iw5wdl.png" size="68,67"/>
+    <image id="iw5wdm" name="2weixin" folder="10j1c0" qualityOption="source" file="iw5wdm.png" size="68,67"/>
+    <image id="iw5wdn" name="1yinhangka" folder="10j1c0" qualityOption="source" file="iw5wdn.png" size="68,67"/>
+    <image id="iw5wdo" name="充值确认字色字号" folder="10j1c0" qualityOption="source" file="iw5wdo.png" size="1334,750"/>
+    <image id="iw5wdp" name="充值确认示意图" folder="10j1c0" qualityOption="source" file="iw5wdp.png" size="1334,750"/>
+    <image id="iw5wdr" name="weixuanzhong" folder="10j1c0" qualityOption="source" file="iw5wdr.png" size="36,36"/>
+    <image id="iw5wdt" name="btn_guanbi" folder="10j1c0" qualityOption="source" file="iw5wdt.png" size="40,40"/>
+    <component id="iw5wdu" name="PayCheckPanel" folder="kxsycj" file="iw5wdu.xml" exported="true"/>
+    <component id="iw5we0" name="CheckNum" folder="kxsycj" file="iw5we0.xml"/>
+    <component id="iw5we3" name="PayWayList" folder="kxsycj" file="iw5we3.xml"/>
+    <component id="iw5we4" name="BtnPayClose" folder="kxsycj" file="iw5we4.xml"/>
+    <image id="iw5we5" name="btn_1" folder="10j1c0" qualityOption="source" file="iw5we5.png" size="19,17" scale="9grid" scale9grid="5,5,9,7"/>
+    <component id="iw5we7" name="BtnPay" folder="kxsycj" file="iw5we7.xml"/>
+    <image id="i4cce9" name="xuanzhong" folder="10j1c0" qualityOption="source" file="i4cce9.png" size="36,36"/>
+    <image id="rmqhea" name="yuanbao0" folder="10j1c0" qualityOption="source" file="rmqhea.png" size="180,180"/>
+  </resources>
+  <publish name="Pay" genCode="true"/>
+</packageDescription>

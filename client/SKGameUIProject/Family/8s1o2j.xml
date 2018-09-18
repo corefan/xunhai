@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="413,297" designImageOffsetX="-544" designImageOffsetY="-153" designImageLayer="1">
+  <displayList>
+    <image id="n82" name="n82" src="z03enle" pkg="0tyncec1" xy="0,0" size="413,296"/>
+    <image id="n91" name="n91" src="i4ccx" xy="99,29"/>
+    <component id="n94" name="headIcon" src="z03enli" pkg="0tyncec1" xy="38,20"/>
+    <text id="n92" name="name" xy="127,31" size="180,30" font="方正粗圆简体" fontSize="24" color="#2e3341" bold="true" text="名字只有七个字"/>
+    <component id="n89" name="GRXX" src="oh4u29" xy="30,110">
+      <Button title="个人信息"/>
+    </component>
+    <component id="n85" name="YQZD" src="oh4u29" xy="212,110" size="180,55">
+      <Button title="邀请组队"/>
+    </component>
+    <component id="n86" name="FSXX" src="oh4u29" xy="30,167" size="180,55">
+      <Button title="发送信息"/>
+    </component>
+    <component id="n87" name="ZRZZ" src="oh4u29" xy="212,167" size="180,55">
+      <Button title="转让族长"/>
+    </component>
+    <component id="n88" name="QCJZ" src="oh4u29" xy="30,224" size="180,55">
+      <Button title="请出家族"/>
+    </component>
+  </displayList>
+</component>

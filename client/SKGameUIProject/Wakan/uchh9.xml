@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <component id="n0" name="bg" src="prinnn6" pkg="0tyncec1" xy="310,92" size="725,563">
+      <Label title="觉醒属性"/>
+    </component>
+    <image id="n1" name="n1" src="jsucnhf" pkg="0tyncec1" xy="356,159" size="623,420"/>
+    <text id="n2" name="noActiveLevel" xy="359,584" size="616,38" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="所有部位注灵等级达到要求以后，将永久获得注灵属性加成"/>
+    <list id="n3" name="list" xy="363,170" size="609,400" overflow="scroll" margin="0,0,0,0" defaultItem="ui://jh3vd6rkuchh6"/>
+  </displayList>
+</component>

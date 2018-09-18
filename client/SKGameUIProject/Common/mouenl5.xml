@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="379,132" initName="tipLayer">
+  <displayList>
+    <image id="n5" name="bg" src="eieknkn" xy="-6,-1" size="390,138">
+      <relation target="" sidePair="height-height"/>
+    </image>
+    <loader id="n1" name="bgRare" xy="0,4" size="375,124" touchable="false" fill="scaleFree" playing="false"/>
+    <text id="n35" name="txtName" xy="116,17" size="10,33" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" bold="true" text=""/>
+    <text id="n36" name="txtBind" xy="132,25" size="95,24" visible="false" font="方正粗圆简体" fontSize="18" color="#ded4fc" autoSize="height" text="(已绑定)">
+      <relation target="n35" sidePair="left-right"/>
+    </text>
+    <text id="n37" name="txtLev" xy="118,61" size="150,24" font="方正粗圆简体" fontSize="18" color="#ded4fc" vAlign="middle" autoSize="height" text=""/>
+    <text id="n38" name="txtSubType" xy="271,61" size="90,24" font="方正粗圆简体" fontSize="18" color="#ded4fc" align="center" vAlign="middle" autoSize="height" text="">
+      <relation target="n37" sidePair="top-top"/>
+    </text>
+    <text id="n39" name="txtCareer" xy="118,90" size="166,24" font="方正粗圆简体" fontSize="18" color="#ded4fc" vAlign="middle" autoSize="height" text=""/>
+  </displayList>
+</component>

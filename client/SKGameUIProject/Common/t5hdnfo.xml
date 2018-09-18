@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80" extention="Button" initName="icon">
+  <displayList>
+    <loader id="n0" name="bg" xy="0,0" size="80,80" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n1" name="icon" xy="0,0" size="80,80" align="center" vAlign="middle" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n2" name="title" xy="44,59" size="34,19" font="方正粗圆简体" fontSize="12" color="#fefefe" align="right" vAlign="middle" autoSize="none" strokeColor="#4e4e4e" text="">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

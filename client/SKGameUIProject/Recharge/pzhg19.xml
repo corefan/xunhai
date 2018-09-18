@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="267,365">
+  <displayList>
+    <image id="n0" name="n0" src="pzhg13" xy="0,0"/>
+    <loader id="n1" name="imgFlag" xy="-5,-10" size="50,50" url="ui://wvu017cppzhg10" align="center" vAlign="middle"/>
+    <loader id="n2" name="imgTitle" xy="105,1" size="50,50" hideByEditor="true" visible="false" url="ui://wvu017cppzhg17" align="center" vAlign="middle"/>
+    <image id="n3" name="n3" src="pzhg14" xy="48,322" size="170,25"/>
+    <text id="n4" name="txtCost" xy="74,321" size="85,26" font="方正粗圆简体" fontSize="22" color="#fff0f0" align="right" ubb="true" text="价值500">
+      <relation target="n5" sidePair="right-left"/>
+    </text>
+    <loader id="n5" name="imgCost" xy="159,307" size="50,50" vAlign="middle"/>
+    <loader id="n6" name="imgReward11" xy="80,82" size="50,50" group="n8" scale="2,2" align="center" vAlign="middle"/>
+    <text id="n7" name="txtReward11" xy="58,235" size="147,33" group="n8" font="方正粗圆简体" fontSize="22" color="#3e0101" align="center" vAlign="middle" autoSize="none" strokeColor="#fff9d4" strokeSize="2" text="物品名称X99"/>
+    <group id="n8" name="comReward1" xy="58,82" size="147,186" advanced="true"/>
+    <component id="n12" name="item31" src="pzhg1a" xy="22,45" group="n15"/>
+    <component id="n13" name="item32" src="pzhg1a" xy="22,121" group="n15"/>
+    <component id="n14" name="item33" src="pzhg1a" xy="23,194" group="n15"/>
+    <group id="n15" name="comReward3" xy="22,45" size="226,234" advanced="true"/>
+    <component id="n16" name="item21" src="pzhg1a" xy="21,76" group="n19"/>
+    <component id="n17" name="item22" src="pzhg1a" xy="21,177" group="n19"/>
+    <group id="n19" name="comReward2" xy="21,76" size="225,186" advanced="true" collapsed="true"/>
+    <text id="n20" name="txtRecNum" xy="125,13" size="10,4" font="ui://0tyncec1h2penq1" fontSize="12" vAlign="middle" text="12"/>
+    <image id="n21" name="n21" src="h2pe1d" xy="51,12"/>
+    <image id="n22" name="n22" src="h2pe1e" xy="134,13">
+      <relation target="n20" sidePair="left-right"/>
+    </image>
+  </displayList>
+</component>

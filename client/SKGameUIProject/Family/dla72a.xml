@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="977,623">
+  <controller name="TurntableController" pages="0,One,1,Two,2,Three,3,Four,4,Five,5,Six,6,Seven,7,Eight" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="smuc11" xy="-1,242"/>
+    <image id="n0" name="n0" src="smuc5" xy="128,4"/>
+    <image id="n2" name="n2" src="smuce" xy="774,331"/>
+    <image id="n3" name="n3" src="smucj" xy="770,558"/>
+    <text id="n4" name="n4" xy="786,560" size="92,35" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" autoSize="none" text="剩余次数"/>
+    <text id="n5" name="n5" xy="880,560" size="57,35" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" autoSize="none" text="1/2"/>
+    <text id="n6" name="n6" xy="105,43" size="48,337" font="方正粗圆简体" fontSize="22" align="right" letterSpacing="3" autoSize="none" text="抽奖次数每天零点刷新，"/>
+    <text id="n7" name="n7" xy="42,44" size="49,476" font="方正粗圆简体" fontSize="22" align="right" letterSpacing="3" autoSize="none" text="家族等级每集增加抽奖次数一次"/>
+    <component id="n8" name="n8" src="dla72b" xy="236,50">
+      <Button checked="true" icon="ui://sw9glvixdla72j" selectedIcon="ui://sw9glvixsmuc4" controller="TurntableController" page="0"/>
+    </component>
+    <component id="n9" name="n9" src="dla72b" xy="489,-53" rotation="45">
+      <Button checked="true" icon="ui://sw9glvixdla72j" selectedIcon="ui://sw9glvixsmuc4" controller="TurntableController" page="0"/>
+    </component>
+    <component id="n10" name="n10" src="dla72b" xy="739,55" rotation="90">
+      <Button checked="true" icon="ui://sw9glvixdla72j" selectedIcon="ui://sw9glvixsmuc4" controller="TurntableController" page="0"/>
+    </component>
+    <component id="n11" name="n11" src="dla72b" xy="841,308" rotation="135">
+      <Button checked="true" icon="ui://sw9glvixdla72j" selectedIcon="ui://sw9glvixsmuc4" controller="TurntableController" page="0"/>
+    </component>
+    <component id="n12" name="n12" src="dla72b" xy="733,560" rotation="180">
+      <Button checked="true" icon="ui://sw9glvixdla72j" selectedIcon="ui://sw9glvixsmuc4" controller="TurntableController" page="0"/>
+    </component>
+    <component id="n13" name="n13" src="dla72b" xy="478,660" rotation="-135">
+      <Button checked="true" icon="ui://sw9glvixdla72j" selectedIcon="ui://sw9glvixsmuc4" controller="TurntableController" page="0"/>
+    </component>
+    <component id="n14" name="n14" src="dla72b" xy="226,553" rotation="-90">
+      <Button checked="true" icon="ui://sw9glvixdla72j" selectedIcon="ui://sw9glvixsmuc4" controller="TurntableController" page="0"/>
+    </component>
+    <component id="n15" name="n15" src="dla72b" xy="125,300" rotation="-45">
+      <Button checked="true" icon="ui://sw9glvixdla72j" selectedIcon="ui://sw9glvixsmuc4" controller="TurntableController" page="0"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="429,312" designImageOffsetX="-539" designImageOffsetY="-145">
+  <displayList>
+    <image id="n0" name="n0" src="z03enle" pkg="0tyncec1" xy="5,9" size="413,295"/>
+    <image id="n2" name="n2" src="z03enlf" pkg="0tyncec1" xy="106,36" size="259,36"/>
+    <component id="n1" name="headIcon" src="z03enli" pkg="0tyncec1" xy="42,25"/>
+    <text id="n3" name="txt_playerName" xy="130,39" size="180,30" fontSize="24" color="#2e3341" bold="true" text="一二三四五六七"/>
+    <text id="n4" name="txt_family" xy="129,72" size="248,26" font="方正粗圆简体" fontSize="22" color="#2f7f88" autoSize="height" text="家族：家族名字七个字"/>
+    <component id="n5" name="btn_info" src="l2b8nnq" pkg="0tyncec1" xy="33,115" size="182,58">
+      <Button title="个人信息" icon="ui://0tyncec1keyenis"/>
+    </component>
+    <component id="n6" name="btn_Pk" src="tnbmnka" pkg="0tyncec1" xy="215,115" size="182,58" visible="false" touchable="false">
+      <Button title="切磋邀请" icon="ui://0tyncec1keyenis"/>
+    </component>
+    <component id="n7" name="btn_team" src="l2b8nnq" pkg="0tyncec1" xy="33,173" size="182,58">
+      <Button title="组队邀请" icon="ui://0tyncec1keyenis"/>
+    </component>
+    <component id="n8" name="btn_family" src="l2b8nnq" pkg="0tyncec1" xy="215,173" size="182,58">
+      <Button title="家族邀请" icon="ui://0tyncec1keyenis"/>
+    </component>
+    <component id="n9" name="btn_black" src="l2b8nnq" pkg="0tyncec1" xy="33,231" size="182,58" visible="false" touchable="false">
+      <Button title="拉黑名单" icon="ui://0tyncec1keyenis"/>
+    </component>
+    <component id="n10" name="btn_delete" src="l2b8nnq" pkg="0tyncec1" xy="215,115" size="182,58">
+      <Button title="删除好友" icon="ui://0tyncec1keyenis"/>
+    </component>
+  </displayList>
+</component>

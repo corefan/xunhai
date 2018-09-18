@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="217,480" extention="Button" designImageOffsetX="-819" designImageOffsetY="-176" designImageAlpha="33" designImageLayer="1">
+  <displayList>
+    <image id="n18" name="n18" src="i4ccy" xy="0,0" size="216,479"/>
+    <graph id="n23" name="modelConn" xy="108,383" pivot="0.5,0.5" anchor="true" size="29,25"/>
+    <image id="n9" name="n9" src="i4cc10" xy="6,8" group="n19"/>
+    <text id="n14" name="state" xy="17,26" size="35,19" group="n19" font="方正粗圆简体" fontSize="15" color="#5fff53" ubb="true" text="在线"/>
+    <text id="n13" name="chenghao" xy="19,61" size="30,112" group="n19" font="方正粗圆简体" fontSize="20" color="#ffffff" align="center" leading="2" autoSize="height" text="称号五个字"/>
+    <group id="n19" name="n19" xy="6,8" size="55,173" collapsed="true"/>
+    <text id="n15" name="lv" xy="120,12" size="88,25" font="方正粗圆简体" fontSize="20" color="#495e70" align="right" autoSize="none" text="Lv. 390"/>
+    <component id="n22" name="jiaHao" src="a8b4nlx" pkg="0tyncec1" xy="69,199" visible="false"/>
+    <text id="n16" name="name" xy="31,419" size="171,28" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" autoSize="none" text="名字只有七个字"/>
+    <text id="n20" name="offTime" xy="44,445" size="144,27" font="方正粗圆简体" fontSize="20" color="#54595e" align="center" autoSize="none" text="离线1天10小时"/>
+  </displayList>
+  <Button/>
+</component>

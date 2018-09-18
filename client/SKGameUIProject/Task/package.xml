@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ioaemb0c" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="hudk0" name="image" folder=""/>
+    <folder id="hudk1" name="component" folder=""/>
+    <image id="hudk3" name="bg" folder="hudk0" qualityOption="source" file="hudk3.png" size="711,477"/>
+    <image id="hudk4" name="zs" folder="hudk0" qualityOption="source" file="hudk4.png" size="28,12"/>
+    <component id="hudk9" name="TaskPanel" folder="hudk1" file="hudk9.xml" exported="true"/>
+    <component id="hudkh" name="AwardItem" folder="hudk1" file="hudkh.xml" exported="true"/>
+    <component id="hudki" name="AwardList" folder="hudk1" file="hudki.xml" exported="true"/>
+    <component id="v8b1q" name="TaskEffect" folder="hudk1" file="v8b1q.xml" exported="true"/>
+    <image id="f6sar" name="字色字号" folder="hudk0" qualityOption="source" file="f6sar.png" size="1334,750"/>
+  </resources>
+  <publish name="Task" genCode="true"/>
+</packageDescription>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="221,329" extention="Button" designImage="ui://c76fl6zbkzve2" designImageOffsetX="-350" designImageOffsetY="-217">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bgSmallIcon" src="kzve4" xy="40,146" group="n5">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n1" name="bgSmallSelected" src="kzve3" xy="39,114" group="n5">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <loader id="n2" name="smallIcon" xy="53,155" size="146,146" group="n5" align="center" vAlign="middle"/>
+    <image id="n3" name="bgSmallName" src="c4eznl4" pkg="0tyncec1" xy="39,293" size="175,36" group="n5"/>
+    <text id="n4" name="labelSmallName" xy="41,297" size="173,29" group="n5" font="方正粗圆简体" fontSize="22" ubb="true" autoSize="none" strokeColor="#874642" strokeSize="2" text=""/>
+    <group id="n5" name="smallType" xy="39,114" size="175,215" advanced="true"/>
+    <image id="n6" name="bgBigIcon" src="kzve6" xy="0,52" group="n11">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n7" name="bgBigSelected" src="kzve5" xy="0,14" group="n11">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <loader id="n8" name="bigIcon" xy="81,136" size="50,30" group="n11" align="center" vAlign="middle" autoSize="true"/>
+    <image id="n9" name="bgBigName" src="c4eznl4" pkg="0tyncec1" xy="19,202" size="175,36" group="n11"/>
+    <text id="n10" name="labelBigName" xy="21,206" size="173,29" group="n11" font="方正粗圆简体" fontSize="22" ubb="true" autoSize="none" strokeColor="#874642" strokeSize="2" text=""/>
+    <group id="n11" name="bigType" xy="0,14" size="210,236" advanced="true"/>
+    <graph id="n12" name="effectRoot" xy="0,0" size="1,1"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

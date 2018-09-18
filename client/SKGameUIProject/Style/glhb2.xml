@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="946,590">
+  <displayList>
+    <image id="n6" name="n6" src="eiek6" xy="272,41" size="486,308" aspect="true"/>
+    <image id="n3" name="listBg" src="gk0nni9" pkg="0tyncec1" xy="15,43" size="289,544" group="n4"/>
+    <component id="n2" name="list" src="t5hdnfw" pkg="0tyncec1" xy="0,51" size="320,525" group="n4"/>
+    <group id="n4" name="n4" xy="0,43" size="320,544"/>
+    <graph id="n5" name="role3D" xy="504,484" size="100,100"/>
+    <image id="n7" name="n7" src="gk0nnia" pkg="0tyncec1" xy="728,0" group="n9"/>
+    <text id="n8" name="name" xy="754,9" pivot="0.5,0.5" size="165,30" group="n9" font="方正粗圆简体" fontSize="26" color="#008c9c" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n9" name="n9" xy="728,0" size="217,52" collapsed="true"/>
+    <image id="n13" name="n13" src="uchhnl1" pkg="0tyncec1" xy="728,64" size="218,34" group="n26"/>
+    <image id="n18" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="728,96" size="218,152" group="n26"/>
+    <list id="n19" name="proList" xy="736,102" size="200,140" group="n26" touchable="false" selectionMode="none" overflow="scroll" margin="0,0,0,0" defaultItem="ui://jqof8qcoeiekb"/>
+    <text id="n20" name="proName" xy="729,67" pivot="0.5,0.5" size="212,29" group="n26" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="属性加成&#xA;"/>
+    <group id="n26" name="n26" xy="728,64" size="218,184" collapsed="true"/>
+    <image id="n12" name="n12" src="uchhnl1" pkg="0tyncec1" xy="728,256" size="218,34" group="n30"/>
+    <text id="n21" name="effectName" xy="731,259" pivot="0.5,0.5" size="212,29" group="n30" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="时装效果&#xA;"/>
+    <image id="n23" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="728,289" size="218,68" group="n30"/>
+    <text id="n25" name="eftTxt" xy="730,292" pivot="0.5,0.5" size="212,58" group="n30" font="方正粗圆简体" fontSize="22" color="#00620e" align="center" ubb="true" autoSize="none" text="&#xA;"/>
+    <group id="n30" name="n30" xy="728,256" size="218,101" collapsed="true"/>
+    <image id="n11" name="n11" src="uchhnl2" pkg="0tyncec1" xy="728,364" size="218,34" group="n31"/>
+    <text id="n22" name="descName" xy="730,368" pivot="0.5,0.5" size="212,29" group="n31" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="描述&#xA;"/>
+    <image id="n24" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="728,397" size="218,130" group="n31"/>
+    <text id="n27" name="descTxt" xy="731,400" pivot="0.5,0.5" size="212,124" group="n31" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" ubb="true" autoSize="none" text=""/>
+    <group id="n31" name="n31" xy="728,364" size="218,163"/>
+    <component id="n32" name="allBtn" src="tnbmnka" pkg="0tyncec1" xy="767,534" size="150,56">
+      <Button title="装备" icon="ui://0tyncec1x0conj1" selectedIcon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n33" name="touch" src="t5hdnfs" pkg="0tyncec1" xy="302,3" size="425,590"/>
+    <text id="n34" name="getInfo" xy="418,542" pivot="0.5,0.5" size="228,29" font="方正粗圆简体" fontSize="24" color="#ffc36d" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#003253" strokeSize="2" text="激活可预览&#xA;"/>
+  </displayList>
+</component>

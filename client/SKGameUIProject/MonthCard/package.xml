@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="7gr86wlk" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="iqif0" name="image" folder=""/>
+    <folder id="iqif1" name="component" folder=""/>
+    <image id="iqif2" name="字色字号" folder="iqif0" qualityOption="source" file="iqif2.png" size="1334,750"/>
+    <image id="iqif3" name="示意图" folder="iqif0" qualityOption="source" file="iqif3.png" size="1334,750"/>
+    <image id="iqif4" name="anniuwenzi" folder="iqif0" qualityOption="source" file="iqif4.png" size="134,36"/>
+    <image id="iqif5" name="1" folder="iqif0" qualityOption="source" file="iqif5.png" size="855,596"/>
+    <component id="iqif6" name="MonthCardPan" folder="iqif1" file="iqif6.xml" exported="true"/>
+    <image id="iqif7" name="dmzwg" folder="iqif0" qualityOption="source" file="iqif7.png" size="129,32" exported="true"/>
+    <image id="iqif8" name="dmzwe" folder="iqif0" qualityOption="source" file="iqif8.png" size="95,32" exported="true"/>
+  </resources>
+  <publish name="MonthCard"/>
+</packageDescription>

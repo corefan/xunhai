@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="162,58" extention="Button" designImageAlpha="80">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="img_btn" src="x0conj1" pkg="0tyncec1" xy="0,0" size="162,58">
+      <gearDisplay controller="button" pages="0,1"/>
+    </image>
+    <text id="n1" name="title" xy="15,14" size="134,31" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" text="合成"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

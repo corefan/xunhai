@@ -8,7 +8,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,7 +20,6 @@ import com.constant.CacheConstant;
 import com.domain.Account;
 import com.service.IAccountService;
 import com.service.ISmsService;
-import com.util.CommonUtil;
 import com.util.LogUtil;
 
 /**
@@ -29,7 +27,7 @@ import com.util.LogUtil;
  * @author jiangqin
  * @date 2017-7-20
  */
-public class SendSmsServlet extends HttpServlet{
+public class SendSmsServlet extends BaseServlet{
 
 	private static final long serialVersionUID = 2396999795398462861L;
 	
@@ -61,7 +59,7 @@ public class SendSmsServlet extends HttpServlet{
 		IAccountService accountService = GCCContext.getInstance().getServiceCollection().getAccountService();
 		ISmsService smsService = GCCContext.getInstance().getServiceCollection().getSmsService();
 		
-		JSONObject jsonObject = CommonUtil.dealMsg(req);
+		JSONObject jsonObject = this.dealMsg(req);
 		if(jsonObject == null) return;
 		String telePhone = jsonObject.getString("telePhone");
 		
@@ -69,7 +67,7 @@ public class SendSmsServlet extends HttpServlet{
 		if(telePhone == null || telePhone.trim().equals("")){
 			//1:参数有误
 			result.put("result", 1);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}
 		
@@ -77,7 +75,7 @@ public class SendSmsServlet extends HttpServlet{
 		if(acc != null){
 			//2:该手机号已经绑定其他账号
 			result.put("result", 2);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}
 		
@@ -87,7 +85,7 @@ public class SendSmsServlet extends HttpServlet{
 		
 	    if(sendSmsResponse.getCode() != null && !sendSmsResponse.getCode().equals("OK")) {
 		    result.put("result", 3);
-		    CommonUtil.postData(resp, result.toString());
+		    this.postData(resp, result.toString());
 		 	return;
 	    }
 		
@@ -102,7 +100,7 @@ public class SendSmsServlet extends HttpServlet{
 	    
 		result.put("result", 0);
 		result.put("bizId", sendSmsResponse.getBizId());
-		CommonUtil.postData(resp, result.toString());
+		this.postData(resp, result.toString());
 	}
 	
 	

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="c76fl6zb" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="kzve0" name="Component" folder=""/>
+    <folder id="kzve1" name="Image" folder=""/>
+    <image id="kzve3" name="btn_small_2" folder="kzve1" qualityOption="source" file="kzve3.png" size="173,197"/>
+    <image id="kzve4" name="btn_small" folder="kzve1" qualityOption="source" file="kzve4.png" size="173,165"/>
+    <image id="kzve5" name="btn_big_2" folder="kzve1" qualityOption="source" file="kzve5.png" size="210,236"/>
+    <image id="kzve6" name="btn_big" folder="kzve1" qualityOption="source" file="kzve6.png" size="210,198"/>
+    <image id="kzve7" name="bg_1" folder="kzve1" qualityOption="source" file="kzve7.png" size="861,602"/>
+    <image id="kzve8" name="字色字号" folder="kzve1" qualityOption="source" file="kzve8.png" size="1334,750"/>
+    <component id="kzve9" name="TotalRechargeUI" folder="kzve0" file="kzve9.xml" exported="true"/>
+    <component id="kzveb" name="TotalRechargeItem" folder="kzve0" file="kzveb.xml" exported="true"/>
+    <image id="100rni" name="1350601" folder="kzve1" qualityOption="source" file="100rni.png" size="231,182" exported="true"/>
+    <image id="100rnj" name="1350101" folder="kzve1" qualityOption="source" file="100rnj.png" size="231,182" exported="true"/>
+    <image id="100rnk" name="1250601" folder="kzve1" qualityOption="source" file="100rnk.png" size="231,182" exported="true"/>
+    <image id="100rnl" name="1250101" folder="kzve1" qualityOption="source" file="100rnl.png" size="231,182" exported="true"/>
+    <image id="100rnm" name="1150601" folder="kzve1" qualityOption="source" file="100rnm.png" size="231,182" exported="true"/>
+    <image id="100rnn" name="1150101" folder="kzve1" qualityOption="source" file="100rnn.png" size="231,182" exported="true"/>
+    <image id="jgb0no" name="示意图" folder="kzve1" qualityOption="source" file="jgb0no.png" size="1334,750"/>
+    <image id="jgb0np" name="jiantou" folder="kzve1" qualityOption="source" file="jgb0np.png" size="51,86"/>
+  </resources>
+  <publish name="TotalRechargeUI" genCode="true"/>
+</packageDescription>

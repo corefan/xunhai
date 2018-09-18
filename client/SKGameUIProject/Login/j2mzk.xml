@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageAlpha="44">
+  <displayList>
+    <component id="n0" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <image id="n1" name="bg" src="j2mza" xy="414,156" size="492,524"/>
+    <image id="n2" name="imgLogo" src="j2mzb" xy="584,187" visible="false"/>
+    <component id="n12" name="userNameItem" src="j2mzh" xy="445,300"/>
+    <component id="n3" name="passwordItem" src="j2mzh" xy="446,371" size="432,57"/>
+    <component id="n5" name="btnLogin" src="tnbmnka" pkg="0tyncec1" xy="450,446" size="420,60">
+      <Button title="登录" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzf"/>
+    </component>
+    <component id="n18" name="btnBind" src="tnbmnka" pkg="0tyncec1" xy="451,521" size="420,60">
+      <Button title="游客绑定" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzc"/>
+    </component>
+    <component id="n20" name="btnForgetPassword" src="tnbmnka" pkg="0tyncec1" xy="779,387" size="89,23">
+      <Button titleColor="#e5e5e5" icon="ui://0qk3a0fjv2kx1f"/>
+    </component>
+    <component id="n15" name="accountScrollView" src="j2mzu" xy="447,304" size="428,119" hideByEditor="true"/>
+    <component id="n16" name="btnComboBox" src="j2mzv" xy="816,306" hideByEditor="true"/>
+    <component id="n17" name="btnClose" src="t5hdnfq" pkg="0tyncec1" xy="833,176" size="60,60" hideByEditor="true">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+    <component id="n11" name="btnResetPassword" src="j2mzm" xy="784,610" hideByEditor="true">
+      <relation target="n1" sidePair="bottom-bottom,right-right"/>
+      <Button title="修改密码" titleColor="#ffffff"/>
+    </component>
+  </displayList>
+</component>

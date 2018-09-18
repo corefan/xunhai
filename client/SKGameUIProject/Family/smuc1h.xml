@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="124,480">
+  <controller name="FamilyTabControl" pages="0,Info,1,Member,2,Welfare,3,Mineral" selected="0"/>
+  <displayList>
+    <component id="n5" name="Info" src="smuc1o" xy="1,0">
+      <Button checked="true" icon="ui://sw9glvixsmuc7" selectedIcon="ui://sw9glvixsmuc8" controller="FamilyTabControl" page="0"/>
+    </component>
+    <component id="n6" name="Member" src="smuc1o" xy="1,95">
+      <Button icon="ui://sw9glvixsmucv" selectedIcon="ui://sw9glvixsmucw" controller="FamilyTabControl" page="1"/>
+    </component>
+    <component id="n7" name="Welfare" src="smuc1o" xy="1,190">
+      <Button icon="ui://sw9glvixsmucq" selectedIcon="ui://sw9glvixsmucr" controller="FamilyTabControl" page="2"/>
+    </component>
+    <component id="n8" name="Mineral" src="smuc1o" xy="1,285">
+      <Button icon="ui://sw9glvixsmuck" selectedIcon="ui://sw9glvixsmucl" controller="FamilyTabControl" page="3"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="481,282">
+  <displayList>
+    <image id="n0" name="n0" src="qjbsniq" pkg="0tyncec1" xy="0,0" size="481,282" group="n13"/>
+    <component id="n1" name="headIcon" src="t5hdnfp" pkg="0tyncec1" xy="51,29" size="105,110" group="n13"/>
+    <component id="n3" name="bnt1" src="qjbso" xy="51,150" size="177,55" group="n13"/>
+    <text id="n7" name="playerName" xy="162,62" size="185,38" group="n13" font="方正粗圆简体" fontSize="20" color="#495e70" align="center" vAlign="middle" autoSize="none" text="你好的说法">
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n8" name="groupName" xy="161,103" size="185,38" group="n13" font="方正粗圆简体" fontSize="20" color="#495e70" align="center" vAlign="middle" autoSize="none" text="帮派 无">
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n9" name="bnt2" src="qjbso" xy="260,150" size="177,55" group="n13"/>
+    <component id="n10" name="bnt3" src="qjbso" xy="51,213" size="177,55" group="n13"/>
+    <component id="n11" name="bnt4" src="qjbso" xy="260,213" size="177,55" group="n13"/>
+    <group id="n13" name="n13" xy="0,0" size="481,282"/>
+  </displayList>
+</component>

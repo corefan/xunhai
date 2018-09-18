@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <image id="n28" name="n28" src="uo353i" xy="368,203"/>
+    <graph id="n19" name="vRole3D" xy="662,275" size="1,1" group="n9" touchable="false"/>
+    <image id="n1" name="n1" src="uo353f" xy="431,298" size="162,41" group="n9"/>
+    <image id="n2" name="n2" src="uo353f" xy="269,298" size="162,41" group="n9" flip="hz"/>
+    <text id="n8" name="victoryText" xy="320,301" size="224,33" group="n9" font="方正粗圆简体" fontSize="20" color="#c6d6db" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <loader id="n26" name="victoryBg" xy="637,214" size="50,50" group="n9" url="ui://mrcfhfspuo353j" align="center" vAlign="middle"/>
+    <group id="n9" name="victory" xy="269,214" size="418,125" visible="false" advanced="true" collapsed="true"/>
+    <graph id="n18" name="dRole3D" xy="662,275" size="1,1" group="n14" touchable="false"/>
+    <image id="n11" name="n11" src="uo353f" xy="438,295" size="162,41" group="n14"/>
+    <image id="n12" name="n12" src="uo353f" xy="276,295" size="162,41" group="n14" flip="hz"/>
+    <text id="n13" name="victoryText_2" xy="327,301" size="224,33" group="n14" font="方正粗圆简体" fontSize="20" color="#c6d6db" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <loader id="n27" name="defeatedBg" xy="639,217" size="50,50" group="n14" url="ui://mrcfhfspuo353k" align="center" vAlign="middle"/>
+    <group id="n14" name="defeated" xy="276,217" size="413,119" visible="false" advanced="true" collapsed="true"/>
+    <loader id="n25" name="imgTimeOut" xy="639,165" size="50,50" url="ui://mrcfhfspuo353h" align="center" vAlign="middle"/>
+    <image id="n29" name="n29" src="uo353l" xy="576,313"/>
+    <text id="n30" name="txtHaoshi" xy="600,283" size="128,26" font="方正粗圆简体" fontSize="22" color="#ffffff" text="耗时:    50秒"/>
+    <text id="n31" name="txtJifen" xy="601,332" size="54,26" font="方正粗圆简体" fontSize="22" color="#ffffff" text="积分:"/>
+    <text id="n32" name="txtJifenAdd" xy="683,332" size="39,26" font="方正粗圆简体" fontSize="22" color="#33ff38" text="+25"/>
+    <component id="n34" name="btnQueding" src="l2b8nnq" pkg="0tyncec1" xy="605,458" size="124,49">
+      <Button title="确定" icon="ui://0tyncec1ea8vnmp"/>
+    </component>
+    <component id="n35" name="awardContainer" src="t5hdnfx" pkg="0tyncec1" xy="442,349"/>
+    <loader id="n36" name="iconJifenFlag" xy="734,332" size="50,50" scale="1.5,1.5"/>
+    <text id="n37" name="txtLiansheng" xy="801,331" size="83,30" font="方正粗圆简体" fontSize="26" color="#33ff38" text="三连胜"/>
+  </displayList>
+</component>

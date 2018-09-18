@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="90,90" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n2" name="quality" xy="0,0" size="90,90" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <loader id="n9" name="shuiYin" xy="1,1" size="90,90" url="ui://0oudtuxpgv0l3m" align="center" vAlign="middle"/>
+    <loader id="n5" name="icon" xy="6,6" size="78,78" align="center" vAlign="middle"/>
+    <text id="n3" name="levelLabel" xy="63,67" size="19,16" font="方正粗圆简体" fontSize="12" color="#fefeff" align="center" vAlign="middle" text="00">
+      <relation target="n2" sidePair="right-right"/>
+    </text>
+    <loader id="n4" name="conpareFlag" xy="2,2" size="16,17" url="ui://0tyncec1s7fmnlr" fill="scale"/>
+    <image id="n8" name="mask" src="uwggde" pkg="0tyncec1" xy="-6,-6">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n10" name="wakanLevel" xy="16,58" size="68,28" font="ui://0tyncec1hhg0eg" fontSize="12" align="right" vAlign="middle" autoSize="none" text="+11"/>
+    <image id="n11" name="red" src="xnis91" pkg="0tyncec1" xy="72,0"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

@@ -1,0 +1,13 @@
+<component size="90,53" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="jci2i" xy="0,0" size="90,53">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n1" name="n1" src="jci2j" xy="0,0" size="90,53">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n2" name="title" xy="15,2" size="69,43" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" autoSize="none" text="一级"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

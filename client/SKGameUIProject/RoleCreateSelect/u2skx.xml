@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="95,95" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="image_skill_border" src="u2skc" xy="0,0" size="95,95">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n2" name="icon" xy="3,3" size="89,89" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="n1" sidePair="width-width,height-height"/>
+      <relation target="n1" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

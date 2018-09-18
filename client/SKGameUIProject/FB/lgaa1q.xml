@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="150,70" pivot="0.5,0.5" extention="Button">
+  <displayList>
+    <loader id="n0" name="Bg" xy="0,0" size="150,69" url="ui://0tyncec1n3qsneq" fill="scaleFree"/>
+    <text id="n1" name="title" xy="49,21" size="53,31" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" text="组队"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

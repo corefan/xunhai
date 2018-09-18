@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,37" extention="Label" initName="tipPane">
+  <displayList>
+    <image id="n0" name="bg" src="hrgcnng" pkg="0tyncec1" xy="-17,-18" size="436,73">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <richtext id="n1" name="title" xy="3,2" size="395,29" font="方正粗圆简体" fontSize="22" color="#999999" ubb="true" autoSize="height" text="说明：">
+      <relation target="" sidePair="width-width,top-top"/>
+    </richtext>
+  </displayList>
+  <relation target="n1" sidePair="height-height"/>
+</component>

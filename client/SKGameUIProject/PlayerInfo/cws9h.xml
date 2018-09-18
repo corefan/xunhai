@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="295,23">
+  <displayList>
+    <text id="n0" name="PropName" xy="0,0" size="65,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="属性名">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <text id="n1" name="PropValue" xy="222,0" size="71,24" font="方正粗圆简体" fontSize="20" color="#3370b7" text="000000">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <image id="n2" name="line" src="n1gao" xy="-2,21">
+      <relation target="" sidePair="width-width"/>
+    </image>
+  </displayList>
+</component>

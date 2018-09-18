@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,635" designImageOffsetX="-311" designImageOffsetY="-104">
+  <controller name="fenyeTab" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n21" name="n21" src="ozvku" xy="24,3" size="861,601"/>
+    <image id="n3" name="n3" src="gk0nnid" pkg="0tyncec1" xy="0,31"/>
+    <component id="n4" name="btnBuyJijin" src="skqrnkp" pkg="0tyncec1" xy="657,122" size="216,65">
+      <Button title="购买基金" titleColor="#000000" icon="ui://jn83skxkf6311w"/>
+    </component>
+    <text id="n6" name="n6" xy="61,225" size="159,26" font="方正粗圆简体" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" text="本服购买人数："/>
+    <text id="n7" name="pepleBuyNum" xy="216,225" size="66,26" font="方正粗圆简体" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text="9999"/>
+    <component id="n8" name="tab0_btnFenyeJijin" src="sw74nm0" pkg="0tyncec1" xy="32,165" size="175,48">
+      <Button checked="true" title="成长基金" titleColor="#000000" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="fenyeTab" page="0"/>
+    </component>
+    <component id="n9" name="tab1_btnFenyeAll" src="sw74nm0" pkg="0tyncec1" xy="210,165" size="173,49">
+      <Button title="全民福利" titleColor="#000000" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="fenyeTab" page="1"/>
+    </component>
+    <list id="n10" name="jijinList" xy="39,257" size="834,336" layout="flow_hz" overflow="scroll" scrollBarFlags="128" margin="0,0,0,0" lineItemCount="2" defaultItem="ui://wvu017cpts5tr">
+      <gearDisplay controller="fenyeTab" pages="0"/>
+    </list>
+    <list id="n17" name="allWelFareList" xy="38,256" size="833,337" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" margin="0,0,0,0" defaultItem="ui://wvu017cpoyvms">
+      <gearDisplay controller="fenyeTab" pages="1"/>
+    </list>
+    <loader id="n18" name="redTipUp" xy="36,169" size="21,20" url="ui://0tyncec1xnis91"/>
+    <loader id="n19" name="redTipAll" xy="216,169" size="21,20" url="ui://0tyncec1xnis91"/>
+  </displayList>
+</component>

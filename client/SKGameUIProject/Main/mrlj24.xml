@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="732,797">
+  <controller name="btnC" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n4" name="btnLeftMenu" src="mrlj25" xy="296,169">
+      <Button checked="true"/>
+    </component>
+    <image id="n1" name="bg" src="mrlj1d" xy="0,84" size="297,689" group="n5"/>
+    <image id="n3" name="bg2" src="mrlj23" xy="-4,25" group="n5"/>
+    <component id="n7" name="btnFriend" src="mrlj2a" xy="20,125" group="n5"/>
+    <component id="n8" name="btnTask" src="mrlj2i" xy="157,125" group="n5"/>
+    <component id="n9" name="btnDuel" src="mrlj2b" xy="20,255" group="n5"/>
+    <component id="n10" name="btnSkill" src="mrlj2c" xy="157,255" group="n5"/>
+    <component id="n11" name="btnSmelt" src="mrlj2d" xy="20,385" group="n5"/>
+    <component id="n12" name="btnRank" src="mrlj2e" xy="157,385" group="n5"/>
+    <component id="n13" name="btnGuide" src="mrlj2f" xy="20,515" group="n5"/>
+    <component id="n14" name="btnClan" src="mrlj2g" xy="157,515" group="n5"/>
+    <group id="n5" name="n5" xy="-4,25" size="302,748"/>
+  </displayList>
+</component>

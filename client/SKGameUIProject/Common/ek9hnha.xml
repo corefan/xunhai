@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="88,88" extention="Button" initName="goodsItem">
+  <displayList>
+    <loader id="n0" name="bg" xy="0,0" size="88,88" touchable="false" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n1" name="icon" xy="0,0" size="88,88" touchable="false" align="center" vAlign="middle" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n2" name="title" xy="2,57" size="84,27" font="方正粗圆简体" fontSize="23" color="#e5e5e5" align="right" vAlign="middle" ubb="true" autoSize="none" strokeColor="#2e4552" text="">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </text>
+    <image id="n3" name="red" src="xnis91" xy="65,6" visible="false">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+    <text id="n4" name="wakanLevel" xy="35,58" size="51,28" font="ui://0tyncec1hhg0eg" fontSize="12" align="right" vAlign="middle" autoSize="none" text=""/>
+    <loader id="n5" name="leftTopLoader" xy="0,0" size="41,40" align="center" vAlign="middle" fill="scaleFree"/>
+    <loader id="n6" name="mask" xy="4,4" size="80,80" visible="false" touchable="false" url="ui://0tyncec1mcq1nns" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="n1" sidePair="width-width,height-height"/>
+      <relation target="n1" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>

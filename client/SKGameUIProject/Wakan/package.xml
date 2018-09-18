@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="jh3vd6rk" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="uchh4" name="com" folder=""/>
+    <component id="uchh6" name="AwakePanelItem" folder="uchh4" file="uchh6.xml" exported="true"/>
+    <component id="uchh9" name="AwakePanel" folder="uchh4" file="uchh9.xml" exported="true"/>
+    <component id="uchhb" name="ProgessBar" folder="uchh4" file="uchhb.xml"/>
+    <component id="uchhc" name="WakanCostItem" folder="uchh4" file="uchhc.xml" exported="true"/>
+    <component id="uchhe" name="WakanPanel" folder="uchh4" file="uchhe.xml" exported="true"/>
+    <image id="uchhg" name="zhuangshi" folder="uchhi" qualityOption="source" file="uchhg.png" size="538,247"/>
+    <folder id="uchhi" name="Image" folder=""/>
+    <image id="uchhj" name="kuang" folder="uchhi" qualityOption="source" file="uchhj.png" size="462,249"/>
+    <image id="uchhk" name="beijinghuawen" folder="uchhi" qualityOption="source" file="uchhk.png" size="495,477"/>
+    <image id="uchhl" name="anniu" folder="uchhi" qualityOption="source" file="uchhl.png" size="93,83"/>
+    <image id="uchhm" name="youbianhuawen" folder="uchhi" qualityOption="source" file="uchhm.png" size="433,77"/>
+    <image id="uchhn" name="xuanzhong" folder="uchhi" qualityOption="source" file="uchhn.png" size="91,86"/>
+    <image id="uchhp" name="kuang2" folder="uchhi" qualityOption="source" file="uchhp.png" size="70,70"/>
+    <component id="nkol1j" name="WakanSelectItem" folder="uchh4" file="nkol1j.xml" exported="true"/>
+    <component id="nkol1k" name="WakanSelectItems" folder="uchh4" file="nkol1k.xml" exported="true"/>
+    <component id="nkol1m" name="WakanProperty" folder="uchh4" file="nkol1m.xml" exported="true"/>
+    <image id="rgh01p" name="awakeBtn12" folder="uchhi" qualityOption="source" file="rgh01p.png" size="29,27" scale="9grid" scale9grid="8,7,13,13" gridTile="15"/>
+    <image id="rgh01q" name="awakeBtn22" folder="uchhi" qualityOption="source" file="rgh01q.png" size="19,21" scale="9grid" scale9grid="5,6,9,9"/>
+    <component id="rgh01r" name="WakanCostItemSelectPanel" folder="uchh4" file="rgh01r.xml" exported="true"/>
+  </resources>
+  <publish name="Wakan" genCode="true"/>
+</packageDescription>

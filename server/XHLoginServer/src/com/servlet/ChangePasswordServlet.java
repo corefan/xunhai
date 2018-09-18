@@ -6,7 +6,6 @@ package com.servlet;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -16,7 +15,6 @@ import com.common.GCCContext;
 import com.common.MD5Service;
 import com.domain.Account;
 import com.service.IAccountService;
-import com.util.CommonUtil;
 import com.util.LogUtil;
 
 /**
@@ -24,7 +22,7 @@ import com.util.LogUtil;
  * @author jiangqin
  * @date 2017-9-20
  */
-public class ChangePasswordServlet  extends HttpServlet{
+public class ChangePasswordServlet  extends BaseServlet{
 
 	private static final long serialVersionUID = 1681377961924517250L;
 
@@ -66,7 +64,7 @@ public class ChangePasswordServlet  extends HttpServlet{
 				||sign == null || sign.trim().equals("")){
 			//1:参数有误
 			result.put("result", 1);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}
 		
@@ -75,7 +73,7 @@ public class ChangePasswordServlet  extends HttpServlet{
 		if (!realSign.equalsIgnoreCase(sign)){
 			//1:参数有误
 			result.put("result", 1);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}
 		
@@ -83,21 +81,21 @@ public class ChangePasswordServlet  extends HttpServlet{
 		if(account == null){
 			//2:账号有误
 			result.put("result", 2);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}		
 		
 		if(!account.getPassWord().equals(oldPwd)){
 			//2:旧密码有误
 			result.put("result", 3);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}
 		
 		if(newPwd.trim().length() < 6 || newPwd.trim().length() > 15){
 			//4:密码长度有误
 			result.put("result", 4);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}
 		
@@ -106,6 +104,6 @@ public class ChangePasswordServlet  extends HttpServlet{
 		accountService.updateAccount(account);
 		
 		result.put("result", 0);
-		CommonUtil.postData(resp, result.toString());
+		this.postData(resp, result.toString());
 	}
 }

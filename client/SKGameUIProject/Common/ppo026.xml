@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="212,212" pivot="0.5,0.5" anchor="true" opaque="false" scroll="both">
+  <displayList>
+    <loader id="n3" name="bg" xy="29,29" pivot="0.5,0.5" size="155,155" url="ui://0tyncec1ppo02i" align="center" vAlign="middle"/>
+    <component id="n0" name="joystick" src="ppo02g" xy="106,106" pivot="0.5,0.5" anchor="true">
+      <Button icon="ui://0tyncec1ppo02h"/>
+    </component>
+    <graph id="n1" name="joystick_touch" xy="0,0" pivot="0,1" size="214,214" type="rect" lineSize="0" fillColor="#00000000">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </graph>
+  </displayList>
+</component>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="756,660" extention="Label">
+  <displayList>
+    <image id="n5" name="img_bg" src="ci33f" xy="-11,1" size="774,659"/>
+    <image id="n16" name="n16" src="j67wnhe" pkg="0tyncec1" xy="25,61" size="708,585"/>
+    <image id="n10" name="n10" src="j67wnhe" pkg="0tyncec1" xy="46,70" size="455,48">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <text id="n11" name="txtName" xy="53,73" size="440,43" input="true" prompt="请在此输入联盟名称，最多包含4个汉字 " maxLength="4" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="">
+      <relation target="n10" sidePair="width-width"/>
+    </text>
+    <component id="n14" name="btnCreate" src="jyjfz" xy="512,67" size="187,55">
+      <Button title="创建联盟"/>
+    </component>
+    <component id="n15" name="close" src="t5hdnfq" pkg="0tyncec1" xy="706,-4" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+    <image id="n20" name="n20" src="gk0nnia" pkg="0tyncec1" xy="163,5" size="430,52"/>
+    <text id="n17" name="title" xy="193,12" size="368,37" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" text="联盟"/>
+    <image id="n28" name="n28" src="cnepnqb" pkg="0tyncec1" xy="32,166" size="696,218"/>
+    <image id="n23" name="n23" src="vhgh4" xy="35,124" size="687,30"/>
+    <text id="n24" name="label1" xy="71,125" size="594,30" font="方正粗圆简体" fontSize="24" autoSize="none" text="联盟列表"/>
+    <image id="n25" name="n25" src="vhgh4" xy="35,388" size="687,30"/>
+    <text id="n26" name="label2" xy="71,389" size="594,30" font="方正粗圆简体" fontSize="24" autoSize="none" text="联盟请求"/>
+    <image id="n29" name="n29" src="cnepnqb" pkg="0tyncec1" xy="31,422" size="696,218"/>
+    <component id="n30" name="listConn1" src="t5hdnfw" pkg="0tyncec1" xy="37,170" size="686,209"/>
+    <component id="n31" name="listConn2" src="t5hdnfw" pkg="0tyncec1" xy="35,427" size="686,209"/>
+  </displayList>
+</component>

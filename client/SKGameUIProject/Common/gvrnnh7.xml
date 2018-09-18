@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="127,99" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <loader id="n8" name="line00" xy="13,0" size="110,2" touchable="false" url="ui://0tyncec1jqanca" align="center" vAlign="middle" fill="scaleFree" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="0,1"/>
+    </loader>
+    <loader id="n7" name="line01" xy="13,97" size="110,2" touchable="false" url="ui://0tyncec1jqanca" align="center" vAlign="middle" fill="scaleFree" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="0,1"/>
+    </loader>
+    <loader id="n6" name="bg" xy="0,0" size="139,105" touchable="false" url="ui://0tyncec1jqanc9" align="center" vAlign="middle" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="1"/>
+    </loader>
+    <loader id="n12" name="layer0" xy="43,36" size="50,30" touchable="false" align="center" vAlign="middle" playing="false">
+      <gearDisplay controller="button" pages="0"/>
+    </loader>
+    <loader id="n13" name="layer1" xy="43,36" size="50,30" touchable="false" align="center" vAlign="middle" playing="false">
+      <gearDisplay controller="button" pages="1"/>
+    </loader>
+    <text id="n10" name="title" xy="24,16" size="83,73" font="方正粗圆简体" fontSize="30" color="#202020" align="center" vAlign="middle" autoSize="none" strokeColor="#666600" text=""/>
+    <image id="n14" name="red" src="xnis91" xy="97,3" visible="false"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

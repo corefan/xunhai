@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,635" designImageAlpha="80">
+  <displayList>
+    <image id="n27" name="n27" src="jui015" xy="28,2"/>
+    <image id="n9" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,26" size="20,607"/>
+    <text id="n15" name="txtDesc1" xy="328,578" pivot="0.5,0.5" anchor="true" size="267,22" font="方正粗圆简体" fontSize="18" color="#ffe88c" strokeColor="#240000" strokeSize="2" text="每天0点重置转盘奖励和免费次数"/>
+    <image id="n28" name="n28" src="jui0z" xy="48,7"/>
+    <component id="n37" name="comTurnBg" src="jui016" xy="325,286" pivot="0.5,0.5" anchor="true"/>
+    <image id="n30" name="n30" src="jui013" xy="48,1"/>
+    <component id="n36" name="btnChoujiang" src="t5hdnfs" pkg="0tyncec1" xy="227,195" size="193,189">
+      <Button icon="ui://g35bobp2jui014"/>
+    </component>
+    <loader id="n33" name="iconCost" xy="283,322" pivot="0.5,0.5" anchor="true" size="50,30" touchable="false" align="right" vAlign="middle" fill="scale"/>
+    <text id="n34" name="txtCostNum" xy="346,324" pivot="0.5,0.5" anchor="true" size="56,34" font="方正粗圆简体" fontSize="30" color="#100a04" text="X30"/>
+    <image id="n35" name="n35" src="jui011" xy="286,135"/>
+    <text id="n39" name="n39" xy="703,32" size="85,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="中奖信息"/>
+    <text id="n40" name="txtFree" xy="324,324" pivot="0.5,0.5" anchor="true" size="85,28" font="方正粗圆简体" fontSize="25" color="#ff0000" text="免费X1"/>
+    <list id="n38" name="listHistory" xy="621,62" size="250,522" overflow="scroll" margin="0,0,0,0" defaultItem="ui://g35bobp2jui018"/>
+  </displayList>
+</component>

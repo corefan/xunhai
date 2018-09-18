@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="tv6313j0" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="w5h80" name="Image" folder=""/>
+    <folder id="w5h81" name="Component" folder=""/>
+    <image id="w5h82" name="diwen" folder="w5h80" qualityOption="source" file="w5h82.png" size="250,254"/>
+    <image id="w5h83" name="anniu" folder="w5h80" qualityOption="source" file="w5h83.png" size="62,63"/>
+    <image id="w5h84" name="字色字号" folder="w5h80" qualityOption="source" file="w5h84.png" size="1334,750"/>
+    <image id="w5h85" name="示意图3" folder="w5h80" qualityOption="source" file="w5h85.png" size="1334,750"/>
+    <image id="w5h86" name="示意图2" folder="w5h80" qualityOption="source" file="w5h86.png" size="1334,750"/>
+    <image id="w5h87" name="示意图" folder="w5h80" qualityOption="source" file="w5h87.png" size="1334,750"/>
+    <image id="w5h89" name="jinengtoumingdi" folder="w5h80" qualityOption="source" file="w5h89.png" size="108,108"/>
+    <component id="w5h8c" name="SkillPanel" folder="w5h81" file="w5h8c.xml" exported="true"/>
+    <component id="w5h8d" name="SkillItem" folder="w5h81" file="w5h8d.xml" exported="true"/>
+    <component id="w5h8e" name="SkillEffect" folder="w5h81" file="w5h8e.xml" exported="true"/>
+    <component id="w5h8g" name="SkillMasteryProcess" folder="w5h81" file="w5h8g.xml"/>
+    <component id="w5h8h" name="ButtonAddMastery" folder="w5h81" file="w5h8h.xml"/>
+    <component id="w5h8i" name="ButtonGoto" folder="w5h81" file="w5h8i.xml"/>
+    <component id="w5h8k" name="SkillUpgradeConsume" folder="w5h81" file="w5h8k.xml" exported="true"/>
+    <component id="l6nql" name="SkillBigItem" folder="w5h81" file="l6nql.xml" exported="true"/>
+    <image id="l6nqm" name="1000" folder="w5h80" qualityOption="source" file="l6nqm.png" size="157,157"/>
+    <image id="l6nqn" name="1020" folder="w5h80" qualityOption="source" file="l6nqn.png" size="92,92"/>
+    <component id="l6nqo" name="SkillEffectItem" folder="w5h81" file="l6nqo.xml" exported="true"/>
+    <component id="h394p" name="SkillBook" folder="w5h81" file="h394p.xml" exported="true"/>
+  </resources>
+  <publish name="Skill" genCode="true"/>
+</packageDescription>

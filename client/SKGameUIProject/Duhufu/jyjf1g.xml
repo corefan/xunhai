@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="930,580" opaque="false">
+  <displayList>
+    <image id="n80" name="n80" src="cnepnqb" pkg="0tyncec1" xy="573,52" size="357,528"/>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="563,578"/>
+    <component id="n22" name="btnDev" src="jyjfz" xy="670,511" size="174,64">
+      <Button title="研发"/>
+    </component>
+    <image id="n84" name="n84" src="cnepnqb" pkg="0tyncec1" xy="573,106" size="353,191"/>
+    <text id="n220" name="txtName" xy="581,64" size="141,33" font="方正粗圆简体" fontSize="22" color="#0099cc" autoSize="none" strokeColor="#000000" text="&#xA;"/>
+    <text id="n221" name="txtLv" xy="726,64" size="196,33" font="方正粗圆简体" fontSize="20" color="#33cc33" autoSize="none" strokeColor="#000000" text="&#xA;&#xA;"/>
+    <text id="n222" name="txtDesc" xy="580,116" size="338,173" font="方正粗圆简体" fontSize="22" leading="8" ubb="true" autoSize="none" text=""/>
+    <text id="n223" name="labelNextCondition" xy="579,305" size="326,33" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <image id="n244" name="n244" src="c18wnl9" pkg="0tyncec1" xy="576,357" size="344,42" alpha="0.8"/>
+    <image id="n245" name="n245" src="c18wnl9" pkg="0tyncec1" xy="576,406" size="344,42" alpha="0.8"/>
+    <text id="n229" name="labelCost1" xy="580,363" size="168,30" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <text id="n232" name="labelCost2" xy="579,414" size="168,30" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <text id="n228" name="txtCost1" xy="754,363" size="161,30" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <text id="n231" name="txtCost2" xy="754,414" size="161,30" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <image id="n249" name="n249" src="gk0nnid" pkg="0tyncec1" xy="559,8" size="16,573"/>
+    <component id="n250" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="12,2" size="549,573"/>
+    <text id="n251" name="txtLimit" xy="576,462" size="345,41" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+  </displayList>
+</component>

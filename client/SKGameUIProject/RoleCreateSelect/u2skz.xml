@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1344,750" designImage="ui://5gey1uxreca83d" designImageAlpha="8">
+  <controller name="c1" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <component id="n10" name="button_role0" src="x7u03h" xy="27,55">
+      <Button checked="true" controller="c1" page="0"/>
+    </component>
+    <component id="n11" name="button_role1" src="x7u03h" xy="27,178">
+      <Button controller="c1" page="1"/>
+    </component>
+    <component id="n12" name="button_role2" src="x7u03h" xy="27,303">
+      <Button controller="c1" page="2"/>
+    </component>
+    <component id="n3" name="button_delete" src="u2skt" xy="46,434"/>
+    <component id="n4" name="button_back" src="u2sku" xy="52,590" size="86,86"/>
+    <component id="n13" name="button_start_game" src="pp933j" xy="1040,553"/>
+    <graph id="n7" name="image_3D_role_model" xy="610,493" size="100,100"/>
+    <component id="n14" name="model_touch" src="pp933k" xy="457,46" size="501,573"/>
+  </displayList>
+</component>

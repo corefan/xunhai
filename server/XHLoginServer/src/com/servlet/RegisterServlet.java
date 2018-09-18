@@ -1,10 +1,8 @@
 package com.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -22,7 +20,7 @@ import com.util.LogUtil;
  * @author ken
  * @date 2017-6-22
  */
-public class RegisterServlet extends HttpServlet {
+public class RegisterServlet extends BaseServlet {
 
 	private static final long serialVersionUID = -7162734103137003255L;
 
@@ -121,13 +119,4 @@ public class RegisterServlet extends HttpServlet {
 		}
 	}
 	
-	private void postData(HttpServletResponse response, String result) throws IOException {
-		response.setCharacterEncoding("UTF-8");
-		//response.setContentType("text/html");
-		response.setStatus(HttpServletResponse.SC_OK);
-		PrintWriter out = response.getWriter();
-		out.print(result);
-		out.flush();
-		out.close();
-	}
 }

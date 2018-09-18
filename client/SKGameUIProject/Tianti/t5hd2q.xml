@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="52,278" overflow="hidden" extention="Button" initName="btnOpenRank">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <component id="n4" name="bg" src="t5hd2t" xy="0,0"/>
+    <image id="n5" name="title" src="z7y033" xy="10,112" color="#d4dcfe"/>
+    <image id="n6" name="arrow" src="z7y034" xy="15,52" pivot="0.33,0.5" size="33,55">
+      <gearSize controller="button" pages="0,1" values="33,55,1,1|33,55,-1,1" default="52,81,-1,1"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

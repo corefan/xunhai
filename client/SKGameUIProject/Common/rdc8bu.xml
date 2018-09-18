@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="394,38" opaque="false">
+  <displayList>
+    <image id="n0" name="bg" src="me2f1c" xy="-30,0" pivot="0.5,0.5" size="456,37">
+      <relation target="n4" sidePair="width-width,height-height"/>
+    </image>
+    <richtext id="n4" name="title" xy="-15,0" pivot="0.5,0.5" size="425,35" touchable="false" font="方正粗圆简体" fontSize="24" color="#fefefe" align="center" vAlign="middle" ubb="true" autoSize="none" text="标题文字标题"/>
+  </displayList>
+</component>

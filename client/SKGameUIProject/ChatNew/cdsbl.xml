@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="32,31">
+  <controller name="state" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="cdsb3" xy="0,0"/>
+    <image id="n1" name="n1" src="cdsb4" xy="-3,-10">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+  </displayList>
+</component>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="s210esy7" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="iug30" name="component" folder=""/>
+    <folder id="iug31" name="image" folder=""/>
+    <image id="iug32" name="beijing" folder="iug31" qualityOption="source" file="iug32.png" size="519,628"/>
+    <image id="iug33" name="字色字号" folder="iug31" qualityOption="source" file="iug33.png" size="1334,750"/>
+    <image id="iug34" name="示意图" folder="iug31" qualityOption="source" file="iug34.png" size="1334,750"/>
+    <image id="iug35" name="kuang" folder="iug31" qualityOption="source" file="iug35.png" size="85,85"/>
+    <image id="iug36" name="diwen" folder="iug31" qualityOption="source" file="iug36.png" size="466,466"/>
+    <component id="iug37" name="TabGodFightRune" folder="iug30" file="iug37.xml" exported="true"/>
+    <image id="jci29" name="字色字号示意图" folder="iug31" qualityOption="source" file="jci29.png" size="1334,750"/>
+    <component id="jci2a" name="ButtonAll" folder="iug30" file="jci2a.xml" exported="true"/>
+    <image id="jci2b" name="tab1" folder="iug31" qualityOption="source" file="jci2b.png" size="129,53" scale="9grid" scale9grid="26,3,97,44"/>
+    <image id="jci2c" name="tab6" folder="iug31" qualityOption="source" file="jci2c.png" size="129,53" scale="9grid" scale9grid="27,3,96,43"/>
+    <image id="jci2d" name="字色字号示意图2" folder="iug31" qualityOption="source" file="jci2d.png" size="1334,750"/>
+    <component id="jci2e" name="ButtonHighest" folder="iug30" file="jci2e.xml" exported="true"/>
+    <image id="jci2f" name="tab3" folder="iug31" qualityOption="source" file="jci2f.png" size="129,53"/>
+    <image id="jci2g" name="tab5" folder="iug31" qualityOption="source" file="jci2g.png" size="129,53"/>
+    <component id="jci2h" name="ButtonLev" folder="iug30" file="jci2h.xml" exported="true"/>
+    <image id="jci2i" name="tab2" folder="iug31" qualityOption="source" file="jci2i.png" size="111,53"/>
+    <image id="jci2j" name="tab4" folder="iug31" qualityOption="source" file="jci2j.png" size="111,53"/>
+    <component id="jci2k" name="GodFightRunePanel" folder="iug30" file="jci2k.xml" exported="true"/>
+    <component id="jci2l" name="GodFightRuneContent" folder="iug30" file="jci2l.xml" exported="true"/>
+    <component id="jci2m" name="GodFightRuneEffect" folder="iug30" file="jci2m.xml" exported="true"/>
+    <component id="s4zfn" name="GodFightRuneItem" folder="iug30" file="s4zfn.xml" exported="true"/>
+    <component id="k3tlo" name="GodFightRuneTips" folder="iug30" file="k3tlo.xml" exported="true"/>
+  </resources>
+  <publish name="GodFightRune" genCode="true"/>
+</packageDescription>

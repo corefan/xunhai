@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,6" extention="ProgressBar">
+  <displayList>
+    <image id="n0" name="Bg" src="ckrkb2" xy="0,0" size="1334,6"/>
+    <component id="n1" name="bar" src="ckrkb1" xy="0,0"/>
+    <image id="n2" name="line" src="ckrkb4" xy="133,0"/>
+    <image id="n3" name="line" src="ckrkb4" xy="808,0"/>
+    <image id="n4" name="line" src="ckrkb4" xy="403,0"/>
+    <image id="n5" name="line" src="ckrkb4" xy="538,0"/>
+    <image id="n6" name="line" src="ckrkb4" xy="673,0"/>
+    <image id="n7" name="line" src="ckrkb4" xy="268,0"/>
+    <image id="n8" name="line" src="ckrkb4" xy="943,0"/>
+    <image id="n9" name="line" src="ckrkb4" xy="1078,0"/>
+    <image id="n10" name="line" src="ckrkb4" xy="1213,0"/>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

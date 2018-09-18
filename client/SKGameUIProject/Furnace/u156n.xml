@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="354,123" extention="Button">
+  <displayList>
+    <image id="n4" name="n4" src="keyenis" pkg="0tyncec1" xy="-5,-4" size="362,132">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n17" name="txtPrice" xy="150,74" size="75,24" font="方正粗圆简体" fontSize="18" color="#2e3341" ubb="true" autoSize="height" text="?????"/>
+    <loader id="n18" name="payIcon" xy="115,72" size="30,30" align="center" vAlign="middle" fill="scaleFree"/>
+    <component id="n19" name="btnApply" src="mvjqc" xy="222,61" size="121,47">
+      <Button title="购买并使用" titleColor="#3370b7"/>
+    </component>
+    <image id="n28" name="bg" src="pu0xnq6" pkg="0tyncec1" xy="14,14" size="90,90">
+      <relation target="" sidePair="left-left,center-center"/>
+    </image>
+    <text id="n29" name="title" xy="117,20" size="226,27" font="方正粗圆简体" fontSize="20" color="#2e3341" ubb="true" autoSize="height" text="???????">
+      <relation target="" sidePair="right-right,top-top"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

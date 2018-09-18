@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="479,259">
+  <displayList>
+    <component id="n63" name="n63" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,259"/>
+    <text id="n37" name="n37" xy="189,5" size="119,28" font="方正粗圆简体" fontSize="24" color="#ffffff" autoSize="none" text="温馨提示"/>
+    <text id="n41" name="n41" xy="121,90" size="261,31" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" autoSize="none" text="确定要创建家族"/>
+    <text id="n62" name="familyName" xy="121,122" size="261,31" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="none" text=""/>
+    <component id="n59" name="btnCancel" src="e9ze1u" xy="88,189" size="122,52">
+      <Button title="取消" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n60" name="btnCreat" src="e9ze1u" xy="272,189" size="122,52">
+      <Button title="创建" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>

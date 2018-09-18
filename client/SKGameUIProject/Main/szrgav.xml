@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="77,77" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="BtnAgentiaBg" src="szrgat" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n6" name="BtnAgentiaIcon" xy="13,0" size="50,50"/>
+    <image id="n4" name="BtnAgentiaCdIcon" src="gvm84e" xy="4,4" size="69,69" visible="false" fillMethod="radial360" fillClockwise="false"/>
+    <text id="n2" name="BtnAgentiacdTxt" xy="12,16" size="52,52" visible="false" fontSize="28" color="#e5eefe" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" strokeSize="3" text="10"/>
+    <text id="n5" name="BtnAgentianumTxt" xy="12,37" size="52,52" visible="false" fontSize="20" color="#e5eefe" align="center" vAlign="middle" autoSize="none" text="10"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>

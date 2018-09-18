@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="27,27" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bg" src="5v99nkd" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1" name="tick" src="5v99nkf" xy="-3,-5" size="36,32">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="77,24" extention="Button" designImage="ui://s68puhqjj2mz2" designImageAlpha="80">
+  <displayList>
+    <text id="n0" name="title" xy="0,0" size="77,22" font="方正粗圆简体" fontSize="18" color="#20a47d" underline="true" text="忘记密码">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="byk6e4tt" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="sjzg0" name="com" folder=""/>
+    <folder id="sjzg1" name="img" folder=""/>
+    <image id="sjzg2" name="btn_guanbi" folder="sjzg1" qualityOption="source" file="sjzg2.png" size="50,52"/>
+    <image id="sjzg3" name="示意图" folder="sjzg1" qualityOption="source" file="sjzg3.png" size="1334,750"/>
+    <image id="sjzg4" name="quchongzhi" folder="sjzg1" qualityOption="source" file="sjzg4.png" size="99,32"/>
+    <image id="sjzg5" name="di" folder="sjzg1" qualityOption="source" file="sjzg5.png" size="622,551"/>
+    <component id="sjzg6" name="FRPanel" folder="sjzg0" file="sjzg6.xml" exported="true"/>
+    <component id="sjzg7" name="btnClose" folder="sjzg0" file="sjzg7.xml"/>
+    <component id="sjzg8" name="btnRecharge" folder="sjzg0" file="sjzg8.xml"/>
+    <image id="hzv1a" name="lingjiang" folder="sjzg1" qualityOption="source" file="hzv1a.png" size="65,32"/>
+    <component id="rmqhb" name="FirstRechargeComBg" folder="sjzg0" file="rmqhb.xml" exported="true"/>
+    <component id="a4f9c" name="Container" folder="sjzg0" file="a4f9c.xml"/>
+    <image id="a4f9e" name="yilingqu" folder="sjzg1" qualityOption="source" file="a4f9e.png" size="96,32"/>
+  </resources>
+  <publish name="FirstRechargeUI" genCode="true"/>
+</packageDescription>

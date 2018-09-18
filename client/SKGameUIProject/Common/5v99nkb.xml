@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="458,30" extention="ProgressBar" initName="progress">
+  <displayList>
+    <image id="n0" name="bg" src="x0conjs" xy="0,0" size="458,30">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n7" name="bar" src="x0conjr" xy="26,8" size="408,10"/>
+    <text id="n6" name="title" xy="154,-1" pivot="0.5,0.5" size="149,29" visible="false" font="方正粗圆简体" fontSize="14" color="#cccccc" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#4e4e4e" text="">
+      <relation target="" sidePair="middle-middle,center-center"/>
+    </text>
+  </displayList>
+  <ProgressBar/>
+</component>

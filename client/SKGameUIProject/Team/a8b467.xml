@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="554,450">
+  <controller name="c1" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n3" name="n3" src="x0coniw" pkg="0tyncec1" xy="-4,-3" size="556,450"/>
+    <text id="n5" name="n5" xy="163,-1" size="225,37" font="方正粗圆简体" fontSize="20" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="组队邀请"/>
+    <component id="n6" name="btnClose" src="skqrnkp" pkg="0tyncec1" xy="427,-13" size="106,66">
+      <Button titleColor="#3e3e3e" icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <component id="n15" name="radio1" src="sw74nm0" pkg="0tyncec1" xy="25,63" size="93,45" rotation="90">
+      <Button checked="true" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="c1" page="0"/>
+    </component>
+    <component id="n16" name="radio2" src="sw74nm0" pkg="0tyncec1" xy="25,157" size="93,45" rotation="90">
+      <Button icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="c1" page="1"/>
+    </component>
+    <component id="n17" name="radio3" src="sw74nm0" pkg="0tyncec1" xy="25,248" size="93,45" rotation="90">
+      <Button icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="c1" page="2"/>
+    </component>
+    <image id="n18" name="n18" src="x0conix" pkg="0tyncec1" xy="48,53" size="452,350"/>
+    <image id="n19" name="n19" src="s8z9nnh" pkg="0tyncec1" xy="-51,-6" size="215,94" scale="0.8,0.8"/>
+    <text id="n20" name="lb1" xy="-10,82" size="28,56" font="方正粗圆简体" fontSize="20" color="#cccccc" autoSize="none" text="好友">
+      <gearDisplay controller="c1" pages="0,1,2"/>
+    </text>
+    <text id="n21" name="lb2" xy="-10,177" size="28,55" font="方正粗圆简体" fontSize="20" autoSize="none" text="家族">
+      <gearDisplay controller="c1" pages="0,1,2"/>
+    </text>
+    <text id="n22" name="lb3" xy="-9,269" size="25,54" font="方正粗圆简体" fontSize="20" autoSize="none" text="附近">
+      <gearDisplay controller="c1" pages="0,1,2"/>
+    </text>
+    <component id="n1" name="inviteConn" src="t5hdnfw" pkg="0tyncec1" xy="57,62" size="436,331"/>
+  </displayList>
+</component>

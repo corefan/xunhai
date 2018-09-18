@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="42,134" extention="Button" designImageAlpha="80">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="hudkbe" xy="0,0" size="42,134">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n1" name="n1" src="hudkbd" xy="0,0" size="42,134">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <text id="n2" name="title_down" xy="5,36" size="32,67" font="方正粗圆简体" fontSize="24" color="#272727" autoSize="none" text="队伍">
+      <gearDisplay controller="button" pages="1"/>
+    </text>
+    <text id="n3" name="title_up" xy="5,36" size="32,67" font="方正粗圆简体" fontSize="24" color="#c6c0a6" autoSize="none" text="队伍">
+      <gearDisplay controller="button" pages="0"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

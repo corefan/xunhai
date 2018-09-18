@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" designImage="ui://y1al0f5qtjjec" designImageAlpha="80">
+  <displayList>
+    <image id="n0" name="image_bg" src="tjje2" xy="865,61" group="n18"/>
+    <image id="n1" name="image_split" src="tjje7" xy="887,244" group="n18"/>
+    <image id="n2" name="image_reward" src="tjje4" xy="922,345" group="n18"/>
+    <group id="n18" name="group_bg" xy="865,61" size="458,597" advanced="true"/>
+    <text id="n4" name="label_task_name" xy="1019,69" size="143,34" group="n17" font="方正粗圆简体" fontSize="17" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="[主]荒野龙啸啸啸"/>
+    <text id="n5" name="label_task_desc" xy="933,134" size="308,69" group="n17" font="方正粗圆简体" fontSize="22" color="#2e3341" leading="8" ubb="true" autoSize="none" text="传说中的大妖应龙在巫山出现了，快去击杀它！"/>
+    <text id="n6" name="label_task_process" xy="936,215" size="307,46" group="n17" font="方正粗圆简体" fontSize="22" color="#54595e" leading="8" ubb="true" autoSize="none" text="和侵袭对话"/>
+    <group id="n17" name="group_task_info" xy="933,69" size="310,192" advanced="true"/>
+    <text id="n8" name="label_first_reward_title" xy="939,396" size="67,28" group="n15" font="方正粗圆简体" fontSize="20" color="#3d9098" leading="0" autoSize="none" text="金币："/>
+    <text id="n9" name="label_first_reward_count" xy="998,396" size="68,29" group="n15" font="方正粗圆简体" fontSize="20" color="#43515b" leading="0" autoSize="none" text="10000"/>
+    <loader id="n23" name="loader_first_reward_icon" xy="1058,394" size="46,30" group="n15"/>
+    <group id="n15" name="group_first_reward" xy="939,394" size="165,31" advanced="true"/>
+    <text id="n11" name="label_second_reward_title" xy="938,427" size="67,28" group="n16" font="方正粗圆简体" fontSize="20" color="#3d9098" leading="0" autoSize="none" text="金币："/>
+    <text id="n12" name="label_second_reward_count" xy="997,427" size="68,29" group="n16" font="方正粗圆简体" fontSize="20" color="#43515b" leading="0" autoSize="none" text="10000"/>
+    <loader id="n24" name="loader_second_reward_icon" xy="1064,425" size="46,30" group="n16"/>
+    <group id="n16" name="group_second_reward" xy="938,425" size="172,31" advanced="true"/>
+    <component id="n19" name="list_rewards" src="tjjee" xy="894,468"/>
+    <component id="n22" name="button_complete" src="tfo1do" pkg="0tyncec1" xy="978,581">
+      <Button title="完成任务"/>
+    </component>
+  </displayList>
+</component>

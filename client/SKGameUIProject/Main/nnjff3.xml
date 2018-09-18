@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="391,213">
+  <displayList>
+    <image id="n3" name="BgName" src="mlf3cn" xy="3,-6"/>
+    <component id="n1" name="HpBar" src="gvm853" xy="128,34">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n2" name="MpBar" src="gvm855" xy="112,52">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <loader id="n6" name="HeadIcon" xy="9,0" size="105,110" align="center" vAlign="middle" fill="scaleMatchWidth"/>
+    <text id="n11" name="PowerLabel" xy="109,73" size="223,30" font="ui://0tyncec1hhg0eg" fontSize="11" vAlign="middle" autoSize="none" text=""/>
+    <text id="n12" name="LevelLabel" xy="109,18" pivot="0.5,0.5" size="27,27" font="方正粗圆简体" fontSize="20" color="#fffffe" align="center" vAlign="middle" text="00&#xA;"/>
+    <list id="n13" name="buffContainer" xy="292,106" size="211,76" scale="-1,1" layout="flow_hz" overflow="scroll" margin="0,0,0,0" lineGap="1" colGap="1" defaultItem="ui://0042gnitfx79el"/>
+    <component id="n14" name="buffDescPanel" src="fx79em" xy="363,221" scale="-1,1"/>
+  </displayList>
+</component>

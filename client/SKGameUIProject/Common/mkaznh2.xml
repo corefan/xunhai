@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="180,55" extention="Button" initName="item">
+  <displayList>
+    <loader id="n2" name="icon" xy="0,0" size="180,55" locked="true" url="ui://0tyncec1mkaznh3" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <richtext id="n1" name="title" xy="0,0" size="180,55" locked="true" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="0.80"/>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="265,95" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n2" name="bg1" src="gp6d8" xy="74,77"/>
+    <image id="n1" name="bg2" src="gp6d6" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3" name="title" xy="61,27" size="155,34" font="方正粗圆简体" fontSize="30" text="进入下一层">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

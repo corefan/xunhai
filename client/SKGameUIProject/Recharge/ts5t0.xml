@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,635" designImage="ui://wvu017cpts5t4" designImageOffsetX="-311" designImageOffsetY="-105" designImageAlpha="18">
+  <displayList>
+    <image id="n1" name="n1" src="ts5t2" xy="24,4" size="860,601"/>
+    <image id="n3" name="n3" src="gk0nnid" pkg="0tyncec1" xy="0,28" size="20,588"/>
+    <component id="n4" name="btnRechardDaily" src="skqrnkp" pkg="0tyncec1" xy="657,46" size="215,65">
+      <Button title="前往充值" titleColor="#000000" icon="ui://jn83skxkf6311w"/>
+    </component>
+    <text id="n5" name="n5" xy="58,120" size="185,28" font="方正粗圆简体" fontSize="22" color="#ffba60" vAlign="middle" ubb="true" autoSize="none" strokeColor="#34161b" strokeSize="2" text="今日累计充值：¥"/>
+    <text id="n7" name="rechardNumDaily" xy="230,119" size="117,28" font="方正粗圆简体" fontSize="22" color="#ffba60" vAlign="middle" ubb="true" autoSize="none" strokeColor="#34161b" strokeSize="2" text="1000000"/>
+    <text id="n8" name="n8" xy="483,124" size="134,25" visible="false" font="方正粗圆简体" fontSize="18" color="#1eff00" vAlign="middle" autoSize="none" strokeColor="#240000" strokeSize="2" text="活动剩余时间："/>
+    <text id="n9" name="textTime" xy="603,124" size="293,25" visible="false" font="方正粗圆简体" fontSize="18" color="#1eff00" vAlign="middle" ubb="true" autoSize="none" strokeColor="#240000" strokeSize="2" text="100天24小时（奖励每天零点重置）">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <list id="n14" name="rewardItemList" xy="37,157" size="837,442" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" margin="0,0,0,0" colGap="-12" defaultItem="ui://wvu017cpts5t8"/>
+  </displayList>
+</component>

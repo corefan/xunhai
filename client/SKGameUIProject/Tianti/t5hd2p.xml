@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="52,278" overflow="hidden" extention="Button" initName="btnOpenInfo">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <component id="n0" name="bg" src="t5hd2t" xy="51,1" scale="-1,1"/>
+    <image id="n1" name="title" src="z7y032" xy="9,107" size="30,102" color="#d4dcfe"/>
+    <image id="n2" name="arrow" src="z7y034" xy="16,44" pivot="0.3,0.5" size="33,55" scale="-1,1">
+      <gearSize controller="button" pages="0,1" values="33,55,-1,1|33,55,1,1" default="52,81,-1,1"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

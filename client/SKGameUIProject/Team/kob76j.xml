@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="132,40" extention="ComboBox">
+  <displayList>
+    <component id="n0" name="button" src="kob76k" xy="-1,0" size="132,40">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n1" name="title" xy="5,8" size="87,25" font="方正粗圆简体" fontSize="18" color="#2e3341" align="center" autoSize="none" text="">
+      <relation target="" sidePair="width-width"/>
+    </text>
+  </displayList>
+  <ComboBox dropdown="ui://0tnseunokob76p"/>
+  <relation target="n0" sidePair="width-width,rightext-right"/>
+</component>

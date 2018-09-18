@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="125,46" extention="Button">
+  <displayList>
+    <image id="n33" name="n33" src="gk0nnie" pkg="0tyncec1" xy="0,0" size="125,46" locked="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n34" name="title" xy="20,8" size="82,28" locked="true" font="方正粗圆简体" fontSize="24" color="#071c20" align="center" vAlign="middle" leading="0" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+  <relation target="" sidePair="width-width,height-height"/>
+</component>

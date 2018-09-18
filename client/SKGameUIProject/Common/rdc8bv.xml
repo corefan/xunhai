@@ -1,0 +1,10 @@
+<component size="473,110">
+  <displayList>
+    <image id="n2" name="hit" src="rdc8bw" xy="196,18"/>
+    <text id="n1" name="title" xy="-31,33" size="325,56" font="ui://0tyncec1pqvb7e" fontSize="0" align="right" leading="0" letterSpacing="-13" autoSize="none" text=""/>
+  </displayList>
+  <transition name="hitAnimation">
+    <item time="0" type="Pivot" value="1,0"/>
+    <item time="0" type="Scale" tween="true" startValue="1.5,1.5" endValue="1,1" duration="6"/>
+  </transition>
+</component>

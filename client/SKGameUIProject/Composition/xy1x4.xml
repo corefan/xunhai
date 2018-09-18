@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="446,614" designImage="ui://qr7fvjxixy1x2" designImageAlpha="80">
+  <displayList>
+    <image id="n2" name="bg" src="x0conix" pkg="0tyncec1" xy="0,0" size="446,614"/>
+    <image id="n6" name="bgType" src="gk0nni9" pkg="0tyncec1" xy="10,8" size="426,57"/>
+    <image id="n4" name="bgContent" src="gk0nni9" pkg="0tyncec1" xy="12,64" size="421,532"/>
+    <list id="n3" name="scrollViewTypeTab" xy="15,11" size="416,44" layout="row" overflow="scroll" scroll="horizontal" margin="0,0,0,0" colGap="5"/>
+    <list id="n1" name="scrollViewContent" xy="15,65" size="415,392" layout="flow_hz" overflow="scroll" margin="8,0,8,0" lineGap="10" colGap="16" lineItemCount="4"/>
+  </displayList>
+</component>

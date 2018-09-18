@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="732,587">
+  <displayList>
+    <image id="n62" name="n62" src="x0coniw" pkg="0tyncec1" xy="0,10" size="732,573"/>
+    <image id="n63" name="n63" src="j67wnhe" pkg="0tyncec1" xy="49,63" size="636,395"/>
+    <text id="n67" name="txtGG" xy="59,71" size="617,378" input="true" prompt="请点击输入家族公告" maxLength="32" font="方正粗圆简体" fontSize="24" color="#43515b" align="center" vAlign="middle" autoSize="none" text=""/>
+    <component id="n95" name="btnBJ" src="8s1o2a" xy="502,423" visible="false"/>
+    <component id="n66" name="btnComGG" src="i4cc1o" xy="298,477" size="136,54">
+      <Button title="确定" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n96" name="btnClose" src="olnb2l" xy="596,0"/>
+  </displayList>
+</component>

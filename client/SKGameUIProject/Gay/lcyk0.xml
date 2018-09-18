@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="959,608" overflow="hidden" designImage="ui://jn83skxklcyk1" designImageOffsetX="-133" designImageOffsetY="-115" designImageAlpha="37">
+  <controller name="tabListCtrl" pages="0,,1,,2," selected="0"/>
+  <controller name="tabIsNull" pages="2,,4," selected="0"/>
+  <displayList>
+    <image id="n8" name="n8" src="x0conjq" pkg="0tyncec1" xy="827,0"/>
+    <image id="n9" name="n9" src="x0conjp" pkg="0tyncec1" xy="305,267"/>
+    <image id="n10" name="n10" src="x0conjo" pkg="0tyncec1" xy="16,417"/>
+    <image id="n11" name="n11" src="j67wnhe" pkg="0tyncec1" xy="399,103" size="549,432"/>
+    <image id="n28" name="n28" src="j67wnhe" pkg="0tyncec1" xy="4,72" size="364,463"/>
+    <list id="n13" name="friendList" xy="5,78" size="361,458" overflow="scroll" margin="0,0,0,0" lineGap="3"/>
+    <component id="n17" name="tab1_mosheng" src="sw74nm0" pkg="0tyncec1" xy="5,9" size="120,45">
+      <Button title="陌生人" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="tabListCtrl" page="1"/>
+    </component>
+    <component id="n18" name="tab0_friend" src="sw74nm0" pkg="0tyncec1" xy="126,9" size="120,45">
+      <Button checked="true" title="好友列表" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="tabListCtrl" page="0"/>
+    </component>
+    <component id="n19" name="tab2_black" src="sw74nm0" pkg="0tyncec1" xy="248,9" size="120,45" visible="false" touchable="false">
+      <Button title="黑名单" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="tabListCtrl" page="2"/>
+    </component>
+    <image id="n29" name="n29" src="gk0nnid" pkg="0tyncec1" xy="372,-1"/>
+    <image id="n64" name="n64" src="z03enlf" pkg="0tyncec1" xy="460,18" size="259,33" group="n63">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </image>
+    <component id="n56" name="icon_headIcon" src="z03enli" pkg="0tyncec1" xy="403,11" group="n63">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </component>
+    <text id="n58" name="txt_playerName" xy="494,21" size="183,31" group="n63" fontSize="24" color="#2e3341" autoSize="height" text="一二三四五六七">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </text>
+    <text id="n59" name="txt_qianmimg" xy="495,61" size="240,26" group="n63" fontSize="20" color="#54595e" vAlign="middle" autoSize="none" text="卡卡卡卡阿卡卡卡卡卡卡">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </text>
+    <image id="n60" name="icon_haogandu" src="lcyk7" xy="772,25" group="n63" visible="false">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </image>
+    <text id="n61" name="num_haogandu" xy="805,21" size="41,31" group="n63" fontSize="24" color="#2e3341" text="200">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </text>
+    <text id="n62" name="txt_teamExe" xy="761,60" size="190,26" group="n63" fontSize="20" color="#058c9c" autoSize="height" text="组队经验加成：20%">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </text>
+    <component id="n118" name="privateContent" src="cdsbn" pkg="m2d8gld1" xy="409,111" size="535,415" group="n63"/>
+    <loader id="n116" name="playerKind1" xy="496,59" size="33,34" group="n63" align="center" vAlign="middle">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </loader>
+    <text id="n117" name="zhiyeName1" xy="529,65" size="46,26" group="n63" fontSize="20" color="#071c20" autoSize="none" text="">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </text>
+    <group id="n63" name="n63" xy="403,11" size="548,515"/>
+    <loader id="n24" name="bg_noFri" xy="706,139" size="199,373" group="n31" url="ui://jn83skxkkq93v">
+      <gearDisplay controller="tabIsNull" pages="2"/>
+    </loader>
+    <image id="n25" name="bg_nofriendTxt" src="kq93x" xy="441,210" size="292,80" group="n31" flip="hz">
+      <gearDisplay controller="tabIsNull" pages="2"/>
+    </image>
+    <text id="n27" name="nullText" xy="458,222" size="246,56" group="n31" font="方正粗圆简体" fontSize="22" leading="5" ubb="true" autoSize="none" text="你的好友列表空空如也，快去加几个好友吧！">
+      <gearDisplay controller="tabIsNull" pages="2"/>
+    </text>
+    <group id="n31" name="n31" xy="441,139" size="464,373"/>
+    <image id="n32" name="n32" src="rnfrnmq" pkg="0tyncec1" xy="164,550" size="201,33"/>
+    <text id="n33" name="listNum" xy="246,555" size="108,24" font="方正粗圆简体" fontSize="20" align="right" autoSize="height" text="0/50"/>
+    <component id="n98" name="btnAddFri" src="rnfrb" xy="4,544"/>
+    <component id="n90" name="btnSend" src="skqrnkp" pkg="0tyncec1" xy="832,542" size="121,62">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+      <Button title="发送" titleColor="#000000" icon="ui://jn83skxkf6311w"/>
+    </component>
+    <component id="n106" name="textInput" src="eykg1u" xy="466,545" size="289,58">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </component>
+    <loader id="n109" name="addRedIcon" xy="10,548" size="17,17" url="ui://0tyncec1xnis91"/>
+    <component id="n110" name="btnBiaoqing" src="f6311z" xy="766,542">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </component>
+    <component id="n111" name="btnYuyin" src="f63121" xy="397,542" visible="false" touchable="false">
+      <gearDisplay controller="tabIsNull" pages="4"/>
+    </component>
+    <loader id="n119" name="redMosheng" xy="13,13" size="17,17" url="ui://0tyncec1xnis91"/>
+    <loader id="n120" name="redFriend" xy="132,13" size="17,17" url="ui://0tyncec1xnis91"/>
+  </displayList>
+</component>

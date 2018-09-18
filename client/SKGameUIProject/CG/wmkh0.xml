@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImage="ui://d51jgdrtwmkh3" designImageAlpha="0">
+  <displayList>
+    <graph id="n4" name="bg" xy="0,0" size="1334,750"/>
+    <graph id="n0" name="cgMountGraph" xy="0,0" size="1,1"/>
+    <text id="n1" name="cgDescLabel0" xy="269,113" size="1018,332" font="方正粗圆简体" fontSize="30" color="#ffd37e" vAlign="middle" ubb="true" autoSize="none" strokeColor="#3c0000" text=""/>
+    <text id="n2" name="cgDescLabel1" xy="269,93" size="1020,534" font="方正粗圆简体" fontSize="30" color="#ffd37e" vAlign="middle" ubb="true" autoSize="none" strokeColor="#3c0000" text=""/>
+    <text id="n3" name="cgDescLabel2" xy="269,245" size="812,352" font="方正粗圆简体" fontSize="32" color="#ffd37e" align="right" vAlign="middle" ubb="true" autoSize="none" strokeColor="#3c0000" text=""/>
+  </displayList>
+  <transition name="effectType0">
+    <item time="0" type="Alpha" target="n2" tween="true" startValue="0" endValue="0" duration="24" ease="Linear"/>
+    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="1" duration="24" ease="Linear"/>
+    <item time="24" type="Alpha" target="n1" tween="true" startValue="1" endValue="0" duration="72" ease="Linear"/>
+    <item time="24" type="Alpha" target="n2" tween="true" startValue="0" endValue="1" duration="24" ease="Linear"/>
+    <item time="48" type="Alpha" target="n2" tween="true" startValue="1" endValue="0" duration="48" ease="Linear"/>
+    <item time="96" type="Alpha" target="n1" tween="true" startValue="0" ease="Linear"/>
+    <item time="96" type="Alpha" target="n2" tween="true" startValue="0" ease="Linear"/>
+  </transition>
+  <transition name="effectType1">
+    <item time="0" type="Alpha" target="n3" value="0"/>
+    <item time="0" type="Alpha" target="n2" value="0"/>
+    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="1" duration="24" ease="Linear"/>
+    <item time="24" type="Alpha" target="n2" tween="true" startValue="0" endValue="1" duration="24" ease="Linear"/>
+    <item time="48" type="Alpha" target="n3" tween="true" startValue="0" endValue="1" duration="24" ease="Linear"/>
+    <item time="72" type="Alpha" target="n1" value="1"/>
+    <item time="72" type="Alpha" target="n2" value="1"/>
+    <item time="120" type="Alpha" target="n1" value="0"/>
+    <item time="120" type="Alpha" target="n2" value="0"/>
+    <item time="120" type="Alpha" target="n3" value="0"/>
+  </transition>
+</component>

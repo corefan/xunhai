@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="545,114">
+  <controller name="tabCtrlbtn" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n26" name="n26" src="keyenis" pkg="0tyncec1" xy="0,0" size="544,113"/>
+    <component id="n27" name="headIcon" src="z03enli" pkg="0tyncec1" xy="20,16"/>
+    <text id="n28" name="txt_playerName" xy="111,18" size="198,37" fontSize="24" color="#2e3341" vAlign="middle" leading="0" autoSize="none" text="一二三四五六七"/>
+    <loader id="n29" name="icon_zhiye" xy="112,57" size="33,33" align="center" vAlign="middle"/>
+    <text id="n30" name="txt_zhiye" xy="146,59" size="52,30" font="方正粗圆简体" fontSize="20" color="#071c20" vAlign="middle" leading="0" autoSize="none" text="暗巫"/>
+    <component id="n45" name="btn_addFriend" src="u3cys" xy="380,34">
+      <gearDisplay controller="tabCtrlbtn" pages="0"/>
+      <Button title="添加"/>
+    </component>
+    <component id="n47" name="btn_agree" src="u3cys" xy="428,34" size="99,46" group="n48">
+      <gearDisplay controller="tabCtrlbtn" pages="1"/>
+      <Button title="同意"/>
+    </component>
+    <component id="n46" name="btn_refuse" src="u3cys" xy="322,34" size="99,46" group="n48">
+      <gearDisplay controller="tabCtrlbtn" pages="1"/>
+      <Button title="拒绝"/>
+    </component>
+    <group id="n48" name="n48" xy="322,34" size="205,46"/>
+  </displayList>
+</component>

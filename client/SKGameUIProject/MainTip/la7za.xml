@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="596,287" extention="Label" designImageAlpha="26">
+  <displayList>
+    <image id="n10" name="bg" src="csuxnlk" pkg="0tyncec1" xy="0,18" size="597,249">
+      <relation target="n15" sidePair="bottomext-bottom"/>
+    </image>
+    <text id="n1" name="title" xy="92,21" size="413,34" font="方正粗圆简体" fontSize="24" color="#d2dae0" align="center" vAlign="middle" autoSize="none" text="提示"/>
+    <component id="n12" name="btnEnter" src="l2b8nnq" pkg="0tyncec1" xy="357,183" size="155,41">
+      <relation target="n15" sidePair="top-bottom"/>
+      <Button title="确定" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n13" name="btnExit" src="l2b8nnq" pkg="0tyncec1" xy="93,183" size="155,41">
+      <relation target="n15" sidePair="top-bottom"/>
+      <Button title="取消" titleColor="#2e3341" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n14" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="499,-20" size="113,89" visible="false">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <richtext id="n15" name="content" xy="46,72" size="514,29" font="方正粗圆简体" fontSize="22" color="#43515b" ubb="true" autoSize="height" text=""/>
+    <component id="n18" name="slider" src="la7znqg" pkg="0tyncec1" xy="52,135" size="502,19">
+      <relation target="n15" sidePair="top-bottom"/>
+      <Slider max="1"/>
+    </component>
+    <text id="n23" name="n23" xy="48,236" size="245,22" font="方正粗圆简体" fontSize="16" color="#669900" autoSize="none" singleLine="true" text="注：拖动小绿色滑块以调整数量！">
+      <relation target="n13" sidePair="bottom-top"/>
+    </text>
+  </displayList>
+  <relation target="n15" sidePair="bottomext-bottom"/>
+</component>

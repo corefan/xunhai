@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="899,560">
+  <displayList>
+    <image id="n13" name="n13" src="cnepnqb" pkg="0tyncec1" xy="566,1" size="333,450"/>
+    <image id="n44" name="n44" src="cnepnqa" pkg="0tyncec1" xy="566,1" size="330,50"/>
+    <text id="n73" name="n73" xy="571,8" size="223,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="公告"/>
+    <component id="n22" name="btnGotoClan" src="jyjfz" xy="593,489" size="288,64">
+      <Button title="都护府领地"/>
+    </component>
+    <component id="n72" name="btnEdit" src="jyjf13" xy="806,2" size="92,49">
+      <Button title="编辑"/>
+    </component>
+    <text id="n100" name="inputNotice" xy="575,55" size="320,387" input="true" prompt="请输入都护府公告" maxLength="56" font="方正粗圆简体" fontSize="24" color="#666666" autoSize="none" text=""/>
+    <component id="n106" name="label1" src="jyjf14" xy="0,3">
+      <Label title="都护名称:"/>
+    </component>
+    <component id="n112" name="label2" src="jyjf14" xy="0,64">
+      <Label title="都护:"/>
+    </component>
+    <component id="n110" name="label3" src="jyjf14" xy="0,125">
+      <Label title="等级:"/>
+    </component>
+    <component id="n109" name="label4" src="jyjf14" xy="0,186">
+      <Label title="人数:"/>
+    </component>
+    <component id="n108" name="label5" src="jyjf14" xy="0,247">
+      <Label title="战力:"/>
+    </component>
+    <component id="n114" name="label6" src="jyjf14" xy="0,308">
+      <Label title="建设度:"/>
+    </component>
+    <component id="n115" name="label7" src="jyjf14" xy="0,369">
+      <Label title="资金:"/>
+    </component>
+    <component id="n119" name="label8" src="jyjf14" xy="0,430">
+      <Label title="创建时间:"/>
+    </component>
+    <component id="n120" name="label9" src="jyjf14" xy="0,491">
+      <Label title="个人贡献:"/>
+    </component>
+    <image id="n118" name="n118" src="gk0nnid" pkg="0tyncec1" xy="543,-2" size="16,559"/>
+  </displayList>
+</component>

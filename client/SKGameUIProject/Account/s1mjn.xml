@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="444,278" designImageOffsetX="-541" designImageOffsetY="-231">
+  <displayList>
+    <component id="n0" name="n0" src="s1mjnnb" pkg="0tyncec1" xy="-19,-3" size="484,282"/>
+    <text id="n1" name="n1" xy="64,60" size="331,32" font="方正粗圆简体" fontSize="24" color="#42a4ff" autoSize="none" text="第一步：请解锁当前手机号码"/>
+    <text id="n2" name="n2" xy="64,99" size="331,32" font="方正粗圆简体" fontSize="24" color="#43515b" autoSize="none" text="第二步：请绑定新的手机号码"/>
+    <component id="n3" name="deBindBtn" src="skqrnkp" pkg="0tyncec1" xy="272,143" size="163,50">
+      <Button title="解除绑定" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n4" name="numberInput" src="dmzwk" xy="24,147" size="250,44"/>
+    <component id="n6" name="closeBtn" src="skqrnkp" pkg="0tyncec1" xy="138,205" size="168,63">
+      <Button title="关闭" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <image id="n7" name="n7" src="dmzwi" xy="37,63"/>
+  </displayList>
+</component>

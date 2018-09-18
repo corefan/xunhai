@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="24,24">
+  <displayList>
+    <image id="n0" name="n0" src="hrgcnng" pkg="0tyncec1" xy="-9,-10" size="44,46">
+      <relation target="n3" sidePair="width-width"/>
+    </image>
+    <component id="n3" name="descContainer" src="fx79en" xy="4,5" size="15,13"/>
+  </displayList>
+  <relation target="n0" sidePair="width-width,height-height"/>
+</component>

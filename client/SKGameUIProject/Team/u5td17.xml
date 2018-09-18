@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="388,208">
+  <displayList>
+    <image id="n0" name="bg_01" src="ubp49d" pkg="0tyncec1" xy="0,0" size="388,208"/>
+    <component id="n1" name="acceptBtn" src="o8xh1" xy="230,136">
+      <Button title="接受"/>
+    </component>
+    <component id="n2" name="refuseBtn" src="o8xh1" xy="50,136">
+      <Button title="拒绝"/>
+    </component>
+    <text id="n3" name="msgInfo" xy="49,38" size="293,70" input="true" maxLength="14" font="方正粗圆简体" fontSize="22" color="#e5e5e5" vAlign="middle" letterSpacing="2" autoSize="none" text="布拉德皮特邀请你加入队伍"/>
+  </displayList>
+</component>

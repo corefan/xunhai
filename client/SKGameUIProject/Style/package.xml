@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="jqof8qco" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="glhb0" name="img" folder=""/>
+    <folder id="glhb1" name="com" folder=""/>
+    <component id="glhb2" name="StylePanel" folder="glhb1" file="glhb2.xml" exported="true"/>
+    <image id="eiek4" name="dise" folder="glhb0" qualityOption="source" file="eiek4.png" size="125,619"/>
+    <image id="eiek6" name="zhuangshi" folder="glhb0" qualityOption="source" file="eiek6.png" size="522,331"/>
+    <image id="eiek7" name="zhanli" folder="glhb0" qualityOption="source" file="eiek7.png" size="38,33"/>
+    <image id="eiek9" name="xuanzhong" folder="glhb0" qualityOption="source" file="eiek9.png" size="273,121"/>
+    <component id="eieka" name="StyleItem" folder="glhb1" file="eieka.xml" exported="true"/>
+    <component id="eiekb" name="StyleProp" folder="glhb1" file="eiekb.xml" exported="true"/>
+    <component id="v83rc" name="StyleActivePanel" folder="glhb1" file="v83rc.xml" exported="true"/>
+  </resources>
+  <publish name="Style" genCode="true"/>
+</packageDescription>

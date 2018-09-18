@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,608" designImageOffsetX="-127" designImageOffsetY="-107" designImageAlpha="64">
+  <controller name="c1" pages="0,openBuy,1,openSell" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="j67wnhe" pkg="0tyncec1" xy="2,64" size="202,535" locked="true"/>
+    <image id="n2" name="n2" src="j67wnhe" pkg="0tyncec1" xy="212,64" size="748,535" locked="true"/>
+    <component id="n3" name="tabLayer" src="t5hdnfx" pkg="0tyncec1" xy="0,0" size="954,61" locked="true"/>
+    <image id="n4" name="sortBg" src="x0co4w" xy="214,66" group="n13"/>
+    <image id="n7" name="line" src="hx0xnip" pkg="0tyncec1" xy="416,129" size="334,11" group="n13"/>
+    <component id="n9" name="sortConn" src="t5hdnfx" pkg="0tyncec1" xy="229,73" size="23,22" group="n13"/>
+    <component id="n1" name="tabConn" src="t5hdnfw" pkg="0tyncec1" xy="5,68" size="195,524" group="n13"/>
+    <component id="n8" name="itemConn" src="t5hdnfw" pkg="0tyncec1" xy="216,141" size="738,453" group="n13"/>
+    <group id="n13" name="buyGroup" xy="5,66" size="949,528" locked="true" advanced="true" collapsed="true">
+      <gearDisplay controller="c1" pages="0"/>
+    </group>
+    <image id="n16" name="n16" src="qndm56" xy="3,65" size="200,45" group="n18"/>
+    <text id="n17" name="n17" xy="3,68" size="198,39" group="n18" font="方正粗圆简体" fontSize="24" color="#d7dbde" align="center" vAlign="middle" autoSize="none" strokeColor="#2e3341" strokeSize="2" text="背包"/>
+    <component id="n14" name="cellConn" src="t5hdnfw" pkg="0tyncec1" xy="6,115" size="195,477" group="n18"/>
+    <component id="n15" name="gridConn" src="t5hdnfw" pkg="0tyncec1" xy="216,67" size="738,527" group="n18"/>
+    <group id="n18" name="sellGroup" xy="3,65" size="951,529" locked="true" advanced="true">
+      <gearDisplay controller="c1" pages="1"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <graph id="n8" name="n8" xy="0,0" size="1334,760" type="rect" fillColor="#99000000"/>
+    <graph id="n9" name="eft1" xy="620,330" size="100,100"/>
+    <graph id="n10" name="eft2" xy="620,330" size="100,100"/>
+    <graph id="n11" name="role3D" xy="620,570" size="100,100"/>
+    <image id="n12" name="n12" src="v83rnni" pkg="0tyncec1" xy="546,93"/>
+    <image id="n13" name="n13" src="v83rnnj" pkg="0tyncec1" xy="507,503" size="337,43" group="n15">
+      <relation target="n14" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n14" name="name" xy="554,509" pivot="0.5,0.5" size="258,32" group="n15" font="方正粗圆简体" fontSize="26" color="#008c9c" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="天使翅膀天使翅膀&#xA;"/>
+    <group id="n15" name="n15" xy="507,503" size="337,43" collapsed="true"/>
+  </displayList>
+</component>

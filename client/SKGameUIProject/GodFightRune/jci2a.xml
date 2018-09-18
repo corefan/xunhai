@@ -1,0 +1,13 @@
+<component size="102,53" extention="Button" designImage="ui://s210esy7jci2d">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="jci2b" xy="0,0" size="102,53">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n1" name="n1" src="jci2c" xy="0,0" size="102,53">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <text id="n2" name="title" xy="21,4" size="72,41" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="全部"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

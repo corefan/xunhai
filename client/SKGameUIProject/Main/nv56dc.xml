@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="296,220" overflow="hidden">
+  <controller name="c1" pages="0,滑入,1,滑出" selected="1"/>
+  <displayList>
+    <component id="n0" name="content" src="nv56d9" xy="-1,-220" aspect="true">
+      <gearDisplay controller="c1" pages="0,1"/>
+      <gearXY controller="c1" pages="0,1" values="0,0|-1,-220" default="0,-206" tween="true" duration="0.2"/>
+    </component>
+  </displayList>
+  <relation target="n0" sidePair="height-height"/>
+</component>

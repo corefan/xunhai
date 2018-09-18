@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!30 &1
+GraphicsSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 5
+  m_Deferred:
+    m_Mode: 1
+    m_Shader: {fileID: 69, guid: 0000000000000000f000000000000000, type: 0}
+  m_DeferredReflections:
+    m_Mode: 1
+    m_Shader: {fileID: 74, guid: 0000000000000000f000000000000000, type: 0}
+  m_LegacyDeferred:
+    m_Mode: 1
+    m_Shader: {fileID: 63, guid: 0000000000000000f000000000000000, type: 0}
+  m_AlwaysIncludedShaders:
+  - {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15104, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15105, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15106, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10782, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10751, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10755, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10703, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 202, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 101, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 4800000, guid: fbd683247fb72114bb9a74b370728b76, type: 3}
+  - {fileID: 10708, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 51, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 20, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10720, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10512, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 4800000, guid: 2884fc807aa8d443b9dd43625cba2d74, type: 3}
+  - {fileID: 4800000, guid: d9fe3cbb559494849912ec363dcf3253, type: 3}
+  - {fileID: 4800000, guid: 675e3c7a1041b214f9ca66a6b7d019c6, type: 3}
+  - {fileID: 4800000, guid: 584f8dd79bb392046947b6d13e15a5a3, type: 3}
+  - {fileID: 4800000, guid: 10303a31a71454a4fb59b79efe564524, type: 3}
+  - {fileID: 4800000, guid: e679ce7f9dad0494fbb9969645710828, type: 3}
+  - {fileID: 4800000, guid: 8139dc982e3e5a04a83bf0d362f32265, type: 3}
+  - {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 4800000, guid: 32687e27d9c655748a15b4ce78938ee9, type: 3}
+  - {fileID: 4800000, guid: 532dee85e2b4c994c977e38bd40a82b8, type: 3}
+  - {fileID: 4800000, guid: cd20832ea97d5430da14ac4533fc4916, type: 3}
+  m_PreloadedShaders: []
+  m_ShaderSettings:
+    useScreenSpaceShadows: 0
+  m_BuildTargetShaderSettings: []
+  m_LightmapStripping: 0
+  m_FogStripping: 0
+  m_LightmapKeepPlain: 1
+  m_LightmapKeepDirCombined: 0
+  m_LightmapKeepDirSeparate: 0
+  m_LightmapKeepDynamicPlain: 0
+  m_LightmapKeepDynamicDirCombined: 0
+  m_LightmapKeepDynamicDirSeparate: 0
+  m_FogKeepLinear: 1
+  m_FogKeepExp: 1
+  m_FogKeepExp2: 1

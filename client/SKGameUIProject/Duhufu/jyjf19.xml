@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="931,76">
+  <displayList>
+    <image id="n88" name="n88" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="931,76"/>
+    <text id="n110" name="txt1" xy="6,24" size="86,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" text="未知&#xA;&#xA;"/>
+    <text id="n111" name="txt2" xy="99,24" size="271,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" text="无&#xA;"/>
+    <text id="n112" name="txt3" xy="384,24" size="77,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" text="0&#xA;&#xA;"/>
+    <text id="n113" name="txt4" xy="470,23" size="179,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" text="0&#xA;&#xA;"/>
+    <component id="n120" name="btnApply" src="l2b8nnq" pkg="0tyncec1" xy="679,14" size="119,48">
+      <Button title="同意" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n121" name="btnRefuse" src="l2b8nnq" pkg="0tyncec1" xy="802,14" size="119,48">
+      <Button title="拒绝" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+  </displayList>
+</component>

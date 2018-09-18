@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="90,90" extention="Button">
+  <displayList>
+    <loader id="n0" name="loader_quality" xy="0,0" size="90,90"/>
+    <loader id="n1" name="icon" xy="0,0" size="90,90" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n2" name="title" xy="4,67" size="81,19" font="方正粗圆简体" fontSize="12" align="right" autoSize="none" text="122&#xA;"/>
+  </displayList>
+  <Button/>
+</component>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="634,621" extention="Label" designImageAlpha="0">
+  <displayList>
+    <image id="n0" name="n0" src="x0coniw" pkg="0tyncec1" xy="0,-1" size="634,621">
+      <relation target="" sidePair="bottomext-bottom"/>
+    </image>
+    <image id="n3" name="n3" src="w3wlnlc" pkg="0tyncec1" xy="164,36"/>
+    <image id="n4" name="n4" src="w3wlnld" pkg="0tyncec1" xy="195,177" size="243,40">
+      <relation target="n3" sidePair="bottom-bottom,right-right"/>
+    </image>
+    <image id="n9" name="n9" src="x0conjx" pkg="0tyncec1" xy="176,315" size="344,63"/>
+    <component id="n13" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="490,6" size="157,85">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <text id="n1" name="title" xy="175,4" size="284,34" font="方正粗圆简体" fontSize="24" color="#d4d5d8" align="center" vAlign="middle" autoSize="none" text="购买"/>
+    <richtext id="n23" name="txtDesc" xy="76,227" size="482,80" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" ubb="true" autoSize="none" text=""/>
+    <text id="n5" name="txtName" xy="141,178" size="352,35" font="方正粗圆简体" fontSize="24" color="#ffcc00" align="center" vAlign="middle" autoSize="none" strokeColor="#626161" strokeSize="2" text="">
+      <relation target="n4" sidePair="bottom-bottom,left-left"/>
+    </text>
+    <text id="n6" name="n6" xy="122,333" size="77,28" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" text="数量："/>
+    <component id="n12" name="numBar" src="x0conk2" pkg="0tyncec1" xy="223,317" scale="0.9,0.9">
+      <Label titleColor="#2e3341" maxLength="3" keyboardType="2"/>
+    </component>
+    <component id="n20" name="btnApply" src="tnbmnka" pkg="0tyncec1" xy="230,516" size="176,61">
+      <relation target="n0" sidePair="bottom-bottom"/>
+      <Button title="购买" icon="ui://0tyncec1x0conj1"/>
+    </component>
+  </displayList>
+</component>

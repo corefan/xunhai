@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="10y8o1b3" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="qcs831" name="memCellBg" folder="" qualityOption="source" file="qcs831.png" size="272,344" scale9grid="17,35,238,39" scale="9grid"/>
+    <image id="qcs83d" name="leadSignBg" folder="" qualityOption="source" file="qcs83d.png" size="47,47"/>
+    <image id="c18w5x" name="bg" folder="" qualityOption="source" file="c18w5x.png" size="25,19" scale="9grid" scale9grid="7,5,14,10"/>
+    <component id="ugrl5z" name="ZDHallPanel" folder="" file="ugrl5z.xml" exported="true"/>
+    <component id="a8b461" name="ZDMinePanel" folder="" file="a8b461.xml" exported="true"/>
+    <component id="a8b462" name="ZDItem" folder="" file="a8b462.xml" exported="true"/>
+    <component id="a8b463" name="ZDMemCell" folder="" file="a8b463.xml" exported="true"/>
+    <component id="a8b464" name="LeaderSign" folder="" file="a8b464.xml"/>
+    <component id="a8b465" name="ZDApplyPanel" folder="" file="a8b465.xml" exported="true"/>
+    <component id="a8b466" name="ZDApplyItem" folder="" file="a8b466.xml" exported="true"/>
+    <component id="a8b467" name="ZDInvitePanel" folder="" file="a8b467.xml" exported="true"/>
+    <component id="a8b468" name="ZDInviteItem" folder="" file="a8b468.xml" exported="true"/>
+    <component id="sw7469" name="ZDJoinTarget" folder="" file="sw7469.xml" exported="true"/>
+    <component id="kob76j" name="ZDLevelBtnDropdown" folder="" file="kob76j.xml"/>
+    <component id="kob76k" name="ZDLevelBtn0" folder="" file="kob76k.xml"/>
+    <component id="kob76p" name="ZDLevelBtnDropdownList" folder="" file="kob76p.xml"/>
+    <component id="kob76r" name="ZDLevelCell" folder="" file="kob76r.xml"/>
+    <component id="hqbs6t" name="ZDTargetItem" folder="" file="hqbs6t.xml" exported="true"/>
+    <image id="tosw6u" name="tuteng" folder="xv561" qualityOption="source" file="tosw6u.png" size="169,182"/>
+    <image id="8f0z6v" name="dengji" folder="xv561" qualityOption="source" file="8f0z6v.png" size="71,38"/>
+    <image id="8f0z6w" name="huawen" folder="xv561" qualityOption="source" file="8f0z6w.png" size="166,9"/>
+    <image id="s8z96x" name="shuliangdi" folder="xv561" qualityOption="source" file="s8z96x.png" size="204,5"/>
+    <image id="w9356y" name="btn_xiala" folder="xv561" qualityOption="source" file="w9356y.png" size="42,42"/>
+    <image id="w9356z" name="fengexian" folder="xv561" qualityOption="source" file="w9356z.png" size="163,2"/>
+    <folder id="xv561" name="新建文件夹" folder=""/>
+    <image id="po2c70" name="btn_fenye11" folder="" qualityOption="source" file="po2c70.png" size="47,40" exported="true"/>
+    <component id="bp7w71" name="ZDJoinTarget2" folder="" file="bp7w71.xml" exported="true"/>
+  </resources>
+  <publish name="Team"/>
+</packageDescription>

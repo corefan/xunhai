@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageAlpha="81" designImageLayer="1">
+  <displayList>
+    <image id="n0" name="n0" src="gk0nni9" pkg="0tyncec1" xy="150,176" size="1058,359" group="n4"/>
+    <list id="n3" name="list" xy="153,181" size="1049,342" group="n4" layout="row" overflow="scroll" scroll="horizontal" margin="0,0,18,18" colGap="20" defaultItem="ui://oa3ahys9mfyib"/>
+    <image id="n14" name="n14" src="dz07t" xy="137,533" size="1087,180" group="n4"/>
+    <image id="n15" name="n15" src="dz07q" xy="875,536" group="n4"/>
+    <group id="n4" name="n4" xy="137,176" size="1087,537"/>
+    <image id="n5" name="n5" src="sdusnnn" pkg="0tyncec1" xy="176,560" group="n10"/>
+    <text id="n7" name="desc" xy="198,558" pivot="0.5,0.5" size="951,29" group="n10" font="方正粗圆简体" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" text="活动描述:&#xA;"/>
+    <group id="n10" name="n10" xy="176,558" size="973,29"/>
+    <image id="n6" name="n6" src="sdusnnn" pkg="0tyncec1" xy="176,604" group="n11"/>
+    <text id="n9" name="name" xy="199,599" pivot="0.5,0.5" size="125,29" group="n11" font="方正粗圆简体" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" text="主要奖励："/>
+    <group id="n11" name="n11" xy="176,599" size="148,29"/>
+    <text id="n18" name="n18" xy="828,122" size="247,41" group="n12" font="方正粗圆简体" fontSize="22" align="right" vAlign="middle" autoSize="none" text="活动于每日0点刷新"/>
+    <component id="n16" name="signBtn" src="t5hdnfq" pkg="0tyncec1" xy="1057,118" size="47,48" group="n12" hideByEditor="true">
+      <Button icon="ui://oa3ahys9dz07s"/>
+    </component>
+    <component id="n17" name="weekBtn" src="t5hdnfq" pkg="0tyncec1" xy="1092,119" size="47,48" group="n12">
+      <Button icon="ui://oa3ahys9dz07r"/>
+    </component>
+    <group id="n12" name="n12" xy="828,118" size="311,49"/>
+  </displayList>
+</component>

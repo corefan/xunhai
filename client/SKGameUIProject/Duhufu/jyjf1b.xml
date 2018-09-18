@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="940,513" opaque="false">
+  <displayList>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="940,450" locked="true"/>
+    <image id="n70" name="n70" src="uchhnl3" pkg="0tyncec1" xy="3,1" size="87,43"/>
+    <image id="n71" name="n71" src="uchhnl3" pkg="0tyncec1" xy="91,1" size="270,43"/>
+    <image id="n72" name="n72" src="uchhnl3" pkg="0tyncec1" xy="362,1" size="67,43"/>
+    <image id="n73" name="n73" src="uchhnl3" pkg="0tyncec1" xy="430,1" size="146,43"/>
+    <image id="n74" name="n74" src="uchhnl3" pkg="0tyncec1" xy="577,1" size="94,43"/>
+    <image id="n75" name="n75" src="uchhnl3" pkg="0tyncec1" xy="673,1" size="108,43"/>
+    <image id="n76" name="n76" src="uchhnl3" pkg="0tyncec1" xy="782,1" size="155,43"/>
+    <text id="n77" name="n77" xy="13,8" size="66,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="职业&#xA;&#xA;"/>
+    <text id="n78" name="n78" xy="99,8" size="254,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="名称&#xA;"/>
+    <text id="n79" name="n79" xy="369,8" size="56,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="等级&#xA;&#xA;&#xA;"/>
+    <text id="n80" name="n80" xy="436,8" size="135,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="职务&#xA;&#xA;"/>
+    <text id="n81" name="n81" xy="579,8" size="85,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="战斗力&#xA;&#xA;"/>
+    <text id="n82" name="n82" xy="676,8" size="99,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="历史贡献&#xA;"/>
+    <text id="n83" name="n83" xy="797,8" size="123,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="离线时间&#xA;&#xA;"/>
+    <component id="n22" name="btnMsg" src="jyjfz" xy="685,451" size="250,64">
+      <Button title="广邀各路英雄"/>
+    </component>
+    <component id="n60" name="btnExit" src="jyjf13" xy="0,461" size="159,53">
+      <Button title="退出都护府"/>
+    </component>
+    <component id="n61" name="btnExchange" src="jyjf13" xy="170,461" size="159,53" visible="false">
+      <Button title="更换都护府"/>
+    </component>
+    <text id="n113" name="n113" xy="681,-40" size="147,30" font="方正粗圆简体" fontSize="24" color="#333333" vAlign="middle" leading="0" autoSize="none" text="成员数量：&#xA;"/>
+    <text id="n114" name="txtNum" xy="796,-41" size="138,34" font="方正粗圆简体" fontSize="26" color="#2e3341" vAlign="middle" leading="0" autoSize="none" text="0&#xA;&#xA;"/>
+    <component id="n115" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="1,45" size="938,404"/>
+  </displayList>
+</component>

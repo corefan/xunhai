@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,30">
+  <displayList>
+    <image id="n10" name="bg" src="me2f1c" pkg="0tyncec1" xy="627,0" pivot="0.5,0.5" size="80,30" touchable="false">
+      <relation target="n3" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3" name="title" xy="644,3" pivot="0.5,0.5" size="45,24" touchable="false" font="方正粗圆简体" fontSize="20" color="#ffffff" align="center" vAlign="middle" ubb="true" singleLine="true" text="内容"/>
+  </displayList>
+</component>

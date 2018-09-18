@@ -1,0 +1,13 @@
+<component size="482,106">
+  <displayList>
+    <image id="n4" name="msgBg" src="eykg1n" xy="-42,55" size="439,45"/>
+    <text id="n5" name="nameText" xy="159,30" size="220,26" font="方正粗圆简体" fontSize="20" color="#2e3341" align="right" vAlign="middle" autoSize="none" text="玩家名字只有七个字"/>
+    <component id="n6" name="playerIcon" src="z03enli" pkg="0tyncec1" xy="396,17"/>
+    <richtext id="n7" name="msgText" xy="-30,65" size="406,26" font="方正粗圆简体" fontSize="22" color="#40332e" leading="6" ubb="true" autoSize="height" text="">
+      <relation target="" sidePair="right-right"/>
+    </richtext>
+    <loader id="n8" name="vip" xy="329,7" size="50,50" align="center" vAlign="middle"/>
+    <component id="n9" name="infoClick" src="eykg1l" xy="378,4" size="100,97"/>
+  </displayList>
+  <relation target="n4" sidePair="height-height"/>
+</component>

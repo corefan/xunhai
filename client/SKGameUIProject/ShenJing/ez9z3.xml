@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImage="ui://ny6nt56pez9z7">
+  <displayList>
+    <image id="n0" name="bg" src="ez9z2" xy="0,0"/>
+    <component id="n1" name="returnBtn" src="ez9z6" xy="1,0"/>
+    <component id="n2" name="btn1" src="ez9zi" xy="739,320"/>
+    <component id="n3" name="btn2" src="ez9zi" xy="508,222" visible="false">
+      <Button title="幻境" icon="ui://ny6nt56pez9ze"/>
+    </component>
+    <component id="n4" name="btn3" src="ez9zi" xy="272,246" visible="false">
+      <Button title="部族战场" icon="ui://ny6nt56pez9zh"/>
+    </component>
+    <component id="n5" name="btn4" src="ez9zi" xy="403,484" visible="false">
+      <Button title="妖族入侵" icon="ui://ny6nt56pez9zd"/>
+    </component>
+    <component id="n6" name="btn5" src="ez9zi" xy="740,35" visible="false">
+      <Button title="古神试炼" icon="ui://ny6nt56pez9zf"/>
+    </component>
+  </displayList>
+</component>

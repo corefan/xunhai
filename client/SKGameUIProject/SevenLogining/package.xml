@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="gyl54s25" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="f3gz0" name="Com" folder=""/>
+    <folder id="f3gz1" name="Img" folder=""/>
+    <image id="f3gzb" name="845X127" folder="f3gz1" qualityOption="source" file="f3gzb.png" size="91,88"/>
+    <component id="f3gzd" name="SevenLoginPanel" folder="f3gz0" file="f3gzd.xml" exported="true"/>
+    <component id="f3gzf" name="DayItem" folder="f3gz0" file="f3gzf.xml" exported="true"/>
+    <image id="hkz0g" name="btn_guanbi" folder="f3gz1" qualityOption="source" file="hkz0g.png" size="25,25"/>
+    <image id="hkz0h" name="752X115" folder="f3gz1" qualityOption="source" file="hkz0h.png" size="96,115" scale="9grid" scale9grid="39,54,17,5"/>
+    <image id="hkz0i" name="示意图(2)" folder="f3gz1" qualityOption="source" file="hkz0i.png" size="1334,750"/>
+    <image id="hkz0j" name="zhuangshi" folder="f3gz1" qualityOption="source" file="hkz0j.png" size="99,103"/>
+    <image id="hkz0k" name="yilingqu" folder="f3gz1" qualityOption="source" file="hkz0k.png" size="100,46"/>
+    <image id="hkz0l" name="di" folder="f3gz1" qualityOption="source" file="hkz0l.png" size="1172,623" scale9grid="600,239,279,214"/>
+    <image id="lpwim" name="bg" folder="" qualityOption="source" file="lpwim.jpg" size="1334,750"/>
+  </resources>
+  <publish name="SevenLogining"/>
+</packageDescription>

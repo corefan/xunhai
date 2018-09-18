@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="456,40">
+  <displayList>
+    <graph id="n2" name="mask" xy="0,0" size="456,40" type="rect" forMask="true"/>
+    <image id="n0" name="bg" src="me2f1c" xy="0,2" pivot="0.5,0.5" size="456,37">
+      <relation target="n1" sidePair="width-width,height-height"/>
+    </image>
+    <richtext id="n1" name="content" xy="464,4" pivot="0.5,0.5" size="425,35" touchable="false" font="方正粗圆简体" fontSize="22" color="#fefefe" vAlign="middle" ubb="true" autoSize="none" text="标题文字标题"/>
+  </displayList>
+</component>

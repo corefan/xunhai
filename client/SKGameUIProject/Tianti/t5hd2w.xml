@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="360,360" overflow="hidden" extention="Label" initName="levelLogo">
+  <displayList>
+    <image id="n0" name="n0" src="t5hd28" xy="9,9" locked="true"/>
+    <loader id="n7" name="icon" xy="155,155" size="50,50" align="center" vAlign="middle"/>
+    <image id="n9" name="imgJindu" src="heji3m" xy="72,281" scale="1,-1" fillMethod="radial360" fillClockwise="false"/>
+    <image id="n10" name="n10" src="heji3n" xy="59,224"/>
+    <image id="n11" name="imgJifendi" src="heji3o" xy="143,228"/>
+    <loader id="n12" name="iconDuanwei" xy="156,284" pivot="0.5,0.5" size="50,50" url="ui://mrcfhfspheji3p" align="center" vAlign="middle"/>
+    <text id="n13" name="txtJifen" xy="146,222" pivot="0.5,0.5" size="71,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="center" vAlign="middle" text="50/100"/>
+  </displayList>
+</component>

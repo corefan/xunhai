@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="397,601">
+  <displayList>
+    <image id="n15" name="bg" src="x0conj6" pkg="0tyncec1" xy="0,0"/>
+    <loader id="n17" name="bgRare" xy="12,7" size="375,124" group="n22" touchable="false" fill="scaleFree" playing="false"/>
+    <text id="n1" name="txtName" xy="128,21" size="10,30" group="n22" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" letterSpacing="1" bold="true" text=""/>
+    <text id="n2" name="txtBind" xy="149,29" size="95,22" group="n22" font="方正粗圆简体" fontSize="18" color="#ded4fc" autoSize="height" text="(已绑定)">
+      <relation target="n1" sidePair="left-right"/>
+    </text>
+    <text id="n3" name="txtLev" xy="128,65" size="96,22" group="n22" font="方正粗圆简体" fontSize="18" color="#ded4fc" vAlign="middle" autoSize="height" text="???级"/>
+    <text id="n4" name="txtSubType" xy="226,65" size="103,22" group="n22" font="方正粗圆简体" fontSize="18" color="#ded4fc" align="center" vAlign="middle" autoSize="height" text="物品类型">
+      <relation target="n3" sidePair="top-top"/>
+    </text>
+    <richtext id="n18" name="txtPower" xy="128,93" size="10,26" group="n22" font="方正粗圆简体" fontSize="22" color="#ff9900" text=""/>
+    <component id="n5" name="layer" src="t5hdnfw" pkg="0tyncec1" xy="20,133" size="356,346" group="n22"/>
+    <component id="n7" name="line0" src="uedbni0" pkg="0tyncec1" xy="19,485" size="360,2" group="n22"/>
+    <text id="n13" name="txtSell" xy="31,500" size="105,24" group="n22" font="方正粗圆简体" fontSize="20" color="#ded4fc" text="出售价格："/>
+    <text id="n14" name="txtPrice" xy="181,498" size="157,24" group="n22" font="方正粗圆简体" fontSize="20" color="#ded4fc" align="right" ubb="true" autoSize="none" text="????????????????????"/>
+    <loader id="n19" name="iconSell" xy="341,496" size="28,28" group="n22" align="center" vAlign="middle" fill="scaleFree"/>
+    <component id="n20" name="btnUse" src="tnbmnka" pkg="0tyncec1" xy="230,528" size="138,55" group="n22">
+      <Button title="使用" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n21" name="btnSell" src="tnbmnka" pkg="0tyncec1" xy="34,528" size="138,55" group="n22">
+      <Button title="出售" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <loader id="n23" name="iconArrow" xy="330,96" size="24,24" group="n22" fill="scaleFree" playing="false"/>
+    <group id="n22" name="uiGroup" xy="12,7" size="375,576" advanced="true" collapsed="true"/>
+  </displayList>
+</component>

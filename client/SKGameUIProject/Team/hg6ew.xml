@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="168,58" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n2" name="n2" src="xv56n" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3" name="n3" xy="34,15" size="101,28" font="方正粗圆简体" fontSize="24" color="#d9d9d9" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,2" singleLine="true" text="加入">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>

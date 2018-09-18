@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="rev08g9e" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="x0co4o" name="StorePanel" folder="" file="x0co4o.xml" exported="true"/>
+    <component id="x0co4p" name="StallPanel" folder="" file="x0co4p.xml" exported="true"/>
+    <component id="x0co4q" name="TradingAlertPanel" folder="" file="x0co4q.xml" exported="true"/>
+    <folder id="x0co4t" name="img" folder=""/>
+    <image id="x0co4w" name="sortBg" folder="x0co4t" qualityOption="source" file="x0co4w.png" size="740,56"/>
+    <image id="qndm56" name="pkgTitleBg" folder="x0co4t" qualityOption="source" file="qndm56.png" size="105,18" scale="9grid" scale9grid="27,6,54,6"/>
+    <component id="nav057" name="TradingItem" folder="" file="nav057.xml" exported="true"/>
+  </resources>
+  <publish name="Trading"/>
+</packageDescription>

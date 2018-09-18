@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="00dfg718" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="huhh0" name="image" folder=""/>
+    <component id="qpe61" name="AssetsLoader" folder="" file="qpe61.xml" exported="true"/>
+    <component id="syhtg" name="LoadingBar" folder="" file="syhtg.xml"/>
+    <component id="btvdm" name="Bar" folder="" file="btvdm.xml"/>
+    <image id="bhfln" name="bg2" folder="huhh0" qualityOption="source" file="bhfln.jpg" size="1334,750"/>
+    <component id="yn2mp" name="Light" folder="" file="yn2mp.xml" exported="true"/>
+    <image id="sgyos" name="progressBg" folder="huhh0" qualityOption="source" file="sgyos.png" size="75,20" scale="9grid" scale9grid="29,0,15,15"/>
+    <image id="sgyot" name="jinduguangdian" folder="huhh0" qualityOption="source" file="sgyot.png" size="82,73"/>
+    <image id="sgyou" name="jindutiao" folder="huhh0" qualityOption="source" file="sgyou.png" size="673,12"/>
+    <image id="qifav" name="bg1" folder="huhh0" qualityOption="source" file="qifav.jpg" size="1334,750"/>
+    <component id="nah1w" name="CompanyName" folder="" file="nah1w.xml" exported="true"/>
+    <component id="nah1y" name="GamePrompt" folder="" file="nah1y.xml" exported="true"/>
+    <image id="kn8vz" name="logo" folder="huhh0" qualityOption="source" file="kn8vz.png" size="160,60"/>
+    <image id="apkz10" name="juese1" folder="huhh0" qualityOption="source" file="apkz10.png" size="434,318" exported="true"/>
+    <image id="apkz11" name="juese2" folder="huhh0" qualityOption="source" file="apkz11.png" size="461,379" exported="true"/>
+    <image id="apkz12" name="VS" folder="huhh0" qualityOption="source" file="apkz12.png" size="179,155"/>
+    <image id="apkz13" name="zuo1" folder="huhh0" qualityOption="source" file="apkz13.png" size="609,256" exported="true"/>
+    <image id="apkz14" name="zuo2" folder="huhh0" qualityOption="source" file="apkz14.png" size="609,256" exported="true"/>
+    <image id="apkz15" name="zuo3" folder="huhh0" qualityOption="source" file="apkz15.png" size="609,256" exported="true"/>
+    <image id="apkz16" name="you1" folder="huhh0" qualityOption="source" file="apkz16.png" size="609,256" exported="true"/>
+    <image id="apkz17" name="you2" folder="huhh0" qualityOption="source" file="apkz17.png" size="609,256" exported="true"/>
+    <image id="apkz18" name="you3" folder="huhh0" qualityOption="source" file="apkz18.png" size="609,256" exported="true"/>
+    <image id="apkz19" name="juese3" folder="huhh0" qualityOption="source" file="apkz19.png" size="486,331" exported="true"/>
+    <component id="apkz1a" name="TiantiLeft" folder="" file="apkz1a.xml"/>
+    <component id="apkz1b" name="TiantiRight" folder="" file="apkz1b.xml"/>
+  </resources>
+  <publish name="Loader"/>
+</packageDescription>

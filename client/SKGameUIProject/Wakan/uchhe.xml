@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="976,624" opaque="false">
+  <displayList>
+    <image id="n61" name="n61" src="uchhm" xy="499,14"/>
+    <image id="n58" name="n58" src="uchhk" xy="-10,57"/>
+    <loader id="n93" name="bgImg" xy="-32,23" size="465,512" align="center" vAlign="middle"/>
+    <image id="n63" name="n63" src="uchhj" xy="498,76"/>
+    <image id="n3" name="VerLine" src="jsucnhg" pkg="0tyncec1" xy="466,0"/>
+    <component id="n34" name="wakanBtn" src="tnbmnka" pkg="0tyncec1" xy="626,557" size="146,56">
+      <Button title="注灵" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n38" name="propItem1" src="uchhc" xy="570,337"/>
+    <component id="n41" name="propItem3" src="uchhc" xy="774,337"/>
+    <component id="n42" name="propItem2" src="uchhc" xy="672,337"/>
+    <text id="n45" name="infoMore" xy="495,471" size="459,41" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="超出的灵力值，升到下一级时不被保留！&#xA;"/>
+    <text id="n16" name="partName" xy="636,38" size="172,41" font="方正粗圆简体" fontSize="24" color="#058c9c" align="center" vAlign="middle" autoSize="none" text="头盔.部位"/>
+    <text id="n18" name="progessTxt" xy="622,77" size="204,31" font="方正粗圆简体" fontSize="18" color="#003341" align="center" vAlign="middle" autoSize="none" text="100/300&#xA;"/>
+    <text id="n28" name="info" xy="749,279" size="144,32" font="方正粗圆简体" fontSize="20" color="#54595e" vAlign="middle" autoSize="none" text="50%"/>
+    <image id="n97" name="progessBg" src="rgh0nl8" pkg="0tyncec1" xy="598,103" size="254,14" color="#000000"/>
+    <component id="n95" name="progessPre" src="uchhb" xy="596,101" size="258,16" alpha="0.6">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n51" name="progess" src="uchhb" xy="596,101" size="258,16">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n52" name="infoLable" xy="625,279" size="133,32" font="方正粗圆简体" fontSize="20" color="#54595e" align="center" vAlign="middle" autoSize="none" text="注灵暴击率："/>
+    <text id="n55" name="costLable" xy="554,520" size="133,32" font="方正粗圆简体" fontSize="20" color="#54595e" align="right" vAlign="middle" autoSize="none" text="消耗："/>
+    <text id="n56" name="cost" xy="722,520" size="144,32" font="方正粗圆简体" fontSize="20" color="#54595e" vAlign="middle" autoSize="none" text="2000"/>
+    <component id="n64" name="radio" src="5v99nkh" pkg="0tyncec1" xy="649,436"/>
+    <text id="n65" name="selectInfo" xy="687,438" size="149,29" font="方正粗圆简体" fontSize="20" color="#2e3341" vAlign="middle" autoSize="none" text="自动放入&#xA;"/>
+    <loader id="n66" name="costIcon" xy="681,515" size="40,40" fill="scale"/>
+    <component id="n72" name="awakeBtn" src="tnbmnka" pkg="0tyncec1" xy="22,18" size="93,83">
+      <Button icon="ui://jh3vd6rkuchhl"/>
+    </component>
+    <image id="n73" name="n73" src="s4zfnls" pkg="0tyncec1" xy="701,182"/>
+    <image id="n67" name="n67" src="uchhnl1" pkg="0tyncec1" xy="512,135" size="176,34"/>
+    <image id="n68" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="511,167" size="178,100"/>
+    <text id="n70" name="curLevelName" xy="513,138" pivot="0.5,0.5" size="174,29" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="2级"/>
+    <image id="n80" name="n80" src="uchhnl1" pkg="0tyncec1" xy="766,135" size="176,34"/>
+    <image id="n81" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="765,167" size="178,100"/>
+    <text id="n83" name="nextLevelName" xy="767,138" pivot="0.5,0.5" size="174,29" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="2级"/>
+    <component id="n86" name="items" src="nkol1k" xy="50,100" pivot="0.5,0.5"/>
+    <component id="n87" name="curB1" src="nkol1m" xy="512,172"/>
+    <component id="n88" name="curB2" src="nkol1m" xy="512,211"/>
+    <component id="n89" name="nextB1" src="nkol1m" xy="765,172"/>
+    <component id="n90" name="nextB2" src="nkol1m" xy="765,211"/>
+    <component id="n91" name="selectPanel" src="rgh01r" xy="568,110"/>
+    <graph id="n92" name="successEft" xy="732,151" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <component id="n94" name="tipsBtn" src="f06tnnd" pkg="0tyncec1" xy="839,557">
+      <Button icon="ui://0tyncec1f06tnnc"/>
+    </component>
+    <text id="n96" name="yimanMark" xy="855,94" size="92,28" font="方正粗圆简体" fontSize="16" color="#ff0000" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="已满"/>
+  </displayList>
+</component>

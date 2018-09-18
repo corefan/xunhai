@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1197,671" opaque="false" designImage="ui://of7roaz1n66s19" designImageOffsetX="-70" designImageOffsetY="-38" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <image id="n43" name="bgBottom" src="k9p021" xy="224,546"/>
+    <image id="n44" name="bgDikuang" src="n66s1k" xy="216,85" size="878,458"/>
+    <image id="n37" name="n37" src="dvfo1z" xy="224,557" size="189,29"/>
+    <image id="n31" name="n31" src="n66s1v" xy="-65,14"/>
+    <component id="n8" name="n8" src="n66s1t" xy="950,546" size="146,54"/>
+    <text id="n12" name="n12" xy="320,559" size="40,30" font="方正粗圆简体" fontSize="20" color="#009cbe" autoSize="none" text="00"/>
+    <component id="n13" name="bar_jindu" src="n66s1u" xy="391,562">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n32" name="btn_libao1" src="t5hdnfq" pkg="0tyncec1" xy="484,545" size="44,54" alpha="0.97">
+      <Button icon="ui://of7roaz1n66s1d"/>
+    </component>
+    <component id="n33" name="btn_libao2" src="t5hdnfq" pkg="0tyncec1" xy="608,545" size="44,54">
+      <Button icon="ui://of7roaz1n66s1c"/>
+    </component>
+    <component id="n34" name="btn_libao3" src="t5hdnfq" pkg="0tyncec1" xy="725,545" size="44,54">
+      <Button icon="ui://of7roaz1n66s1b"/>
+    </component>
+    <component id="n35" name="btn_libao4" src="t5hdnfq" pkg="0tyncec1" xy="852,541" size="51,57">
+      <Button icon="ui://of7roaz1n66s1a"/>
+    </component>
+    <text id="n38" name="n38" xy="225,561" size="149,22" font="方正粗圆简体" fontSize="18" color="#2e3341" text="已连续签到      天"/>
+    <image id="n39" name="n39" src="k9p020" xy="222,90" size="868,448"/>
+    <component id="n36" name="panel_grid" src="t5hdnfx" pkg="0tyncec1" xy="228,78" size="879,491"/>
+    <image id="n45" name="n45" src="gk0nnid" pkg="0tyncec1" xy="197,67"/>
+  </displayList>
+</component>

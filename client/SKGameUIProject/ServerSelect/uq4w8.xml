@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="335,92" extention="Button" designImageAlpha="21">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="bg" src="keyenis" pkg="0tyncec1" xy="0,1" size="334,90">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n8" name="bgSelected" src="keyenir" pkg="0tyncec1" xy="0,0" size="334,92">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <loader id="n3" name="loaderServerState" xy="44,32" size="30,27"/>
+    <text id="n4" name="labelServerName" xy="77,33" size="154,27" font="方正粗圆简体" fontSize="20" color="#2e3341" vAlign="middle" autoSize="none" text=""/>
+    <loader id="n5" name="loaderProfessionIcon" xy="239,15" size="63,62" fill="scaleFree"/>
+    <text id="n6" name="labelPlayerLev" xy="269,35" size="50,27" font="方正粗圆简体" fontSize="20" vAlign="middle" autoSize="height" text=""/>
+    <image id="n7" name="imgNewServer" src="uq4w5" xy="3,4"/>
+  </displayList>
+  <Button mode="Radio" downEffect="scale" downEffectValue="0.98"/>
+</component>

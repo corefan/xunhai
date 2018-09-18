@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80" opaque="false" extention="Label" initName="head">
+  <displayList>
+    <loader id="n2" name="icon" xy="40,40" pivot="0.5,0.5" anchor="true" size="50,30" touchable="false" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </loader>
+    <graph id="n6" name="mask" xy="0,0" size="80,80" touchable="false" type="eclipse" forMask="true">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </graph>
+  </displayList>
+</component>

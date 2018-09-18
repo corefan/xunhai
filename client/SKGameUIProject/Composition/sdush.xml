@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="419,129" designImage="ui://qr7fvjxisdusi" designImageAlpha="64">
+  <displayList>
+    <image id="n0" name="bg0" src="sdusnnl" pkg="0tyncec1" xy="0,0" size="419,129"/>
+    <image id="n1" name="bg1" src="sdusnnm" pkg="0tyncec1" xy="20,18" size="379,27"/>
+    <text id="n2" name="labelName" xy="19,19" size="379,27" font="方正粗圆简体" fontSize="20" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" text="">
+      <relation target="n1" sidePair="width-width,height-height"/>
+    </text>
+    <richtext id="n4" name="richLabelEffect0" xy="18,48" size="382,27" font="方正粗圆简体" fontSize="20" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text=""/>
+    <richtext id="n5" name="richLabelEffect1" xy="18,75" size="382,27" font="方正粗圆简体" fontSize="20" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text=""/>
+  </displayList>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="110,110" extention="Button">
+  <displayList>
+    <image id="n61" name="Bg" src="fs5w4k" xy="0,0"/>
+    <loader id="n60" name="icon" xy="2,2" size="107,106"/>
+    <text id="n62" name="TxtLevel" xy="35,81" size="41,23" font="方正粗圆简体" fontSize="17" color="#cccccc" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#000000" text="Lv.3"/>
+    <text id="n63" name="title" xy="2,2" size="41,21" font="方正粗圆简体" fontSize="17" color="#0099ff" align="center" vAlign="middle" leading="0" autoSize="none" bold="true" strokeColor="#000000" text="普通"/>
+  </displayList>
+  <Button/>
+</component>

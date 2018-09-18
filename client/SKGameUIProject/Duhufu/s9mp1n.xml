@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="643,562">
+  <displayList>
+    <image id="n6" name="n1" src="ci33f" xy="-17,-2" size="672,566"/>
+    <text id="n9" name="n9" xy="37,21" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="none" text="长安守城方:"/>
+    <text id="n10" name="n10" xy="37,58" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="height" text="长安攻城方:"/>
+    <text id="n11" name="n11" xy="37,95" size="363,29" font="方正粗圆简体" fontSize="22" text="都护府城战已经开始报名，报名时间:"/>
+    <text id="n13" name="n13" xy="37,189" size="99,29" font="方正粗圆简体" fontSize="22" text="报名条件:"/>
+    <image id="n18" name="n18" src="jsucnhh" pkg="0tyncec1" xy="29,180" size="582,2"/>
+    <image id="n20" name="n20" src="jsucnhh" pkg="0tyncec1" xy="29,495" size="582,2"/>
+    <text id="n26" name="t1" xy="187,21" size="337,29" font="方正粗圆简体" fontSize="22" color="#0033cc" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n27" name="t2" xy="187,58" size="337,29" font="方正粗圆简体" fontSize="22" color="#ff3300" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n25" name="t3" xy="120,132" size="431,42" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <text id="n14" name="t4" xy="52,227" size="391,29" font="方正粗圆简体" fontSize="22" ubb="true" autoSize="height" text="?"/>
+    <component id="n15" name="b1" src="jyjf12" xy="27,331" size="590,35">
+      <Label title="攻城报名" titleColor="#336600"/>
+    </component>
+    <component id="n16" name="b2" src="jyjf12" xy="27,371" size="590,35">
+      <Label title="攻城都护府列表" titleColor="#336600"/>
+    </component>
+    <component id="n17" name="b3" src="jyjf12" xy="27,412" size="590,35">
+      <Label title="都护府联盟" titleColor="#336600"/>
+    </component>
+    <component id="n21" name="b4" src="jyjf12" xy="27,510" size="590,44">
+      <Label title="都护府城战介绍" titleColor="#333333" icon="ui://0tyncec1pu0xnq5"/>
+    </component>
+    <component id="n28" name="b5" src="jyjf12" xy="27,454" size="590,35">
+      <Label title="提交攻城令" titleColor="#336600"/>
+    </component>
+    <component id="n24" name="close" src="t5hdnfq" pkg="0tyncec1" xy="593,-6" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+  </displayList>
+</component>

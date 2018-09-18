@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="qr7fvjxi" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="xy1x0" name="Component" folder=""/>
+    <folder id="xy1x1" name="Image" folder=""/>
+    <component id="xy1x3" name="CompositionUI" folder="xy1x0" file="xy1x3.xml" exported="true"/>
+    <component id="xy1x4" name="CompositionUILeft" folder="xy1x0" file="xy1x4.xml" exported="true"/>
+    <component id="xy1x5" name="CompositionUIRight" folder="xy1x0" file="xy1x5.xml" exported="true"/>
+    <image id="xy1x6" name="zhongjianyuan" folder="xy1x1" qualityOption="source" file="xy1x6.png" size="329,329"/>
+    <image id="xy1x7" name="zhongjianyuan2" folder="xy1x1" qualityOption="source" file="xy1x7.png" size="415,417"/>
+    <image id="xy1x8" name="touminghuaweng" folder="xy1x1" qualityOption="source" file="xy1x8.png" size="519,527"/>
+    <image id="rj72c" name="合成界面2" folder="xy1x1" qualityOption="source" file="rj72c.png" size="1334,750"/>
+    <component id="rj72d" name="CompositionBtn" folder="xy1x0" file="rj72d.xml"/>
+    <component id="ljhtf" name="Button1" folder="" file="ljhtf.xml"/>
+    <component id="ljhtg" name="CompositionTabBtn" folder="xy1x0" file="ljhtg.xml" exported="true"/>
+    <component id="sdush" name="CompositionItemInfo" folder="xy1x0" file="sdush.xml" exported="true"/>
+    <image id="sdusi" name="字色字号3" folder="xy1x1" qualityOption="source" file="sdusi.png" size="1334,750"/>
+  </resources>
+  <publish name="Composition" genCode="true"/>
+</packageDescription>

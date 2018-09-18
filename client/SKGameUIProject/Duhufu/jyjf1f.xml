@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="134,178" overflow="hidden" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n182" name="n182" src="keyenis" pkg="0tyncec1" xy="0,0" size="134,178"/>
+    <image id="n189" name="n189" src="keyenir" pkg="0tyncec1" xy="0,0" size="134,178">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n185" name="n185" src="jsucnhh" pkg="0tyncec1" xy="14,34" size="109,2"/>
+    <image id="n186" name="n186" src="oqbynlm" pkg="0tyncec1" xy="19,47"/>
+    <loader id="n187" name="icon" xy="19,47" size="92,92" fill="scaleFree"/>
+    <text id="n183" name="title" xy="12,6" size="112,32" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" autoSize="none" text="技能名字&#xA;"/>
+    <text id="n184" name="txtLv" xy="12,142" size="107,29" font="方正粗圆简体" fontSize="22" color="#003399" align="center" vAlign="middle" autoSize="none" text="技能等级&#xA;"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

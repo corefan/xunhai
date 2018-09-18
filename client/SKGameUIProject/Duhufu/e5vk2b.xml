@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label">
+  <displayList>
+    <graph id="n1" name="n1" xy="-31,-5" pivot="0.5,0.5" size="1334,750" locked="true" scale="1.5,1.5" type="rect" lineSize="0" lineColor="#80000000" fillColor="#80000000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <image id="n2" name="n2" src="csuxnlk" pkg="0tyncec1" xy="361,269" size="597,251"/>
+    <text id="n3" name="title" xy="453,272" size="413,34" font="方正粗圆简体" fontSize="24" color="#d2dae0" align="center" vAlign="middle" autoSize="none" text="提示"/>
+    <component id="n4" name="btn" src="l2b8nnq" pkg="0tyncec1" xy="575,451" size="169,41">
+      <Button title="复活（60s）" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <richtext id="n6" name="content" xy="407,323" size="514,29" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="height" text=""/>
+  </displayList>
+</component>

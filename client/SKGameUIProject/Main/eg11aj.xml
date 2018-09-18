@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageAlpha="38">
+  <controller name="SwitchMorF" pages="0,CityUI,1,FightUI,2,TiantiUI" selected="0"/>
+  <displayList>
+    <component id="n0" name="MiniMap" src="eg11am" xy="1166,0">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n2" name="PlayerInfo" src="eg11ak" xy="0,5"/>
+    <component id="n3" name="FightController" src="eg11an" xy="0,2" locked="true">
+      <gearDisplay controller="SwitchMorF" pages="1,2"/>
+    </component>
+    <component id="n5" name="SwitchBtn" src="eg11ap" xy="1261,162" pivot="0.5,0.5">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+      <Button checked="true"/>
+    </component>
+    <component id="n6" name="Function" src="t5hdnfx" pkg="0tyncec1" xy="1254,250" size="79,534">
+      <gearDisplay controller="SwitchMorF" pages="0"/>
+    </component>
+    <component id="n11" name="chatMain" src="om7mbn" xy="424,616"/>
+    <component id="n9" name="PlayerExpBar" src="ckrkb5" xy="0,744">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n10" name="TaskTeam" src="hudkb6" xy="0,125">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n12" name="BagBtn" src="gv0lce" xy="341,666" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n27" name="equipStoreBtn" src="gv0lce" xy="1173,235" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n28" name="decompositionBtn" src="gv0lce" xy="1167,162" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n13" name="Activites" src="t5hdnfx" pkg="0tyncec1" xy="521,5" pivot="1,0" size="500,100">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n15" name="pkModel" src="nv56d6" xy="259,7">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n16" name="modelSelect" src="nv56dc" xy="264,36"/>
+    <component id="n17" name="FBFlag" src="sgyode" xy="1106,0">
+      <gearDisplay controller="SwitchMorF" pages="1"/>
+    </component>
+    <list id="n19" name="buffContainer" xy="73,112" size="211,76" layout="flow_hz" overflow="scroll" margin="0,0,0,0" lineGap="1" colGap="1" defaultItem="ui://0042gnitfx79el"/>
+    <component id="n8" name="MonInfo" src="gvm85g" xy="375,36"/>
+    <component id="n23" name="btnVipIcon" src="t5hdnfs" pkg="0tyncec1" xy="37,94" size="48,28"/>
+    <component id="n24" name="buffDescPanel" src="fx79em" xy="73,188"/>
+    <component id="n25" name="PlayerInfoRight" src="nnjff3" xy="1328,3" scale="-1,1">
+      <gearDisplay controller="SwitchMorF" pages="2"/>
+    </component>
+    <text id="n26" name="txtCutdown" xy="568,46" size="186,30" font="方正粗圆简体" fontSize="24" color="#ff2d2d" strokeColor="#280000" strokeSize="2" text="剩余时间  : 120秒">
+      <gearDisplay controller="SwitchMorF" pages="2"/>
+    </text>
+    <component id="n30" name="furnaceBtn" src="gv0lce" xy="1077,162" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n31" name="gangBtn" src="gv0lce" xy="987,162" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n14" name="returnBtn" src="gv0lce" xy="939,675" pivot="0.5,0.5" size="62,62">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+      <Button icon="ui://0042gnitgv0lcg"/>
+    </component>
+    <component id="n32" name="transBtn" src="gv0lce" xy="941,602" size="62,62">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+  </displayList>
+  <transition name="SwitchBtnEffect">
+    <item time="0" type="Rotation" target="n5" tween="true" startValue="0" endValue="45" duration="12" ease="Quad.InOut"/>
+    <item time="12" type="Rotation" target="n5" tween="true" startValue="45" ease="Quad.InOut"/>
+  </transition>
+  <transition name="SwitchBtnEffect2">
+    <item time="0" type="Rotation" target="n5" tween="true" startValue="45" endValue="0" duration="12"/>
+  </transition>
+  <transition name="fightcontrollerEffectIn">
+    <item time="0" type="XY" target="n3" tween="true" startValue="389,-" endValue="0,-" duration="8"/>
+  </transition>
+  <transition name="functionIn">
+    <item time="0" type="XY" target="n6" tween="true" startValue="1332,-" endValue="1248.69,-" duration="12"/>
+    <item time="12" type="XY" target="n6" tween="true" startValue="1248.69,-"/>
+  </transition>
+</component>

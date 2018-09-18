@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <image id="n0" name="bg" src="n3qsneq" pkg="0tyncec1" xy="364,214" pivot="0.5,0.5" size="620,280"/>
+    <image id="n1" name="bg2" src="lgaa1f" xy="506,226" size="337,44"/>
+    <image id="n2" name="line" src="igkdnlb" pkg="0tyncec1" xy="482,393" size="379,2"/>
+    <text id="n4" name="txt_cd" xy="608,401" size="135,26" font="方正粗圆简体" fontSize="20" color="#43515b" align="center" vAlign="middle" text="即将开始：5秒">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <text id="n5" name="title" xy="603,233" size="135,33" font="方正粗圆简体" fontSize="26" color="#2e3341" align="center" vAlign="middle" text="热情的沙漠">
+      <relation target="n1" sidePair="center-center"/>
+    </text>
+    <component id="n6" name="btnCancel" src="skqrnkp" pkg="0tyncec1" xy="468,428" size="130,55">
+      <Button title="放弃" titleColor="#2e3341" icon="ui://0tyncec1gk0nnif" selectedIcon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n7" name="btnAgree" src="skqrnkp" pkg="0tyncec1" xy="751,428" size="130,55">
+      <Button title="同意" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie" selectedIcon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n12" name="teamerConn" src="t5hdnfx" pkg="0tyncec1" xy="376,274" size="596,120"/>
+  </displayList>
+</component>

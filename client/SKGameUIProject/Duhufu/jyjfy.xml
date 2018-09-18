@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="948,585">
+  <displayList>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="582,584"/>
+    <image id="n13" name="n13" src="cnepnqb" pkg="0tyncec1" xy="597,1" size="351,113"/>
+    <image id="n36" name="n36" src="cnepnqb" pkg="0tyncec1" xy="597,118" size="351,222"/>
+    <image id="n39" name="n39" src="cnepnqa" pkg="0tyncec1" xy="597,347" size="341,50"/>
+    <image id="n41" name="n41" src="cnepnqb" pkg="0tyncec1" xy="597,456" size="351,51"/>
+    <image id="n42" name="n42" src="cnepnqb" pkg="0tyncec1" xy="597,397" size="351,51"/>
+    <image id="n43" name="n43" src="cnepnqa" pkg="0tyncec1" xy="597,118" size="341,50"/>
+    <image id="n44" name="n44" src="cnepnqa" pkg="0tyncec1" xy="597,1" size="341,50"/>
+    <image id="n15" name="n15" src="jsucnhh" pkg="0tyncec1" xy="19,61" size="536,2"/>
+    <text id="n58" name="label0" xy="26,18" size="333,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="建立都护府须知"/>
+    <text id="n46" name="label1" xy="599,9" size="244,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="都护府名称"/>
+    <text id="n48" name="label2" xy="602,125" size="244,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="都护府公告"/>
+    <text id="n51" name="label4" xy="604,354" size="218,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="创建都护府费用"/>
+    <text id="n49" name="txtInputName" xy="610,61" size="327,36" input="true" prompt="请输入都护府名称" maxLength="12" font="方正粗圆简体" fontSize="24" color="#666666" autoSize="none" text=""/>
+    <text id="n50" name="txtInputNotice" xy="610,175" size="327,143" input="true" prompt="请输入都护府公告" maxLength="56" font="方正粗圆简体" fontSize="24" color="#666666" autoSize="none" text=""/>
+    <text id="n55" name="labelCost1" xy="604,410" size="74,36" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" text="消耗"/>
+    <loader id="n33" name="iconCost1" xy="677,406" size="43,41" url="ui://j7ibmhypolnb2k" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n52" name="txtCost1" xy="726,409" size="181,36" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <text id="n56" name="labelCost2" xy="606,455" size="74,36" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" text="消耗"/>
+    <loader id="n54" name="iconCost2" xy="677,455" size="43,41" url="ui://j7ibmhypolnb2k" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n53" name="txtCost2" xy="727,457" size="181,36" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <text id="n59" name="txtInfo" xy="25,72" size="537,463" font="方正粗圆简体" fontSize="24" ubb="true" autoSize="none" text="建立都护府须知xxxxxxxxxxxxxxx"/>
+    <component id="n60" name="btnCreate" src="jyjfz" xy="628,510"/>
+    <image id="n61" name="n61" src="gk0nnid" pkg="0tyncec1" xy="579,-6" size="16,590"/>
+  </displayList>
+</component>

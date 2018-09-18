@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="55,75" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n4" name="worldbg" src="om7mbv" xy="12,8" visible="false"/>
+    <text id="n5" name="text" xy="17,42" size="27,22" font="方正粗圆简体" fontSize="18" color="#c6d6db" autoSize="height" text="世"/>
+  </displayList>
+  <Button/>
+</component>

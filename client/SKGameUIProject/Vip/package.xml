@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="zhwzke4o" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="r8sc0" name="VipPanel" folder="r8scn" file="r8sc0.xml" exported="true"/>
+    <folder id="r8sc3" name="img" folder=""/>
+    <image id="r8sc4" name="liebiao1" folder="r8sc3" qualityOption="source" file="r8sc4.png" size="261,110"/>
+    <image id="r8sc5" name="xuanzhongdi" folder="r8sc3" qualityOption="source" file="r8sc5.png" size="57,122" scale="9grid" scale9grid="15,31,9,62"/>
+    <image id="r8sc7" name="liebiao3" folder="r8sc3" qualityOption="source" file="r8sc7.png" size="271,122"/>
+    <image id="r8sc8" name="liebiao2" folder="r8sc3" qualityOption="source" file="r8sc8.png" size="261,110"/>
+    <image id="r8scb" name="zhuangshi1" folder="r8sc3" qualityOption="source" file="r8scb.png" size="17,18"/>
+    <image id="r8scc" name="youbiankuang" folder="r8sc3" qualityOption="source" file="r8scc.png" size="18,16" scale="9grid" scale9grid="5,5,7,6"/>
+    <image id="r8scd" name="youbiandi" folder="r8sc3" qualityOption="source" file="r8scd.png" size="674,25" scale="9grid" scale9grid="169,7,338,8"/>
+    <image id="r8sch" name="song" folder="r8sc3" qualityOption="source" file="r8sch.png" size="84,85"/>
+    <folder id="r8scn" name="Component" folder=""/>
+    <component id="r8sco" name="VipLvItem" folder="r8scn" file="r8sco.xml" exported="true"/>
+    <component id="r8scp" name="ViptequanDesItem" folder="r8scn" file="r8scp.xml" exported="true"/>
+    <image id="a7c1q" name="btn_zhihui" folder="r8sc3" qualityOption="source" file="a7c1q.png" size="39,46" scale="9grid" scale9grid="14,12,9,24" exported="true"/>
+    <image id="pt1gr" name="ditu" folder="r8sc3" qualityOption="source" file="pt1gr.png" size="964,166"/>
+    <image id="pt1gs" name="baiyin" folder="r8sc3" qualityOption="source" file="pt1gs.png" size="115,37"/>
+    <image id="pt1gt" name="qingtong" folder="r8sc3" qualityOption="source" file="pt1gt.png" size="115,37"/>
+    <image id="pt1gu" name="huangjin" folder="r8sc3" qualityOption="source" file="pt1gu.png" size="115,37"/>
+    <image id="nhv9v" name="ditu2" folder="r8sc3" qualityOption="source" file="nhv9v.png" size="964,166"/>
+  </resources>
+  <publish name="Vip"/>
+</packageDescription>

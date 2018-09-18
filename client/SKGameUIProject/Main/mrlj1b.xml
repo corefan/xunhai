@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="180,50">
+  <displayList>
+    <image id="n0" name="bg" src="mrlj16" xy="25,9" size="127,34"/>
+    <image id="n1" name="icon" src="mrljp" xy="-5,-3"/>
+    <text id="n3" name="title" xy="40,11" size="97,30" fontSize="22" color="#ffffff" align="right" vAlign="middle" autoSize="none" bold="true" text="123456"/>
+    <component id="n4" name="btnAdd" src="mrlj17" xy="137,6"/>
+  </displayList>
+</component>

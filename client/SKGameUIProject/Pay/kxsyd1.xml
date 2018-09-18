@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="232,45" extention="Label">
+  <displayList>
+    <loader id="n11" name="kehuode" xy="0,7" size="75,33" url="ui://zuudarvc10j1c5"/>
+    <text id="n12" name="title" xy="75,7" size="49,35" font="ui://0tyncec1hhg0eh" fontSize="13" color="#2e3341" text="128">
+      <relation target="n11" sidePair="left-right"/>
+    </text>
+    <loader id="n13" name="lvyuanbao" xy="131,0" size="43,45" url="ui://0tyncec1n2mycg">
+      <relation target="n12" sidePair="left-right"/>
+    </loader>
+  </displayList>
+</component>

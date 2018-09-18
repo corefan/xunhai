@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="666,600" designImageOffsetX="-339" designImageOffsetY="-33" designImageLayer="1">
+  <controller name="payListCtrl" pages="1,,2," selected="0"/>
+  <displayList>
+    <image id="n47" name="n47" src="x0conjw" pkg="0tyncec1" xy="0,-2" size="666,607">
+      <relation target="" sidePair="left-left,bottomext-bottom"/>
+    </image>
+    <text id="n0" name="title" xy="207,27" size="257,40" font="方正粗圆简体" fontSize="36" color="#0f0f0f" text="请选择支付方式">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <component id="n35" name="btnClose" src="iw5we4" xy="597,28">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n22" name="payNum" src="iw5we0" xy="45,135"/>
+    <component id="n48" name="getNum" src="iw5we0" xy="45,175"/>
+    <component id="n32" name="list1" src="iw5we3" xy="2,238" size="660,100">
+      <Button checked="true" icon="ui://zuudarvciw5wdr" selectedIcon="ui://zuudarvci4cce9" controller="payListCtrl" page="1"/>
+    </component>
+    <component id="n51" name="list2" src="iw5we3" xy="2,341" size="660,100">
+      <Button icon="ui://zuudarvciw5wdr" selectedIcon="ui://zuudarvci4cce9" controller="payListCtrl" page="2"/>
+    </component>
+    <image id="n49" name="n49" src="uedbnhz" pkg="0tyncec1" xy="2,441" size="660,1"/>
+    <component id="n44" name="btnPay" src="iw5we7" xy="0,443">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </component>
+  </displayList>
+</component>

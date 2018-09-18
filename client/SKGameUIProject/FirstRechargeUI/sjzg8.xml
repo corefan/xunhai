@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="222,67" extention="Button">
+  <controller name="rewCtrl" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <loader id="n0" name="icon" xy="-1,0" size="222,67" url="ui://0tyncec1dmzwnna"/>
+    <image id="n6" name="goPay" src="sjzg4" xy="63,16">
+      <gearDisplay controller="rewCtrl" pages="0"/>
+    </image>
+    <image id="n5" name="getRew" src="hzv1a" xy="80,16">
+      <gearDisplay controller="rewCtrl" pages="1"/>
+    </image>
+    <image id="n7" name="Getted" src="a4f9e" xy="63,16" size="99,32">
+      <gearDisplay controller="rewCtrl" pages="2"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>

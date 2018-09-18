@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="931,49" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n88" name="n88" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="931,49"/>
+    <image id="n105" name="n105" src="zf9fnqc" pkg="0tyncec1" xy="-2,0" size="933,49">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n96" name="txt1" xy="5,6" size="81,33" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="职业&#xA;&#xA;"/>
+    <text id="n97" name="txt2" xy="87,6" size="272,33" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="无&#xA;"/>
+    <text id="n98" name="txt3" xy="359,6" size="67,33" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="0&#xA;&#xA;&#xA;"/>
+    <text id="n99" name="txt4" xy="427,7" size="149,33" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="成员&#xA;&#xA;"/>
+    <text id="n100" name="txt5" xy="577,9" size="100,30" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="0&#xA;&#xA;"/>
+    <text id="n101" name="txt6" xy="678,6" size="95,33" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="&#xA;"/>
+    <richtext id="n103" name="txt7" xy="777,1" size="151,48" font="方正粗圆简体" fontSize="18" align="center" vAlign="middle" leading="2" autoSize="none" text="2018/12/12&#xA;18:00:00 离线"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

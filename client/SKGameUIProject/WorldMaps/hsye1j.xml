@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImage="ui://rkrzdlw3mkz91p">
+  <displayList>
+    <graph id="n2" name="n2" xy="0,0" size="1334,750" alpha="0.75" type="rect" fillColor="#ff000000"/>
+    <loader id="n4" name="mapRoad" xy="1108,0" size="50,30" scale="-1,1" alpha="0.75" autoSize="true"/>
+    <component id="n5" name="signContain" src="t5hdnfx" pkg="0tyncec1" xy="1108,0" size="900,800" scale="-1,1"/>
+    <graph id="n7" name="touchLay" xy="1333,0" size="1336,750" scale="-1,1" alpha="0" type="rect"/>
+    <component id="n1" name="exitBtn" src="elj8t" xy="1218,10"/>
+    <component id="n3" name="changeWorMapBtn" src="g6r51r" xy="21,17"/>
+  </displayList>
+</component>

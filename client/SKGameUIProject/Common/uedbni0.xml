@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,2" opaque="false" initName="line">
+  <displayList>
+    <image id="n0" name="n0" src="uedbnhx" xy="14,0" size="22,2">
+      <relation target="" sidePair="width-width,top-top"/>
+    </image>
+    <image id="n1" name="n1" src="uedbnhy" xy="-3,-5">
+      <relation target="" sidePair="top-top,left-left"/>
+    </image>
+    <image id="n2" name="n2" src="uedbnhy" xy="41,-5">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+  </displayList>
+</component>

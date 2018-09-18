@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="298,106" extention="Button" designImageAlpha="80">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n3" name="img_bg_select" src="eca82h" xy="0,1">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n0" name="img_bg_not_select" src="eca82i" xy="2,0">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <loader id="n1" name="loader_career_name" xy="121,29" size="88,43" url="ui://5gey1uxreca832"/>
+    <loader id="n2" name="loader_career_state" xy="27,26" size="50,50" url="ui://5gey1uxreca831" align="center" vAlign="middle"/>
+    <text id="n4" name="label_role_name" xy="111,30" size="179,40" font="方正粗圆简体" fontSize="24" color="#9ffeff" vAlign="middle" ubb="true" autoSize="none" strokeColor="#2a2a2a" shadowColor="#2a2a2a" shadowOffset="1,1" text="名字只有七个字"/>
+    <image id="n5" name="img_bg_role_level" src="t5hdng2" pkg="0tyncec1" xy="65,63"/>
+    <text id="n6" name="label_role_level" xy="65,63" size="32,31" font="方正粗圆简体" fontSize="14" color="#888f9c" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#000000" text="126&#xA;"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

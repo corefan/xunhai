@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="479,259">
+  <displayList>
+    <component id="n59" name="n59" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,259"/>
+    <text id="n22" name="txtTitle" xy="188,6" size="119,28" font="方正粗圆简体" fontSize="24" color="#cccccc" autoSize="none" text="探索墓室"/>
+    <component id="n61" name="btnQuxiao" src="l2b8nnq" pkg="0tyncec1" xy="96,192" size="122,42">
+      <Button title="取消" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n62" name="btnQueding" src="l2b8nnq" pkg="0tyncec1" xy="270,192" size="122,42">
+      <Button title="确定" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <richtext id="n72" name="txtTansuo" xy="240,75" pivot="0.5,0.5" anchor="true" size="429,26" group="n67" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="height" text=""/>
+    <richtext id="n73" name="txtTansuoCost" xy="243,152" pivot="0.5,0.5" anchor="true" size="391,28" group="n67" font="方正粗圆简体" fontSize="24" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="height" text="666666">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </richtext>
+    <group id="n67" name="comTansuo" xy="240,75" size="429,105" advanced="true"/>
+    <text id="n68" name="txtChange1" xy="82,61" size="307,30" group="n71" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="shrink" text="更换陵墓会重置奖励"/>
+    <text id="n69" name="txtChange2" xy="116,97" size="243,30" group="n71" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="none" text="花费元宝刷新奖励?"/>
+    <text id="n70" name="txtChange3" xy="63,158" size="362,25" group="n71" font="方正粗圆简体" fontSize="20" color="#858687" align="center" ubb="true" autoSize="none" text="(探索完所有墓室后可免费更换陵墓)"/>
+    <group id="n71" name="comChange" xy="63,61" size="362,122" hideByEditor="true" advanced="true"/>
+  </displayList>
+</component>

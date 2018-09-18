@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="478,60">
+  <displayList>
+    <image id="n1" name="bg0" src="j2mza" pkg="s68puhqj" xy="0,0" size="478,60"/>
+    <image id="n2" name="imgAccount" src="j2mzi" pkg="s68puhqj" xy="35,20"/>
+    <text id="n3" name="labelName" xy="73,17" size="290,33" font="方正粗圆简体" fontSize="20" color="#000f0f" vAlign="middle" autoSize="none" text=""/>
+    <component id="n4" name="btnBind" src="j2mzm" pkg="s68puhqj" xy="373,20" size="78,22">
+      <Button title="游客绑定"/>
+    </component>
+  </displayList>
+</component>

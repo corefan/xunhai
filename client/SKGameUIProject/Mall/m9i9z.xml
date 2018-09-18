@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="364,120">
+  <displayList>
+    <image id="n20" name="n20" src="keyenis" pkg="0tyncec1" xy="0,0" size="364,120"/>
+    <image id="n21" name="select" src="keyenir" pkg="0tyncec1" xy="0,0" size="364,120"/>
+    <text id="n12" name="propName" xy="115,15" pivot="0.5,0.5" size="216,31" font="方正粗圆简体" fontSize="24" color="#1e67af" vAlign="middle" ubb="true" autoSize="none" strokeColor="#626161" text="魔法戒指&#xA;"/>
+    <text id="n13" name="cost2" xy="164,79" pivot="0.5,0.5" size="149,34" font="方正粗圆简体" fontSize="24" vAlign="bottom" autoSize="height" text="10086&#xA;"/>
+    <loader id="n14" name="costIcon" xy="115,49" size="40,40" group="n19" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n16" name="cost1" xy="164,53" pivot="0.5,0.5" size="149,34" group="n18" font="方正粗圆简体" fontSize="24" vAlign="bottom" autoSize="height" text="10086&#xA;"/>
+    <group id="n18" name="n18" xy="163,55" size="150,31" group="n19" collapsed="true"/>
+    <group id="n19" name="n19" xy="115,49" size="198,40"/>
+    <image id="n22" name="line" src="v6jenm3" pkg="0tyncec1" xy="158,69" size="44,2"/>
+  </displayList>
+</component>

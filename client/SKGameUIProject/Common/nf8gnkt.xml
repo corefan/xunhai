@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="396,63" extention="Label" initName="label">
+  <displayList>
+    <image id="n0" name="bg" src="x0conjx" xy="52,0" size="344,63">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <text id="n1" name="title" xy="-48,17" size="125,28" font="方正粗圆简体" fontSize="24" color="#2e3341" align="right" vAlign="middle" autoSize="none" text="xxx：">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <loader id="n3" name="icon" xy="81,7" size="48,48" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="n1" sidePair="left-right"/>
+    </loader>
+    <text id="n5" name="txt" xy="137,9" size="249,45" fontSize="22" color="#2e3341" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="width-width"/>
+      <relation target="n3" sidePair="left-right"/>
+    </text>
+  </displayList>
+</component>

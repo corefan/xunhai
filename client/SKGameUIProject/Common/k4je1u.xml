@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="531,60">
+  <controller name="c1" pages="0,,1,,2,,3,,4," selected="0"/>
+  <displayList>
+    <component id="n133" name="n133" src="k4je1t" xy="0,0">
+      <Button checked="true" title="世界" controller="c1" page="0"/>
+    </component>
+    <component id="n135" name="n135" src="k4je1t" xy="107,-1">
+      <Button title="队伍" controller="c1" page="1"/>
+    </component>
+    <component id="n136" name="n136" src="k4je1t" xy="215,0">
+      <Button title="氏族" controller="c1" page="2"/>
+    </component>
+    <component id="n137" name="n137" src="k4je1t" xy="322,0">
+      <Button title="私聊" controller="c1" page="3"/>
+    </component>
+  </displayList>
+</component>

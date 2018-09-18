@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="227,488">
+  <displayList>
+    <image id="n1" name="n1" src="qcs831" xy="-2,-3" size="231,493"/>
+    <image id="n19" name="icon_tuteng" src="tosw6u" xy="31,130"/>
+    <graph id="n5" name="modelConn" xy="97,366" size="32,31"/>
+    <text id="n6" name="txtName" xy="30,418" size="168,24" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="height" text="???">
+      <relation target="n1" sidePair="middle-middle"/>
+    </text>
+    <image id="n20" name="img_leveldi" src="8f0z6v" xy="165,10"/>
+    <text id="n7" name="txtLev" xy="172,14" size="52,22" font="方正粗圆简体" fontSize="18" color="#eaf8ff" align="center" vAlign="middle" autoSize="height" strokeColor="#000a3f" text="??级"/>
+    <text id="n8" name="labelPos" xy="10,451" size="52,23" font="方正粗圆简体" fontSize="19" color="#058c9c" align="center" vAlign="middle" autoSize="height" text="位置:"/>
+    <text id="n9" name="txtMap" xy="62,451" size="160,23" font="方正粗圆简体" fontSize="19" color="#058c9c" align="center" vAlign="middle" autoSize="height" text="???"/>
+    <loader id="n14" name="iconCareer" xy="180,22" size="30,30" fill="scaleFree"/>
+    <component id="n15" name="leaderSign" src="a8b464" xy="16,14" visible="false" touchable="false"/>
+    <image id="n2" name="bgOff" src="c18wnl9" pkg="0tyncec1" xy="1,0" size="225,488" group="n4"/>
+    <text id="n3" name="txtOff" xy="36,297" size="155,99" group="n4" font="方正粗圆简体" fontSize="44" color="#3e3e3e" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="离线"/>
+    <group id="n4" name="offTeam" xy="1,0" size="225,488" hideByEditor="true" visible="false" advanced="true" collapsed="true"/>
+    <component id="n18" name="btnAdd" src="a8b4nlx" pkg="0tyncec1" xy="75,207" visible="false"/>
+    <image id="n21" name="img_huawen" src="8f0z6w" xy="30,406"/>
+  </displayList>
+</component>

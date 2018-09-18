@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="741,468" extention="Label">
+  <displayList>
+    <image id="n3" name="n3" src="x0coniw" pkg="0tyncec1" xy="-28,-37" size="800,509">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1" name="n1" src="cnepnqb" pkg="0tyncec1" xy="10,6" size="725,438">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n4" name="title" xy="277,-30" size="199,30" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" autoSize="height" singleLine="true" text="攻城都护府列表">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <image id="n5" name="n5" src="uchhnl3" pkg="0tyncec1" xy="15,12" size="107,43" group="n20"/>
+    <text id="n6" name="n6" xy="13,17" size="105,33" group="n20" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" singleLine="true" text="序号&#xA;&#xA;"/>
+    <image id="n15" name="n15" src="uchhnl3" pkg="0tyncec1" xy="125,12" size="299,43" group="n20"/>
+    <text id="n16" name="n16" xy="124,17" size="296,33" group="n20" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" singleLine="true" text="都护府名称&#xA;&#xA;"/>
+    <image id="n17" name="n17" src="uchhnl3" pkg="0tyncec1" xy="427,12" size="301,43" group="n20"/>
+    <text id="n18" name="n18" xy="420,17" size="304,33" group="n20" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" singleLine="true" text="联盟名称&#xA;&#xA;"/>
+    <group id="n20" name="n20" xy="13,12" size="715,43" collapsed="true"/>
+    <component id="n21" name="close" src="t5hdnfq" pkg="0tyncec1" xy="654,-25" size="108,72">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <component id="n22" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="15,58" size="716,384"/>
+  </displayList>
+</component>

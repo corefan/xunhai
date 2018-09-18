@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,630">
+  <displayList>
+    <image id="n1" name="n1" src="iqif5" xy="25,11"/>
+    <text id="n2" name="n2" xy="102,267" size="450,28" font="方正粗圆简体" fontSize="25" color="#dbf0f7" text="即领200元宝 持续30天每天领取120元宝"/>
+    <component id="n3" name="btn" src="t5hdnfq" pkg="0tyncec1" xy="209,351" size="221,65">
+      <Button icon="ui://0tyncec1dmzwnna"/>
+    </component>
+    <text id="n6" name="n6" xy="258,424" size="122,26" font="方正粗圆简体" fontSize="22" color="#72ff86" strokeColor="#263325" strokeSize="2" text="剩余天数:15"/>
+    <loader id="n7" name="n7" xy="247,362" size="146,35" touchable="false" url="ui://7gr86wlkiqif4" align="center" vAlign="middle">
+      <relation target="n3" sidePair="center-center,middle-middle"/>
+    </loader>
+    <image id="n8" name="n8" src="gk0nnid" pkg="0tyncec1" xy="-2,13"/>
+  </displayList>
+</component>

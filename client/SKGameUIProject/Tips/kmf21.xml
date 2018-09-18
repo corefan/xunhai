@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <image id="n0" name="bg" src="xix2bm" pkg="0tyncec1" xy="397,160" size="550,350"/>
+    <image id="n7" name="bgUp" src="xix2bk" pkg="0tyncec1" xy="422,219" size="500,200">
+      <relation target="n0" sidePair="center-center"/>
+    </image>
+    <image id="n10" name="bg3" src="xix2bl" pkg="0tyncec1" xy="402,163"/>
+    <text id="n1" name="title" xy="521,177" size="294,34" font="方正粗圆简体" fontSize="30" color="#b6b8bc" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="温馨提示">
+      <relation target="n0" sidePair=""/>
+    </text>
+    <text id="n2" name="content" xy="494,262" size="349,103" font="方正粗圆简体" fontSize="22" color="#cccccc" align="center" autoSize="none" text="您已断开连接">
+      <relation target="n0" sidePair="center-center"/>
+    </text>
+    <component id="n8" name="btnEnter" src="xix2bo" pkg="0tyncec1" xy="707,428"/>
+    <component id="n9" name="btnExit" src="xix2bo" pkg="0tyncec1" xy="466,429">
+      <Button title="取 消"/>
+    </component>
+  </displayList>
+</component>

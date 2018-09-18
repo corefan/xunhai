@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="210,52" extention="Button">
+  <displayList>
+    <image id="n2" name="n2" src="x0conj1" pkg="0tyncec1" xy="0,0" size="210,52"/>
+    <text id="n1" name="title" xy="7,7" size="108,38" font="方正粗圆简体" fontSize="24" color="#fff9e2" align="right" vAlign="middle" ubb="true" autoSize="none" strokeColor="#414e6d" singleLine="true" text="高级秘境">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n3" name="icon" xy="125,4" size="40,40" align="right" fill="scale"/>
+    <text id="n4" name="count" xy="157,7" size="45,38" font="方正粗圆简体" fontSize="24" color="#fff9e2" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#414e6d" singleLine="true" text="1">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

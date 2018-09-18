@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="248,614">
+  <controller name="c1" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n1" name="bg" src="o8xhp" xy="0,0" size="248,614"/>
+    <component id="n0" name="friendTabBtn" src="o8xht" xy="0,0">
+      <Button checked="true" title="好友" controller="c1" page="0"/>
+    </component>
+    <component id="n2" name="factionTabBtn" src="o8xht" xy="0,79">
+      <Button title="公会" controller="c1" page="1"/>
+    </component>
+    <component id="n3" name="myTeamBtn" src="o8xht" xy="0,158">
+      <gearDisplay controller="c1" pages=""/>
+      <Button title="我的队伍" controller="c1" page="2"/>
+    </component>
+  </displayList>
+  <transition name="t0"/>
+</component>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="955,612" designImage="ui://zhwzke4or8sc2" designImageOffsetX="-132" designImageOffsetY="-107" designImageAlpha="0">
+  <controller name="tabCtrl" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n82" name="n82" src="nhv9v" xy="0,-2"/>
+    <image id="n51" name="n51" src="gk0nni9" pkg="0tyncec1" xy="-1,166" size="278,382"/>
+    <loader id="n7" name="vipPanel" xy="292,167" size="663,381"/>
+    <component id="n8" name="btnvip_LQ" src="tnbmnka" pkg="0tyncec1" xy="663,554" size="141,57">
+      <Button title="领取元宝" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n10" name="btnvip_jihuo" src="tnbmnka" pkg="0tyncec1" xy="816,554" size="141,58">
+      <Button title="立即激活" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <text id="n47" name="n47" xy="2,565" size="502,26" fontSize="20" color="#2e3341" letterSpacing="1" autoSize="height" text="激活多种VIP卡,保留最高级VIP特权,时间累加！"/>
+    <image id="n56" name="n56" src="r8scd" xy="288,166" size="670,64"/>
+    <loader id="n54" name="vipLvchoudai" xy="292,168" size="663,57" url="ui://zhwzke4ofvmbr"/>
+    <loader id="n68" name="vipTqIcon" xy="386,173" size="157,47" vAlign="middle"/>
+    <loader id="n69" name="vipLvHead" xy="301,170" size="75,50" align="center" vAlign="middle"/>
+    <image id="n49" name="n49" src="r8scc" xy="290,232" size="365,317" group="n64"/>
+    <list id="n15" name="viptequanDes" xy="309,246" size="332,293" group="n64" overflow="scroll" margin="0,0,0,0"/>
+    <group id="n64" name="n64" xy="290,232" size="366,317" collapsed="true"/>
+    <loader id="n5" name="bgtitle" xy="-2,0" pivot="0.2,0" size="955,159" group="n58" url="ui://zhwzke4or8scl" align="center" vAlign="middle" color="#fafafa"/>
+    <text id="n39" name="n39" xy="36,78" size="132,29" group="n58" fontSize="22" color="#2e3341" text="当前VIP等级:"/>
+    <text id="n41" name="vipTime" xy="41,122" size="10,24" group="n58" fontSize="18" color="#ff0000" strokeColor="#000000" strokeSize="2" text=""/>
+    <loader id="n40" name="vipLvIcon" xy="177,74" size="108,31" group="n58"/>
+    <component id="n36" name="btnvip_dailyLq" src="skqrnkp" pkg="0tyncec1" xy="764,8" size="180,51" group="n58">
+      <Button title="领取每日福利" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n45" name="dailyList" src="t5hdnfx" pkg="0tyncec1" xy="938,60" size="8,11" group="n58"/>
+    <loader id="n81" name="RedIcon" xy="775,14" size="13,12" group="n58" url="ui://0tyncec1xnis91" align="right" vAlign="middle"/>
+    <group id="n58" name="n58" xy="-2,0" size="955,159" collapsed="true"/>
+    <image id="n50" name="n50" src="r8scc" xy="660,231" size="295,317" group="n63"/>
+    <text id="n60" name="n60" xy="761,241" size="109,33" group="n63" fontSize="26" color="#058c9c" text="首次激活"/>
+    <image id="n61" name="n61" src="hx0xnip" pkg="0tyncec1" xy="663,275" size="288,11" group="n63"/>
+    <image id="n59" name="n59" src="r8sch" xy="645,216" group="n63"/>
+    <component id="n62" name="giftConn" src="t5hdnfx" pkg="0tyncec1" xy="720,292" size="187,187" group="n63"/>
+    <component id="n38" name="btnvip_firstLQ" src="skqrnkp" pkg="0tyncec1" xy="734,484" size="159,47" group="n63">
+      <Button title="激活可领取" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <loader id="n84" name="redfirst" xy="751,493" size="13,12" group="n63" url="ui://0tyncec1xnis91" align="right" vAlign="middle"/>
+    <group id="n63" name="n63" xy="645,216" size="310,332"/>
+    <component id="n71" name="tab0" src="r8sco" xy="6,175">
+      <Button checked="true" title="0" icon="ui://zhwzke4or8sc4" controller="tabCtrl" page="0"/>
+    </component>
+    <component id="n72" name="tab1" src="r8sco" xy="6,299">
+      <Button icon="ui://zhwzke4or8sc8" controller="tabCtrl" page="1"/>
+    </component>
+    <component id="n73" name="tab2" src="r8sco" xy="6,423">
+      <Button icon="ui://zhwzke4or8sc7" controller="tabCtrl" page="2"/>
+    </component>
+    <loader id="n77" name="isJhHJ" xy="5,175" size="71,70"/>
+    <loader id="n78" name="isJhBY" xy="5,299" size="71,70"/>
+    <loader id="n79" name="isJhQT" xy="5,423" size="71,70"/>
+    <loader id="n83" name="redLqYB" xy="675,565" size="13,12" url="ui://0tyncec1xnis91" align="right" vAlign="middle"/>
+  </displayList>
+</component>

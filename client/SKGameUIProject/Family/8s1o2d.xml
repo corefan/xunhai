@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="479,259">
+  <displayList>
+    <component id="n59" name="n59" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,259"/>
+    <text id="n22" name="n22" xy="188,6" size="119,28" font="方正粗圆简体" fontSize="24" color="#ffffff" autoSize="none" text="创建家族"/>
+    <text id="n24" name="n24" xy="71,74" size="358,26" font="方正粗圆简体" fontSize="22" color="#43515b" autoSize="none" text="请输入家族名称，创建后无法修改"/>
+    <component id="n33" name="inputFName" src="i4cc1k" xy="75,115">
+      <Label maxLength="7"/>
+    </component>
+    <component id="n32" name="btnCreatPay" src="i4cc1j" xy="210,185" touchable="false" grayed="true"/>
+    <component id="n58" name="btnCancelPay" src="e9ze1u" xy="53,185" size="119,52">
+      <Button title="取消" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+  </displayList>
+</component>

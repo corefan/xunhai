@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" overflow="hidden" designImage="ui://mrcfhfspz7y035">
+  <controller name="c1" pages="0,closeRank,1,openRank" selected="0" transitions="*-0=t1,*-1=t0"/>
+  <controller name="c2" pages="0,closeInfo,1,openInfo" selected="0" transitions="*-0=t3,*-1=t2"/>
+  <controller name="c3" pages="0,openTop,1,closeTop" selected="0"/>
+  <controller name="c4" pages="0,openButtom,1,closeButtom" selected="0"/>
+  <displayList>
+    <loader id="n17" name="bg" xy="0,0" size="1,1" url="ui://mrcfhfspz7y037"/>
+    <component id="n22" name="levelLogo" src="t5hd2w" xy="114,111"/>
+    <loader id="n23" name="icon_title" xy="704,310" size="499,161" touchable="false"/>
+    <component id="n20" name="bottom" src="t5hd5" xy="0,571">
+      <gearDisplay controller="c4" pages="0"/>
+    </component>
+    <component id="n11" name="top" src="t5hd1h" xy="0,0">
+      <gearDisplay controller="c3" pages="0"/>
+    </component>
+    <image id="n26" name="imgMatching" src="apkz3c" xy="125,120"/>
+    <text id="n27" name="txtFinding" xy="161,407" size="264,30" font="方正粗圆简体" fontSize="26" color="#fdfb4b" bold="true" text="寻找对手中......( 09s )"/>
+    <component id="n24" name="btnMatch" src="t5hdnfq" pkg="0tyncec1" xy="195,471" size="200,64">
+      <Button title="匹配战斗" icon="ui://0tyncec1hmasnmn"/>
+    </component>
+    <loader id="n25" name="txtMatch" xy="271,476" size="50,50" touchable="false" url="ui://mrcfhfspapkz3a" align="center" vAlign="middle"/>
+    <component id="n5" name="rankUI" src="t5hd4" xy="-668,0" size="667,750"/>
+    <component id="n28" name="tipsBtn" src="f06tnnd" pkg="0tyncec1" xy="1214,506">
+      <Button icon="ui://0tyncec1f06tnnc"/>
+    </component>
+    <component id="n6" name="infoUI" src="t5hd2" xy="1333,0"/>
+    <component id="n4" name="btnOpenInfo" src="t5hd2p" xy="1284,161" size="52,275">
+      <relation target="n6" sidePair="left-right"/>
+      <Button controller="c2" page="1"/>
+    </component>
+    <component id="n3" name="btnOpenRank" src="t5hd2q" xy="-1,161">
+      <relation target="n5" sidePair="right-left"/>
+      <Button controller="c1" page="1"/>
+    </component>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="XY" target="n5" tween="true" startValue="-664,-" endValue="0,-" duration="12"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="XY" target="n5" tween="true" startValue="0,-" endValue="-666,-" duration="12"/>
+  </transition>
+  <transition name="t2">
+    <item time="0" type="XY" target="n6" tween="true" startValue="1334,-" endValue="936,-" duration="12"/>
+  </transition>
+  <transition name="t3">
+    <item time="0" type="XY" target="n6" tween="true" startValue="936,-" endValue="1333,0" duration="12"/>
+  </transition>
+</component>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,500">
+  <displayList>
+    <image id="n3" name="n3" src="x0coniw" pkg="0tyncec1" xy="-4,-3" size="600,500"/>
+    <text id="n5" name="n5" xy="182,0" size="225,37" font="方正粗圆简体" fontSize="20" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="更换目标"/>
+    <image id="n24" name="n24" src="s8z9nnh" pkg="0tyncec1" xy="-49,-6" scale="0.8,0.8"/>
+    <image id="n25" name="n25" src="x0conix" pkg="0tyncec1" xy="52,79" size="487,175"/>
+    <image id="n26" name="n26" src="x0conix" pkg="0tyncec1" xy="56,310" size="482,90"/>
+    <image id="n27" name="n27" src="rnfrnmq" pkg="0tyncec1" xy="256,68" size="204,23" rotation="180"/>
+    <text id="n29" name="n29" xy="54,47" size="77,22" font="方正粗圆简体" fontSize="18" color="#2e3341" text="选择目标"/>
+    <image id="n28" name="n28" src="rnfrnmq" pkg="0tyncec1" xy="262,302" size="204,25" rotation="180"/>
+    <text id="n19" name="n19" xy="57,273" size="225,32" font="方正粗圆简体" fontSize="18" color="#071c20" vAlign="middle" autoSize="none" text="等级限制"/>
+    <text id="n20" name="n20" xy="174,338" size="108,32" font="方正粗圆简体" fontSize="18" color="#071c20" align="right" vAlign="middle" autoSize="none" text="最低等级："/>
+    <component id="n23" name="comboxBtn" src="kob76j" xy="287,334">
+      <relation target="" sidePair=""/>
+      <ComboBox visibleItemCount="6">
+        <item title="无限制" value="1"/>
+        <item title="10级" value="10"/>
+        <item title="20级" value="20"/>
+        <item title="30级" value="30"/>
+        <item title="40级" value="40"/>
+        <item title="50级" value="50"/>
+        <item title="60级" value="60"/>
+        <item title="70级" value="70"/>
+        <item title="80级" value="80"/>
+        <item title="90级" value="90"/>
+        <item title="100级" value="100"/>
+      </ComboBox>
+    </component>
+    <component id="n1" name="typeConn" src="t5hdnfw" pkg="0tyncec1" xy="59,87" size="473,160"/>
+    <component id="n30" name="btnClose" src="tnbmnka" pkg="0tyncec1" xy="150,412" size="118,46">
+      <Button title="取消" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n31" name="btnApply" src="tnbmnka" pkg="0tyncec1" xy="327,413" size="118,46">
+      <Button title="确定" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n32" name="btnCloseNew" src="skqrnkp" pkg="0tyncec1" xy="469,-9" size="106,66">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>

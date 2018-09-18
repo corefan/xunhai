@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="108,80">
+  <controller name="state" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n0" name="n0" src="cdsb8" xy="0,0">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <text id="n1" name="title" xy="1,17" size="106,49" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="系统"/>
+    <image id="n7" name="n7" src="cdsbe" xy="8,78" size="90,2">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+  </displayList>
+</component>

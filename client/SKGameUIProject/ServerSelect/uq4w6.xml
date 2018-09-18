@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageAlpha="0">
+  <displayList>
+    <component id="n34" name="loginBGComp" src="j2mz6" pkg="0qk3a0fj" xy="0,0" group="n18"/>
+    <graph id="n37" name="bgAlpha" xy="0,0" size="1334,750" group="n18" alpha="0.7" type="rect" lineColor="#99000000" fillColor="#ff000000"/>
+    <image id="n0" name="bg0" src="uq4w2" xy="0,0" group="n18"/>
+    <component id="n31" name="btnClose" src="kxn6c" xy="0,0" group="n18"/>
+    <image id="n1" name="bg1" src="uq4wnmc" pkg="0tyncec1" xy="216,97" size="977,559" group="n18"/>
+    <component id="n32" name="btnNotice" src="t5hdnfq" pkg="0tyncec1" xy="1270,23" size="64,64" group="n18"/>
+    <component id="n33" name="btnLogin" src="t5hdnfq" pkg="0tyncec1" xy="1270,96" size="64,64" group="n18"/>
+    <image id="n2" name="bg2" src="gk0nni9" pkg="0tyncec1" xy="447,117" size="726,481" group="n18"/>
+    <image id="n7" name="bg3" src="uq4wnmf" pkg="0tyncec1" xy="431,97" size="16,557" group="n18"/>
+    <image id="n8" name="bg4" src="x0conjp" pkg="0tyncec1" xy="207,91" size="65,25" group="n18"/>
+    <image id="n9" name="bg5" src="x0conjq" pkg="0tyncec1" xy="393,29" size="70,31" group="n18"/>
+    <image id="n10" name="bg6" src="x0conjp" pkg="0tyncec1" xy="1173,564" size="58,23" group="n18"/>
+    <image id="n11" name="bg7" src="x0conjo" pkg="0tyncec1" xy="173,488" group="n18"/>
+    <group id="n18" name="groupBG" xy="0,0" size="1334,750" advanced="true"/>
+    <component id="n12" name="serverState0" src="uq4w7" xy="877,615" group="n19" grayed="true">
+      <Label title="维护"/>
+    </component>
+    <component id="n13" name="serverState1" src="uq4w7" xy="954,615" group="n19">
+      <Label title="流畅" icon="ui://0tyncec1uq4wnmg"/>
+    </component>
+    <component id="n14" name="serverState2" src="uq4w7" xy="1028,614" group="n19">
+      <Label title="拥挤" icon="ui://0tyncec1uq4wnmi"/>
+    </component>
+    <component id="n15" name="serverState3" src="uq4w7" xy="1104,614" group="n19">
+      <Label title="火爆" icon="ui://0tyncec1uq4wnmh"/>
+    </component>
+    <group id="n19" name="groupServerState" xy="877,614" size="302,29" advanced="true" collapsed="true"/>
+    <list id="n22" name="serverContent" xy="468,129" size="689,455" group="n23" layout="flow_hz" overflow="scroll" margin="0,0,0,0" lineGap="4" colGap="15"/>
+    <list id="n28" name="serverTabs" xy="227,125" size="196,471" group="n23" overflow="scroll" margin="8,0,3,0" lineGap="12" colGap="15"/>
+    <group id="n23" name="groupContent" xy="227,125" size="930,471" advanced="true" collapsed="true"/>
+  </displayList>
+</component>

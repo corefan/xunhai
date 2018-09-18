@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="613,63" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n86" name="n86" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="612,63"/>
+    <graph id="n121" name="n121" xy="534,12" size="72,39" type="rect" lineSize="0" fillColor="#29333333"/>
+    <text id="n114" name="t1" xy="2,15" size="225,34" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="都护府名称&#xA;&#xA;"/>
+    <text id="n115" name="t2" xy="229,15" size="174,33" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="都护&#xA;&#xA;"/>
+    <text id="n116" name="t3" xy="405,15" size="63,33" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="等级&#xA;&#xA;"/>
+    <text id="n117" name="t4" xy="471,15" size="61,32" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="人数&#xA;&#xA;"/>
+    <text id="n120" name="t5" xy="535,17" size="70,27" font="方正粗圆简体" fontSize="20" color="#333333" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="可申请&#xA;&#xA;"/>
+    <image id="n119" name="n119" src="uwggde" pkg="0tyncec1" xy="-5,-2" size="618,68">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

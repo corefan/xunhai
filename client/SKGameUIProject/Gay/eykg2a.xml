@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImage="ui://jn83skxkeykg26" designImageAlpha="45">
+  <displayList>
+    <image id="n1" name="n1" src="qjbsniq" pkg="0tyncec1" xy="334,326" size="570,346"/>
+    <text id="n2" name="title" xy="582,331" size="55,31" fontSize="24" color="#d2dae0" align="center" vAlign="middle" autoSize="none" text="追踪"/>
+    <text id="n3" name="zhuzongText" xy="431,384" size="380,65" fontSize="22" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="none" text="使用追踪功能可以得知仇敌一二三四五六七当前所在的地图"/>
+    <image id="n4" name="n4" src="eykg22" xy="400,468"/>
+    <image id="n5" name="n5" src="eykg21" xy="674,468"/>
+    <text id="n6" name="n6" xy="566,460" size="100,29" fontSize="22" color="#6e777e" align="center" vAlign="middle" autoSize="height" text="消耗物品"/>
+    <image id="n7" name="n7" src="j67wnhe" pkg="0tyncec1" xy="572,504" size="89,89"/>
+    <image id="n11" name="btnAddxiaohao" src="rgh0nl6" pkg="0tyncec1" xy="593,527"/>
+    <component id="n15" name="resGezi" src="t5hdnfx" pkg="0tyncec1" xy="572,504" size="89,89"/>
+    <text id="n13" name="txtResNum" xy="677,562" size="67,26" fontSize="20" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text="(1/0)"/>
+    <component id="n8" name="btnQX" src="skqrnkp" pkg="0tyncec1" xy="465,608" size="122,49">
+      <Button title="取消" titleColor="#2e3341" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n9" name="btnQD" src="skqrnkp" pkg="0tyncec1" xy="648,608" size="122,49">
+      <Button title="确定" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>

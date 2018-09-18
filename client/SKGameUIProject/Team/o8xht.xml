@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="248,74" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n5" name="n5" src="o8xha8" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n6" name="n6" src="o8xha7" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n4" name="title" xy="0,0" size="248,74" font="方正粗圆简体" fontSize="22" color="#cdbf87" align="center" vAlign="middle" autoSize="none" singleLine="true" text="标题">
+      <gearDisplay controller="button" pages="0,1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

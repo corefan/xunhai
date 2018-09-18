@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="979,617" opaque="false" designImage="ui://j7ibmhypi4cc1b" designImageOffsetX="-123" designImageOffsetY="-81" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <image id="n0" name="n0" src="i4ccn" xy="26,11" group="n12"/>
+    <text id="n1" name="txtName" xy="67,16" size="10,28" group="n12" font="方正粗圆简体" fontSize="24" color="#2f7f88" text=""/>
+    <text id="n30" name="txtDisband" xy="99,17" size="85,24" group="n12" visible="false" font="方正粗圆简体" fontSize="20" color="#e10404" align="right" vAlign="middle" text="濒临解散">
+      <relation target="n1" sidePair="left-right"/>
+    </text>
+    <component id="n24" name="btnGG" src="e9ze1u" xy="805,4" size="149,53" group="n12">
+      <Button title="家族公告" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <group id="n12" name="n12" xy="26,4" size="928,53"/>
+    <image id="n6" name="n6" src="i4ccz" xy="8,55" size="958,16" group="n11"/>
+    <image id="n5" name="n5" src="jsucnhf" pkg="0tyncec1" xy="16,67" size="942,488" group="n11"/>
+    <component id="n8" name="layerInfo" src="t5hdnfu" pkg="0tyncec1" xy="22,69" size="930,480" group="n11"/>
+    <group id="n11" name="n11" xy="8,55" size="958,500"/>
+    <component id="n26" name="btnGL" src="i4cc1o" xy="416,563" size="175,52" group="n29">
+      <Button title="家族管理" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n27" name="btnZD" src="i4cc1o" xy="601,563" size="175,52" group="n29">
+      <Button title="家族组队" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n28" name="btnJS" src="i4cc1o" xy="788,563" size="175,52" group="n29">
+      <Button title="解散家族" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <group id="n29" name="n29" xy="416,563" size="547,52"/>
+  </displayList>
+</component>

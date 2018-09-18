@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="bveep9rg" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="sjzg0" name="img" folder=""/>
+    <folder id="sjzg1" name="com" folder=""/>
+    <image id="sjzg2" name="字色字号" folder="sjzg0" qualityOption="source" file="sjzg2.png" size="1334,750"/>
+    <image id="sjzg5" name="dian" folder="sjzg0" qualityOption="source" file="sjzg5.png" size="10,10"/>
+    <component id="sjzg7" name="ConsumPanel" folder="sjzg1" file="sjzg7.xml" exported="true"/>
+    <component id="sjzg8" name="ConsumItem" folder="sjzg1" file="sjzg8.xml" exported="true"/>
+    <image id="o67za" name="yilingqu" folder="sjzg0" qualityOption="source" file="o67za.png" size="94,40"/>
+    <image id="snzyb" name="leijixiaofei" folder="sjzg0" qualityOption="source" file="snzyb.png" size="214,52"/>
+    <image id="snzyc" name="861X602(2)" folder="sjzg0" qualityOption="source" file="snzyc.png" size="861,327" scale="9grid" scale9grid="29,226,800,81"/>
+    <image id="snzyd" name="示意图2" folder="sjzg0" qualityOption="source" file="snzyd.png" size="1334,750"/>
+    <image id="snzye" name="xiaofeiwenzi" folder="sjzg0" qualityOption="source" file="snzye.png" size="482,139"/>
+  </resources>
+  <publish name="AccConsum" genCode="true"/>
+</packageDescription>

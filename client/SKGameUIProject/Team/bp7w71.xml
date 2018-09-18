@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,500">
+  <displayList>
+    <image id="n3" name="n3" src="x0coniw" pkg="0tyncec1" xy="-4,-3" size="600,500"/>
+    <text id="n5" name="n5" xy="182,0" size="225,37" font="方正粗圆简体" fontSize="20" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="更换目标"/>
+    <image id="n24" name="n24" src="s8z9nnh" pkg="0tyncec1" xy="-49,-6" scale="0.8,0.8"/>
+    <image id="n25" name="n25" src="x0conix" pkg="0tyncec1" xy="52,79" size="487,320"/>
+    <image id="n27" name="n27" src="rnfrnmq" pkg="0tyncec1" xy="256,68" size="204,23" rotation="180"/>
+    <text id="n29" name="n29" xy="54,47" size="77,22" font="方正粗圆简体" fontSize="18" color="#2e3341" text="选择目标"/>
+    <component id="n1" name="typeConn" src="t5hdnfw" pkg="0tyncec1" xy="59,87" size="473,305"/>
+    <component id="n30" name="btnClose" src="tnbmnka" pkg="0tyncec1" xy="150,412" size="118,46">
+      <Button title="取消" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n31" name="btnApply" src="tnbmnka" pkg="0tyncec1" xy="327,413" size="118,46">
+      <Button title="确定" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n32" name="btnCloseNew" src="skqrnkp" pkg="0tyncec1" xy="469,-9" size="106,66">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>

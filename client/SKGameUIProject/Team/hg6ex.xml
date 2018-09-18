@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="482,292">
+  <displayList>
+    <image id="n0" name="n0" src="xv56s" xy="-1,0" size="482,292"/>
+    <component id="n1" name="n1" src="hg6ev" xy="46,203">
+      <relation target="n0" sidePair=""/>
+    </component>
+    <component id="n2" name="n2" src="hg6ev" xy="273,203">
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n4" name="n4" src="xv56q" xy="39,54" size="408,142"/>
+    <image id="n5" name="n5" src="xv56t" xy="74,123" size="340,43"/>
+    <text id="n6" name="n6" xy="80,130" size="332,26" font="方正粗圆简体" fontSize="22" color="#e0b45b" align="center" vAlign="middle" autoSize="height" text="队伍名称七个字"/>
+    <text id="n7" name="n7" xy="40,77" size="405,26" font="方正粗圆简体" fontSize="22" color="#cccccc" align="center" vAlign="middle" autoSize="height" singleLine="true" text="输入队伍名称"/>
+  </displayList>
+</component>

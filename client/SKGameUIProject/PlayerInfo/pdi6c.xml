@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="265,24" extention="ProgressBar">
+  <displayList>
+    <image id="n0" name="bg" src="pdi6d" xy="2,4"/>
+    <image id="n1" name="bar" src="pdi6e" xy="4,5" size="254,10"/>
+    <text id="n2" name="title" xy="166,-27" size="95,26" font="方正粗圆简体" fontSize="22" text="77/11111">
+      <relation target="" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

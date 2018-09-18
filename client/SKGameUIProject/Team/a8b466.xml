@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="504,100">
+  <displayList>
+    <image id="n0" name="bg" src="keyenis" pkg="0tyncec1" xy="-3,-4" size="506,108"/>
+    <text id="n2" name="txtName" xy="83,20" size="197,32" font="方正粗圆简体" fontSize="22" color="#2e2e2e" align="center" vAlign="middle" ubb="true" autoSize="none" text="????????"/>
+    <component id="n3" name="headIcon" src="z03enli" pkg="0tyncec1" xy="11,7" touchable="false">
+      <Label title="??"/>
+    </component>
+    <text id="n4" name="txtCareer" xy="104,62" size="76,24" font="方正粗圆简体" fontSize="20" color="#2e2e2e" align="center" vAlign="middle" autoSize="height" text="????"/>
+    <loader id="n5" name="iconCareer" xy="189,60" size="28,28" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false"/>
+    <component id="n6" name="btnRefuse" src="skqrnkp" pkg="0tyncec1" xy="307,30" size="91,37">
+      <Button title="拒绝" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n7" name="btnAgree" src="skqrnkp" pkg="0tyncec1" xy="398,30" size="91,37">
+      <Button title="同意" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n8" name="clickMask" src="tnbmnka" pkg="0tyncec1" xy="6,6" size="281,88"/>
+  </displayList>
+</component>

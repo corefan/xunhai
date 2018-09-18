@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="uqy8k45w" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="9jou0" name="ChoudiItem" folder="9joug" file="9jou0.xml" exported="true"/>
+    <component id="9jou1" name="ChoudiPanel" folder="9joug" file="9jou1.xml" exported="true"/>
+    <image id="9jou2" name="长条框" folder="9joua" qualityOption="source" file="9jou2.png" size="49,50" scale="9grid" scale9grid="13,13,26,26"/>
+    <image id="9jou3" name="长条框三角" folder="9joua" qualityOption="source" file="9jou3.png" size="12,12"/>
+    <image id="9jou4" name="长条框02" folder="9joua" qualityOption="source" file="9jou4.png" size="1,46"/>
+    <component id="9jou6" name="ZhuizongPanel" folder="9joug" file="9jou6.xml" exported="true"/>
+    <image id="9jou7" name="花纹01" folder="9joua" qualityOption="source" file="9jou7.png" size="160,12"/>
+    <image id="9jou8" name="花纹02" folder="9joua" qualityOption="source" file="9jou8.png" size="160,12"/>
+    <folder id="9joua" name="img" folder=""/>
+    <folder id="9joug" name="com" folder=""/>
+    <component id="h1y8h" name="btnAddRes" folder="9joug" file="h1y8h.xml"/>
+  </resources>
+  <publish name="ChouDi"/>
+</packageDescription>

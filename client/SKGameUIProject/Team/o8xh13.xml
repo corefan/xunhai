@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="388,208">
+  <displayList>
+    <image id="n1" name="bg_01" src="ubp49d" pkg="0tyncec1" xy="0,0" size="388,208"/>
+    <image id="n2" name="bg_headline" src="o8xh11" xy="92,29" size="212,45"/>
+    <text id="n3" name="label" xy="125,38" size="149,26" font="方正粗圆简体" fontSize="22" color="#cdbf87" letterSpacing="2" text="输入队伍名称"/>
+    <image id="n6" name="teamNameBg" src="o8xho" xy="42,88" size="322,38"/>
+    <component id="n9" name="comfirmBtn" src="o8xh1" xy="236,142"/>
+    <component id="n10" name="cancelBtn" src="o8xh1" xy="54,143">
+      <Button title="取消"/>
+    </component>
+    <text id="n11" name="teamName" xy="51,95" size="298,26" input="true" maxLength="14" font="方正粗圆简体" fontSize="22" color="#e5e5e5" align="center" letterSpacing="2" autoSize="height" text="请输入队伍名称"/>
+  </displayList>
+</component>

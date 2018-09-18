@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="942,597" designImage="ui://d3en6n1nrb401n" designImageOffsetX="-142" designImageOffsetY="-105" designImageAlpha="0">
+  <displayList>
+    <image id="n4" name="huaBg" src="vetk1f" xy="8,137" size="522,331" group="n18"/>
+    <graph id="n7" name="role3D" xy="221,258" pivot="0.5,0.5" size="100,100" group="n18"/>
+    <component id="n8" name="touch" src="rflk1k" xy="-3,-51" size="500,590" group="n18" hideByEditor="true"/>
+    <image id="n1" name="n1" src="gk0nnia" pkg="0tyncec1" xy="163,0" group="n11"/>
+    <text id="n2" name="name" xy="189,9" pivot="0.5,0.5" size="165,30" group="n11" font="方正粗圆简体" fontSize="26" color="#008c9c" align="center" vAlign="middle" ubb="true" autoSize="none" text="天使翅膀&#xA;"/>
+    <group id="n11" name="n11" xy="163,0" size="217,52" group="n14"/>
+    <image id="n12" name="n12" src="oox714" xy="149,65" size="245,43" group="n13"/>
+    <text id="n3" name="power" xy="175,60" size="196,53" group="n13" font="ui://0tyncec1x0conjj" fontSize="20" color="#00ff00" align="center" vAlign="middle" autoSize="none" text="i66666"/>
+    <group id="n13" name="n13" xy="149,60" size="245,53" group="n14"/>
+    <group id="n14" name="n14" xy="149,0" size="245,113" group="n18"/>
+    <component id="n5" name="progess" src="5v99nkb" pkg="0tyncec1" xy="21,543" size="458,30" group="n17">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <image id="n9" name="n9" src="oox713" xy="30,494" group="n15"/>
+    <text id="n10" name="levelInfo" xy="54,499" pivot="0.5,0.5" size="82,34" group="n15" font="方正粗圆简体" fontSize="30" color="#764601" align="center" vAlign="middle" ubb="true" autoSize="none" text="五阶&#xA;"/>
+    <group id="n15" name="n15" xy="30,494" size="129,46" group="n16"/>
+    <group id="n16" name="n16" xy="30,494" size="129,46" group="n17"/>
+    <text id="n50" name="progessLabel" xy="47,563" pivot="0.5,0.5" size="134,29" group="n17" font="方正粗圆简体" fontSize="18" color="#00515b" vAlign="middle" ubb="true" autoSize="none" text="50/100"/>
+    <group id="n17" name="n17" xy="21,494" size="458,98" group="n18"/>
+    <group id="n18" name="n18" xy="-3,-51" size="533,643" group="n49"/>
+    <image id="n19" name="n19" src="oox712" xy="646,5" group="n25"/>
+    <text id="n20" name="fds221" xy="661,11" pivot="0.5,0.5" size="151,30" group="n25" font="方正粗圆简体" fontSize="22" color="#00834d" align="center" vAlign="middle" ubb="true" autoSize="none" text="羽翼属性&#xA;"/>
+    <group id="n25" name="n25" xy="646,5" size="180,36" group="n39" collapsed="true"/>
+    <image id="n31" name="n31" src="oox710" xy="536,53" size="203,34" group="n34"/>
+    <text id="n28" name="vxcw23" xy="536,56" pivot="0.5,0.5" size="203,29" group="n34" font="方正粗圆简体" fontSize="20" align="center" vAlign="middle" ubb="true" autoSize="none" text="当前属性&#xA;"/>
+    <group id="n34" name="n34" xy="536,53" size="203,34" group="n38" collapsed="true"/>
+    <image id="n32" name="n32" src="oox710" xy="739,53" size="203,34" group="n35"/>
+    <text id="n33" name="dsa2112" xy="739,56" pivot="0.5,0.5" size="203,29" group="n35" font="方正粗圆简体" fontSize="20" align="center" vAlign="middle" ubb="true" autoSize="none" text="升星提升"/>
+    <group id="n35" name="n35" xy="739,53" size="203,34" group="n38"/>
+    <image id="n37" name="listBg" src="gk0nni9" pkg="0tyncec1" xy="536,86" size="406,162" group="n38"/>
+    <list id="n30" name="list" xy="536,86" size="406,162" group="n38" touchable="false" overflow="scroll" margin="0,0,0,0" defaultItem="ui://d3en6n1n5v991g">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n38" name="n38" xy="536,53" size="406,195" group="n39"/>
+    <group id="n39" name="n39" xy="536,5" size="406,243" group="n48"/>
+    <image id="n22" name="be32" src="oox712" xy="653,263" group="n26"/>
+    <text id="n23" name="fsq" xy="668,269" pivot="0.5,0.5" size="151,30" group="n26" font="方正粗圆简体" fontSize="22" color="#00834d" align="center" vAlign="middle" ubb="true" autoSize="none" text="羽化消耗&#xA;"/>
+    <group id="n26" name="n26" xy="653,263" size="180,36" group="n47"/>
+    <image id="n40" name="listBg" src="gk0nni9" pkg="0tyncec1" xy="534,311" size="407,162" group="n47"/>
+    <component id="n41" name="cost1" src="5v991j" xy="541,333" group="n47"/>
+    <component id="n42" name="cost2" src="5v991j" xy="642,333" group="n47"/>
+    <component id="n43" name="cost3" src="5v991j" xy="743,333" group="n47"/>
+    <component id="n52" name="cost4" src="5v991j" xy="844,332" group="n47"/>
+    <text id="n62" name="textYuling" xy="537,433" size="403,35" group="n47" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" leading="0" letterSpacing="1" autoSize="none" bold="true" singleLine="true" text="（当前拥有羽灵：0）"/>
+    <component id="n44" name="upBtn" src="tnbmnka" pkg="0tyncec1" xy="771,539" size="156,57" group="n47">
+      <Button title="羽化" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n53" name="returnBtn" src="tnbmnka" pkg="0tyncec1" xy="544,539" size="156,57" group="n47">
+      <Button title="返还羽灵" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <text id="n56" name="n56" xy="682,491" size="150,35" group="n47" font="方正粗圆简体" fontSize="20" color="#2e3341" vAlign="middle" leading="0" letterSpacing="1" autoSize="none" bold="true" singleLine="true" text="选择羽灵注入"/>
+    <component id="n61" name="chooseBtn" src="rb401p" xy="643,491" group="n47"/>
+    <group id="n47" name="n47" xy="534,263" size="407,333" group="n48"/>
+    <group id="n48" name="n48" xy="534,5" size="408,591" group="n49"/>
+    <group id="n49" name="n49" xy="-3,-51" size="945,647"/>
+    <graph id="n51" name="successEft" xy="271,227" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+  </displayList>
+</component>

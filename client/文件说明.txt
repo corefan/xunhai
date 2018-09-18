@@ -1,0 +1,763 @@
+﻿工具 unity3d 5.3.5+ （位置：UIAutoCode）
+	 FairyGUI 2.7.5+ （位置文件夹：UIAutoCode） Unity SDK更新到了1.7.2版本
+ProjectSettings 项目一些设置，有改动U3D设置时，这个就提交一下
+
+SKGameUIProject
+	FairyGUI 工具资源路径, 用于编辑UI
+	
+	其中需要修改工具配置路径：（推荐使用 面板操作）
+	1.面板操作方法：
+	改变：菜单-文件->发布设置 
+		选择左边中的任意一个选项（ 除了 UIRoot， Loader ） 然后设置右边	导出目录 如：x:\xxxx\...\xxxx\Assets\Res\UI 然后点一下设为默认值 一般LUA动态用到的UI都使用这个目录设置
+		特殊文件发布设置，操作同上只是路径名选中后不要设为默认值：（程序必需在U3D中就加载的）
+			UIRoot x:\xxxx\...\xxxx\Assets\Resources\UIRoot
+			Loader x:\xxxx\...\xxxx\Assets\Resources\Loader
+	
+	2.装逼操作方法：改发布结果目录配置文件
+	文件夹里面有 project.xml, projectSettings.json 修改 里面的发布UI路径 道理同上
+	
+	注意：
+		UI功能包命名，包名以大写开头驼峰式规则，
+		编辑中，对元件或控件的命名规则(驼峰式命名)，如：
+			按钮对象：btn开头， -> btn0, btnEnter, btnRefresh... （某些特定名字除外， 如窗体中的 closeButton）
+			动态文本对象（程序使用的）：txt开头， -> txt1, txtInput, txtDesc...(如果是按钮类或标签 窗体中，可以特别作为组件专属，可命名为：title 为按钮｜标签组件｜window自身属性)
+			标签文本对象（一般静态文本）：label开头，->label0, labelName, ...(如果是按钮类或标签 窗体中，可以特别作为组件专属，可命名为：title 为按钮｜标签组件｜window自身属性)
+			装载器控件：img开头，如->img0, imgContainer, imgTitle...(如果是按钮类或标签 窗体中，可以特别作为组件专属，可命名为：icon 为按钮｜标签组件｜window自身属性)
+			其他组件UI也类似命名吧，成习惯就可以了
+		
+		控制器创建： ctrl开头 (特定要求的除外，如 button为按钮控制器等内建的)
+		动态创建： t开头
+		
+		对于UI中如果要用到3D模型的，使用Graph（空白的图形作为位置代替，然后程序自行实现加载入模型及操作）
+		
+		如果UI编辑器中没有看到相关包或模块功能，可以UI 操作中，可以自行导入其他人做的的功能模块包（菜单中的文件->导入包）
+		
+		Common 功能包(程序作用程序动态加入UI)，为公共资源包，里面将资源分到各自文件夹中，如 bg， btn， font（字体）， icon（共用图标，如果是散图标，放在U3D中动态加入）
+		放入的资源文件，右击一下导出，然后发布，其他地方的包或功能就可以使用这里面的资源， 其中，txt放有带中文的资源图片， 
+		ui为一些共用UI组件(命名规大写开头，驼峰式)，如通用 Button, Btn0, Btn1, Box0, NormalLabel
+		
+		另外，就是资源图片自动生成最后的大图（小图块拼凑）大小不能超过2048，
+				所以，可以分类分图处理，双击相关图片，弹出来中有一个“纹理级分配，相头的分配到其他大图中生成即可”
+		
+	技巧： 菜单插入，里面可以创建相关组件元件，里面在创建中一般都 会提示需要加入的东西了，
+									有些不填也是可以的(如按钮四个状态，我们一般只要按下与弹起，或只要一个状态，另一状态程序内建控制器变色缩放等)，看需要
+		
+	官方教程及API：http://www.fairygui.com/tutorial  （有空大概看一下就可以了，不了解的可以问一下： QQ：81449527）	
+	
+UIAutoCode
+	FairyGUI 工具自动生成的UI代码，里面CS我们用不到而使用Lua脚本，对于代码的转换，使用目录下的工具 FuiCodeToLua.exe 转换，然后对生成的脚本看自己需要再放入到项目中
+	
+Assets U3D项目结构
+	GameProject:真正游戏中的项目(GameProject 资源文件夹中有其他的说明文档)
+	FairyGUI UI引擎文件，一般情况下，里面的代码不动，方便以后跟进版本升级，
+						最后要全删除里面的例子Examples文件，前期用于初学者学习
+	Plugins 引用外部库
+	
+	T4M,T4MOBJ,scene(小写) 美工场景导过来的目录结构 （导入进来的场景时，将场景里的layer去掉MeshCollider及MainCamera等摄像机, 然后放入到Res/Scenes/id/id.unity 才能使用） 
+	
+	StreamingAssets 这个是生成程序和动态更新使用的数据文件结果，要整个提交到服务器上指定的位置去，然后程序在第一次运行时，会自动更新下载下来相关的ab，lua等文件
+	
+	LuaFramework\Lua\SKGame 游戏核心逻辑写在这里，各模块功能写在Modules中，以 功能名开头XXXX.lua 命名
+	
+其他，只是一些测试或可能为开发辅助，真正游戏引擎用不到，不必都提交到svn
+
+				
+Publish 产品发布目录 GoogleAndroid|xxx.apk, iOS|xxx.ipa, 【exe, app...】
+
+1.Lua代码的打包和加载 GameManager.cs, ResourceManager.cs, Packager.cs  代码映射到LUA CustomSettings.cs
+
+2.lua和c#的事件系统，c#能派发事件给lua, lua能派发事件给c# => 全局事件:GlobalDispatcher.cs  --> lua 中使用 CSharpDispatcher
+
+3.lua和c#数据的相互获取，lua如何取的c#中的数据,c#如果获取lua中的数据 => CustomSettings.cs 及 Utils.cs(Utils.CallMethod("luafile", "functionName") 只能静态接口)
+
+4.lua 框架是 toluaframework基础上使用MVC模式构建， 
+	其中，ctrl控制器均继承 LuaController model数据模型均继承 LuaModel view是由fairygui及u3d 3d视图对象组合
+	流程：ctrl中有一个全局事件派发器，用于监听与处理各个之前的消息交互， model自身继承一个事件派发器，用于自己模式功能之间的消息交互
+			ctrl与其他ctrl之前的交互尽量使用消息通讯
+			自身模块功能使用mvc模式处理交互 
+			（C请求协议，数据调用M接口改变M数据，M数据发生变化需要时广播消息【事件】到V或C层，V层要的数据直接调V中M实例数据使用，C同理【C也有M的实例】）
+			
+5.tolua框架使用本地调试，没问题时，统一打包成ab数据生成并提交到服务器，如果C#有改变需要编译相关手机端apk，app版本上传至服务器，
+		一般逻辑尽量控制在lua中实现，，需要时，用lua调用C#即U3D中的数据即可。
+
+6.fairygui生成的UI代码要用到lua中需要使用FuiCodeToLua转换成lua，生成结果在根目录中的 LuaUI 中
+
+7.类名，接口，文件名以写法首字母大写并驼峰式规则
+
+8.功能代码文件夹Modules： lua中 Assets\LuaFramework\Lua\SKGame\Modules ，特殊csharp需要 写在 Assets\Scripts\Game\Modules
+	功能中的 Handle， Message 消息协议文件由后台生成， Handle客户端技术自行相应处理接收到消息逻辑
+	
+9.游戏配置Config 由后台生成
+
+10.开发调试及网络数据配置文件 AppConst.cs GameConst.lua
+
+
+
+
+
+----- 项目中lua 一些例子
+
+项目UI 介绍
+	
+	1. 弹窗类继承BaseView 可实现 淡入淡出效果，折回打开旧弹窗， 统一 Open Close 处理开关,
+		isCenter:居中打开
+		parent:设置层级容器（一般是layerMgr的 UI， 可以其他，如Top， MSG, Loader 层级等等）
+		回调操作 closeCallback,openCallback
+		useFade 开启打开淡化效果
+		destroy 关闭是否销毁
+		useCache 缓存窗口
+		isOnOtherClose 别的关时，这个打开，放到一个列表中
+	2. 功能类弹窗使用 CommonBackGround （Baseview 子类）
+		bgUrl 背景动态 设置背景 bg_big0 有tab标签 bg_big1 无tab标签 bg_middle0 一般小弹窗背景(无tab标签)
+		showBtnClose 是否显示关闭按钮
+		标题设定：titleName 设置标题(文字) titleNameRes 设置以图标形式出现标题(res/icon/title路径下)
+		openResources 打开类型[1 gold 金币,2 diamond 钻石,3 stone 宝玉,4 bindDiamond 代金卷] id 在这表中决定顺序
+		tabBar 标签页ui {label="oo", res0="", res1="", id="xx",  red=true} -- label 为文本内容， res0为默认状态(图标)， res1 为选中状态(图标)
+		tabBarSelectCallback -- 标签变化事件回调
+		defaultTabIndex -- 默认选中标签
+
+		注意：继承CommonBackGround后的面板非特殊情况，把布局重写当前Layout()接口中，这个接口在CommonBackGround Open()时，
+		(仅)被调用一次，作为初如化布局，不用一次性在 __init 中一开始就去申请内存使用, 实现了，需要View时再生成相关内容
+
+		
+	3. 其他Ui 原生的就用fairyGUI， 或 继承自己 LuaUI
+	4. fairygui 创建对象 使用 ui = UIPackage.CreateObject(包名, UI资源名) 销毁 使用 destroyUi(ui)
+		LuaUI 创建对象 使用
+			(1) ui = XXXLuaUI.New(...)  销毁 使用 ui:Destroy()
+			(2) 由于fairyGUI产生后再重构成LuaUI 对象的，使用 ui = XXXLuaUI.Create(fui, ...) 
+				销毁 使用 ui:Destroy()
+	
+	5. ui 资源通用的，一般放在Common中， 更多的动态的资源，全用项目U3D Res/icon下的资源 装备图标，头像，活动，logo等
+		如果功能类的，以自己功能名作为模块，然且在fui工具中导入资源使用，注意多用通用资源，好控制游戏包大小
+		公共UI组件放在fui中的Common包中(如 通用按钮， 标签，容器，窗口背景，奖励组件，物品组件， 头像， 数字组件，资产组件，手柄控件)
+		注意公共组件 放在Common/ACommonUI, 资源图片放在 Common/AImge 如果是外部加载的，放到相应项目中的Res/Icon目录下
+	6. list类控件 中如果全用fui中的List，在产生fui对象后又重构成luaui对象的，记得要销毁，
+		建议一个空的或common/Acommon内的CustomLayerX 作为容器，自行实现列表组件
+	7. 游戏项目UI顶级层级关系 参考 LayersMgr.cs GetUILayer < GetMSGLayer < GetLoaderLayer < GetTopLayer
+		FUI自带popup的层级最高，主要有来做一些tips 点空消失的组件， 使用接口：
+		UIMgr.ShowPopup(popup,posX,posY,closeCallback) -- 弹出（点空白处关闭）
+		UIMgr.HidePopup(popup) -- 主动关掉
+		UIMgr:DestroyAllPopup() -- 关闭所有弹出来的
+	
+	8. 一般弹窗类UI 参考 天梯功能（TiantiPanel.lua）,  
+
+注意fui有bug ui残留问题，问题及解决如下：
+	更新一下，销毁fui，由于fui自身问题，在removeChild(fui) 会残留UI在unity中
+	所以 要主动对fui进行销毁，使用 destroyUI(fui) 
+
+	比如说:
+	继承自LuaUI， BaseView， CommonBackground，在这些对象的根部默认都有destroyUI，将lua中的self.ui进行销毁，那么如果你中间创建的原生的UI,那会在Destroy()时会自己对所有子级fui进行删除，如果不是加载到这些对象中的原生FUI，如通过UIPackage.CreateObject()， UIPackage.CreateObjectFromURL(url) 然后加到一些不确定删除的列表显示对象中，那么要主动调一下destroyUI去销毁它，
+
+	如果是LuaUI对象且通过xx=LuaUI.Create(fui,...) xx=LuaUI.New(...) 产生的对象加入其他ui对象中的，则需要在父级的__delete()中添加销毁，主动调一个 xx:Destroy()
+
+-------------------------------------------------------------------------------<<<
+	-- 富文本使用
+	self.richText.text = UBBParserExtension:Parse( "[img=200,100]http://localhost/1.png[/img]" ) -- htmlText
+	self.richText.text = UBBParserExtension:Parse( "[img=200,100]icon/goods/diamond[/img]" ) -- htmlText
+	--[[ 音乐
+		function bg1()
+			soundMgr:PlayBackSound("audio/scene_1005.unity3d", "scene_1005")
+		end
+		function bg2()
+			soundMgr:PlayBackSound("audio/scene_1002.unity3d", "scene_1002")
+		end
+		function stopbg()
+			soundMgr:StopBackSound()
+		end
+		function eff1()
+			soundMgr:PlaySound("audio/skill_100001.unity3d", "skill_100001")
+		end
+		function eff2()
+			soundMgr:PlayEffect("audio/skill_100002.unity3d", "skill_100002")
+		end
+	--]]
+
+	--[[
+		require "SKGame/Modules/Login/View/Btn0"
+		print(resMgr:AddUIAB("Login"))
+		local btn = Btn0.New(10,300)
+		-- layerMgr:GetUILayer():AddChild(btn.ui)
+		btn:AddTo(layerMgr:GetMSGLayer()) -- 加到指定容器
+		local btn2 = Btn0.Create( btn.ui, 209, 56 )
+		btn2:SetData(11111111111111)
+		pt(btn2) -- 打印table对象
+		print(btn2.ui.data)
+		debugFollow()-- 跟踪lua流程
+		printParent(2)-- 打印调用文件和行数
+		printPreCall(2)  -- 打印所有父级lua调用信息
+		btn2:SetDraggable(true) -- 设置可以拖动
+		btn2:SetScale(2,3) -- 设置缩放
+		btn2:SetXY(100, 100)
+	--]]
+
+	--[[(ubb)表情签标解析 类似的也可以用 html
+		local content = "aaa[size=30]big[/size] :btn_back content"
+		UBBParserExtension:Parse(content)
+		
+	--]]
+
+	--[[模块功能创建
+		local loginCtrl = LoginController.New()
+		local loginView = LoginView.New()
+		local loginModel = LoginModel.New()
+		local mainCtrl = MainController.New()
+		local mainModel = MainModel.New()
+		local mainView = MainView.New()
+		print(mainModel.dispatcher == loginModel.dispatcher)
+		pt(mainModel.dispatcher)
+	--]]
+
+	--[[ LuaView class test
+		require "SKGame/Modules/TestView"
+		local view = TestView.New()
+		view:Open()
+	--]]
+
+	--[[ui 实现原逻辑
+		local result = resMgr:AddUIAB("login")
+		if result then
+			local loginPanel = UIPackage.CreateObject("Login","LoginPanel")
+			LayersMgr.Instance:GetTopLayer().touchable=false
+			LayersMgr.Instance:GetUILayer():AddChild(loginPanel)
+			loginPanel.btnEnter = loginPanel:GetChildAt(9)
+			local function click (context)
+				LayersMgr.Instance:GetTopLayer():RemoveChildren()
+				-- pt(context)
+				resMgr:GetSceneAB("10001")
+				resMgr:GetSceneAB("10002")
+				UnityEngine.SceneManagement.SceneManager.LoadScene("10001")
+				-- UnityEngine.SceneManagement.SceneManager.LoadScene("10002", UnityEngine.SceneManagement.LoadSceneMode.Additive)
+				LayersMgr.Instance:GetUILayer():RemoveChild(loginPanel)
+
+				local mainPanel = UIPackage.CreateObject("Main","Main")
+				LayersMgr.Instance:GetUILayer():AddChild(mainPanel)
+			end
+			loginPanel.go3d = loginPanel:GetChildAt(11)
+			loginPanel.draggable = true
+			local cb = function ( obj )
+				local prefab = obj[0]
+				if prefab == nil then return end
+				local effect = GameObject.Instantiate(prefab)
+				loginPanel.go3d:SetNativeObject(GoWrapper.New(effect)) -- ui 3d对象加入
+			end
+			resMgr:LoadPrefab("effect/80001.unity3d", {"80001"}, cb)
+			loginPanel.btnEnter.onClick:Add(click);
+		end
+		resMgr:AddUIAB("main")
+
+		log(StringFormat("{0}要去{1},然后{0}再从{1}跑到主城", "[主角]", "[新手村]"))
+	--]]
+
+	--[[ 实例化预设
+		local go = GameObject('go')
+		-- GameObject.DontDestroyOnLoad(go)
+		local function cb ( obj )
+			local prefab = obj[0]
+			if prefab == nil then return end
+			local cube = GameObject.Instantiate(prefab)
+			cube.name = "aaa"
+			cube.transform:SetParent(go.transform, true);
+			cube.layer = LayerMask.NameToLayer("UI") -- go.layer
+			cube.transform.localScale = Vector3.one
+			cube.transform.localPosition = Vector3.zero
+			-- add需要typeof  get 直接用字符串
+			cube:AddComponent(typeof(UnityEngine.ParticleSystem))
+			local particle = cube:GetComponent("ParticleSystem")
+			pt(particle)
+			cube:AddComponent(typeof(LuaFramework.LuaBehaviour))
+			local rigi = cube:GetComponent("Rigidbody")
+			rigi.useGravity = false
+		end
+		resMgr:LoadPrefab("prefabs/other/cube.unity3d", {"Cube"}, cb)
+	--]]
+
+	--[[使用 gameobject
+		local ParticleSystem = UnityEngine.ParticleSystem
+		local go = GameObject('go')
+		go:AddComponent(typeof(ParticleSystem))
+		local node = go.transform
+		node.position = Vector3.one
+		print('gameObject is: '..tostring(go))
+		GameObject.Destroy(go, 5)
+	--]]
+
+	--[[ 定时器 RenderMgr
+		RenderMgr.AddInterval()
+		RenderMgr.Add()
+		RenderMgr.CoDelay(function () print("**********") end, 2)
+	--]]
+
+	--[[ 打印整个lua类或table示范
+		t = {a={as="示范", c={["yy"]=55, r="kb"}}, b=123}
+		pt(t)
+	--]]
+
+	--[[fui 事件 为 fui.onXXXLinstener:Add(handler(context)) fui.onXXXLinstener:Remove(handler(context)) fui.onXXXLinstener:Clear() 
+		Stage.inst.onKeyDown:Add(function ( context )
+			print(context.inputEvent.keyCode == KeyCode.Escape)
+		end)
+		Stage.inst.onTouchBegin:Add(function ( context )
+			print("触摸开始")
+		end)
+		Stage.inst.onTouchMove:Add(function ( context )
+			print("触摸移动")
+		end)
+		Stage.inst.onTouchEnd:Add(function ( context )
+			print("触摸结束")
+		end)
+	--]]
+
+
+
+	-- [[  InnerEvent 使用 另外AppEvent(全局事件 lua中 转为 GlobalDispatcher) 有别于 GlobalDispatcher.cs 转为 CSharpDispatcher 处理
+		原理:GlobalDispatcher(->AppEvent:GetInstance() 是一个 InnerEvent 对象)
+		XXXXClass = XXXXClass or BaseClass(InnerEvent)
+		-- 这里注意了，跟 CSharpDispatcher 处理的事件执行方法不同， CSharpDispatcher 执行器方法中的参数是个eventcontext ，里面的eventcontext.data才是事件真正传的值;
+		-- (InnerEvent 对象或 GlobalDispatcher)这些 内建事件的参数列表是可以随意多个的 也不是像fui中的事件（如 CSharpDispatcher、CSharpDispatcher）返回context，
+		--  而是直接参数列表，如 eventHandle(a,b,c,d,e) -- 这些参数就是在 Fire(异步) 或 DispatchEvent（同步） 中发送的参数
+		xx = XXXXClass.New()
+		-- 初始事件
+		function XXXXClass:InitEvent()
+			if not self.eventHandler then -- 先判断是否已经监听着
+				local function eventHandle ( a,b,c,d,e ) -- 直接返回参数列表
+					print(a,b,c,d,e)
+				end
+				self.eventHandler = xx:AddEventListener("eventname", eventHandle)-- 得到事件句柄
+			end
+		end
+		-- 移除事件
+		function XXXXClass:RemoveEvent()
+			if self.eventHandler then -- 先判断是否已经监听着
+				xx:RemoveEventListener(self.eventHandler)
+			end
+			self.eventHandler = nil
+		end
+		-- 另外：xx:RemoveEventListeners("eventname") -- 移聊指定名字的所有事件
+				xx:RemoveEventListeners() -- 移除对象所有事件
+		
+	
+		-- 事件发送
+		[同步执行]
+		xx:DispatchEvent("eventname", ...) -- 如让上面监听响应： xx:DispatchEvent("eventname", a,b,c,d,e)
+		[下一帧执行]
+		xx:Fire("eventname", ...) -- 如让上面监听响应： xx:Fire("eventname", a,b,c,d,e)
+		
+		lua 全局事件：使用同上面的 xx对象如下
+		-- 监听
+		if not self.eventHandler then -- 先判断是否已经监听着
+			local function eventHandle ( a,b,c,d,e ) -- 直接返回参数列表
+				print(a,b,c,d,e)
+			end
+			self.eventHandler = GlobalDispatcher:AddEventListener("eventname", eventHandle)-- 得到事件句柄
+		end
+		-- 发送
+		GlobalDispatcher:DispatchEvent("eventname", a,b,c,d,e )
+		GlobalDispatcher:Fire("eventname", a,b,c,d,e )
+		-- 移除
+		GlobalDispatcher:RemoveEventListener(self.eventHandler) -- 常用
+		GlobalDispatcher:RemoveEventListeners("eventname") -- 【极少用，除非一引起重置 或 牵连事件 】移聊指定名字的所有事件
+		GlobalDispatcher:RemoveEventListeners() -- 【慎用!! 除非要游戏重来！】移除对象所有事件
+
+		-- 最后建议
+		【非多功能】之间交互尽量【少用全局事件】  改用 【局部事件】 
+				其中（LuaModel 是继承自 InnerEvent 作为事件对象事件的， 功能内的可直接用model 去事件处理，不影响全局性能 ）
+	--]]
+	
+	
+	--[[ 协议处理(新版本)
+		-- 项目proto svn：https://printer-pc/svn/sk2/game/parseproto 
+					以文件名 parseproto 更新到与项目 https://printer-pc/svn/sk2/game/client_2 同级目录下 
+					即 client_2 与 parseproto 同文件夹中
+		-- 注意pb协议定义时，message名不能为全大写字母及带下划线如（正：S_XxXx 或 CXxXx； 错：S_XXXX 或 CXXXX）
+		xxxx.proto -> xxxx_pb.S_XxxxXx() //服务端返回协议
+		yyyy.proto -> yyyy_pb.C_YyyyYy() //前端请求协议
+		
+		-- pb协议生成： proto 协议文件在项目：SKGame\LuaProto\proto\ *.proto 
+			生成结果：\SKGame\Assets\LuaFramework\Lua\SKGame\Proto \ *_pb.lua 
+			生成操作： unity3d 项目菜单中 luaframework -> build protobuf-genfile -> 生成到上面位置，然后
+			!在 *_pb.lua中找到 protoc-gen-lua-tools.exe 双击，重构一下生成的lua文件（会重写上面生成的 *_pb.lua 文件）
+			*接下来游戏项目中的init.lua中引入相关要用的pblua协议文件进行使用(已经引用了)
+			
+	
+	  -- ctrl中 协议订阅（注册） 协议号(MessageEnum["S_XxxxXx"])由后端给出 【主要是在proto中找到相关的消息体】
+			function LoginController:RegistProto()
+				-- 注册 
+				self:RegistProtocal("S_XxxxXx")
+				-- **或 self:RegistProtocal("S_XxxxXx", "HandleS_XxxxXx") -- 独立写监听接口
+				self:RegistProtocal("S_XxxxXx2")
+				self:RegistProtocal("S_XxxxXx3")
+				self:RegistProtocal("S_XxxxXx4")
+			end
+
+			function LoginController:S_XxxxXx(buffer)
+				local msg = self:ParseMsg(xxxx_pb.S_XxxxXx(), buffer)
+				print("[S->C] 用户登录成功", msg.aaaa, msg.bbbb, msg.cccc)
+			end
+			--[[ ** -- 独立写监听接口
+			function LoginController:HandleS_XxxxXx(buffer)
+				local msg = self:ParseMsg(xxxx_pb.S_XxxxXx(), buffer)
+				print("[S->C] 用户登录成功", msg.aaaa, msg.bbbb, msg.cccc)
+			end
+			--]]
+
+	  移除协议 -> self:RemoveProtocal("S_XxxxXx")
+
+	 
+	  -- 请求协议
+		function LoginController:ReqC_YyyyYy( x, y, z )
+			local msg = yyyy_pb.C_YyyyYy()
+			msg.aaaa = x
+			msg.bbbb = y
+			msg.cccc = z
+			self:SendMsg("C_YyyyYy", msg) -- [c->s]发送协议 空的没字段的协议可以使用 ：self:SendEmptyMsg(yyyy_pb, "C_YyyyYy") 
+		end
+
+
+		-------------****具体例子*********支持 枚举 64位int 基本数据列表 结构列表 结构嵌套********************************>>
+			--[[ test.proto
+				enum Status {
+					OffLine = 0;
+					OnLine = 1;
+					Killing = 2;
+				}
+				message RoleVo {
+					required int32 id = 1;
+					optional int64 bid = 2;
+					required string name = 3;
+					optional Status status = 4 [default = OffLine];
+				}
+				message Goods {
+					required int32 id = 1;
+					optional string name = 2;
+				}
+				message C_LoginTest { // 登陆测试
+					optional int32 playerId = 1; // 玩家编号
+					required string userName = 2; //用户名
+					optional Status status = 3 [default = OffLine];
+					optional RoleVo my = 4;
+					repeated int32 list = 5;
+					optional int64 bid = 6;
+					repeated Goods equips = 7;
+				}
+
+				message S_LoginTest {
+					optional int32 playerId = 1; // 玩家编号
+					required string userName = 2; //用户名
+					
+					optional Status status = 3 [default = OffLine];
+					optional RoleVo my = 4;
+					repeated int32 list = 5;
+					optional int64 bid = 6;
+					repeated Goods equips = 7;
+				}
+			]]
+			-- 接收执行协议
+				function LoginController:S_LoginTest(buffer)
+					local msg = self:ParseMsg(test_pb.S_LoginTest(), buffer)
+
+					-- 后端如果返回有列表字段的 使用通用接口解析更方便：如： msg.list msg.equips 
+								-- 序列化每个protobuf列表中项的处理并执行回调函数，回调函数参数为list中单元项
+								-- SerialiseProtobufList( msg.list, itemCallback ) 回调参数是列表中的单元
+								-- 序列化每个protobuf列表中项的并收集单元项返回正常的lua列表
+								-- CollectProtobufList( msg.equips ) -- 返回一个重新装好的单元列表
+					print(msg.playerId, msg.userName, msg.status, msg.bid, msg.my, msg.list, msg.equips)
+					
+				end
+			-- 请求发送协议
+				function LoginController:C_LoginTest( platform, uin, sessionid )
+					if not Network.isConnetced then
+						Network.LinkServer()
+					end
+					self:RemoveProtocal("S_LoginTest") -- 移除
+					self:RegistProtocal("S_LoginTest")
+					local msg = test_pb.C_LoginTest()
+
+					msg.playerId = 123456
+					msg.userName = [[*C#、Unity通信]]
+					msg.status = 1 -- test_pb.Status.OnLine
+
+					msg.my.id = 118199 -- msg.my(结构:Rolevo)
+					msg.my.bid = 4452394833
+					msg.my.name = "游戏王"
+
+					for i=1,5 do
+						msg.list:append(i+100000)
+					end
+					msg.bid = 4452219324834989893
+
+					for i=1,3 do
+						local goods
+						msg.equips:add() -- goods = msg.equips:add()
+						goods = msg.equips[i] -- :get(i)
+						goods.id = 1000+i
+						goods.name = "goods "..i
+					end
+					for k,v in ipairs(msg.equips) do
+						print(v.name, v.id)
+					end
+					
+					self:SendMsg("C_LoginTest", msg)
+				end
+				
+				
+				对于protobuff 传输全用byte数组
+				如 xxx.proto 有个 msg.bs [optional bytes bs = 1] 定义为byte数组
+				那么在传输过程中
+				c->s  上传时，对字节数组 bytes 传入时， 对数据  msg.bs = tostring(data) 其中 data 是LuaByteBuffer对象，里面封装了byte[]数据
+				s->c  下达时，则得到的msg.bs 即为byte[]数据
+
+				
+				
+		-------------****具体例子*****************************************<<
+
+	--]]
+	
+	-- 测试变色
+		-- EffectMgr.ChangeColor(player, Color.New(0,2,0))
+		-- EffectMgr.HitColor( player, Color.New(2,2,2), 1)
+	-- 幻影
+		-- EffectMgr.SetCanying( player.gameObject, true, 0.15, 0.6 )
+	-- 粒子特效测试
+		-- 测试定时加载特效后移动特效
+		-- RenderMgr.AddInterval(function ( ... )
+			-- EffectMgr.LoadEffect( "20000", function ( effect )
+			-- 	EffectMgr.SetParent( effect, player.transform)
+			-- 	effect.transform.position = player.transform.position
+			-- 	Util.ScaleParticleSystem(effect.gameObject, 1.2)
+			-- 	RenderMgr.Add(function ()
+			-- 		effect.transform.localPosition = Vector3.MoveTowards(effect.transform.localPosition, player.transform.position+player.transform.forward*10, 16 * Time.deltaTime)
+			-- 	end, nil, 5)
+			-- end)
+		-- end, nil, 1, 1)
+
+		-- -- 3秒后出现再5秒后自动消失
+		-- EffectMgr.AddToPos( "20000", player.transform.position, 0, 3, true, "特效20000", function ( id )
+		-- 	print("成功创建"..id)
+		-- end)
+		-- 立即出现长久存在 然后绑定跟随指定的对象，然后再由绑定时处理10秒后释放
+		-- EffectMgr.AddToPos( "20000", player.transform.position, 0, 0, false, "特效20000", function ( id )
+		-- 	print("成功创建"..id)
+		-- 	EffectMgr.SetFollow( id, player.gameObject, 0, 0, true, 0.5)
+		-- end)
+		-- -- 3秒后出现再2秒后消失
+		-- EffectMgr.AddToPos( "20000", player.transform.position, 2, 3, false, "特效20000", function ( id )
+		-- 	print("成功创建"..id)
+		-- end)
+		-- -- 3秒后出现再2秒后自动消失
+		-- EffectMgr.AddToPos( "20000", player.transform.position, 2, 3, true, "特效20000", function ( id )
+		-- 	print("成功创建"..id)
+		-- end)
+		-- -- 3秒后出现再5秒后自动消失
+		-- EffectMgr.AddToPos( "20000", player.transform.position, 100, 3, true, "特效20000", function ( id )
+		-- 	print("成功创建"..id)
+		-- end)
+		-- -- 绑定到某个对象或节点上
+		-- local bone = Util.GetBone("Bip001 L Hand", player.gameObject)
+		-- EffectMgr.BindTo( "70000", bone, 3, 2, true, "特效70000", function ( id )
+		-- 	print("成功创建"..id)
+		-- end)
+		-- 绑定到某个对象或节点上
+		-- EffectMgr.BindToBone( "70000", player.gameObject, "Bip001 L Hand", 3, 2, true, "特效70000", function ( id )
+		-- 	print("成功创建"..id)
+		-- end, nil, 2)
+
+		--[[ 指定启始移动到指定位置或一定距离
+		local start = player.transform.position+Vector3.New(0, 1, 0)
+		local target = player.transform.position+player.transform.forward*math.random(10)
+		local speed = math.random(5)+3
+		local releaseTime = math.random(3)+2
+		local delay = math.random(5)
+		local distance = math.random(15)
+		local catchCallback = function ( data )
+			print(data)
+		end
+		local param = "到达位置了！！"
+		local catchDestroy = false
+		local callback = function ( id )
+			print("添加特效id:"..id)
+		end
+		local scale = math.random(1, 5)/10
+		print(scale)
+		local autoDestroy = true
+		EffectMgr.MoveTo( "20000", start, target, speed, releaseTime, delay, distance, catchCallback, param, catchDestroy, autoDestroy, nil, callback, scale)
+		target = player.transform.position+player.transform.forward*-10
+		EffectMgr.MoveTo( "20000", start, target, speed, releaseTime, delay, distance, catchCallback, param, catchDestroy, autoDestroy, nil, callback, scale)
+		--]]
+		--[[ 将一个特效资源添加到空间位置
+		local releaseTime = 10
+		local delay = 1
+		local autoDestroy = nil
+		local callback = function ( id ) print("添加特效id:"..id) end
+		local scale = 0.5
+		EffectMgr.FollowTo("20000", player.gameObject, releaseTime, delay, autoDestroy, nil, callback, scale)
+		--]]
+
+		--[[弹出|抛出 target为位置 或 目标 transform
+		local releaseTime = nil
+		local delay = 1
+		local catchCallback = function ( data )
+			print(data)
+		end
+		local param = "到达位置了！！"
+		local catchDestroy = true
+		local autoDestroy = false
+		local callback = function ( id ) print("添加特效id:"..id) end
+		local scale = 1.2
+		local destroyCallback = function ( arg ) print("销毁特效回调参数："..arg) end
+		local param2 = "没有了！！！@@@@@@"
+		local jumpNum = 2
+		local maxH = 3
+		EffectMgr.ThrowTo("11000", player.transform.position, Vector3.New(47, 0.1, 26), 10, 
+			releaseTime, delay, catchCallback, param, catchDestroy, autoDestroy, nil, callback, scale, destroyCallback, param2, jumpNum, maxH)
+		--]]
+		
+		--[[以start为中心radius半径随机产生num个特效后集中或直接射出的特效
+		print(player:GetBodyCenter().x, player:GetBodyCenter().y, player:GetBodyCenter().z)
+		local moveType = 0
+		local randomDelayCreate = 1500
+		local rType = 1
+		local num = math.random(2, 8)
+		local radius = 1.5
+		local start = player:GetBodyCenter()+player.transform.forward*1.5
+		local target = monster:GetBodyCenter()+player.transform.forward*0.5
+		local speed = 20
+		local releaseTime = nil
+		local delay = nil
+		local distance = 10
+		local catchCallback = nil
+		local param = nil
+		local catchDestroy = true
+		local autoDestroy = nil
+		local callback = nil
+		local scale = 0.5
+		local destroyCallback = nil
+		local param2 = nil
+		local distance = nil
+		local jumpNum = nil
+		local maxH = nil
+		local stayTime = 0.3
+		EffectMgr.Scatter( "00000", moveType, randomDelayCreate, rType, num, radius, start, target, 20, releaseTime, delay, distance, catchCallback, param, catchDestroy, autoDestroy, callback, scale, destroyCallback, param2, distance, jumpNum, maxH, stayTime)
+		player:PlayAction("attack_01", 0.1, function ()
+			player:PlayAction("idle")
+		end)
+		--]]
+		
+		--一级弹窗
+		UIMgr.ShowPopup(popup,posX,posY, closecallback)
+		UIMgr.HidePopup(popup)
+------------
+
+--------------------bytes 通讯
+c# ：
+
+public static LuaByteBuffer GetVoiceData()
+{
+	byte[] bs = new byte[] { 0, 0, 1, 1, 4, 123, 21, 35, 54, 1, 1,0, 0};
+	LuaByteBuffer bytes = new LuaByteBuffer(bs);
+	return bytes;
+}
+public static void SetVoiceData(byte[] data)
+{
+	 string s = "";
+	for (int i = 0; i < data.Length; i++)
+	{
+		s = s + data[i] + ",";
+	}
+	Debug.Log(s+"|"+data.Length);
+}
+
+
+lua 代码 ：
+ChatNewController.ChatId = ""
+function ChatNewController:S_GetVoice(buff)
+	local msg = self:ParseMsg(chat_pb.S_GetVoice(), buff)
+	local data = msg.voice
+	print(tostring(data))
+	Util.SetVoiceData(data)
+end
+function ChatNewController:C_GetVoice()
+	local msg = chat_pb.C_GetVoice()
+	msg.id = ChatNewController.ChatId
+	self:SendMsg("C_GetVoice", msg)
+end
+function ChatNewController:C_PostVoice()
+	local msg = chat_pb.C_PostVoice()
+	msg.id = 'chat'..os.time()
+	local data = Util.GetVoiceData()
+	msg.voice = tostring(data)
+	ChatNewController.ChatId = msg.id
+	print(ChatNewController.ChatId, msg.voice, tostring(msg.voice), data)
+	self:SendMsg("C_PostVoice", msg)
+end
+-------------
+
+
+------------加载
+-- LoadEffect("00000", function ( o )
+-- 	local e = GameObject.Instantiate(o)
+-- 	e.name = "00000"
+-- 	local isThorough = false
+-- 	resMgr:UnloadAssetBundle("effect/00000.unity3d", false)
+-- end)
+-- LoadDrop("DropItem", function ( o ) end)
+-- LoadPlayer("1002", function ( o ) end)
+-- LoadWeapon("1110500", function ( o ) end)
+-- LoadWing("410101", function ( o ) end)
+-- LoadNPC("1101", function ( o ) end)
+-- LoadMonster("2003", function ( o ) end)
+-- LoadCam("Camera", function ( o ) end)
+----------------
+
+	-- web 测试
+	-- local url = "http://httpbin.org/get"
+	-- networkMgr:HttpRequest(0, url, {"responseType", "0"}, function (state, data) --GET
+	-- 	print(state, data)
+	-- end)
+	-- local url = "http://httpbin.org/post"
+	-- networkMgr:HttpRequest(1, url, {"responseType", "4"}, function (state, data) --POST
+	-- 	print(state, data)
+	-- end)
+
+
+-- local x = int64.new("-3423423411351251234")
+-- print('int64 is: '..tostring(x))
+-- x = uint64.new("3423423411351251234")                                
+-- print('uint64 max is: '..tostring(x))
+
+
+-- local player = SceneController:GetInstance():GetScene():GetMainPlayer()
+-- local monster = SceneController:GetInstance():GetScene().monList[1]
+-- web 测试
+-- local url = "http://httpbin.org/get"
+-- networkMgr:HttpRequest(0, url, {"responseType", "0"}, function (state, data) --GET
+-- 	print(state, data)
+-- end)
+-- local url = "http://httpbin.org/post"
+-- networkMgr:HttpRequest(1, url, {"responseType", "4"}, function (state, data) --POST
+-- 	print(state, data)
+-- end)
+
+
+
+
+
+//////////////////////////////////////////////更新简介////////////////////////////////////////////////////////////
+应用（全新安装）
+
+资源版本热更新：  环境资源（特效，模型，音效） ui资源  lua脚本资源
+	
+	打包操作：
+		1. Packager.cs  --> Packager.appVersion        
+			游戏应用的版本号 也就是改了 c#代码 或者 dll 或 第三方sdk接入 时 如果影响到游戏
+		 	以上热更新资源的，请在代码中把这个版本号递增改变后再进行全build xxx resource 全打包！
+		2. GameManager.cs --> 为核心资源更新管理
+			1) 变量：gameVersion 用于游戏运行时，与后端网络通知更新进行版本比较，即运行时更新, 【暂时未实现】
+			2）使用宏编译 SyncLocal 实现运行游戏不启动热更新功能！
+		3. 逻辑上使用 Util.GetVersion(gameVersion, x) 可以得到各部位资源版本号，
+			x=0, 应用（全更新）
+			x=1, 环境资源
+			x=2, ui资源
+			x=3, lua脚本资源
+		4. VersionTool.exe 生成后智能打包补丁给后端 （定位U3d项目StreamingAssets位置与要提交到远程StreamingAssets位置进行比较生成结果补丁）
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

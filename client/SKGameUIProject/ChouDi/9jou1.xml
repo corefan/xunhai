@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="959,608" designImage="ui://uqy8k45w9jou5" designImageOffsetX="-132" designImageOffsetY="-104" designImageAlpha="48">
+  <displayList>
+    <image id="n1" name="n1" src="9jou2" xy="13,14" size="935,50"/>
+    <image id="n2" name="n2" src="j67wnhe" pkg="0tyncec1" xy="13,15" size="935,537"/>
+    <image id="n6" name="n6" src="9jou3" xy="14,16"/>
+    <image id="n7" name="n7" src="9jou3" xy="14,61" rotation="-90"/>
+    <image id="n9" name="n9" src="9jou3" xy="947,16" rotation="90"/>
+    <image id="n10" name="n10" src="9jou3" xy="947,61" rotation="180"/>
+    <image id="n17" name="n17" src="9jou4" xy="311,17"/>
+    <image id="n18" name="n18" src="9jou4" xy="441,17"/>
+    <image id="n19" name="n19" src="9jou4" xy="619,17"/>
+    <image id="n20" name="n20" src="9jou4" xy="699,17"/>
+    <image id="n40" name="n40" src="jsucnhi" pkg="0tyncec1" xy="13,67" size="935,2"/>
+    <text id="n11" name="n11" xy="124,24" size="58,31" fontSize="24" align="center" vAlign="middle" autoSize="height" text="名称"/>
+    <text id="n12" name="n12" xy="347,24" size="64,31" fontSize="24" align="center" vAlign="middle" autoSize="height" text="职业"/>
+    <text id="n13" name="n13" xy="493,24" size="76,32" fontSize="24" align="center" vAlign="middle" autoSize="none" text="家族"/>
+    <text id="n14" name="n14" xy="631,24" size="59,31" fontSize="24" align="center" vAlign="middle" autoSize="height" text="在线"/>
+    <text id="n15" name="n15" xy="786,24" size="56,31" fontSize="24" align="center" vAlign="middle" autoSize="height" text="操作"/>
+    <text id="n4" name="n4" xy="12,565" size="53,31" fontSize="24" text="仇敌"/>
+    <list id="n3" name="choudiList" xy="13,67" size="932,481" overflow="scroll" margin="0,0,0,0" lineGap="-3" defaultItem="ui://uqy8k45w9jou0"/>
+    <text id="n5" name="listNum" xy="89,565" size="64,31" fontSize="24" align="center" vAlign="middle" autoSize="height" text="50/50"/>
+  </displayList>
+</component>

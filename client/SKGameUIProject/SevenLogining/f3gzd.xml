@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImage="ui://gyl54s25hkz0i" designImageAlpha="31">
+  <displayList>
+    <graph id="n7" name="mask" xy="0,0" size="1334,750" alpha="0.65" type="rect" fillColor="#ff000000"/>
+    <image id="n0" name="n0" src="hkz0l" xy="7,67"/>
+    <component id="n2" name="btnClose" src="skqrnkp" pkg="0tyncec1" xy="1117,123" size="60,52">
+      <Button icon="ui://gyl54s25hkz0g"/>
+    </component>
+    <list id="n3" name="itemList" xy="400,221" size="750,434" overflow="scroll" margin="4,0,0,0" lineGap="7" defaultItem="ui://gyl54s25f3gzf"/>
+  </displayList>
+</component>

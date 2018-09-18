@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="53,53" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bg" src="j2mzn" xy="7,8"/>
+  </displayList>
+  <Button/>
+  <transition name="t0">
+    <item time="7" type="Rotation" target="n0" value="180"/>
+    <item time="7" type="XY" target="n0" value="40,38"/>
+  </transition>
+</component>

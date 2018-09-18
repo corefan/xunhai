@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="492,292">
+  <displayList>
+    <image id="n0" name="n0" src="xv56s" xy="3,0" size="482,292"/>
+    <image id="n3" name="n3" src="xv56q" xy="39,25" size="408,171"/>
+    <component id="n1" name="n1" src="hg6ev" xy="43,210">
+      <relation target="n0" sidePair=""/>
+    </component>
+    <component id="n2" name="n2" src="hg6ev" xy="273,210">
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n4" name="n4" xy="42,102" size="400,34" font="方正粗圆简体" fontSize="30" color="#b6b8bc" align="center" vAlign="middle" autoSize="height" text="有人邀请你加入队伍啊"/>
+  </displayList>
+</component>

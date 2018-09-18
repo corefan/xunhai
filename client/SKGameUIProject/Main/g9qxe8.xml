@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="241,86">
+  <displayList>
+    <component id="n28" name="hpBar" src="nuxfe2" xy="72,58" size="150,9">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n22" name="headIcon" src="z03enli" pkg="0tyncec1" xy="1,6"/>
+    <image id="n24" name="n0" src="t5hdng2" pkg="0tyncec1" xy="0,0" size="30,30"/>
+    <component id="n23" name="careerIcon" src="t5hdnfy" pkg="0tyncec1" xy="5,5" size="20,20"/>
+    <richtext id="n26" name="txtName" xy="83,28" size="10,24" font="方正粗圆简体" fontSize="20" color="#dedcf4" strokeColor="#666666" text=""/>
+    <loader id="n30" name="leadSign" xy="90,25" size="34,30" url="ui://0tyncec1g9qxnm4">
+      <relation target="n26" sidePair="right-right,top-top"/>
+    </loader>
+  </displayList>
+</component>

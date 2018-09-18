@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="690,742" initName="742" designImageLayer="1">
+  <displayList>
+    <image id="n1" name="n1" src="cdsb9" xy="1,1"/>
+    <image id="n2" name="n2" src="cdsb7" xy="2,13"/>
+    <component id="n5" name="closeBtn" src="cdsb18" xy="634,248" size="70,203"/>
+    <component id="n7" name="micBtn" src="cdsbi" xy="23,663" visible="false" touchable="false"/>
+    <component id="n8" name="inputCom" src="cdsbk" xy="109,667"/>
+    <component id="n9" name="addBtn" src="cdsbj" xy="458,663"/>
+    <component id="n10" name="sendBtn" src="skqrnkp" pkg="0tyncec1" xy="530,667" size="110,56">
+      <Button title="发送" titleColor="#000000" icon="ui://m2d8gld1cdsb6"/>
+    </component>
+    <text id="n11" name="GouText" xy="291,32" size="202,27" hideByEditor="true" visible="false" touchable="false" font="方正粗圆简体" fontSize="20" color="#545e6c" autoSize="height" text="自动播放频道语音"/>
+    <component id="n12" name="n12" src="cdsbl" xy="250,27" hideByEditor="true" visible="false" touchable="false"/>
+    <image id="n16" name="n16" src="cdsbm" xy="118,68"/>
+    <component id="n17" name="system" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n18" name="world" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n19" name="near" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n20" name="family" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n34" name="clan" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n21" name="team" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n22" name="trumpet" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n23" name="keyBtn" src="gzhz39" xy="23,663" visible="false" touchable="false"/>
+    <component id="n24" name="micStateBar" src="gzhz3a" xy="109,667" visible="false" touchable="false"/>
+    <component id="n25" name="cancelAudioTips" src="gzhz3c" xy="557,221"/>
+    <component id="n26" name="playingAudioTips" src="gzhz3d" xy="558,219"/>
+    <component id="n33" name="privateChatBtn" src="lnqz3n" xy="109,19"/>
+  </displayList>
+</component>

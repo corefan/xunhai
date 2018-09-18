@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="733,45" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n124" name="n124" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="734,45"/>
+    <image id="n117" name="n117" src="5v99nkc" pkg="0tyncec1" xy="312,0" size="2,45"/>
+    <image id="n118" name="n118" src="5v99nkc" pkg="0tyncec1" xy="403,0" size="2,45"/>
+    <image id="n119" name="n119" src="5v99nkc" pkg="0tyncec1" xy="518,0" size="2,45"/>
+    <text id="n120" name="txtName" xy="0,5" size="309,38" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="名称"/>
+    <text id="n121" name="txtLv" xy="319,5" size="79,38" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="0"/>
+    <text id="n122" name="txtStatus" xy="412,5" size="104,38" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="0&#xA;"/>
+    <text id="n123" name="txtTime" xy="521,8" size="212,33" font="方正粗圆简体" fontSize="20" align="center" vAlign="middle" leading="0" ubb="true" autoSize="none" text="剩余时间 00:00:00&#xA;"/>
+    <image id="n125" name="selected" src="zf9fnqc" pkg="0tyncec1" xy="-2,0" size="737,45">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

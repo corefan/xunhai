@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="423,115">
+  <displayList>
+    <image id="n0" name="bg" src="keyenis" pkg="0tyncec1" xy="-1,-2" size="423,115" locked="true"/>
+    <component id="n2" name="goodsIcon" src="t5hdnfo" pkg="0tyncec1" xy="18,11" size="90,90"/>
+    <text id="n3" name="txtName" xy="112,9" size="206,28" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text=""/>
+    <text id="n4" name="txtDesc" xy="113,48" size="200,54" font="方正粗圆简体" fontSize="20" color="#43596b" autoSize="none" text=""/>
+    <component id="n6" name="btn" src="tnbmnka" pkg="0tyncec1" xy="319,28" size="97,58">
+      <Button title="装备" titleColor="#ffffcc" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <image id="n7" name="mask" src="c18wnl9" pkg="0tyncec1" xy="0,0" size="420,110"/>
+  </displayList>
+</component>

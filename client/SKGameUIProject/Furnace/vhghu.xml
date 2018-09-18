@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="227,32" extention="Label">
+  <displayList>
+    <image id="n1" name="bg" src="pu0xnq9" pkg="0tyncec1" xy="0,0" size="232,34">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n0" name="icon" xy="9,-5" size="38,38" url="ui://0tyncec1n2mycg" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="left-left"/>
+    </loader>
+    <text id="n2" name="title" xy="49,3" size="149,27" font="方正粗圆简体" fontSize="20" color="#ffffff" vAlign="middle" leading="0" autoSize="height" text="">
+      <relation target="" sidePair="width-width"/>
+      <relation target="n0" sidePair="left-left"/>
+    </text>
+    <component id="n4" name="btnAdd" src="t5hdnfq" pkg="0tyncec1" xy="201,1" size="30,30">
+      <relation target="" sidePair="right-right"/>
+      <Button icon="ui://0tyncec1n2myci"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="212,216" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n4" name="selectBg" src="smuc4" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <loader id="n5" name="itenicon" xy="82,101" size="50,30" align="center" vAlign="middle" fill="scale" autoSize="true"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

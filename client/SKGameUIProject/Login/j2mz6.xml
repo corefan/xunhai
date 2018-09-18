@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageAlpha="20">
+  <displayList>
+    <loader id="n11" name="bg" xy="0,0" size="1334,750" align="center" vAlign="middle" fill="scaleFree"/>
+    <loader id="n10" name="logo" xy="17,15" size="385,243" fill="scale"/>
+    <graph id="n5" name="bgTips" xy="0,710" size="1334,40" hideByEditor="true" alpha="0.65" type="rect" lineSize="0" lineColor="#00000000" fillColor="#ff000000"/>
+    <text id="n6" name="labelTips" xy="0,710" size="1334,40" font="方正粗圆简体" fontSize="16" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。"/>
+    <graph id="n8" name="mask" xy="0,0" size="1334,750" hideByEditor="true" alpha="0.7" type="rect" fillColor="#ff000000"/>
+    <component id="n2" name="btnNotice" src="t5hdnfq" pkg="0tyncec1" xy="1270,23" size="64,64"/>
+    <component id="n3" name="btnLogin" src="t5hdnfq" pkg="0tyncec1" xy="1270,96" size="64,64"/>
+  </displayList>
+</component>

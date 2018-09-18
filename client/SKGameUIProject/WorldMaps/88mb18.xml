@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="32,31">
+  <displayList>
+    <loader id="n0" name="icon" xy="0,0" size="32,31" url="ui://rkrzdlw3ez9z1d" fill="scaleFree"/>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n0" tween="true" startValue="0,0" endValue="-,-15" duration="24" ease="Linear"/>
+    <item time="24" type="XY" target="n0" tween="true" startValue="-,-15" endValue="0,0" duration="24" ease="Linear"/>
+  </transition>
+</component>

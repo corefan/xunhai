@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="970,615" extention="Label" designImage="ui://0tyncec1zk42nn8" designImageOffsetX="-80" designImageOffsetY="-62" designImageAlpha="14">
+  <controller name="c_switchRight" pages="0,,1," selected="1"/>
+  <displayList>
+    <graph id="n24" name="funBg" xy="2,0" size="597,616" locked="true" hideByEditor="true" visible="false" type="rect" lineSize="0" fillColor="#ff999999" corner="15"/>
+    <graph id="n10" name="listbg" xy="594,0" size="371,616" locked="true" hideByEditor="true" visible="false" type="rect" lineSize="0" fillColor="#ff999999" corner="15"/>
+    <image id="n49" name="n49" src="jsucnhg" pkg="0tyncec1" xy="581,-1" size="16,617" locked="true"/>
+    <image id="n45" name="n45" src="hx0xnip" pkg="0tyncec1" xy="130,195" size="336,11" group="n35"/>
+    <image id="n48" name="n48" src="jsucnhh" pkg="0tyncec1" xy="69,446" size="473,2" group="n35"/>
+    <image id="n44" name="n44" src="gk0nnia" pkg="0tyncec1" xy="86,22" size="423,52" group="n35"/>
+    <richtext id="n26" name="txtTarget" xy="105,31" size="387,33" group="n35" font="方正粗圆简体" fontSize="26" color="#058c9c" align="center" vAlign="middle" autoSize="height" text=""/>
+    <image id="n27" name="n27" src="pu0xnq6" pkg="0tyncec1" xy="253,99" size="90,90" group="n35" locked="true">
+      <relation target="" sidePair="left-left,center-center"/>
+    </image>
+    <loader id="n53" name="icon" xy="255,100" size="88,89" group="n35" align="center" vAlign="middle" fill="scaleFree"/>
+    <image id="n28" name="n28" src="pu0xnq7" pkg="0tyncec1" xy="275,318" group="n35"/>
+    <component id="n25" name="btnTip" src="mvjq9" xy="538,12" group="n35"/>
+    <component id="n29" name="p1" src="mvjqa" xy="20,210" size="242,220" group="n35">
+      <Label title="当前"/>
+    </component>
+    <component id="n30" name="p2" src="mvjqa" xy="334,209" size="242,220" group="n35">
+      <Label title="下阶"/>
+    </component>
+    <component id="n31" name="btnGot" src="u156p" xy="463,551" size="120,44" group="n35">
+      <Button checked="true" title="获取来源" titleColor="#6e7381" selectedTitle="返回列表" controller="c_switchRight" page="1"/>
+    </component>
+    <component id="n32" name="btnApply" src="mvjqb" xy="210,545" size="175,58" group="n35">
+      <Button title="激活" titleColor="#2e3341"/>
+    </component>
+    <component id="n33" name="progressBar" src="u156e" xy="39,499" size="518,30" group="n35">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n34" name="starConn" src="u156f" xy="140,456" size="163,34" group="n35"/>
+    <component id="n42" name="tipPane" src="u156q" xy="153,35" size="400,37" group="n35" hideByEditor="true" visible="false" touchable="false"/>
+    <group id="n35" name="leftGroup" xy="20,12" size="563,591" locked="true" advanced="true"/>
+    <image id="n50" name="n50" src="gk0nni9" pkg="0tyncec1" xy="594,42" size="372,571" group="n40"/>
+    <image id="n37" name="gotLabelBg" src="pu0xnq8" pkg="0tyncec1" xy="594,10" size="372,45" group="n40"/>
+    <richtext id="n39" name="gotTitle" xy="596,13" size="368,39" group="n40" font="方正粗圆简体" fontSize="24" color="#d7dbdc" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#222d48" text=""/>
+    <list id="n38" name="gotList" xy="600,58" size="366,550" group="n40" overflow="scroll" margin="4,4,4,4" lineGap="5" defaultItem="ui://wt6b3levu156o" autoItemSize="false"/>
+    <group id="n40" name="gotGroup" xy="594,10" size="372,604" advanced="true">
+      <gearDisplay controller="c_switchRight" pages="0"/>
+    </group>
+    <image id="n51" name="n51" src="gk0nni9" pkg="0tyncec1" xy="595,48" size="372,143" group="n14"/>
+    <image id="n11" name="itemTitleBg1" src="pu0xnq8" pkg="0tyncec1" xy="596,6" size="372,45" group="n14"/>
+    <richtext id="n13" name="itemTitle1" xy="599,9" size="368,39" group="n14" font="方正粗圆简体" fontSize="24" color="#d7dbdc" align="center" vAlign="middle" leading="0" ubb="true" autoSize="none" strokeColor="#222d48" text="获取方式"/>
+    <image id="n18" name="itemTitleBg2" src="pu0xnq8" pkg="0tyncec1" xy="596,195" size="372,45" group="n14"/>
+    <image id="n52" name="n52" src="gk0nni9" pkg="0tyncec1" xy="595,235" size="372,281" group="n14"/>
+    <richtext id="n19" name="itemTitle2" xy="599,198" size="368,39" group="n14" font="方正粗圆简体" fontSize="24" color="#d7dbdc" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#222d48" text="快捷购买"/>
+    <list id="n12" name="itemList" xy="598,241" size="366,272" group="n14" overflow="scroll" margin="4,4,4,4" lineGap="5" defaultItem="ui://wt6b3levu156n"/>
+    <component id="n21" name="moneyItem1" src="u156h" xy="609,522" size="180,30" group="n14">
+      <Label title="00000000"/>
+    </component>
+    <component id="n22" name="moneyItem2" src="u156h" xy="609,562" size="180,30" group="n14">
+      <Label title="00000000"/>
+    </component>
+    <component id="n41" name="gotConn" src="t5hdnfw" pkg="0tyncec1" xy="597,51" size="369,138" group="n14"/>
+    <group id="n14" name="itemListGroup" xy="595,6" size="373,586" advanced="true">
+      <gearDisplay controller="c_switchRight" pages="1"/>
+    </group>
+  </displayList>
+</component>

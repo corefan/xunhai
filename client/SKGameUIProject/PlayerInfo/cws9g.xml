@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="349,615">
+  <displayList>
+    <image id="n10" name="BaseBg" src="cws9j" xy="7,168" size="320,138" group="n6"/>
+    <list id="n0" name="BasePropList" xy="14,175" size="304,120" group="n6" margin="0,0,0,0" defaultItem="ui://0oudtuxpcws9h">
+      <item/>
+    </list>
+    <text id="n1" name="BasePropLabel" xy="7,144" size="85,24" group="n6" font="方正粗圆简体" fontSize="20" color="#545e6c" text="基础属性"/>
+    <group id="n6" name="BasePropGround" xy="7,144" size="320,162" advanced="true"/>
+    <image id="n11" name="FightBg" src="cws9j" xy="9,330" size="320,212" group="n7"/>
+    <text id="n2" name="FightPropLabel" xy="9,306" size="85,24" group="n7" font="方正粗圆简体" fontSize="20" color="#545e6c" text="战斗属性"/>
+    <list id="n3" name="FightPropList" xy="15,338" size="304,189" group="n7" margin="0,0,0,0" defaultItem="ui://0oudtuxpcws9h">
+      <item/>
+    </list>
+    <group id="n7" name="FightPropGround" xy="9,306" size="320,236" advanced="true"/>
+    <image id="n8" name="PowerBg" src="cws9i" xy="5,94" size="320,44" group="n9"/>
+    <text id="n4" name="Power" xy="12,97" size="312,41" group="n9" font="ui://0tyncec1hhg0eg" fontSize="12" color="#ff9900" autoSize="none" singleLine="true" text=""/>
+    <group id="n9" name="PowerGround" xy="5,94" size="320,44" advanced="true"/>
+    <image id="n12" name="BangHuiBg" src="cws9k" xy="0,8" group="n19" visible="false"/>
+    <loader id="n14" name="BangHuiIcon" xy="2,10" size="95,72" group="n19" visible="false" url="ui://0oudtuxpcws9l" fill="scale" autoSize="true"/>
+    <text id="n15" name="ZhanShenLevel" xy="99,19" size="125,28" group="n19" visible="false" font="方正粗圆简体" fontSize="24" color="#43596b" text="战神等级："/>
+    <text id="n16" name="ZhanShenLevelLabel" xy="219,19" size="18,28" group="n19" visible="false" font="方正粗圆简体" fontSize="24" color="#43596b" text="0">
+      <relation target="n15" sidePair="right-left,top-top"/>
+    </text>
+    <text id="n18" name="BangHuiLabel" xy="98,51" size="10,28" group="n19" font="方正粗圆简体" fontSize="24" color="#43596b" ubb="true" text=""/>
+    <group id="n19" name="BangHuiGround" xy="0,8" size="305,80" advanced="true"/>
+    <component id="n20" name="TianFuBtn" src="cws9n" xy="93,558" visible="false"/>
+    <component id="n21" name="SpecialPropBtn" src="wirr3r" xy="230,304" size="97,30" aspect="true">
+      <Button title="特殊属性" titleColor="#000000" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>

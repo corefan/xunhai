@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="oa3ahys9" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="mfyi0" name="img" folder=""/>
+    <folder id="mfyi1" name="com" folder=""/>
+    <component id="mfyi2" name="DayActivityPanel" folder="mfyi1" file="mfyi2.xml" exported="true"/>
+    <component id="mfyi3" name="WeekActivityPanel" folder="mfyi1" file="mfyi3.xml" exported="true"/>
+    <image id="mfyi4" name="weekBannerSelect" folder="mfyi0" qualityOption="source" file="mfyi4.png" size="129,53" scale="9grid" scale9grid="33,16,63,21"/>
+    <image id="mfyi5" name="weekSelect" folder="mfyi0" qualityOption="source" file="mfyi5.png" size="102,102" scale="9grid" scale9grid="40,40,22,22"/>
+    <image id="mfyi6" name="weekItemBg1" folder="mfyi0" qualityOption="source" file="mfyi6.png" size="134,84" scale="9grid" scale9grid="34,21,66,42"/>
+    <image id="mfyi7" name="itemSelect" folder="mfyi0" qualityOption="source" file="mfyi7.png" size="232,405"/>
+    <image id="mfyi8" name="weekPanel" folder="mfyi0" qualityOption="source" file="mfyi8.png" size="1022,558"/>
+    <image id="mfyi9" name="itemBg" folder="mfyi0" qualityOption="source" file="mfyi9.png" size="226,393"/>
+    <image id="mfyia" name="dayItemDecorate" folder="mfyi0" qualityOption="source" file="mfyia.png" size="28,12"/>
+    <component id="mfyib" name="ActivityItem" folder="mfyi1" file="mfyib.xml" exported="true"/>
+    <component id="mfyic" name="WeekTop" folder="mfyi1" file="mfyic.xml" exported="true"/>
+    <component id="mfyid" name="WeekTabBtn" folder="mfyi1" file="mfyid.xml"/>
+    <component id="mfyie" name="WeekItemCell" folder="mfyi1" file="mfyie.xml" exported="true"/>
+    <component id="mfyig" name="WeekItem" folder="mfyi1" file="mfyig.xml" exported="true"/>
+    <component id="ve3oh" name="WeekCellInfoPanel" folder="mfyi1" file="ve3oh.xml" exported="true"/>
+    <folder id="dz07i" name="new" folder="mfyi0"/>
+    <image id="dz07j" name="字色字号" folder="dz07i" qualityOption="source" file="dz07j.png" size="1334,750"/>
+    <image id="dz07k" name="xuanshangItem" folder="dz07i" qualityOption="source" file="dz07k.png" size="247,337" exported="true"/>
+    <image id="dz07l" name="示意图" folder="dz07i" qualityOption="source" file="dz07l.png" size="1334,750"/>
+    <image id="dz07m" name="huanItem" folder="dz07i" qualityOption="source" file="dz07m.png" size="247,337" exported="true"/>
+    <image id="dz07n" name="fubenItem" folder="dz07i" qualityOption="source" file="dz07n.png" size="247,337" exported="true"/>
+    <image id="dz07o" name="xuanzhong" folder="dz07i" qualityOption="source" file="dz07o.png" size="263,351"/>
+    <image id="dz07p" name="weikaiqi" folder="dz07i" qualityOption="source" file="dz07p.png" size="247,337" exported="true"/>
+    <image id="dz07q" name="tuan" folder="dz07i" qualityOption="source" file="dz07q.png" size="349,172"/>
+    <image id="dz07r" name="btn_renwu2" folder="dz07i" qualityOption="source" file="dz07r.png" size="47,48"/>
+    <image id="dz07s" name="btn_renwu1" folder="dz07i" qualityOption="source" file="dz07s.png" size="47,48"/>
+    <image id="dz07t" name="1083X180" folder="dz07i" qualityOption="source" file="dz07t.png" size="166,25" scale="9grid" scale9grid="42,7,82,11"/>
+  </resources>
+  <publish name="Activity" genCode="true"/>
+</packageDescription>

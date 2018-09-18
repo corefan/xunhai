@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="wt6b3lev" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="mvjq1" name="comp" folder=""/>
+    <folder id="mvjq2" name="image" folder=""/>
+    <component id="mvjq9" name="TipBtn" folder="mvjq1" file="mvjq9.xml"/>
+    <component id="mvjqa" name="PropertyInfoCell" folder="mvjq1" file="mvjqa.xml"/>
+    <component id="mvjqb" name="Button1" folder="mvjq1" file="mvjqb.xml"/>
+    <component id="mvjqc" name="Button2" folder="mvjq1" file="mvjqc.xml"/>
+    <component id="u156d" name="StarComp" folder="mvjq1" file="u156d.xml" exported="true"/>
+    <component id="u156e" name="ProgressBar" folder="mvjq1" file="u156e.xml"/>
+    <component id="u156f" name="StarConn" folder="mvjq1" file="u156f.xml"/>
+    <component id="u156h" name="MoneyItem" folder="mvjq1" file="u156h.xml"/>
+    <component id="u156i" name="GotFromComp" folder="mvjq1" file="u156i.xml" exported="true"/>
+    <component id="u156m" name="FurnacePanel" folder="mvjq1" file="u156m.xml" exported="true"/>
+    <component id="u156n" name="FurnaceItemI" folder="mvjq1" file="u156n.xml" exported="true"/>
+    <component id="u156o" name="FurnaceItemII" folder="mvjq1" file="u156o.xml" exported="true"/>
+    <component id="u156p" name="Button3" folder="mvjq1" file="u156p.xml"/>
+    <component id="u156q" name="TipPane" folder="mvjq1" file="u156q.xml"/>
+    <component id="9dy3s" name="AttrLabel" folder="mvjq1" file="9dy3s.xml" exported="true"/>
+    <component id="vhghu" name="MoneyItem2" folder="mvjq1" file="vhghu.xml"/>
+  </resources>
+  <publish name="Furnace" genCode="true"/>
+</packageDescription>

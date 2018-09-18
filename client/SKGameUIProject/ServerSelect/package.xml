@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="csn9w87s" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="uq4w0" name="component" folder=""/>
+    <folder id="uq4w1" name="image" folder=""/>
+    <image id="uq4w2" name="fuwuqi" folder="uq4w1" qualityOption="source" file="uq4w2.png" size="463,334"/>
+    <image id="uq4w3" name="选择服务器2" folder="uq4w1" qualityOption="source" file="uq4w3.png" size="1334,750"/>
+    <image id="uq4w4" name="选择服务器1" folder="uq4w1" qualityOption="source" file="uq4w4.png" size="1334,750"/>
+    <image id="uq4w5" name="xinfu" folder="uq4w1" qualityOption="source" file="uq4w5.png" size="71,70"/>
+    <component id="uq4w6" name="ServerSelectPanel" folder="uq4w0" file="uq4w6.xml" exported="true"/>
+    <component id="uq4w7" name="ServerState" folder="uq4w0" file="uq4w7.xml"/>
+    <component id="uq4w8" name="ServerContentItem" folder="uq4w0" file="uq4w8.xml" exported="true"/>
+    <image id="c0uha" name="背景图(2)" folder="uq4w1" qualityOption="source" file="c0uha.png" size="1334,750"/>
+    <component id="c0uhb" name="ServerTabItem" folder="uq4w0" file="c0uhb.xml" exported="true"/>
+    <component id="kxn6c" name="BtnNull" folder="uq4w0" file="kxn6c.xml"/>
+  </resources>
+  <publish name="ServerSelect" genCode="true"/>
+</packageDescription>

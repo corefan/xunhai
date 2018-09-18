@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="260,73">
+  <displayList>
+    <image id="n0" name="n0" src="km1t1n" xy="7,5"/>
+    <image id="n1" name="n1" src="km1t1o" xy="5,3"/>
+    <image id="n11" name="n11" src="mwcp1w" xy="7,5" size="66,61"/>
+    <image id="n2" name="n2" src="km1t1p" xy="51,46"/>
+    <text id="n9" name="n9" xy="51,46" size="24,22" font="方正粗圆简体" fontSize="18" color="#ffffff" autoSize="none" strokeColor="#333333" strokeSize="2" text="38"/>
+    <image id="n4" name="n4" src="km1t1r" xy="0,-1"/>
+    <component id="n8" name="n8" src="km1t1s" xy="70,35">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n10" name="n10" xy="74,9" size="139,23" font="方正粗圆简体" fontSize="19" color="#fff7cb" autoSize="height" strokeColor="#333333" text="城管小明名字长"/>
+  </displayList>
+</component>

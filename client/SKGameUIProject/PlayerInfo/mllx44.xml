@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="876,632">
+  <displayList>
+    <image id="n50" name="n50" src="uwggdg" pkg="0tyncec1" xy="0,0" size="876,632"/>
+    <image id="n20" name="bg" src="ueo73q" xy="98,85"/>
+    <graph id="n19" name="role3D" xy="318,467" size="10,10"/>
+    <list id="n3" name="equipList" xy="74,91" size="500,393" layout="flow_vt" selectionMode="none" overflow="scroll" scrollBarFlags="32" margin="0,0,0,0" lineGap="10" colGap="310" defaultItem="ui://0oudtuxpn1gar"/>
+    <image id="n22" name="n22" src="mllx45" xy="31,42" group="n25"/>
+    <text id="n23" name="power" xy="41,33" size="246,53" group="n25" font="ui://0tyncec1hhg0eg" fontSize="11" color="#00ff00" vAlign="middle" autoSize="none" text="i66666"/>
+    <group id="n25" name="n25" xy="31,33" size="256,53"/>
+    <image id="n21" name="n21" src="cws9i" xy="613,100" size="200,30" group="n41"/>
+    <text id="n26" name="achiveTitle" xy="613,103" size="200,27" group="n41" font="方正粗圆简体" fontSize="20" color="#545e6c" align="center" vAlign="middle" autoSize="none" text="无"/>
+    <group id="n41" name="n41" xy="613,100" size="200,30"/>
+    <image id="n6" name="nameBg" src="w3wlnld" pkg="0tyncec1" xy="600,54" size="225,36" group="n45"/>
+    <text id="n7" name="playerName" xy="627,59" size="170,29" group="n45" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" autoSize="height" text="角色名哈哈哈哈"/>
+    <group id="n45" name="n45" xy="600,54" size="225,36"/>
+    <image id="n9" name="n9" src="uchhnl2" pkg="0tyncec1" xy="602,136" size="232,32" group="n46"/>
+    <text id="n10" name="desfsfcName" xy="602,137" pivot="0.5,0.5" size="232,29" group="n46" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="信息&#xA;"/>
+    <image id="n11" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="607,165" size="234,130" group="n46"/>
+    <image id="n32" name="line" src="jsucnhh" pkg="0tyncec1" xy="613,219" size="204,1" group="n46"/>
+    <image id="n35" name="n35" src="mllx46" xy="732,229" size="53,30" group="n46">
+      <relation target="n61" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n61" name="sortName" xy="736,232" size="45,27" group="n46" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" text="暂无"/>
+    <text id="n33" name="fdsda21312s" xy="622,230" size="90,29" group="n46" font="方正粗圆简体" fontSize="22" color="#2e3341" align="right" autoSize="none" text="家族："/>
+    <text id="n34" name="groupInName" xy="642,263" size="45,27" group="n46" font="方正粗圆简体" fontSize="20" color="#058c9c" align="center" vAlign="middle" text="暂无"/>
+    <text id="n30" name="fdsda21s" xy="622,180" size="90,29" group="n46" font="方正粗圆简体" fontSize="22" color="#2e3341" align="right" autoSize="none" text="等级："/>
+    <text id="n31" name="level" xy="736,180" size="67,27" group="n46" font="方正粗圆简体" fontSize="20" color="#058c9c" autoSize="height" text="99级"/>
+    <group id="n46" name="n46" xy="602,136" size="239,159"/>
+    <image id="n14" name="n14" src="uchhnl2" pkg="0tyncec1" xy="603,305" size="232,32" group="n47"/>
+    <text id="n15" name="descName" xy="602,307" pivot="0.5,0.5" size="232,29" group="n47" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="属性&#xA;"/>
+    <image id="n16" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="601,335" size="234,255" group="n47"/>
+    <list id="n48" name="propList" xy="608,341" size="220,242" group="n47" overflow="scroll" margin="0,0,0,0" defaultItem="ui://0oudtuxpcws9h"/>
+    <group id="n47" name="n47" xy="601,305" size="234,285"/>
+    <component id="n49" name="touch" src="t5hdnfs" pkg="0tyncec1" xy="189,92" size="275,392"/>
+    <text id="n52" name="title" xy="367,-1" size="130,41" font="方正粗圆简体" fontSize="20" color="#fff9e2" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#414e6d" singleLine="true" text="信息">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n59" name="btn_vipIcon" src="t5hdnfs" pkg="0tyncec1" xy="287,51" size="47,47"/>
+    <component id="n60" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="742,-16" size="143,80">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>

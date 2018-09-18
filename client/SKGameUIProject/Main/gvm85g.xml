@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="595,65">
+  <displayList>
+    <list id="n50" name="buffList" xy="97,56" size="351,34" layout="row" selectionMode="none" overflow="scroll" margin="0,0,0,0" colGap="-5" defaultItem="ui://0042gnitfx79el"/>
+    <image id="n56" name="bar" src="xyqw7y" xy="69,0"/>
+    <component id="n61" name="progressLifeSlowly" src="nh7oa7" xy="80,7">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n57" name="progressLife" src="gvm85i" xy="80,7" size="414,37">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n60" name="name" xy="69,-17" size="435,26" font="方正粗圆简体" fontSize="22" color="#fff7cb" align="center" autoSize="none" strokeColor="#333333" strokeSize="2" text=""/>
+    <component id="n63" name="buffDescPanel" src="fx79em" xy="97,91"/>
+  </displayList>
+</component>

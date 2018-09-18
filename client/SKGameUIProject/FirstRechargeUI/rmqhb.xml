@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <controller name="tabCtrl" pages="0,btnShouchong,1,btnKaifu" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="c18wnl9" pkg="0tyncec1" xy="0,0" size="1334,750"/>
+    <component id="n14" name="container" src="a4f9c" xy="0,0" size="1334,750"/>
+    <component id="n8" name="btnShouchong" src="sw74nm0" pkg="0tyncec1" xy="99,236" size="175,75">
+      <Button checked="true" title="首充" titleColor="#000000" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="tabCtrl" page="0"/>
+    </component>
+    <loader id="n11" name="redTipSC" xy="104,241" size="21,20" visible="false" url="ui://0tyncec1xnis91"/>
+    <component id="n9" name="btnKaifu" src="sw74nm0" pkg="0tyncec1" xy="98,343" size="175,75">
+      <Button title="开服特惠" titleColor="#000000" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="tabCtrl" page="1"/>
+    </component>
+    <loader id="n10" name="redTipKF" xy="104,348" size="21,20" visible="false" url="ui://0tyncec1xnis91"/>
+  </displayList>
+</component>

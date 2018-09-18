@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="29,29" initName="radio#">
+  <controller name="state" pages="0,0,1,1" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="5v99nke" xy="0,0"/>
+    <image id="n1" name="n1" src="5v99nkf" xy="-1,-4">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+  </displayList>
+</component>

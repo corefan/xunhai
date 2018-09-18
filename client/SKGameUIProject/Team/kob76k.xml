@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="132,40" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n7" name="n7" src="x0conjw" pkg="0tyncec1" xy="1,0" size="131,43">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n5" name="n5" src="w9356y" xy="93,3" size="34,36">
+      <relation target="" sidePair="top-top,right-right"/>
+      <relation target="" sidePair="height-height"/>
+      <gearColor controller="button" pages="0" values="#ffffff" default="#cccccc"/>
+    </image>
+    <text id="n8" name="title" xy="10,6" size="78,27" font="方正粗圆简体" fontSize="20" color="#5e5e5e" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+      <gearColor controller="button" default="#5e5e5e"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

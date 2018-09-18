@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="754,576">
+  <displayList>
+    <image id="n105" name="n105" src="cnepnqb" pkg="0tyncec1" xy="0,344" size="748,152"/>
+    <image id="n106" name="n106" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="754,152"/>
+    <image id="n110" name="n110" src="pu0xnq7" pkg="0tyncec1" xy="349,243"/>
+    <image id="n108" name="n108" src="cnepnqb" pkg="0tyncec1" xy="1,174" size="337,152"/>
+    <image id="n111" name="n111" src="uchhnl1" pkg="0tyncec1" xy="0,173" size="337,34"/>
+    <image id="n114" name="n114" src="cnepnqb" pkg="0tyncec1" xy="416,174" size="337,152"/>
+    <image id="n115" name="n115" src="uchhnl1" pkg="0tyncec1" xy="415,173" size="337,34"/>
+    <image id="n117" name="n117" src="jsucnhh" pkg="0tyncec1" xy="4,43" size="429,2"/>
+    <image id="n132" name="n132" src="vhgh4" xy="7,4" size="741,42"/>
+    <image id="n129" name="n129" src="cnepnqa" pkg="0tyncec1" xy="0,343" size="746,50"/>
+    <text id="n121" name="labelCurLv" xy="4,175" size="155,32" font="方正粗圆简体" fontSize="24" autoSize="none" text="当前等级"/>
+    <text id="n122" name="labelNextLv" xy="418,174" size="159,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="下一级"/>
+    <text id="n127" name="n127" xy="6,351" size="150,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="升级需求:"/>
+    <text id="n118" name="txtLv" xy="43,6" size="685,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="都护府等级X"/>
+    <text id="n119" name="txtLvDesc" xy="8,51" size="738,98" font="方正粗圆简体" fontSize="24" leading="8" ubb="true" autoSize="none" text=""/>
+    <text id="n126" name="txtNextLvDesc" xy="441,228" size="276,92" font="方正粗圆简体" fontSize="24" color="#666666" leading="6" ubb="true" autoSize="none" text=""/>
+    <text id="n128" name="txtCurLvDesc" xy="29,229" size="276,92" font="方正粗圆简体" fontSize="24" color="#666666" leading="6" ubb="true" autoSize="none" text=""/>
+    <text id="n130" name="txtNeedDesc" xy="11,399" size="734,87" font="方正粗圆简体" fontSize="24" color="#666666" leading="6" ubb="true" autoSize="none" text=""/>
+    <component id="n104" name="btnUpGrade" src="jyjfz" xy="409,512" size="288,64">
+      <Button title="升级都护府"/>
+    </component>
+  </displayList>
+</component>

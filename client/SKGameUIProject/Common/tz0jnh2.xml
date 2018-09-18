@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80" extention="Button">
+  <displayList>
+    <loader id="n3" name="bg" xy="0,0" size="80,80" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n4" name="icon" xy="0,0" size="80,80" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n5" name="title" xy="44,59" size="34,19" fontSize="12" color="#d4dcfe" align="right" vAlign="middle" autoSize="none" strokeColor="#000000" text="">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </text>
+    <graph id="n6" name="red" xy="61,2" size="15,16" type="eclipse" lineSize="0" fillColor="#ffcc0033">
+      <relation target="" sidePair="right-right,top-top"/>
+    </graph>
+  </displayList>
+  <Button/>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="25,35" pivot="0.5,0.5">
+  <displayList>
+    <image id="n2" name="n2" src="fhh928" xy="-9,-27"/>
+    <image id="n3" name="n3" src="fhh927" xy="-10,-5" pivot="0.5,0.5"/>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n2" tween="true" startValue="-9,-28" endValue="-9,-33" duration="12"/>
+    <item time="12" type="XY" target="n2" tween="true" startValue="-9,-33" endValue="-9,-28" duration="12"/>
+  </transition>
+  <transition name="t2" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Scale" target="n3" tween="true" startValue="1,1" endValue="0.7,0.7" duration="12"/>
+    <item time="12" type="Scale" target="n3" tween="true" startValue="0.7,0.7" endValue="1,1" duration="12"/>
+  </transition>
+</component>

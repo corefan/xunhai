@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="153,52" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="dla727" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3" name="n3" xy="5,7" size="141,37" font="方正粗圆简体" fontSize="24" color="#fefeff" align="center" vAlign="middle" autoSize="none" text="解散"/>
+  </displayList>
+  <Button/>
+</component>

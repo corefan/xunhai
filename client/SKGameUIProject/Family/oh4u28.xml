@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="617,94" designImage="ui://j7ibmhypi4cc18" designImageOffsetX="-340" designImageOffsetY="-209">
+  <displayList>
+    <image id="n72" name="n72" src="i4ccy" xy="0,0" size="617,93"/>
+    <component id="n76" name="headIcon" src="z03enli" pkg="0tyncec1" xy="33,6"/>
+    <text id="n74" name="name" xy="151,36" size="173,31" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" text="队长名字七个字"/>
+    <component id="n75" name="btnYQ" src="e9ze1u" xy="453,24" size="97,50">
+      <Button title="邀请" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+  </displayList>
+</component>

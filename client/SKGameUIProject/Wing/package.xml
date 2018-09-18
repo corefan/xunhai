@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="d3en6n1n" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="wjp80" name="img" folder=""/>
+    <folder id="wjp81" name="compment" folder=""/>
+    <component id="wjp82" name="WingPanel" folder="wjp81" file="wjp82.xml" exported="true"/>
+    <image id="wjp85" name="select" folder="wjp80" qualityOption="source" file="wjp85.png" size="157,163"/>
+    <image id="wjp8b" name="img" folder="wjp80" qualityOption="source" file="wjp8b.png" size="129,134"/>
+    <image id="wjp8c" name="foot" folder="wjp80" qualityOption="source" file="wjp8c.png" size="110,17"/>
+    <image id="wjp8s" name="table" folder="wjp80" qualityOption="source" file="wjp8s.png" size="410,56" scale="9grid" scale9grid="103,14,206,16"/>
+    <image id="oox7y" name="shuliangdi" folder="wjp80" qualityOption="source" file="oox7y.png" size="204,5" scale="9grid" scale9grid="51,2,102,1"/>
+    <image id="oox7z" name="jiantou" folder="wjp80" qualityOption="source" file="oox7z.png" size="29,21"/>
+    <image id="oox710" name="bg2" folder="wjp80" qualityOption="source" file="oox710.png" size="9,34" scale="9grid" scale9grid="3,9,3,18"/>
+    <image id="oox711" name="fengexian" folder="wjp80" qualityOption="source" file="oox711.png" size="2,3"/>
+    <image id="oox712" name="titleBg" folder="wjp80" qualityOption="source" file="oox712.png" size="180,36"/>
+    <image id="oox713" name="gradeBg" folder="wjp80" qualityOption="source" file="oox713.png" size="129,46"/>
+    <image id="oox714" name="zhanlidi" folder="wjp80" qualityOption="source" file="oox714.png" size="116,36" scale="9grid" scale9grid="29,9,58,18"/>
+    <image id="oox715" name="bigBg" folder="wjp80" qualityOption="source" file="oox715.png" size="110,117" scale="9grid" scale9grid="40,40,30,37"/>
+    <component id="igzg16" name="WingPanel_Left" folder="wjp81" file="igzg16.xml" exported="true"/>
+    <component id="igzg17" name="WingPanel_Right" folder="wjp81" file="igzg17.xml" exported="true"/>
+    <component id="igzg18" name="WingItem" folder="wjp81" file="igzg18.xml" exported="true"/>
+    <component id="igzg19" name="WingItemGroup" folder="wjp81" file="igzg19.xml" exported="true"/>
+    <image id="nhrf1a" name="start2" folder="wjp80" qualityOption="source" file="nhrf1a.png" size="42,41"/>
+    <image id="nhrf1b" name="start1" folder="wjp80" qualityOption="source" file="nhrf1b.png" size="42,41"/>
+    <component id="nhrf1d" name="prop" folder="wjp81" file="nhrf1d.xml" exported="true"/>
+    <component id="vetk1e" name="WingUpPanel" folder="wjp81" file="vetk1e.xml" exported="true"/>
+    <image id="vetk1f" name="upBg" folder="wjp80" qualityOption="source" file="vetk1f.png" size="386,245"/>
+    <component id="5v991g" name="UpProp" folder="wjp81" file="5v991g.xml" exported="true"/>
+    <component id="5v991j" name="WingCostPropItem" folder="wjp81" file="5v991j.xml" exported="true"/>
+    <component id="rflk1k" name="Touch" folder="wjp81" file="rflk1k.xml" exported="true"/>
+    <component id="v83r1l" name="WingActivePanel" folder="wjp81" file="v83r1l.xml" exported="true"/>
+    <component id="lqpc1m" name="Start" folder="wjp81" file="lqpc1m.xml" exported="true"/>
+    <image id="rb401n" name="示意图2" folder="wjp80" qualityOption="source" file="rb401n.png" size="1334,750"/>
+    <component id="rb401p" name="ChooseBtn" folder="wjp81" file="rb401p.xml"/>
+    <image id="k3xs1q" name="字色字号1" folder="wjp80" qualityOption="source" file="k3xs1q.png" size="1334,750"/>
+    <component id="k3xs1r" name="maxBtn" folder="wjp81" file="k3xs1r.xml"/>
+  </resources>
+  <publish name="Wing"/>
+</packageDescription>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="414,37" extention="ProgressBar">
+  <displayList>
+    <component id="n0" name="bar" src="kita9g" xy="0,0">
+      <ProgressBar value="100" max="100"/>
+    </component>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

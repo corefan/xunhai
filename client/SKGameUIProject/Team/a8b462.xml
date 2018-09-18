@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,113" initName="item">
+  <displayList>
+    <image id="n0" name="bg" src="keyenis" pkg="0tyncec1" xy="-2,-3" size="722,118"/>
+    <image id="n2" name="selected" src="keyenir" pkg="0tyncec1" xy="-2,-3" size="722,118" visible="false"/>
+    <image id="n5" name="n5" src="csuxnll" pkg="0tyncec1" xy="84,22" size="210,39"/>
+    <text id="n6" name="txtName" xy="92,25" size="197,32" font="方正粗圆简体" fontSize="22" color="#2e2e2e" align="center" vAlign="middle" ubb="true" autoSize="none" text="????????"/>
+    <component id="n4" name="headIcon" src="z03enli" pkg="0tyncec1" xy="22,14" touchable="false">
+      <Label title="??"/>
+    </component>
+    <text id="n7" name="txtCareer" xy="111,66" size="76,24" font="方正粗圆简体" fontSize="20" color="#2e2e2e" align="center" vAlign="middle" autoSize="height" text="????"/>
+    <loader id="n8" name="iconCareer" xy="196,64" size="28,28" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false"/>
+    <component id="n14" name="progress" src="a8b4nlu" pkg="0tyncec1" xy="299,33" size="270,18" touchable="false">
+      <ProgressBar max="4"/>
+    </component>
+    <image id="n16" name="n16" src="5v99nkc" pkg="0tyncec1" xy="366,37" size="2,10">
+      <relation target="n14" sidePair="top-top,left-left"/>
+    </image>
+    <image id="n17" name="n17" src="5v99nkc" pkg="0tyncec1" xy="433,37" size="2,10">
+      <relation target="n14" sidePair="top-top,left-left"/>
+    </image>
+    <image id="n18" name="n18" src="5v99nkc" pkg="0tyncec1" xy="500,37" size="2,10">
+      <relation target="n14" sidePair="top-top,left-left"/>
+    </image>
+    <text id="n19" name="txtLimitLev" xy="296,69" size="274,22" font="方正粗圆简体" fontSize="18" color="#2e2e2e" align="center" vAlign="middle" autoSize="height" text="等级限制：??级"/>
+    <component id="n20" name="btnApply" src="skqrnkp" pkg="0tyncec1" xy="581,34" size="122,51">
+      <Button title="申请" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n23" name="clickMask" src="tnbmnka" pkg="0tyncec1" xy="4,5" size="565,103"/>
+  </displayList>
+</component>

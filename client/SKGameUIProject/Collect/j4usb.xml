@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="333,45" designImage="ui://2bw6ypvmosjz5">
+  <displayList>
+    <component id="n0" name="process_bar_collect" src="j4usa" xy="0,22">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n1" name="label_process_title" xy="49,0" size="227,23" font="方正粗圆简体" fontSize="16" color="#fef1d5" align="center" vAlign="middle" autoSize="none" shadowColor="#001c1c" shadowOffset="1,1" text="回程中... 5s"/>
+  </displayList>
+</component>

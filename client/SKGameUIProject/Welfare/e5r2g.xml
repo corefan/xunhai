@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,635" designImageAlpha="80">
+  <displayList>
+    <image id="n11" name="n11" src="e5r2j" xy="28,2"/>
+    <image id="n27" name="n27" src="c8es19" xy="72,29"/>
+    <image id="n10" name="n10" src="e5r2i" xy="-310,-109" hideByEditor="true" visible="false"/>
+    <image id="n9" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,26" size="20,607"/>
+    <image id="n13" name="n13" src="e5r2n" xy="628,26"/>
+    <component id="n12" name="btnChakan" src="t5hdnfq" pkg="0tyncec1" xy="410,28" size="35,35">
+      <Button icon="ui://0tyncec1c8esnou"/>
+    </component>
+    <text id="n15" name="txtTombName" xy="89,45" pivot="0,0.5" anchor="true" size="322,35" font="方正粗圆简体" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" bold="true" text="东皇古墓"/>
+    <text id="n16" name="txt_desc1" xy="693,96" size="105,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="已挖掘墓室"/>
+    <text id="n17" name="txt_desc2" xy="693,179" size="105,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="绿色秘宝数"/>
+    <text id="n18" name="txt_desc3" xy="691,262" size="105,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="蓝色秘宝数"/>
+    <text id="n19" name="txt_desc4" xy="694,344" size="105,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="紫色秘宝数"/>
+    <text id="n20" name="txt_desc5" xy="694,428" size="105,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="橙色秘宝数"/>
+    <text id="n21" name="txt_num1" xy="747,138" pivot="0.5,0.5" anchor="true" size="16,24" font="方正粗圆简体" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <text id="n22" name="txt_num2" xy="747,221" pivot="0.5,0.5" anchor="true" size="16,24" font="方正粗圆简体" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <text id="n23" name="txt_num3" xy="746,303" pivot="0.5,0.5" anchor="true" size="16,24" font="方正粗圆简体" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <text id="n24" name="txt_num4" xy="747,388" pivot="0.5,0.5" anchor="true" size="16,24" font="方正粗圆简体" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <text id="n25" name="txt_num5" xy="746,471" pivot="0.5,0.5" anchor="true" size="16,24" font="方正粗圆简体" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <component id="n26" name="n26" src="e5r2p" xy="638,525"/>
+  </displayList>
+</component>

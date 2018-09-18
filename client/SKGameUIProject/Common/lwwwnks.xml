@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,40" extention="Button" initName="checkBox#">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n3" name="layer0" xy="0,0" size="100,40" locked="true" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n2" name="layer1" xy="0,0" size="100,40" locked="true" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n1" name="title" xy="0,0" size="100,40" locked="true" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n0" name="icon0" xy="0,0" size="50,30" locked="true" touchable="false" align="center" vAlign="middle" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="0"/>
+    </loader>
+    <loader id="n4" name="icon1" xy="0,0" size="50,30" locked="true" touchable="false" align="center" vAlign="middle" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="1"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>

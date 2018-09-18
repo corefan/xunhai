@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="wn6osdzs" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="dmzw0" name="img" folder=""/>
+    <folder id="dmzw1" name="com" folder=""/>
+    <component id="dmzw2" name="AccountPanel" folder="dmzw1" file="dmzw2.xml" exported="true"/>
+    <image id="dmzw3" name="cha" folder="dmzw0" qualityOption="source" file="dmzw3.png" size="22,22"/>
+    <image id="dmzw4" name="anniuwenzi" folder="dmzw0" qualityOption="source" file="dmzw4.png" size="130,32"/>
+    <image id="dmzw5" name="5" folder="dmzw0" qualityOption="source" file="dmzw5.png" size="418,15"/>
+    <image id="dmzw6" name="4" folder="dmzw0" qualityOption="source" file="dmzw6.png" size="353,42"/>
+    <image id="dmzw7" name="3" folder="dmzw0" qualityOption="source" file="dmzw7.png" size="60,15"/>
+    <image id="dmzw9" name="1" folder="dmzw0" qualityOption="source" file="dmzw9.png" size="861,602"/>
+    <image id="dmzwa" name="shurukuang" folder="dmzw0" qualityOption="source" file="dmzwa.png" size="11,43" scale="9grid" scale9grid="3,11,5,22"/>
+    <image id="dmzwb" name="jiantou" folder="dmzw0" qualityOption="source" file="dmzwb.png" size="11,14"/>
+    <image id="dmzwc" name="gou" folder="dmzw0" qualityOption="source" file="dmzwc.png" size="22,22"/>
+    <image id="dmzwe" name="yilingqu" folder="dmzw0" qualityOption="source" file="dmzwe.png" size="95,32"/>
+    <image id="dmzwf" name="shoujibangdingdikuang" folder="dmzw0" qualityOption="source" file="dmzwf.png" size="29,27" scale="9grid" scale9grid="8,8,13,11"/>
+    <image id="dmzwg" name="lingqujiangli" folder="dmzw0" qualityOption="source" file="dmzwg.png" size="129,32"/>
+    <image id="dmzwh" name="2(2)" folder="dmzw0" qualityOption="source" file="dmzwh.png" size="163,41"/>
+    <image id="dmzwi" name="zhizhen" folder="dmzw0" qualityOption="source" file="dmzwi.png" size="22,22"/>
+    <component id="dmzwk" name="AccountInput" folder="dmzw1" file="dmzwk.xml" exported="true"/>
+    <component id="s1mjn" name="ReBindStepOne" folder="dmzw1" file="s1mjn.xml" exported="true"/>
+    <component id="s1mjr" name="ReBindStepTow" folder="dmzw1" file="s1mjr.xml" exported="true"/>
+  </resources>
+  <publish name="Account" genCode="true"/>
+</packageDescription>

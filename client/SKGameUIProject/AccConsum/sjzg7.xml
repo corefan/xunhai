@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="888,612" designImage="ui://bveep9rgsnzyd" designImageOffsetX="-314" designImageOffsetY="-104" designImageAlpha="0">
+  <displayList>
+    <image id="n9" name="n9" src="snzyc" xy="21,4" size="861,599"/>
+    <image id="n10" name="n10" src="snzye" xy="38,28"/>
+    <text id="n2" name="n2" xy="670,183" size="95,22" group="n4" font="方正粗圆简体" fontSize="18" color="#1eff00" strokeColor="#240000" strokeSize="2" text="累计消费："/>
+    <text id="n3" name="cumulate" xy="761,183" size="71,22" group="n4" font="方正粗圆简体" fontSize="18" color="#1eff00" strokeColor="#240000" strokeSize="2" text="999元宝">
+      <relation target="n2" sidePair="left-right"/>
+    </text>
+    <group id="n4" name="n4" xy="670,183" size="162,22"/>
+    <list id="n7" name="itemList" xy="38,228" size="830,365" overflow="scroll" scrollBarFlags="128" margin="0,0,0,0" lineGap="8"/>
+    <image id="n8" name="n8" src="gk0nnid" pkg="0tyncec1" xy="0,31"/>
+  </displayList>
+</component>

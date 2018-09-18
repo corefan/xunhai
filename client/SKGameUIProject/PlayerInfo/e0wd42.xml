@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="388,617" overflow="hidden">
+  <controller name="state" pages="0,滑入,1,滑出" selected="0"/>
+  <displayList>
+    <component id="n0" name="page" src="fqe0t" xy="12,4">
+      <gearDisplay controller="state" pages="0,1"/>
+      <gearXY controller="state" pages="0,1" values="12,4|391,4" default="725,111" tween="true"/>
+    </component>
+  </displayList>
+</component>

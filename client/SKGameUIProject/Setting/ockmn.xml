@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="216,31" extention="Label">
+  <displayList>
+    <text id="n4" name="title" xy="3,2" size="10,29" font="方正粗圆简体" fontSize="22" color="#2e3341" text="&#xA;">
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n5" name="checkBox" src="ockmnmb" pkg="0tyncec1" xy="184,3">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+  </displayList>
+</component>

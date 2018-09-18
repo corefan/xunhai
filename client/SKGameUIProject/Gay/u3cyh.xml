@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="49,110" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n13" name="n13" src="ovhpnlp" pkg="0tyncec1" xy="50,-1" size="110,50" rotation="90">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n11" name="n11" src="ovhpnlm" pkg="0tyncec1" xy="51,-3" size="116,54" rotation="90">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <text id="n12" name="title" xy="12,8" size="26,95" fontSize="19" color="#ffffff" align="center" vAlign="middle" leading="0" ubb="true" autoSize="none" text="好友添加"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

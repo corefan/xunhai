@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="yalu98wx" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="8y9r0" name="Image" folder=""/>
+    <folder id="8y9r1" name="Component" folder=""/>
+    <image id="8y9r2" name="wenzi" folder="8y9r0" qualityOption="source" file="8y9r2.png" size="273,24"/>
+    <image id="8y9r3" name="qianwangkaixiang" folder="8y9r0" qualityOption="source" file="8y9r3.png" size="163,32"/>
+    <image id="8y9r4" name="di" folder="8y9r0" qualityOption="source" file="8y9r4.png" size="1052,444"/>
+    <image id="8y9r5" name="btn_guanbi" folder="8y9r0" qualityOption="source" file="8y9r5.png" size="23,23"/>
+    <image id="8y9r6" name="示意图" folder="8y9r0" qualityOption="source" file="8y9r6.png" size="1334,750"/>
+    <component id="8y9r7" name="EquipmentStoreTips" folder="8y9r1" file="8y9r7.xml" exported="true"/>
+    <component id="kozm8" name="BtnEquipBoxOpen" folder="8y9r1" file="kozm8.xml"/>
+  </resources>
+  <publish name="EquipmentStoreTipsUI" genCode="true"/>
+</packageDescription>

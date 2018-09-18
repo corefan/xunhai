@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="979,617" opaque="false" designImage="ui://j7ibmhypi4cc15" designImageOffsetX="-123" designImageOffsetY="-106" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <image id="n15" name="n15" src="i4cco" xy="11,20"/>
+    <image id="n0" name="n0" src="i4ccm" xy="85,80" group="n6"/>
+    <text id="n2" name="n2" xy="118,83" size="120,31" group="n6" font="方正粗圆简体" fontSize="24" color="#43515b" autoSize="none" text="创建条件"/>
+    <text id="n4" name="n4" xy="99,125" size="757,26" group="n6" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·玩家到达20级可创建家族"/>
+    <text id="n5" name="n5" xy="99,156" size="757,26" group="n6" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·玩家只能加入一个家族，家族解散后可重新加入家族"/>
+    <text id="n7" name="n7" xy="99,186" size="757,26" group="n6" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·创建家族时，需要3名或3名以上玩家组队，且他们互为好友"/>
+    <text id="n8" name="n8" xy="99,217" size="757,26" group="n6" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·创建家族时队长要支付10万金币"/>
+    <text id="n53" name="n53" xy="99,249" size="757,26" group="n6" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·72小时内无家族成员上线，家族会自动解散"/>
+    <text id="n54" name="n54" xy="99,281" size="757,26" group="n6" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·家族成员少于3人起算，72小时后家族会自动解散"/>
+    <group id="n6" name="n6" xy="85,80" size="771,227" collapsed="true"/>
+    <image id="n1" name="n1" src="i4ccm" xy="85,348" group="n9"/>
+    <text id="n3" name="n3" xy="118,351" size="124,31" group="n9" font="方正粗圆简体" fontSize="24" color="#43515b" autoSize="height" text="家族福利"/>
+    <text id="n10" name="n10" xy="99,389" size="757,26" group="n9" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·得到特别的家族头衔"/>
+    <text id="n11" name="n11" xy="99,421" size="757,26" group="n9" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·同一家族成员3人或以上组队时，队中家族成员可获得经验加成buff"/>
+    <group id="n9" name="n9" xy="85,348" size="771,99" collapsed="true"/>
+    <component id="n52" name="btnFamily" src="i4cc1o" xy="787,556" size="175,52" touchable="false" grayed="true">
+      <Button title="创建家族" icon="ui://0tyncec1x0conj1"/>
+    </component>
+  </displayList>
+</component>

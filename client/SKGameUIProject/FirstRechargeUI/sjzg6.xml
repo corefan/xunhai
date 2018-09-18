@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" designImage="ui://byk6e4ttsjzg3" designImageAlpha="6">
+  <displayList>
+    <graph id="n8" name="mask" xy="0,0" size="1334,750" alpha="0.65" type="rect" fillColor="#ff000000"/>
+    <image id="n0" name="n0" src="sjzg5" xy="410,75"/>
+    <component id="n2" name="btnClose" src="sjzg7" xy="944,163"/>
+    <component id="n4" name="btnRecharge" src="sjzg8" xy="581,513" size="218,63"/>
+    <list id="n6" name="rewardList" xy="491,358" size="407,99" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" margin="0,0,0,0" colGap="8" align="center"/>
+  </displayList>
+</component>

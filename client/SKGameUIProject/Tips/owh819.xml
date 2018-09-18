@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="204,25">
+  <displayList>
+    <text id="n2" name="TitleName" xy="0,0" size="68,25" font="方正粗圆简体" fontSize="21" color="#bad4dc" ubb="true" text="生命：">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <text id="n3" name="TitleValue" xy="65,1" size="139,25" font="方正粗圆简体" fontSize="21" color="#bad4dc" ubb="true" text="999999[color=#00ff00] + 9999[/color]">
+      <relation target="n2" sidePair="left-right"/>
+    </text>
+    <loader id="n4" name="CompareMask" xy="208,-2" size="23,27" align="center" vAlign="middle" fill="scaleMatchHeight"/>
+  </displayList>
+</component>

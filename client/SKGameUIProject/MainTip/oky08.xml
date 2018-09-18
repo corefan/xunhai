@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageAlpha="26">
+  <displayList>
+    <image id="n10" name="bg" src="csuxnlk" pkg="0tyncec1" xy="378,276" size="597,240"/>
+    <text id="n1" name="title" xy="470,279" size="413,34" font="方正粗圆简体" fontSize="24" color="#d2dae0" align="center" vAlign="middle" autoSize="none" text="温馨提示"/>
+    <component id="n11" name="rollContent" src="tebrnmj" pkg="0tyncec1" xy="422,334" size="508,114">
+      <Label title="内容"/>
+    </component>
+    <component id="n12" name="btnEnter" src="l2b8nnq" pkg="0tyncec1" xy="735,455" size="155,41">
+      <relation target="" sidePair="bottom-bottom,center-center"/>
+      <Button title="确定" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n13" name="btnExit" src="l2b8nnq" pkg="0tyncec1" xy="471,455" size="155,41">
+      <relation target="" sidePair="bottom-bottom,center-center"/>
+      <Button title="取消" titleColor="#2e3341" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n14" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="877,238" size="113,89" visible="false">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>

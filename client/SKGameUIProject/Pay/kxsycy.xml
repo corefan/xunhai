@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="209,32" extention="Label" designImage="ui://zuudarvckxsydf" designImageOffsetX="-155" designImageOffsetY="-490" designImageAlpha="0">
+  <displayList>
+    <text id="n37" name="n37" xy="29,1" size="118,31" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="首充另送">
+      <relation target="n39" sidePair="right-left"/>
+    </text>
+    <text id="n39" name="title" xy="128,18" size="10,0" font="ui://0tyncec1hhg0eh" fontSize="12" color="#2e3341" align="center" vAlign="middle" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n40" name="n40" xy="137,0" size="55,32" font="方正粗圆简体" fontSize="24" color="#2e3341" align="right" autoSize="none" text="元宝">
+      <relation target="n39" sidePair="left-right"/>
+    </text>
+  </displayList>
+</component>

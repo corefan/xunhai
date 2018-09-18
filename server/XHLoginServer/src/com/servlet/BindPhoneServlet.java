@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.util.Map;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -20,7 +19,6 @@ import com.constant.CacheConstant;
 import com.domain.Account;
 import com.service.IAccountService;
 import com.service.ISmsService;
-import com.util.CommonUtil;
 import com.util.LogUtil;
 
 /**
@@ -28,7 +26,7 @@ import com.util.LogUtil;
  * @author jiangqin
  * @date 2017-7-20
  */
-public class BindPhoneServlet extends HttpServlet{
+public class BindPhoneServlet extends BaseServlet{
 
 	private static final long serialVersionUID = 2396999795398462861L;
 	
@@ -60,7 +58,7 @@ public class BindPhoneServlet extends HttpServlet{
 		IAccountService accountService = GCCContext.getInstance().getServiceCollection().getAccountService();
 		ISmsService smsService = GCCContext.getInstance().getServiceCollection().getSmsService();
 		
-		JSONObject jsonObject = CommonUtil.dealMsg(req);
+		JSONObject jsonObject = this.dealMsg(req);
 		if(jsonObject == null) return;		
 		Long userId = jsonObject.getLong("userId");
 		String telePhone = jsonObject.getString("telePhone");
@@ -74,7 +72,7 @@ public class BindPhoneServlet extends HttpServlet{
 				||code == null || code.trim().equals("")){
 			//1:参数有误
 			result.put("result", 1);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}
 	    
@@ -83,7 +81,7 @@ public class BindPhoneServlet extends HttpServlet{
 	    if(account == null){
 			//1:账号未注册
 	    	result.put("result", 1);
-	    	CommonUtil.postData(resp, result.toString());
+	    	this.postData(resp, result.toString());
 			return;
 		}
 	    
@@ -91,7 +89,7 @@ public class BindPhoneServlet extends HttpServlet{
 	    if(map == null || map.isEmpty()){
 	    	// 手机未获取验证码
     	    result.put("result", 3);
-    	    CommonUtil.postData(resp, result.toString());
+    	    this.postData(resp, result.toString());
 		 	return;
 	    }
 		
@@ -99,14 +97,14 @@ public class BindPhoneServlet extends HttpServlet{
 	    if(_code == null){
 	    	// 手机未获取验证码 或验证码过期
 	    	result.put("result", 3);
-	    	CommonUtil.postData(resp, result.toString());
+	    	this.postData(resp, result.toString());
 		 	return;
 	    }
 	    
 	    // 验证码错误
 	    if(!_code.equals(code)){
 	    	result.put("result", 3);
-	    	CommonUtil.postData(resp, result.toString());
+	    	this.postData(resp, result.toString());
 		 	return;
 	    }
 	    
@@ -114,7 +112,7 @@ public class BindPhoneServlet extends HttpServlet{
 		QuerySendDetailsResponse querySendDetailsResponse =  smsService.querySendDetails(telePhone, bizId);		
 	    if(querySendDetailsResponse.getCode() != null && !querySendDetailsResponse.getCode().equals("OK")) {
 		    result.put("result", 3);
-		    CommonUtil.postData(resp, result.toString());
+		    this.postData(resp, result.toString());
 		 	return;
 	    }
 	    
@@ -123,6 +121,6 @@ public class BindPhoneServlet extends HttpServlet{
 	    accountService.updateAccount(account);
 	    
 		result.put("result", 0);
-		CommonUtil.postData(resp, result.toString());		
+		this.postData(resp, result.toString());		
 	}
 }

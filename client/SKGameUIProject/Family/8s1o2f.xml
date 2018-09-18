@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="481,258" designImageOffsetX="-486" designImageOffsetY="-298" designImageAlpha="72">
+  <displayList>
+    <component id="n69" name="n69" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,259"/>
+    <text id="n62" name="txtInvite" xy="67,78" size="345,58" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="none" text="您的好友 名字最多七个字 正在&#xA;邀请您加入 家族名字七个字 家族"/>
+    <component id="n64" name="btnRef" src="e9ze1u" xy="78,187" size="144,51">
+      <Button title="拒绝" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n65" name="btnAgr" src="e9ze1u" xy="264,186" size="143,51">
+      <Button title="同意" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <text id="n68" name="n68" xy="189,5" size="119,28" font="方正粗圆简体" fontSize="24" color="#ffffff" autoSize="none" text="温馨提示"/>
+  </displayList>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="eq5552rt" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="ockm0" name="Component" folder=""/>
+    <component id="ockmk" name="SettingPanel" folder="ockm0" file="ockmk.xml" exported="true"/>
+    <component id="ockmn" name="CheckLabel" folder="ockm0" file="ockmn.xml"/>
+    <component id="ockmo" name="SettingLabel" folder="ockm0" file="ockmo.xml"/>
+    <component id="ockmt" name="CallGMBtn" folder="ockm0" file="ockmt.xml"/>
+    <component id="ljeaw" name="EscGameBtn" folder="ockm0" file="ljeaw.xml"/>
+    <component id="ljea19" name="DrugRadio" folder="ockm0" file="ljea19.xml"/>
+    <image id="iw5w1a" name="装饰" folder="iw5w1b" qualityOption="source" file="iw5w1a.png" size="28,12"/>
+    <folder id="iw5w1b" name="Image" folder=""/>
+    <image id="iw5w1c" name="设置" folder="iw5w1b" qualityOption="source" file="iw5w1c.png" size="1334,750"/>
+    <image id="iw5w1d" name="选中框" folder="iw5w1b" qualityOption="source" file="iw5w1d.png" size="60,55" scale="9grid" scale9grid="15,14,30,28"/>
+    <component id="iw5w1f" name="SelectBox" folder="ockm0" file="iw5w1f.xml"/>
+    <image id="i4cc1g" name="weixuanzhong" folder="iw5w1b" qualityOption="source" file="i4cc1g.png" size="36,36"/>
+    <image id="i4cc1h" name="xuanzhong" folder="iw5w1b" qualityOption="source" file="i4cc1h.png" size="36,36"/>
+  </resources>
+  <publish name="Setting" genCode="true"/>
+</packageDescription>

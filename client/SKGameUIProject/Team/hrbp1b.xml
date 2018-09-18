@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="498,100">
+  <displayList>
+    <image id="n0" name="bg_01" src="o8xhj" xy="0,0" locked="true"/>
+    <image id="n2" name="bg_02" src="o8xhw" xy="11,3"/>
+    <loader id="n4" name="headIcon" xy="12,4" size="93,92" url="ui://0tnseunoo8xhd"/>
+    <text id="n6" name="palyerName" xy="114,13" size="159,26" fontSize="22" color="#cdbf87" text="我的名字七个字"/>
+    <text id="n7" name="level" xy="115,42" size="48,23" font="方正粗圆简体" fontSize="19" color="#e5e5e5" text="Lv.30"/>
+    <loader id="n10" name="leaderMark" xy="90,13" size="34,24" url="ui://0tnseunoo8xhf"/>
+    <image id="n17" name="n17" src="o8xhl" xy="113,70" size="165,24"/>
+    <text id="n8" name="faction" xy="114,71" size="138,25" font="方正粗圆简体" fontSize="17" color="#e5e5e5" letterSpacing="1" autoSize="none" text="瓦尔基里瓦尔拉"/>
+    <component id="n19" name="getOutBtn" src="o8xh0" xy="366,20"/>
+  </displayList>
+</component>

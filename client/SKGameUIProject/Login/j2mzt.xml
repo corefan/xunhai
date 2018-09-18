@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="418,50" extention="Button" designImage="ui://s68puhqjj2mz2">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bg" src="j2mzd" xy="4,0" size="410,51">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n2" name="bgSelected" src="j2mzo" xy="0,0" size="339,42">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n1" name="title" xy="8,6" size="402,38" font="方正粗圆简体" fontSize="26" color="#cccccc" vAlign="middle" autoSize="none" text="1111111"/>
+    <component id="n3" name="btnDelete" src="t5hdnfq" pkg="0tyncec1" xy="375,10" size="32,32" visible="false">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

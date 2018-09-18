@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,613">
+  <displayList>
+    <image id="n0" name="bg" src="jsucnhf" pkg="0tyncec1" xy="0,0" size="958,560"/>
+    <image id="n3" name="n3" src="gk0nnid" pkg="0tyncec1" xy="210,5" size="20,552"/>
+    <component id="n4" name="typeLayer" src="t5hdnfw" pkg="0tyncec1" xy="7,5" size="201,545"/>
+    <component id="n5" name="teamLayer" src="t5hdnfw" pkg="0tyncec1" xy="232,5" size="722,545"/>
+    <component id="n6" name="btnCreate" src="skqrnkp" pkg="0tyncec1" xy="516,563" size="154,49">
+      <Button title="创建队伍" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n2" name="btnRefresh" src="skqrnkp" pkg="0tyncec1" xy="775,563" size="154,49">
+      <Button title="刷新" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n7" name="cbAutoMatch" src="skqrnkp" pkg="0tyncec1" xy="233,563" size="154,49">
+      <Button title="自动匹配" titleColor="#000000" icon="ui://0tyncec1gk0nnif" selectedIcon="ui://0tyncec1gk0nnif"/>
+    </component>
+  </displayList>
+</component>

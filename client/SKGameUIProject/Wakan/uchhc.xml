@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="92,92">
+  <displayList>
+    <loader id="n9" name="quality" xy="1,1" size="90,90" fill="scale"/>
+    <image id="n1" name="select" src="uwggde" pkg="0tyncec1" xy="-6,-4"/>
+    <loader id="n8" name="icon" xy="1,2" size="86,86" align="center" vAlign="middle" fill="scale"/>
+    <text id="n7" name="count" xy="10,64" size="77,24" font="方正粗圆简体" fontSize="20" color="#e5e5e5" align="right" autoSize="height" strokeColor="#666666" text="50"/>
+    <image id="n10" name="jia" src="rgh0nl6" pkg="0tyncec1" xy="22,23"/>
+    <graph id="n11" name="role3D" xy="44,46" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <graph id="n12" name="moveRole3D" xy="44,46" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+  </displayList>
+</component>

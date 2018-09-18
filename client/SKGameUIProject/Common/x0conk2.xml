@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,64" extention="Label" initName="numBar">
+  <displayList>
+    <image id="n0" name="n0" src="x0conjw" xy="65,12" size="102,44"/>
+    <component id="n2" name="btnSub" src="t5hdnfq" xy="2,1" size="62,63">
+      <Button icon="ui://0tyncec1x0conjz"/>
+    </component>
+    <component id="n3" name="btnAdd" src="t5hdnfq" xy="169,1" size="62,63">
+      <Button icon="ui://0tyncec1x0conjy"/>
+    </component>
+    <component id="n4" name="btnMax" src="t5hdnfq" xy="237,1" size="62,63">
+      <Button icon="ui://0tyncec1x0conk0"/>
+    </component>
+    <text id="n5" name="title" xy="72,18" size="88,31" input="true" maxLength="3" keyboardType="2" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="0"/>
+  </displayList>
+</component>

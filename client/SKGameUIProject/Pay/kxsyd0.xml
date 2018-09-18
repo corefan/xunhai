@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="223,45" extention="Label">
+  <displayList>
+    <image id="n42" name="n42" src="10j1c4" xy="18,9">
+      <relation target="n41" sidePair="right-left"/>
+    </image>
+    <text id="n41" name="title" xy="91,7" size="58,35" font="ui://0tyncec1hhg0eh" fontSize="13" color="#2e3341" align="center" autoSize="height" text="128">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <loader id="n43" name="lvyuanbao" xy="159,0" size="43,45" url="ui://0tyncec1n2mycg">
+      <relation target="n41" sidePair="left-right"/>
+    </loader>
+  </displayList>
+</component>

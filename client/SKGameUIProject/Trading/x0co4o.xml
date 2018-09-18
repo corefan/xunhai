@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,608">
+  <displayList>
+    <image id="n1" name="n1" src="j67wnhe" pkg="0tyncec1" xy="3,4" size="202,597"/>
+    <image id="n2" name="n2" src="jsucnhg" pkg="0tyncec1" xy="547,-8"/>
+    <image id="n3" name="n3" src="x0conj6" pkg="0tyncec1" xy="558,3"/>
+    <text id="n10" name="n10" xy="725,315" size="69,28" font="方正粗圆简体" fontSize="24" color="#e5e5e5" text="数  量"/>
+    <image id="n11" name="n11" src="hx0xnip" pkg="0tyncec1" xy="616,290"/>
+    <image id="n13" name="n13" src="x0conjx" pkg="0tyncec1" xy="571,358" size="370,76"/>
+    <image id="n15" name="n15" src="x0conjw" pkg="0tyncec1" xy="678,470" size="226,44"/>
+    <text id="n16" name="n16" xy="597,477" size="77,28" font="方正粗圆简体" fontSize="24" color="#e5e5e5" text="总价："/>
+    <loader id="n5" name="bgRare" xy="569,11" size="375,124" group="n24" fill="scaleFree" playing="false"/>
+    <text id="n6" name="txtName" xy="695,31" size="10,30" group="n24" font="方正粗圆简体" fontSize="26" color="#ffffff" align="center" vAlign="middle" bold="true" text=""/>
+    <text id="n7" name="txtLev" xy="695,75" size="81,24" group="n24" font="方正粗圆简体" fontSize="20" color="#cdbf87" vAlign="middle" autoSize="height" text=""/>
+    <text id="n8" name="txtSubType" xy="813,75" size="126,24" group="n24" font="方正粗圆简体" fontSize="20" color="#cdbf87" align="center" vAlign="middle" autoSize="height" text="">
+      <relation target="n7" sidePair="top-top"/>
+    </text>
+    <richtext id="n9" name="txtDesc" xy="601,158" size="309,113" group="n24" font="方正粗圆简体" fontSize="20" color="#bad4dc" autoSize="none" text=""/>
+    <loader id="n17" name="iconPay" xy="682,470" size="40,40" group="n24" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n18" name="txtPrice" xy="727,476" size="164,28" group="n24" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="height" text=""/>
+    <component id="n20" name="btnBuy" src="tnbmnka" pkg="0tyncec1" xy="688,527" size="150,53" group="n24">
+      <Button title="购买" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n28" name="numBar" src="x0conk2" pkg="0tyncec1" xy="610,364" group="n24">
+      <Label titleColor="#2e3341" maxLength="3" keyboardType="2"/>
+    </component>
+    <group id="n24" name="n24" xy="569,11" size="375,569"/>
+    <component id="n27" name="tabConn" src="t5hdnfw" pkg="0tyncec1" xy="6,8" size="195,586"/>
+    <component id="n25" name="itemConn" src="t5hdnfw" pkg="0tyncec1" xy="214,6" size="329,588"/>
+  </displayList>
+</component>

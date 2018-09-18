@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="188,197" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n2" name="icon" xy="0,-27" size="188,182" url="ui://ny6nt56pez9zc" fill="scaleMatchHeight"/>
+    <image id="n3" name="bg1" src="ez9zk" xy="12,153"/>
+    <image id="n5" name="NoOpenMask" src="ez9zl" xy="12,153"/>
+    <text id="n4" name="title" xy="55,162" size="77,30" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" text="大荒塔">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <image id="n6" name="Lock" src="ez9zj" xy="29,94"/>
+    <text id="n7" name="LockLevel" xy="61,97" size="87,27" font="方正粗圆简体" fontSize="20" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" strokeSize="2" text="30级开放"/>
+    <text id="n9" name="txtLessTime" xy="0,196" size="187,32" font="方正粗圆简体" fontSize="22" color="#ffcc33" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#000000" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

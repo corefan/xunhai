@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="388,208">
+  <displayList>
+    <image id="n0" name="bg_01" src="ubp49d" pkg="0tyncec1" xy="0,0" size="388,208"/>
+    <component id="n3" name="sureBtn" src="o8xh1" xy="134,136">
+      <Button title="确定"/>
+    </component>
+    <text id="n5" name="msgInfo" xy="40,42" size="317,68" input="true" maxLength="14" font="方正粗圆简体" fontSize="22" color="#e5e5e5" vAlign="middle" letterSpacing="2" autoSize="none" text="布拉德皮特拒绝加入你的队伍"/>
+  </displayList>
+</component>

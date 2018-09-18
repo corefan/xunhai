@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="250,352" designImageOffsetX="-393" designImageOffsetY="-151" designImageAlpha="36" designImageLayer="1">
+  <displayList>
+    <loader id="n9" name="itemBg" xy="1,8" size="247,337" url="ui://oa3ahys9dz07m"/>
+    <image id="n2" name="select" src="dz07o" xy="-7,-2" hideByEditor="true"/>
+    <text id="n3" name="name" xy="69,35" pivot="0.5,0.5" size="109,29" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="防守打法&#xA;"/>
+    <text id="n6" name="count" xy="61,178" pivot="0.5,0.5" size="127,31" font="方正粗圆简体" fontSize="20" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="none" text="防守打法&#xA;"/>
+    <text id="n8" name="time" xy="61,216" pivot="0.5,0.5" size="127,31" font="方正粗圆简体" fontSize="20" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="none" text="防守打法&#xA;"/>
+    <component id="n7" name="gotoBtn" src="skqrnkp" pkg="0tyncec1" xy="57,261" size="134,50">
+      <Button title="前往" titleColor="#000000" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>

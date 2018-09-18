@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,625">
+  <displayList>
+    <image id="n24" name="n24" src="s8z96x" xy="697,38" size="683,25" rotation="180"/>
+    <image id="n0" name="bg" src="jsucnhf" pkg="0tyncec1" xy="0,47" size="958,510"/>
+    <component id="n2" name="typeLayer" src="t5hdnfx" pkg="0tyncec1" xy="8,50" size="942,500"/>
+    <text id="n4" name="n5" xy="14,13" size="65,24" font="方正粗圆简体" fontSize="20" text="目标："/>
+    <text id="n5" name="txtTarget" xy="80,13" size="195,24" font="方正粗圆简体" fontSize="20" autoSize="height" text=""/>
+    <text id="n6" name="n6" xy="276,13" size="105,24" font="方正粗圆简体" fontSize="20" text="等级限制："/>
+    <text id="n7" name="txtLimitLev" xy="387,13" size="104,24" font="方正粗圆简体" fontSize="20" autoSize="height" text="{0}级"/>
+    <component id="n14" name="btnChangeType" src="skqrnkp" pkg="0tyncec1" xy="496,3" size="144,41">
+      <Button title="更换目标" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n15" name="btnRequestList" src="skqrnkp" pkg="0tyncec1" xy="798,3" size="144,41">
+      <Button title="申请列表" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <image id="n16" name="reqTip" src="xnis91" pkg="0tyncec1" xy="919,4" visible="false"/>
+    <component id="n22" name="btnHandle" src="tnbmnka" pkg="0tyncec1" xy="568,561" size="144,49">
+      <Button title="归队|自动匹配" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n23" name="btnQuit" src="tnbmnka" pkg="0tyncec1" xy="764,561" size="144,49">
+      <Button title="退出队伍" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n25" name="btnHanhua" src="tnbmnka" pkg="0tyncec1" xy="380,561" size="144,49">
+      <Button title="一键喊话" icon="ui://0tyncec1x0conj0"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="128,119" extention="Button" designImage="ui://s210esy7iug34" designImageAlpha="80">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bgIcon" src="iug35" xy="21,0"/>
+    <loader id="n1" name="icon" xy="20,0" size="85,85" align="center" vAlign="middle" fill="scaleFree"/>
+    <image id="n2" name="imgLock" src="igzgnk7" pkg="0tyncec1" xy="39,14"/>
+    <image id="n3" name="imgAdd" src="rgh0nl6" pkg="0tyncec1" xy="40,20"/>
+    <image id="n4" name="bgName" src="c4eznl4" pkg="0tyncec1" xy="0,86" size="128,32"/>
+    <text id="n5" name="labelName" xy="3,90" size="121,26" font="方正粗圆简体" fontSize="21" color="#2e3341" autoSize="none" text="冰雪之咆哮"/>
+    <image id="n6" name="imgSelected" src="of36nm2" pkg="0tyncec1" xy="11,-9"/>
+    <graph id="n7" name="effectRoot0" xy="0,0" size="1,1"/>
+    <graph id="n8" name="effectRoot1" xy="73,69" size="1,1"/>
+  </displayList>
+  <Button/>
+</component>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="822,635">
+  <displayList>
+    <component id="n11" name="tabsSelectBtn" src="o8xhv" xy="4,14"/>
+    <image id="n14" name="bg_01" src="s1v18a" pkg="0tyncec1" xy="253,6" size="569,629"/>
+    <image id="n12" name="bg_01" src="beeo8z" pkg="0tyncec1" xy="278,94" size="518,443"/>
+    <image id="n13" name="bg_headline" src="s1v18d" pkg="0tyncec1" xy="375,29"/>
+    <text id="n15" name="label" xy="506,39" size="63,30" font="方正粗圆简体" fontSize="26" color="#cdbf87" letterSpacing="3" text="组队"/>
+    <image id="n18" name="bg_03" src="o8xhn" xy="427,105" size="110,32"/>
+    <image id="n19" name="bg_04" src="o8xhn" xy="536,105" size="110,32" flip="hz"/>
+    <text id="n20" name="teamName" xy="440,106" size="197,26" font="方正粗圆简体" fontSize="22" color="#cdbf87" letterSpacing="2" text="太阳出来我爬山坡"/>
+    <component id="n21" name="dissolveBtn" src="o8xh2" xy="656,550">
+      <Button title="解散"/>
+    </component>
+    <list id="n25" name="list" xy="288,145" size="498,382" overflow="scroll" margin="0,0,0,0" lineGap="5" defaultItem="ui://0tnseunoo8xhr">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n29" name="closeBtn" src="qwcp5l" pkg="0tyncec1" xy="775,0"/>
+  </displayList>
+</component>

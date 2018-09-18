@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="416,113">
+  <displayList>
+    <image id="n10" name="n10" src="keyenis" pkg="0tyncec1" xy="0,0" size="415,113"/>
+    <image id="n11" name="n11" src="ts5te" xy="16,2"/>
+    <text id="n12" name="txtLQ" xy="19,3" size="40,103" font="方正粗圆简体" fontSize="20" color="#ffffff" align="center" vAlign="middle" leading="0" ubb="true" autoSize="none" strokeColor="#000000" text="立即领取"/>
+    <component id="n13" name="rewardGezi" src="t5hdnfx" pkg="0tyncec1" xy="72,12" size="89,89"/>
+    <component id="n14" name="btnLQ" src="skqrnkp" pkg="0tyncec1" xy="209,31" size="149,50">
+      <Button title="领取" titleColor="#000000" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <text id="n15" name="txtIsBuy" xy="196,29" size="178,57" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" leading="6" ubb="true" autoSize="none" text="达到20级可领取可领取2000元宝"/>
+    <image id="n16" name="alreadyLQ" src="ts5td" xy="241,37"/>
+  </displayList>
+</component>

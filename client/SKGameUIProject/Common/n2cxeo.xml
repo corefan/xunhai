@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,100">
+  <displayList>
+    <image id="n0" name="bg" src="n2cxep" xy="0,0" size="600,100"/>
+    <component id="n1" name="playerIcon" src="qcs83x" pkg="0tnseuno" xy="11,10"/>
+    <text id="n2" name="PlayerName" xy="109,33" size="208,34" font="方正粗圆简体" fontSize="20" color="#2e3441" vAlign="middle" autoSize="none" text="名字只有七个字"/>
+    <text id="n3" name="unionName" xy="317,32" size="208,34" font="方正粗圆简体" fontSize="20" color="#2e3441" vAlign="middle" autoSize="none" text="名字只有七个字"/>
+    <component id="n5" name="BtnInvite" src="n2cxeq" xy="490,22"/>
+  </displayList>
+</component>

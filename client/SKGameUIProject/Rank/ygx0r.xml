@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <image id="n7" name="headBg" src="jg8t8" xy="373,375" size="816,60" group="n18"/>
+    <list id="n13" name="list" xy="371,434" size="820,224" group="n18" overflow="scroll" margin="0,0,0,0" defaultItem="ui://7dvfcqznjg8tm"/>
+    <component id="n25" name="headContainer" src="wjp8w" xy="373,375" group="n18"/>
+    <image id="n23" name="n23" src="jg8te" xy="483,127"/>
+    <group id="n18" name="n18" xy="371,373" size="820,285" group="n22" collapsed="true"/>
+    <component id="n2" name="head2" src="jg8tl" xy="406,121" group="n20"/>
+    <component id="n3" name="head1" src="jg8tl" xy="674,117" group="n20"/>
+    <component id="n4" name="head3" src="jg8tl" xy="945,117" group="n20"/>
+    <group id="n20" name="n20" xy="406,117" size="755,258" group="n22" collapsed="true"/>
+    <image id="n14" name="n14" src="jg8tc" xy="401,681" group="n19"/>
+    <text id="n15" name="myRank" xy="450,675" pivot="0.5,0.5" size="206,29" group="n19" font="方正粗圆简体" fontSize="22" vAlign="middle" autoSize="none" text="我的排名：未上榜&#xA;"/>
+    <image id="n16" name="n16" src="jg8t6" xy="761,674" group="n19"/>
+    <text id="n17" name="myRankInfo" xy="806,675" pivot="0.5,0.5" size="277,29" group="n19" font="方正粗圆简体" fontSize="22" vAlign="middle" autoSize="none" text="我的战斗力:99999&#xA;"/>
+    <component id="n26" name="tipsBtn" src="f06tnnd" pkg="0tyncec1" xy="1071,663" group="n19">
+      <Button icon="ui://0tyncec1f06tnnc"/>
+    </component>
+    <group id="n19" name="n19" xy="401,663" size="800,60" group="n22" collapsed="true"/>
+    <group id="n22" name="n22" xy="371,117" size="830,606"/>
+  </displayList>
+</component>

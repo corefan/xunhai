@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="964,625">
+  <displayList>
+    <image id="n38" name="n38" src="j67wnhe" pkg="0tyncec1" xy="0,59" size="312,558"/>
+    <image id="n37" name="line" src="jsucnhg" pkg="0tyncec1" xy="325,0" size="19,617"/>
+    <component id="n12" name="mailCon" src="t5hdnfw" pkg="0tyncec1" xy="5,68" size="302,543"/>
+    <image id="n46" name="n46" src="j67wnhe" pkg="0tyncec1" xy="441,45" size="489,32" group="n48"/>
+    <image id="n47" name="n47" src="j67wnhe" pkg="0tyncec1" xy="441,87" size="489,32" group="n48"/>
+    <image id="n40" name="n40" src="jsucnhh" pkg="0tyncec1" xy="359,436" size="581,2" group="n48"/>
+    <image id="n43" name="n43" src="j67wnhe" pkg="0tyncec1" xy="339,153" size="614,405" group="n48"/>
+    <image id="n42" name="n42" src="cnepnqa" xy="338,23" size="614,122" group="n48" pkg="0tyncec1"/>
+    <text id="n16" name="labelSender" xy="360,49" size="85,24" group="n48" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" text="发件人："/>
+    <text id="n17" name="labelTheme" xy="360,91" size="86,24" group="n48" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" text="主   题："/>
+    <text id="n19" name="txtSender" xy="448,49" size="476,24" group="n48" font="方正粗圆简体" fontSize="20" color="#54595e" vAlign="middle" autoSize="none" text=""/>
+    <text id="n20" name="txtTheme" xy="448,91" size="476,24" group="n48" font="方正粗圆简体" fontSize="20" color="#54595e" vAlign="middle" autoSize="none" text=""/>
+    <text id="n22" name="txtContent" xy="363,180" size="566,247" group="n48" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text=""/>
+    <component id="n25" name="goodsCon" src="t5hdnfu" pkg="0tyncec1" xy="354,448" size="585,95" group="n48"/>
+    <component id="n33" name="btnDel" src="tnbmnka" pkg="0tyncec1" xy="588,564" size="156,54" group="n48">
+      <Button title="删除" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n34" name="btnGet" src="tnbmnka" pkg="0tyncec1" xy="786,564" size="155,54" group="n48">
+      <Button title="提取" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <group id="n48" name="contentGroup" xy="338,23" size="615,595" advanced="true" collapsed="true"/>
+    <image id="n51" name="n51" src="rnfrnmq" pkg="0tyncec1" xy="4,9" size="241,39" flip="hz"/>
+    <text id="n49" name="txtMailNum" xy="11,18" size="140,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="邮件数量:10/30"/>
+  </displayList>
+</component>

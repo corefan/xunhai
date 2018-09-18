@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="666,144">
+  <displayList>
+    <image id="n0" name="bg" src="z7y038" xy="0,0" size="666,144" locked="true"/>
+    <image id="n3" name="levelBg" src="t5hd2e" xy="235,71" size="356,38"/>
+    <text id="n4" name="txtLv1" xy="533,31" size="53,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" vAlign="middle" text="Lv{0}"/>
+    <text id="n5" name="txtName" xy="231,31" size="202,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="center" vAlign="middle" autoSize="height" text=""/>
+    <text id="n6" name="txtCareer" xy="459,31" size="69,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="right" vAlign="middle" autoSize="height" text=""/>
+    <loader id="n7" name="icon" xy="242,69" size="42,42" align="center" vAlign="middle" fill="scale"/>
+    <text id="n8" name="txtLv2" xy="289,79" size="170,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" vAlign="middle" autoSize="height" singleLine="true" text=""/>
+    <text id="n9" name="txtStarNum" xy="518,80" size="53,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" vAlign="middle" autoSize="height" text="x{0}"/>
+    <image id="n10" name="startIcon" src="t5hd1x" xy="472,68"/>
+    <component id="n11" name="headComp" src="t5hdnfz" pkg="0tyncec1" xy="139,30"/>
+    <text id="n14" name="order" xy="-11,17" size="169,106" fontSize="30" color="#ded4fe" align="center" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+</component>

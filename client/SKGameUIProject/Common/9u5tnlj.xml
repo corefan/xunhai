@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="278,27" opaque="false" extention="Button" initName="checkLabel#">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n3" name="bg" xy="-4,-3" size="286,32" fill="scaleFree">
+      <relation target="n2" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n0" name="icon" src="5v99nkd" xy="0,0" locked="true">
+      <relation target="" sidePair="left-left"/>
+    </image>
+    <image id="n1" name="check" src="5v99nkf" xy="-4,-6" locked="true">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="left-left"/>
+    </image>
+    <richtext id="n2" name="title" xy="33,1" size="244,24" touchable="false" font="方正粗圆简体" fontSize="20" color="#434343" vAlign="middle" ubb="true" autoSize="height" text="">
+      <relation target="" sidePair="left-left,width-width"/>
+    </richtext>
+  </displayList>
+  <Button mode="Check"/>
+</component>

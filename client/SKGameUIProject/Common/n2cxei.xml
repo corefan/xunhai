@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="710,570">
+  <controller name="TeamTypeControl" pages="0,friend,1,clan,2,family" selected="0"/>
+  <displayList>
+    <image id="n0" name="bg" src="n2cxej" xy="2,3"/>
+    <image id="n1" name="ListBg" src="n2cxek" xy="44,90" size="625,430"/>
+    <text id="n2" name="Title" xy="263,9" size="182,28" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="height" text="组队"/>
+    <component id="n3" name="FriendBtn" src="n2cxel" xy="45,40">
+      <Button checked="true" controller="TeamTypeControl" page="0"/>
+    </component>
+    <component id="n4" name="ClanBtn" src="n2cxel" xy="182,40">
+      <Button controller="TeamTypeControl" page="1"/>
+    </component>
+    <component id="n5" name="FamilyBtn" src="n2cxel" xy="319,40">
+      <Button controller="TeamTypeControl" page="2"/>
+    </component>
+    <text id="n6" name="FriendText" xy="49,45" size="124,41" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="好友"/>
+    <text id="n7" name="ClanText" xy="186,45" size="124,41" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="氏族"/>
+    <text id="n8" name="FamilyText" xy="322,45" size="124,41" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="家族"/>
+    <list id="n10" name="FriendList" xy="55,98" size="605,402" overflow="scroll" margin="0,0,0,0" defaultItem="ui://0tyncec1n2cxeo">
+      <gearDisplay controller="TeamTypeControl" pages="0"/>
+    </list>
+    <list id="n11" name="ClanList" xy="55,98" size="605,402" overflow="scroll" margin="0,0,0,0">
+      <gearDisplay controller="TeamTypeControl" pages="1"/>
+    </list>
+    <list id="n12" name="FamilyList" xy="55,98" size="605,402" overflow="scroll" margin="0,0,0,0">
+      <gearDisplay controller="TeamTypeControl" pages="2"/>
+    </list>
+  </displayList>
+</component>

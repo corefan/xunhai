@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="42,68" extention="Button" designImageAlpha="80">
+  <displayList>
+    <image id="n0" name="n0" src="hudkb9" xy="0,0" visible="false"/>
+    <image id="n1" name="n1" src="hudkb8" xy="7,24"/>
+  </displayList>
+  <Button/>
+  <transition name="t0">
+    <item time="0" type="Skew" target="n1" value="0,180"/>
+    <item time="0" type="XY" target="n1" tween="true" startValue="37,24"/>
+  </transition>
+</component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="616,93" designImageOffsetX="-330" designImageOffsetY="-184" designImageLayer="1">
+  <displayList>
+    <image id="n45" name="n45" src="i4ccy" xy="0,0" size="616,93"/>
+    <image id="n33" name="n33" src="i4ccn" xy="18,26"/>
+    <text id="n34" name="title" xy="18,27" size="36,28" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" autoSize="height" strokeColor="#657786" text="1"/>
+    <component id="n54" name="headIcon" src="z03enli" pkg="0tyncec1" xy="74,7"/>
+    <text id="n43" name="name" xy="159,34" size="145,24" font="方正粗圆简体" fontSize="20" color="#071c20" text="名字只有七个字"/>
+    <text id="n44" name="chenghao" xy="321,34" size="105,24" input="true" maxLength="5" font="方正粗圆简体" fontSize="20" color="#084b0f" text="族长哦哦哦">
+      <relation target="" sidePair="right-right,top-top"/>
+    </text>
+    <component id="n53" name="btnPen" src="e9ze26" xy="434,33" visible="false"/>
+    <component id="n48" name="btnDown" src="e9ze23" xy="554,25"/>
+    <component id="n51" name="btnUp" src="e9ze24" xy="494,25"/>
+  </displayList>
+</component>

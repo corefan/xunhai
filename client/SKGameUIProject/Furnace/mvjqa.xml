@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="242,220" extention="Label">
+  <displayList>
+    <image id="n2" name="img_title_bg" src="uchhnl1" pkg="0tyncec1" xy="2,0" size="240,34">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <image id="n3" name="img_content_bg" src="gk0nni9" pkg="0tyncec1" xy="1,32" size="242,187">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n4" name="title" xy="31,3" size="172,27" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="当前效果">
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

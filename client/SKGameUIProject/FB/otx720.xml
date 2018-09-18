@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <image id="n22" name="victoryBg" src="otx71z" xy="465,158" group="n9"/>
+    <graph id="n19" name="vRole3D" xy="662,275" size="1,1" group="n9" touchable="false"/>
+    <image id="n1" name="n1" src="otx721" xy="663,467" size="162,41" group="n9"/>
+    <image id="n2" name="n2" src="otx721" xy="501,467" size="162,41" group="n9" flip="hz"/>
+    <text id="n8" name="victoryText" xy="552,473" size="224,33" group="n9" font="方正粗圆简体" fontSize="20" color="#c6d6db" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n9" name="victory" xy="465,158" size="390,350" visible="false" advanced="true"/>
+    <image id="n23" name="defeatedBg" src="otx71y" xy="466,160" group="n14"/>
+    <graph id="n18" name="dRole3D" xy="662,275" size="1,1" group="n14" touchable="false"/>
+    <image id="n11" name="n11" src="otx721" xy="663,467" size="162,41" group="n14"/>
+    <image id="n12" name="n12" src="otx721" xy="501,467" size="162,41" group="n14" flip="hz"/>
+    <text id="n13" name="victoryText_2" xy="552,473" size="224,33" group="n14" font="方正粗圆简体" fontSize="20" color="#c6d6db" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n14" name="defeated" xy="466,160" size="390,348" visible="false" advanced="true"/>
+    <loader id="n25" name="imgTimeOut" xy="623,308" size="50,50" url="ui://wetrdvlhjyou2l" align="center" vAlign="middle"/>
+  </displayList>
+</component>

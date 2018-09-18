@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="q13jjk9j" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="xy1x0" name="Component" folder=""/>
+    <folder id="xy1x1" name="Image" folder=""/>
+    <component id="xy1x2" name="DecompositionUI" folder="xy1x0" file="xy1x2.xml" exported="true"/>
+    <component id="xy1x3" name="DecompositionUILeft" folder="xy1x0" file="xy1x3.xml" exported="true"/>
+    <component id="xy1x4" name="DecompositionUIRight" folder="xy1x0" file="xy1x4.xml" exported="true"/>
+    <image id="q9hq7" name="zhongjianyuan3" folder="xy1x1" qualityOption="source" file="q9hq7.png" size="248,102"/>
+    <image id="q9hq8" name="wupingwengzikaung" folder="xy1x1" qualityOption="source" file="q9hq8.png" size="157,43" exported="true"/>
+    <image id="q9hq9" name="yuanquantoumingdi" folder="xy1x1" qualityOption="source" file="q9hq9.png" size="59,52" scale="9grid" scale9grid="12,7,37,33"/>
+    <image id="q9hqa" name="yousanjiao" folder="xy1x1" qualityOption="source" file="q9hqa.png" size="15,16"/>
+    <image id="q9hqb" name="zhongjianyuan4" folder="xy1x1" qualityOption="source" file="q9hqb.png" size="516,244"/>
+    <image id="q9hqf" name="jianbiankuang" folder="xy1x1" qualityOption="source" file="q9hqf.png" size="473,28"/>
+    <component id="q9hqg" name="ButtonDecompositionTips" folder="xy1x0" file="q9hqg.xml"/>
+    <image id="q9hqh" name="anniu" folder="xy1x1" qualityOption="source" file="q9hqh.png" size="210,53"/>
+    <component id="q9hqi" name="DecompositionTitle" folder="xy1x0" file="q9hqi.xml"/>
+    <image id="q9hqj" name="shuzidikuang" folder="xy1x1" qualityOption="source" file="q9hqj.png" size="128,40"/>
+    <component id="fue1r" name="ButtonDecompositionTick" folder="xy1x0" file="fue1r.xml" exported="true"/>
+    <image id="fue1u" name="zhongjianyuan" folder="xy1x1" qualityOption="source" file="fue1u.png" size="538,283"/>
+    <image id="fue1v" name="btn_fenjie" folder="xy1x1" qualityOption="source" file="fue1v.png" size="135,135"/>
+    <image id="fue1w" name="anniudiwen" folder="xy1x1" qualityOption="source" file="fue1w.png" size="194,194"/>
+    <component id="fue1x" name="ButtonDecomposition" folder="xy1x0" file="fue1x.xml" exported="true"/>
+    <image id="7t8pz" name="shuliangdi" folder="xy1x1" qualityOption="source" file="7t8pz.png" size="204,5"/>
+    <image id="rj7210" name="zhongjianyuan6" folder="xy1x1" qualityOption="source" file="rj7210.png" size="17,312" scale="9grid" scale9grid="3,6,10,295"/>
+    <image id="rj7211" name="zhongjianyuan6jianbian" folder="xy1x1" qualityOption="source" file="rj7211.png" size="521,86"/>
+    <component id="tjdu14" name="ButtonOneKeyDecomposition" folder="xy1x0" file="tjdu14.xml"/>
+    <image id="82xa16" name="tilian" folder="xy1x1" qualityOption="source" file="82xa16.png" size="135,135" exported="true"/>
+  </resources>
+  <publish name="Decomposition" genCode="true"/>
+</packageDescription>

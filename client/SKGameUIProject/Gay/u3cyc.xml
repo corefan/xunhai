@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="358,110" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n55" name="n55" src="keyenir" pkg="0tyncec1" xy="0,1" size="358,110">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n40" name="bg_btn" src="keyenis" pkg="0tyncec1" xy="0,0" size="358,110">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <component id="n44" name="headIcon" src="z03enli" pkg="0tyncec1" xy="16,14"/>
+    <component id="n48" name="btn_lookInfo" src="t5hdnfq" pkg="0tyncec1" xy="298,18" size="39,40">
+      <Button icon="ui://jn83skxklcyk4"/>
+    </component>
+    <text id="n50" name="playerName" xy="108,25" size="174,28" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="height" text="一二三四五六七"/>
+    <loader id="n51" name="playerKind" xy="108,56" size="33,34" align="center" vAlign="middle"/>
+    <text id="n52" name="zhiyeName" xy="141,62" size="45,24" font="方正粗圆简体" fontSize="20" color="#071c20" text="暗巫"/>
+    <text id="n53" name="offlineTime" xy="225,61" size="111,24" font="方正粗圆简体" fontSize="20" color="#54595e" vAlign="middle" autoSize="height" text="离线99小时"/>
+    <loader id="n56" name="redIcon" xy="9,10" size="15,16" visible="false" url="ui://0tyncec1xnis91" align="center" vAlign="middle"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

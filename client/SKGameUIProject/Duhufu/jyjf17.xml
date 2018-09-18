@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="941,516" opaque="false">
+  <displayList>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="1,0" size="940,461"/>
+    <image id="n143" name="n143" src="c18wnl9" pkg="0tyncec1" xy="2,464" size="935,48"/>
+    <image id="n144" name="bg1" src="cnepnqb" pkg="0tyncec1" xy="486,469" size="86,39">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <image id="n145" name="bg2" src="cnepnqb" pkg="0tyncec1" xy="635,469" size="86,39">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <component id="n60" name="btnClear" src="jyjf13" xy="3,465" size="143,50">
+      <Button title="清空列表"/>
+    </component>
+    <image id="n70" name="n70" src="uchhnl3" pkg="0tyncec1" xy="4,1" size="94,43"/>
+    <image id="n71" name="n71" src="uchhnl3" pkg="0tyncec1" xy="99,1" size="278,43"/>
+    <image id="n72" name="n72" src="uchhnl3" pkg="0tyncec1" xy="379,1" size="91,43"/>
+    <image id="n74" name="n74" src="uchhnl3" pkg="0tyncec1" xy="471,1" size="184,43"/>
+    <image id="n76" name="n76" src="uchhnl3" pkg="0tyncec1" xy="657,1" size="282,43"/>
+    <text id="n77" name="n77" xy="23,8" size="66,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="职业&#xA;&#xA;"/>
+    <text id="n78" name="n78" xy="184,7" size="95,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="名称&#xA;"/>
+    <text id="n79" name="n79" xy="388,7" size="70,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="等级&#xA;&#xA;&#xA;"/>
+    <text id="n81" name="n81" xy="513,7" size="86,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="战斗力&#xA;&#xA;"/>
+    <text id="n83" name="n83" xy="688,7" size="220,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="操作&#xA;"/>
+    <component id="n129" name="btnCheck" src="jyjf18" xy="178,468" size="247,41">
+      <Button checked="true" title="允许申请加入"/>
+    </component>
+    <component id="n137" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="2,45" size="937,404"/>
+    <text id="n140" name="txtMinLv" xy="495,474" size="71,30" input="true" maxLength="3" keyboardType="4" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" autoSize="height" singleLine="true" text="0"/>
+    <text id="n141" name="txtMaxLv" xy="637,474" size="78,30" input="true" maxLength="3" keyboardType="4" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" autoSize="height" singleLine="true" text="999"/>
+    <text id="n142" name="n142" xy="588,474" size="26,30" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="height" singleLine="true" text="-"/>
+    <component id="n146" name="btnLimit" src="jyjf13" xy="730,465" size="205,50">
+      <Button title="修改等级限制"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="404,602" designImage="ui://d3en6n1nk3xs1q" designImageOffsetX="-691" designImageOffsetY="-122" designImageAlpha="0">
+  <controller name="ctrMax" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="x0conj6" pkg="0tyncec1" xy="1,2" hideByEditor="true"/>
+    <image id="n1" name="n1" src="jsucnhg" pkg="0tyncec1" xy="-29,-13" size="16,614"/>
+    <loader id="n2" name="bgRare" xy="11,10" size="375,124" fill="scaleFree" playing="false"/>
+    <text id="n4" name="powerTxt" xy="144,92" size="204,24" font="方正粗圆简体" fontSize="20" color="#cdbf87" vAlign="middle" autoSize="height" text=""/>
+    <text id="n6" name="level" xy="144,56" size="78,26" font="方正粗圆简体" fontSize="20" color="#bad4dc" vAlign="middle" leading="0" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n7" name="name" xy="144,20" pivot="0.5,0.5" size="149,29" font="方正粗圆简体" fontSize="22" vAlign="middle" ubb="true" autoSize="none" text="&#xA;"/>
+    <text id="n8" name="typeInfo" xy="251,56" size="78,26" font="方正粗圆简体" fontSize="20" color="#bad4dc" vAlign="middle" leading="0" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n9" name="Quality" xy="14,10" size="122,122" url="ui://0pzzz7o0d3t626" align="center" vAlign="middle"/>
+    <loader id="n10" name="icon" xy="36,32" size="78,78" align="center" vAlign="middle" fill="scale"/>
+    <text id="n11" name="grade" xy="29,142" size="149,28" font="方正粗圆简体" fontSize="24" color="#ffa200" vAlign="middle" autoSize="height" text=""/>
+    <image id="n13" name="line1" src="jsucnhh" pkg="0tyncec1" xy="24,227" size="347,2"/>
+    <image id="n14" name="line2" src="jsucnhh" pkg="0tyncec1" xy="24,352" size="347,2"/>
+    <list id="n15" name="proList" xy="32,243" size="143,117" touchable="false" selectionMode="none" overflow="scroll" margin="0,0,0,0" defaultItem="ui://d3en6n1nnhrf1d" autoItemSize="false">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n16" name="desc1" xy="31,374" size="298,68" font="方正粗圆简体" fontSize="20" color="#bad4dc" vAlign="middle" leading="0" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n17" name="desc2" xy="33,445" size="128,20" font="ui://0tyncec1x0conjj" fontSize="20" color="#cdbf87" vAlign="middle" autoSize="height" text=""/>
+    <component id="n18" name="upBtn" src="tnbmnka" pkg="0tyncec1" xy="39,516" size="128,51">
+      <Button title="羽化" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n19" name="putOnBtn" src="tnbmnka" pkg="0tyncec1" xy="229,516" size="128,51">
+      <Button title="装备" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <text id="n20" name="desc3" xy="162,448" size="79,29" font="方正粗圆简体" fontSize="20" color="#bad4dc" vAlign="middle" leading="0" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n33" name="maxBtn" src="k3xs1r" xy="297,142"/>
+    <image id="n23" name="n23" src="s4zfnls" pkg="0tyncec1" xy="165,140" group="n27">
+      <gearDisplay controller="ctrMax" pages="1"/>
+    </image>
+    <image id="n24" name="n24" src="s4zfnls" pkg="0tyncec1" xy="165,264" group="n27">
+      <gearDisplay controller="ctrMax" pages="1"/>
+    </image>
+    <text id="n26" name="gradeMax" xy="241,141" size="62,31" group="n27" font="方正粗圆简体" fontSize="24" color="#ffa200" vAlign="middle" autoSize="none" text="">
+      <gearDisplay controller="ctrMax" pages="1"/>
+    </text>
+    <list id="n25" name="proMaxList" xy="205,243" size="143,117" group="n27" touchable="false" overflow="scroll" margin="0,0,0,0" defaultItem="ui://d3en6n1nnhrf1d">
+      <gearDisplay controller="ctrMax" pages="1"/>
+    </list>
+    <group id="n27" name="n27" xy="165,140" size="183,220" collapsed="true"/>
+    <text id="n34" name="getText" xy="201,485" size="184,29" font="方正粗圆简体" fontSize="20" color="#bad4dc" align="center" vAlign="middle" leading="0" autoSize="none" text=""/>
+  </displayList>
+</component>

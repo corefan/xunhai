@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="227,22" extention="Slider" initName="progress">
+  <displayList>
+    <image id="n8" name="bg" src="mx4pnkw" xy="0,0" size="225,22">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n9" name="bar" src="mx4pnkv" xy="2,2" size="221,18">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <graph id="n12" name="grip" xy="219,-2" size="11,27" type="eclipse" lineColor="#ff003300" fillColor="#ff009900">
+      <relation target="n9" sidePair="right-right,middle-middle"/>
+    </graph>
+    <text id="n11" name="title" xy="64,1" size="99,20" font="方正粗圆简体" fontSize="14" align="center" vAlign="middle" leading="0" autoSize="height" singleLine="true" text="">
+      <relation target="" sidePair="middle-middle,center-center"/>
+    </text>
+  </displayList>
+  <Slider titleType="value"/>
+</component>

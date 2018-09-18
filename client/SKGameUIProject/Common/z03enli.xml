@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80" opaque="false" extention="Label" initName="headIcon">
+  <displayList>
+    <image id="n0" name="bg" src="t5hdng0" xy="0,0">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </image>
+    <component id="n8" name="icon" src="t5hdnfp" xy="3,3" size="74,74" touchable="false">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </component>
+    <component id="n11" name="title" src="t5hdng1" xy="51,51" size="32,32" touchable="false">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </component>
+  </displayList>
+</component>

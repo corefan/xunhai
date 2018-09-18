@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="699,26" opaque="false" extention="ProgressBar">
+  <displayList>
+    <image id="n8" name="n8" src="sgyos" xy="0,1" size="696,20"/>
+    <component id="n9" name="bar" src="btvdm" xy="11,3"/>
+    <text id="n6" name="txt_title" xy="-184,30" size="1067,28" font="方正粗圆简体" fontSize="20" color="#c0e0fe" align="center" vAlign="middle" leading="0" letterSpacing="1" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n12" name="ani" src="yn2mp" xy="615,-63" pivot="0.5,0.5">
+      <relation target="n9" sidePair="right-right"/>
+    </component>
+  </displayList>
+  <ProgressBar/>
+</component>

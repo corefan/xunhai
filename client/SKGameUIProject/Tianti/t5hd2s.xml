@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="46,46">
+  <controller name="c1" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="t5hd1w" xy="0,0">
+      <gearDisplay controller="c1" pages="0"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </image>
+    <image id="n0" name="n0" src="t5hd1x" xy="0,0">
+      <gearDisplay controller="c1" pages="1"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </image>
+    <image id="n2" name="n2" src="t5hd1y" xy="0,0">
+      <gearDisplay controller="c1" pages="2"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </image>
+  </displayList>
+</component>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="834,108" designImage="ui://bveep9rgsjzg2" designImageOffsetX="-351" designImageOffsetY="-444" designImageAlpha="30">
+  <controller name="getRec" pages="0,no,1,can,2,rec" selected="0"/>
+  <displayList>
+    <image id="n2" name="n2" src="keyenis" pkg="0tyncec1" xy="0,-3" size="834,113"/>
+    <image id="n6" name="n6" src="sjzg5" xy="31,68" group="n7"/>
+    <text id="n3" name="jine" xy="44,59" size="117,26" group="n7" font="方正粗圆简体" fontSize="22" color="#2e3341" text="达到50元宝"/>
+    <group id="n7" name="n7" xy="31,59" size="130,26"/>
+    <list id="n18" name="reward" xy="252,6" size="373,95" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" margin="0,0,2,2" colGap="5"/>
+    <component id="n15" name="noRec" src="l2b8nnq" pkg="0tyncec1" xy="662,31" size="136,46" group="n16">
+      <gearDisplay controller="getRec" pages="0"/>
+      <Button title="前往商城" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n14" name="canRec" src="l2b8nnq" pkg="0tyncec1" xy="662,31" size="136,46" group="n16">
+      <gearDisplay controller="getRec" pages="1"/>
+      <Button title="领取奖励" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <image id="n19" name="received" src="o67za" xy="683,34" group="n16">
+      <gearDisplay controller="getRec" pages="2"/>
+    </image>
+    <group id="n16" name="n16" xy="662,31" size="136,46"/>
+    <image id="n20" name="n20" src="snzyb" xy="1,0"/>
+  </displayList>
+</component>

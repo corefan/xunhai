@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="366,114" designImageOffsetX="-25" designImageOffsetY="-44" designImageAlpha="48">
+  <displayList>
+    <loader id="n0" name="n0" xy="0,0" size="366,114" touchable="false" url="ui://0tyncec1keyenis" fill="scaleFree" playing="false"/>
+    <loader id="n2" name="select" xy="0,0" size="366,114" group="n13" visible="false" touchable="false" url="ui://0tyncec1keyenir" fill="scaleFree" playing="false"/>
+    <image id="n6" name="n6" src="jsucnhh" pkg="0tyncec1" xy="129,57" size="190,2" group="n13"/>
+    <text id="n10" name="txtName" xy="140,18" size="202,34" group="n13" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" autoSize="none" strokeColor="#626161" text=""/>
+    <loader id="n7" name="payIcon" xy="142,64" size="32,32" group="n13" touchable="false" align="center" vAlign="middle" fill="scaleMatchWidth" playing="false"/>
+    <text id="n8" name="txtPrice" xy="178,65" size="163,31" group="n13" font="方正粗圆简体" fontSize="22" color="#2e3341" vAlign="middle" autoSize="none" strokeColor="#2e4552" text=""/>
+    <group id="n13" name="mainGroup" xy="0,0" size="366,114" visible="false" advanced="true"/>
+    <loader id="n11" name="lock" xy="25,14" size="89,89" group="n16" touchable="false" align="center" vAlign="middle" playing="false"/>
+    <richtext id="n15" name="txtLock" xy="119,39" size="219,32" group="n16" touchable="false" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n16" name="lockGroup" xy="25,14" size="313,89" visible="false" advanced="true"/>
+    <loader id="n3" name="lockMask" xy="0,0" size="366,114" visible="false" touchable="false" url="ui://0tyncec1x0conjl" fill="scaleFree" playing="false"/>
+  </displayList>
+</component>

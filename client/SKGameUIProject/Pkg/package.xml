@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="3ac45wgl" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="uedb1" name="PkgInfoPanel" folder="m1y8c" file="uedb1.xml" exported="true"/>
+    <folder id="uedb9" name="image" folder=""/>
+    <folder id="m1y8c" name="comp" folder=""/>
+    <component id="vxxnd" name="MedicineUI" folder="m1y8c" file="vxxnd.xml" exported="true"/>
+    <image id="gk0ne" name="medicineCell00" folder="uedb9" qualityOption="source" file="gk0ne.png" size="96,88" exported="true"/>
+    <image id="gk0nf" name="medicineCell01" folder="uedb9" qualityOption="source" file="gk0nf.png" size="96,88" exported="true"/>
+    <component id="gk0ng" name="MedicineCell" folder="m1y8c" file="gk0ng.xml"/>
+    <component id="gk0nh" name="MedicineItem" folder="m1y8c" file="gk0nh.xml" exported="true"/>
+    <image id="qumai" name="sy_hp" folder="uedb9" qualityOption="source" file="qumai.png" size="51,68" exported="true"/>
+    <image id="qumaj" name="sy_mp" folder="uedb9" qualityOption="source" file="qumaj.png" size="51,68" exported="true"/>
+  </resources>
+  <publish name="Pkg" genCode="true"/>
+</packageDescription>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="294,85" extention="Button">
+  <displayList>
+    <image id="n0" name="image_bg_type1" src="hudkba" xy="0,0" size="294,60" group="n9"/>
+    <text id="n1" name="label_task_name_type1" xy="7,6" size="268,27" group="n9" font="方正粗圆简体" fontSize="20" color="#3cda68" leading="0" ubb="true" autoSize="none" text="师门(10/10)"/>
+    <text id="n2" name="label_task_desc_type1" xy="7,32" size="268,27" group="n9" font="方正粗圆简体" fontSize="20" color="#cdcbbe" leading="0" ubb="true" autoSize="height" text="击败邪瓶法师：0/10"/>
+    <group id="n9" name="group_task_type1" xy="0,0" size="294,60" hideByEditor="true" advanced="true"/>
+    <image id="n3" name="image_bg_type2" src="hudkba" xy="0,0" size="294,85" group="n8"/>
+    <loader id="n7" name="loader_icon_type2" xy="5,1" size="31,31" group="n8"/>
+    <text id="n5" name="label_task_name_type2" xy="35,4" size="248,27" group="n8" font="方正粗圆简体" fontSize="20" color="#f0d864" leading="0" ubb="true" autoSize="height" text="轻功"/>
+    <text id="n6" name="label_task_content_type2" xy="9,34" size="275,119" group="n8" font="方正粗圆简体" fontSize="20" color="#cdcbbe" leading="0" ubb="true" autoSize="height" text="学习并使用四段式轻功，逐风万里，俯瞰中洲学习并使用四段式轻功，逐风万里，俯瞰中洲学习并使用四段式轻功，逐风万里，俯瞰中洲"/>
+    <group id="n8" name="group_task_type_2" xy="0,0" size="294,170" advanced="true">
+      <relation target="n8" sidePair="width-width,height-height"/>
+    </group>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

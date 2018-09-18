@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.util.Date;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -20,7 +19,6 @@ import com.domain.Account;
 import com.domain.ActCode;
 import com.service.IAccountService;
 import com.service.IActCodeService;
-import com.util.CommonUtil;
 import com.util.LogUtil;
 
 /**
@@ -28,7 +26,7 @@ import com.util.LogUtil;
  * @author ken
  * @date 2018年8月10日
  */
-public class ActCodeServlet  extends HttpServlet{
+public class ActCodeServlet  extends BaseServlet{
 
 	private static final long serialVersionUID = 1681377961924517250L;
 
@@ -59,7 +57,7 @@ public class ActCodeServlet  extends HttpServlet{
 		IActCodeService actCodeService = GCCContext.getInstance().getServiceCollection().getActCodeService();
 		IAccountService accountService = GCCContext.getInstance().getServiceCollection().getAccountService();
 		
-		JSONObject jsonObject = CommonUtil.dealMsg(req);
+		JSONObject jsonObject = this.dealMsg(req);
 		if(jsonObject == null) return;
 		
 		Long userId = jsonObject.getLong("userId");
@@ -74,7 +72,7 @@ public class ActCodeServlet  extends HttpServlet{
 				||sign == null || sign.trim().equals("")){
 			//1:参数有误
 			result.put("result", 1);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}
 		
@@ -83,7 +81,7 @@ public class ActCodeServlet  extends HttpServlet{
 		if (!realSign.equalsIgnoreCase(sign)){
 			//1:参数有误
 			result.put("result", 1);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}
 		
@@ -91,7 +89,7 @@ public class ActCodeServlet  extends HttpServlet{
 	    if(account == null){
 			//1:参数有误
 	    	result.put("result", 1);
-	    	CommonUtil.postData(resp, result.toString());
+	    	this.postData(resp, result.toString());
 			return;
 		}
 	    
@@ -99,7 +97,7 @@ public class ActCodeServlet  extends HttpServlet{
 		if (actCode == null) {
 			//2:激活码不存在
 			result.put("result", 2);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}	
 		
@@ -107,7 +105,7 @@ public class ActCodeServlet  extends HttpServlet{
 			if(!agent.equalsIgnoreCase(actCode.getAgent())){
 				//2:激活码不存在
 				result.put("result", 2);
-				CommonUtil.postData(resp, result.toString());
+				this.postData(resp, result.toString());
 				return;	
 			}
 		}
@@ -115,7 +113,7 @@ public class ActCodeServlet  extends HttpServlet{
 		if (actCode.getState() == 1) {
 			//3:激活码已使用过
 			result.put("result", 3);
-			CommonUtil.postData(resp, result.toString());
+			this.postData(resp, result.toString());
 			return;
 		}	
 		
@@ -126,12 +124,12 @@ public class ActCodeServlet  extends HttpServlet{
 			actCode.setUserName(account.getUserName());
 			actCodeService.updateActCode(actCode);
 		} catch (Exception e) {
-			e.printStackTrace();
+			LogUtil.error("使用激活码错误：", e);
 		}
 		
 		result.put("result", 0);
 		result.put("type", actCode.getType());
 		result.put("rewardId", actCode.getRewardId());
-		CommonUtil.postData(resp, result.toString());
+		this.postData(resp, result.toString());
 	}
 }

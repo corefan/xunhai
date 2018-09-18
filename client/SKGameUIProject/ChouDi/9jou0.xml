@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="935,101" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n22" name="n22" src="keyenir" pkg="0tyncec1" xy="0,0" size="934,101">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <component id="n21" name="headIcon" src="z03enli" pkg="0tyncec1" xy="22,11" size="79,79"/>
+    <text id="n24" name="playerName" xy="119,37" size="173,29" fontSize="22" color="#2e3341" vAlign="middle" autoSize="height" text="一二三四五六七"/>
+    <loader id="n25" name="iconZhiye" xy="322,34" size="33,34" align="center" vAlign="middle"/>
+    <text id="n27" name="textZhiye" xy="353,37" size="50,29" fontSize="22" color="#2e3341" align="center" vAlign="middle" autoSize="height" text="暗巫"/>
+    <text id="n28" name="familyName" xy="430,37" size="165,29" fontSize="22" color="#2e3341" align="center" vAlign="middle" autoSize="height" text="家族名字七个字"/>
+    <text id="n29" name="isOnlineTxt" xy="623,37" size="61,29" fontSize="22" color="#2e3341" vAlign="middle" autoSize="height" text="离线"/>
+    <component id="n37" name="btnZhuizong" src="skqrnkp" pkg="0tyncec1" xy="705,26" size="93,49">
+      <Button title="追踪" titleColor="#000000" icon="ui://0tyncec1n3qsneq"/>
+    </component>
+    <component id="n38" name="btnDelete" src="skqrnkp" pkg="0tyncec1" xy="817,26" size="93,49">
+      <Button title="删除" titleColor="#000000" icon="ui://0tyncec1x0conj4"/>
+    </component>
+    <image id="n39" name="n39" src="jsucnhi" pkg="0tyncec1" xy="0,98" size="935,2"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

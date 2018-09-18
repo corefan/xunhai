@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="rkrzdlw3" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="sgyo0" name="image" folder=""/>
+    <component id="elj82" name="WorldMapPanel" folder="" file="elj82.xml" exported="true"/>
+    <image id="elj89" name="returnLayer" folder="sgyo0" qualityOption="source" file="elj89.png" size="55,51"/>
+    <image id="elj8a" name="mapBg" folder="sgyo0" qualityOption="source" file="elj8a.png" size="1334,750"/>
+    <image id="elj8b" name="mapTitleBg" folder="sgyo0" qualityOption="source" file="elj8b.png" size="68,28" exported="true" scale="9grid" scale9grid="33,0,3,28"/>
+    <image id="elj8c" name="donglicaoyuan" folder="sgyo0" qualityOption="source" file="elj8c.png" size="60,60" exported="true"/>
+    <image id="elj8d" name="zhucheng" folder="sgyo0" qualityOption="source" file="elj8d.png" size="80,80" exported="true"/>
+    <image id="elj8e" name="fuxiling" folder="sgyo0" qualityOption="source" file="elj8e.png" size="60,60" exported="true"/>
+    <image id="elj8f" name="qiufengyuan" folder="sgyo0" qualityOption="source" file="elj8f.png" size="60,60" exported="true"/>
+    <image id="elj8g" name="ninghaizhou" folder="sgyo0" qualityOption="source" file="elj8g.png" size="60,60" exported="true"/>
+    <image id="elj8h" name="chaogeshan" folder="sgyo0" qualityOption="source" file="elj8h.png" size="60,60" exported="true"/>
+    <image id="elj8i" name="qiongshan" folder="sgyo0" qualityOption="source" file="elj8i.png" size="60,60" exported="true"/>
+    <image id="elj8j" name="cangxiuling" folder="sgyo0" qualityOption="source" file="elj8j.png" size="60,60" exported="true"/>
+    <image id="elj8k" name="linhai" folder="sgyo0" qualityOption="source" file="elj8k.png" size="60,60" exported="true"/>
+    <image id="elj8l" name="kunlun" folder="sgyo0" qualityOption="source" file="elj8l.png" size="60,60" exported="true"/>
+    <image id="elj8m" name="xuanyuanzhanchang" folder="sgyo0" qualityOption="source" file="elj8m.png" size="60,60" exported="true"/>
+    <image id="elj8n" name="lingshikuangdong" folder="sgyo0" qualityOption="source" file="elj8n.png" size="60,60" exported="true"/>
+    <image id="elj8o" name="henggubingya" folder="sgyo0" qualityOption="source" file="elj8o.png" size="60,60" exported="true"/>
+    <image id="elj8p" name="canyangyingdi" folder="sgyo0" qualityOption="source" file="elj8p.png" size="60,60" exported="true"/>
+    <image id="elj8q" name="canglongyuan" folder="sgyo0" qualityOption="source" file="elj8q.png" size="60,60" exported="true"/>
+    <image id="elj8r" name="baishougu" folder="sgyo0" qualityOption="source" file="elj8r.png" size="60,60" exported="true"/>
+    <component id="elj8t" name="ReturnBtn" folder="" file="elj8t.xml"/>
+    <component id="elj8u" name="MapBg" folder="" file="elj8u.xml" exported="true"/>
+    <component id="elj8v" name="MapBtn" folder="" file="elj8v.xml" exported="true"/>
+    <image id="88mb14" name="owerLeader" folder="sgyo0" qualityOption="source" file="88mb14.png" size="32,31" exported="true"/>
+    <image id="88mb15" name="ownerMember" folder="sgyo0" qualityOption="source" file="88mb15.png" size="32,31" exported="true"/>
+    <image id="88mb16" name="teamLeader" folder="sgyo0" qualityOption="source" file="88mb16.png" size="30,32" exported="true"/>
+    <image id="88mb17" name="teamMember" folder="sgyo0" qualityOption="source" file="88mb17.png" size="30,32" exported="true"/>
+    <component id="88mb18" name="MeFlag" folder="" file="88mb18.xml" exported="true"/>
+    <component id="88mb19" name="TeamFlag" folder="" file="88mb19.xml" exported="true"/>
+    <component id="nruc1a" name="MapClickFlag" folder="" file="nruc1a.xml" exported="true"/>
+    <image id="nruc1b" name="targetSign" folder="sgyo0" qualityOption="source" file="nruc1b.png" size="21,21" exported="true" scale="9grid" scale9grid="6,6,9,7"/>
+    <image id="ez9z1d" name="ownerPos" folder="sgyo0" qualityOption="source" file="ez9z1d.png" size="34,46" exported="true"/>
+    <image id="nje81e" name="mingwenkuangdong" folder="sgyo0" qualityOption="source" file="nje81e.png" size="60,60" exported="true"/>
+    <component id="nje81f" name="WorldMapPkFlag" folder="" file="nje81f.xml" exported="true"/>
+    <image id="nje81g" name="font_fight" folder="sgyo0" qualityOption="source" file="nje81g.png" size="64,38" exported="true"/>
+    <image id="i88s1h" name="切磋" folder="sgyo0" qualityOption="source" file="i88s1h.png" size="64,38"/>
+    <component id="i88s1i" name="WorldMapQiecuoFlag" folder="" file="i88s1i.xml" exported="true"/>
+    <component id="hsye1j" name="SecondMapPanel" folder="" file="hsye1j.xml" exported="true"/>
+    <component id="g6r51r" name="ChangeMapBtn" folder="" file="g6r51r.xml"/>
+    <component id="bag31s" name="NpcIcon" folder="" file="bag31s.xml" exported="true"/>
+    <image id="bag31t" name="chuansongmen" folder="sgyo0" qualityOption="source" file="bag31t.png" size="27,28"/>
+    <image id="bag31u" name="ziji" folder="sgyo0" qualityOption="source" file="bag31u.png" size="24,27" scale="9grid" scale9grid="9,7,5,5"/>
+    <component id="bag31w" name="PlayerIcon" folder="" file="bag31w.xml" exported="true"/>
+    <component id="bag31x" name="TransferIcon" folder="" file="bag31x.xml" exported="true"/>
+    <component id="z0x424" name="TargetIcon" folder="" file="z0x424.xml" exported="true"/>
+    <component id="fhh926" name="TargetAnima" folder="" file="fhh926.xml" exported="true"/>
+    <image id="fhh927" name="目的地2" folder="sgyo0" qualityOption="source" file="fhh927.png" size="21,13"/>
+    <image id="fhh928" name="目的地3" folder="sgyo0" qualityOption="source" file="fhh928.png" size="18,31"/>
+    <image id="fhh929" name="自己" folder="sgyo0" qualityOption="source" file="fhh929.png" size="36,29"/>
+    <image id="iuo02a" name="NPC" folder="sgyo0" qualityOption="source" file="iuo02a.png" size="14,14"/>
+    <image id="iuo02c" name="NPC2" folder="sgyo0" qualityOption="source" file="iuo02c.png" size="23,23"/>
+    <component id="iuo02d" name="BossIcon" folder="" file="iuo02d.xml" exported="true"/>
+    <image id="iuo02e" name="BOSS" folder="sgyo0" qualityOption="source" file="iuo02e.png" size="56,55" scale="9grid" scale9grid="14,14,28,28"/>
+    <image id="kcbu2f" name="tishi" folder="sgyo0" qualityOption="source" file="kcbu2f.png" size="509,88"/>
+    <image id="kcbu2g" name="btn_qiehuan" folder="sgyo0" qualityOption="source" file="kcbu2g.png" size="191,41"/>
+  </resources>
+  <publish name="WorldMaps"/>
+</packageDescription>

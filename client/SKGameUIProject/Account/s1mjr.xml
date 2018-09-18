@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="444,278" designImageOffsetX="-541" designImageOffsetY="-231">
+  <displayList>
+    <component id="n0" name="n0" src="s1mjnnb" pkg="0tyncec1" xy="-19,-3" size="484,282"/>
+    <text id="n1" name="n1" xy="64,60" size="331,32" font="方正粗圆简体" fontSize="24" color="#42a4ff" autoSize="none" text="第二步：请绑定新的手机号码"/>
+    <component id="n3" name="getCheckBtn" src="skqrnkp" pkg="0tyncec1" xy="239,149" size="163,50">
+      <Button title="获取验证码" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n4" name="numberInput" src="dmzwk" xy="70,102" size="324,43"/>
+    <component id="n6" name="closeBtn" src="skqrnkp" pkg="0tyncec1" xy="38,206" size="169,63">
+      <Button title="关闭" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <image id="n7" name="n7" src="dmzwi" xy="37,63"/>
+    <component id="n8" name="checkInput" src="dmzwk" xy="71,154" size="171,42"/>
+    <component id="n9" name="comfirmBtn" src="skqrnkp" pkg="0tyncec1" xy="238,206" size="169,63">
+      <Button title="确定绑定" icon="ui://0tyncec1x0conj0"/>
+    </component>
+  </displayList>
+</component>

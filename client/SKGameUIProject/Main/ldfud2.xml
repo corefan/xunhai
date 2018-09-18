@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="177,40" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="ldfucs" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2" name="n2" xy="11,4" size="108,32" font="方正粗圆简体" fontSize="20" color="#e5fffe" align="center" vAlign="middle" autoSize="none" text="前往组队"/>
+    <image id="n3" name="n3" src="ldfucr" xy="122,4"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

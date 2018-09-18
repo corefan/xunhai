@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="2bw6ypvm" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="osjz0" name="Component" folder=""/>
+    <folder id="osjz1" name="img" folder=""/>
+    <image id="osjz2" name="huichengjindutiao" folder="osjz1" qualityOption="source" file="osjz2.png" size="307,11"/>
+    <image id="osjz3" name="di" folder="osjz1" qualityOption="source" file="osjz3.png" size="333,23"/>
+    <image id="osjz4" name="caijijindutiao" folder="osjz1" qualityOption="source" file="osjz4.png" size="307,11"/>
+    <component id="j4usa" name="ProgressBarCollect" folder="osjz0" file="j4usa.xml" exported="true"/>
+    <component id="j4usb" name="LoadingCollectItem" folder="osjz0" file="j4usb.xml" exported="true"/>
+    <component id="j4usc" name="ProgressBarBackToCity" folder="osjz0" file="j4usc.xml" exported="true"/>
+    <component id="j4usd" name="LoadingBackToCity" folder="osjz0" file="j4usd.xml" exported="true"/>
+  </resources>
+  <publish name="Collect" genCode="true"/>
+</packageDescription>

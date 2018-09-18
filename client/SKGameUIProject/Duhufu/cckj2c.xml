@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="645,576">
+  <displayList>
+    <image id="n0" name="n0" src="ci33f" xy="-17,-2" size="672,576"/>
+    <image id="n5" name="n5" src="jsucnhh" pkg="0tyncec1" xy="29,420" size="582,2"/>
+    <text id="n9" name="t1" xy="33,48" size="579,353" font="方正粗圆简体" fontSize="22" leading="6" ubb="true" autoSize="none" text=""/>
+    <component id="n11" name="b1" src="jyjf12" xy="27,432" size="590,38">
+      <Label title="召唤BOSS" titleColor="#336600"/>
+    </component>
+    <component id="n12" name="b2" src="jyjf12" xy="27,475" size="590,38">
+      <Label title="喂养BOSS" titleColor="#336600"/>
+    </component>
+    <component id="n13" name="b3" src="jyjf12" xy="26,519" size="590,38">
+      <Label title="提炼精华" titleColor="#336600"/>
+    </component>
+    <component id="n15" name="close" src="t5hdnfq" pkg="0tyncec1" xy="593,-6" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+  </displayList>
+</component>

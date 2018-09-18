@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageOffsetX="-268" designImageOffsetY="-86">
+  <controller name="tabCtrl" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="x0coniw" pkg="0tyncec1" xy="343,110" size="632,524"/>
+    <image id="n16" name="n16" src="u3cyl" xy="340,287"/>
+    <image id="n14" name="n14" src="u3cyi" xy="279,99" size="207,95"/>
+    <image id="n17" name="n17" src="u3cyk" xy="333,405"/>
+    <image id="n19" name="n19" src="u3cyj" xy="931,526"/>
+    <component id="n4" name="btn_close" src="zk42nn7" pkg="0tyncec1" xy="834,110" size="149,86">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <image id="n18" name="n18" src="j67wnhe" pkg="0tyncec1" xy="385,185" size="552,351"/>
+    <list id="n23" name="addfriendList" xy="389,188" size="545,346" overflow="scroll" margin="0,0,0,0"/>
+    <component id="n13" name="tab1btn_addFri" src="u3cyh" xy="318,180" size="50,110">
+      <Button checked="true" controller="tabCtrl" page="0"/>
+    </component>
+    <component id="n15" name="tab2btn_apply" src="u3cyh" xy="319,296" size="49,111">
+      <Button title="申请列表" controller="tabCtrl" page="1"/>
+    </component>
+    <component id="n20" name="btn_recom" src="tnbmnka" pkg="0tyncec1" xy="388,543" size="155,58" group="n37">
+      <gearDisplay controller="tabCtrl" pages="0"/>
+      <Button title="推荐好友" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n21" name="btn_search" src="t5hdnfs" pkg="0tyncec1" xy="892,548" size="46,48" group="n37">
+      <gearDisplay controller="tabCtrl" pages="0"/>
+      <Button icon="ui://jn83skxku3cyp"/>
+    </component>
+    <image id="n24" name="bg_shuruTxt" src="x0conjw" pkg="0tyncec1" xy="631,550" size="250,46" group="n37">
+      <gearDisplay controller="tabCtrl" pages="0"/>
+    </image>
+    <text id="n45" name="txt_input" xy="635,557" size="242,30" group="n37" input="true" prompt="输入玩家昵称或ID" font="方正粗圆简体" fontSize="19" color="#071c20" vAlign="middle" leading="0" autoSize="none" text="">
+      <gearDisplay controller="tabCtrl" pages="0"/>
+    </text>
+    <group id="n37" name="n37" xy="388,543" size="550,58"/>
+    <component id="n41" name="btn_clearList" src="tnbmnka" pkg="0tyncec1" xy="499,543" size="155,57" group="n43">
+      <gearDisplay controller="tabCtrl" pages="1"/>
+      <Button title="清空列表" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n42" name="btn_agreeAll" src="tnbmnka" pkg="0tyncec1" xy="666,543" size="155,57" group="n43">
+      <gearDisplay controller="tabCtrl" pages="1"/>
+      <Button title="全部同意" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <group id="n43" name="n43" xy="499,543" size="322,57"/>
+    <loader id="n46" name="redIcon" xy="322,299" size="17,17" visible="false" url="ui://0tyncec1xnis91"/>
+  </displayList>
+</component>

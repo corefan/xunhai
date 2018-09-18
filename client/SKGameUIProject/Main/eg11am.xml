@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="170,152" designImageOffsetX="-1109" designImageOffsetY="-1">
+  <displayList>
+    <image id="n6" name="bg" src="f50ner" xy="1,31" size="166,124"/>
+    <image id="n1" name="Bg2" src="sgyodd" xy="-48,0" size="215,32"/>
+    <text id="n2" name="MapName" xy="48,4" size="122,25" font="方正粗圆简体" fontSize="16" color="#c6d6db" autoSize="none" text="地图名称(99级)">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <image id="n4" name="bg3" src="nv56d7" xy="26,9"/>
+    <text id="n5" name="ServerLabel" xy="-11,4" size="37,24" font="方正粗圆简体" fontSize="16" color="#c6d5db" align="right" autoSize="none" text="1线"/>
+    <component id="n20" name="smallMap" src="9l3beu" xy="9,37"/>
+  </displayList>
+</component>

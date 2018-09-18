@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="305,115">
+  <displayList>
+    <image id="n12" name="bg" src="keyenis" pkg="0tyncec1" xy="0,0" size="303,113" locked="true"/>
+    <image id="n18" name="selected" src="keyenir" pkg="0tyncec1" xy="0,0" size="303,113" locked="true" hideByEditor="true" visible="false"/>
+    <text id="n5" name="title" xy="98,25" size="189,26" locked="true" font="方正粗圆简体" fontSize="22" color="#2e3341" vAlign="middle" autoSize="height" singleLine="true" text="例行维护补偿"/>
+    <text id="n6" name="txtDate" xy="99,63" size="119,24" locked="true" font="方正粗圆简体" fontSize="20" color="#54595e" vAlign="middle" autoSize="height" text="{00-00}"/>
+    <text id="n7" name="delDay" xy="220,60" size="65,28" locked="true" hideByEditor="true" font="方正粗圆简体" fontSize="20" color="#7fa23e" align="right" vAlign="middle" autoSize="none" text="{0}天"/>
+    <loader id="n15" name="icon" xy="21,26" size="61,62" locked="true" align="center" vAlign="middle"/>
+    <image id="n17" name="line" src="jsucnhh" pkg="0tyncec1" xy="103,56" locked="true"/>
+    <loader id="n19" name="imgLibao" xy="250,12" size="50,50" vAlign="middle"/>
+  </displayList>
+</component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="wetrdvlh" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="p8e40" name="PNG" folder=""/>
+    <folder id="p8e41" name="component" folder=""/>
+    <image id="lgaa18" name="未开启" folder="p8e40" qualityOption="source" file="lgaa18.png" size="17,18" exported="true" scale="9grid" scale9grid="7,8,4,4"/>
+    <image id="lgaa19" name="分页标志（选中）" folder="p8e40" qualityOption="source" file="lgaa19.png" size="74,83" exported="true"/>
+    <image id="lgaa1a" name="分页标志（未选中）" folder="p8e40" qualityOption="source" file="lgaa1a.png" size="74,83" exported="true"/>
+    <image id="lgaa1b" name="等级不足" folder="p8e40" qualityOption="source" file="lgaa1b.png" size="36,39" exported="true"/>
+    <image id="lgaa1c" name="CD中" folder="p8e40" qualityOption="source" file="lgaa1c.png" size="36,39" exported="true"/>
+    <image id="lgaa1d" name="CD完成" folder="p8e40" qualityOption="source" file="lgaa1d.png" size="36,39" exported="true"/>
+    <image id="lgaa1f" name="标题底（可拉伸）" folder="p8e40" qualityOption="source" file="lgaa1f.png" size="307,44" exported="true" scale="9grid" scale9grid="149,0,6,44"/>
+    <image id="lgaa1g" name="提示字色字号" folder="p8e41" qualityOption="source" file="lgaa1g.png" size="1334,750"/>
+    <image id="lgaa1h" name="示意图2" folder="p8e41" qualityOption="source" file="lgaa1h.png" size="1334,750"/>
+    <image id="lgaa1i" name="示意图1" folder="p8e41" qualityOption="source" file="lgaa1i.png" size="1334,750"/>
+    <image id="lgaa1j" name="副本字色字号" folder="p8e41" qualityOption="source" file="lgaa1j.png" size="1334,750"/>
+    <component id="lgaa1k" name="FBItem" folder="p8e41" file="lgaa1k.xml" exported="true"/>
+    <component id="lgaa1o" name="FBUI" folder="p8e41" file="lgaa1o.xml" exported="true"/>
+    <component id="lgaa1q" name="FbLeftListItem" folder="p8e41" file="lgaa1q.xml"/>
+    <component id="tr2p1r" name="CDMessageBox" folder="p8e41" file="tr2p1r.xml" exported="true"/>
+    <image id="otx71y" name="fail" folder="p8e40" qualityOption="source" file="otx71y.png" size="390,250"/>
+    <image id="otx71z" name="win" folder="p8e40" qualityOption="source" file="otx71z.png" size="390,250"/>
+    <component id="otx720" name="PoPFinishFB" folder="p8e41" file="otx720.xml" exported="true"/>
+    <image id="otx721" name="3" folder="p8e40" qualityOption="source" file="otx721.png" size="103,32" scale="9grid" scale9grid="26,8,52,16"/>
+    <image id="otx722" name="2" folder="p8e40" qualityOption="source" file="otx722.png" size="40,33"/>
+    <image id="otx723" name="地图名称+换线（226X32）" folder="p8e40" qualityOption="source" file="otx723.png" size="120,32"/>
+    <image id="otx724" name="沙漏底" folder="p8e40" qualityOption="source" file="otx724.png" size="24,21"/>
+    <image id="otx725" name="云纹" folder="p8e40" qualityOption="source" file="otx725.png" size="210,34"/>
+    <image id="otx726" name="底（501X138）" folder="p8e40" qualityOption="source" file="otx726.png" size="31,20"/>
+    <image id="mllx2e" name="di" folder="p8e40" qualityOption="source" file="mllx2e.png" size="641,303"/>
+    <image id="mllx2f" name="biaotidi" folder="p8e40" qualityOption="source" file="mllx2f.png" size="130,13" scale="9grid" scale9grid="40,6,50,1"/>
+    <component id="mllx2g" name="EnterPanel1" folder="p8e41" file="mllx2g.xml" exported="true"/>
+    <component id="mllx2h" name="EnterBtn1" folder="p8e41" file="mllx2h.xml"/>
+    <component id="mllx2i" name="EnterBtn2" folder="p8e41" file="mllx2i.xml"/>
+    <component id="wf1g2j" name="FBTeamHead" folder="p8e41" file="wf1g2j.xml" exported="true"/>
+    <image id="iqif2k" name="jiantou" folder="p8e40" qualityOption="source" file="iqif2k.png" size="51,30"/>
+    <image id="jyou2l" name="8" folder="p8e40" qualityOption="source" file="jyou2l.png" size="234,58"/>
+    <image id="fsws2m" name="内有附件标识" folder="p8e40" qualityOption="source" file="fsws2m.png" size="20,20"/>
+    <image id="ftdy2n" name="btn_fuben" folder="p8e40" qualityOption="source" file="ftdy2n.png" size="99,135" exported="true"/>
+  </resources>
+  <publish name="FB"/>
+</packageDescription>

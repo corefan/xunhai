@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="915,634" designImage="ui://c76fl6zbjgb0no" designImageOffsetX="-311" designImageOffsetY="-108" designImageAlpha="45">
+  <displayList>
+    <image id="n6" name="bgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,27"/>
+    <image id="n0" name="bg" src="kzve7" xy="25,0"/>
+    <list id="n1" name="list" xy="25,110" size="859,341" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="256" margin="0,0,0,0"/>
+    <text id="n2" name="labelTitle" xy="73,508" size="104,30" font="方正粗圆简体" fontSize="22" color="#ffba60" align="center" vAlign="middle" autoSize="none" strokeColor="#00161b" strokeSize="2" text="累计充值"/>
+    <text id="n3" name="labelTotalRecharge" xy="49,540" size="155,29" font="方正粗圆简体" fontSize="22" color="#fdaaaa" align="center" vAlign="middle" autoSize="none" strokeColor="#7d0000" strokeSize="2" text="(10000/100)"/>
+    <component id="n4" name="btnGet" src="tnbmnka" pkg="0tyncec1" xy="723,511">
+      <Button title="领取" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <text id="n5" name="labelHasGet" xy="726,511" size="127,62" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" autoSize="none" text="已经领取"/>
+    <list id="n9" name="pkgCellRoot" xy="216,489" size="470,95" layout="row" overflow="hidden" scroll="horizontal" margin="0,0,0,0" colGap="6"/>
+    <image id="n10" name="imgArrow" src="jgb0np" xy="864,205" visible="false"/>
+    <component id="n11" name="btnNext" src="t5hdnfs" pkg="0tyncec1" xy="864,205" size="51,86">
+      <Button icon="ui://c76fl6zbjgb0np"/>
+    </component>
+  </displayList>
+</component>

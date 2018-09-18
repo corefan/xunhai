@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="630,107">
+  <controller name="c1" pages="0,unselect,1,selected" selected="0"/>
+  <displayList>
+    <image id="n0" name="bg" src="t5hd2h" xy="0,0" size="630,107"/>
+    <image id="n1" name="selected" src="t5hd2g" xy="0,0" size="630,107">
+      <gearDisplay controller="c1" pages="1"/>
+    </image>
+    <component id="n11" name="btn_addFriend" src="t5hdnfs" pkg="0tyncec1" xy="538,15" size="71,75">
+      <Button icon="ui://mrcfhfspt5hd2k" selectedIcon="ui://mrcfhfspt5hd2k"/>
+    </component>
+    <image id="n16" name="levelBg" src="t5hd2e" xy="207,54" size="301,38"/>
+    <text id="n6" name="txtLv1" xy="455,20" size="53,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" vAlign="middle" text="Lv{0}"/>
+    <text id="n4" name="txtName" xy="193,20" size="184,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="center" vAlign="middle" autoSize="height" text=""/>
+    <text id="n5" name="txtCareer" xy="381,20" size="69,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="right" vAlign="middle" autoSize="height" text=""/>
+    <loader id="n7" name="icon" xy="229,55" size="36,36" align="center" vAlign="middle" fill="scale"/>
+    <text id="n9" name="txtLv2" xy="273,63" size="126,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" vAlign="middle" autoSize="height" singleLine="true" text=""/>
+    <text id="n10" name="txtStarNum" xy="451,63" size="53,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" vAlign="middle" autoSize="height" text="x{0}"/>
+    <image id="n15" name="startIcon" src="t5hd1x" xy="405,51"/>
+    <component id="n18" name="headComp" src="t5hdnfz" pkg="0tyncec1" xy="110,13"/>
+    <text id="n19" name="order" xy="-17,4" size="133,101" font="ui://0tyncec1t5hdngp" fontSize="12" align="center" vAlign="middle" autoSize="none" text=""/>
+    <graph id="n20" name="funsClick" xy="1,3" size="525,100" type="rect" lineSize="0" lineColor="#00000000" fillColor="#00ffffff"/>
+  </displayList>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="68,51" extention="Button">
+  <displayList>
+    <image id="n16" name="btn_siliaoTip" src="lnqzf5" xy="14,9"/>
+    <image id="n17" name="n17" src="lnqzf4" xy="43,0"/>
+    <text id="n18" name="numSiliao" xy="43,-4" size="25,29" fontSize="15" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#871515" strokeSize="2" text="1"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>

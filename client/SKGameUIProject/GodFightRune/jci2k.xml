@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="967,628" designImage="ui://s210esy7iug34" designImageAlpha="14">
+  <displayList>
+    <component id="n0" name="tabGodFightRune" src="iug37" xy="30,16" group="n6"/>
+    <component id="n2" name="godFightRuneContent" src="jci2l" xy="0,77" group="n6"/>
+    <component id="n3" name="godFightRuneEffect0" src="jci2m" xy="8,453" group="n6" hideByEditor="true" visible="false"/>
+    <component id="n4" name="godFightRuneEffect1" src="jci2m" xy="7,452" size="438,140" group="n6"/>
+    <image id="n5" name="imgArrow" src="s4zfnls" pkg="0tyncec1" xy="196,512" group="n6" hideByEditor="true" visible="false"/>
+    <group id="n6" name="groupLeftUI" xy="0,16" size="452,577" advanced="true"/>
+    <image id="n7" name="bg0" src="iug32" xy="448,0" group="n16"/>
+    <image id="n8" name="bg1" src="iug36" xy="483,80" group="n16"/>
+    <image id="n10" name="bgName" src="w3wlnld" pkg="0tyncec1" xy="602,17" size="227,40" group="n16"/>
+    <text id="n9" name="labelName" xy="636,21" size="157,27" group="n16" font="方正粗圆简体" fontSize="20" align="center" vAlign="middle" ubb="true" autoSize="none" text="空山剑传说"/>
+    <component id="n11" name="godFightRuneItem0" src="s4zfn" xy="654,61" group="n16"/>
+    <component id="n12" name="godFightRuneItem1" src="s4zfn" xy="490,372" group="n16"/>
+    <component id="n13" name="godFightRuneItem2" src="s4zfn" xy="819,372" group="n16"/>
+    <text id="n14" name="labelTips" xy="557,533" size="331,25" group="n16" font="方正粗圆简体" fontSize="19" color="#2e3341" align="center" vAlign="middle" leading="4" autoSize="height" text=""/>
+    <component id="n15" name="btnUse" src="skqrnkp" pkg="0tyncec1" xy="646,562" size="150,56" group="n16">
+      <Button title="使用" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <graph id="n17" name="effectRoot0" xy="714,309" size="1,1" group="n16"/>
+    <graph id="n18" name="effectRoot1" xy="685,177" size="1,1" group="n16"/>
+    <component id="n20" name="tipsBtn" src="t5hdnfq" pkg="0tyncec1" xy="905,568" size="44,45" group="n16">
+      <Button icon="ui://0tyncec1f06tnnc"/>
+    </component>
+    <group id="n16" name="groupRightUI" xy="448,0" size="519,628" advanced="true"/>
+  </displayList>
+</component>

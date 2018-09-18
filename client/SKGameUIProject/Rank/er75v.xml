@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="104,36">
+  <displayList>
+    <text id="n0" name="career" xy="20,6" pivot="0.5,0.5" size="92,27" group="n3" font="方正粗圆简体" fontSize="20" align="center" vAlign="middle" autoSize="none" text="战力&#xA;"/>
+    <loader id="n1" name="careerMark" xy="8,0" size="30,36" group="n3" url="ui://7dvfcqznjg8t4" fill="scale"/>
+    <group id="n3" name="n3" xy="8,0" size="104,36" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

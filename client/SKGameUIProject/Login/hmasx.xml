@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageLayer="1">
+  <displayList>
+    <component id="n0" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <loader id="n23" name="loaderBGAlpha" xy="232,376" size="870,225" hideByEditor="true" visible="false" url="ui://0qk3a0fjv2kx1k" fill="scaleFree"/>
+    <image id="n1" name="bg0" src="j2mza" xy="366,299" size="623,98" group="n13"/>
+    <image id="n2" name="imgAccount" src="j2mzi" xy="403,331" group="n13"/>
+    <text id="n3" name="labelName" xy="455,328" size="389,44" group="n13" font="方正粗圆简体" fontSize="26" color="#000f0f" vAlign="middle" autoSize="none" text=""/>
+    <component id="n5" name="btnBind" src="j2mzm" xy="863,335" size="83,28" group="n13">
+      <Button title="游客绑定"/>
+    </component>
+    <group id="n13" name="groupAccount" xy="366,299" size="623,98" visible="false" advanced="true" collapsed="true"/>
+    <component id="n19" name="btnLogin" src="ifx51n" xy="439,495" size="485,68">
+      <Button title="登录游戏" titleColor="#ffffff" icon="ui://0qk3a0fjv2kx1l" selectedIcon="ui://0qk3a0fjv2kx1m"/>
+    </component>
+    <component id="n20" name="btnSelectServer" src="gkfb15" xy="383,410"/>
+  </displayList>
+</component>

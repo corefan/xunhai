@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="133,46" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n6" name="layer0" xy="0,0" size="133,46" touchable="false" url="ui://0tyncec1ovhpnlm" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n7" name="layer1" xy="0,0" size="133,46" touchable="false" url="ui://0tyncec1ovhpnlp" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="133,46" font="方正粗圆简体" fontSize="22" color="#003341" align="center" vAlign="middle" autoSize="none" singleLine="true" text="111">
+      <relation target="" sidePair="width-width,height-height"/>
+      <gearColor controller="button" pages="0,1" values="#003341|#e5e5e5" default="#000000"/>
+    </text>
+    <loader id="n5" name="icon" xy="0,0" size="133,46" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

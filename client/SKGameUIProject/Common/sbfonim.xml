@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="178,66" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n8" name="icon" xy="0,0" size="178,66" url="ui://0tyncec1n3qsneq" fill="scaleFree"/>
+    <text id="n3" name="title" xy="8,17" pivot="0.5,0.5" size="158,31" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="&#xA;">
+      <relation target="" sidePair="width-width"/>
+    </text>
+    <image id="n6" name="arrowUp" src="sbfonin" xy="138,30">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n7" name="arrowDown" src="sbfonin" xy="138,30" flip="vt">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

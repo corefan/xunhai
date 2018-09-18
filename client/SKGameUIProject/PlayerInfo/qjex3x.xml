@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="372,244">
+  <displayList>
+    <image id="n3" name="n3" src="qjex3w" xy="0,0" size="372,249"/>
+    <text id="n0" name="n0" xy="76,31" size="221,34" group="n6" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" autoSize="none" text="基础属性"/>
+    <image id="n1" name="n1" src="fqe010" xy="57,44" group="n6"/>
+    <image id="n2" name="n2" src="fqe0z" xy="243,44" group="n6"/>
+    <group id="n6" name="n6" xy="57,31" size="250,34" collapsed="true"/>
+    <image id="n4" name="BaseBg" src="cws9j" xy="27,74" size="320,153" group="n9"/>
+    <list id="n7" name="list" xy="38,89" size="299,123" group="n9" overflow="scroll" margin="0,0,0,0" defaultItem="ui://0oudtuxpqjex3z"/>
+    <group id="n9" name="n9" xy="27,74" size="320,153"/>
+    <component id="n12" name="closeBtn" src="qjex41" xy="311,25"/>
+  </displayList>
+</component>

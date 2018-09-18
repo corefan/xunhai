@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="157,157" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n14" name="n14" src="lskq9b" xy="0,0" locked="true" hideByEditor="true" visible="false"/>
+    <loader id="n7" name="icon" xy="0,0" size="157,157" locked="true" align="center" vAlign="middle" fill="scale"/>
+    <image id="n12" name="mask" src="vc6k7e" xy="0,0" size="157,157" visible="false" alpha="0.7" fillMethod="radial360" fillClockwise="false">
+      <relation target="n7" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n13" name="n13" src="bhdd93" xy="0,0" forHitTest="true"/>
+    <text id="n15" name="cdTxt" xy="44,46" size="52,52" locked="true" fontSize="36" color="#e5eefe" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" strokeSize="3" text="10"/>
+    <graph id="n16" name="role3D" xy="76,76" pivot="0.5,0.5" anchor="true" size="158,158" locked="true" touchable="false"/>
+    <image id="n17" name="lock" src="igzgnk7" pkg="0tyncec1" xy="56,52"/>
+    <image id="n18" name="cantUse2" src="xn3sat" xy="0,0" size="157,157"/>
+  </displayList>
+  <Button/>
+</component>

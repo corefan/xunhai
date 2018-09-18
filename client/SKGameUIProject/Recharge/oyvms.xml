@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="233,336">
+  <displayList>
+    <image id="n11" name="n11" src="ts5to" xy="0,0" size="233,336"/>
+    <text id="n12" name="txtBuyPeopleNum" xy="24,26" size="181,26" font="方正粗圆简体" fontSize="20" color="#f0fcee" align="center" ubb="true" autoSize="none" strokeColor="#874d42" strokeSize="2" text="购买人数：9999人"/>
+    <component id="n13" name="rewardCont" src="t5hdnfx" pkg="0tyncec1" xy="23,79" size="187,187"/>
+    <component id="n14" name="btnIsLQ" src="skqrnkp" pkg="0tyncec1" xy="42,270" size="149,50">
+      <Button title="还差9999人" titleColor="#000000" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <image id="n15" name="alreadyLQ" src="ts5td" xy="71,274"/>
+  </displayList>
+</component>

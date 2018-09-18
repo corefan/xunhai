@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="558,191" extention="Label">
+  <displayList>
+    <image id="n0" name="icon" src="x0coniw" xy="0,0" size="561,191">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1" name="title" xy="129,6" size="301,28" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="height" text="标题">
+      <relation target="n0" sidePair="top-top,center-center"/>
+    </text>
+    <component id="n3" name="close" src="zk42nn7" xy="435,9" size="136,79">
+      <relation target="" sidePair="top-top,right-right"/>
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>

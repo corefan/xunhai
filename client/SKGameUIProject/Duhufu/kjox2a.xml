@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="551,578" extention="Label">
+  <displayList>
+    <image id="n0" name="n0" src="x0coniw" pkg="0tyncec1" xy="0,0" size="551,585"/>
+    <image id="n5" name="n5" src="x0conjx" pkg="0tyncec1" xy="127,299" size="361,65"/>
+    <image id="n1" name="hehua" src="w3wlnlc" pkg="0tyncec1" xy="151,46" size="267,159" aspect="true"/>
+    <text id="n8" name="title" xy="82,170" size="387,30" font="方正粗圆简体" fontSize="24" color="#1e67af" align="center" vAlign="middle" ubb="true" autoSize="height" strokeColor="#626161" strokeSize="2" text=""/>
+    <text id="n2" name="desc" xy="75,208" size="400,84" font="方正粗圆简体" fontSize="20" color="#545e6c" align="center" ubb="true" autoSize="none" text=""/>
+    <text id="n4" name="txtLimit" xy="93,443" size="364,29" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text=""/>
+    <component id="n6" name="numBar" src="x0conk2" pkg="0tyncec1" xy="182,299">
+      <Label maxLength="3" keyboardType="2"/>
+    </component>
+    <component id="n10" name="labelBar" src="nf8gnkt" pkg="0tyncec1" xy="71,373" size="412,63"/>
+    <component id="n7" name="buyBtn" src="tnbmnka" pkg="0tyncec1" xy="193,473" size="176,48">
+      <Button title="购买" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <text id="n11" name="putawayText" xy="50,315" size="101,34" font="方正粗圆简体" fontSize="24" color="#2e3341" align="right" vAlign="middle" autoSize="none" text="数量:"/>
+    <component id="n12" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="421,2" size="135,87">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>

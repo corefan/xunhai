@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="371,611">
+  <displayList>
+    <image id="n0" name="bg" src="ckrk14" xy="-7,-7"/>
+    <image id="n8" name="line1" src="fqe0z" xy="237,29"/>
+    <text id="n9" name="title" xy="134,20" size="101,28" font="方正粗圆简体" fontSize="24" text="装备列表"/>
+    <image id="n7" name="line2" src="fqe010" xy="61,31"/>
+    <list id="n2" name="equipList" xy="2,67" size="367,537" overflow="scroll" margin="0,0,0,0" defaultItem="ui://0oudtuxpfqe0v" autoItemSize="false"/>
+    <component id="n10" name="closeBtn" src="fqe012" xy="323,16"/>
+  </displayList>
+</component>

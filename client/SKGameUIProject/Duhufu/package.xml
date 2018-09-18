@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="lmxy2w9b" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="vhgh0" name="资源" folder=""/>
+    <folder id="vhgh1" name="img" folder=""/>
+    <component id="vhgh2" name="1都护府 创建 创建都护府" folder="" file="vhgh2.xml"/>
+    <image id="vhgh4" name="labelbg" folder="vhgh0" qualityOption="source" file="vhgh4.png" size="323,32" scale="9grid" scale9grid="35,27,207,3"/>
+    <component id="vhgh6" name="2都护府 申请 联系都护" folder="" file="vhgh6.xml"/>
+    <component id="vhgh8" name="6都护府 技能 学习" folder="" file="vhgh8.xml"/>
+    <component id="vhghc" name="3都护府 信息 都护府信息" folder="" file="vhghc.xml"/>
+    <component id="vhghd" name="sucai" folder="vhgh0" file="vhghd.xml"/>
+    <image id="ci33e" name="个人信息按钮(179X55)" folder="vhgh0" qualityOption="source" file="ci33e.png" size="58,55" scale="9grid" scale9grid="25,23,8,9"/>
+    <image id="ci33f" name="底（可拉伸）" folder="vhgh0" qualityOption="source" file="ci33f.png" size="315,255" scale="9grid" scale9grid="140,118,27,17"/>
+    <component id="ci33j" name="4都护府 成员 申请列表" folder="" file="ci33j.xml"/>
+    <component id="ci33n" name="4都护府 成员 升降职务" folder="" file="ci33n.xml"/>
+    <component id="me0lp" name="5都护府 活动1 升级" folder="" file="me0lp.xml"/>
+    <component id="me0lq" name="5都护府 活动3 宣战" folder="" file="me0lq.xml"/>
+    <component id="me0lt" name="5都护府 活动2 捐献" folder="" file="me0lt.xml"/>
+    <component id="me0lu" name="6都护府 技能 研发" folder="" file="me0lu.xml"/>
+    <component id="me0lv" name="4都护府 成员 成员列表" folder="" file="me0lv.xml"/>
+    <image id="pcv2w" name="cha" folder="vhgh1" qualityOption="source" file="pcv2w.png" size="47,48"/>
+    <folder id="u25px" name="ui" folder=""/>
+    <component id="jyjfy" name="CJPanel" folder="u25px" file="jyjfy.xml" exported="true"/>
+    <component id="jyjfz" name="Btn1" folder="u25px" file="jyjfz.xml"/>
+    <component id="jyjf10" name="SQPanel" folder="u25px" file="jyjf10.xml" exported="true"/>
+    <component id="jyjf11" name="SQItem" folder="u25px" file="jyjf11.xml" exported="true"/>
+    <component id="jyjf12" name="LabelBtn" folder="u25px" file="jyjf12.xml"/>
+    <component id="jyjf13" name="Btn2" folder="u25px" file="jyjf13.xml"/>
+    <component id="jyjf14" name="LabelInfo" folder="u25px" file="jyjf14.xml"/>
+    <component id="jyjf16" name="XXPanel" folder="u25px" file="jyjf16.xml" exported="true"/>
+    <component id="jyjf17" name="CYMemberSQPane" folder="u25px" file="jyjf17.xml" exported="true"/>
+    <component id="jyjf18" name="CheckBox" folder="u25px" file="jyjf18.xml"/>
+    <component id="jyjf19" name="CYMemberSQItem" folder="u25px" file="jyjf19.xml" exported="true"/>
+    <component id="jyjf1a" name="CYEventPane" folder="u25px" file="jyjf1a.xml" exported="true"/>
+    <component id="jyjf1b" name="CYMemberPane" folder="u25px" file="jyjf1b.xml" exported="true"/>
+    <component id="jyjf1c" name="CYMemberItem" folder="u25px" file="jyjf1c.xml" exported="true"/>
+    <component id="jyjf1d" name="CYEventItem" folder="u25px" file="jyjf1d.xml" exported="true"/>
+    <component id="jyjf1e" name="ChangeJobPane" folder="u25px" file="jyjf1e.xml" exported="true"/>
+    <component id="jyjf1f" name="SkillCell" folder="u25px" file="jyjf1f.xml" exported="true"/>
+    <component id="jyjf1g" name="JNPane" folder="u25px" file="jyjf1g.xml" exported="true"/>
+    <component id="n7lw1h" name="HDUpGradePane" folder="u25px" file="n7lw1h.xml" exported="true"/>
+    <component id="n7lw1i" name="HDContributeItem" folder="u25px" file="n7lw1i.xml" exported="true"/>
+    <component id="n7lw1j" name="HDContributePane" folder="u25px" file="n7lw1j.xml" exported="true"/>
+    <component id="n7lw1k" name="HDFightPane" folder="u25px" file="n7lw1k.xml" exported="true"/>
+    <component id="n7lw1l" name="HDFightItem" folder="u25px" file="n7lw1l.xml" exported="true"/>
+    <folder id="s9mp1m" name="fight" folder=""/>
+    <component id="s9mp1n" name="WarBaomingPane" folder="s9mp1m" file="s9mp1n.xml" exported="true"/>
+    <component id="s9mp1o" name="WarLeaguePane" folder="s9mp1m" file="s9mp1o.xml" exported="true"/>
+    <component id="s9mp1q" name="WarMemPane" folder="s9mp1m" file="s9mp1q.xml" exported="true"/>
+    <component id="s9mp1r" name="WarUsualPane" folder="s9mp1m" file="s9mp1r.xml" exported="true"/>
+    <component id="s9mp1z" name="WarJieshaoPane" folder="s9mp1m" file="s9mp1z.xml" exported="true"/>
+    <component id="s9mp20" name="WarBeginPane" folder="s9mp1m" file="s9mp20.xml" exported="true"/>
+    <component id="ip1h21" name="WarReadyPane" folder="s9mp1m" file="ip1h21.xml" exported="true"/>
+    <image id="mxc522" name="descmap" folder="s9mp1m" qualityOption="source" file="mxc522.png" size="627,646" exported="true"/>
+    <component id="mxc523" name="WarMemItem" folder="s9mp1m" file="mxc523.xml" exported="true"/>
+    <component id="mxc524" name="WarLeagueItemI" folder="s9mp1m" file="mxc524.xml" exported="true"/>
+    <component id="mxc525" name="WarLeagueItemII" folder="s9mp1m" file="mxc525.xml" exported="true"/>
+    <component id="kjox27" name="WarTaxPane" folder="s9mp1m" file="kjox27.xml" exported="true"/>
+    <component id="kjox28" name="WarGiftMall" folder="s9mp1m" file="kjox28.xml" exported="true"/>
+    <component id="kjox29" name="WarGiftItem" folder="s9mp1m" file="kjox29.xml" exported="true"/>
+    <component id="kjox2a" name="WarGiftAlert" folder="s9mp1m" file="kjox2a.xml" exported="true"/>
+    <component id="e5vk2b" name="WarRelifePane" folder="s9mp1m" file="e5vk2b.xml" exported="true"/>
+    <component id="cckj2c" name="GuildBossPane" folder="u25px" file="cckj2c.xml" exported="true"/>
+  </resources>
+  <publish name="Clan" genCode="true"/>
+</packageDescription>

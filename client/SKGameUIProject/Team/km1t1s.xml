@@ -1,0 +1,9 @@
+<component size="146,17" extention="ProgressBar">
+  <displayList>
+    <image id="n1" name="n1" src="km1t1t" xy="5,0" size="141,14" alpha="0.01">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n2" name="bar" src="km1t1u" xy="0,-2" size="146,19"/>
+  </displayList>
+  <ProgressBar/>
+</component>

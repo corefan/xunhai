@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,24" extention="Label">
+  <displayList>
+    <image id="n3" name="bg" src="vwzwk" xy="93,0" size="1,20">
+      <relation target="n0" sidePair="width-width,center-center"/>
+    </image>
+    <text id="n0" name="title" xy="95,1" size="10,23" fontSize="16" color="#ffffff" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="302,44">
+  <displayList>
+    <image id="n0" name="n0" src="dmzwa" xy="0,0" size="302,44">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1" name="input" xy="1,1" size="300,42" input="true" keyboardType="4" font="方正粗圆简体" fontSize="22" color="#a7a7a7" vAlign="middle" ubb="true" autoSize="none" text="">
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="108,132" extention="Button" designImageAlpha="80">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="img_alpha_bg" src="w5h89" xy="3,1" size="99,100" group="n6"/>
+    <loader id="n3" name="loader_icon" xy="8,6" size="92,92" group="n6"/>
+    <image id="n8" name="img_skill_icon_border" src="oqbynlm" pkg="0tyncec1" xy="6,4" size="97,97" group="n6"/>
+    <image id="n2" name="img_select_bg" src="of36nm2" pkg="0tyncec1" xy="-3,-2" size="113,109" group="n6"/>
+    <image id="n1" name="img_arrow" src="s7fmnlr" pkg="0tyncec1" xy="73,5" group="n6"/>
+    <group id="n6" name="group_skill_icon" xy="-3,-2" size="113,109" advanced="true"/>
+    <image id="n4" name="img_bg_lev" src="c4eznl4" pkg="0tyncec1" xy="19,101" size="69,30" group="n7"/>
+    <text id="n5" name="label_lev" xy="26,105" size="58,24" group="n7" font="方正粗圆简体" fontSize="18" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n7" name="group_skill_lev" xy="19,101" size="70,31" advanced="true"/>
+    <graph id="n9" name="effect_root" xy="0,0" size="1,1"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

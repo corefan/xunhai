@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="479,562">
+  <displayList>
+    <component id="n80" name="n80" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,562"/>
+    <text id="n90" name="title" xy="104,2" size="270,39" font="方正粗圆简体" fontSize="28" color="#ffffff" align="center" autoSize="none" text="升降职务&#xA;"/>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="53,62" size="371,389"/>
+    <text id="n83" name="n83" xy="63,86" size="351,39" font="方正粗圆简体" fontSize="28" align="center" autoSize="none" text="请选择要让其调整的职务&#xA;"/>
+    <component id="n22" name="btnNormal" src="jyjfz" xy="86,286" size="306,68">
+      <Button title="转为普通成员" titleColor="#2e3341"/>
+    </component>
+    <component id="n81" name="btnClan2" src="jyjfz" xy="86,208" size="306,68">
+      <Button title="转为副都护" titleColor="#2e3341"/>
+    </component>
+    <component id="n82" name="btnClan" src="jyjfz" xy="86,131" size="306,68">
+      <Button title="转让都护" titleColor="#2e3341"/>
+    </component>
+    <component id="n84" name="btnCancel" src="jyjf13" xy="118,484" size="241,62">
+      <Button title="取消"/>
+    </component>
+    <component id="n91" name="btnKick" src="jyjfz" xy="85,372" size="306,68">
+      <Button title="踢出都护府" titleColor="#2e3341"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="324,138">
+  <displayList>
+    <image id="n1" name="n1" src="eieknkm" pkg="0tyncec1" xy="0,82" size="323,56"/>
+    <image id="n2" name="bg" src="keyenis" pkg="0tyncec1" xy="24,0" size="268,114"/>
+    <image id="n3" name="selectBg" src="keyenir" pkg="0tyncec1" xy="25,0" size="268,114"/>
+    <text id="n4" name="name" xy="138,22" pivot="0.5,0.5" size="149,29" font="方正粗圆简体" fontSize="24" color="#292c34" vAlign="middle" ubb="true" autoSize="none" text="防守打法&#xA;"/>
+    <image id="n5" name="n5" src="eiek7" xy="138,57"/>
+    <text id="n6" name="power" xy="182,62" size="96,31" fontSize="24" color="#da620a" autoSize="none" text="3456"/>
+    <image id="n10" name="equipMark" src="eieknko" pkg="0tyncec1" xy="220,4"/>
+    <image id="n8" name="n8" src="eieknkn" pkg="0tyncec1" xy="38,11" size="94,94" group="n12"/>
+    <loader id="n9" name="img" xy="43,16" size="84,84" group="n12" url="ui://d3en6n1nwjp8b" align="center" vAlign="middle" fill="scale"/>
+    <group id="n12" name="n12" xy="38,11" size="94,94"/>
+    <image id="n7" name="lock" src="igzgnk7" pkg="0tyncec1" xy="62,42"/>
+    <image id="n11" name="selectHight" src="eiek9" xy="22,-3" hideByEditor="true"/>
+  </displayList>
+</component>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,100" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n16" name="n16" src="lskq9a" xy="3,4"/>
+    <loader id="n7" name="icon" xy="0,0" size="100,100" align="center" vAlign="middle"/>
+    <image id="n13" name="n13" src="bhdd94" xy="4,4"/>
+    <image id="n14" name="mask" src="bhdd92" xy="0,0" fillMethod="radial360" fillClockwise="false"/>
+    <image id="n15" name="cdPoint" src="bhdd91" xy="39,-7"/>
+    <text id="n17" name="cdTxt" xy="22,24" size="52,52" fontSize="36" color="#e5eefe" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" strokeSize="3" text="10"/>
+    <image id="n18" name="cantUse" src="xn3sat" xy="4,5"/>
+    <graph id="n19" name="role3D" xy="50,50" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <image id="n20" name="lock" src="igzgnk7" pkg="0tyncec1" xy="28,27"/>
+    <graph id="n21" name="nBrole3D" xy="50,50" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <image id="n23" name="cantUse2" src="xn3sat" xy="4,3" hideByEditor="true" visible="false"/>
+  </displayList>
+  <Button/>
+</component>

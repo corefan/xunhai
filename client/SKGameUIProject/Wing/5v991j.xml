@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="92,92">
+  <controller name="select" pages="0,选中,1,未选中" selected="0"/>
+  <displayList>
+    <image id="n1" name="select" src="uwggde" pkg="0tyncec1" xy="-12,-12" size="114,114">
+      <gearDisplay controller="select" pages="0"/>
+    </image>
+  </displayList>
+</component>

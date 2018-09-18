@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,635" designImageAlpha="80">
+  <displayList>
+    <loader id="n2" name="loaderBG" xy="26,0" size="50,50" url="ui://g35bobp2l1qp6"/>
+    <text id="n4" name="titleTime" xy="650,119" size="234,29" font="方正粗圆简体" fontSize="19" color="#1f0502" vAlign="middle" autoSize="none" text=""/>
+    <image id="n5" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,28" size="20,607"/>
+    <image id="n8" name="imgList" src="gk0nni9" pkg="0tyncec1" xy="26,154" size="864,452"/>
+    <list id="n6" name="list" xy="26,156" size="866,446" overflow="scroll" margin="0,0,0,0" lineGap="-1" defaultItem="ui://g35bobp2l1qpe">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="y1al0f5q" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="tjje0" name="img" folder=""/>
+    <folder id="tjje1" name="component" folder=""/>
+    <image id="tjje2" name="底" folder="tjje0" qualityOption="source" file="tjje2.png" size="458,597"/>
+    <image id="tjje3" name="左右滑动箭头按钮" folder="tjje0" qualityOption="source" file="tjje3.png" size="31,53"/>
+    <image id="tjje4" name="任务奖励" folder="tjje0" qualityOption="source" file="tjje4.png" size="132,34"/>
+    <image id="tjje5" name="exp" folder="tjje0" qualityOption="source" file="tjje5.png" size="46,30" exported="true"/>
+    <image id="tjje6" name="coin" folder="tjje0" qualityOption="source" file="tjje6.png" size="46,30" exported="true"/>
+    <image id="tjje7" name="分割线" folder="tjje0" qualityOption="source" file="tjje7.png" size="408,75"/>
+    <component id="tjjea" name="NPCDialogPanel" folder="" file="tjjea.xml" exported="true"/>
+    <component id="tjjeb" name="NPCSubmitTaskPanel" folder="" file="tjjeb.xml" exported="true"/>
+    <image id="tjjec" name="任务交付" folder="tjje0" qualityOption="source" file="tjjec.png" size="1334,750"/>
+    <component id="tjjee" name="ListNPCTaskReward" folder="tjje1" file="tjjee.xml" exported="true"/>
+    <image id="tjjeg" name="箭头" folder="tjje0" qualityOption="source" file="tjjeg.png" size="59,45"/>
+    <image id="tjjeh" name="对话底（可拉伸 1334X210）" folder="tjje0" qualityOption="source" file="tjjeh.png" size="512,210" scale="9grid" scale9grid="321,87,99,44"/>
+    <image id="tjjei" name="底（可拉伸）" folder="tjje0" qualityOption="source" file="tjjei.png" size="315,255"/>
+    <image id="tjjej" name="跳过对话" folder="tjje0" qualityOption="source" file="tjjej.png" size="135,29"/>
+    <image id="tjjek" name="名字底" folder="tjje0" qualityOption="source" file="tjjek.png" size="550,36"/>
+    <image id="tjjel" name="问号" folder="tjje0" qualityOption="source" file="tjjel.png" size="56,74"/>
+    <image id="tjjem" name="感叹号" folder="tjje0" qualityOption="source" file="tjjem.png" size="56,74"/>
+    <image id="tjjen" name="NPC对话" folder="tjje0" qualityOption="source" file="tjjen.png" size="1334,750"/>
+    <component id="tjjeo" name="ButtonSkip" folder="tjje1" file="tjjeo.xml" exported="true"/>
+    <component id="tjjep" name="TaskStateSelect" folder="tjje1" file="tjjep.xml" exported="true"/>
+    <image id="tjjeq" name="接取界面和NPC对话字色字号" folder="tjje0" qualityOption="source" file="tjjeq.png" size="1333,750"/>
+    <component id="tjjer" name="NPCHeadUIPanel" folder="" file="tjjer.xml" exported="true"/>
+    <image id="tfo1s" name="任务接取" folder="tjje0" qualityOption="source" file="tfo1s.png" size="1334,750"/>
+    <component id="910zt" name="ButtonMask" folder="tjje1" file="910zt.xml" exported="true"/>
+    <image id="8pl5u" name="1001" folder="tjje0" qualityOption="source" file="8pl5u.png" size="82,82"/>
+  </resources>
+  <publish name="NPCDialog" genCode="true"/>
+</packageDescription>

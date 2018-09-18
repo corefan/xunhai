@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="482,32">
+  <displayList>
+    <graph id="n8" name="bg" xy="60,0" size="482,32" type="rect" lineSize="0" fillColor="#00ffffff">
+      <relation target="n7" sidePair="left-left,bottomext-bottom"/>
+    </graph>
+    <richtext id="n7" name="msgText" xy="62,3" size="406,26" font="方正粗圆简体" fontSize="22" color="#40332e" leading="6" ubb="true" autoSize="height" text=""/>
+    <loader id="n9" name="mark" xy="3,5" size="50,23" url="ui://m2d8gld1wxn51t" fill="scale"/>
+  </displayList>
+  <relation target="n7" sidePair="height-height"/>
+</component>

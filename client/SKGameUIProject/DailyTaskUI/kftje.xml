@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="259,524" designImage="ui://1m5molo6kftjd" designImageAlpha="12">
+  <displayList>
+    <image id="n0" name="bg" src="kftj8" xy="9,1" locked="true"/>
+    <component id="n1" name="difficultyItem" src="kftjh" xy="0,0"/>
+    <component id="n2" name="starItem" src="kftji" xy="63,81"/>
+    <component id="n3" name="buttonStart" src="kftjk" xy="69,447" size="126,58">
+      <Button title="开始"/>
+    </component>
+    <text id="n4" name="labelName" xy="65,27" size="140,34" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="迷途弟子"/>
+    <text id="n5" name="labelTitle" xy="35,230" size="199,60" font="方正粗圆简体" fontSize="20" color="#585a63" align="center" vAlign="middle" ubb="true" autoSize="none" text="去帮助小师妹去帮助小师妹去帮助小师妹"/>
+    <image id="n7" name="imgSplitLeft" src="kftja" xy="83,303" group="n10" scale="-1,1"/>
+    <text id="n8" name="labelTitleGet" xy="85,292" size="88,25" group="n10" font="方正粗圆简体" fontSize="20" color="#495e70" align="center" vAlign="middle" autoSize="none" text="可能获得"/>
+    <image id="n9" name="imgSpriteRight" src="kftja" xy="174,303" group="n10"/>
+    <group id="n10" name="groupRewardTip" xy="83,292" size="144,25" advanced="true" collapsed="true"/>
+  </displayList>
+</component>

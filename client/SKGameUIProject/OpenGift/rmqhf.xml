@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="270,67" extention="Button">
+  <controller name="btnState" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n7" name="n7" src="dmzwnna" pkg="0tyncec1" xy="24,0">
+      <gearDisplay controller="btnState" pages="0"/>
+    </image>
+    <image id="n12" name="n12" src="rmqhg" xy="70,15">
+      <gearDisplay controller="btnState" pages="0"/>
+    </image>
+    <image id="n14" name="n14" src="rmqhh" xy="4,17">
+      <gearDisplay controller="btnState" pages="1"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

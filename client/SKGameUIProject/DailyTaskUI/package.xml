@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="1m5molo6" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="kftj0" name="Component" folder=""/>
+    <folder id="kftj1" name="Image" folder=""/>
+    <image id="kftj2" name="zhuangshi5" folder="kftj1" qualityOption="source" file="kftj2.png" size="73,110" exported="true"/>
+    <image id="kftj3" name="zhuangshi4" folder="kftj1" qualityOption="source" file="kftj3.png" size="173,97" exported="true"/>
+    <image id="kftj4" name="zhuangshi3" folder="kftj1" qualityOption="source" file="kftj4.png" size="153,95" exported="true"/>
+    <image id="kftj5" name="zhuangshi2" folder="kftj1" qualityOption="source" file="kftj5.png" size="94,94" exported="true"/>
+    <image id="kftj6" name="zhuangshi" folder="kftj1" qualityOption="source" file="kftj6.png" size="151,155" exported="true"/>
+    <image id="kftj7" name="youbiantiao" folder="kftj1" qualityOption="source" file="kftj7.png" size="50,2"/>
+    <image id="kftj8" name="di2" folder="kftj1" qualityOption="source" file="kftj8.png" size="252,523"/>
+    <image id="kftja" name="zubiantiao" folder="kftj1" qualityOption="source" file="kftja.png" size="53,7"/>
+    <image id="kftjb" name="zhuangshi7" folder="kftj1" qualityOption="source" file="kftjb.png" size="71,109" exported="true"/>
+    <image id="kftjc" name="zhuangshi6" folder="kftj1" qualityOption="source" file="kftjc.png" size="71,109" exported="true"/>
+    <image id="kftjd" name="vip" folder="kftj1" qualityOption="source" file="kftjd.png" size="1334,750"/>
+    <component id="kftje" name="DailyTaskItem" folder="kftj0" file="kftje.xml" exported="true"/>
+    <component id="kftjf" name="DailyTaskContent" folder="kftj0" file="kftjf.xml" exported="true"/>
+    <component id="kftjg" name="ButtonRefersh" folder="kftj0" file="kftjg.xml" exported="true"/>
+    <component id="kftjh" name="DifficultyItem" folder="kftj0" file="kftjh.xml" exported="true"/>
+    <component id="kftji" name="StarItem" folder="kftj0" file="kftji.xml" exported="true"/>
+    <component id="kftjk" name="ButtonStart" folder="kftj0" file="kftjk.xml" exported="true"/>
+  </resources>
+  <publish name="DailyTaskUI" genCode="true"/>
+</packageDescription>

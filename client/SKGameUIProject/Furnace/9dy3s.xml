@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="242,36" extention="Label">
+  <displayList>
+    <text id="n0" name="label" xy="-27,-1" size="128,33" font="方正粗圆简体" fontSize="19" color="#2e3341" align="right" vAlign="middle" leading="0" autoSize="none" text="属性："/>
+    <text id="n1" name="title" xy="118,2" size="10,25" font="方正粗圆简体" fontSize="19" color="#3366cc" vAlign="middle" leading="0" ubb="true" singleLine="true" text="">
+      <relation target="n0" sidePair="left-right,top-top"/>
+    </text>
+    <image id="n3" name="icon" src="s7fmnlr" pkg="0tyncec1" xy="217,3"/>
+  </displayList>
+</component>

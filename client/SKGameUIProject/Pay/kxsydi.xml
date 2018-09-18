@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="188,31" extention="Label">
+  <displayList>
+    <image id="n45" name="n45" src="10j1c1" xy="0,1" size="188,30" group="n37"/>
+    <text id="n34" name="n34" xy="12,1" size="77,28" group="n37" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="height" text="连续">
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n35" name="title" xy="60,-2" size="51,36" group="n37" font="ui://0tyncec1i4ccnn4" fontSize="30" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="n34" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n36" name="n36" xy="107,1" size="75,28" group="n37" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="height" text="天">
+      <relation target="" sidePair="right-right,top-top"/>
+    </text>
+    <group id="n37" name="n37" xy="0,-2" size="188,36"/>
+  </displayList>
+</component>

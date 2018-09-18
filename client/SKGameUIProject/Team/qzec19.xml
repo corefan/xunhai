@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="572,634">
+  <displayList>
+    <image id="n1" name="bg_01" src="o8xhy" xy="0,6" size="568,628"/>
+    <component id="n2" name="BtnClose" src="o8xhz" xy="521,0"/>
+    <image id="n4" name="bg_02" src="o8xh10" xy="25,94" size="518,444" visible="false"/>
+    <list id="n5" name="list" xy="34,105" size="502,421" overflow="scroll" margin="0,0,0,0" lineGap="5" defaultItem="ui://0tnseunoo8xhr">
+      <item url="ui://0tnseunoqzec18"/>
+      <item url="ui://0tnseunoqzec18"/>
+      <item url="ui://0tnseunoqzec18"/>
+      <item url="ui://0tnseunoqzec18"/>
+      <item url="ui://0tnseunoqzec18"/>
+      <item url="ui://0tnseunoqzec18"/>
+    </list>
+    <image id="n6" name="bg_head" src="o8xh11" xy="122,29"/>
+    <text id="n7" name="label" xy="254,39" size="63,30" font="方正粗圆简体" fontSize="26" color="#cdbf87" letterSpacing="3" text="组队"/>
+    <component id="n20" name="buildBtn" src="k4je1v" pkg="0tyncec1" xy="400,553" size="140,59">
+      <Button title="建立队伍"/>
+    </component>
+    <component id="n21" name="quickJointBtn" src="k4je1v" pkg="0tyncec1" xy="39,552" size="140,59">
+      <Button title="快速组队"/>
+    </component>
+  </displayList>
+</component>

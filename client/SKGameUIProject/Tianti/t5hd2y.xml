@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="152,144" extention="ProgressBar">
+  <displayList>
+    <image id="n8" name="bg" src="t5hd21" xy="0,0"/>
+    <image id="n7" name="bar" src="t5hd22" xy="16,16" fillMethod="radial360" fillOrigin="1"/>
+    <image id="n6" name="light" src="t5hd25" xy="64,120" pivot="0.5,0.5"/>
+    <text id="n9" name="title" xy="40,102" size="72,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" align="center" vAlign="middle" autoSize="height" singleLine="true" text=""/>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

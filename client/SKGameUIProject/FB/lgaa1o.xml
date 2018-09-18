@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="963,604" opaque="false" designImageAlpha="25">
+  <controller name="c1" pages="0,,1,,2,,3,,4,,5,,6," selected="0"/>
+  <displayList>
+    <image id="n9" name="n9" src="gk0nni9" pkg="0tyncec1" xy="-3,53" size="954,542"/>
+    <list id="n3" name="List" xy="-1,53" size="947,530" overflow="scroll" margin="9,0,2,0" lineGap="3" defaultItem="ui://wetrdvlhlgaa1k"/>
+    <image id="n10" name="imgArrowDown" src="iqif2k" xy="513,563"/>
+    <image id="n11" name="imgArrowUp" src="iqif2k" xy="552,32" rotation="180"/>
+    <text id="n12" name="n12" xy="29,14" size="265,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="副本难度较大，建议组队前往"/>
+    <image id="n13" name="n13" src="rnfrnmq" pkg="0tyncec1" xy="706,7" size="241,39"/>
+    <text id="n14" name="n14" xy="758,15" size="110,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="剩余总次数:"/>
+    <text id="n15" name="txtTimes" xy="865,15" size="55,24" font="方正粗圆简体" fontSize="20" color="#084b0f" align="center" text="33/30"/>
+    <loader id="n16" name="imgFlag" xy="912,9" size="50,50" url="ui://wetrdvlhlgaa1b"/>
+    <image id="n17" name="n17" src="fsws2m" xy="7,16"/>
+  </displayList>
+</component>

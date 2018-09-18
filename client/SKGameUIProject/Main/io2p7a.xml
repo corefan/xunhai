@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="340,54">
+  <displayList>
+    <loader id="n4" name="icon" xy="1,6" size="36,36" fill="scale"/>
+    <text id="n2" name="title" xy="39,7" size="200,23" font="方正粗圆简体" fontSize="18" color="#ffffff" ubb="true" autoSize="none" text="不是滴发"/>
+    <text id="n5" name="desc" xy="39,30" size="230,22" font="方正粗圆简体" fontSize="18" color="#ffffff" ubb="true" autoSize="height" text="调息止血之术，不动时"/>
+    <text id="n6" name="time" xy="241,7" size="96,22" font="方正粗圆简体" fontSize="18" color="#fb6161" ubb="true" autoSize="none" text="（永久）"/>
+    <image id="n7" name="line" src="jsucnhi" pkg="0tyncec1" xy="4,1" size="330,2"/>
+  </displayList>
+  <relation target="n5" sidePair="height-height"/>
+</component>

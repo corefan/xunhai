@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="862,113" extention="Button" designImageAlpha="80">
+  <displayList>
+    <image id="n0" name="bg_item0" src="keyenis" pkg="0tyncec1" xy="1,0" size="862,113"/>
+    <image id="n1" name="imgArrow" src="l1qp7" xy="2,37"/>
+    <image id="n2" name="imgOnline" src="l1qp3" xy="17,48"/>
+    <text id="n3" name="titleTime" xy="133,44" size="110,33" font="方正粗圆简体" fontSize="20" vAlign="middle" autoSize="none" text="11110分钟"/>
+    <component id="n4" name="buttonGet" src="l1qpf" xy="720,30">
+      <Button title="领取"/>
+    </component>
+    <image id="n5" name="imgGet" src="l1qp2" xy="718,18"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

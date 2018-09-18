@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1139,268">
+  <controller name="state" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n0" name="com" src="ea8v1i" xy="0,268">
+      <gearDisplay controller="state" pages="0,1"/>
+      <gearXY controller="state" pages="0" values="0,268" default="0,0" tween="true" duration="0.17"/>
+    </component>
+    <graph id="n1" name="n1" xy="0,0" size="1139,268" type="rect" lineColor="#80ff0000" fillColor="#80ffffff" forMask="true"/>
+  </displayList>
+</component>

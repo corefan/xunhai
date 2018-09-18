@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="189,203" extention="Button" designImage="ui://tv6313j0w5h86" designImageAlpha="21">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="image_alpha_bg" src="w5h89" xy="16,14" size="157,157" group="n7"/>
+    <loader id="n3" name="loader_skill_icon" xy="16,13" size="157,157" group="n7" fill="scaleFree"/>
+    <image id="n8" name="image_skill_icon_border" src="oqbynlm" pkg="0tyncec1" xy="14,11" size="162,162" group="n7"/>
+    <image id="n1" name="image_select" src="of36nm2" pkg="0tyncec1" xy="0,0" size="189,183" group="n7">
+      <gearDisplay controller="button" pages=""/>
+    </image>
+    <image id="n2" name="image_arrow" src="s7fmnlr" pkg="0tyncec1" xy="130,15" group="n7"/>
+    <group id="n7" name="group_skill" xy="0,0" size="189,183" advanced="true"/>
+    <image id="n4" name="bg_level" src="c4eznl4" pkg="0tyncec1" xy="54,174" size="73,29" group="n6"/>
+    <text id="n5" name="label_level" xy="63,178" size="56,24" group="n6" font="方正粗圆简体" fontSize="18" color="#2e3341" align="center" vAlign="middle" autoSize="height" text=""/>
+    <group id="n6" name="group_level" xy="54,174" size="74,29" advanced="true"/>
+    <graph id="n9" name="effect_root" xy="0,0" size="1,1"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

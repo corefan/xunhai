@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,360" extention="Label">
+  <displayList>
+    <graph id="n1" name="bg0" xy="0,0" size="400,360" type="rect" lineSize="0" fillColor="#ff663300">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2" name="bg1" xy="8,7" size="383,346" type="rect">
+      <relation target="n1" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n9" name="dragArea" xy="-8,-28" size="425,93" type="rect" lineSize="0" fillColor="#00ffffff">
+      <relation target="" sidePair="width-width%"/>
+    </graph>
+    <text id="n7" name="title" xy="118,9" size="162,24" fontSize="20" color="#ff0000" align="center" vAlign="middle" autoSize="height" bold="true" text="">
+      <relation target="" sidePair="top-top,center-center"/>
+    </text>
+    <component id="n6" name="closeButton" src="ykv22" xy="372,-18">
+      <relation target="" sidePair="top-top,right-right"/>
+    </component>
+    <list id="n11" name="contentList" xy="7,30" size="387,328" overflow="scroll" margin="0,0,0,0" defaultItem="ui://24ppc8nlf22w4">
+      <item/>
+    </list>
+  </displayList>
+</component>

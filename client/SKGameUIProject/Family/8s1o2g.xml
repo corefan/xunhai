@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="732,587">
+  <displayList>
+    <image id="n32" name="n32" src="x0coniw" pkg="0tyncec1" xy="0,10" size="732,573"/>
+    <image id="n35" name="n35" src="j67wnhe" pkg="0tyncec1" xy="50,83" size="636,366"/>
+    <component id="n36" name="layerHead" src="t5hdnfw" pkg="0tyncec1" xy="60,95" size="617,342"/>
+    <text id="n57" name="n57" xy="56,482" size="265,24" group="n61" font="方正粗圆简体" fontSize="20" color="#2e3341" text="请编辑家族成员的排位和称号"/>
+    <component id="n59" name="btnCancelGL" src="i4cc1o" xy="392,468" size="132,54" group="n61">
+      <Button title="取消" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n60" name="btnComGL" src="i4cc1o" xy="547,468" size="132,54" group="n61">
+      <Button title="确定" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <group id="n61" name="n61" xy="56,468" size="623,54" collapsed="true"/>
+    <component id="n63" name="btnClose" src="olnb2l" xy="596,0"/>
+  </displayList>
+</component>

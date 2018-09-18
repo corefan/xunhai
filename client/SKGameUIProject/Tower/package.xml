@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="jf5x839x" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="gp6d0" name="Component" folder=""/>
+    <folder id="gp6d1" name="image" folder=""/>
+    <image id="gp6d2" name="背景" folder="gp6d1" qualityOption="source" file="gp6d2.png" size="1334,750"/>
+    <component id="gp6d3" name="VictorySettlePanel" folder="gp6d0" file="gp6d3.xml" exported="true"/>
+    <image id="gp6d4" name="返回" folder="gp6d1" qualityOption="source" file="gp6d4.png" size="118,118"/>
+    <component id="gp6d5" name="QuiteBtnS" folder="gp6d0" file="gp6d5.xml"/>
+    <image id="gp6d6" name="按钮" folder="gp6d1" qualityOption="source" file="gp6d6.png" size="265,95"/>
+    <component id="gp6d7" name="NextBtnS" folder="gp6d0" file="gp6d7.xml"/>
+    <image id="gp6d8" name="云纹" folder="gp6d1" qualityOption="source" file="gp6d8.png" size="210,34"/>
+    <image id="gp6d9" name="胜利界面" folder="gp6d0" qualityOption="source" file="gp6d9.png" size="1334,750"/>
+    <folder id="hovha" name="fontImage" folder=""/>
+    <folder id="hovhb" name="font" folder=""/>
+    <image id="hovhc" name="0" folder="hovha" qualityOption="source" file="hovhc.png" size="17,24" exported="true"/>
+    <image id="hovhd" name="第" folder="hovha" qualityOption="source" file="hovhd.png" size="23,35" exported="true"/>
+    <image id="hovhe" name="层" folder="hovha" qualityOption="source" file="hovhe.png" size="28,31" exported="true"/>
+    <image id="hovhf" name="9" folder="hovha" qualityOption="source" file="hovhf.png" size="17,24" exported="true"/>
+    <image id="hovhg" name="8" folder="hovha" qualityOption="source" file="hovhg.png" size="17,24" exported="true"/>
+    <image id="hovhh" name="7" folder="hovha" qualityOption="source" file="hovhh.png" size="17,24" exported="true"/>
+    <image id="hovhi" name="6" folder="hovha" qualityOption="source" file="hovhi.png" size="17,24" exported="true"/>
+    <image id="hovhj" name="5" folder="hovha" qualityOption="source" file="hovhj.png" size="17,24" exported="true"/>
+    <image id="hovhk" name="4" folder="hovha" qualityOption="source" file="hovhk.png" size="17,24" exported="true"/>
+    <image id="hovhl" name="3" folder="hovha" qualityOption="source" file="hovhl.png" size="17,25" exported="true"/>
+    <image id="hovhm" name="2" folder="hovha" qualityOption="source" file="hovhm.png" size="17,24" exported="true"/>
+    <image id="hovhn" name="1" folder="hovha" qualityOption="source" file="hovhn.png" size="17,24" exported="true"/>
+    <font id="hovho" name="TowerLevelFont" folder="hovhb" file="hovho.fnt" exported="true"/>
+    <component id="hovhp" name="ShowLevel" folder="gp6d0" file="hovhp.xml"/>
+    <image id="hovhq" name="竖底" folder="gp6d1" qualityOption="source" file="hovhq.png" size="93,245"/>
+    <image id="hovhr" name="圆底" folder="gp6d1" qualityOption="source" file="hovhr.png" size="458,458"/>
+    <component id="hovhs" name="TurnComponent" folder="gp6d0" file="hovhs.xml"/>
+    <image id="hovht" name="胜利" folder="gp6d1" qualityOption="source" file="hovht.png" size="522,545"/>
+    <image id="hovhu" name="云纹3" folder="gp6d1" qualityOption="source" file="hovhu.png" size="149,145"/>
+    <image id="hovhv" name="云纹2" folder="gp6d1" qualityOption="source" file="hovhv.png" size="200,85"/>
+    <image id="hovhz" name="失败" folder="gp6d1" qualityOption="source" file="hovhz.png" size="383,477"/>
+    <component id="hovh11" name="FailSettlePanel" folder="gp6d0" file="hovh11.xml" exported="true"/>
+    <image id="hovh12" name="失败界面" folder="gp6d0" qualityOption="source" file="hovh12.png" size="1334,750"/>
+    <component id="hovh13" name="FailShowLevel" folder="gp6d0" file="hovh13.xml"/>
+    <image id="hovh14" name="竖底2" folder="gp6d1" qualityOption="source" file="hovh14.png" size="93,245"/>
+    <folder id="hovh15" name="Fail" folder="hovha"/>
+    <image id="hovh16" name="3(2)" folder="hovh15" qualityOption="source" file="hovh16.png" size="17,25" exported="true"/>
+    <image id="hovh17" name="2(2)" folder="hovh15" qualityOption="source" file="hovh17.png" size="17,24" exported="true"/>
+    <image id="hovh18" name="1(2)" folder="hovh15" qualityOption="source" file="hovh18.png" size="8,25" exported="true"/>
+    <image id="hovh19" name="0(2)" folder="hovh15" qualityOption="source" file="hovh19.png" size="16,25" exported="true"/>
+    <image id="hovh1a" name="第2" folder="hovh15" qualityOption="source" file="hovh1a.png" size="23,35" exported="true"/>
+    <image id="hovh1b" name="层2" folder="hovh15" qualityOption="source" file="hovh1b.png" size="28,31" exported="true"/>
+    <image id="hovh1c" name="9(2)" folder="hovh15" qualityOption="source" file="hovh1c.png" size="16,25" exported="true"/>
+    <image id="hovh1d" name="8(2)" folder="hovh15" qualityOption="source" file="hovh1d.png" size="17,25" exported="true"/>
+    <image id="hovh1e" name="7(2)" folder="hovh15" qualityOption="source" file="hovh1e.png" size="17,24" exported="true"/>
+    <image id="hovh1f" name="6(2)" folder="hovh15" qualityOption="source" file="hovh1f.png" size="16,25" exported="true"/>
+    <image id="hovh1g" name="5(2)" folder="hovh15" qualityOption="source" file="hovh1g.png" size="16,24" exported="true"/>
+    <image id="hovh1h" name="4(2)" folder="hovh15" qualityOption="source" file="hovh1h.png" size="18,25" exported="true"/>
+    <font id="hovh1i" name="TowerFailLevelFont" folder="hovhb" file="hovh1i.fnt" exported="true"/>
+    <image id="hovh1j" name="发光绿" folder="gp6d1" qualityOption="source" file="hovh1j.png" size="146,146" exported="true"/>
+    <image id="hovh1k" name="发光蓝" folder="gp6d1" qualityOption="source" file="hovh1k.png" size="146,146" exported="true"/>
+    <image id="hovh1l" name="发光黄" folder="gp6d1" qualityOption="source" file="hovh1l.png" size="146,146" exported="true"/>
+    <image id="hovh1m" name="发光白" folder="gp6d1" qualityOption="source" file="hovh1m.png" size="146,146" exported="true"/>
+    <image id="hovh1n" name="获得" folder="gp6d1" qualityOption="source" file="hovh1n.png" size="101,27"/>
+    <image id="hovh1o" name="发光紫" folder="gp6d1" qualityOption="source" file="hovh1o.png" size="146,146" exported="true"/>
+    <component id="hovh1p" name="RewardItem" folder="gp6d0" file="hovh1p.xml" exported="true"/>
+    <component id="hovh1q" name="ShowRewardP" folder="gp6d0" file="hovh1q.xml"/>
+    <component id="ez9z1r" name="TowerPanel" folder="gp6d0" file="ez9z1r.xml"/>
+  </resources>
+  <publish name="Tower" genCode="true"/>
+</packageDescription>

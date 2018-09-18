@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="955,612" designImageAlpha="80">
+  <displayList>
+    <image id="n26" name="imgShuye3" src="x0conjo" pkg="0tyncec1" xy="15,429" group="n13"/>
+    <component id="n1" name="btnGoto" src="w5h8i" xy="10,20" group="n13"/>
+    <text id="n2" name="labelGoto" xy="75,35" size="166,32" group="n13" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="跳转至斗神印"/>
+    <image id="n3" name="imgBgSkillItems" src="w5h82" xy="39,177" group="n13"/>
+    <component id="n28" name="skillItem1" src="l6nql" xy="130,273" group="n13"/>
+    <component id="n4" name="skillItem2" src="w5h8d" xy="11,352" group="n13"/>
+    <component id="n5" name="skillItem3" src="w5h8d" xy="0,221" group="n13"/>
+    <component id="n27" name="skillItem4" src="w5h8d" xy="89,135" group="n13"/>
+    <component id="n7" name="skillItem5" src="w5h8d" xy="209,154" group="n13"/>
+    <text id="n11" name="labelTips" xy="40,536" size="241,42" group="n13" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="选中技能进行操作"/>
+    <group id="n13" name="groupLeft" xy="0,20" size="319,582" advanced="true" collapsed="true"/>
+    <image id="n24" name="imgShuye0" src="x0conjq" pkg="0tyncec1" xy="818,14" group="n23"/>
+    <image id="n25" name="imgShuye1" src="x0conjp" pkg="0tyncec1" xy="305,276" group="n23"/>
+    <image id="n9" name="imgFenge0" src="jsucnhg" pkg="0tyncec1" xy="330,0" size="16,612" group="n23"/>
+    <image id="n10" name="imgFenge1" src="gk0nnia" pkg="0tyncec1" xy="536,23" group="n23"/>
+    <text id="n12" name="labelSkillName" xy="559,29" size="173,38" group="n23" font="方正粗圆简体" fontSize="24" color="#058c9c" align="center" vAlign="middle" autoSize="none" text=""/>
+    <text id="n14" name="labelSkillDesc" xy="407,77" size="493,89" group="n23" font="方正粗圆简体" fontSize="22" color="#54595e" vAlign="middle" leading="6" autoSize="none" text="战士的入门剑术，也是最基础最牢靠的剑术。对敌人造成30点物理伤害，冷却时间1s"/>
+    <image id="n15" name="imgFenge" src="hx0xnip" pkg="0tyncec1" xy="441,187" size="425,11" group="n23"/>
+    <component id="n29" name="skillEffectCur" src="w5h8e" xy="382,223" group="n23"/>
+    <image id="n33" name="imgUpgradeArrow" src="s4zfnls" pkg="0tyncec1" xy="625,311" group="n23"/>
+    <component id="n30" name="skillEffectNext" src="w5h8e" xy="686,223" group="n23"/>
+    <component id="n32" name="skillEffectMax" src="w5h8e" xy="456,222" size="375,183" group="n23"/>
+    <text id="n16" name="labelMasteryTitle" xy="390,456" size="85,28" group="n23" font="方正粗圆简体" fontSize="20" color="#43515b" vAlign="middle" autoSize="none" text="熟练度："/>
+    <text id="n17" name="labelMasteryValue" xy="475,457" size="225,28" group="n23" font="方正粗圆简体" fontSize="20" color="#43515b" vAlign="middle" autoSize="none" text="10000/15450"/>
+    <component id="n18" name="masteryProcess" src="w5h8g" xy="394,490" size="477,13" group="n23">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n19" name="btnAddMastery" src="w5h8h" xy="878,479" group="n23"/>
+    <component id="n21" name="upgradeConsume" src="w5h8k" xy="575,512" group="n23"/>
+    <component id="n22" name="btnUpgrade" src="skqrnkp" pkg="0tyncec1" xy="577,552" size="151,56" group="n23">
+      <Button title="升级" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <text id="n34" name="labelSkillLearnTips" xy="466,430" size="391,28" group="n23" font="方正粗圆简体" fontSize="18" color="#43515b" align="center" vAlign="middle" autoSize="none" text="熟练度："/>
+    <group id="n23" name="groupRight" xy="305,0" size="650,612" advanced="true"/>
+  </displayList>
+</component>

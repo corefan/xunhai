@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="s68puhqj" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="j2mz0" name="image" folder=""/>
+    <folder id="j2mz1" name="component" folder=""/>
+    <component id="j2mz6" name="LoginBGComp" folder="j2mz1" file="j2mz6.xml" exported="true"/>
+    <component id="j2mz9" name="PhoneBindPanel" folder="j2mz1" file="j2mz9.xml" exported="true"/>
+    <image id="j2mza" name="tishidi" folder="j2mz0" qualityOption="source" file="j2mza.png" size="191,191" scale="9grid" scale9grid="43,33,98,124"/>
+    <image id="j2mzb" name="logo" folder="j2mz0" qualityOption="source" file="j2mzb.png" size="160,60"/>
+    <image id="j2mzc" name="btn_1" folder="j2mz0" qualityOption="source" file="j2mzc.png" size="423,66" scale9grid="5,5,9,7"/>
+    <image id="j2mzd" name="shuruxialakuang" folder="j2mz0" qualityOption="source" file="j2mzd.png" size="55,57" scale="9grid" scale9grid="16,20,19,17"/>
+    <component id="j2mze" name="AccountManagerPanel" folder="j2mz1" file="j2mze.xml" exported="true"/>
+    <image id="j2mzf" name="btn_2" folder="j2mz0" qualityOption="source" file="j2mzf.png" size="423,66" scale9grid="106,16,209,36"/>
+    <component id="j2mzg" name="CreateAccountPanel" folder="j2mz1" file="j2mzg.xml" exported="true"/>
+    <component id="j2mzh" name="LoginInfoItem" folder="j2mz1" file="j2mzh.xml" exported="true"/>
+    <image id="j2mzi" name="zhanghao" folder="j2mz0" qualityOption="source" file="j2mzi.png" size="34,36" exported="true"/>
+    <image id="j2mzj" name="mima" folder="j2mz0" qualityOption="source" file="j2mzj.png" size="34,36" exported="true"/>
+    <component id="j2mzk" name="LoginPanel" folder="j2mz1" file="j2mzk.xml" exported="true"/>
+    <component id="j2mzm" name="BtnForgetPassword" folder="j2mz1" file="j2mzm.xml" exported="true"/>
+    <image id="j2mzn" name="btn_xiala" folder="j2mz0" qualityOption="source" file="j2mzn.png" size="39,35"/>
+    <image id="j2mzo" name="xuanzhongkuang" folder="j2mz0" qualityOption="source" file="j2mzo.png" size="64,62" scale="9grid" scale9grid="19,21,26,19"/>
+    <component id="j2mzt" name="AccountItem" folder="j2mz1" file="j2mzt.xml" exported="true"/>
+    <component id="j2mzu" name="AccountContent" folder="j2mz1" file="j2mzu.xml" exported="true"/>
+    <component id="j2mzv" name="BtnComboBox" folder="j2mz1" file="j2mzv.xml"/>
+    <component id="hmasx" name="VisitorLoginPanel" folder="j2mz1" file="hmasx.xml" exported="true"/>
+    <image id="hmas11" name="dianjixuanfu" folder="j2mz0" qualityOption="source" file="hmas11.png" size="126,33"/>
+    <image id="v18512" name="xuanfudi" folder="j2mz0" qualityOption="source" file="v18512.png" size="80,66" scale="9grid" scale9grid="30,30,21,8"/>
+    <image id="s6h913" name="dengluyouxi" folder="j2mz0" qualityOption="source" file="s6h913.png" size="130,32" exported="true"/>
+    <component id="gkfb15" name="BtnSelectServer" folder="j2mz1" file="gkfb15.xml" exported="true"/>
+    <component id="xn4519" name="ResetPasswordPanel" folder="j2mz1" file="xn4519.xml" exported="true"/>
+    <image id="ktxi1b" name="bg" folder="j2mz0" qualityOption="source" file="ktxi1b.jpg" size="1334,750"/>
+    <image id="ncyp1c" name="newGameName" folder="j2mz0" qualityOption="source" file="ncyp1c.png" size="640,390"/>
+    <image id="v2kx1f" name="wjmm" folder="j2mz0" qualityOption="source" file="v2kx1f.png" size="89,23"/>
+    <image id="v2kx1g" name="r_arraw" folder="j2mz0" qualityOption="source" file="v2kx1g.png" size="30,45"/>
+    <image id="v2kx1k" name="svrbg" folder="j2mz0" qualityOption="source" file="v2kx1k.png" size="491,230" scale="9grid" scale9grid="123,58,246,116"/>
+    <image id="v2kx1l" name="dlyx0" folder="j2mz0" qualityOption="source" file="v2kx1l.png" size="450,67"/>
+    <image id="v2kx1m" name="dlyx1" folder="j2mz0" qualityOption="source" file="v2kx1m.png" size="450,67"/>
+    <component id="ifx51n" name="LoginBtn" folder="j2mz1" file="ifx51n.xml"/>
+  </resources>
+  <publish name="Login" genCode="true"/>
+</packageDescription>

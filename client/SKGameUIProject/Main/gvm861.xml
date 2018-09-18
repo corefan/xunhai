@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="75,75" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n9" name="BtnAgentiaBg" src="wdv796" xy="5,5" size="80,80"/>
+    <loader id="n14" name="Shadow" xy="19,2" size="44,62" fill="scale"/>
+    <loader id="n11" name="BtnAgentiaIcon" xy="19,12" size="48,52" align="center" vAlign="middle" fill="scale" playing="false"/>
+    <image id="n2" name="BtnAgentiaCdIcon" src="gvm863" xy="10,9" size="55,55" alpha="0.7" color="#333333" fillMethod="radial360" fillClockwise="false"/>
+    <text id="n8" name="BtnAgentianumTxt" xy="3,45" size="71,23" font="方正粗圆简体" fontSize="17" color="#cdcbce" align="center" vAlign="middle" autoSize="none" strokeColor="#171823" text="0">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <text id="n12" name="BtnAgentiacdTxt" xy="19,20" size="38,30" font="方正粗圆简体" fontSize="24" color="#cdcbce" align="center" vAlign="middle" autoSize="none" strokeColor="#171823" text="">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <text id="n13" name="BtnAutoTxt" xy="0,20" size="74,30" font="方正粗圆简体" fontSize="24" color="#cdcbce" align="center" vAlign="middle" autoSize="none" strokeColor="#171823" text="">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <image id="n15" name="lock" src="igzgnk7" pkg="0tyncec1" xy="29,23" scale="0.4,0.4" visible="false"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>

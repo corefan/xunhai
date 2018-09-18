@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="396,152">
+  <displayList>
+    <loader id="n7" name="bg" xy="0,0" size="396,109" fill="scaleFree"/>
+    <text id="n2" name="itemNameText" xy="115,11" size="77,28" font="方正粗圆简体" fontSize="24" color="#3dc476" text="灵魂刀"/>
+    <text id="n3" name="itemLevelText" xy="115,48" size="47,24" font="方正粗圆简体" fontSize="20" color="#bad4dc" ubb="true" text="50级"/>
+    <component id="n9" name="icon" src="ek9hnha" pkg="0tyncec1" xy="7,13"/>
+    <text id="n4" name="careerText" xy="115,80" size="50,24" font="方正粗圆简体" fontSize="20" color="#bad4dc" ubb="true" text="职业:"/>
+    <text id="n5" name="itemType" xy="262,48" size="85,24" font="方正粗圆简体" fontSize="20" color="#bad4dc" text="装备种类"/>
+    <loader id="n8" name="compareMask" xy="352,117" size="23,27" group="n13" align="center" vAlign="middle" fill="scaleMatchHeight"/>
+    <text id="n10" name="powerText" xy="12,114" size="211,33" group="n13" font="ui://0tyncec1x0conjj" fontSize="20" autoSize="height" text="i2856"/>
+    <text id="n11" name="addText" xy="239,114" size="111,33" group="n13" font="方正粗圆简体" fontSize="20" color="#bad4dc" vAlign="middle" ubb="true" autoSize="none" text="(+321312)"/>
+    <image id="n12" name="n12" src="igkdnlb" pkg="0tyncec1" xy="5,149" size="380,2" group="n13"/>
+    <group id="n13" name="n13" xy="5,114" size="380,37"/>
+  </displayList>
+</component>

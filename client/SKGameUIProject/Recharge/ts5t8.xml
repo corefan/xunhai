@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="180,442" designImageOffsetX="-503" designImageOffsetY="-262">
+  <displayList>
+    <image id="n0" name="n0" src="ts5t5" xy="2,-2"/>
+    <image id="n2" name="n2" src="ts5t6" xy="43,28"/>
+    <text id="n3" name="txtNumMoney" xy="19,65" size="56,24" font="方正粗圆简体" fontSize="20" color="#ffe400" align="right" vAlign="middle" ubb="true" autoSize="none" strokeColor="#874d42" strokeSize="2" singleLine="true" text="9999"/>
+    <text id="n4" name="n4" xy="72,65" size="101,24" font="方正粗圆简体" fontSize="20" color="#f0fcee" vAlign="middle" autoSize="height" strokeColor="#874d42" strokeSize="2" singleLine="true" text="元 可领取"/>
+    <component id="n6" name="reardCont" src="t5hdnfx" pkg="0tyncec1" xy="51,96" size="100,280"/>
+    <component id="n8" name="btnIsLingqu" src="skqrnkp" pkg="0tyncec1" xy="29,376" size="140,51">
+      <Button title="充值" titleColor="#000000" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <image id="n9" name="yiLQicon" src="ts5td" xy="52,381"/>
+  </displayList>
+</component>

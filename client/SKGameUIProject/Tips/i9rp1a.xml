@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="391,138">
+  <displayList>
+    <image id="n2" name="n2" src="igkdnlb" pkg="0tyncec1" xy="8,3" size="380,2"/>
+    <text id="n3" name="title" xy="47,13" size="198,24" font="方正粗圆简体" fontSize="20" color="#ffa200" vAlign="middle" leading="0" ubb="true" autoSize="none" text=""/>
+    <loader id="n4" name="icon" xy="13,0" size="50,50" align="center" vAlign="middle" fill="scale"/>
+    <text id="n5" name="desc" xy="23,44" size="369,92" font="方正粗圆简体" fontSize="20" color="#bad4dc" leading="1" ubb="true" autoSize="none" text=""/>
+  </displayList>
+  <relation target="n5" sidePair="bottomext-bottom"/>
+</component>

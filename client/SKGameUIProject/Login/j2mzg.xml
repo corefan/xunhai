@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImage="ui://s68puhqjj2mz3" designImageAlpha="80">
+  <displayList>
+    <component id="n1" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <image id="n0" name="bg0" src="j2mza" xy="414,156" size="492,445"/>
+    <image id="n2" name="bg1" src="j2mzb" xy="595,194" visible="false"/>
+    <component id="n4" name="userNameItem" src="j2mzh" xy="447,268"/>
+    <component id="n5" name="passwordItem0" src="j2mzh" xy="447,331"/>
+    <component id="n6" name="passwordItem1" src="j2mzh" xy="447,394"/>
+    <component id="n7" name="btnCreateAccount" src="tnbmnka" pkg="0tyncec1" xy="455,475" size="420,60">
+      <Button title="注册" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzf"/>
+    </component>
+    <component id="n8" name="btnClose" src="t5hdnfq" pkg="0tyncec1" xy="825,182" size="60,60">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+  </displayList>
+</component>

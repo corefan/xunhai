@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="546,420" opaque="false">
+  <controller name="c1" pages="0,,1,,2,,3,,4,,5,,6,,7,,8," selected="0"/>
+  <displayList>
+    <component id="n0" name="item1" src="n1gar" xy="0,0">
+      <Button controller="c1" page="1"/>
+    </component>
+    <component id="n1" name="item2" src="n1gar" xy="-1,100">
+      <Button controller="c1" page="2"/>
+    </component>
+    <component id="n2" name="item3" src="n1gar" xy="-1,200">
+      <Button controller="c1" page="3"/>
+    </component>
+    <component id="n3" name="item4" src="n1gar" xy="452,0">
+      <Button controller="c1" page="4"/>
+    </component>
+    <component id="n5" name="item5" src="n1gar" xy="452,100">
+      <Button controller="c1" page="5"/>
+    </component>
+    <component id="n6" name="item6" src="n1gar" xy="452,200">
+      <Button controller="c1" page="6"/>
+    </component>
+    <component id="n7" name="item7" src="n1gar" xy="-1,300">
+      <Button controller="c1" page="7"/>
+    </component>
+    <component id="n8" name="item8" src="n1gar" xy="452,300">
+      <Button controller="c1" page="8"/>
+    </component>
+  </displayList>
+</component>

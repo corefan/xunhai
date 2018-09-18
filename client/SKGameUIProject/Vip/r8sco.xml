@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="265,116" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n14" name="n14" src="rgh0nl7" pkg="0tyncec1" xy="-3,-3" size="272,122"/>
+    <image id="n8" name="n8" src="r8sc5" xy="-1,-1" size="290,118">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <loader id="n0" name="icon" xy="0,0" size="264,116" align="center" vAlign="middle"/>
+    <text id="n3" name="resNum" xy="115,73" size="93,29" fontSize="22" color="#2e3341" ubb="true" autoSize="height" text="6666元"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

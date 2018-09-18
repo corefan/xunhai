@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="0oudtuxp" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="pdi60" name="Image" folder=""/>
+    <folder id="pdi61" name="Component" folder=""/>
+    <component id="pdi62" name="PlayerInfoUI" folder="pdi61" file="pdi62.xml" exported="true"/>
+    <image id="pdi64" name="装备2" folder="pdi60" qualityOption="source" file="pdi64.png" size="57,83" exported="true"/>
+    <image id="pdi65" name="装备" folder="pdi60" qualityOption="source" file="pdi65.png" size="57,83" exported="true"/>
+    <image id="pdi66" name="锤子" folder="pdi60" qualityOption="source" file="pdi66.png" size="56,55" exported="true"/>
+    <image id="pdi67" name="锤子2" folder="pdi60" qualityOption="source" file="pdi67.png" size="63,63" exported="true"/>
+    <component id="pdi68" name="PlayerRole" folder="pdi61" file="pdi68.xml" exported="true"/>
+    <component id="pdi6b" name="Touch" folder="pdi61" file="pdi6b.xml" exported="true"/>
+    <component id="pdi6c" name="ExpProbar" folder="pdi61" file="pdi6c.xml" exported="true"/>
+    <image id="pdi6d" name="进度条" folder="pdi60" qualityOption="source" file="pdi6d.png" size="257,12" exported="true"/>
+    <image id="pdi6e" name="进度条2" folder="pdi60" qualityOption="source" file="pdi6e.png" size="134,10" scale="9grid" scale9grid="34,0,68,10" exported="true"/>
+    <image id="pdi6f" name="进度条底" folder="pdi60" qualityOption="source" file="pdi6f.png" size="347,28" exported="true"/>
+    <component id="cws9g" name="PropInfo" folder="pdi61" file="cws9g.xml" exported="true"/>
+    <component id="cws9h" name="PropItem" folder="pdi61" file="cws9h.xml" exported="true"/>
+    <image id="cws9i" name="战力底" folder="pdi60" qualityOption="source" file="cws9i.png" size="308,44" exported="true" scale="9grid" scale9grid="77,11,154,22"/>
+    <image id="cws9j" name="文字底" folder="pdi60" qualityOption="source" file="cws9j.png" size="32,31" scale="9grid" scale9grid="8,8,16,15" exported="true"/>
+    <image id="cws9k" name="帮会图标底" folder="pdi60" qualityOption="source" file="cws9k.png" size="305,80" exported="true"/>
+    <image id="cws9l" name="帮会图标" folder="pdi60" qualityOption="source" file="cws9l.png" size="95,72" exported="true"/>
+    <image id="cws9m" name="灰色按钮" folder="pdi60" qualityOption="source" file="cws9m.png" size="153,52" exported="true"/>
+    <component id="cws9n" name="PropInfoBtn" folder="pdi61" file="cws9n.xml" exported="true"/>
+    <image id="n1gao" name="分割线" folder="pdi60" qualityOption="source" file="n1gao.png" size="299,2" exported="true"/>
+    <component id="n1gap" name="PropItemSplitLine" folder="pdi61" file="n1gap.xml" exported="true"/>
+    <component id="n1gaq" name="PlayerEquipList" folder="pdi61" file="n1gaq.xml" exported="true"/>
+    <component id="n1gar" name="PlayerEquipItem" folder="pdi61" file="n1gar.xml" exported="true"/>
+    <component id="fqe0t" name="PlayerEquipSkepList" folder="pdi61" file="fqe0t.xml" exported="true"/>
+    <component id="fqe0v" name="PlayerEquipSkepListItem" folder="pdi61" file="fqe0v.xml" exported="true"/>
+    <image id="fqe0z" name="花纹2" folder="pdi60" qualityOption="source" file="fqe0z.png" size="64,7" exported="true"/>
+    <image id="fqe010" name="花纹" folder="pdi60" qualityOption="source" file="fqe010.png" size="64,7" exported="true"/>
+    <component id="fqe012" name="CloseEquipListBtn" folder="pdi61" file="fqe012.xml"/>
+    <image id="ckrk14" name="右边底" folder="pdi60" qualityOption="source" file="ckrk14.png" size="387,624" exported="true"/>
+    <component id="hemd15" name="ClickMask" folder="pdi61" file="hemd15.xml"/>
+    <image id="gv0l3g" name="clothes_s" folder="pqun43" qualityOption="source" file="gv0l3g.png" size="53,42" exported="true"/>
+    <image id="gv0l3h" name="shoes_s" folder="pqun43" qualityOption="source" file="gv0l3h.png" size="35,44" exported="true"/>
+    <image id="gv0l3i" name="necklace_s" folder="pqun43" qualityOption="source" file="gv0l3i.png" size="41,39" exported="true"/>
+    <image id="gv0l3k" name="ring_s" folder="pqun43" qualityOption="source" file="gv0l3k.png" size="38,42" exported="true"/>
+    <image id="gv0l3l" name="sword_s" folder="pqun43" qualityOption="source" file="gv0l3l.png" size="36,47" exported="true"/>
+    <image id="gv0l3m" name="wrist_s" folder="pqun43" qualityOption="source" file="gv0l3m.png" size="38,37" exported="true"/>
+    <image id="gv0l3n" name="cap_s" folder="pqun43" qualityOption="source" file="gv0l3n.png" size="36,45" exported="true"/>
+    <image id="gv0l3o" name="shield_s" folder="pqun43" qualityOption="source" file="gv0l3o.png" size="38,44" exported="true"/>
+    <component id="gv0l3p" name="upORdown" folder="pdi61" file="gv0l3p.xml"/>
+    <image id="ueo73q" name="背景(2)" folder="pdi60" qualityOption="source" file="ueo73q.png" size="456,440" exported="true"/>
+    <component id="wirr3r" name="SpecialPropBtn" folder="pdi61" file="wirr3r.xml"/>
+    <image id="qjex3w" name="底（387X320）" folder="pdi60" qualityOption="source" file="qjex3w.png" size="41,320" scale="9grid" scale9grid="11,80,19,160"/>
+    <component id="qjex3x" name="DescBaseProUI" folder="pdi61" file="qjex3x.xml" exported="true"/>
+    <component id="qjex3y" name="DescSpecialProUI" folder="pdi61" file="qjex3y.xml" exported="true"/>
+    <component id="qjex3z" name="InfoItem" folder="pdi61" file="qjex3z.xml"/>
+    <folder id="qjex40" name="Btn" folder=""/>
+    <component id="qjex41" name="SimpleCloseBtn" folder="qjex40" file="qjex41.xml"/>
+    <component id="e0wd42" name="PlayerEquipListPage" folder="pdi61" file="e0wd42.xml"/>
+    <folder id="pqun43" name="res" folder=""/>
+    <component id="mllx44" name="OtherPlayerInfoPanel" folder="pdi61" file="mllx44.xml" exported="true"/>
+    <image id="mllx45" name="zhanlidi" folder="pdi60" qualityOption="source" file="mllx45.png" size="252,33"/>
+    <image id="mllx46" name="banghuihuawen" folder="pdi60" qualityOption="source" file="mllx46.png" size="77,30" scale="9grid" scale9grid="20,8,37,14"/>
+  </resources>
+  <publish name="PlayerInfo" genCode="true"/>
+</packageDescription>

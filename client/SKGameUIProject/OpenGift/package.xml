@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ls8mguzv" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="rmqh0" name="com" folder=""/>
+    <folder id="rmqh1" name="img" folder=""/>
+    <image id="rmqh2" name="lingqujiangli" folder="rmqh1" qualityOption="source" file="rmqh2.png" size="129,32"/>
+    <image id="rmqh3" name="buzaitishi" folder="rmqh1" qualityOption="source" file="rmqh3.png" size="196,32"/>
+    <image id="rmqh4" name="btn_kaifutehuiguanbi" folder="rmqh1" qualityOption="source" file="rmqh4.png" size="46,47"/>
+    <image id="rmqh5" name="bg_kaifutehuidi" folder="rmqh1" qualityOption="source" file="rmqh5.png" size="998,593"/>
+    <image id="rmqh6" name="字色字号" folder="rmqh1" qualityOption="source" file="rmqh6.png" size="1334,750"/>
+    <image id="rmqh7" name="示意图" folder="rmqh1" qualityOption="source" file="rmqh7.png" size="1334,750"/>
+    <image id="rmqh8" name="wuqiwenzidi" folder="rmqh1" qualityOption="source" file="rmqh8.png" size="46,359"/>
+    <image id="rmqh9" name="wuqimingzi3" folder="rmqh1" qualityOption="source" file="rmqh9.png" size="111,174"/>
+    <image id="rmqha" name="wuqimingzi2" folder="rmqh1" qualityOption="source" file="rmqha.png" size="111,192"/>
+    <image id="rmqhb" name="wuqimingzi1" folder="rmqh1" qualityOption="source" file="rmqhb.png" size="100,186"/>
+    <image id="rmqhc" name="wenzi" folder="rmqh1" qualityOption="source" file="rmqhc.png" size="452,101"/>
+    <component id="rmqhd" name="OpenGiftPanel" folder="rmqh0" file="rmqhd.xml" exported="true"/>
+    <component id="rmqhf" name="BtnBuy" folder="rmqh0" file="rmqhf.xml"/>
+    <image id="rmqhg" name="woyaogoumai" folder="rmqh1" qualityOption="source" file="rmqhg.png" size="130,32"/>
+    <image id="rmqhh" name="fasongyoujian" folder="rmqh1" qualityOption="source" file="rmqhh.png" size="261,32"/>
+    <component id="rmqhi" name="btnClose" folder="rmqh0" file="rmqhi.xml"/>
+  </resources>
+  <publish name="OpenGift" genCode="true"/>
+</packageDescription>

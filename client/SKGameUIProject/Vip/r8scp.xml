@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="296,31" extention="Label">
+  <displayList>
+    <image id="n0" name="sign" src="r8scb" xy="2,6"/>
+    <text id="n1" name="tequanDes" xy="23,1" size="271,29" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text="特权[color=#049dc9]描述[/color]">
+      <relation target="" sidePair="width-width"/>
+    </text>
+  </displayList>
+  <relation target="n1" sidePair="height-height"/>
+</component>

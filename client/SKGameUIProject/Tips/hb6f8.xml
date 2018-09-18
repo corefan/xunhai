@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,440" overflow="scroll">
+  <displayList>
+    <image id="n0" name="bg" src="hrgcnng" pkg="0tyncec1" xy="-7,-8" size="413,461"/>
+    <component id="n4" name="TipsTopComp" src="hb6f9" xy="6,5"/>
+    <image id="n1" name="IsEquipMask" src="eieknko" pkg="0tyncec1" xy="323,4"/>
+    <component id="n9" name="base" src="owh818" xy="6,152" size="384,47"/>
+    <component id="n10" name="extra" src="owh811" xy="0,201"/>
+    <component id="n11" name="wakan" src="owh812" xy="0,238"/>
+    <component id="n12" name="brand" src="owh813" xy="0,321"/>
+  </displayList>
+  <relation target="n0" sidePair="bottomext-bottom"/>
+</component>

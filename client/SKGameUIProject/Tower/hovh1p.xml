@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="146,146">
+  <displayList>
+    <loader id="n0" name="bg" xy="0,0" size="146,146" url="ui://jf5x839xhovh1m"/>
+    <loader id="n4" name="quality" xy="27,26" size="50,30" url="ui://0pzzz7o0d3t626" align="center" vAlign="middle" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <loader id="n2" name="icon" xy="33,33" size="80,81" fill="scaleMatchWidth"/>
+    <text id="n3" name="num" xy="44,86" size="67,27" font="方正粗圆简体" fontSize="23" color="#e5e5e5" align="center" vAlign="middle" strokeColor="#2e4552" strokeSize="2" text="10000">
+      <relation target="n0" sidePair="right-right"/>
+    </text>
+  </displayList>
+</component>

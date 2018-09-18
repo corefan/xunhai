@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImage="ui://yalu98wx8y9r6" designImageAlpha="80">
+  <displayList>
+    <graph id="n8" name="mask" xy="0,0" size="1334,750" alpha="0.65" type="rect" fillColor="#ff000000"/>
+    <loader id="n9" name="loaderBG" xy="75,186" size="50,50"/>
+    <image id="n2" name="imageTips" src="8y9r2" xy="629,402"/>
+    <text id="n3" name="labelDate" xy="618,431" size="477,40" font="方正粗圆简体" fontSize="22" color="#92ffa1" vAlign="middle" autoSize="none" text="活动时间："/>
+    <component id="n5" name="btnEquipBoxOpen" src="kozm8" xy="651,488"/>
+    <component id="n7" name="btnClose" src="l2b8nnq" pkg="0tyncec1" xy="977,223" size="23,23">
+      <Button icon="ui://yalu98wx8y9r5"/>
+    </component>
+  </displayList>
+</component>

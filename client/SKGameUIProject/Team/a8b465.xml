@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="630,510">
+  <displayList>
+    <image id="n10" name="n10" src="x0coniw" pkg="0tyncec1" xy="0,0" size="630,510"/>
+    <image id="n11" name="n11" src="x0conix" pkg="0tyncec1" xy="54,55" size="526,354"/>
+    <component id="n1" name="appplyConn" src="t5hdnfw" pkg="0tyncec1" xy="64,65" size="504,334"/>
+    <text id="n5" name="n5" xy="208,2" size="225,37" font="方正粗圆简体" fontSize="20" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="申请列表"/>
+    <component id="n9" name="clAutoAgree" src="9u5tnlj" pkg="0tyncec1" xy="65,441" size="126,27">
+      <Button checked="true" title="自动同意"/>
+    </component>
+    <component id="n14" name="btnClose2" src="skqrnkp" pkg="0tyncec1" xy="504,-8" size="108,64">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <component id="n16" name="btnClear" src="tnbmnka" pkg="0tyncec1" xy="448,421" size="130,49">
+      <Button title="清空列表" icon="ui://0tyncec1x0conj0"/>
+    </component>
+  </displayList>
+</component>

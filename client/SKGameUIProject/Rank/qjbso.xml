@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="234,62" extention="Button">
+  <displayList>
+    <image id="n0" name="n0" src="qjbsp" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2" name="colName5" xy="23,10" size="185,38" font="方正粗圆简体" fontSize="20" color="#495e70" align="center" vAlign="middle" autoSize="none" text="战斗力">
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

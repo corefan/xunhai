@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImage="ui://s68puhqjj2mz4" designImageAlpha="80">
+  <displayList>
+    <component id="n5" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <image id="n0" name="bg" src="j2mza" xy="412,138" size="492,398"/>
+    <image id="n1" name="bgGameName" src="j2mzb" xy="586,177" visible="false"/>
+    <component id="n2" name="btnCreateAccount" src="tnbmnka" pkg="0tyncec1" xy="449,259" size="420,60">
+      <Button title="创建账号" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzf" selectedIcon="ui://0qk3a0fjj2mzo"/>
+    </component>
+    <component id="n3" name="btnLogin" src="tnbmnka" pkg="0tyncec1" xy="449,329" size="420,60">
+      <Button title="账号登录" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzf" selectedIcon="ui://0qk3a0fjj2mzo"/>
+    </component>
+    <component id="n4" name="btnVisitorLogin" src="tnbmnka" pkg="0tyncec1" xy="449,399" size="420,60">
+      <Button title="游客登录" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzc" selectedIcon="ui://0qk3a0fjj2mzo"/>
+    </component>
+  </displayList>
+</component>

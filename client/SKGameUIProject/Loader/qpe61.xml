@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label">
+  <controller name="c1" pages="0,tiantiAnimHide,1,tiantiAnimShow" selected="0" transitions="*-0=t1,*-1=t0"/>
+  <displayList>
+    <loader id="n7" name="icon" xy="0,0" size="1334,750" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <component id="n14" name="loaderBar" src="syhtg" xy="291,686">
+      <ProgressBar max="100"/>
+    </component>
+    <text id="n15" name="loadingTips" xy="76,641" size="1130,52" hideByEditor="true" font="方正粗圆简体" fontSize="24" color="#33cc33" align="center" vAlign="middle" letterSpacing="1" ubb="true" autoSize="none" strokeColor="#006666" text=""/>
+    <component id="n16" name="tiantiLeft" src="apkz1a" xy="73,174" hideByEditor="true" visible="false"/>
+    <component id="n17" name="tiantiRight" src="apkz1b" xy="606,174" hideByEditor="true" visible="false"/>
+    <image id="n18" name="n18" src="apkz12" xy="544,216" visible="false"/>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Visible" target="n17" value="true"/>
+    <item time="0" type="Visible" target="n18" value="false"/>
+    <item time="0" type="Visible" target="n16" value="true"/>
+    <item time="0" type="XY" target="n16" tween="true" startValue="-319,174" endValue="73,174" duration="6" ease="Linear"/>
+    <item time="0" type="XY" target="n17" tween="true" startValue="1039,174" endValue="606,174" duration="6" ease="Linear"/>
+    <item time="6" type="Visible" target="n18" value="false"/>
+    <item time="6" type="XY" target="n16" tween="true" startValue="73,174" endValue="77,138" duration="6" ease="Sine.Out"/>
+    <item time="6" type="XY" target="n17" tween="true" startValue="606,174" endValue="593,188" duration="6"/>
+    <item time="12" type="Pivot" target="n18" value="0.5,0.5"/>
+    <item time="12" type="Scale" target="n18" tween="true" startValue="3,3" endValue="1,1" duration="6" ease="Bounce.In"/>
+    <item time="12" type="Shake" target="n18" value="3,0.5"/>
+    <item time="12" type="Visible" target="n18" value="true"/>
+    <item time="12" type="XY" target="n16" tween="true" startValue="77,138" ease="Linear"/>
+    <item time="12" type="XY" target="n17" tween="true" startValue="593,188" ease="Linear"/>
+    <item time="18" type="Scale" target="n18" tween="true" startValue="1,1"/>
+    <item time="18" type="Shake" target="n18" value="3,0.5"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="Visible" target="n16" value="false"/>
+    <item time="0" type="Visible" target="n17" value="false"/>
+    <item time="0" type="Visible" target="n18" value="false"/>
+  </transition>
+</component>

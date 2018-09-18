@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Button" initName="bigBg" designImage="ui://0tyncec1zk42nn8" designImageAlpha="25">
+  <controller name="_tabCtrl" pages="" selected="-1"/>
+  <displayList>
+    <graph id="n13" name="alpha" xy="0,0" size="1334,750" type="rect" lineSize="0" lineColor="#01000000" fillColor="#a6000000"/>
+    <loader id="n12" name="bg" xy="642,374" size="50,50" touchable="false" align="center" vAlign="middle" playing="false"/>
+    <image id="n7" name="topBg" src="n2mych" xy="291,0" size="751,47" visible="false"/>
+    <component id="n10" name="topContainer" src="t5hdnfx" xy="0,0"/>
+    <loader id="n6" name="icon" xy="582,54" size="169,63" touchable="false" align="center" vAlign="middle" playing="false"/>
+    <text id="n1" name="title" xy="536,73" size="262,30" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="height" text=""/>
+    <component id="n2" name="close" src="zk42nn7" xy="1114,28" size="108,71">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+  <Button/>
+</component>

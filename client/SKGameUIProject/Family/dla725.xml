@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="945,592">
+  <displayList>
+    <image id="n1" name="bg" src="smucy" xy="0,0" size="943,513"/>
+    <component id="n2" name="btnexitF" src="dla728" xy="769,527"/>
+    <text id="n3" name="text" xy="12,538" size="95,26" font="方正粗圆简体" fontSize="22" autoSize="height" text="在线成员"/>
+    <text id="n4" name="numberText" xy="108,539" size="111,26" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" autoSize="height" text="50/50"/>
+    <list id="n5" name="mmberItemList" xy="4,6" size="934,501" overflow="scroll" margin="0,0,0,0" defaultItem="ui://sw9glvixdla71v">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

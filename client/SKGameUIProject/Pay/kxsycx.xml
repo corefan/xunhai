@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="288,293" extention="Button" designImage="ui://zuudarvckxsydf" designImageOffsetX="-117" designImageOffsetY="-424" designImageAlpha="27">
+  <displayList>
+    <loader id="n36" name="icon" xy="0,0" size="288,293"/>
+    <component id="n45" name="shouchong" src="t5hdnfy" pkg="0tyncec1" xy="22,26" size="64,74"/>
+    <component id="n46" name="hengfu" src="t5hdnfy" pkg="0tyncec1" xy="189,34" size="70,73"/>
+    <component id="n48" name="chongZhi" src="kxsycz" xy="42,48"/>
+    <component id="n55" name="yuanbao" src="t5hdnfy" pkg="0tyncec1" xy="48,71" size="180,180"/>
+    <component id="n49" name="canGet" src="kxsyd0" xy="41,247"/>
+    <component id="n50" name="firstSong" src="kxsycy" xy="30,98">
+      <Label title="100"/>
+    </component>
+  </displayList>
+  <Button/>
+</component>

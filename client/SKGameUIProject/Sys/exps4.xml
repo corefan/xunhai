@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="375,291" overflow="scroll">
+  <displayList>
+    <graph id="n8" name="bg" xy="0,0" size="375,28" type="rect" fillColor="#ff336666">
+      <relation target="n9" sidePair="width-width,height-height"/>
+    </graph>
+    <richtext id="n9" name="txtContent" xy="2,2" size="371,26" fontSize="20" ubb="true" autoSize="height" text="">
+      <relation target="" sidePair="width-width,left-left"/>
+    </richtext>
+  </displayList>
+</component>

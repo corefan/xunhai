@@ -1,0 +1,10 @@
+<component size="90,90" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n4" name="PictureBg" src="smuc1s" xy="4,3"/>
+    <loader id="n5" name="PlayerIcon" xy="8,2" size="75,84" url="ui://0mti9cudk7kh7r" align="center" vAlign="middle" fill="scale"/>
+    <image id="n6" name="LvBg" src="smuc1t" xy="56,53"/>
+    <text id="n7" name="PlayerLv" xy="56,58" size="32,24" font="方正粗圆简体" fontSize="18" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" text="1"/>
+  </displayList>
+  <Button/>
+</component>

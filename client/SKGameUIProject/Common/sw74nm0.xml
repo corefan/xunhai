@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="74,29" extention="Button" initName="radio#">
+  <displayList>
+    <loader id="n7" name="icon" xy="0,0" size="74,29" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n9" name="title" xy="0,0" size="74,29" font="方正粗圆简体" fontSize="19" color="#3e3e3e" align="center" vAlign="middle" ubb="true" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

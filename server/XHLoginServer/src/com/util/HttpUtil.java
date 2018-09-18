@@ -51,7 +51,7 @@ public class HttpUtil {
          // 声明SSL上下文
          javax.net.ssl.SSLContext ssl_context = null;
          try {
-             ssl_context = javax.net.ssl.SSLContext.getInstance("SSL");
+             ssl_context = javax.net.ssl.SSLContext.getInstance("TLS");
              ssl_context.init(null, new javax.net.ssl.TrustManager[]{
                  new javax.net.ssl.X509TrustManager() {
                      @Override
@@ -86,10 +86,12 @@ public class HttpUtil {
              http_url_connection = (javax.net.ssl.HttpsURLConnection)(new java.net.URL(url)).openConnection();
              http_url_connection.setDoInput(true);
              http_url_connection.setDoOutput(true);
-             http_url_connection.setRequestMethod("POST");
-//             http_url_connection.setRequestProperty("Content-Length", String.valueOf(parameter.length));
-             http_url_connection.setRequestProperty("Content-Type", content_type);
              http_url_connection.setUseCaches(false);
+             http_url_connection.setRequestMethod("POST");
+             http_url_connection.setRequestProperty("Content-Type", content_type);
+             http_url_connection.setRequestProperty("charset", "utf-8");
+             http_url_connection.setRequestProperty("Content-length",
+                     String.valueOf(parameter.length));
              if (null!=base64) {
                  http_url_connection.setRequestProperty("Authorization", "Basic "+new String(java.util.Base64.getEncoder().encode(base64.getBytes("utf-8")), "utf-8"));
              }
@@ -266,7 +268,7 @@ public class HttpUtil {
 	        client.newCall(request).enqueue(new Callback() {
 	            @Override
 	            public void onFailure(Call call, IOException e) {
-	                LogUtil.error("fail:",e);
+	                LogUtil.error("okHttpPost fail:",e);
 	            }
 
 	            @Override

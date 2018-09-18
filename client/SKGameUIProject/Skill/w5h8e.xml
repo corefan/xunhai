@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="236,183" designImage="ui://tv6313j0w5h87" designImageAlpha="21">
+  <displayList>
+    <image id="n0" name="img_title_bg" src="uchhnl1" pkg="0tyncec1" xy="1,0" size="235,34">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1" name="img_content_bg" src="gk0nni9" pkg="0tyncec1" xy="0,32" size="236,151">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2" name="label_title" xy="28,3" size="172,27" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="当前效果">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

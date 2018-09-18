@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="40,40">
+  <controller name="c_show" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n3" name="n3" src="mx4pnky" pkg="0tyncec1" xy="0,0" locked="true">
+      <gearDisplay controller="c_show" pages="1"/>
+    </image>
+    <image id="n4" name="n4" src="mx4pnkx" pkg="0tyncec1" xy="0,0" locked="true">
+      <gearDisplay controller="c_show" pages="0"/>
+    </image>
+  </displayList>
+</component>

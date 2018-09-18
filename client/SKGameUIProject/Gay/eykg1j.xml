@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="482,106">
+  <displayList>
+    <image id="n0" name="msgBg" src="eykg1k" xy="85,55" size="439,45"/>
+    <text id="n1" name="nameText" xy="97,26" size="220,26" font="方正粗圆简体" fontSize="20" color="#2e3341" vAlign="middle" autoSize="none" text="玩家名字只有七个字"/>
+    <component id="n2" name="playerIcon" src="z03enli" pkg="0tyncec1" xy="5,13"/>
+    <richtext id="n3" name="msgText" xy="102,65" size="406,26" font="方正粗圆简体" fontSize="22" color="#40332e" vAlign="middle" leading="6" ubb="true" autoSize="height" text=""/>
+    <loader id="n4" name="vip" xy="98,2" size="50,50" align="center" vAlign="middle"/>
+    <text id="n5" name="timeTxt" xy="302,25" size="205,31" fontSize="20" align="right" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="2017-11-30 14：50"/>
+  </displayList>
+  <relation target="n0" sidePair="height-height"/>
+</component>

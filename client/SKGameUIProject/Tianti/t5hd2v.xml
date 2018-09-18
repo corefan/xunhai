@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="110,45" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="icon" src="z7y030" xy="106,1" size="109,43" scale="-1,1"/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="0.80"/>
+</component>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,36" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n16" name="icon" xy="0,0" size="80,36" fill="scaleFree">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n18" name="downLayer" xy="0,0" size="80,36" fill="scaleFree">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n19" name="title" xy="0,0" size="80,36" font="方正粗圆简体" fontSize="20" color="#ded4fc" align="center" vAlign="middle" autoSize="shrink" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

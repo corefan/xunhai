@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="235,47" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n4" name="bg" src="ldfucx" xy="0,5"/>
+    <component id="n13" name="pro" src="nuxfe2" xy="25,33" size="152,9">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n6" name="playerName" xy="48,10" size="132,22" font="方正粗圆简体" fontSize="18" color="#cfd4d2" autoSize="height" text="36 名字七个字"/>
+    <loader id="n7" name="failure" xy="184,7" size="31,28" url="ui://0042gnitldfucv"/>
+    <loader id="n8" name="captain" xy="1,1" size="29,25" url="ui://0042gnitldfucw"/>
+    <loader id="n9" name="career" xy="9,12" size="50,50" url="ui://0042gnitldfucy"/>
+  </displayList>
+  <Button/>
+</component>

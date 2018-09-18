@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="510,127" opaque="false">
+  <displayList>
+    <image id="n0" name="bg" src="om7mbx" xy="0,-1" size="510,129"/>
+    <image id="n6" name="lin" src="jqanca" pkg="0tyncec1" xy="46,0" size="120,2" rotation="90">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n9" name="BtnExtend" src="om7mby" xy="473,-37" pivot="0.5,0.5">
+      <relation target="n0" sidePair="middle-middle,middle-middle"/>
+    </component>
+    <component id="n11" name="BtnAuto" src="om7mc0" xy="120,-53">
+      <relation target="n0" sidePair="middle-middle,middle-middle"/>
+    </component>
+    <component id="n12" name="BtnEmail" src="om7mbz" xy="-3,-53">
+      <relation target="n0" sidePair="middle-middle,middle-middle"/>
+    </component>
+    <list id="n8" name="msgList" xy="48,4" pivot="0,1" size="457,120" overflow="scroll" margin="0,0,0,0">
+      <relation target="n0" sidePair="height-height"/>
+    </list>
+    <component id="n13" name="BtenVoiceWorld" src="om7mc1" xy="-3,55"/>
+    <image id="n14" name="mailRed" src="xnis91" pkg="0tyncec1" xy="81,-43" visible="false"/>
+    <component id="n15" name="BtnRenshu" src="nnjff2" xy="-2,-48"/>
+    <component id="n19" name="btn_siliaoTip" src="lnqzf8" xy="339,-57"/>
+  </displayList>
+  <transition name="ExpandControl">
+    <item time="0" type="Pivot" target="n0" value="0,1"/>
+    <item time="0" type="Rotation" target="n9" value="0"/>
+    <item time="0" type="Size" target="n0" tween="true" startValue="510,130" endValue="510,360" duration="12"/>
+    <item time="0" type="XY" target="n16" tween="true" startValue="340,-49.45" endValue="340,-280.45" duration="12"/>
+    <item time="0" type="XY" target="n19" tween="true" startValue="339,-57" endValue="339,-283" duration="12"/>
+    <item time="12" type="Pivot" target="n0" value="0,1"/>
+    <item time="12" type="Rotation" target="n9" value="180"/>
+    <item time="12" type="Size" target="n0" tween="true" startValue="510,360"/>
+  </transition>
+  <transition name="siliao" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n19" tween="true" startValue="1" endValue="0.39" duration="18"/>
+    <item time="0" type="Alpha" target="n16" tween="true" startValue="1" endValue="0.36" duration="18"/>
+    <item time="18" type="Alpha" target="n16" tween="true" startValue="0.36" endValue="1" duration="18"/>
+    <item time="18" type="Alpha" target="n19" tween="true" startValue="0.39" endValue="1" duration="18"/>
+  </transition>
+</component>

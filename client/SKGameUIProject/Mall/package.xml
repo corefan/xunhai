@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="z5rl8hw3" jpegQuality="80" compressPNG="true">
+  <resources>
+    <folder id="sl2z0" name="image" folder=""/>
+    <folder id="sl2z1" name="compoment" folder=""/>
+    <image id="sl2z2" name="花瓣" folder="sl2z0" qualityOption="source" file="sl2z2.png" size="1087,475"/>
+    <image id="sl2z3" name="光效" folder="sl2z0" qualityOption="source" file="sl2z3.png" size="108,94"/>
+    <image id="sl2z4" name="底框" folder="sl2z0" qualityOption="source" file="sl2z4.png" size="52,51" scale="9grid" scale9grid="13,13,26,25" exported="true"/>
+    <image id="sl2z5" name="绸带" folder="sl2z0" qualityOption="source" file="sl2z5.png" size="1181,409"/>
+    <image id="sl2z6" name="充值块2" folder="sl2z0" qualityOption="source" file="sl2z6.png" size="288,293"/>
+    <image id="sl2z7" name="充值块1" folder="sl2z0" qualityOption="source" file="sl2z7.png" size="323,273"/>
+    <image id="sl2z8" name="hot标" folder="sl2z0" qualityOption="source" file="sl2z8.png" size="42,50"/>
+    <image id="sl2z9" name="6480" folder="sl2z0" qualityOption="source" file="sl2z9.png" size="71,29"/>
+    <image id="sl2za" name="3280" folder="sl2z0" qualityOption="source" file="sl2za.png" size="71,28"/>
+    <image id="sl2zb" name="1000" folder="sl2z0" qualityOption="source" file="sl2zb.png" size="62,23"/>
+    <image id="sl2zc" name="500" folder="sl2z0" qualityOption="source" file="sl2zc.png" size="48,24"/>
+    <image id="sl2zd" name="350" folder="sl2z0" qualityOption="source" file="sl2zd.png" size="49,24"/>
+    <image id="sl2ze" name="300" folder="sl2z0" qualityOption="source" file="sl2ze.png" size="55,28"/>
+    <image id="sl2zf" name="60" folder="sl2z0" qualityOption="source" file="sl2zf.png" size="32,24"/>
+    <image id="sl2zg" name="2折角标" folder="sl2z0" qualityOption="source" file="sl2zg.png" size="71,70"/>
+    <image id="sl2zh" name="尊贵角标" folder="sl2z0" qualityOption="source" file="sl2zh.png" size="71,70"/>
+    <image id="sl2zi" name="优惠角标" folder="sl2z0" qualityOption="source" file="sl2zi.png" size="71,70"/>
+    <image id="sl2zj" name="外黄-元宝" folder="sl2z0" qualityOption="source" file="sl2zj.png" size="40,37"/>
+    <image id="sl2zk" name="外红-元宝" folder="sl2z0" qualityOption="source" file="sl2zk.png" size="43,42"/>
+    <image id="sl2zl" name="推荐角标" folder="sl2z0" qualityOption="source" file="sl2zl.png" size="71,70"/>
+    <image id="sl2zm" name="首冲标" folder="sl2z0" qualityOption="source" file="sl2zm.png" size="63,73"/>
+    <image id="sl2zn" name="绿元宝2png" folder="sl2z0" qualityOption="source" file="sl2zn.png" size="42,27"/>
+    <image id="sl2zo" name="可获得2" folder="sl2z0" qualityOption="source" file="sl2zo.png" size="68,25"/>
+    <image id="sl2zp" name="可获得" folder="sl2z0" qualityOption="source" file="sl2zp.png" size="73,29"/>
+    <image id="sl2zq" name="金元宝" folder="sl2z0" qualityOption="source" file="sl2zq.png" size="102,63"/>
+    <image id="sl2zr" name="角标2" folder="sl2z0" qualityOption="source" file="sl2zr.png" size="71,70"/>
+    <component id="kt6kw" name="MallItem" folder="sl2z1" file="kt6kw.xml" exported="true"/>
+    <component id="kt6kx" name="MallPanel" folder="sl2z1" file="kt6kx.xml" exported="true"/>
+    <component id="dpuqy" name="MallBuyPanel" folder="sl2z1" file="dpuqy.xml" exported="true"/>
+    <component id="m9i9z" name="MallItemContent" folder="sl2z1" file="m9i9z.xml" exported="true"/>
+  </resources>
+  <publish name="Mall" genCode="true"/>
+</packageDescription>
