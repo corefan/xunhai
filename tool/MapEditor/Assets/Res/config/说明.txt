@@ -1,0 +1,17 @@
+door.json ：地图编辑器中读取相应传送门模型数据
+	
+	单位传送门对应数据在相关在[场景id].json(如：1001.json)中的 transfer列表中
+ 
+	id 表示当前场景中的一个传送门id 并与  transfer.xlsx 的id相对应
+	type 与 transfer.xlsx 的type相对应
+	model 显示的外观资源id，暂时不参与，用默认3d粒子模型
+	map 所处理场景, transfer.xlsx 的destination 则为传送目的地
+ 
+map.json : 地图数据模型数据
+	map_id 为地图编辑器实体id， 
+
+
+刷怪区配置
+monsterSpawn.json
+	id, model 对应于 策划表 refreshMonster.xlsx 中的id 
+

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e4c914c47e44147a7d31760b27157e, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  m_Terrain: {fileID: 0}
+  m_GO: {fileID: 0}
+  m_GrassDis: 100
+  m_TreeDis: 3000
+  m_TreeBillBoardStart: 100
+  m_TreeData:
+    m_Trees: []
+    m_Terrain: {fileID: 0}
+    m_GameObject: {fileID: 0}
+    m_Active: 1
+  m_GrassData:
+    m_Grasses: []
+    m_Terrain: {fileID: 0}
+    m_GameObject: {fileID: 0}
+    m_Active: 1
+  m_TextureData:
+    m_SubMeshes:
+    - m_Terrain: {fileID: 0}
+      m_GameObject: {fileID: 0}
+      m_Passes:
+      - m_SpecularColor:
+          r: 0.6911765
+          g: 0.6911765
+          b: 0.6911765
+          a: 1
+        m_Shininess: 0.078125
+        m_Texs:
+        - m_Normal: {fileID: 0}
+          m_MainTex: {fileID: 2800000, guid: 432c253b9fd3c8f40a325e4c629f9986, type: 3}
+          m_Tiling: {x: 20, y: 20}
+          m_Offset: {x: 0, y: 0}
+        - m_Normal: {fileID: 0}
+          m_MainTex: {fileID: 2800000, guid: 0d1e24e23a2914049a77fd14612df223, type: 3}
+          m_Tiling: {x: 20, y: 20}
+          m_Offset: {x: 0, y: 0}
+        - m_Normal: {fileID: 0}
+          m_MainTex: {fileID: 2800000, guid: 16b25ddda0384ac4a8bdf6412be17ca9, type: 3}
+          m_Tiling: {x: 20, y: 20}
+          m_Offset: {x: 0, y: 0}
+        - m_Normal: {fileID: 0}
+          m_MainTex: {fileID: 2800000, guid: bc25a225ec879b447a0f55f479de1666, type: 3}
+          m_Tiling: {x: 20, y: 20}
+          m_Offset: {x: 0, y: 0}
+        m_Mat: {fileID: 0}
+        m_MixTex: {fileID: 2800000, guid: 0d05bf367acab904b9904d3ba480a44f, type: 3}
+        m_IsFirst: 1
+      m_Mesh: {fileID: 4300000, guid: 2be52e0698056a5408972d162916bd04, type: 2}
+      m_Index: 0
+    m_Terrain: {fileID: 0}
+    m_GameObject: {fileID: 0}
+    m_Active: 1
+  m_Active: 1

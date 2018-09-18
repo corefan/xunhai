@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e4c914c47e44147a7d31760b27157e, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  m_Terrain: {fileID: 0}
+  m_GO: {fileID: 0}
+  m_GrassDis: 100
+  m_TreeDis: 3000
+  m_TreeBillBoardStart: 100
+  m_TreeData:
+    m_Trees: []
+    m_Terrain: {fileID: 0}
+    m_GameObject: {fileID: 0}
+    m_Active: 0
+  m_GrassData:
+    m_Grasses: []
+    m_Terrain: {fileID: 0}
+    m_GameObject: {fileID: 0}
+    m_Active: 0
+  m_TextureData:
+    m_SubMeshes:
+    - m_Terrain: {fileID: 0}
+      m_GameObject: {fileID: 0}
+      m_Passes:
+      - m_SpecularColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+        m_Shininess: 0.078125
+        m_Texs:
+        - m_Normal: {fileID: 0}
+          m_MainTex: {fileID: 2800000, guid: b09f9440e90f59b41bc6d7a4b0c2d36d, type: 3}
+          m_Tiling: {x: 20, y: 20}
+          m_Offset: {x: 0, y: 0}
+        - m_Normal: {fileID: 0}
+          m_MainTex: {fileID: 2800000, guid: 641e482a8c189b449926a7e2bd528cb1, type: 3}
+          m_Tiling: {x: 20, y: 20}
+          m_Offset: {x: 0, y: 0}
+        - m_Normal: {fileID: 0}
+          m_MainTex: {fileID: 2800000, guid: 29669801072dec74ca3d7f7ac1f5d051, type: 3}
+          m_Tiling: {x: 20, y: 20}
+          m_Offset: {x: 0, y: 0}
+        - m_Normal: {fileID: 0}
+          m_MainTex: {fileID: 2800000, guid: 781b3680af6297441a4ce92074b026fe, type: 3}
+          m_Tiling: {x: 20, y: 20}
+          m_Offset: {x: 0, y: 0}
+        m_Mat: {fileID: 0}
+        m_MixTex: {fileID: 2800000, guid: 75d88ad57d695d84f9e468927fc89355, type: 3}
+        m_IsFirst: 1
+      m_Mesh: {fileID: 4300000, guid: bfbc4d6f4b2ff794bbe26880360d3e9c, type: 2}
+      m_Index: 0
+    m_Terrain: {fileID: 0}
+    m_GameObject: {fileID: 0}
+    m_Active: 1
+  m_Active: 1

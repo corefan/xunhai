@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapEditor.CSharp", "MapEditor.CSharp.csproj", "{1ED67079-CD64-5851-E33B-D2C1A0F5B683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapEditor.CSharp.Editor", "MapEditor.CSharp.Editor.csproj", "{603E634B-8D80-CE7D-9FB3-68D2C64A38EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ED67079-CD64-5851-E33B-D2C1A0F5B683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED67079-CD64-5851-E33B-D2C1A0F5B683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED67079-CD64-5851-E33B-D2C1A0F5B683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED67079-CD64-5851-E33B-D2C1A0F5B683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{603E634B-8D80-CE7D-9FB3-68D2C64A38EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603E634B-8D80-CE7D-9FB3-68D2C64A38EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603E634B-8D80-CE7D-9FB3-68D2C64A38EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603E634B-8D80-CE7D-9FB3-68D2C64A38EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
