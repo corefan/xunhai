@@ -275,7 +275,7 @@ public class LoginServlet extends BaseServlet {
         	}
 		}else if(appid.equals("324")){
 			//百转修仙
-			String uid = req.getParameter("uid");
+			String uid = req.getParameter("userId");
 			String userName = req.getParameter("userName");
 			String token = req.getParameter("token");
 			
@@ -309,8 +309,34 @@ public class LoginServlet extends BaseServlet {
 				this.postData(resp, result.toString());
 			}
 			
-		}else if(appid.equals("324")){
+		}else if(appid.equals("799")){
+			//大唐山海缘
+			String uid = req.getParameter("userId");
+			String token = req.getParameter("token");
 			
+			if(uid == null  || token == null){
+				//登录失败
+				LogUtil.error("百转修仙登录失败  uid："+uid);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			String url = "http://apiqw.3z.cc/newapi.php/User/check_login_token";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("?uid="+uid);
+			param.append("&token="+token);
+			String js = HttpUtil.httpsRequest(url, "POST", param.toString());
+			JSONObject resultJson = new JSONObject(js);
+			if(resultJson.getString("status") .equals("1")){
+
+				this.postData(resp, this.sucLogin(Long.valueOf(uid), uid, "123456", null, 1));
+			}else{
+				//登录失败
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+			}
 		}
 		
 	}

@@ -112,6 +112,8 @@ public class PayService implements IPayService {
 //				 throw new GameException(ExceptionConstant.PAY_3403);
 //			}
 			
+			String cpOrderId = String.valueOf(IDUtil.geneteId(PayService.class));
+			
 			StringBuilder content = new StringBuilder(1 << 8);
 			content.append(player.getUserId()).append("|");
 			content.append(player.getSite()).append("|");
@@ -119,11 +121,11 @@ public class PayService implements IPayService {
 			content.append(payItemId).append("|");
 			content.append(payType).append("|");
 			content.append(money).append("|");
-			
-			String sign = MD5Service.encryptToUpperString(player.getUserId() + player.getSite() + player.getPlayerId() + payItemId + payType + money +Config.WEB_CHARGE_KEY);
+			content.append(cpOrderId).append("|");
+			String sign = MD5Service.encryptToUpperString(player.getUserId() + player.getSite() + player.getPlayerId() + payItemId + payType + money + cpOrderId + Config.WEB_CHARGE_KEY);
 			content.append(sign);
 			
-			String cpOrderId = String.valueOf(IDUtil.geneteId(PayService.class));
+			
 			if("yunyou".equals(Config.AGENT)){
 				//因为云游这边支付回调没有扩展参数， 所以只能绑定到订单号这里
 				cpOrderId = cpOrderId + "@"+content.toString();

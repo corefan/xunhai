@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50171
 File Encoding         : 65001
 
-Date: 2018-08-31 14:29:18
+Date: 2018-09-19 10:29:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -287,6 +287,7 @@ CREATE TABLE `player_ext` (
   `playerId` bigint(20) NOT NULL DEFAULT '0' COMMENT '玩家编号',
   `deleteFlag` tinyint(2) NOT NULL DEFAULT '0' COMMENT '是否删除',
   `loginTime` datetime DEFAULT NULL COMMENT '最近登录时间',
+  `loginIP` varchar(20) DEFAULT NULL COMMENT '登录ip',
   `exitTime` datetime DEFAULT NULL COMMENT '最近离线时间',
   `weaponStyle` int(11) NOT NULL DEFAULT '0' COMMENT '武器样式',
   `dressStyle` int(11) NOT NULL DEFAULT '0' COMMENT '服装样式',
