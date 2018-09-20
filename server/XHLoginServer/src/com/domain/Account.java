@@ -33,6 +33,8 @@ public class Account extends GameEntity {
 	private String realName;
 	/** 身份证ID*/
 	private String identity;
+	/** appid*/
+	private int appId;
 	/** 创建时间*/
 	private Date createTime;
 	/** 更新时间*/
@@ -43,7 +45,7 @@ public class Account extends GameEntity {
 		StringBuilder sql = new StringBuilder(1 << 8);
 		
 		sql.append("INSERT INTO account ");
-		sql.append("(userId, userName, passWord, telephone, tourist, serverListStr, createTime, updateTime) VALUES");
+		sql.append("(userId, userName, passWord, telephone, tourist, appId, serverListStr, createTime, updateTime) VALUES");
 		sql.append(" (");
 		sql.append(userId);
 		sql.append(",");
@@ -68,6 +70,8 @@ public class Account extends GameEntity {
 		}
 		sql.append(",");
 		sql.append(tourist);
+		sql.append(",");
+		sql.append(appId);
 		sql.append(",");
 		if (serverListStr == null) {
 			sql.append(serverListStr);
@@ -129,6 +133,9 @@ public class Account extends GameEntity {
 		sql.append(",");			
 		sql.append(" tourist=");
 		sql.append(tourist);
+		sql.append(",");	
+		sql.append(" appId=");
+		sql.append(appId);
 		sql.append(",");	
 		sql.append(" serverListStr=");
 		if(serverListStr == null){
@@ -267,6 +274,14 @@ public class Account extends GameEntity {
 
 	public void setIdentity(String identity) {
 		this.identity = identity;
+	}
+
+	public int getAppId() {
+		return appId;
+	}
+
+	public void setAppId(int appId) {
+		this.appId = appId;
 	} 
 	
 }

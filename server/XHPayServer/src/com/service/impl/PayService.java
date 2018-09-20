@@ -42,12 +42,13 @@ public class PayService implements IPayService {
 	
 	@Override
 	public PayLog insertPayLog(Long userId, long playerId, String outOrderNo, String orderNo,
-			int money, int payType, String payItemId, String paySite, String payUrl) {
+			int money, int payType, String payItemId, String platform, String paySite, String payUrl) {
 		try {
 			PayLog payLog = new PayLog();
 			payLog.setLogId(IDUtil.geneteId(PayLog.class));
 			payLog.setUserId(userId);
 			payLog.setPlayerId(playerId);
+			payLog.setPlatform(platform);
 			payLog.setPaySite(paySite);
 			payLog.setOutOrderNo(outOrderNo);
 			payLog.setOrderNo(orderNo);

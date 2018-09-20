@@ -105,7 +105,7 @@ public class RegisterServlet extends BaseServlet {
 				return;
 			}
 			
-			account = accountService.createAccount(0, userName, passWord, null, 0);
+			account = accountService.createAccount(0, userName, passWord, null, 0, 0);
 			
 			//0 注册成功
 			result.put("result", 0);

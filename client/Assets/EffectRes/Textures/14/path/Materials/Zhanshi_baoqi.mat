@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Zhanshi_baoqi
+  m_Shader: {fileID: 4800000, guid: e679ce7f9dad0494fbb9969645710828, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 47e4df921b0f8444095c2acfca772847, type: 3}
+          m_Scale: {x: 0.37, y: 1.01}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailTex
+        second:
+          m_Texture: {fileID: 2800000, guid: f2cdd27a57082d84f8977d7bacb29852, type: 3}
+          m_Scale: {x: 0.44, y: 1.91}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _ScrollX
+        second: -10
+      data:
+        first:
+          name: _ScrollY
+        second: 0
+      data:
+        first:
+          name: _Scroll2X
+        second: -6
+      data:
+        first:
+          name: _Scroll2Y
+        second: 0
+      data:
+        first:
+          name: _MMultiplier
+        second: 3
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 0.31617647, g: 0.77363104, b: 1, a: 0.5019608}

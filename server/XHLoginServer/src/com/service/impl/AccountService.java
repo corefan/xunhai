@@ -42,7 +42,7 @@ public class AccountService implements IAccountService {
 	
 	@Override
 	public Account createAccount(long userId, String userName, String passWord,
-			String telephone, int tourist) {
+			String telephone, int tourist, int appId) {
 		
 		try {
 			if(userId == 0){
@@ -54,6 +54,7 @@ public class AccountService implements IAccountService {
 			account.setPassWord(passWord);
 			account.setTelephone(telephone);
 			account.setTourist(tourist);
+			account.setAppId(appId);
 			account.setCreateTime(DateService.getCurrentUtilDate());
 			
 			accountDAO.createAccount(account);

@@ -34,4 +34,6 @@ public class PathConstant {
 	public static final String IDENTITY_STATE = "/identityState";
 	/** 实名认证*/
 	public static final String IDENTITY_CHECK = "/identityCheck";
+	/** 获取登录appid*/
+	public static final String APPID = "/AppId";
 }

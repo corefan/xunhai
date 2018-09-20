@@ -5,7 +5,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.math.BigInteger;
+import java.net.URLEncoder;
 import java.nio.charset.Charset;
+import java.security.MessageDigest;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -268,5 +271,25 @@ public abstract class AbstractServlet extends HttpServlet {
 
 		return jsonObject;
 	}
+
+	protected String GetEncode(String str)
+	{
+		try {
+			return URLEncoder.encode(str,"utf-8");
+		} catch (Exception e) {
+		}
+		return "";
+	}
 	
+	protected String getMD5(String str) {
+	    try {
+	        MessageDigest md = MessageDigest.getInstance("MD5");
+	        md.update(str.getBytes());
+	        return new BigInteger(1, md.digest()).toString(16);
+	    } catch (Exception e) {
+
+	    }
+	    
+	    return "";
+	}
 }

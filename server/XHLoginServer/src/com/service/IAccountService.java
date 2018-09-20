@@ -24,7 +24,7 @@ public interface IAccountService {
 	/**
 	 * 创建账号
 	 */
-	Account createAccount(long userId, String userName, String passWord, String telephone, int tourist);
+	Account createAccount(long userId, String userName, String passWord, String telephone, int tourist, int appId);
 	
 	/**
 	 * 更新账号

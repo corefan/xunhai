@@ -1,8 +1,12 @@
 package com.servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -34,6 +38,7 @@ import com.domain.config.BaseAgentConfig;
 import com.domain.config.BaseServerConfig;
 import com.service.IBaseDataService;
 import com.service.IPayService;
+import com.util.HttpUtil;
 import com.util.LogUtil;
 import com.util.NetworkUtil;
 import com.util.PayCommonUtil;
@@ -89,10 +94,14 @@ public class PayServlet extends AbstractServlet {
 				}	
 				
 			}else if(Config.AGENT.equals("donghai")){
+				//东海
 				this.donghaiPay(req, resp);
 			}else if(Config.AGENT.equals("yunyou")){
-				
+				//云游
 				this.yunyouPay(req, resp);
+			}else if(Config.AGENT.equals("zhongfu")){
+				//中富
+				this.zhongfuPay(req, resp);
 			}
 		} catch (Exception e) {
 			LogUtil.error(e);
@@ -258,255 +267,533 @@ public class PayServlet extends AbstractServlet {
 		
 		String reqUrl = msgJson.toString();
 		
-		String cpOrderId = msgJson.getString("cpOrderId");
-		String userId = msgJson.getString("userId");
-		String orderId = msgJson.getString("orderId");     //运营商的订单号
-		String gameId = msgJson.getString("gameId");
-		String subGameId = msgJson.getString("subGameId");
-		String platform = msgJson.getString("platform");
-		String totalFee = msgJson.getString("totalFee");
-		String orderStatus = msgJson.getString("orderStatus");
-		String endtime = msgJson.getString("endtime");
-		String randStr = msgJson.getString("randStr");
-		String customInfo = msgJson.getString("customInfo");
-		String sign = msgJson.getString("sign");
-		
-		if(cpOrderId == null || userId == null || orderId == null || gameId == null || subGameId == null 
-				|| platform == null || totalFee == null || orderStatus == null || endtime == null 
-				|| randStr == null || sign == null){
-			//参数有误
-			this.postData(resp, "failure");
-			return;
-		}
-		
-		String contents[] = customInfo.split("\\|");
-		if (contents.length != 7) {
-			// 自定义参数个数不对
-			LogUtil.error("自定义参数个数不对----------customInfo="+customInfo);
-			this.postData(resp, "failure");
-			return;
-		}
-		
-		String pay_key = "abb87c51514ecf7e660ca389c1c8144e";
-		
-		
-		StringBuilder param = new StringBuilder();
-		param.append("cpOrderId="+cpOrderId);
-		param.append("customInfo="+customInfo);
-		param.append("endtime="+endtime);
-		param.append("gameId="+gameId);
-		param.append("orderId="+orderId);
-		param.append("orderStatus="+orderStatus);
-		param.append("platform="+platform);
-		param.append("randStr="+randStr);
-		param.append("subGameId="+subGameId);
-		param.append("totalFee="+totalFee);
-		param.append("userId="+userId);
-		param.append(pay_key);
-		
-		String mySign = MD5Service.encryptToLowerString(param.toString());
-		
-		if(mySign.equalsIgnoreCase(sign)){
+		synchronized (reqUrl) {
+			String cpOrderId = msgJson.getString("cpOrderId");
+			String userId = msgJson.getString("userId");
+			String orderId = msgJson.getString("orderId");     //运营商的订单号
+			String gameId = msgJson.getString("gameId");
+			String subGameId = msgJson.getString("subGameId");
+			String platform = msgJson.getString("platform");
+			String totalFee = msgJson.getString("totalFee");
+			String orderStatus = msgJson.getString("orderStatus");
+			String endtime = msgJson.getString("endtime");
+			String randStr = msgJson.getString("randStr");
+			String customInfo = msgJson.getString("customInfo");
+			String sign = msgJson.getString("sign");
 			
-			if(orderStatus.equals("1")){
-				
-				try {
-					
-					Long myUserId = Long.valueOf(contents[0]); // 玩家账号
-					String site = contents[1]; // 游戏站点
-					Long playerId = Long.valueOf(contents[2]); // 玩家编号
-					String payItemId = contents[3]; // 商品编号
-					Integer payType = Integer.valueOf(contents[4]); // 支付类型
-					String money = contents[5]; // 金额
-					String sign1 = contents[6]; // 签名
-					
-					IBaseDataService baseDataService = GCCContext.getInstance().getServiceCollection().getBaseDataService();
-				
-					BaseAgentConfig baseAgentConfig = baseDataService.getBaseAgentConfig(Config.AGENT);
-					if (baseAgentConfig == null){
-						this.postData(resp, "failure");
-						LogUtil.error("东海运营支付游戏运营商不存在："+Config.AGENT);
-						return;
-					}
-					
-					BaseServerConfig gameConfigVariable = baseDataService.getBaseServerConfig(site);
-					if (gameConfigVariable == null){
-						this.postData(resp, "failure");
-						LogUtil.error("东海运营支付游戏站点不存在："+site);
-						return;
-					}
-					
-					String sign2 = MD5Service.encryptToUpperString(myUserId + site + playerId + payItemId + payType + money +baseAgentConfig.getChargeKey());
-					if(!sign1.equals(sign2)){
-						this.postData(resp, "failure");
-						LogUtil.error("东海运营支付签名有误："+sign2);
-						return;
-					}
-					
-					int money1 = Integer.valueOf(totalFee) / 100;
-					if(!Integer.valueOf(money).equals(money1)){
-						this.postData(resp, "failure");
-						LogUtil.error("东海运营支付金额有误："+money1);
-						return;
-					}
-					
-					this.postData(resp, "success");
-					
-					JSONObject jsonObject = new JSONObject();
-					jsonObject.put("content", customInfo);
-					
-					sendData_noWaitBack(jsonObject, this.getUrlByGameSitePath(gameConfigVariable.getGameInnerIp(),gameConfigVariable.getWebPort(), PathConstant.PAY));
-					
-					IPayService payService = GCCContext.getInstance().getServiceCollection().getPayService();
-					PayLog payLog = payService.getPayLogByOutOrderNo(cpOrderId);
-					if(payLog == null){
-						payService.insertPayLog(Long.valueOf(userId), playerId, cpOrderId, orderId, money1, payType, platform+"_"+payItemId, site, reqUrl);
-					}else{
-						payLog.setOrderNo(orderId);
-						payLog.setPayUrl(reqUrl);
-						payLog.setUpdateTime(DateService.getCurrentUtilDate());
-						payLog.setState(1);
-						payService.updatePayLog(payLog);
-					}
-				} catch (Exception e) {
-					LogUtil.error("东海运营支付发货异常：", e);
-				}
+			if(cpOrderId == null || userId == null || orderId == null || gameId == null || subGameId == null 
+					|| platform == null || totalFee == null || orderStatus == null || endtime == null 
+					|| randStr == null || sign == null){
+				//参数有误
+				this.postData(resp, "failure");
+				return;
 			}
-		}else{
-			//签名不正确
-			this.postData(resp, "failure");
-			LogUtil.error("东海运营支付  签名不正确");
+			
+			String pay_key = "abb87c51514ecf7e660ca389c1c8144e";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("cpOrderId="+cpOrderId);
+			param.append("customInfo="+customInfo);
+			param.append("endtime="+endtime);
+			param.append("gameId="+gameId);
+			param.append("orderId="+orderId);
+			param.append("orderStatus="+orderStatus);
+			param.append("platform="+platform);
+			param.append("randStr="+randStr);
+			param.append("subGameId="+subGameId);
+			param.append("totalFee="+totalFee);
+			param.append("userId="+userId);
+			param.append(pay_key);
+			
+			String mySign = MD5Service.encryptToLowerString(param.toString());
+			
+			if(mySign.equalsIgnoreCase(sign)){
+				
+				if(orderStatus.equals("1")){
+			        int rs = this.sucPay(customInfo, "0", Integer.valueOf(totalFee) / 100, orderId, cpOrderId, reqUrl);
+			        if(rs == 0){
+			        	this.postData(resp, "success");
+			        }else{
+			        	this.postData(resp, "failure");
+			        }
+				}
+			}else{
+				//签名不正确
+				LogUtil.error("东海运营支付  签名不正确");
+				this.postData(resp, "failure");
+			}
 		}
+		
 	}
 	
 	/**
 	 * 云游支付回调
 	 */
 	private void yunyouPay(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, Exception {
+		
 		String reqUrl = req.getQueryString();
 		
-		String data = req.getParameter("data");
-		if(data == null || "".equals(data.trim())){
-			//参数有误
-			this.postData(resp, "failure");
-			return;
+		synchronized (reqUrl) {
+			String data = req.getParameter("data");
+			if(data == null || "".equals(data.trim())){
+				//参数有误
+				this.postData(resp, "failure");
+				return;
+			}
+			
+			JSONObject paramJsion = new JSONObject(data);
+			
+			String uid = paramJsion.getString("uid");
+			String game_trade_no = paramJsion.getString("game_trade_no"); //cp的订单号
+			String out_trade_no = paramJsion.getString("out_trade_no");   //运营商的订单号
+			String trade_status = paramJsion.getString("trade_status");
+			String time = paramJsion.getString("time");
+			String price = paramJsion.getString("price");
+			String pay = paramJsion.getString("pay");
+			String sign = paramJsion.getString("sign");
+			
+			if(uid == null || game_trade_no == null || out_trade_no == null || trade_status == null || time == null 
+					|| price == null || pay == null || sign == null){
+				//参数有误
+				this.postData(resp, "failure");
+				return;
+			}
+			
+			String content = game_trade_no.split("@")[1];
+			if(content == null){
+				//参数有误
+				this.postData(resp, "failure");
+				return;
+			}
+			
+			String pay_key = "192006250b4c09247ec02edce69f6a2d";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("uid="+uid);
+			param.append("&game_trade_no="+game_trade_no);
+			param.append("&out_trade_no="+out_trade_no);
+			param.append("&price="+price);
+			param.append("&trade_status="+trade_status);
+			param.append("&time="+time);
+			param.append("&pay="+pay);
+			param.append("&key="+pay_key);
+			
+			String mySign = MD5Service.encryptToLowerString(param.toString());
+			
+			if(mySign.equalsIgnoreCase(sign)){
+				if(trade_status.equals("TRADE_SUCCESS")){
+			        int rs = this.sucPay(content, "0", Integer.valueOf(price), out_trade_no, game_trade_no, reqUrl);
+			        if(rs == 0){
+			        	this.postData(resp, "success");
+			        }else{
+			        	this.postData(resp, "failure");
+			        }
+				}
+			}else{
+				//签名不正确
+				this.postData(resp, "failure");
+				LogUtil.error("云游运营支付  签名不正确");
+			}
 		}
 		
-		JSONObject paramJsion = new JSONObject(data);
+	}
+	
+	/**
+	 * 中富支付回调
+	 */
+	private void zhongfuPay(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, Exception {
 		
-		String uid = paramJsion.getString("uid");
-		String game_trade_no = paramJsion.getString("game_trade_no"); //cp的订单号
-		String out_trade_no = paramJsion.getString("out_trade_no");   //运营商的订单号
-		String trade_status = paramJsion.getString("trade_status");
-		String time = paramJsion.getString("time");
-		String price = paramJsion.getString("price");
-		String pay = paramJsion.getString("pay");
-		String sign = paramJsion.getString("sign");
+		String reqUrl = req.getQueryString();
 		
-		if(uid == null || game_trade_no == null || out_trade_no == null || trade_status == null || time == null 
-				|| price == null || pay == null || sign == null){
-			//参数有误
-			this.postData(resp, "failure");
-			return;
-		}
+		if(reqUrl == null) return;
 		
-		String content = game_trade_no.split("@")[1];
-		if(content == null){
-			//参数有误
-			this.postData(resp, "failure");
-			return;
-		}
-		
-		String contents[] = content.split("\\|");
-		if (contents.length != 7) {
-			// 自定义参数个数不对
-			LogUtil.error("自定义参数个数不对----------game_trade_no="+game_trade_no);
-			this.postData(resp, "failure");
-			return;
-		}
-		
-		String pay_key = "192006250b4c09247ec02edce69f6a2d";
-		
-		StringBuilder param = new StringBuilder();
-		param.append("uid="+uid);
-		param.append("&game_trade_no="+game_trade_no);
-		param.append("&out_trade_no="+out_trade_no);
-		param.append("&price="+price);
-		param.append("&trade_status="+trade_status);
-		param.append("&time="+time);
-		param.append("&pay="+pay);
-		param.append("&key="+pay_key);
-		
-		String mySign = MD5Service.encryptToLowerString(param.toString());
-		
-		if(mySign.equalsIgnoreCase(sign)){
-			if(trade_status.equals("TRADE_SUCCESS")){
-				
-				try {
-					Long myUserId = Long.valueOf(contents[0]); // 玩家账号
-					String site = contents[1]; // 游戏站点
-					Long playerId = Long.valueOf(contents[2]); // 玩家编号
-					String payItemId = contents[3]; // 商品编号
-					Integer payType = Integer.valueOf(contents[4]); // 支付类型
-					String money = contents[5]; // 金额
-					String sign1 = contents[6]; // 签名
-					
-					IBaseDataService baseDataService = GCCContext.getInstance().getServiceCollection().getBaseDataService();
-				
-					BaseAgentConfig baseAgentConfig = baseDataService.getBaseAgentConfig(Config.AGENT);
-					if (baseAgentConfig == null){
-						this.postData(resp, "failure");
-						LogUtil.error("云游运营支付游戏运营商不存在："+Config.AGENT);
-						return;
+		synchronized (reqUrl) {
+			String appid = req.getParameter("appid");   //游戏ID  
+			if(appid == null){
+				appid = req.getParameter("app");
+				if(appid == null){
+					appid = req.getParameter("game_id");
+					if(appid == null){
+						appid = req.getParameter("app_id");
+						if(appid == null){
+							IBaseDataService baseDataService = GCCContext.getInstance().getServiceCollection().getBaseDataService();
+							
+							BaseAgentConfig baseAgentConfig = baseDataService.getBaseAgentConfig(Config.AGENT);
+							if (baseAgentConfig == null){
+								LogUtil.error("运营商="+Config.AGENT+" appid="+appid+"  游戏运营商不存在");
+								return;
+							}
+							
+							String userId = req.getParameter("Account"); //Uid
+							if(userId != null){
+								try {
+									appid = HttpUtil.httpsRequest(baseAgentConfig.getAccountUrl() + PathConstant.APPID, "?userId="+userId, "application/x-www-form-urlencoded");
+								} catch (Exception e) {
+									LogUtil.error("获取登录appid异常：", e);
+									return;
+								}
+							}else{
+								String userName = req.getParameter("userId"); //充值用户账号
+								if(userName != null){
+									try {
+										appid = HttpUtil.httpsRequest(baseAgentConfig.getAccountUrl() + PathConstant.APPID, "?userName="+userName, "application/x-www-form-urlencoded");
+									} catch (Exception e) {
+										LogUtil.error("获取登录appid异常：", e);
+										return;
+									}
+								}
+							}
+						}
 					}
-					
-					BaseServerConfig gameConfigVariable = baseDataService.getBaseServerConfig(site);
-					if (gameConfigVariable == null){
-						this.postData(resp, "failure");
-						LogUtil.error("云游运营支付游戏站点不存在："+site);
-						return;
-					}
-					
-					String sign2 = MD5Service.encryptToUpperString(myUserId + site + playerId + payItemId + payType + money +baseAgentConfig.getChargeKey());
-					if(!sign1.equals(sign2)){
-						this.postData(resp, "failure");
-						LogUtil.error("云游运营支付签名有误："+sign2);
-						return;
-					}
-					
-					int money1 = Integer.valueOf(price);
-					if(!Integer.valueOf(money).equals(money1)){
-						this.postData(resp, "failure");
-						LogUtil.error("云游运营支付金额有误："+money1);
-						return;
-					}
-					
-					this.postData(resp, "success");
-					
-					JSONObject jsonObject = new JSONObject();
-					jsonObject.put("content", content);
-					
-					sendData_noWaitBack(jsonObject, this.getUrlByGameSitePath(gameConfigVariable.getGameInnerIp(),gameConfigVariable.getWebPort(), PathConstant.PAY));
-					
-					IPayService payService = GCCContext.getInstance().getServiceCollection().getPayService();
-					PayLog payLog = payService.getPayLogByOutOrderNo(game_trade_no);
-					if(payLog == null){
-						payService.insertPayLog(myUserId, playerId, game_trade_no, out_trade_no, money1, Integer.valueOf(pay), payItemId, site, reqUrl);
-					}else{
-						payLog.setOrderNo(out_trade_no);
-						payLog.setPayUrl(reqUrl);
-						payLog.setUpdateTime(DateService.getCurrentUtilDate());
-						payLog.setState(1);
-						payService.updatePayLog(payLog);
-					}
-				} catch (Exception e) {
-					LogUtil.error("云游运营支付发货异常：", e);
 				}
 			}
-		}else{
-			//签名不正确
-			this.postData(resp, "failure");
-			LogUtil.error("云游运营支付  签名不正确");
+			if(appid != null){
+				if(appid.equals("1271")){ //仙剑长安
+					String amount = req.getParameter("amount"); //充值金额（人民币元）
+					String charid = req.getParameter("charid"); //角色ID
+					String cporderid = req.getParameter("cporderid"); //cp的订单号
+					String extinfo = req.getParameter("extinfo"); //支付信息
+					String gold = req.getParameter("gold");     //游戏币数量
+					String orderid = req.getParameter("orderid"); //平台的订单ID
+					String serverid = req.getParameter("serverid"); //服务器ID
+					String time = req.getParameter("time"); //时间戳 int
+					String uid = req.getParameter("uid");   //用户ID 
+					String sign = req.getParameter("sign"); //签名
+					
+					String Pay_Key = "fbb289d1e994d7706ceb105111b920de";
+					String code = String.format("amount=%s&appid=%s&charid=%s&cporderid=%s&extinfo=%s&gold=%s&orderid=%s&serverid=%s&time=%s&uid=%s%s",
+							GetEncode(amount), GetEncode(appid), GetEncode(charid), GetEncode(cporderid),
+							GetEncode(extinfo), GetEncode(gold), GetEncode(orderid), GetEncode(serverid),
+			            time, GetEncode(uid), Pay_Key);
+
+					String md5 = getMD5(code);
+
+			        //签名失败
+			        if(!md5.equals(sign))
+			        {
+						//签名不正确
+			        	LogUtil.error("中富运营支付  签名不正确 appid="+appid);
+						this.postData(resp, "ERROR");
+						return;
+			        }
+			        
+			        int rs = this.sucPay(extinfo, appid, Integer.valueOf(amount), orderid, cporderid, reqUrl);
+			        if(rs == 0){
+			        	this.postData(resp, "SUCCESS");
+			        }else{
+			        	this.postData(resp, "ERROR");
+			        }
+				}else if(appid.equals("324") || appid.equals("53")
+						|| appid.equals("106") || appid.equals("323")
+						|| appid.equals("325")){ //百转修仙  幻域修仙 仙道至尊 仙侠大劫主 修仙道主
+					 
+					String at = req.getParameter("at"); //时间搓
+					String cbi = req.getParameter("cbi"); //支付信息
+					String cn = req.getParameter("cn"); //渠道id
+					String fee = req.getParameter("fee"); //支付金额 分
+					String kr = req.getParameter("kr");     //随机数
+					String pt = req.getParameter("pt"); // 支付方式
+					String res = req.getParameter("res"); //支付结果 0成功
+					String st = req.getParameter("st"); // 时间搓
+					String tid = req.getParameter("tid");   //sdk订单号
+					String ud = req.getParameter("ud"); //cp订单号
+					String uid = req.getParameter("uid"); //userId
+					String ver = req.getParameter("ver");   //版本号
+					String sign = req.getParameter("sign"); //签名
+					
+					Map<String, String> params = new HashMap<String, String>();
+					params.put("app", appid);
+					params.put("at", at);
+					params.put("cbi", cbi);
+					params.put("cn", cn);
+					params.put("fee", fee);
+					params.put("kr", kr);
+					params.put("pt", pt);
+					params.put("res", res);
+					params.put("st", st);
+					params.put("tid", tid);
+					params.put("ud", ud);
+					params.put("uid", uid);
+					params.put("ver", ver);
+					
+					List<String> keys = new ArrayList<String>(params.keySet());
+					Collections.sort(keys);
+					
+					String preStr = new String();
+					for(String key : keys){
+						preStr += String.format("%s=%s&", key, params.get(key));
+					}
+					preStr = preStr.substring(0, preStr.length() - 1);
+					
+					String payKey = "9ef751477c704f8fad7fe55321f8e82b";
+					if(appid.equals("53")){
+						payKey = "56a8abc23651451298793229da237437";
+					}else if(appid.equals("106")){
+						payKey = "40212600241b4ed6aaeea12a65cd6a9a";
+					}else if(appid.equals("323")){
+						payKey = "7248df52fa054e3693499d694e17674e";
+					}else if(appid.equals("325")){
+						payKey = "a98a2616080a4f8b90a1d7c76217a57d";
+					}
+					
+					String mdsign = MD5Service.encryptToLowerString(preStr + payKey);
+					
+			        //签名失败
+			        if(!mdsign.equalsIgnoreCase(sign))
+			        {
+			        	LogUtil.error("中富运营支付  签名不正确 appid="+appid);
+						this.postData(resp, "ERROR");
+						return;
+			        }
+			        
+			        int rs = this.sucPay(cbi, appid, Integer.valueOf(fee) / 100, tid, ud, reqUrl);
+			        if(rs == 0){
+			        	this.postData(resp, "SUCCESS");
+			        }else{
+			        	this.postData(resp, "ERROR");
+			        }
+				}else if(appid.equals("799") || appid.equals("150000007") 
+						|| appid.equals("150000008")|| appid.equals("150000009") 
+						|| appid.equals("150000010") ){ //大唐山海缘  妖魔大陆  御剑降魔录  斩妖奇侠 诛妖 
+					
+					String trade_no = req.getParameter("out_trade_no"); //订单号
+					String price = req.getParameter("price"); //价格元
+					String extend = req.getParameter("extend"); //支付信息
+					String sign = req.getParameter("sign");     //随机数
+					
+					String payKey = "DZQ!@#9527";
+					if(appid.equals("150000007")){
+						payKey = "df107f3eb75ff9289b15a843128124e9";
+					}else if(appid.equals("150000008")){
+						payKey = "5bb9abb0cbaba7c4d92e161fa0d795d9";
+					}else if(appid.equals("150000009")){
+						payKey = "2e33bdadb32162e07a314cc66ec0076f";
+					}else if(appid.equals("150000010")){
+						payKey = "bbd631205e45f2a01cfc096277d04d33";
+					}
+					
+					String mdsign = MD5Service.encryptToLowerString(appid + trade_no + price + extend + payKey);
+					
+			        //签名失败
+			        if(!mdsign.equalsIgnoreCase(sign))
+			        {
+			        	LogUtil.error("中富运营支付  签名不正确 appid="+appid);
+						this.postData(resp, "0");
+						return;
+			        }
+			        
+			        int rs = this.sucPay(extend, appid, Integer.valueOf(price), trade_no, null, reqUrl);
+			        if(rs == 0){
+			        	this.postData(resp, "1");
+			        }else{
+			        	this.postData(resp, "0");
+			        }
+				}else if(appid.equals("1") || appid.equals("2")){ //大唐修仙传 风暴国度
+					String Payorderid = req.getParameter("Payorderid"); //cp订单号
+					String Paycid = req.getParameter("Paycid"); //订单号
+					String Account = req.getParameter("Account"); //Uid
+					String Sid = req.getParameter("Sid"); //区服id
+					String Roleid = req.getParameter("Roleid"); //角色id
+					String Goodsid = req.getParameter("Goodsid");     //道具id
+					String Money = req.getParameter("Money"); // 人民币 单位元
+					String Coins = req.getParameter("Coins"); //游戏币
+					String Time = req.getParameter("Time"); // 当前的时间戳
+					String Custominfo = req.getParameter("Custominfo");   //自定义项
+					String Sign = req.getParameter("Sign"); //签名
+					
+					String payKey = "73bf3052ba76a1e3cf2d53823e035b13";
+					if(appid.equals("2")){
+						payKey = "fcd39ca8cf0b9b245d49b55fedd575db";
+					}
+					
+					String mdsign = MD5Service.encryptToLowerString(Payorderid + Paycid + Account + Sid + Roleid + Goodsid + Money + Coins + Time + Custominfo + payKey);
+					
+					JSONObject json = new JSONObject();
+					
+			        //签名失败
+			        if(!mdsign.equalsIgnoreCase(Sign))
+			        {
+			    		LogUtil.error("中富运营支付  签名不正确appid= "+appid);
+			        	json.put("Result", 6);
+						this.postData(resp, json.toString());
+						return;
+			        }
+			        
+			        int rs = this.sucPay(Custominfo, appid, Integer.valueOf(Money), Paycid, Payorderid, reqUrl);
+			        
+			        if(rs == 0){
+			        	json.put("Result", 1);
+			        	
+			        }else{
+			        	json.put("Result", 8);
+			        }
+			        this.postData(resp, json.toString());
+				}else if(appid.equals("10080") || appid.equals("10012")){ //焚天决 御仙诀
+					String userId = req.getParameter("userId"); //充值用户账号
+					String goodsId = req.getParameter("goodsId"); //支付信息 
+					String goodsName = req.getParameter("goodsName"); //商品名称
+					String payOrderId = req.getParameter("payOrderId"); //支付流水号
+					String payPrice = req.getParameter("payPrice"); //支付金额（单位:分）
+					String payStatus = req.getParameter("payStatus");     //0 失败，1 成功
+					String applePay = req.getParameter("applePay"); // 1 苹果支付
+					String sign = req.getParameter("sign"); //签名
+					
+					Map<String, String> params = new HashMap<String, String>();
+					params.put("userId", userId);
+					params.put("goodsId", goodsId);
+					params.put("goodsName", goodsName);
+					params.put("payOrderId", payOrderId);
+					params.put("payPrice", payPrice);
+					params.put("payStatus", payStatus);
+					params.put("applePay", applePay);
+					
+					List<String> keys = new ArrayList<String>(params.keySet());
+					Collections.sort(keys);
+					
+					String preStr = new String();
+					for(String key : keys){
+						preStr += String.format("%s=%s&", key, params.get(key));
+					}
+					preStr = preStr.substring(0, preStr.length() - 1);
+					
+					String payKey = "LNLFQHKHPALYUWHK";
+					if(appid.equals("10012")){
+						payKey = "FNAFOUAPTJODFKPN";
+					}
+					String mdsign = MD5Service.encryptToLowerString(preStr + payKey);
+					
+			        //签名失败
+			        if(!mdsign.equalsIgnoreCase(sign))
+			        {
+			        	LogUtil.error("中富运营支付  签名不正确 appid="+appid);
+						this.postData(resp, "ERROR");
+						return;
+			        }
+			        
+			        int rs = this.sucPay(goodsId, appid, Integer.valueOf(payPrice) / 100, payOrderId, null, reqUrl);
+			        if(rs == 0){
+			        	this.postData(resp, "0");
+			        }else{
+			        	this.postData(resp, "ERROR");
+			        }
+				}else if(appid.equals("6327") || appid.equals("6328") 
+						|| appid.equals("6333") || appid.equals("6010")){ //太古封神 太古伏魔录 武动九州 仙侠幻梦录
+					
+					String cp_order_id = req.getParameter("cp_order_id"); //cp平台订单号
+					String mem_id = req.getParameter("mem_id"); //玩家ID
+					String order_id = req.getParameter("order_id"); //平台订单号
+					String order_status = req.getParameter("order_status"); //平台订单状态 1 未支付 2成功支付 3支付失败
+					String pay_time = req.getParameter("pay_time"); //订单下单时间
+					String product_id = req.getParameter("product_id");     //商品id
+					String product_name = req.getParameter("product_name"); // 商品名称
+					String product_price = req.getParameter("product_price"); //商品价格(元);保留两位小数
+					String sign = req.getParameter("sign"); //签名
+					String ext = req.getParameter("ext"); //支付信息
+					
+					
+					String app_key = "957fd6a0159072e37bea8011bb80e7c0";
+					if(appid.equals("6328")){
+						app_key = "79500a2d1c3db0bf9cc8e8637ef9b270";
+					}else if(appid.equals("6333")){
+						app_key = "76267feade4396e62b9d62af4b6dbce4";
+					}else if(appid.equals("6010")){
+						app_key = "2cff258feccca00617a71301bc2b68d7";
+					}
+					
+					String code = String.format("app_id=%s&cp_order_id=%s&mem_id=%s&order_id=%s&order_status=%s&pay_time=%s&product_id=%s&product_name=%s&product_price=%s&app_key=%s",
+							appid, GetEncode(cp_order_id), mem_id, order_id,
+							order_status, pay_time, GetEncode(product_id), GetEncode(product_name),
+							GetEncode(product_price), app_key);
+					
+					String md5 = getMD5(code);
+			        //签名失败
+			        if(!md5.equalsIgnoreCase(sign))
+			        {
+			        	LogUtil.error("中富运营支付  签名不正确 appid="+appid);
+						this.postData(resp, "FAILURE");
+						return;
+			        }
+			        
+			        int rs = this.sucPay(ext, appid, Integer.valueOf(product_price) / 100, order_id, cp_order_id, reqUrl);
+			        if(rs == 0){
+			        	this.postData(resp, "SUCCESS");
+			        }else{
+			        	this.postData(resp, "FAILURE");
+			        }
+				}
+			}
+		}
+	}
+	
+	/**
+	 * 支付发货 0成功  1失败
+	 */
+	private int sucPay(String content, String appid, int ptMoney, String orderId, String cpOrderId, String reqUrl){
+		String contents[] = content.split("\\|");
+		if (contents.length != 8) {
+			// 自定义参数个数不对
+			LogUtil.error("运营商="+Config.AGENT+" appid="+appid+"  自定义参数个数不对content="+content);
+			return 1;
+		}
+		
+		try {
+			
+			Long userId = Long.valueOf(contents[0]); // 玩家账号
+			String site = contents[1]; // 游戏站点
+			Long playerId = Long.valueOf(contents[2]); // 玩家编号
+			String payItemId = contents[3]; // 商品编号
+			Integer payType = Integer.valueOf(contents[4]); // 支付类型
+			String money = contents[5]; // 金额
+			String myCpOrderId = contents[6]; // cp订单号
+			String sign1 = contents[7]; // 签名
+			
+			if(cpOrderId == null){
+				cpOrderId = myCpOrderId;
+			}
+			IBaseDataService baseDataService = GCCContext.getInstance().getServiceCollection().getBaseDataService();
+		
+			BaseAgentConfig baseAgentConfig = baseDataService.getBaseAgentConfig(Config.AGENT);
+			if (baseAgentConfig == null){
+				LogUtil.error("运营商="+Config.AGENT+" appid="+appid+"  游戏运营商不存在");
+				return 1;
+			}
+			
+			BaseServerConfig gameConfigVariable = baseDataService.getBaseServerConfig(site);
+			if (gameConfigVariable == null){
+				LogUtil.error("运营商="+Config.AGENT+" appid="+appid+"  游戏站点不存在");
+				return 1;
+			}
+			
+			String sign2 = MD5Service.encryptToUpperString(userId + site + playerId + payItemId + payType + money + cpOrderId + baseAgentConfig.getChargeKey());
+			if(!sign1.equals(sign2)){
+				LogUtil.error("运营商="+Config.AGENT+" appid="+appid+" 签名有误sign="+sign2);
+				return 1;
+			}
+			
+			if(!Integer.valueOf(money).equals(ptMoney)){
+				LogUtil.error("运营商="+Config.AGENT+" appid="+appid+" 支付金额有误ptMoney="+ptMoney);
+				return 1;
+			}
+			
+			IPayService payService = GCCContext.getInstance().getServiceCollection().getPayService();
+			PayLog payLog = payService.getPayLogByOutOrderNo(cpOrderId);
+			if(payLog == null){
+				payService.insertPayLog(Long.valueOf(userId), playerId, cpOrderId, orderId, ptMoney, payType, payItemId, Config.AGENT+"_"+appid, site, reqUrl);
+			}else{
+				
+				LogUtil.error("运营商="+Config.AGENT+" appid="+appid+" 订单已存在cpOrderId="+cpOrderId);
+				return 1;
+			}
+			
+			JSONObject jsonObject = new JSONObject();
+			jsonObject.put("content", content);
+			sendData_noWaitBack(jsonObject, this.getUrlByGameSitePath(gameConfigVariable.getGameInnerIp(),gameConfigVariable.getWebPort(), PathConstant.PAY));
+			
+			return 0;
+		} catch (Exception e) {
+			LogUtil.error("运营商="+Config.AGENT+" appid="+appid+" 发货异常:", e);
+			return 1;
+			
 		}
 	}
 }

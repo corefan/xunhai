@@ -19,6 +19,8 @@ public class PayLog implements Serializable {
 	private Long userId;
 	/** 玩家编号 */
 	private Long playerId;
+	/** 渠道*/
+	private String platform;
 	/** 充值站点 */
 	private String paySite;
 	/** 自己的订单号 */
@@ -46,13 +48,17 @@ public class PayLog implements Serializable {
 		StringBuilder sql = new StringBuilder(1 << 8);
 		
 		sql.append("INSERT INTO log_pay ");
-		sql.append("(logId, userId, playerId, paySite, outOrderNo, orderNo, money, payType, payItemId,  payUrl, state, createTime, updateTime) VALUES");
+		sql.append("(logId, userId, playerId, platform, paySite, outOrderNo, orderNo, money, payType, payItemId,  payUrl, state, createTime, updateTime) VALUES");
 		sql.append(" (");
 		sql.append(logId);
 		sql.append(",");
 		sql.append(userId);
 		sql.append(",");
 		sql.append(playerId);
+		sql.append(",");
+		sql.append("'");
+		sql.append(platform);
+		sql.append("'");
 		sql.append(",");
 		sql.append("'");
 		sql.append(paySite);
@@ -235,6 +241,14 @@ public class PayLog implements Serializable {
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getPlatform() {
+		return platform;
+	}
+
+	public void setPlatform(String platform) {
+		this.platform = platform;
 	}
 	
 }

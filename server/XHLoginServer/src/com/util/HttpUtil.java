@@ -124,9 +124,9 @@ public class HttpUtil {
      }
     
 	  /**
-	   * 发送http请求  
+	   * 发送http post请求  
 	   */
-	   public static String httpsRequest(String requestUrl, String requestMethod, String outputStr) {  
+	   public static String httpsRequest(String requestUrl, String param, String content_type) {  
 	          try {  
 	               
 	              URL url = new URL(requestUrl);  
@@ -135,15 +135,14 @@ public class HttpUtil {
 	              conn.setDoOutput(true);  
 	              conn.setDoInput(true);  
 	              conn.setUseCaches(false);  
-	              // 设置请求方式（GET/POST）  
-	              conn.setRequestMethod(requestMethod);  
-	              conn.setRequestProperty("content-type", "application/x-www-form-urlencoded");  
+	              conn.setRequestMethod("POST");  
+	              conn.setRequestProperty("content-type", content_type);  
 
 	              // 当outputStr不为null时向输出流写数据  
-	              if (null != outputStr) {  
+	              if (null != param) {  
 	                  OutputStream outputStream = conn.getOutputStream();  
 	                  // 注意编码格式  
-	                  outputStream.write(outputStr.getBytes("UTF-8"));  
+	                  outputStream.write(param.getBytes("UTF-8"));  
 	                  outputStream.close();  
 	              }  
 	              // 从输入流读取返回内容  

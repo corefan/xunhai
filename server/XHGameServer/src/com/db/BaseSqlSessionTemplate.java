@@ -31,7 +31,7 @@ public class BaseSqlSessionTemplate extends SimpleSqlSessionTemplate {
 				hikariConfig.setJdbcUrl("jdbc:mysql://" + Config.DB_BASE);
 				hikariConfig.setUsername(Config.DB_CONFIG_USER);
 				hikariConfig.setPassword(Config.DB_CONFIG_PW);
-				hikariConfig.setMaximumPoolSize(10);
+				hikariConfig.setMaximumPoolSize(1);
 				hikariConfig.setMaxLifetime(1800000);
 				if (Config.DB_BASE == null) {
 					ds = null;

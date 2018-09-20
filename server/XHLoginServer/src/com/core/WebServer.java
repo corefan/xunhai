@@ -4,15 +4,14 @@ import java.util.concurrent.TimeUnit;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.nio.SelectChannelConnector;
-import org.eclipse.jetty.server.ssl.SslSocketConnector;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.util.thread.ExecutorThreadPool;
 
 import com.common.Config;
 import com.constant.PathConstant;
 import com.servlet.ActCodeServlet;
+import com.servlet.AppIdServlet;
 import com.servlet.BindPhoneServlet;
 import com.servlet.BindingServlet;
 import com.servlet.ChangePasswordServlet;
@@ -105,6 +104,8 @@ public class WebServer {
 			contextHandler.addServlet(new ServletHolder(new ActCodeServlet()), PathConstant.ACTCODE);
 			contextHandler.addServlet(new ServletHolder(new IdentityStateServlet()), PathConstant.IDENTITY_STATE);
 			contextHandler.addServlet(new ServletHolder(new IdentityCheckServlet()), PathConstant.IDENTITY_CHECK);
+			
+			contextHandler.addServlet(new ServletHolder(new AppIdServlet()), PathConstant.APPID);
 			
 			server.setThreadPool(executorThreadPool);
 			server.setHandler(contextHandler);

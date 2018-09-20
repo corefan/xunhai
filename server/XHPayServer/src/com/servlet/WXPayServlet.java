@@ -102,7 +102,8 @@ public class WXPayServlet extends AbstractServlet {
 						String payItemId = contents[3]; // 商品编号
 						Integer payType = Integer.valueOf(contents[4]); // 支付类型
 						Integer money = Integer.valueOf(contents[5]); // 金额
-						String sign1 = contents[6]; // 签名
+						String cpOrderId = contents[6]; // cp订单号
+						String sign1 = contents[7]; // 签名
 						
 						IBaseDataService baseDataService = GCCContext.getInstance().getServiceCollection().getBaseDataService();
 
@@ -118,7 +119,7 @@ public class WXPayServlet extends AbstractServlet {
 							return;
 						}
 						
-						String sign2 = MD5Service.encryptToUpperString(userId + site + playerId + payItemId + payType + money +baseAgentConfig.getChargeKey());
+						String sign2 = MD5Service.encryptToUpperString(userId + site + playerId + payItemId + payType + money + cpOrderId + baseAgentConfig.getChargeKey());
 						if(!sign1.equals(sign2)){
 							LogUtil.error("微信支付签名有误："+sign2);
 							return;
@@ -136,7 +137,7 @@ public class WXPayServlet extends AbstractServlet {
 						IPayService payService = GCCContext.getInstance().getServiceCollection().getPayService();
 						PayLog payLog = payService.getPayLogByOutOrderNo(out_trade_no);
 						if(payLog == null){
-							payService.insertPayLog(userId, playerId, out_trade_no, trade_no, Integer.valueOf(money), payType, payItemId, site, map.toString());
+							payService.insertPayLog(userId, playerId, out_trade_no, trade_no, Integer.valueOf(money), payType, payItemId, Config.AGENT, site, map.toString());
 						}else{
 							payLog.setOrderNo(trade_no);
 							payLog.setPayUrl(map.toString());

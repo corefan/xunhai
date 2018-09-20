@@ -10,7 +10,7 @@ public class PathConstant {
 	/** 停服*/
 	public static final String STOPSERVER = "/stop";
 	
-	/** 充值 */
+	/** 充值  （游戏服） */
 	public static final String PAY = "/pay";
 	
 	/** 支付宝支付 */
@@ -19,4 +19,8 @@ public class PathConstant {
 	public static final String WX_PAY = "/wxpay";
 	/** 苹果支付 */
 	public static final String IAP_PAY = "/iappay";
+	
+	
+	/** 获取登录appid （登录服）*/
+	public static final String APPID = "/AppId";
 }

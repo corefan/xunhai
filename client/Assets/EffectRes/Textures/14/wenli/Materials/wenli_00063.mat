@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: wenli_00063
+  m_Shader: {fileID: 4800000, guid: 8139dc982e3e5a04a83bf0d362f32265, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 2999
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 6f0028f6fe0be4f408dce137b836ef2d, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c618856ad7725374d866ec245fec8fff, type: 3}
+          m_Scale: {x: 0.5, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Raodong1
+        second:
+          m_Texture: {fileID: 2800000, guid: f167b4325c295ff4381ae749c8eed415, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Raodong
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CtrlTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 0.078125
+      data:
+        first:
+          name: _ShadowAlpha
+        second: 0.3
+      data:
+        first:
+          name: _ShadowHeight
+        second: 0
+      data:
+        first:
+          name: _DissolveAmount
+        second: 0
+      data:
+        first:
+          name: _DissolveStart
+        second: 0
+      data:
+        first:
+          name: _ScrollX
+        second: 10
+      data:
+        first:
+          name: _ScrollY
+        second: -1
+      data:
+        first:
+          name: _Scroll2X
+        second: 1
+      data:
+        first:
+          name: _Scroll2Y
+        second: 0
+      data:
+        first:
+          name: _MMultiplier
+        second: 3
+      data:
+        first:
+          name: jialiang
+        second: 1
+      data:
+        first:
+          name: _HeatForce
+        second: 0.1
+      data:
+        first:
+          name: _HeatTime1x
+        second: 1
+      data:
+        first:
+          name: _HeatTime1y
+        second: 1
+      data:
+        first:
+          name: _SpecularPow
+        second: 0
+      data:
+        first:
+          name: _EdgeWidth
+        second: 0
+      data:
+        first:
+          name: _EdgePower
+        second: 1
+      data:
+        first:
+          name: _CubeValue
+        second: 1
+      data:
+        first:
+          name: _Amount
+        second: 0.01
+      data:
+        first:
+          name: _StartAmount
+        second: 0
+      data:
+        first:
+          name: _Liangdu
+        second: 3
+    m_Colors:
+      data:
+        first:
+          name: _LightDir
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Color
+        second: {r: 0.47442687, g: 0.71388036, b: 0.99264705, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      data:
+        first:
+          name: _ShadowDir
+        second: {r: 0, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _ShadowColor
+        second: {r: 0, g: 0, b: 0, a: 0.3}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+      data:
+        first:
+          name: _EdgeColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _MainColor
+        second: {r: 0.52205884, g: 0.78245455, b: 1, a: 1}

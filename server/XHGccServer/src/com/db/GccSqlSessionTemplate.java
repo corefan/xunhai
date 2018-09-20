@@ -26,7 +26,7 @@ public class GccSqlSessionTemplate extends SimpleSqlSessionTemplate {
 				hikariConfig.setJdbcUrl("jdbc:mysql://" + Config.DB_GCC);
 				hikariConfig.setUsername(Config.DB_GCC_USER);
 				hikariConfig.setPassword(Config.DB_GCC_PW);
-				hikariConfig.setMaximumPoolSize(10);
+				hikariConfig.setMaximumPoolSize(1);
 				hikariConfig.setMaxLifetime(1800000);
 				if (Config.DB_GCC == null) {
 					ds = null;

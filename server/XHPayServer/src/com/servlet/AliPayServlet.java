@@ -119,7 +119,8 @@ public class AliPayServlet extends AbstractServlet {
 				String payItemId = contents[3]; // 商品编号
 				Integer payType = Integer.valueOf(contents[4]); // 支付类型
 				Integer money = Integer.valueOf(contents[5]); // 金额
-				String sign1 = contents[6]; // 签名
+				String cpOrderId = contents[6]; // 签名
+				String sign1 = contents[7]; // 签名
 				
 				if(state == 2){
 					
@@ -139,7 +140,7 @@ public class AliPayServlet extends AbstractServlet {
 							return;
 						}
 						
-						String sign2 = MD5Service.encryptToUpperString(userId + site + playerId + payItemId + payType + money +baseAgentConfig.getChargeKey());
+						String sign2 = MD5Service.encryptToUpperString(userId + site + playerId + payItemId + payType + money + cpOrderId + baseAgentConfig.getChargeKey());
 						if(!sign1.equals(sign2)){
 							LogUtil.error("支付宝支付签名有误："+sign2);
 							return;
@@ -162,7 +163,7 @@ public class AliPayServlet extends AbstractServlet {
 				IPayService payService = GCCContext.getInstance().getServiceCollection().getPayService();
 				PayLog payLog = payService.getPayLogByOutOrderNo(out_trade_no);
 				if(payLog == null){
-					payService.insertPayLog(userId, playerId, out_trade_no, trade_no, Integer.valueOf(money), payType, payItemId, site, params.toString());
+					payService.insertPayLog(userId, playerId, out_trade_no, trade_no, Integer.valueOf(money), payType, payItemId, Config.AGENT, site, params.toString());
 				}else{
 					payLog.setOrderNo(trade_no);
 					payLog.setPayUrl(params.toString());

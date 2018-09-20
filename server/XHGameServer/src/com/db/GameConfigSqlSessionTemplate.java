@@ -45,7 +45,7 @@ public class GameConfigSqlSessionTemplate extends SimpleSqlSessionTemplate {
 				hikariConfig.setJdbcUrl("jdbc:mysql://" + (dbUrl == null ? dbUrl = Config.DB_GCC : dbUrl));
 				hikariConfig.setUsername(dbUsername == null ? Config.DB_CONFIG_USER : dbUsername);
 				hikariConfig.setPassword(dbPassword == null ? Config.DB_CONFIG_PW : dbPassword);
-				hikariConfig.setMaximumPoolSize(10);
+				hikariConfig.setMaximumPoolSize(1);
 				hikariConfig.setMaxLifetime(1800000);
 				if (dbUrl == null) {
 					ds = null;

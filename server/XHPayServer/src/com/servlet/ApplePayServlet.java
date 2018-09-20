@@ -19,7 +19,6 @@ import com.domain.config.BaseAgentConfig;
 import com.domain.config.BaseServerConfig;
 import com.service.IBaseDataService;
 import com.service.IPayService;
-import com.util.IDUtil;
 import com.util.IOS_Verify;
 import com.util.LogUtil;
 
@@ -74,7 +73,7 @@ public class ApplePayServlet extends AbstractServlet {
     	if (receipt == null || "".equals(receipt.trim()) || content == null || "".equals(content.trim())) return;
     	
 		String contents[] = content.split("\\|");
-		if (contents.length != 7) {
+		if (contents.length != 8) {
 			// 参数个数不对
 			LogUtil.error("苹果支付参数个数不对----------content="+content);
 			return;
@@ -86,17 +85,15 @@ public class ApplePayServlet extends AbstractServlet {
 		String payItemId = contents[3]; // 商品编号
 		Integer payType = Integer.valueOf(contents[4]); // 支付类型
 		String money = contents[5]; // 金额
-		String sign1 = contents[6]; // 签名
+		String cpOrderId = contents[6]; //自己生的唯一订单号
+		String sign1 = contents[7]; // 签名
 		
         //返回app结果
 		JSONObject result = new JSONObject();
 		
-        //自己生的唯一订单号
-		String outOrderNo = String.valueOf(IDUtil.geneteId(PayLog.class));
-        
         //查询数据库，看是否是己经验证过的账号  
 		IPayService payService = GCCContext.getInstance().getServiceCollection().getPayService();
-		PayLog payLog = payService.getPayLogByOutOrderNo(outOrderNo);
+		PayLog payLog = payService.getPayLogByOutOrderNo(cpOrderId);
 		if(payLog != null){
 	        //账单己验证过  
             result.put("state", -2);
@@ -157,7 +154,7 @@ public class ApplePayServlet extends AbstractServlet {
 						return;
 					}
 					
-					String sign2 = MD5Service.encryptToUpperString(userId + site + playerId + payItemId + payType + money +baseAgentConfig.getChargeKey());
+					String sign2 = MD5Service.encryptToUpperString(userId + site + playerId + payItemId + payType + money + cpOrderId + baseAgentConfig.getChargeKey());
 					if(!sign1.equals(sign2)){
 	                    result.put("state", -1);
 	                    this.postData(resp, result.toString());
@@ -178,7 +175,7 @@ public class ApplePayServlet extends AbstractServlet {
 					sendData_noWaitBack(jsonObject, this.getUrlByGameSitePath(gameConfigVariable.getGameInnerIp(),gameConfigVariable.getWebPort(), PathConstant.PAY));
 					
 	                //插入支付记录
-	        		payService.insertPayLog(userId, playerId, outOrderNo, transaction_id, Integer.valueOf(money), payType, product_id, site, returnJson.toString());
+	        		payService.insertPayLog(userId, playerId, cpOrderId, transaction_id, Integer.valueOf(money), payType, product_id, Config.AGENT, site, returnJson.toString());
 				} catch (Exception e) {
 					LogUtil.error("苹果支付充值发货异常：", e);
 				}

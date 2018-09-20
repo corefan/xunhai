@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: liuguang_117
+  m_Shader: {fileID: 4800000, guid: e679ce7f9dad0494fbb9969645710828, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 807442a9f365bf54287e0a7f8b7f8f79, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 0.078125
+      data:
+        first:
+          name: _ScrollX
+        second: 0
+      data:
+        first:
+          name: _ScrollY
+        second: 0
+      data:
+        first:
+          name: _Scroll2X
+        second: 0
+      data:
+        first:
+          name: _Scroll2Y
+        second: 0
+      data:
+        first:
+          name: _MMultiplier
+        second: 2
+      data:
+        first:
+          name: _SpecularPow
+        second: 0
+      data:
+        first:
+          name: _ShadowAlpha
+        second: 0.3
+      data:
+        first:
+          name: _ShadowHeight
+        second: 0.3
+      data:
+        first:
+          name: _EdgeWidth
+        second: 0
+      data:
+        first:
+          name: _EdgePower
+        second: 1
+      data:
+        first:
+          name: _DissolveAmount
+        second: 0
+      data:
+        first:
+          name: _DissolveStart
+        second: 0.1
+    m_Colors:
+      data:
+        first:
+          name: _LightDir
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      data:
+        first:
+          name: _MainColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+      data:
+        first:
+          name: _ShadowDir
+        second: {r: -0.2, g: 1, b: 0.2, a: 1}
+      data:
+        first:
+          name: _ShadowColor
+        second: {r: 0, g: 0, b: 0, a: 0.3}
+      data:
+        first:
+          name: _EdgeColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _PassThroughColor
+        second: {r: 0.38, g: 0.86, b: 0.74, a: 0}

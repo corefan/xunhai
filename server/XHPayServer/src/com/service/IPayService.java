@@ -14,7 +14,7 @@ public interface IPayService {
 	/**
 	 * 插入记录
 	 */
-	PayLog insertPayLog(Long userId, long playerId, String outOrderNo, String orderNo, int money, int payType, String payItemId, String paySite, String payUrl);
+	PayLog insertPayLog(Long userId, long playerId, String outOrderNo, String orderNo, int money, int payType, String payItemId, String platform, String paySite, String payUrl);
 	
 	/**
 	 * 更新记录

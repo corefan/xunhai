@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Fashi_daoguang003
+  m_Shader: {fileID: 4800000, guid: e679ce7f9dad0494fbb9969645710828, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 504cd1b029ed1fa42acf1eee3e6f9148, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 864bc76edf042ce4db6f5cf3ffddba7a, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+      data:
+        first:
+          name: _ScrollX
+        second: 0
+      data:
+        first:
+          name: _ScrollY
+        second: 0
+      data:
+        first:
+          name: _Scroll2X
+        second: 5
+      data:
+        first:
+          name: _Scroll2Y
+        second: 0
+      data:
+        first:
+          name: _MMultiplier
+        second: 2
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 0.1665225, g: 0.4367317, b: 0.8088235, a: 0.478}
