@@ -77,12 +77,6 @@ public class SdkToIOS : MonoSingleton<SdkToIOS>
     {
         Debug.Log(">>>>>>>>>>>>IOSCallPayResultCallBack "+param);
         GlobalDispatcher.GetInstance().DispatchEvent("IOSCallPayResultCallBack", param);
-        // DHZCreateOrderFail      = 1,    //创建订单失败
-        // DHZDoesNotExistProduct  = 2,    //商品信息不存在
-        // DHZUnknowFail           = 3,    //未知错误
-        // DHZVerifyReceiptSucceed = 4,    //验证成功
-        // DHZVerifyReceiptFail    = 5,    //验证失败
-        // DHZURLFail              = 6     //未能连接苹果商店
     }
     public void IOSCallPayClosedCallBack(string param)
     {

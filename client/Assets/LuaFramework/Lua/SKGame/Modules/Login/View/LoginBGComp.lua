@@ -39,7 +39,7 @@ end
 function LoginBGComp:InitUI()
 	self.btnNotice.icon = StringFormat("Icon/Activity/fun_5") 
 	self.btnLogin.icon = StringFormat("Icon/Activity/fun_18")
-	if DONGHAI then
+	if isSDKPlat then
 		self.btnLogin.visible = false
 	end
 	self:SetMaskVisible(true) --默认显示黑色透明底图

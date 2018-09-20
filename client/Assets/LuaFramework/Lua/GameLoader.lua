@@ -71,25 +71,14 @@ end
 function GameLoader.LoadResFinish()
 
 	CSharpDispatcher:AddEventListener("IOSCallLoginCallBack", function (context)
-		print("@lua >>>>",context.data)
-		 -- gId=86&subId=149&code=0&userId=xxxx&userName=dfasdfa
-		local data = GetIOSData(context.data)
-		GameConst.GId = tonumber(data.gId or GameConst.GId) or 0
-		GameConst.SId = tonumber(data.subId or GameConst.SId) or 0
-		LoginController:GetInstance():ReqLoginAccount(data.code, data.userId, data.userName)
-		
+		print("@lua>>>>IOSCallLoginCallBack")
+		LoginController:GetInstance():ReqLoginAccount(context.data)
 	end);
 	CSharpDispatcher:AddEventListener("IOSCallLogoutCallBack", function (context)
 		print("@lua>>>>IOSCallLogoutCallBack")
 	end);
 	CSharpDispatcher:AddEventListener("IOSCallPayResultCallBack", function (context)
 		print("@lua>>>>",context.data)
-		-- DHZCreateOrderFail      = 1,    //创建订单失败
-		-- DHZDoesNotExistProduct  = 2,    //商品信息不存在
-		-- DHZUnknowFail           = 3,    //未知错误
-		-- DHZVerifyReceiptSucceed = 4,    //验证成功
-		-- DHZVerifyReceiptFail    = 5,    //验证失败
-		-- DHZURLFail              = 6     //未能连接苹果商店
 	end);
 	CSharpDispatcher:AddEventListener("IOSCallPayClosedCallBack", function (context)
 		print("@lua>>>>IOSCallPayClosedCallBack")

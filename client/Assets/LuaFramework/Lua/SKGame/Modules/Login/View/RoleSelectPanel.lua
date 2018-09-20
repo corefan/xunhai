@@ -417,7 +417,7 @@ function RoleSelectPanel:OnBtnBackClick()
 	self.ctrl.kickState=true
 	Network.ResetLinkTimes()
 	Network.CloseSocket()
-	if DONGHAI then
+	if isSDKPlat then
 		SceneLoader.Show(true, false, 100, 100, "", "")
 		SceneLoader.ShowProgress(false)
 		SceneLoader.ShowIcon("loader")
@@ -493,7 +493,7 @@ function RoleSelectPanel:__delete()
 		self.layerOutTimer:Stop()
 		self.layerOutTimer=nil
 	end
-	if DONGHAI then
+	if isSDKPlat then
 		SceneLoader.Show(false)
 	end
 	self:CleanEvent()

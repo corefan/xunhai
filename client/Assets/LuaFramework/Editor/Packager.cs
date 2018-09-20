@@ -31,19 +31,20 @@ public class Packager {
     static void BuildAllScene(){
         if(AppConst.DebugMode)
             return;
+        //*
         // AddSceneABMap("1002");
         // AddSceneABMap("1003");
-        AddSceneABMap("1004");
+        // AddSceneABMap("1004");
         AddSceneABMap("1005");
 
-        AddSceneABMap("1001");
+        // AddSceneABMap("1001");
 
         AddSceneABMap("2001");
         AddSceneABMap("2002");
         AddSceneABMap("2003");
         AddSceneABMap("2004");
         AddSceneABMap("2005");
-        AddSceneABMap("2006");
+        // AddSceneABMap("2006");
         AddSceneABMap("2007");
         AddSceneABMap("2008");
         AddSceneABMap("2009");
@@ -52,7 +53,7 @@ public class Packager {
         AddSceneABMap("3001");
         AddSceneABMap("3002");
         AddSceneABMap("3003");
-        AddSceneABMap("3004");
+        // AddSceneABMap("3004");
         AddSceneABMap("3006");
         AddSceneABMap("3014");
 
@@ -84,7 +85,7 @@ public class Packager {
 
         AddSceneABMap("6001");
         AddSceneABMap("6002");
-        
+        //*/
     }
 
 	/// <summary>
@@ -94,9 +95,7 @@ public class Packager {
 	{
 		BuildNormalAB("Assets/Res/Audio");
 		BuildNormalAB("Assets/Res/Prefabs");
-		//BuildNormalAB("Assets/Res/Icon");
 		BuildNormalAB("Assets/IGSoft_Resources/Projects/Effect");
-
         BuildAllUI();
         BuildAllScene();
 	}
@@ -315,7 +314,7 @@ public class Packager {
      static void BuildMapSingle(BuildTarget target)
      {
          string resPath = "Assets/" + AppConst.AssetDir;
-         BuildAssetBundleOptions options = BuildAssetBundleOptions.ChunkBasedCompression;
+         BuildAssetBundleOptions options = BuildAssetBundleOptions.ChunkBasedCompression | BuildAssetBundleOptions.DeterministicAssetBundle;
          BuildPipeline.BuildAssetBundles(resPath, maps.ToArray(), options, target);
          AssetDatabase.Refresh();
      }
@@ -345,7 +344,7 @@ public class Packager {
 		
 		string resPath = "Assets/" + AppConst.AssetDir;
 
-        BuildAssetBundleOptions options = BuildAssetBundleOptions.ChunkBasedCompression;
+        BuildAssetBundleOptions options = BuildAssetBundleOptions.ChunkBasedCompression | BuildAssetBundleOptions.DeterministicAssetBundle;
 
 		BuildPipeline.BuildAssetBundles(resPath, maps.ToArray(), options, target);
 		BuildFileIndex();

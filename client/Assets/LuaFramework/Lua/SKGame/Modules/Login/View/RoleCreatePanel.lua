@@ -39,7 +39,9 @@ function RoleCreatePanel:InitEvent()
 	end
 
 	self.button_back.onClick:Add(self.OnButtonBackClick, self)
-	-- ButtonToDelayClick(self.button_back , function () self:OnButtonBackClick() end , 2 , "")
+	self.button_back.enabled=not isSDKPlat
+	self.button_back.visible=not isSDKPlat
+
 
 	self.button_random.onClick:Add(self.OnButtonRandomClick, self)
 
@@ -222,14 +224,7 @@ function RoleCreatePanel:OnButtonBackClick()
 	soundMgr:StopEffect()
 	EffectMgr.PlaySound("731001")
 	if self.openBySource == LoginConst.PANEL_OPEN_SOURCE.LOGIN_PANEL then
-		if DONGHAI then
-			SceneLoader.Show(true, false, 100, 100, "", "")
-			SceneLoader.ShowProgress(false)
-			SceneLoader.ShowIcon("loader")
-			sdkToIOS:OpenLogin()
-		else
-			self.ctrl:OpenLoginPanel()
-		end 
+		self.ctrl:OpenLoginPanel()
 	elseif self.openBySource == LoginConst.PANEL_OPEN_SOURCE.SELECT_PANEL then
 		self.ctrl:OpenRoleSelectPanel()
 		if self.ctrl.view.curPanel ~= nil then
@@ -506,9 +501,6 @@ function RoleCreatePanel:__delete()
 	if self.layerOutTimer then
 		self.layerOutTimer:Stop()
 		 self.layerOutTimer=nil
-	end
-	if DONGHAI then
-		SceneLoader.Show(false)
 	end
 	self.animator = nil
 	self:DestroyRoleModel()

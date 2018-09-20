@@ -42,7 +42,7 @@ function LoginController:__init( ... )
 			print("先加载完成场景了")
 		end)
 	end
-	if DONGHAI then
+	if isSDKPlat then
 		SceneLoader.Show(true, false, 100, 100, "", "")
 		SceneLoader.ShowProgress(false)
 		SceneLoader.ShowIcon("loader")
@@ -143,7 +143,7 @@ function LoginController:InitEvent()
 				GlobalDispatcher:DispatchEvent(EventName.AutoFightEnd)
 				GlobalDispatcher:DispatchEvent(EventName.RELOGIN_ROLE)
 			end
-			if not DONGHAI then
+			if not isSDKPlat then
 				if model:IsHasAccount() then
 					print("有账号用户－－－－－－－－－－－－－－－－＞")
 					local lastAccountData = model:GetLastAccount()
@@ -339,7 +339,7 @@ end
 
 	-- 上传信息到sdk平台
 	function LoginController:_uploadRoleInfo( character )
-		if DONGHAI then
+		if isSDKPlat then
 			self:UploadRoleInfo(character)
 		end
 	end
@@ -678,42 +678,57 @@ end
 --登录账号http请求
 --isVisitor 为0 表示是正常账号登录，账号名和密码都是正常账号和正常密码
 --isVisitor 为1 表示是游客账号登录，账号名为设备唯一id，密码统一为123456
--- /login?gameId=86&subGameId=149&accessToken=xxxx
 function LoginController:ReqLoginAccount( ... )
 	local args = {...}
-	local loginURL = GameConst.LoginURL
-	print("请求登入用户url ", loginURL, "args1 ", args[1], "args2 ", args[2], "args3 ", args[3], "args4 ", args[4], "args5 ", args[5])
+	print("请求登入用户url ", GameConst.LoginURL)
+	print("参数列表==>", "arg1 ", args[1], " |||args2 ", args[2], "args3 ", args[3], "args4 ", args[4], "args5 ", args[5])
+
 	local key = LoginConst.LoginKey
-	local t = os.time()
-	if args[1] and args[2] and args[3] then
-		if DONGHAI then
-			local code = tonumber(args[1])
-			local userId =  args[2]
-			local userName =  args[3]
-			if code == 0 then
-				local compStr = StringFormat("{0}{1}{2}{3}", userId, userName, t, key)
-				local signMD5 = Util.md5(compStr)
-				networkMgr:HttpRequest(1, loginURL, {"userId", userId, "userName", userName, "time", t, "sign", signMD5},
-					function (state, js) self:HandleReqLoginAccount(state, js) end)
-			else
-				UIMgr.Win_FloatTip("登录失败")
-				print("登录失败>>>>>>>>>", code)
-			end
-			
-		else
-			local compStr = StringFormat("{0}{1}{2}{3}{4}", args[1], args[2], args[3], t, key)
-			local signMD5 = Util.md5(compStr)
-			networkMgr:HttpRequest(1, loginURL, {"userName", args[1], "passWord", args[2], "tourist", args[3], "time", t, "sign", signMD5},
-				function (state, js) self:HandleReqLoginAccount(state, js) end)
-		end
-	end	
+	local reqHttpData = nil
+	
+	local appid=""
+	local userId=""
+	local userName=""
+	local passWord=""
+	local tourist=""
+	local token=""
+	local time=os.time()
+	local sign=""
+
+	if isSDKPlat then
+		local data = GetIOSData(args[1]) -- 转成table数据
+		if data.code and data.code ~= 0 then UIMgr.Win_FloatTip("登录失败！"..data.code) return end -- 个别平台sdk返回code,非0表示登录失败
+
+		GameConst.GId = tonumber(data.gid or GameConst.GId) or 0
+		GameConst.SId = tonumber(data.subid or GameConst.SId) or 0
+
+		appid = data.appid or ""
+		userId = data.userId or ""
+		userName = data.userName or ""
+		passWord = data.passWord or ""
+		tourist = data.tourist or ""
+		token = data.token or ""
+		time = data.time or time
+
+		print("------|appid",appid, "|userId",userId, "|userName",userName, "|passWord",passWord, "|tourist",tourist, "|token",token, "|time",time)
+		sign = Util.md5( StringFormat("{0}{1}{2}{3}{4}{5}{6}{7}", appid, userId, userName, passWord, tourist, token, time, key) )
+		reqHttpData = {"appid",appid, "userId",userId, "userName",userName, "passWord",passWord, "tourist",tourist, "token",token, "time",time, "sign", sign}
+
+	else --原原生开发登录
+		userName = args[1]
+		passWord = args[2]
+		tourist = args[3]
+		sign = Util.md5( StringFormat("{0}{1}{2}{3}{4}{5}{6}{7}", appid, userId, userName, passWord, tourist, token, time, key) )
+		reqHttpData = {"appid",appid, "userId",userId, "userName",userName, "passWord",passWord, "tourist",tourist, "token",token, "time",time, "sign", sign}
+	end
+	networkMgr:HttpRequest(1, GameConst.LoginURL, reqHttpData, function (state, js) self:HandleReqLoginAccount(state, js) end)
 end
 
 --登录账号http请求回调
 function LoginController:HandleReqLoginAccount(state, js)
+	print(">>>>>>>>>>>HandleReqLoginAccount ", js)
 	if state == 1 then
 		local data = JSON:decode(js)
-		print(">>>>>>>>>>>HandleReqLoginAccount ", js)
 		local result = data.result
 		if result ~= 0 and LoginConst.LoginServerTips[tostring(result)] then
 			UIMgr.Win_FloatTip(LoginConst.LoginServerTips[tostring(result)])
@@ -733,7 +748,7 @@ function LoginController:HandleReqLoginAccount(state, js)
 				if curPanel then curPanel:PopUpLoginNameTips() end
 				model:SetAutoHttpLogin(true)
 			end
-			if DONGHAI then
+			if isSDKPlat then
 				SceneLoader.Show(false)
 			end
 		else

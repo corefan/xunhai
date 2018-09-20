@@ -171,6 +171,12 @@ end
 	}"
 	转为table
 ]]
+
+local ____eq = "="
+local ____eq0 = "@&%%%&@"
+local ____eq1 = "@&###&@"
+local ____eq2 = "@&%%%&@"
+local ____eq3 = "@&$$$&@"
 function GetIOSData( param )
 	if not param then return nil end
 	param = ClearAllLetter(param, "[%s]")
@@ -180,13 +186,30 @@ function GetIOSData( param )
 		for i,v in ipairs(content) do
 			if v~="" then
 				if string.find(v, "[{|}]") then
-					local i,j = string.find(v, "=")
+					local i,j = string.find(v, ____eq)
 					local n = string.sub(v, 1, i-1)
 					local v = string.sub(v,j+1)
 					data[n] = GetIOSData(ClearAllLetter(ClearAllLetter(v, "[{|}]"), ";", "&"))
 				else
-					local tmp = StringSplit(v, '=')
-					data[tmp[1]] = tmp[2]
+					-- local tmp = StringSplit(v, '=')
+					-- data[tmp[1]] = tmp[2]
+					
+					local eqa = ____eq0
+					local eqb = ____eq2
+					if string.find(v, eqa) then
+						eqa = ____eq1
+					end
+					if string.find(v, eqb) then
+						eqb = ____eq3
+					end
+					local tmp = string.gsub( v, ____eq, eqa, 1 )
+					tmp = string.gsub( tmp, ____eq, eqb)
+					tmp = string.gsub(tmp, eqa, ____eq, 1 )
+					tmp = StringSplit(tmp, ____eq)
+					local k = tmp[1]
+					local vv = tmp[2]
+					vv = string.gsub( vv, eqb, ____eq)
+					data[k] = vv
 				end
 			end
 		end

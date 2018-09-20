@@ -75,17 +75,17 @@ function PayCtrl:S_Pay( buffer )
 	local cpOrderId = msg.cpOrderId or ""
 	local pdName = chargeVo.name
 	local pdDesc = chargeVo.name
-	local total = chargeVo.price
+	local total = chargeVo.price * (GameConst.IAPPriceUnit or 1)
 	local desc = msg.payInfo or ""
 	local payType = msg.payType
 
 	local gid = GameConst.GId
 	local sid = GameConst.SId
 	
-	if DONGHAI then
+	if isSDKPlat then
 		local iapId = self:GetExistPlatIap(pdId, gid, sid)
 		if iapId == nil then UIMgr.Win_FloatTip(StringFormat("充值失败，没有找到相关充值配置=>{0}_{1}_{2}"), pdId, gid, sid) return end
-		sdkToIOS:OpenPay(svrId, rId, rName, cpOrderId, iapId, pdName, pdDesc, total*100, desc)
+		sdkToIOS:OpenPay(svrId, rId, rName, cpOrderId, iapId, pdName, pdDesc, total, desc)
 	else
 		payMgr:Pay(pdId, desc, payType, cpOrderId)
 	end

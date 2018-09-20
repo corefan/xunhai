@@ -108,7 +108,7 @@ end
 function PayPanel:SetCellClick( cell, id )
 	cell.data = id
 	cell.onClick:Add(function ( eve )
-		if GameConst.ApplePay then
+		if GameConst.isAppleIAP then
 			PayCtrl:GetInstance():C_Pay(tonumber(eve.sender.data), 3)
 		else
 			self.model:OnCellClick( eve )
