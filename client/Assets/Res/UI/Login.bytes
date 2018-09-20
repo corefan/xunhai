@@ -1,0 +1,218 @@
+gkfb15.xml|601|<component size="567,70" extention="Button">
+  <displayList>
+    <image id="n3" name="bg" src="v18512" xy="0,0" size="567,70"/>
+    <loader id="n4" name="loaderState" xy="21,17" size="39,39" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n5" name="labelServerName" xy="82,13" size="321,45" font="方正粗圆简体" fontSize="28" color="#ffffff" vAlign="middle" autoSize="none" text=""/>
+    <image id="n7" name="imgSelectServer" src="hmas11" xy="407,19"/>
+    <image id="n8" name="n8" src="v2kx1g" xy="534,13"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.98"/>
+</component>hmasx.xml|1109|<component size="1334,750">
+  <displayList>
+    <component id="n0" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <loader id="n23" name="loaderBGAlpha" xy="232,376" size="870,225" visible="false" url="ui://0qk3a0fjv2kx1k" fill="scaleFree"/>
+    <image id="n1" name="bg0" src="j2mza" xy="366,299" size="623,98" group="n13"/>
+    <image id="n2" name="imgAccount" src="j2mzi" xy="403,331" group="n13"/>
+    <text id="n3" name="labelName" xy="455,328" size="389,44" group="n13" font="方正粗圆简体" fontSize="26" color="#000f0f" vAlign="middle" autoSize="none" text=""/>
+    <component id="n5" name="btnBind" src="j2mzm" xy="863,335" size="83,28" group="n13">
+      <Button title="游客绑定"/>
+    </component>
+    <group id="n13" name="groupAccount" xy="366,299" size="623,98" visible="false" advanced="true"/>
+    <component id="n19" name="btnLogin" src="ifx51n" xy="439,495" size="485,68">
+      <Button title="登录游戏" titleColor="#ffffff" icon="ui://0qk3a0fjv2kx1l" selectedIcon="ui://0qk3a0fjv2kx1m"/>
+    </component>
+    <component id="n20" name="btnSelectServer" src="gkfb15" xy="383,410"/>
+  </displayList>
+</component>ifx51n.xml|650|<component size="100,50" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over" selected="0"/>
+  <displayList>
+    <loader id="n5" name="icon" xy="0,0" size="100,50" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="100,50" font="方正粗圆简体" fontSize="32" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>j2mz6.xml|941|<component size="1334,750">
+  <displayList>
+    <loader id="n11" name="bg" xy="0,0" size="1334,750" align="center" vAlign="middle" fill="scaleFree"/>
+    <loader id="n10" name="logo" xy="17,15" size="385,243" fill="scale"/>
+    <graph id="n5" name="bgTips" xy="0,710" size="1334,40" alpha="0.65" type="rect" lineSize="0" lineColor="#00000000" fillColor="#ff000000"/>
+    <text id="n6" name="labelTips" xy="0,710" size="1334,40" font="方正粗圆简体" fontSize="16" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。"/>
+    <graph id="n8" name="mask" xy="0,0" size="1334,750" alpha="0.7" type="rect" fillColor="#ff000000"/>
+    <component id="n2" name="btnNotice" src="t5hdnfq" pkg="0tyncec1" xy="1270,23" size="64,64"/>
+    <component id="n3" name="btnLogin" src="t5hdnfq" pkg="0tyncec1" xy="1270,96" size="64,64"/>
+  </displayList>
+</component>j2mz9.xml|1077|<component size="1334,750">
+  <controller name="c1" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n0" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <image id="n2" name="bg0" src="j2mza" xy="414,156" size="492,317">
+      <gearDisplay controller="c1" pages="0"/>
+    </image>
+    <image id="n1" name="bg1" src="j2mzb" xy="590,198" visible="false"/>
+    <image id="n3" name="bg2" src="j2mzd" xy="443,290" size="432,57"/>
+    <text id="n4" name="labelPhoneNum" xy="456,297" size="411,43" input="true" prompt="请输入绑定的手机号" maxLength="11" keyboardType="5" font="方正粗圆简体" fontSize="26" color="#89827f" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text=""/>
+    <component id="n7" name="btnSendMessage" src="tnbmnka" pkg="0tyncec1" xy="452,363" size="420,60">
+      <Button title="发送信息" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzc"/>
+    </component>
+    <component id="n8" name="btnClose" src="t5hdnfq" pkg="0tyncec1" xy="832,179" size="60,60">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+  </displayList>
+</component>j2mze.xml|973|<component size="1334,750">
+  <displayList>
+    <component id="n5" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <image id="n0" name="bg" src="j2mza" xy="412,138" size="492,398"/>
+    <image id="n1" name="bgGameName" src="j2mzb" xy="586,177" visible="false"/>
+    <component id="n2" name="btnCreateAccount" src="tnbmnka" pkg="0tyncec1" xy="449,259" size="420,60">
+      <Button title="创建账号" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzf" selectedIcon="ui://0qk3a0fjj2mzo"/>
+    </component>
+    <component id="n3" name="btnLogin" src="tnbmnka" pkg="0tyncec1" xy="449,329" size="420,60">
+      <Button title="账号登录" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzf" selectedIcon="ui://0qk3a0fjj2mzo"/>
+    </component>
+    <component id="n4" name="btnVisitorLogin" src="tnbmnka" pkg="0tyncec1" xy="449,399" size="420,60">
+      <Button title="游客登录" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzc" selectedIcon="ui://0qk3a0fjj2mzo"/>
+    </component>
+  </displayList>
+</component>j2mzg.xml|846|<component size="1334,750">
+  <displayList>
+    <component id="n1" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <image id="n0" name="bg0" src="j2mza" xy="414,156" size="492,445"/>
+    <image id="n2" name="bg1" src="j2mzb" xy="595,194" visible="false"/>
+    <component id="n4" name="userNameItem" src="j2mzh" xy="447,268"/>
+    <component id="n5" name="passwordItem0" src="j2mzh" xy="447,331"/>
+    <component id="n6" name="passwordItem1" src="j2mzh" xy="447,394"/>
+    <component id="n7" name="btnCreateAccount" src="tnbmnka" pkg="0tyncec1" xy="455,475" size="420,60">
+      <Button title="注册" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzf"/>
+    </component>
+    <component id="n8" name="btnClose" src="t5hdnfq" pkg="0tyncec1" xy="825,182" size="60,60">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+  </displayList>
+</component>j2mzh.xml|412|<component size="432,57">
+  <displayList>
+    <image id="n2" name="bgBorder" src="j2mzd" xy="0,0" size="432,57"/>
+    <loader id="n3" name="loader" xy="10,4" size="48,48" align="center" vAlign="middle"/>
+    <text id="n4" name="labelContent" xy="66,9" size="356,38" input="true" font="方正粗圆简体" fontSize="24" color="#ffffff" vAlign="middle" autoSize="none" singleLine="true" text=""/>
+  </displayList>
+</component>j2mzk.xml|1529|<component size="1334,750">
+  <displayList>
+    <component id="n0" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <image id="n1" name="bg" src="j2mza" xy="414,156" size="492,524"/>
+    <image id="n2" name="imgLogo" src="j2mzb" xy="584,187" visible="false"/>
+    <component id="n12" name="userNameItem" src="j2mzh" xy="445,300"/>
+    <component id="n3" name="passwordItem" src="j2mzh" xy="446,371" size="432,57"/>
+    <component id="n5" name="btnLogin" src="tnbmnka" pkg="0tyncec1" xy="450,446" size="420,60">
+      <Button title="登录" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzf"/>
+    </component>
+    <component id="n18" name="btnBind" src="tnbmnka" pkg="0tyncec1" xy="451,521" size="420,60">
+      <Button title="游客绑定" titleColor="#e5e5e5" icon="ui://0qk3a0fjj2mzc"/>
+    </component>
+    <component id="n20" name="btnForgetPassword" src="tnbmnka" pkg="0tyncec1" xy="779,387" size="89,23">
+      <Button titleColor="#e5e5e5" icon="ui://0qk3a0fjv2kx1f"/>
+    </component>
+    <component id="n15" name="accountScrollView" src="j2mzu" xy="447,304" size="428,119"/>
+    <component id="n16" name="btnComboBox" src="j2mzv" xy="816,306"/>
+    <component id="n17" name="btnClose" src="t5hdnfq" pkg="0tyncec1" xy="833,176" size="60,60">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+    <component id="n11" name="btnResetPassword" src="j2mzm" xy="784,610">
+      <relation target="n1" sidePair="bottom-bottom,right-right"/>
+      <Button title="修改密码" titleColor="#ffffff"/>
+    </component>
+  </displayList>
+</component>j2mzm.xml|347|<component size="77,24" extention="Button">
+  <displayList>
+    <text id="n0" name="title" xy="0,0" size="77,22" font="方正粗圆简体" fontSize="18" color="#20a47d" underline="true" text="忘记密码">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>j2mzt.xml|763|<component size="418,50" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bg" src="j2mzd" xy="4,0" size="410,51">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n2" name="bgSelected" src="j2mzo" xy="0,0" size="339,42">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n1" name="title" xy="8,6" size="402,38" font="方正粗圆简体" fontSize="26" color="#cccccc" vAlign="middle" autoSize="none" text="1111111"/>
+    <component id="n3" name="btnDelete" src="t5hdnfq" pkg="0tyncec1" xy="375,10" size="32,32" visible="false">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>j2mzu.xml|478|<component size="427,119">
+  <controller name="c1" pages="0,滑入,1,滑出" selected="0"/>
+  <displayList>
+    <image id="n1" name="bg" src="j2mza" xy="-26,-27" size="475,171"/>
+    <list id="n0" name="content" xy="0,0" size="421,118" overflow="scroll" margin="2,2,2,2" defaultItem="ui://0qk3a0fjj2mzt">
+      <gearDisplay controller="c1" pages="0,1"/>
+      <gearXY controller="c1" pages="0,1" values="0,0|0,-148" default="0,0" tween="true"/>
+    </list>
+  </displayList>
+</component>j2mzv.xml|375|<component size="53,53" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bg" src="j2mzn" xy="7,8"/>
+  </displayList>
+  <Button/>
+  <transition name="t0">
+    <item time="7" type="Rotation" target="n0" value="180"/>
+    <item time="7" type="XY" target="n0" value="40,38"/>
+  </transition>
+</component>package.xml|2467|<packageDescription id="0qk3a0fj" name="Login">
+  <resources>
+    <atlas id="atlas0" size="1024,512" file="atlas0.png"/>
+    <component id="gkfb15" name="BtnSelectServer" exported="true" size="567,70"/>
+    <component id="hmasx" name="VisitorLoginPanel" exported="true" size="1334,750"/>
+    <component id="ifx51n" name="LoginBtn" size="100,50"/>
+    <component id="j2mz6" name="LoginBGComp" exported="true" size="1334,750"/>
+    <component id="j2mz9" name="PhoneBindPanel" exported="true" size="1334,750"/>
+    <component id="j2mze" name="AccountManagerPanel" exported="true" size="1334,750"/>
+    <component id="j2mzg" name="CreateAccountPanel" exported="true" size="1334,750"/>
+    <component id="j2mzh" name="LoginInfoItem" exported="true" size="432,57"/>
+    <component id="j2mzk" name="LoginPanel" exported="true" size="1334,750"/>
+    <component id="j2mzm" name="BtnForgetPassword" exported="true" size="77,24"/>
+    <component id="j2mzt" name="AccountItem" exported="true" size="418,50"/>
+    <component id="j2mzu" name="AccountContent" exported="true" size="427,119"/>
+    <component id="j2mzv" name="BtnComboBox" size="53,53"/>
+    <component id="xn4519" name="ResetPasswordPanel" exported="true" size="1334,750"/>
+    <image id="hmas11" name="dianjixuanfu" size="126,33"/>
+    <image id="j2mza" name="tishidi" size="191,191" scale="9grid" scale9grid="43,33,98,124"/>
+    <image id="j2mzb" name="logo" size="160,60"/>
+    <image id="j2mzc" name="btn_1" size="423,66" scale9grid="5,5,9,7"/>
+    <image id="j2mzd" name="shuruxialakuang" size="55,57" scale="9grid" scale9grid="16,20,19,17"/>
+    <image id="j2mzf" name="btn_2" size="423,66" scale9grid="106,16,209,36"/>
+    <image id="j2mzi" name="zhanghao" size="34,36" exported="true"/>
+    <image id="j2mzj" name="mima" size="34,36" exported="true"/>
+    <image id="j2mzn" name="btn_xiala" size="39,35"/>
+    <image id="j2mzo" name="xuanzhongkuang" size="64,62" scale="9grid" scale9grid="19,21,26,19"/>
+    <image id="s6h913" name="dengluyouxi" size="130,32" exported="true"/>
+    <image id="v18512" name="xuanfudi" size="80,66" scale="9grid" scale9grid="30,30,21,8"/>
+    <image id="v2kx1f" name="wjmm" size="89,23"/>
+    <image id="v2kx1g" name="r_arraw" size="30,45"/>
+    <image id="v2kx1k" name="svrbg" size="491,230" scale="9grid" scale9grid="123,58,246,116"/>
+    <image id="v2kx1l" name="dlyx0" size="450,67"/>
+    <image id="v2kx1m" name="dlyx1" size="450,67"/>
+  </resources>
+</packageDescription>xn4519.xml|919|<component size="1334,750">
+  <displayList>
+    <component id="n0" name="loginBGComp" src="j2mz6" xy="0,0"/>
+    <image id="n1" name="bg0" src="j2mza" xy="414,156" size="492,523"/>
+    <image id="n2" name="bg1" src="j2mzb" xy="584,187" visible="false"/>
+    <component id="n3" name="userNameItem" src="j2mzh" xy="445,290"/>
+    <component id="n4" name="passwordItem0" src="j2mzh" xy="445,353"/>
+    <component id="n5" name="passwordItem1" src="j2mzh" xy="445,416"/>
+    <component id="n8" name="passwordItem2" src="j2mzh" xy="445,479"/>
+    <component id="n6" name="btnResetPassword" src="tnbmnka" pkg="0tyncec1" xy="450,547" size="420,60">
+      <Button title="修改密码" titleColor="#ffffff" icon="ui://0qk3a0fjj2mzf"/>
+    </component>
+    <component id="n7" name="btnClose" src="t5hdnfq" pkg="0tyncec1" xy="833,176" size="60,60">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+  </displayList>
+</component>

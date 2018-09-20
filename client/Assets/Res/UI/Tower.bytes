@@ -1,0 +1,153 @@
+gp6d3.xml|649|<component size="1334,750">
+  <displayList>
+    <image id="n0" name="bg" src="gp6d2" xy="0,0"/>
+    <component id="n1" name="QuiteBtn" src="gp6d5" xy="12,17"/>
+    <component id="n3" name="NextBtn" src="gp6d7" xy="911,616"/>
+    <component id="n4" name="TurnComponent" src="hovhs" xy="673,98" pivot="0.5,0.5"/>
+    <component id="n5" name="ShowLevel" src="hovhp" xy="801,83"/>
+    <image id="n6" name="Vicon" src="hovht" xy="331,3"/>
+    <image id="n7" name="yun1" src="hovhu" xy="855,342"/>
+    <image id="n8" name="yun2" src="hovhv" xy="345,428"/>
+    <component id="n10" name="RewardShow" src="hovh1q" xy="479,263"/>
+  </displayList>
+</component>gp6d5.xml|359|<component size="118,118" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="bg" src="gp6d4" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>gp6d7.xml|580|<component size="265,95" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n2" name="bg1" src="gp6d8" xy="74,77"/>
+    <image id="n1" name="bg2" src="gp6d6" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3" name="title" xy="61,27" size="155,34" font="华康圆体W7(P)" fontSize="30" text="进入下一层">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>hovh11.xml|465|<component size="1334,750">
+  <displayList>
+    <image id="n0" name="bg" src="gp6d2" xy="0,0" grayed="true"/>
+    <component id="n1" name="QuiteBtn" src="gp6d5" xy="44,34"/>
+    <image id="n2" name="bg1" src="hovhr" xy="444,95" grayed="true"/>
+    <image id="n3" name="bg2" src="hovhz" xy="520,71"/>
+    <component id="n4" name="FailShowLevel" src="hovh13" xy="799,88"/>
+    <component id="n6" name="NextBtn" src="gp6d7" xy="911,616"/>
+  </displayList>
+</component>hovh13.xml|268|<component size="93,245">
+  <displayList>
+    <image id="n0" name="icon" src="hovh14" xy="0,0"/>
+    <text id="n1" name="title" xy="25,11" size="34,224" font="ui://jf5x839xhovh1i" fontSize="12" align="center" autoSize="none" text="第10层"/>
+  </displayList>
+</component>hovh1i.fnt|665|info creator=UIBuilder
+char id=48 img=hovh19 xoffset=5 yoffset=0 xadvance=0
+char id=49 img=hovh18 xoffset=5 yoffset=0 xadvance=0
+char id=50 img=hovh17 xoffset=5 yoffset=0 xadvance=0
+char id=51 img=hovh16 xoffset=5 yoffset=0 xadvance=0
+char id=52 img=hovh1h xoffset=5 yoffset=0 xadvance=0
+char id=53 img=hovh1g xoffset=5 yoffset=0 xadvance=0
+char id=54 img=hovh1f xoffset=5 yoffset=0 xadvance=0
+char id=55 img=hovh1e xoffset=5 yoffset=0 xadvance=0
+char id=56 img=hovh1d xoffset=5 yoffset=0 xadvance=0
+char id=57 img=hovh1c xoffset=5 yoffset=0 xadvance=0
+char id=23618 img=hovh1b xoffset=0 yoffset=0 xadvance=0
+char id=31532 img=hovh1a xoffset=0 yoffset=0 xadvance=0
+hovh1p.xml|696|<component size="146,146">
+  <displayList>
+    <loader id="n0" name="bg" xy="0,0" size="146,146" url="ui://jf5x839xhovh1m"/>
+    <loader id="n4" name="quality" xy="27,26" size="50,30" url="ui://0pzzz7o0d3t626" align="center" vAlign="middle" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <loader id="n2" name="icon" xy="33,33" size="80,81" fill="scaleMatchWidth"/>
+    <text id="n3" name="num" xy="44,86" size="67,27" font="华康圆体W7(P)" fontSize="23" color="#e5e5e5" align="center" vAlign="middle" strokeColor="#2e4552" strokeSize="2" text="10000">
+      <relation target="n0" sidePair="right-right"/>
+    </text>
+  </displayList>
+</component>hovh1q.xml|136|<component size="400,131">
+  <displayList>
+    <image id="n0" name="titleIcon" src="hovh1n" xy="147,-32"/>
+  </displayList>
+</component>hovho.fnt|653|info creator=UIBuilder
+char id=48 img=hovhc xoffset=5 yoffset=0 xadvance=0
+char id=49 img=hovhn xoffset=5 yoffset=0 xadvance=0
+char id=50 img=hovhm xoffset=5 yoffset=0 xadvance=0
+char id=51 img=hovhl xoffset=5 yoffset=0 xadvance=0
+char id=52 img=hovhk xoffset=5 yoffset=0 xadvance=0
+char id=53 img=hovhj xoffset=5 yoffset=0 xadvance=0
+char id=54 img=hovhi xoffset=5 yoffset=0 xadvance=0
+char id=55 img=hovhh xoffset=5 yoffset=0 xadvance=0
+char id=56 img=hovhg xoffset=5 yoffset=0 xadvance=0
+char id=57 img=hovhf xoffset=5 yoffset=0 xadvance=0
+char id=23618 img=hovhe xoffset=0 yoffset=0 xadvance=0
+char id=31532 img=hovhd xoffset=0 yoffset=0 xadvance=0
+hovhp.xml|264|<component size="93,245">
+  <displayList>
+    <image id="n0" name="bg" src="hovhq" xy="0,0"/>
+    <text id="n1" name="title" xy="25,11" size="34,224" font="ui://jf5x839xhovho" fontSize="12" align="center" autoSize="none" text="第10层"/>
+  </displayList>
+</component>hovhs.xml|143|<component size="458,458" pivot="0.5,0.5">
+  <displayList>
+    <image id="n0" name="bg" src="hovhr" xy="-229,0"/>
+  </displayList>
+</component>package.xml|3355|<packageDescription id="jf5x839x" name="Tower">
+  <resources>
+    <atlas id="atlas0" size="2048,2048" file="atlas0.png"/>
+    <component id="gp6d3" name="VictorySettlePanel" exported="true" size="1334,750"/>
+    <component id="gp6d5" name="QuiteBtnS" size="118,118"/>
+    <component id="gp6d7" name="NextBtnS" size="265,95"/>
+    <component id="hovh11" name="FailSettlePanel" exported="true" size="1334,750"/>
+    <component id="hovh13" name="FailShowLevel" size="93,245"/>
+    <component id="hovh1p" name="RewardItem" exported="true" size="146,146"/>
+    <component id="hovh1q" name="ShowRewardP" size="400,131"/>
+    <component id="hovhp" name="ShowLevel" size="93,245"/>
+    <component id="hovhs" name="TurnComponent" size="458,458"/>
+    <font id="hovh1i" name="TowerFailLevelFont" exported="true"/>
+    <font id="hovho" name="TowerLevelFont" exported="true"/>
+    <image id="gp6d2" name="背景" size="1334,750"/>
+    <image id="gp6d4" name="返回" size="118,118"/>
+    <image id="gp6d6" name="按钮" size="265,95"/>
+    <image id="gp6d8" name="云纹" size="210,34"/>
+    <image id="hovh14" name="竖底2" size="93,245"/>
+    <image id="hovh16" name="3(2)" size="17,25" exported="true"/>
+    <image id="hovh17" name="2(2)" size="17,24" exported="true"/>
+    <image id="hovh18" name="1(2)" size="8,25" exported="true"/>
+    <image id="hovh19" name="0(2)" size="16,25" exported="true"/>
+    <image id="hovh1a" name="第2" size="23,35" exported="true"/>
+    <image id="hovh1b" name="层2" size="28,31" exported="true"/>
+    <image id="hovh1c" name="9(2)" size="16,25" exported="true"/>
+    <image id="hovh1d" name="8(2)" size="17,25" exported="true"/>
+    <image id="hovh1e" name="7(2)" size="17,24" exported="true"/>
+    <image id="hovh1f" name="6(2)" size="16,25" exported="true"/>
+    <image id="hovh1g" name="5(2)" size="16,24" exported="true"/>
+    <image id="hovh1h" name="4(2)" size="18,25" exported="true"/>
+    <image id="hovh1j" name="发光绿" size="146,146" exported="true"/>
+    <image id="hovh1k" name="发光蓝" size="146,146" exported="true"/>
+    <image id="hovh1l" name="发光黄" size="146,146" exported="true"/>
+    <image id="hovh1m" name="发光白" size="146,146" exported="true"/>
+    <image id="hovh1n" name="获得" size="101,27"/>
+    <image id="hovh1o" name="发光紫" size="146,146" exported="true"/>
+    <image id="hovhc" name="0" size="17,24" exported="true"/>
+    <image id="hovhd" name="第" size="23,35" exported="true"/>
+    <image id="hovhe" name="层" size="28,31" exported="true"/>
+    <image id="hovhf" name="9" size="17,24" exported="true"/>
+    <image id="hovhg" name="8" size="17,24" exported="true"/>
+    <image id="hovhh" name="7" size="17,24" exported="true"/>
+    <image id="hovhi" name="6" size="17,24" exported="true"/>
+    <image id="hovhj" name="5" size="17,24" exported="true"/>
+    <image id="hovhk" name="4" size="17,24" exported="true"/>
+    <image id="hovhl" name="3" size="17,25" exported="true"/>
+    <image id="hovhm" name="2" size="17,24" exported="true"/>
+    <image id="hovhn" name="1" size="17,24" exported="true"/>
+    <image id="hovhq" name="竖底" size="93,245"/>
+    <image id="hovhr" name="圆底" size="458,458"/>
+    <image id="hovht" name="胜利" size="522,545"/>
+    <image id="hovhu" name="云纹3" size="149,145"/>
+    <image id="hovhv" name="云纹2" size="200,85"/>
+    <image id="hovhz" name="失败" size="383,477"/>
+  </resources>
+</packageDescription>

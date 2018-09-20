@@ -1,0 +1,42 @@
+j4usa.xml|341|<component size="333,23" overflow="hidden" extention="ProgressBar">
+  <displayList>
+    <image id="n1" name="n1" src="osjz3" xy="0,0" size="333,23">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="bar" src="osjz4" xy="13,6" size="307,11"/>
+  </displayList>
+  <ProgressBar/>
+</component>j4usb.xml|423|<component size="333,45">
+  <displayList>
+    <component id="n0" name="process_bar_collect" src="j4usa" xy="0,22">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n1" name="label_process_title" xy="49,0" size="227,23" font="方正粗圆简体" fontSize="16" color="#fef1d5" align="center" vAlign="middle" autoSize="none" shadowColor="#001c1c" shadowOffset="1,1" text="回程中... 5s"/>
+  </displayList>
+</component>j4usc.xml|323|<component size="333,23" extention="ProgressBar">
+  <displayList>
+    <image id="n1" name="n1" src="osjz3" xy="0,0" size="333,23">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="bar" src="osjz2" xy="13,6" size="307,11"/>
+  </displayList>
+  <ProgressBar/>
+</component>j4usd.xml|428|<component size="333,45">
+  <displayList>
+    <component id="n0" name="process_bar_back_to_city" src="j4usc" xy="0,22">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n2" name="label_process_title" xy="49,0" size="227,23" font="方正粗圆简体" fontSize="16" color="#fef1d5" align="center" vAlign="middle" autoSize="none" shadowColor="#001c1c" shadowOffset="1,1" text="回程中... 5s"/>
+  </displayList>
+</component>package.xml|666|<packageDescription id="2bw6ypvm" name="Collect">
+  <resources>
+    <atlas id="atlas0" size="512,64" file="atlas0.png"/>
+    <component id="j4usa" name="ProgressBarCollect" exported="true" size="333,23"/>
+    <component id="j4usb" name="LoadingCollectItem" exported="true" size="333,45"/>
+    <component id="j4usc" name="ProgressBarBackToCity" exported="true" size="333,23"/>
+    <component id="j4usd" name="LoadingBackToCity" exported="true" size="333,45"/>
+    <image id="osjz2" name="huichengjindutiao" size="307,11"/>
+    <image id="osjz3" name="di" size="333,23"/>
+    <image id="osjz4" name="caijijindutiao" size="307,11"/>
+  </resources>
+</packageDescription>

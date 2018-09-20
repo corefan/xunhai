@@ -1,0 +1,103 @@
+kftje.xml|1195|<component size="259,524">
+  <displayList>
+    <image id="n0" name="bg" src="kftj8" xy="9,1"/>
+    <component id="n1" name="difficultyItem" src="kftjh" xy="0,0"/>
+    <component id="n2" name="starItem" src="kftji" xy="63,81"/>
+    <component id="n3" name="buttonStart" src="kftjk" xy="69,447" size="126,58">
+      <Button title="开始"/>
+    </component>
+    <text id="n4" name="labelName" xy="65,27" size="140,34" font="华康圆体W7(P)" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="迷途弟子"/>
+    <text id="n5" name="labelTitle" xy="35,230" size="199,60" font="华康圆体W7(P)" fontSize="20" color="#585a63" align="center" vAlign="middle" ubb="true" autoSize="none" text="去帮助小师妹去帮助小师妹去帮助小师妹"/>
+    <image id="n7" name="imgSplitLeft" src="kftja" xy="83,303" group="n10" scale="-1,1"/>
+    <text id="n8" name="labelTitleGet" xy="85,292" size="88,25" group="n10" font="华康圆体W7(P)" fontSize="20" color="#495e70" align="center" vAlign="middle" autoSize="none" text="可能获得"/>
+    <image id="n9" name="imgSpriteRight" src="kftja" xy="174,303" group="n10"/>
+    <group id="n10" name="groupRewardTip" xy="83,292" size="144,25" advanced="true"/>
+  </displayList>
+</component>kftjf.xml|655|<component size="1071,608">
+  <displayList>
+    <image id="n0" name="bg" src="j67wnhe" pkg="0tyncec1" xy="0,52" size="1071,556"/>
+    <text id="n3" name="labelCycleNum" xy="0,11" size="257,34" font="华康圆体W7(P)" fontSize="24" color="#2e3334" autoSize="none" text="当前环数 0/4"/>
+    <text id="n1" name="labelRefershTime" xy="776,8" size="154,34" font="华康圆体W7(P)" fontSize="24" color="#2e3334" ubb="true" autoSize="none" text="免费刷新  (3)"/>
+    <component id="n2" name="buttonRefersh" src="kftjg" xy="930,0" size="91,46">
+      <Button title="刷新"/>
+    </component>
+    <loader id="n6" name="loaderConsume" xy="855,0" size="45,33"/>
+  </displayList>
+</component>kftjg.xml|1269|<component size="135,46" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="kftjnki" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="n2" src="kftjnki" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3" name="n3" src="kftjnki" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4" name="n4" src="kftjnki" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n5" name="title" xy="0,0" size="135,46" font="华康圆体W7(P)" fontSize="20" color="#003334" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>kftjh.xml|308|<component size="58,100">
+  <displayList>
+    <loader id="n0" name="loaderBG" xy="0,0" size="51,97" url="ui://1m5molo6kftjc"/>
+    <text id="n1" name="labelDifficulty" xy="23,19" size="35,81" font="华康圆体W7(P)" fontSize="24" color="#f0fcee" leading="7" autoSize="none" text="简单"/>
+  </displayList>
+</component>kftji.xml|279|<component size="152,154">
+  <displayList>
+    <loader id="n0" name="loaderBG" xy="0,0" size="152,152" url="ui://1m5molo6kftj6"/>
+    <loader id="n3" name="loaderStar" xy="0,2" size="152,152" url="ui://1m5molo6kftj5" align="center" vAlign="middle"/>
+  </displayList>
+</component>kftjk.xml|1267|<component size="41,58" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="x0conj0" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="n2" src="x0conj0" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3" name="n3" src="x0conj0" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4" name="n4" src="x0conj0" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n5" name="title" xy="0,0" size="41,58" font="华康圆体W7(P)" fontSize="24" color="#f0fcee" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>package.xml|1244|<packageDescription id="1m5molo6" name="DailyTaskUI">
+  <resources>
+    <atlas id="atlas0" size="256,1024" file="atlas0.png"/>
+    <component id="kftje" name="DailyTaskItem" exported="true" size="259,524"/>
+    <component id="kftjf" name="DailyTaskContent" exported="true" size="1071,608"/>
+    <component id="kftjg" name="ButtonRefersh" exported="true" size="135,46"/>
+    <component id="kftjh" name="DifficultyItem" exported="true" size="58,100"/>
+    <component id="kftji" name="StarItem" exported="true" size="152,154"/>
+    <component id="kftjk" name="ButtonStart" exported="true" size="41,58"/>
+    <image id="kftj2" name="zhuangshi5" size="73,110" exported="true"/>
+    <image id="kftj3" name="zhuangshi4" size="173,97" exported="true"/>
+    <image id="kftj4" name="zhuangshi3" size="153,95" exported="true"/>
+    <image id="kftj5" name="zhuangshi2" size="94,94" exported="true"/>
+    <image id="kftj6" name="zhuangshi" size="151,155" exported="true"/>
+    <image id="kftj8" name="di2" size="252,523"/>
+    <image id="kftja" name="zubiantiao" size="53,7"/>
+    <image id="kftjb" name="zhuangshi7" size="71,109" exported="true"/>
+    <image id="kftjc" name="zhuangshi6" size="71,109" exported="true"/>
+  </resources>
+</packageDescription>

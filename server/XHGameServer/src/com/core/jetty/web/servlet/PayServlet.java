@@ -68,7 +68,7 @@ public class PayServlet extends BaseServlet {
 			String content = jsonObject.getString("content"); // 订单信息
 			String contents[] = content.split("\\|");
 
-			if (contents.length != 7) {
+			if (contents.length != 8) {
 				// 1.参数有误
 				result.put("result", 1);
 				postData(response, result.toString());
@@ -81,7 +81,8 @@ public class PayServlet extends BaseServlet {
 				Integer payItemId = Integer.valueOf(contents[3]); // 商品编号
 				Integer payType = Integer.valueOf(contents[4]); // 支付类型
 				Integer money = Integer.valueOf(contents[5]); // 金额
-				String sign = contents[6]; // 签名
+				String cpOrderId = contents[6]; // 签名
+				String sign = contents[7]; // 签名
 	
 				String payIP = HttpUtil.getRequestIp(request);
 				
@@ -112,7 +113,7 @@ public class PayServlet extends BaseServlet {
 				}
 				
 				
-				String _sign = MD5Service.encryptToUpperString(userId + site + playerId + payItemId + payType + money + Config.WEB_CHARGE_KEY);
+				String _sign = MD5Service.encryptToUpperString(userId + site + playerId + payItemId + payType + money + cpOrderId + Config.WEB_CHARGE_KEY);
 				if (!_sign.equalsIgnoreCase(sign)) {
 					// 5.Sign错误
 					result.put("result", 5);

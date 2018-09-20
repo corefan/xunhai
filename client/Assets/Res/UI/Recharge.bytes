@@ -1,0 +1,173 @@
+i50c1b.xml|467|<component size="1334,750">
+  <displayList>
+    <image id="n1" name="n1" src="c18wnl9" pkg="0tyncec1" xy="0,0" size="1334,750" color="#414141"/>
+    <component id="n0" name="comContent" src="pzhgu" xy="195,79">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n3" name="btnClose" src="t5hdnfs" pkg="0tyncec1" xy="1042,135">
+      <Button icon="ui://wvu017cpo9jh1c"/>
+    </component>
+  </displayList>
+</component>oyvms.xml|709|<component size="233,336">
+  <displayList>
+    <image id="n11" name="n11" src="ts5to" xy="0,0" size="233,336"/>
+    <text id="n12" name="txtBuyPeopleNum" xy="24,26" size="181,26" font="华康圆体W7(P)" fontSize="20" color="#f0fcee" align="center" ubb="true" autoSize="none" strokeColor="#874d42" strokeSize="2" text="购买人数：9999人"/>
+    <component id="n13" name="rewardCont" src="t5hdnfx" pkg="0tyncec1" xy="23,79" size="187,187"/>
+    <component id="n14" name="btnIsLQ" src="skqrnkp" pkg="0tyncec1" xy="42,270" size="149,50">
+      <Button title="还差9999人" titleColor="#000000" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <image id="n15" name="alreadyLQ" src="ts5td" xy="71,274"/>
+  </displayList>
+</component>package.xml|2247|<packageDescription id="wvu017cp" name="Recharge">
+  <resources>
+    <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
+    <component id="i50c1b" name="SevenRechargePop" exported="true" size="1334,750"/>
+    <component id="oyvms" name="AllWelfareItem" size="233,336"/>
+    <component id="pzhg19" name="SevenRechargeCell" size="267,365"/>
+    <component id="pzhg1a" name="SevenRechargeItem" size="225,85"/>
+    <component id="pzhgu" name="SevenRechargeContent" exported="true" size="892,635"/>
+    <component id="ts5t0" name="RechargeDailyPanel" exported="true" size="892,635"/>
+    <component id="ts5t8" name="RewardItem" exported="true" size="180,442"/>
+    <component id="ts5tp" name="GrowUpPanel" exported="true" size="892,635"/>
+    <component id="ts5tr" name="JijinItem" size="416,113"/>
+    <image id="h2pe1d" name="leijichong" size="75,26"/>
+    <image id="h2pe1e" name="yuan" size="28,25"/>
+    <image id="o9jh1c" name="btn_guanbi" size="50,52"/>
+    <image id="ozvku" name="861X601_" size="861,327" scale="9grid" scale9grid="216,275,432,21"/>
+    <image id="pzhg10" name="song" size="66,67" exported="true"/>
+    <image id="pzhg11" name="qianwangchongzhi" size="131,32"/>
+    <image id="pzhg12" name="bg_qitianleiji" size="861,602"/>
+    <image id="pzhg13" name="bg_liebiao" size="267,365"/>
+    <image id="pzhg14" name="170X25" size="170,2" scale="9grid" scale9grid="33,0,112,2"/>
+    <image id="pzhg15" name="100yuan" size="145,26" exported="true"/>
+    <image id="pzhg16" name="60yuan" size="133,26" exported="true"/>
+    <image id="pzhg17" name="30yuan" size="133,26" exported="true"/>
+    <image id="pzhg18" name="bg_qitiandandu" size="932,609"/>
+    <image id="pzhgy" name="zaisong" size="71,72" exported="true"/>
+    <image id="pzhgz" name="yifa" size="71,72" exported="true"/>
+    <image id="ts5t2" name="860X601" size="860,326" scale="9grid" scale9grid="150,202,584,72"/>
+    <image id="ts5t5" name="shuqiandi" size="173,439"/>
+    <image id="ts5t6" name="meirichongzhi" size="117,34"/>
+    <image id="ts5td" name="yilingqu" size="94,40"/>
+    <image id="ts5te" name="biaozhi" size="45,110"/>
+    <image id="ts5to" name="233X336" size="233,105" scale="9grid" scale9grid="59,80,118,10"/>
+  </resources>
+</packageDescription>pzhg19.xml|2015|<component size="267,365">
+  <displayList>
+    <image id="n0" name="n0" src="pzhg13" xy="0,0"/>
+    <loader id="n1" name="imgFlag" xy="-5,-10" size="50,50" url="ui://wvu017cppzhg10" align="center" vAlign="middle"/>
+    <loader id="n2" name="imgTitle" xy="105,1" size="50,50" visible="false" url="ui://wvu017cppzhg17" align="center" vAlign="middle"/>
+    <image id="n3" name="n3" src="pzhg14" xy="48,322" size="170,25"/>
+    <text id="n4" name="txtCost" xy="74,321" size="85,26" font="华康圆体W7(P)" fontSize="22" color="#fff0f0" align="right" ubb="true" text="价值500">
+      <relation target="n5" sidePair="right-left"/>
+    </text>
+    <loader id="n5" name="imgCost" xy="159,307" size="50,50" vAlign="middle"/>
+    <loader id="n6" name="imgReward11" xy="80,82" size="50,50" group="n8" scale="2,2" align="center" vAlign="middle"/>
+    <text id="n7" name="txtReward11" xy="58,235" size="147,33" group="n8" font="华康圆体W7(P)" fontSize="22" color="#3e0101" align="center" vAlign="middle" autoSize="none" strokeColor="#fff9d4" strokeSize="2" text="物品名称X99"/>
+    <group id="n8" name="comReward1" xy="58,82" size="147,186" advanced="true"/>
+    <component id="n12" name="item31" src="pzhg1a" xy="22,45" group="n15"/>
+    <component id="n13" name="item32" src="pzhg1a" xy="22,121" group="n15"/>
+    <component id="n14" name="item33" src="pzhg1a" xy="23,194" group="n15"/>
+    <group id="n15" name="comReward3" xy="22,45" size="226,234" advanced="true"/>
+    <component id="n16" name="item21" src="pzhg1a" xy="21,76" group="n19"/>
+    <component id="n17" name="item22" src="pzhg1a" xy="21,177" group="n19"/>
+    <group id="n19" name="comReward2" xy="21,76" size="225,186" advanced="true"/>
+    <text id="n20" name="txtRecNum" xy="125,13" size="10,4" font="ui://0tyncec1h2penq1" fontSize="12" vAlign="middle" text="12"/>
+    <image id="n21" name="n21" src="h2pe1d" xy="51,12"/>
+    <image id="n22" name="n22" src="h2pe1e" xy="134,13">
+      <relation target="n20" sidePair="left-right"/>
+    </image>
+  </displayList>
+</component>pzhg1a.xml|590|<component size="225,85">
+  <displayList>
+    <loader id="n0" name="imgReward" xy="16,16" size="50,50" align="center" vAlign="middle"/>
+    <text id="n1" name="txtRewardName" xy="82,11" size="141,36" font="华康圆体W7(P)" fontSize="22" color="#3e0101" vAlign="middle" letterSpacing="-1" autoSize="none" strokeColor="#fff9d4" strokeSize="2" text="物品名称"/>
+    <text id="n2" name="txtRewardNum" xy="82,39" size="141,36" font="华康圆体W7(P)" fontSize="22" color="#3e0101" vAlign="middle" letterSpacing="-1" autoSize="none" strokeColor="#fff9d4" strokeSize="2" text="X100"/>
+  </displayList>
+</component>pzhgu.xml|1922|<component size="892,635">
+  <displayList>
+    <image id="n21" name="n21" src="pzhg18" xy="-12,8" visible="false"/>
+    <image id="n15" name="n15" src="pzhg12" xy="21,4"/>
+    <image id="n3" name="n3" src="gk0nnid" pkg="0tyncec1" xy="0,28" size="20,588" scale="0.9,1"/>
+    <component id="n4" name="btnRechardDaily" src="skqrnkp" pkg="0tyncec1" xy="343,534" size="215,65">
+      <Button titleColor="#000000" icon="ui://0tyncec1dmzwnna"/>
+    </component>
+    <text id="n5" name="n5" xy="651,547" size="129,28" font="华康圆体W7(P)" fontSize="18" color="#ffa800" vAlign="middle" ubb="true" autoSize="none" text="已累计充值："/>
+    <text id="n7" name="rechardNumDaily" xy="758,550" size="110,22" font="华康圆体W7(P)" fontSize="18" color="#ffa800" vAlign="middle" ubb="true" autoSize="height" text="1000000"/>
+    <text id="n8" name="n8" xy="47,541" size="112,25" font="华康圆体W7(P)" fontSize="18" color="#1eff00" vAlign="middle" autoSize="none" strokeColor="#240000" strokeSize="2" text="活动时间："/>
+    <text id="n9" name="textTime" xy="129,541" size="182,25" font="华康圆体W7(P)" fontSize="18" color="#1eff00" vAlign="middle" ubb="true" autoSize="none" strokeColor="#240000" strokeSize="2" text="12月11日-12月17日">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n16" name="textDesc" xy="67,564" size="193,25" font="华康圆体W7(P)" fontSize="18" color="#1eff00" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#240000" strokeSize="2" text="(奖励通过邮件发放)">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n17" name="n17" xy="424,539" size="50,50" touchable="false" url="ui://wvu017cppzhg11" align="center" vAlign="middle"/>
+    <component id="n18" name="cell1" src="pzhg19" xy="38,157"/>
+    <component id="n19" name="cell2" src="pzhg19" xy="317,156"/>
+    <component id="n20" name="cell3" src="pzhg19" xy="596,155"/>
+  </displayList>
+</component>ts5t0.xml|1548|<component size="892,635">
+  <displayList>
+    <image id="n1" name="n1" src="ts5t2" xy="24,4" size="860,601"/>
+    <image id="n3" name="n3" src="gk0nnid" pkg="0tyncec1" xy="0,28" size="20,588"/>
+    <component id="n4" name="btnRechardDaily" src="skqrnkp" pkg="0tyncec1" xy="657,46" size="215,65">
+      <Button title="前往充值" titleColor="#000000" icon="ui://jn83skxkf6311w"/>
+    </component>
+    <text id="n5" name="n5" xy="58,120" size="185,28" font="华康圆体W7(P)" fontSize="22" color="#ffba60" vAlign="middle" ubb="true" autoSize="none" strokeColor="#34161b" strokeSize="2" text="今日累计充值：¥"/>
+    <text id="n7" name="rechardNumDaily" xy="230,119" size="117,28" font="华康圆体W7(P)" fontSize="22" color="#ffba60" vAlign="middle" ubb="true" autoSize="none" strokeColor="#34161b" strokeSize="2" text="1000000"/>
+    <text id="n8" name="n8" xy="483,124" size="134,25" visible="false" font="华康圆体W7(P)" fontSize="18" color="#1eff00" vAlign="middle" autoSize="none" strokeColor="#240000" strokeSize="2" text="活动剩余时间："/>
+    <text id="n9" name="textTime" xy="603,124" size="293,25" visible="false" font="华康圆体W7(P)" fontSize="18" color="#1eff00" vAlign="middle" ubb="true" autoSize="none" strokeColor="#240000" strokeSize="2" text="100天24小时（奖励每天零点重置）">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <list id="n14" name="rewardItemList" xy="37,157" size="837,442" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" margin="0,0,0,0" colGap="-12" defaultItem="ui://wvu017cpts5t8"/>
+  </displayList>
+</component>ts5t8.xml|966|<component size="180,442">
+  <displayList>
+    <image id="n0" name="n0" src="ts5t5" xy="2,-2"/>
+    <image id="n2" name="n2" src="ts5t6" xy="43,28"/>
+    <text id="n3" name="txtNumMoney" xy="19,65" size="56,24" font="华康圆体W7(P)" fontSize="20" color="#ffe400" align="right" vAlign="middle" ubb="true" autoSize="none" strokeColor="#874d42" strokeSize="2" singleLine="true" text="9999"/>
+    <text id="n4" name="n4" xy="72,65" size="101,24" font="华康圆体W7(P)" fontSize="20" color="#f0fcee" vAlign="middle" autoSize="height" strokeColor="#874d42" strokeSize="2" singleLine="true" text="元 可领取"/>
+    <component id="n6" name="reardCont" src="t5hdnfx" pkg="0tyncec1" xy="51,96" size="100,280"/>
+    <component id="n8" name="btnIsLingqu" src="skqrnkp" pkg="0tyncec1" xy="29,376" size="140,51">
+      <Button title="充值" titleColor="#000000" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <image id="n9" name="yiLQicon" src="ts5td" xy="52,381"/>
+  </displayList>
+</component>ts5tp.xml|2017|<component size="892,635">
+  <controller name="fenyeTab" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n21" name="n21" src="ozvku" xy="24,3" size="861,601"/>
+    <image id="n3" name="n3" src="gk0nnid" pkg="0tyncec1" xy="0,31"/>
+    <component id="n4" name="btnBuyJijin" src="skqrnkp" pkg="0tyncec1" xy="657,122" size="216,65">
+      <Button title="购买基金" titleColor="#000000" icon="ui://jn83skxkf6311w"/>
+    </component>
+    <text id="n6" name="n6" xy="61,225" size="159,26" font="华康圆体W7(P)" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" text="本服购买人数："/>
+    <text id="n7" name="pepleBuyNum" xy="216,225" size="66,26" font="华康圆体W7(P)" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text="9999"/>
+    <component id="n8" name="tab0_btnFenyeJijin" src="sw74nm0" pkg="0tyncec1" xy="32,165" size="175,48">
+      <Button checked="true" title="成长基金" titleColor="#000000" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="fenyeTab" page="0"/>
+    </component>
+    <component id="n9" name="tab1_btnFenyeAll" src="sw74nm0" pkg="0tyncec1" xy="210,165" size="173,49">
+      <Button title="全民福利" titleColor="#000000" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="fenyeTab" page="1"/>
+    </component>
+    <list id="n10" name="jijinList" xy="39,257" size="834,336" layout="flow_hz" overflow="scroll" scrollBarFlags="128" margin="0,0,0,0" lineItemCount="2" defaultItem="ui://wvu017cpts5tr">
+      <gearDisplay controller="fenyeTab" pages="0"/>
+    </list>
+    <list id="n17" name="allWelFareList" xy="38,256" size="833,337" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" margin="0,0,0,0" defaultItem="ui://wvu017cpoyvms">
+      <gearDisplay controller="fenyeTab" pages="1"/>
+    </list>
+    <loader id="n18" name="redTipUp" xy="36,169" size="21,20" url="ui://0tyncec1xnis91"/>
+    <loader id="n19" name="redTipAll" xy="216,169" size="21,20" url="ui://0tyncec1xnis91"/>
+  </displayList>
+</component>ts5tr.xml|973|<component size="416,113">
+  <displayList>
+    <image id="n10" name="n10" src="keyenis" pkg="0tyncec1" xy="0,0" size="415,113"/>
+    <image id="n11" name="n11" src="ts5te" xy="16,2"/>
+    <text id="n12" name="txtLQ" xy="19,3" size="40,103" font="华康圆体W7(P)" fontSize="20" color="#ffffff" align="center" vAlign="middle" leading="0" ubb="true" autoSize="none" strokeColor="#000000" text="立即领取"/>
+    <component id="n13" name="rewardGezi" src="t5hdnfx" pkg="0tyncec1" xy="72,12" size="89,89"/>
+    <component id="n14" name="btnLQ" src="skqrnkp" pkg="0tyncec1" xy="209,31" size="149,50">
+      <Button title="领取" titleColor="#000000" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <text id="n15" name="txtIsBuy" xy="196,29" size="178,57" font="华康圆体W7(P)" fontSize="22" color="#2e3341" align="center" vAlign="middle" leading="6" ubb="true" autoSize="none" text="达到20级可领取可领取2000元宝"/>
+    <image id="n16" name="alreadyLQ" src="ts5td" xy="241,37"/>
+  </displayList>
+</component>

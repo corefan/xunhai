@@ -1,0 +1,102 @@
+nav057.xml|1674|<component size="366,114">
+  <displayList>
+    <loader id="n0" name="n0" xy="0,0" size="366,114" touchable="false" url="ui://0tyncec1keyenis" fill="scaleFree" playing="false"/>
+    <loader id="n2" name="select" xy="0,0" size="366,114" group="n13" visible="false" touchable="false" url="ui://0tyncec1keyenir" fill="scaleFree" playing="false"/>
+    <image id="n6" name="n6" src="jsucnhh" pkg="0tyncec1" xy="129,57" size="190,2" group="n13"/>
+    <text id="n10" name="txtName" xy="140,18" size="202,34" group="n13" font="华康圆体W7(P)" fontSize="24" color="#2e3341" vAlign="middle" autoSize="none" strokeColor="#626161" text=""/>
+    <loader id="n7" name="payIcon" xy="142,64" size="32,32" group="n13" touchable="false" align="center" vAlign="middle" fill="scaleMatchWidth" playing="false"/>
+    <text id="n8" name="txtPrice" xy="178,65" size="163,31" group="n13" font="华康圆体W7(P)" fontSize="22" color="#2e3341" vAlign="middle" autoSize="none" strokeColor="#2e4552" text=""/>
+    <group id="n13" name="mainGroup" xy="0,0" size="366,114" visible="false" advanced="true"/>
+    <loader id="n11" name="lock" xy="25,14" size="89,89" group="n16" touchable="false" align="center" vAlign="middle" playing="false"/>
+    <richtext id="n15" name="txtLock" xy="119,39" size="219,32" group="n16" touchable="false" font="华康圆体W7(P)" fontSize="24" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n16" name="lockGroup" xy="25,14" size="313,89" visible="false" advanced="true"/>
+    <loader id="n3" name="lockMask" xy="0,0" size="366,114" visible="false" touchable="false" url="ui://0tyncec1x0conjl" fill="scaleFree" playing="false"/>
+  </displayList>
+</component>package.xml|625|<packageDescription id="rev08g9e" name="Trading">
+  <resources>
+    <atlas id="atlas0" size="1024,64" file="atlas0.png"/>
+    <component id="nav057" name="TradingItem" exported="true" size="366,114"/>
+    <component id="x0co4o" name="StorePanel" exported="true" size="960,608"/>
+    <component id="x0co4p" name="StallPanel" exported="true" size="960,608"/>
+    <component id="x0co4q" name="TradingAlertPanel" exported="true" size="634,621"/>
+    <image id="qndm56" name="pkgTitleBg" size="105,18" scale="9grid" scale9grid="27,6,54,6"/>
+    <image id="x0co4w" name="sortBg" size="740,56"/>
+  </resources>
+</packageDescription>x0co4o.xml|2325|<component size="960,608">
+  <displayList>
+    <image id="n1" name="n1" src="j67wnhe" pkg="0tyncec1" xy="3,4" size="202,597"/>
+    <image id="n2" name="n2" src="jsucnhg" pkg="0tyncec1" xy="547,-8"/>
+    <image id="n3" name="n3" src="x0conj6" pkg="0tyncec1" xy="558,3"/>
+    <text id="n10" name="n10" xy="725,315" size="69,28" font="华康圆体W7(P)" fontSize="24" color="#e5e5e5" text="数  量"/>
+    <image id="n11" name="n11" src="hx0xnip" pkg="0tyncec1" xy="616,290"/>
+    <image id="n13" name="n13" src="x0conjx" pkg="0tyncec1" xy="571,358" size="370,76"/>
+    <image id="n15" name="n15" src="x0conjw" pkg="0tyncec1" xy="678,470" size="226,44"/>
+    <text id="n16" name="n16" xy="597,477" size="77,28" font="华康圆体W7(P)" fontSize="24" color="#e5e5e5" text="总价："/>
+    <loader id="n5" name="bgRare" xy="569,11" size="375,124" fill="scaleFree" playing="false"/>
+    <text id="n6" name="txtName" xy="695,31" size="10,30" font="华康圆体W7(P)" fontSize="26" color="#ffffff" align="center" vAlign="middle" bold="true" text=""/>
+    <text id="n7" name="txtLev" xy="695,75" size="81,24" font="华康圆体W7(P)" fontSize="20" color="#cdbf87" vAlign="middle" autoSize="height" text=""/>
+    <text id="n8" name="txtSubType" xy="813,75" size="126,24" font="华康圆体W7(P)" fontSize="20" color="#cdbf87" align="center" vAlign="middle" autoSize="height" text="">
+      <relation target="n7" sidePair="top-top"/>
+    </text>
+    <richtext id="n9" name="txtDesc" xy="601,158" size="309,113" font="华康圆体W7(P)" fontSize="20" color="#bad4dc" autoSize="none" text=""/>
+    <loader id="n17" name="iconPay" xy="682,470" size="40,40" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n18" name="txtPrice" xy="727,476" size="164,28" font="华康圆体W7(P)" fontSize="24" color="#2e3341" autoSize="height" text=""/>
+    <component id="n20" name="btnBuy" src="tnbmnka" pkg="0tyncec1" xy="688,527" size="150,53">
+      <Button title="购买" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n28" name="numBar" src="x0conk2" pkg="0tyncec1" xy="610,364">
+      <Label titleColor="#2e3341" maxLength="3" keyboardType="2"/>
+    </component>
+    <component id="n27" name="tabConn" src="t5hdnfw" pkg="0tyncec1" xy="6,8" size="195,586"/>
+    <component id="n25" name="itemConn" src="t5hdnfw" pkg="0tyncec1" xy="214,6" size="329,588"/>
+  </displayList>
+</component>x0co4p.xml|1688|<component size="960,608">
+  <controller name="c1" pages="0,openBuy,1,openSell" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="j67wnhe" pkg="0tyncec1" xy="2,64" size="202,535"/>
+    <image id="n2" name="n2" src="j67wnhe" pkg="0tyncec1" xy="212,64" size="748,535"/>
+    <component id="n3" name="tabLayer" src="t5hdnfx" pkg="0tyncec1" xy="0,0" size="954,61"/>
+    <image id="n4" name="sortBg" src="x0co4w" xy="214,66" group="n13"/>
+    <image id="n7" name="line" src="hx0xnip" pkg="0tyncec1" xy="416,129" size="334,11" group="n13"/>
+    <component id="n9" name="sortConn" src="t5hdnfx" pkg="0tyncec1" xy="229,73" size="23,22" group="n13"/>
+    <component id="n1" name="tabConn" src="t5hdnfw" pkg="0tyncec1" xy="5,68" size="195,524" group="n13"/>
+    <component id="n8" name="itemConn" src="t5hdnfw" pkg="0tyncec1" xy="216,141" size="738,453" group="n13"/>
+    <group id="n13" name="buyGroup" xy="5,66" size="949,528" advanced="true">
+      <gearDisplay controller="c1" pages="0"/>
+    </group>
+    <image id="n16" name="n16" src="qndm56" xy="3,65" size="200,45" group="n18"/>
+    <text id="n17" name="n17" xy="3,68" size="198,39" group="n18" font="华康圆体W7(P)" fontSize="24" color="#d7dbde" align="center" vAlign="middle" autoSize="none" strokeColor="#2e3341" strokeSize="2" text="背包"/>
+    <component id="n14" name="cellConn" src="t5hdnfw" pkg="0tyncec1" xy="6,115" size="195,477" group="n18"/>
+    <component id="n15" name="gridConn" src="t5hdnfw" pkg="0tyncec1" xy="216,67" size="738,527" group="n18"/>
+    <group id="n18" name="sellGroup" xy="3,65" size="951,529" advanced="true">
+      <gearDisplay controller="c1" pages="1"/>
+    </group>
+  </displayList>
+</component>x0co4q.xml|1875|<component size="634,621" extention="Label">
+  <displayList>
+    <image id="n0" name="n0" src="x0coniw" pkg="0tyncec1" xy="0,-1" size="634,621">
+      <relation target="" sidePair="bottomext-bottom"/>
+    </image>
+    <image id="n3" name="n3" src="w3wlnlc" pkg="0tyncec1" xy="164,36"/>
+    <image id="n4" name="n4" src="w3wlnld" pkg="0tyncec1" xy="195,177" size="243,40">
+      <relation target="n3" sidePair="bottom-bottom,right-right"/>
+    </image>
+    <image id="n9" name="n9" src="x0conjx" pkg="0tyncec1" xy="176,315" size="344,63"/>
+    <component id="n13" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="490,6" size="157,85">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <text id="n1" name="title" xy="175,4" size="284,34" font="华康圆体W7(P)" fontSize="24" color="#d4d5d8" align="center" vAlign="middle" autoSize="none" text="购买"/>
+    <richtext id="n23" name="txtDesc" xy="76,227" size="482,80" font="华康圆体W7(P)" fontSize="24" color="#2e3341" align="center" ubb="true" autoSize="none" text=""/>
+    <text id="n5" name="txtName" xy="141,178" size="352,35" font="华康圆体W7(P)" fontSize="24" color="#ffcc00" align="center" vAlign="middle" autoSize="none" strokeColor="#626161" strokeSize="2" text="">
+      <relation target="n4" sidePair="bottom-bottom,left-left"/>
+    </text>
+    <text id="n6" name="n6" xy="122,333" size="77,28" font="华康圆体W7(P)" fontSize="24" color="#2e3341" align="center" vAlign="middle" text="数量："/>
+    <component id="n12" name="numBar" src="x0conk2" pkg="0tyncec1" xy="223,317" scale="0.9,0.9">
+      <Label titleColor="#2e3341" maxLength="3" keyboardType="2"/>
+    </component>
+    <component id="n20" name="btnApply" src="tnbmnka" pkg="0tyncec1" xy="230,516" size="176,61">
+      <relation target="n0" sidePair="bottom-bottom"/>
+      <Button title="购买" icon="ui://0tyncec1x0conj1"/>
+    </component>
+  </displayList>
+</component>

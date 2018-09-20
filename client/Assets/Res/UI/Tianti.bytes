@@ -1,0 +1,276 @@
+package.xml|3988|<packageDescription id="mrcfhfsp" name="Tianti">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="t5hd1" name="TiantiPanel" exported="true" size="1334,750"/>
+    <component id="t5hd1h" name="TiantiTitleUI" exported="true" size="1334,81"/>
+    <component id="t5hd2" name="TiantiInfoUI" exported="true" size="398,750"/>
+    <component id="t5hd2p" name="TiantiBtnOpenInfo" exported="true" size="52,278"/>
+    <component id="t5hd2q" name="TiantiBtnOpenRank" exported="true" size="52,278"/>
+    <component id="t5hd2s" name="TiantiStar" exported="true" size="46,46"/>
+    <component id="t5hd2t" name="TiantiEdgeUI" exported="true" size="52,278"/>
+    <component id="t5hd2u" name="TiantiOwnerRankItem" exported="true" size="666,144"/>
+    <component id="t5hd2v" name="TiantiBtnClose" exported="true" size="110,45"/>
+    <component id="t5hd2w" name="TiantiLevelLogo" exported="true" size="360,360"/>
+    <component id="t5hd2y" name="TiantiBar" exported="true" size="152,144"/>
+    <component id="t5hd3" name="TiantiItem" exported="true" size="630,107"/>
+    <component id="t5hd4" name="TiantiRankUI" exported="true" size="669,750"/>
+    <component id="t5hd5" name="TiantiAwardUI" exported="true" size="1334,178"/>
+    <component id="uo353d" name="PoPFinishTianti" exported="true" size="1334,750"/>
+    <image id="apkz3a" name="pipeizhandou" size="129,32" exported="true"/>
+    <image id="apkz3b" name="quxiaopipei" size="130,32" exported="true"/>
+    <image id="apkz3c" name="pipeizhong" size="339,338"/>
+    <image id="heji3m" name="jindutiao" size="212,212"/>
+    <image id="heji3n" name="zhuangshi1" size="252,116"/>
+    <image id="heji3o" name="jifendi" size="74,26"/>
+    <image id="heji3p" name="zuanshi" size="71,43" exported="true"/>
+    <image id="heji3q" name="tianren" size="71,43" exported="true"/>
+    <image id="heji3r" name="qingtong" size="71,43" exported="true"/>
+    <image id="heji3s" name="huangjin" size="71,43" exported="true"/>
+    <image id="heji3t" name="bojin" size="71,43" exported="true"/>
+    <image id="heji3u" name="baiyin" size="71,43" exported="true"/>
+    <image id="t5hd1w" name="星星2" size="46,46"/>
+    <image id="t5hd1x" name="星星" size="46,46" scale="tile"/>
+    <image id="t5hd1y" name="星星（彩色）" size="46,46" scale9grid="12,12,24,24"/>
+    <image id="t5hd21" name="天人积分进度条底" size="152,152"/>
+    <image id="t5hd22" name="天人积分进度条" size="120,120" scale9grid="30,30,60,60"/>
+    <image id="t5hd25" name="进度条发光" size="24,24"/>
+    <image id="t5hd28" name="段位图标底框" size="339,335" scale9grid="85,84,170,168"/>
+    <image id="t5hd2a" name="分割线-小" size="8,2" scale="tile"/>
+    <image id="t5hd2d" name="标识" size="176,114"/>
+    <image id="t5hd2e" name="文字底" size="15,14" scale="9grid" scale9grid="4,4,7,6"/>
+    <image id="t5hd2f" name="文字" size="186,39"/>
+    <image id="t5hd2g" name="列表选中(630X107)" size="264,107" scale="9grid" scale9grid="121,16,44,11"/>
+    <image id="t5hd2h" name="列表未选中(630X107)" size="264,107" scale="9grid" scale9grid="105,16,64,9"/>
+    <image id="t5hd2k" name="好友添加按钮" size="69,69"/>
+    <image id="t5hd2x" name="竖排分割线-小" size="2,8" scale="tile"/>
+    <image id="uo353f" name="3" size="103,32" scale="9grid" scale9grid="26,8,52,16"/>
+    <image id="uo353h" name="8" size="234,58"/>
+    <image id="uo353i" name="jiesuandi" size="612,356"/>
+    <image id="uo353j" name="shengli" size="180,46"/>
+    <image id="uo353k" name="shibai" size="181,46"/>
+    <image id="uo353l" name="zhuangshi" size="181,15"/>
+    <image id="z7y030" name="guanbianniu" size="109,44"/>
+    <image id="z7y031" name="cemiananniu" size="47,278"/>
+    <image id="z7y032" name="zhandouxinxi" size="30,93"/>
+    <image id="z7y033" name="paihangban" size="30,72"/>
+    <image id="z7y034" name="jiantou" size="33,55"/>
+    <image id="z7y038" name="di2" size="49,42" scale="9grid" scale9grid="13,11,26,22"/>
+    <image id="z7y039" name="di" size="50,53" scale="9grid" scale9grid="13,14,18,23"/>
+  </resources>
+</packageDescription>t5hd1.xml|2683|<component size="1334,750" overflow="hidden">
+  <controller name="c1" pages="0,closeRank,1,openRank" selected="0" transitions="*-0=t1,*-1=t0"/>
+  <controller name="c2" pages="0,closeInfo,1,openInfo" selected="0" transitions="*-0=t3,*-1=t2"/>
+  <controller name="c3" pages="0,openTop,1,closeTop" selected="0"/>
+  <controller name="c4" pages="0,openButtom,1,closeButtom" selected="0"/>
+  <displayList>
+    <loader id="n17" name="bg" xy="0,0" size="1,1" url="ui://mrcfhfspz7y037"/>
+    <component id="n22" name="levelLogo" src="t5hd2w" xy="114,111"/>
+    <loader id="n23" name="icon_title" xy="704,310" size="499,161" touchable="false"/>
+    <component id="n20" name="bottom" src="t5hd5" xy="0,571">
+      <gearDisplay controller="c4" pages="0"/>
+    </component>
+    <component id="n11" name="top" src="t5hd1h" xy="0,0">
+      <gearDisplay controller="c3" pages="0"/>
+    </component>
+    <image id="n26" name="imgMatching" src="apkz3c" xy="125,120"/>
+    <text id="n27" name="txtFinding" xy="161,407" size="264,30" font="方正粗圆简体" fontSize="26" color="#fdfb4b" bold="true" text="寻找对手中......( 09s )"/>
+    <component id="n24" name="btnMatch" src="t5hdnfq" pkg="0tyncec1" xy="195,471" size="200,64">
+      <Button title="匹配战斗" icon="ui://0tyncec1hmasnmn"/>
+    </component>
+    <loader id="n25" name="txtMatch" xy="271,476" size="50,50" touchable="false" url="ui://mrcfhfspapkz3a" align="center" vAlign="middle"/>
+    <component id="n5" name="rankUI" src="t5hd4" xy="-668,0" size="667,750"/>
+    <component id="n28" name="tipsBtn" src="f06tnnd" pkg="0tyncec1" xy="1214,506">
+      <Button icon="ui://0tyncec1f06tnnc"/>
+    </component>
+    <component id="n6" name="infoUI" src="t5hd2" xy="1333,0"/>
+    <component id="n4" name="btnOpenInfo" src="t5hd2p" xy="1284,161" size="52,275">
+      <relation target="n6" sidePair="left-right"/>
+      <Button controller="c2" page="1"/>
+    </component>
+    <component id="n3" name="btnOpenRank" src="t5hd2q" xy="-1,161">
+      <relation target="n5" sidePair="right-left"/>
+      <Button controller="c1" page="1"/>
+    </component>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="XY" target="n5" tween="true" startValue="-664,-" endValue="0,-" duration="12"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="XY" target="n5" tween="true" startValue="0,-" endValue="-666,-" duration="12"/>
+  </transition>
+  <transition name="t2">
+    <item time="0" type="XY" target="n6" tween="true" startValue="1334,-" endValue="936,-" duration="12"/>
+  </transition>
+  <transition name="t3">
+    <item time="0" type="XY" target="n6" tween="true" startValue="936,-" endValue="1333,0" duration="12"/>
+  </transition>
+</component>t5hd1h.xml|262|<component size="1334,81">
+  <displayList>
+    <component id="n1" name="close" src="t5hd2v" xy="1223,4"/>
+    <text id="n2" name="txtRewardNum" xy="16,14" size="136,24" font="方正粗圆简体" fontSize="20" color="#ffe6a8" text="战斗奖励: 8/10"/>
+  </displayList>
+</component>t5hd2.xml|1304|<component size="398,750" overflow="hidden" extention="Label">
+  <displayList>
+    <image id="n1" name="bg" src="z7y038" xy="0,0" size="398,750"/>
+    <image id="n3" name="line1" src="t5hd2a" xy="14,196" size="375,2"/>
+    <image id="n4" name="line2" src="t5hd2a" xy="18,365" size="375,2"/>
+    <image id="n5" name="line3" src="t5hd2a" xy="18,486" size="375,2"/>
+    <text id="n6" name="t1" xy="25,216" size="135,30" font="方正粗圆简体" fontSize="26" color="#d4dcfe" text="本赛季成绩"/>
+    <text id="n7" name="t2" xy="35,261" size="16,24" font="方正粗圆简体" fontSize="20" color="#8b93b6" text="0"/>
+    <text id="n8" name="t4" xy="35,283" size="16,24" font="方正粗圆简体" fontSize="20" color="#8b93b6" text="0"/>
+    <text id="n9" name="t3" xy="35,305" size="16,24" font="方正粗圆简体" fontSize="20" color="#8b93b6" text="0"/>
+    <text id="n10" name="t5" xy="28,383" size="135,30" font="方正粗圆简体" fontSize="26" color="#d4dcfe" text="本赛季时间"/>
+    <text id="n11" name="t6" xy="35,436" size="307,24" font="方正粗圆简体" fontSize="20" color="#8b93b6" text="2017年4月1日 -- 2017年11月10日"/>
+    <loader id="n12" name="icon" xy="105,24" size="187,135" url="ui://mrcfhfspt5hd2d" align="center" vAlign="middle"/>
+    <text id="n13" name="t7" xy="35,327" size="16,24" font="方正粗圆简体" fontSize="20" color="#8b93b6" text="0"/>
+  </displayList>
+</component>t5hd2p.xml|568|<component size="52,278" overflow="hidden" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <component id="n0" name="bg" src="t5hd2t" xy="51,1" scale="-1,1"/>
+    <image id="n1" name="title" src="z7y032" xy="9,107" size="30,102" color="#d4dcfe"/>
+    <image id="n2" name="arrow" src="z7y034" xy="16,44" pivot="0.3,0.5" size="33,55" scale="-1,1">
+      <gearSize controller="button" pages="0,1" values="33,55,-1,1|33,55,1,1" default="52,81,-1,1"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>t5hd2q.xml|529|<component size="52,278" overflow="hidden" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <component id="n4" name="bg" src="t5hd2t" xy="0,0"/>
+    <image id="n5" name="title" src="z7y033" xy="10,112" color="#d4dcfe"/>
+    <image id="n6" name="arrow" src="z7y034" xy="15,52" pivot="0.33,0.5" size="33,55">
+      <gearSize controller="button" pages="0,1" values="33,55,1,1|33,55,-1,1" default="52,81,-1,1"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>t5hd2s.xml|663|<component size="46,46">
+  <controller name="c1" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="t5hd1w" xy="0,0">
+      <gearDisplay controller="c1" pages="0"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </image>
+    <image id="n0" name="n0" src="t5hd1x" xy="0,0">
+      <gearDisplay controller="c1" pages="1"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </image>
+    <image id="n2" name="n2" src="t5hd1y" xy="0,0">
+      <gearDisplay controller="c1" pages="2"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </image>
+  </displayList>
+</component>t5hd2t.xml|138|<component size="52,278">
+  <displayList>
+    <image id="n1" name="bg" src="z7y031" xy="0,0" size="52,278"/>
+  </displayList>
+</component>t5hd2u.xml|1384|<component size="666,144">
+  <displayList>
+    <image id="n0" name="bg" src="z7y038" xy="0,0" size="666,144"/>
+    <image id="n3" name="levelBg" src="t5hd2e" xy="235,71" size="356,38"/>
+    <text id="n4" name="txtLv1" xy="533,31" size="53,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" vAlign="middle" text="Lv{0}"/>
+    <text id="n5" name="txtName" xy="231,31" size="202,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="center" vAlign="middle" autoSize="height" text=""/>
+    <text id="n6" name="txtCareer" xy="459,31" size="69,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="right" vAlign="middle" autoSize="height" text=""/>
+    <loader id="n7" name="icon" xy="242,69" size="42,42" align="center" vAlign="middle" fill="scale"/>
+    <text id="n8" name="txtLv2" xy="289,79" size="170,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" vAlign="middle" autoSize="height" singleLine="true" text=""/>
+    <text id="n9" name="txtStarNum" xy="518,80" size="53,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" vAlign="middle" autoSize="height" text="x{0}"/>
+    <image id="n10" name="startIcon" src="t5hd1x" xy="472,68"/>
+    <component id="n11" name="headComp" src="t5hdnfz" pkg="0tyncec1" xy="139,30"/>
+    <text id="n14" name="order" xy="-11,17" size="169,106" fontSize="30" color="#ded4fe" align="center" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+</component>t5hd2v.xml|290|<component size="110,45" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="icon" src="z7y030" xy="106,1" size="109,43" scale="-1,1"/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="0.80"/>
+</component>t5hd2w.xml|805|<component size="360,360" overflow="hidden" extention="Label">
+  <displayList>
+    <image id="n0" name="n0" src="t5hd28" xy="9,9"/>
+    <loader id="n7" name="icon" xy="155,155" size="50,50" align="center" vAlign="middle"/>
+    <image id="n9" name="imgJindu" src="heji3m" xy="72,281" scale="1,-1" fillMethod="radial360" fillClockwise="false"/>
+    <image id="n10" name="n10" src="heji3n" xy="59,224"/>
+    <image id="n11" name="imgJifendi" src="heji3o" xy="143,228"/>
+    <loader id="n12" name="iconDuanwei" xy="156,284" pivot="0.5,0.5" size="50,50" url="ui://mrcfhfspheji3p" align="center" vAlign="middle"/>
+    <text id="n13" name="txtJifen" xy="146,222" pivot="0.5,0.5" size="71,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="center" vAlign="middle" text="50/100"/>
+  </displayList>
+</component>t5hd2y.xml|536|<component size="152,144" extention="ProgressBar">
+  <displayList>
+    <image id="n8" name="bg" src="t5hd21" xy="0,0"/>
+    <image id="n7" name="bar" src="t5hd22" xy="16,16" fillMethod="radial360" fillOrigin="1"/>
+    <image id="n6" name="light" src="t5hd25" xy="64,120" pivot="0.5,0.5"/>
+    <text id="n9" name="title" xy="40,102" size="72,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" align="center" vAlign="middle" autoSize="height" singleLine="true" text=""/>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>t5hd3.xml|1926|<component size="630,107">
+  <controller name="c1" pages="0,unselect,1,selected" selected="0"/>
+  <displayList>
+    <image id="n0" name="bg" src="t5hd2h" xy="0,0" size="630,107"/>
+    <image id="n1" name="selected" src="t5hd2g" xy="0,0" size="630,107">
+      <gearDisplay controller="c1" pages="1"/>
+    </image>
+    <component id="n11" name="btn_addFriend" src="t5hdnfs" pkg="0tyncec1" xy="538,15" size="71,75">
+      <Button icon="ui://mrcfhfspt5hd2k" selectedIcon="ui://mrcfhfspt5hd2k"/>
+    </component>
+    <image id="n16" name="levelBg" src="t5hd2e" xy="207,54" size="301,38"/>
+    <text id="n6" name="txtLv1" xy="455,20" size="53,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" vAlign="middle" text="Lv{0}"/>
+    <text id="n4" name="txtName" xy="193,20" size="184,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="center" vAlign="middle" autoSize="height" text=""/>
+    <text id="n5" name="txtCareer" xy="381,20" size="69,26" font="方正粗圆简体" fontSize="22" color="#d4dcfe" align="right" vAlign="middle" autoSize="height" text=""/>
+    <loader id="n7" name="icon" xy="229,55" size="36,36" align="center" vAlign="middle" fill="scale"/>
+    <text id="n9" name="txtLv2" xy="273,63" size="126,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" vAlign="middle" autoSize="height" singleLine="true" text=""/>
+    <text id="n10" name="txtStarNum" xy="451,63" size="53,24" font="方正粗圆简体" fontSize="20" color="#d4dcfe" vAlign="middle" autoSize="height" text="x{0}"/>
+    <image id="n15" name="startIcon" src="t5hd1x" xy="405,51"/>
+    <component id="n18" name="headComp" src="t5hdnfz" pkg="0tyncec1" xy="110,13"/>
+    <text id="n19" name="order" xy="-17,4" size="133,101" font="ui://0tyncec1t5hdngp" fontSize="12" align="center" vAlign="middle" autoSize="none" text=""/>
+    <graph id="n20" name="funsClick" xy="1,3" size="525,100" type="rect" lineSize="0" lineColor="#00000000" fillColor="#00ffffff"/>
+  </displayList>
+</component>t5hd4.xml|444|<component size="669,750" overflow="hidden">
+  <displayList>
+    <image id="n1" name="bg" src="z7y039" xy="1,0" size="669,750"/>
+    <image id="n6" name="line" src="t5hd2a" xy="21,65" size="636,2"/>
+    <image id="n7" name="title" src="t5hd2f" xy="17,10"/>
+    <component id="n8" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="17,82" size="629,524"/>
+    <component id="n9" name="owner" src="t5hd2u" xy="1,604"/>
+  </displayList>
+</component>t5hd5.xml|1145|<component size="1334,178">
+  <displayList>
+    <image id="n5" name="line" src="t5hd2x" xy="624,13" size="2,158"/>
+    <text id="n11" name="title1" xy="18,38" size="109,30" font="方正粗圆简体" fontSize="26" color="#d4dcfe" text="排位奖励"/>
+    <text id="n13" name="title2" xy="672,39" size="109,30" font="方正粗圆简体" fontSize="26" color="#d4dcfe" text="冲锋奖励"/>
+    <text id="n14" name="txt2" xy="672,89" size="421,79" visible="false" font="方正粗圆简体" fontSize="20" color="#8b93b6" ubb="true" autoSize="none" text=""/>
+    <component id="n17" name="awardContainer" src="t5hdnfx" pkg="0tyncec1" xy="578,63"/>
+    <text id="n18" name="title3" xy="148,40" size="185,24" font="方正粗圆简体" fontSize="20" color="#8b93b6" text="每周一通过邮件发放"/>
+    <text id="n19" name="title4" xy="800,40" size="156,24" font="方正粗圆简体" fontSize="20" color="#8b93b6" text="达到铂金2可领取"/>
+    <component id="n20" name="awardContainerLeft" src="t5hdnfx" pkg="0tyncec1" xy="-79,63"/>
+    <component id="n21" name="btnLingqu" src="l2b8nnq" pkg="0tyncec1" xy="1000,90" size="97,49">
+      <Button title="领取" titleColor="#000000" icon="ui://jn83skxkf6311w"/>
+    </component>
+  </displayList>
+</component>uo353d.xml|2542|<component size="1334,750" opaque="false">
+  <displayList>
+    <image id="n28" name="n28" src="uo353i" xy="368,203"/>
+    <graph id="n19" name="vRole3D" xy="662,275" size="1,1" group="n9" touchable="false"/>
+    <image id="n1" name="n1" src="uo353f" xy="431,298" size="162,41" group="n9"/>
+    <image id="n2" name="n2" src="uo353f" xy="269,298" size="162,41" group="n9" flip="hz"/>
+    <text id="n8" name="victoryText" xy="320,301" size="224,33" group="n9" font="方正粗圆简体" fontSize="20" color="#c6d6db" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <loader id="n26" name="victoryBg" xy="637,214" size="50,50" group="n9" url="ui://mrcfhfspuo353j" align="center" vAlign="middle"/>
+    <group id="n9" name="victory" xy="269,214" size="418,125" visible="false" advanced="true"/>
+    <graph id="n18" name="dRole3D" xy="662,275" size="1,1" group="n14" touchable="false"/>
+    <image id="n11" name="n11" src="uo353f" xy="438,295" size="162,41" group="n14"/>
+    <image id="n12" name="n12" src="uo353f" xy="276,295" size="162,41" group="n14" flip="hz"/>
+    <text id="n13" name="victoryText_2" xy="327,301" size="224,33" group="n14" font="方正粗圆简体" fontSize="20" color="#c6d6db" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <loader id="n27" name="defeatedBg" xy="639,217" size="50,50" group="n14" url="ui://mrcfhfspuo353k" align="center" vAlign="middle"/>
+    <group id="n14" name="defeated" xy="276,217" size="413,119" visible="false" advanced="true"/>
+    <loader id="n25" name="imgTimeOut" xy="639,165" size="50,50" url="ui://mrcfhfspuo353h" align="center" vAlign="middle"/>
+    <image id="n29" name="n29" src="uo353l" xy="576,313"/>
+    <text id="n30" name="txtHaoshi" xy="600,283" size="128,26" font="方正粗圆简体" fontSize="22" color="#ffffff" text="耗时:    50秒"/>
+    <text id="n31" name="txtJifen" xy="601,332" size="54,26" font="方正粗圆简体" fontSize="22" color="#ffffff" text="积分:"/>
+    <text id="n32" name="txtJifenAdd" xy="683,332" size="39,26" font="方正粗圆简体" fontSize="22" color="#33ff38" text="+25"/>
+    <component id="n34" name="btnQueding" src="l2b8nnq" pkg="0tyncec1" xy="605,458" size="124,49">
+      <Button title="确定" icon="ui://0tyncec1ea8vnmp"/>
+    </component>
+    <component id="n35" name="awardContainer" src="t5hdnfx" pkg="0tyncec1" xy="442,349"/>
+    <loader id="n36" name="iconJifenFlag" xy="734,332" size="50,50" scale="1.5,1.5"/>
+    <text id="n37" name="txtLiansheng" xy="801,331" size="83,30" font="方正粗圆简体" fontSize="26" color="#33ff38" text="三连胜"/>
+  </displayList>
+</component>

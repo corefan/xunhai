@@ -1,0 +1,52 @@
+package.xml|765|<packageDescription id="ls8mguzv" name="OpenGift">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="rmqhd" name="OpenGiftPanel" exported="true" size="1334,750"/>
+    <component id="rmqhf" name="BtnBuy" size="270,67"/>
+    <component id="rmqhi" name="btnClose" size="46,47"/>
+    <image id="rmqh4" name="btn_kaifutehuiguanbi" size="46,47"/>
+    <image id="rmqh5" name="bg_kaifutehuidi" size="998,593"/>
+    <image id="rmqh8" name="wuqiwenzidi" size="46,359"/>
+    <image id="rmqhb" name="wuqimingzi1" size="100,186"/>
+    <image id="rmqhc" name="wenzi" size="452,101"/>
+    <image id="rmqhg" name="woyaogoumai" size="130,32"/>
+    <image id="rmqhh" name="fasongyoujian" size="261,32"/>
+  </resources>
+</packageDescription>rmqhd.xml|1419|<component size="1334,750" opaque="false">
+  <displayList>
+    <graph id="n17" name="mask" xy="0,0" size="1334,750" alpha="0.65" type="rect" fillColor="#ff000000"/>
+    <image id="n0" name="n0" src="rmqh5" xy="209,22"/>
+    <loader id="n11" name="modelName" xy="268,91" size="100,186" url="ui://ls8mguzvrmqhb" align="center" vAlign="middle" fill="scale" autoSize="true"/>
+    <image id="n3" name="n3" src="rmqh8" xy="493,257"/>
+    <text id="n5" name="depictText1" xy="492,261" size="24,244" font="华康圆体W7(P)" fontSize="20" color="#ffefc5" leading="2" autoSize="height" text="先民打造的九把神器之一">
+      <relation target="n3" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n6" name="depictText2" xy="516,298" size="24,288" font="华康圆体W7(P)" fontSize="20" color="#ffefc5" leading="2" autoSize="height" text="重量和硬度在巨剑中首屈一指">
+      <relation target="n3" sidePair="right-right"/>
+    </text>
+    <graph id="n12" name="modelConn" xy="381,553" pivot="0.5,0.5" anchor="true" size="29,25"/>
+    <component id="n13" name="btnClose" src="rmqhi" xy="1127,126"/>
+    <image id="n1" name="n1" src="rmqhc" xy="628,271"/>
+    <list id="n4" name="giftList" xy="607,400" size="491,105" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" scrollBar="hidden" margin="4,0,0,0" colGap="2" autoItemSize="false" align="center"/>
+    <component id="n8" name="btnBuy" src="rmqhf" xy="718,510"/>
+  </displayList>
+</component>rmqhf.xml|579|<component size="270,67" extention="Button">
+  <controller name="btnState" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n7" name="n7" src="dmzwnna" pkg="0tyncec1" xy="24,0">
+      <gearDisplay controller="btnState" pages="0"/>
+    </image>
+    <image id="n12" name="n12" src="rmqhg" xy="70,15">
+      <gearDisplay controller="btnState" pages="0"/>
+    </image>
+    <image id="n14" name="n14" src="rmqhh" xy="4,17">
+      <gearDisplay controller="btnState" pages="1"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>rmqhi.xml|201|<component size="46,47" extention="Button">
+  <displayList>
+    <image id="n2" name="btnClose" src="rmqh4" xy="0,0"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>

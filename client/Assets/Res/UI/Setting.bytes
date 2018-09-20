@@ -1,0 +1,155 @@
+iw5w1f.xml|140|<component size="758,55">
+  <displayList>
+    <image id="n93" name="n93" src="iw5w1d" xy="0,0" size="758,55"/>
+  </displayList>
+</component>ljea19.xml|855|<component size="138,29" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n2" name="icon" xy="0,0" size="29,29" url="ui://0tyncec15v99nke" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="left-left,top-top"/>
+    </loader>
+    <loader id="n4" name="tickLoader" xy="-1,-1" size="32,32" url="ui://0tyncec15v99nkf" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="1"/>
+    </loader>
+    <text id="n5" name="title" xy="32,0" size="102,29" font="方正粗圆简体" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" text="">
+      <relation target="" sidePair="right-right,top-top"/>
+      <relation target="n2" sidePair="left-left"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>ljeaw.xml|210|<component size="129,58">
+  <displayList>
+    <component id="n51" name="EscGameBtn" src="kftjk" pkg="1m5molo6" xy="0,0" size="129,58">
+      <Button title="退出登录"/>
+    </component>
+  </displayList>
+</component>ockmk.xml|3445|<component size="967,585">
+  <controller name="hpCtrl" pages="0,,1,,2," selected="0"/>
+  <controller name="mpCtrl" pages="0,0,1,1,2,2" selected="0"/>
+  <displayList>
+    <component id="n12" name="sound" src="ockmo" xy="11,0" size="131,50">
+      <Label title="声音"/>
+    </component>
+    <component id="n79" name="cb0" src="ockmn" xy="74,59" size="151,31">
+      <Label title="开启音乐"/>
+    </component>
+    <component id="n80" name="cb1" src="ockmn" xy="336,58" size="150,31">
+      <Label title="开启音效"/>
+    </component>
+    <image id="n20" name="line" src="igkdnlb" pkg="0tyncec1" xy="0,102" size="967,3">
+      <relation target="n79" sidePair="top-bottom"/>
+    </image>
+    <component id="n29" name="chat" src="ockmo" xy="11,107" size="131,50">
+      <Label title="社交"/>
+    </component>
+    <component id="n76" name="cb2" src="ockmn" xy="73,171" size="218,31">
+      <Label title="拒绝陌生人消息"/>
+    </component>
+    <component id="n102" name="cb3" src="ockmn" xy="369,170" size="200,31">
+      <Label title="拒绝好友申请"/>
+    </component>
+    <image id="n26" name="line" src="igkdnlb" pkg="0tyncec1" xy="0,216" size="967,3">
+      <relation target="n76" sidePair="top-bottom"/>
+    </image>
+    <component id="n77" name="cb4" src="ockmn" xy="76,283" size="148,31">
+      <Label title="血条"/>
+    </component>
+    <component id="n75" name="cb5" src="ockmn" xy="324,282" size="141,31">
+      <Label title="名字"/>
+    </component>
+    <component id="n78" name="cb6" src="ockmn" xy="590,282" size="164,31" visible="false">
+      <Label title="小地图" titleColor="#545e6c"/>
+    </component>
+    <component id="n32" name="show" src="ockmo" xy="11,221" size="131,50">
+      <Label title="显示"/>
+    </component>
+    <image id="n33" name="line" src="igkdnlb" pkg="0tyncec1" xy="0,332" size="967,3">
+      <relation target="n77" sidePair="top-bottom"/>
+    </image>
+    <component id="n39" name="drinkDrug" src="ockmo" xy="13,346" size="179,50">
+      <Label title="自动喝药"/>
+    </component>
+    <component id="n94" name="selectBox1" src="iw5w1f" xy="57,400"/>
+    <component id="n81" name="blood30" src="ljea19" xy="79,412" size="155,29">
+      <Button checked="true" title="30% 血量" controller="hpCtrl" page="0"/>
+    </component>
+    <component id="n82" name="blood50" src="ljea19" xy="360,413" size="155,29">
+      <Button title="50% 血量" controller="hpCtrl" page="1"/>
+    </component>
+    <component id="n83" name="blood80" src="ljea19" xy="640,412" size="164,29">
+      <Button title="80% 血量" controller="hpCtrl" page="2"/>
+    </component>
+    <component id="n95" name="selectBox2" src="iw5w1f" xy="57,448"/>
+    <component id="n85" name="mf30" src="ljea19" xy="79,464" size="155,29">
+      <Button checked="true" title="30% 法力" controller="mpCtrl" page="0"/>
+    </component>
+    <component id="n86" name="mf50" src="ljea19" xy="360,463" size="155,29">
+      <Button title="50% 法力" controller="mpCtrl" page="1"/>
+    </component>
+    <component id="n87" name="mf80" src="ljea19" xy="640,463" size="164,29">
+      <Button title="80% 法力" controller="mpCtrl" page="2"/>
+    </component>
+    <component id="n96" name="bandAccBtn" src="ockmt" xy="450,527" visible="false">
+      <Button title="绑定账号"/>
+    </component>
+    <component id="n61" name="callGMBtn" src="ockmt" xy="627,527" visible="false">
+      <Button title="联系客服"/>
+    </component>
+    <component id="n62" name="escGameBtn" src="ljeaw" xy="804,527" visible="false"/>
+  </displayList>
+</component>ockmn.xml|425|<component size="216,31" extention="Label">
+  <displayList>
+    <text id="n4" name="title" xy="3,2" size="10,29" font="方正粗圆简体" fontSize="22" color="#2e3341" text="&#xA;">
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n5" name="checkBox" src="ockmnmb" pkg="0tyncec1" xy="184,3">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+  </displayList>
+</component>ockmo.xml|440|<component size="164,50" extention="Label">
+  <displayList>
+    <loader id="n8" name="icon" xy="10,21" size="28,12" url="ui://eq5552rtiw5w1a">
+      <relation target="" sidePair="left-left,top-top"/>
+    </loader>
+    <text id="n9" name="title" xy="63,13" size="92,28" font="方正粗圆简体" fontSize="24" color="#545e6c" autoSize="height" text="">
+      <relation target="" sidePair="width-width,top-top"/>
+    </text>
+  </displayList>
+</component>ockmt.xml|1324|<component size="129,58" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n6" name="n6" src="x0conj1" pkg="0tyncec1" xy="0,0" size="129,58">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n7" name="n7" src="x0conj1" pkg="0tyncec1" xy="0,0" size="129,58">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n8" name="n8" src="x0conj1" pkg="0tyncec1" xy="0,0" size="129,58">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n10" name="n10" src="x0conj1" pkg="0tyncec1" xy="0,0" size="129,58">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n5" name="title" xy="0,0" size="129,58" font="方正粗圆简体" fontSize="24" color="#f0fcee" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>package.xml|733|<packageDescription id="eq5552rt" name="Setting">
+  <resources>
+    <atlas id="atlas0" size="128,64" file="atlas0.png"/>
+    <component id="iw5w1f" name="SelectBox" size="758,55"/>
+    <component id="ljea19" name="DrugRadio" size="138,29"/>
+    <component id="ljeaw" name="EscGameBtn" size="129,58"/>
+    <component id="ockmk" name="SettingPanel" exported="true" size="967,585"/>
+    <component id="ockmn" name="CheckLabel" size="216,31"/>
+    <component id="ockmo" name="SettingLabel" size="164,50"/>
+    <component id="ockmt" name="CallGMBtn" size="129,58"/>
+    <image id="iw5w1a" name="装饰" size="28,12"/>
+    <image id="iw5w1d" name="选中框" size="60,55" scale="9grid" scale9grid="15,14,30,28"/>
+  </resources>
+</packageDescription>

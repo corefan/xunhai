@@ -1,0 +1,56 @@
+package.xml|907|<packageDescription id="ic8go605" name="PowerLevelingActivitiesUI">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="psjw7" name="ImproveBattleContent" exported="true" size="892,635"/>
+    <component id="psjw8" name="ImproveItem" exported="true" size="837,113"/>
+    <component id="psjw9" name="LevelingMadmanContent" exported="true" size="892,635"/>
+    <component id="psjwa" name="LevelingMadmanItem" exported="true" size="837,113"/>
+    <image id="psjw1" name="biaoqian" size="128,48" exported="true"/>
+    <image id="psjw2" name="dian" size="10,10" exported="true"/>
+    <image id="psjw3" name="yilingqu" size="94,40" exported="true"/>
+    <image id="psjw4" name="冲级尺寸861X602" size="861,303" scale="9grid" scale9grid="0,219,861,74"/>
+    <image id="psjw5" name="战力" size="861,303" scale="9grid" scale9grid="0,235,861,55"/>
+  </resources>
+</packageDescription>psjw7.xml|551|<component size="892,635">
+  <displayList>
+    <image id="n6" name="n6" src="psjw5" xy="17,0" size="861,607"/>
+    <list id="n3" name="list" xy="32,222" size="839,371" overflow="scroll" margin="0,0,0,0" lineGap="-1"/>
+    <image id="n4" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,28" size="20,607"/>
+    <text id="n5" name="daojishi" xy="28,143" size="131,24" fontSize="18" color="#1eff00" text="活动剩余时间："/>
+    <text id="n7" name="daoJiTime" xy="152,143" size="86,24" fontSize="18" color="#1eff00" text="7天15小时"/>
+  </displayList>
+</component>psjw8.xml|863|<component size="837,113">
+  <displayList>
+    <image id="n16" name="bg_item0" src="keyenis" pkg="0tyncec1" xy="1,0" size="837,113"/>
+    <image id="n18" name="n18" src="psjw1" xy="6,36"/>
+    <text id="n5" name="lvNum" xy="40,45" size="55,29" fontSize="22" color="#2e3341" text="30 级"/>
+    <text id="n9" name="surplusNum" xy="561,41" size="99,29" fontSize="22" color="#2e3341" ubb="true" text="2000/2000"/>
+    <list id="n12" name="rewardList" xy="173,9" size="352,94" layout="row" scroll="horizontal" margin="0,0,0,0"/>
+    <component id="n13" name="buttonGet" src="ipc7nq9" pkg="0tyncec1" xy="680,32" size="143,45">
+      <Button title="领取" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <image id="n17" name="yiLingQuBtn" src="psjw3" xy="708,34"/>
+    <image id="n19" name="n19" src="psjw2" xy="25,54"/>
+  </displayList>
+</component>psjw9.xml|559|<component size="892,635">
+  <displayList>
+    <image id="n6" name="backGround" src="psjw4" xy="17,0" size="861,607"/>
+    <list id="n0" name="list" xy="32,222" size="839,371" overflow="scroll" margin="0,0,0,0" lineGap="-1"/>
+    <image id="n1" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,28" size="20,607"/>
+    <text id="n7" name="daojishi" xy="28,143" size="131,24" fontSize="18" color="#1eff00" text="活动剩余时间："/>
+    <text id="n8" name="daoJiTime" xy="152,143" size="86,24" fontSize="18" color="#1eff00" text="7天15小时"/>
+  </displayList>
+</component>psjwa.xml|863|<component size="837,113">
+  <displayList>
+    <image id="n16" name="bg_item0" src="keyenis" pkg="0tyncec1" xy="1,0" size="837,113"/>
+    <image id="n18" name="n18" src="psjw1" xy="6,36"/>
+    <text id="n5" name="lvNum" xy="40,45" size="55,29" fontSize="22" color="#2e3341" text="30 级"/>
+    <text id="n9" name="surplusNum" xy="561,41" size="99,29" fontSize="22" color="#2e3341" ubb="true" text="2000/2000"/>
+    <list id="n12" name="rewardList" xy="173,9" size="352,94" layout="row" scroll="horizontal" margin="0,0,0,0"/>
+    <component id="n13" name="buttonGet" src="ipc7nq9" pkg="0tyncec1" xy="680,32" size="143,45">
+      <Button title="领取" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <image id="n17" name="yiLingQuBtn" src="psjw3" xy="708,34"/>
+    <image id="n19" name="n19" src="psjw2" xy="25,54"/>
+  </displayList>
+</component>

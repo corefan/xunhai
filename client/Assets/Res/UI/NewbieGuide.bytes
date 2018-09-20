@@ -1,0 +1,28 @@
+package.xml|188|<packageDescription id="g8gxzrn0" name="NewbieGuide">
+  <resources>
+    <component id="u91s3" name="NewbieGuidePanel" exported="true" size="1334,750"/>
+  </resources>
+</packageDescription>u91s3.xml|1474|<component size="1334,750" opaque="false">
+  <displayList>
+    <graph id="n8" name="topGraph" xy="524,0" size="110,232" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#00ff0000">
+      <relation target="n0" sidePair="bottomext-top,width-width"/>
+      <relation target="n0" sidePair="left-left"/>
+    </graph>
+    <graph id="n10" name="leftGraph" xy="-1,0" size="524,750" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#00ffffff">
+      <relation target="n0" sidePair="rightext-left"/>
+      <relation target="" sidePair="height-height"/>
+    </graph>
+    <graph id="n11" name="rightGraph" xy="635,0" size="697,750" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#00ffffff">
+      <relation target="n0" sidePair="leftext-right"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n12" name="bottomGraph" xy="524,342" size="110,406" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#00ffffff">
+      <relation target="n0" sidePair="topext-bottom,width-width"/>
+      <relation target="n0" sidePair="left-left"/>
+      <relation target="n10" sidePair="bottomext-bottom"/>
+    </graph>
+    <graph id="n0" name="circleGraph" xy="525,233" size="110,110" touchable="false" type="rect" lineSize="0" lineColor="#ffffffff"/>
+    <graph id="n2" name="circleEffectRoot" xy="0,0" size="1,1"/>
+    <graph id="n3" name="arrowEffectRoot" xy="0,0" size="1,1" type="eclipse"/>
+  </displayList>
+</component>

@@ -1,0 +1,72 @@
+bb5f9.xml|474|<component size="1334,30">
+  <displayList>
+    <image id="n10" name="bg" src="me2f1c" pkg="0tyncec1" xy="627,0" pivot="0.5,0.5" size="80,30" touchable="false">
+      <relation target="n3" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3" name="title" xy="644,3" pivot="0.5,0.5" size="45,24" touchable="false" font="方正粗圆简体" fontSize="20" color="#ffffff" align="center" vAlign="middle" ubb="true" singleLine="true" text="内容"/>
+  </displayList>
+</component>la7za.xml|1675|<component size="596,287" extention="Label">
+  <displayList>
+    <image id="n10" name="bg" src="csuxnlk" pkg="0tyncec1" xy="0,18" size="597,249">
+      <relation target="n15" sidePair="bottomext-bottom"/>
+    </image>
+    <text id="n1" name="title" xy="92,21" size="413,34" font="方正粗圆简体" fontSize="24" color="#d2dae0" align="center" vAlign="middle" autoSize="none" text="提示"/>
+    <component id="n12" name="btnEnter" src="l2b8nnq" pkg="0tyncec1" xy="357,183" size="155,41">
+      <relation target="n15" sidePair="top-bottom"/>
+      <Button title="确定" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n13" name="btnExit" src="l2b8nnq" pkg="0tyncec1" xy="93,183" size="155,41">
+      <relation target="n15" sidePair="top-bottom"/>
+      <Button title="取消" titleColor="#2e3341" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n14" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="499,-20" size="113,89" visible="false">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <richtext id="n15" name="content" xy="46,72" size="514,29" font="方正粗圆简体" fontSize="22" color="#43515b" ubb="true" autoSize="height" text=""/>
+    <component id="n18" name="slider" src="la7znqg" pkg="0tyncec1" xy="52,135" size="502,15">
+      <relation target="n15" sidePair="top-bottom"/>
+      <Slider max="1"/>
+    </component>
+    <text id="n23" name="n23" xy="48,236" size="245,22" font="方正粗圆简体" fontSize="16" color="#669900" autoSize="none" singleLine="true" text="注：拖动小绿色滑块以调整数量！">
+      <relation target="n13" sidePair="bottom-top"/>
+    </text>
+  </displayList>
+  <relation target="n15" sidePair="bottomext-bottom"/>
+</component>oky07.xml|900|<component size="1334,750">
+  <displayList>
+    <graph id="n10" name="alpha" xy="0,0" size="1334,750" type="rect" lineSize="0" lineColor="#01000000" fillColor="#80000000"/>
+    <image id="n2" name="bg" src="csuxnlk" pkg="0tyncec1" xy="399,250" size="601,240"/>
+    <text id="n3" name="titleTxt" xy="484,255" size="430,31" font="方正粗圆简体" fontSize="24" color="#d2dae0" align="center" vAlign="middle" autoSize="none" text="标题文字"/>
+    <richtext id="n12" name="titleExplain" xy="431,304" size="533,115" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="none" text="内容"/>
+    <component id="n13" name="btnConfirm" src="l2b8nnq" pkg="0tyncec1" xy="576,425" size="243,46">
+      <relation target="" sidePair="bottom-bottom,center-center"/>
+      <Button title="确定" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>oky08.xml|1155|<component size="1334,750">
+  <displayList>
+    <image id="n10" name="bg" src="csuxnlk" pkg="0tyncec1" xy="378,276" size="597,240"/>
+    <text id="n1" name="title" xy="470,279" size="413,34" font="方正粗圆简体" fontSize="24" color="#d2dae0" align="center" vAlign="middle" autoSize="none" text="温馨提示"/>
+    <component id="n11" name="rollContent" src="tebrnmj" pkg="0tyncec1" xy="422,334" size="508,114">
+      <Label title="内容"/>
+    </component>
+    <component id="n12" name="btnEnter" src="l2b8nnq" pkg="0tyncec1" xy="735,455" size="155,41">
+      <relation target="" sidePair="bottom-bottom,center-center"/>
+      <Button title="确定" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n13" name="btnExit" src="l2b8nnq" pkg="0tyncec1" xy="471,455" size="155,41">
+      <relation target="" sidePair="bottom-bottom,center-center"/>
+      <Button title="取消" titleColor="#2e3341" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n14" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="877,238" size="113,89" visible="false">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>package.xml|412|<packageDescription id="7qyz8uh6" name="MainTip">
+  <resources>
+    <component id="bb5f9" name="MW_FloatTip" exported="true" size="1334,30"/>
+    <component id="la7za" name="MW_ConfirmNum" exported="true" size="596,287"/>
+    <component id="oky07" name="MW_Alter" exported="true" size="1334,750"/>
+    <component id="oky08" name="MW_Confirm" exported="true" size="1334,750"/>
+  </resources>
+</packageDescription>

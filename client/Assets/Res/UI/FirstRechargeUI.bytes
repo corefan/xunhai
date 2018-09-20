@@ -1,0 +1,57 @@
+a4f9c.xml|23|<component size="1,1"/>package.xml|769|<packageDescription id="byk6e4tt" name="FirstRechargeUI">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="a4f9c" name="Container" size="1,1"/>
+    <component id="rmqhb" name="FirstRechargeComBg" exported="true" size="1334,750"/>
+    <component id="sjzg6" name="FRPanel" exported="true" size="1334,750"/>
+    <component id="sjzg7" name="btnClose" size="50,52"/>
+    <component id="sjzg8" name="btnRecharge" size="222,67"/>
+    <image id="a4f9e" name="yilingqu" size="96,32"/>
+    <image id="hzv1a" name="lingjiang" size="65,32"/>
+    <image id="sjzg2" name="btn_guanbi" size="50,52"/>
+    <image id="sjzg4" name="quchongzhi" size="99,32"/>
+    <image id="sjzg5" name="di" size="622,551"/>
+  </resources>
+</packageDescription>rmqhb.xml|1059|<component size="1334,750">
+  <controller name="tabCtrl" pages="0,btnShouchong,1,btnKaifu" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="c18wnl9" pkg="0tyncec1" xy="0,0" size="1334,750"/>
+    <component id="n14" name="container" src="a4f9c" xy="0,0" size="1334,750"/>
+    <component id="n8" name="btnShouchong" src="sw74nm0" pkg="0tyncec1" xy="99,236" size="175,75">
+      <Button checked="true" title="首充" titleColor="#000000" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="tabCtrl" page="0"/>
+    </component>
+    <loader id="n11" name="redTipSC" xy="104,241" size="21,20" visible="false" url="ui://0tyncec1xnis91"/>
+    <component id="n9" name="btnKaifu" src="sw74nm0" pkg="0tyncec1" xy="98,343" size="175,75">
+      <Button title="开服特惠" titleColor="#000000" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="tabCtrl" page="1"/>
+    </component>
+    <loader id="n10" name="redTipKF" xy="104,348" size="21,20" visible="false" url="ui://0tyncec1xnis91"/>
+  </displayList>
+</component>sjzg6.xml|577|<component size="1334,750" opaque="false">
+  <displayList>
+    <graph id="n8" name="mask" xy="0,0" size="1334,750" alpha="0.65" type="rect" fillColor="#ff000000"/>
+    <image id="n0" name="n0" src="sjzg5" xy="410,75"/>
+    <component id="n2" name="btnClose" src="sjzg7" xy="944,163"/>
+    <component id="n4" name="btnRecharge" src="sjzg8" xy="581,513" size="218,63"/>
+    <list id="n6" name="rewardList" xy="491,358" size="407,99" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" margin="0,0,0,0" colGap="8" align="center"/>
+  </displayList>
+</component>sjzg7.xml|195|<component size="50,52" extention="Button">
+  <displayList>
+    <image id="n1" name="n1" src="sjzg2" xy="0,0"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>sjzg8.xml|668|<component size="222,67" extention="Button">
+  <controller name="rewCtrl" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <loader id="n0" name="icon" xy="-1,0" size="222,67" url="ui://0tyncec1dmzwnna"/>
+    <image id="n6" name="goPay" src="sjzg4" xy="63,16">
+      <gearDisplay controller="rewCtrl" pages="0"/>
+    </image>
+    <image id="n5" name="getRew" src="hzv1a" xy="80,16">
+      <gearDisplay controller="rewCtrl" pages="1"/>
+    </image>
+    <image id="n7" name="Getted" src="a4f9e" xy="63,16" size="99,32">
+      <gearDisplay controller="rewCtrl" pages="2"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>

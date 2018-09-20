@@ -1,0 +1,65 @@
+f22w3.xml|242|<component size="400,360">
+  <displayList>
+    <component id="n0" name="frame" src="ykv21" xy="0,0">
+      <relation target="" sidePair="width-width%,height-height%"/>
+      <Label title="错误报告"/>
+    </component>
+  </displayList>
+</component>f22w4.xml|449|<component size="375,318" overflow="scroll">
+  <displayList>
+    <graph id="n8" name="bg" xy="0,0" size="375,25" type="rect" fillColor="#ff336666">
+      <relation target="n9" sidePair="width-width,height-height"/>
+    </graph>
+    <richtext id="n9" name="txtContent" xy="2,2" size="371,20" fontSize="16" ubb="true" autoSize="height" text="">
+      <relation target="" sidePair="width-width,left-left"/>
+    </richtext>
+  </displayList>
+</component>l7tc0.xml|72|<component size="1136,640" opaque="false">
+  <displayList/>
+</component>package.xml|469|<packageDescription id="24ppc8nl" name="UIRoot">
+  <resources>
+    <component id="f22w3" name="ErrorWindow" exported="true" size="400,360"/>
+    <component id="f22w4" name="PreFrameContent" size="375,318"/>
+    <component id="l7tc0" name="Root" exported="true" size="1136,640"/>
+    <component id="ykv21" name="PreWindowFrame" exported="true" size="400,360"/>
+    <component id="ykv22" name="BtnClose" exported="true" size="48,48"/>
+  </resources>
+</packageDescription>ykv21.xml|1122|<component size="400,360" extention="Label">
+  <displayList>
+    <graph id="n1" name="bg0" xy="0,0" size="400,360" type="rect" lineSize="0" fillColor="#ff663300">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2" name="bg1" xy="8,7" size="383,346" type="rect">
+      <relation target="n1" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n9" name="dragArea" xy="-8,-28" size="425,93" type="rect" lineSize="0" fillColor="#00ffffff">
+      <relation target="" sidePair="width-width%"/>
+    </graph>
+    <text id="n7" name="title" xy="118,9" size="162,24" fontSize="20" color="#ff0000" align="center" vAlign="middle" autoSize="height" bold="true" text="">
+      <relation target="" sidePair="top-top,center-center"/>
+    </text>
+    <component id="n6" name="closeButton" src="ykv22" xy="372,-18">
+      <relation target="" sidePair="top-top,right-right"/>
+    </component>
+    <list id="n11" name="contentList" xy="7,30" size="387,328" overflow="scroll" margin="0,0,0,0" defaultItem="ui://24ppc8nlf22w4">
+      <item/>
+    </list>
+  </displayList>
+</component>ykv22.xml|919|<component size="48,48" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <graph id="n1" name="n1" xy="0,0" size="48,48" touchable="false" type="eclipse" lineSize="0" fillColor="#ffcc3300">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </graph>
+    <graph id="n2" name="n2" xy="0,0" size="48,48" touchable="false" type="eclipse" lineSize="0" fillColor="#ffcc9900">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </graph>
+    <graph id="n3" name="n3" xy="0,0" size="48,48" touchable="false" type="eclipse" lineSize="0" fillColor="#ff99cc00">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </graph>
+  </displayList>
+  <Button/>
+</component>

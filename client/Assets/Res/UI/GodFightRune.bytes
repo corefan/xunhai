@@ -1,0 +1,138 @@
+iug37.xml|648|<component size="386,53">
+  <controller name="c1" pages="0,,1,,2,,3," selected="0"/>
+  <displayList>
+    <component id="n0" name="btnAll" src="jci2a" xy="0,0">
+      <Button title="全部" controller="c1" page="0"/>
+    </component>
+    <component id="n2" name="btnLv1" src="jci2h" xy="103,0">
+      <Button title="一级" controller="c1" page="1"/>
+    </component>
+    <component id="n3" name="btnLv2" src="jci2h" xy="193,0">
+      <Button title="二级" controller="c1" page="2"/>
+    </component>
+    <component id="n1" name="btnLv3" src="jci2e" xy="284,0">
+      <Button title="三级" controller="c1" page="3"/>
+    </component>
+  </displayList>
+</component>jci2a.xml|596|<component size="102,53" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="jci2b" xy="0,0" size="102,53">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n1" name="n1" src="jci2c" xy="0,0" size="102,53">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <text id="n2" name="title" xy="21,4" size="72,41" font="华康圆体W7(P)" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="全部"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>jci2e.xml|581|<component size="102,53" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n3" name="n0" src="jci2f" xy="0,0" size="102,53">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n4" name="n1" src="jci2g" xy="0,0" size="102,53">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n2" name="title" xy="15,0" size="86,50" font="华康圆体W7(P)" fontSize="24" color="#2e3341" vAlign="middle" autoSize="none" text="五级"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>jci2h.xml|578|<component size="90,53" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="jci2i" xy="0,0" size="90,53">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n1" name="n1" src="jci2j" xy="0,0" size="90,53">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n2" name="title" xy="15,2" size="69,43" font="华康圆体W7(P)" fontSize="24" color="#2e3341" vAlign="middle" autoSize="none" text="一级"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>jci2k.xml|2085|<component size="967,628">
+  <displayList>
+    <component id="n0" name="tabGodFightRune" src="iug37" xy="30,16" group="n6"/>
+    <component id="n2" name="godFightRuneContent" src="jci2l" xy="0,77" group="n6"/>
+    <component id="n3" name="godFightRuneEffect0" src="jci2m" xy="8,453" group="n6" visible="false"/>
+    <component id="n4" name="godFightRuneEffect1" src="jci2m" xy="7,452" size="438,140" group="n6"/>
+    <image id="n5" name="imgArrow" src="s4zfnls" pkg="0tyncec1" xy="196,512" group="n6" visible="false"/>
+    <group id="n6" name="groupLeftUI" xy="0,16" size="452,577" advanced="true"/>
+    <image id="n7" name="bg0" src="iug32" xy="448,0" group="n16"/>
+    <image id="n8" name="bg1" src="iug36" xy="483,80" group="n16"/>
+    <image id="n10" name="bgName" src="w3wlnld" pkg="0tyncec1" xy="602,17" size="227,40" group="n16"/>
+    <text id="n9" name="labelName" xy="636,21" size="157,27" group="n16" font="华康圆体W7(P)" fontSize="20" align="center" vAlign="middle" ubb="true" autoSize="none" text="空山剑传说"/>
+    <component id="n11" name="godFightRuneItem0" src="s4zfn" xy="654,61" group="n16"/>
+    <component id="n12" name="godFightRuneItem1" src="s4zfn" xy="490,372" group="n16"/>
+    <component id="n13" name="godFightRuneItem2" src="s4zfn" xy="819,372" group="n16"/>
+    <text id="n14" name="labelTips" xy="557,533" size="331,23" group="n16" font="华康圆体W7(P)" fontSize="19" color="#2e3341" align="center" vAlign="middle" leading="4" autoSize="height" text=""/>
+    <component id="n15" name="btnUse" src="skqrnkp" pkg="0tyncec1" xy="646,562" size="150,56" group="n16">
+      <Button title="使用" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <graph id="n17" name="effectRoot0" xy="714,309" size="1,1" group="n16"/>
+    <graph id="n18" name="effectRoot1" xy="685,177" size="1,1" group="n16"/>
+    <component id="n20" name="tipsBtn" src="t5hdnfq" pkg="0tyncec1" xy="905,568" size="44,45" group="n16">
+      <Button icon="ui://0tyncec1f06tnnc"/>
+    </component>
+    <group id="n16" name="groupRightUI" xy="448,0" size="519,628" advanced="true"/>
+  </displayList>
+</component>jci2l.xml|332|<component size="452,346">
+  <displayList>
+    <image id="n0" name="bg" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="452,346"/>
+    <list id="n1" name="content" xy="5,6" size="443,334" layout="flow_hz" overflow="scroll" margin="6,0,16,0" lineGap="16" colGap="20" lineItemCount="4" autoItemSize="false"/>
+  </displayList>
+</component>jci2m.xml|542|<component size="438,140">
+  <displayList>
+    <image id="n1" name="bg" src="gk0nni9" pkg="0tyncec1" xy="0,0" size="438,140"/>
+    <loader id="n0" name="loader" xy="0,0" size="438,33" url="ui://0tyncec1uchhnl1" fill="scaleFree"/>
+    <text id="n3" name="labelTitle" xy="174,5" size="111,24" font="华康圆体W7(P)" fontSize="20" align="center" vAlign="middle" autoSize="none" text="当前效果"/>
+    <text id="n2" name="labelContent" xy="8,41" size="422,91" font="华康圆体W7(P)" fontSize="20" ubb="true" autoSize="none" text=""/>
+  </displayList>
+</component>k3tlo.xml|577|<component size="25,70">
+  <displayList>
+    <image id="n0" name="n0" src="mkaznh3" pkg="0tyncec1" xy="0,0" size="25,67">
+      <relation target="n2" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1" name="labelSkillName" xy="6,16" size="10,16" font="华康圆体W7(P)" fontSize="12" text="">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n2" name="labelDesc" xy="7,38" size="10,16" font="华康圆体W7(P)" fontSize="12" text=""/>
+  </displayList>
+  <relation target="n0" sidePair="width-width,height-height"/>
+</component>package.xml|1425|<packageDescription id="s210esy7" name="GodFightRune">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="iug37" name="TabGodFightRune" exported="true" size="386,53"/>
+    <component id="jci2a" name="ButtonAll" exported="true" size="102,53"/>
+    <component id="jci2e" name="ButtonHighest" exported="true" size="102,53"/>
+    <component id="jci2h" name="ButtonLev" exported="true" size="90,53"/>
+    <component id="jci2k" name="GodFightRunePanel" exported="true" size="967,628"/>
+    <component id="jci2l" name="GodFightRuneContent" exported="true" size="452,346"/>
+    <component id="jci2m" name="GodFightRuneEffect" exported="true" size="438,140"/>
+    <component id="k3tlo" name="GodFightRuneTips" exported="true" size="25,70"/>
+    <component id="s4zfn" name="GodFightRuneItem" exported="true" size="128,119"/>
+    <image id="iug32" name="beijing" size="519,628"/>
+    <image id="iug35" name="kuang" size="85,85"/>
+    <image id="iug36" name="diwen" size="466,466"/>
+    <image id="jci2b" name="tab1" size="129,53" scale="9grid" scale9grid="26,3,97,44"/>
+    <image id="jci2c" name="tab6" size="129,53" scale="9grid" scale9grid="27,3,96,43"/>
+    <image id="jci2f" name="tab3" size="129,53"/>
+    <image id="jci2g" name="tab5" size="129,53"/>
+    <image id="jci2i" name="tab2" size="111,53"/>
+    <image id="jci2j" name="tab4" size="111,53"/>
+  </resources>
+</packageDescription>s4zfn.xml|906|<component size="128,119" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bgIcon" src="iug35" xy="21,0"/>
+    <loader id="n1" name="icon" xy="20,0" size="85,85" align="center" vAlign="middle" fill="scaleFree"/>
+    <image id="n2" name="imgLock" src="igzgnk7" pkg="0tyncec1" xy="39,14"/>
+    <image id="n3" name="imgAdd" src="rgh0nl6" pkg="0tyncec1" xy="40,20"/>
+    <image id="n4" name="bgName" src="c4eznl4" pkg="0tyncec1" xy="0,86" size="128,32"/>
+    <text id="n5" name="labelName" xy="3,90" size="121,26" font="华康圆体W7(P)" fontSize="21" color="#2e3341" autoSize="none" text="冰雪之咆哮"/>
+    <image id="n6" name="imgSelected" src="of36nm2" pkg="0tyncec1" xy="11,-9"/>
+    <graph id="n7" name="effectRoot0" xy="0,0" size="1,1"/>
+    <graph id="n8" name="effectRoot1" xy="73,69" size="1,1"/>
+  </displayList>
+  <Button/>
+</component>

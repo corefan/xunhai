@@ -1,0 +1,80 @@
+910zt.xml|88|<component size="1334,210" extention="Button">
+  <displayList/>
+  <Button/>
+</component>package.xml|1261|<packageDescription id="y1al0f5q" name="NPCDialog">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="910zt" name="ButtonMask" exported="true" size="1334,210"/>
+    <component id="tjjea" name="NPCDialogPanel" exported="true" size="1334,750"/>
+    <component id="tjjeb" name="NPCSubmitTaskPanel" exported="true" size="1334,750"/>
+    <component id="tjjee" name="ListNPCTaskReward" exported="true" size="396,102"/>
+    <component id="tjjeo" name="ButtonSkip" exported="true" size="162,35"/>
+    <component id="tjjep" name="TaskStateSelect" exported="true" size="315,255"/>
+    <component id="tjjer" name="NPCHeadUIPanel" exported="true" size="56,74"/>
+    <image id="tjje2" name="底" size="458,597"/>
+    <image id="tjje4" name="任务奖励" size="132,34"/>
+    <image id="tjje5" name="exp" size="46,30" exported="true"/>
+    <image id="tjje6" name="coin" size="46,30" exported="true"/>
+    <image id="tjje7" name="分割线" size="408,75"/>
+    <image id="tjjeh" name="对话底（可拉伸 1334X210）" size="512,210" scale="9grid" scale9grid="321,87,99,44"/>
+    <image id="tjjei" name="底（可拉伸）" size="315,255"/>
+    <image id="tjjej" name="跳过对话" size="135,29"/>
+    <image id="tjjek" name="名字底" size="550,36"/>
+  </resources>
+</packageDescription>tjjea.xml|924|<component size="1334,750" opaque="false">
+  <displayList>
+    <image id="n1" name="img_bg" src="tjjeh" xy="1,540" size="1333,210"/>
+    <image id="n3" name="img_npc_name_bg" src="tjjek" xy="164,563"/>
+    <graph id="n2" name="model_npc" xy="74,607" size="100,93" visible="false"/>
+    <text id="n4" name="label_npc_name" xy="327,567" size="221,36" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="陆金所老板娘"/>
+    <text id="n5" name="label_npc_dialog" xy="329,626" size="831,119" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="幽幽世外隔人间，不忍戚戚乱世烟"/>
+    <component id="n6" name="button_skip" src="tjjeo" xy="1160,25"/>
+    <component id="n10" name="button_mask" src="910zt" xy="0,547" size="1334,202"/>
+    <component id="n7" name="task_state_select" src="tjjep" xy="1017,284"/>
+    <component id="n8" name="button_next" src="tfo1dj" pkg="0tyncec1" xy="1166,692"/>
+  </displayList>
+</component>tjjeb.xml|2339|<component size="1334,750" opaque="false">
+  <displayList>
+    <image id="n0" name="image_bg" src="tjje2" xy="865,61" group="n18"/>
+    <image id="n1" name="image_split" src="tjje7" xy="887,244" group="n18"/>
+    <image id="n2" name="image_reward" src="tjje4" xy="922,345" group="n18"/>
+    <group id="n18" name="group_bg" xy="865,61" size="458,597" advanced="true"/>
+    <text id="n4" name="label_task_name" xy="1019,69" size="143,34" group="n17" font="方正粗圆简体" fontSize="17" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="[主]荒野龙啸啸啸"/>
+    <text id="n5" name="label_task_desc" xy="933,134" size="308,69" group="n17" font="方正粗圆简体" fontSize="22" color="#2e3341" leading="8" ubb="true" autoSize="none" text="传说中的大妖应龙在巫山出现了，快去击杀它！"/>
+    <text id="n6" name="label_task_process" xy="936,215" size="307,46" group="n17" font="方正粗圆简体" fontSize="22" color="#54595e" leading="8" ubb="true" autoSize="none" text="和侵袭对话"/>
+    <group id="n17" name="group_task_info" xy="933,69" size="310,192" advanced="true"/>
+    <text id="n8" name="label_first_reward_title" xy="939,396" size="67,28" group="n15" font="方正粗圆简体" fontSize="20" color="#3d9098" leading="0" autoSize="none" text="金币："/>
+    <text id="n9" name="label_first_reward_count" xy="998,396" size="68,29" group="n15" font="方正粗圆简体" fontSize="20" color="#43515b" leading="0" autoSize="none" text="10000"/>
+    <loader id="n23" name="loader_first_reward_icon" xy="1058,394" size="46,30" group="n15"/>
+    <group id="n15" name="group_first_reward" xy="939,394" size="165,31" advanced="true"/>
+    <text id="n11" name="label_second_reward_title" xy="938,427" size="67,28" group="n16" font="方正粗圆简体" fontSize="20" color="#3d9098" leading="0" autoSize="none" text="金币："/>
+    <text id="n12" name="label_second_reward_count" xy="997,427" size="68,29" group="n16" font="方正粗圆简体" fontSize="20" color="#43515b" leading="0" autoSize="none" text="10000"/>
+    <loader id="n24" name="loader_second_reward_icon" xy="1064,425" size="46,30" group="n16"/>
+    <group id="n16" name="group_second_reward" xy="938,425" size="172,31" advanced="true"/>
+    <component id="n19" name="list_rewards" src="tjjee" xy="894,468"/>
+    <component id="n22" name="button_complete" src="tfo1do" pkg="0tyncec1" xy="978,581">
+      <Button title="完成任务"/>
+    </component>
+  </displayList>
+</component>tjjee.xml|384|<component size="396,102">
+  <displayList>
+    <list id="n0" name="list" xy="36,0" size="316,102" layout="row" overflow="scroll" scroll="horizontal" margin="0,0,0,0" colGap="6"/>
+    <component id="n1" name="button_next_page" src="tfo1dl" pkg="0tyncec1" xy="365,26"/>
+    <component id="n2" name="button_prev_page" src="tfo1dm" pkg="0tyncec1" xy="0,26"/>
+  </displayList>
+</component>tjjeo.xml|212|<component size="162,35" extention="Button">
+  <displayList>
+    <image id="n0" name="icon" src="tjjej" xy="0,0" size="162,35"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>tjjep.xml|252|<component size="315,255">
+  <displayList>
+    <image id="n0" name="img_bg" src="tjjei" xy="0,0"/>
+    <list id="n3" name="list" xy="50,29" size="229,199" overflow="scroll" margin="0,0,0,0" lineGap="26" lineItemCount="6"/>
+  </displayList>
+</component>tjjer.xml|157|<component size="56,74" extention="Button">
+  <displayList>
+    <loader id="n0" name="icon" xy="0,0" size="56,74"/>
+  </displayList>
+  <Button/>
+</component>

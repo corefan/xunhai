@@ -1,0 +1,83 @@
+er75s.xml|313|<component size="78,38">
+  <displayList>
+    <text id="n1" name="name" xy="0,0" size="78,38" font="方正粗圆简体" fontSize="20" color="#495e70" align="center" vAlign="middle" leading="0" autoSize="none" text="打啊">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>er75t.xml|474|<component size="61,40">
+  <displayList>
+    <text id="n0" name="rank" xy="0,7" pivot="0.5,0.5" size="61,27" group="n2" font="方正粗圆简体" fontSize="20" align="center" vAlign="middle" autoSize="none" text="999&#xA;"/>
+    <loader id="n1" name="rankImg" xy="12,0" size="39,40" group="n2" fill="scale"/>
+    <group id="n2" name="n2" xy="0,0" size="61,40" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>er75u.xml|306|<component size="78,27">
+  <displayList>
+    <text id="n0" name="name" xy="0,4" pivot="0.5,0.5" size="78,27" font="方正粗圆简体" fontSize="20" align="center" vAlign="bottom" autoSize="none" text="洪荒&#xA;">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>er75v.xml|505|<component size="104,36">
+  <displayList>
+    <text id="n0" name="career" xy="20,6" pivot="0.5,0.5" size="92,27" group="n3" font="方正粗圆简体" fontSize="20" align="center" vAlign="middle" autoSize="none" text="战力&#xA;"/>
+    <loader id="n1" name="careerMark" xy="8,0" size="30,36" group="n3" url="ui://7dvfcqznjg8t4" fill="scale"/>
+    <group id="n3" name="n3" xy="8,0" size="104,36" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>jg8tl.xml|705|<component size="216,254">
+  <displayList>
+    <image id="n0" name="n0" src="jg8ta" xy="0,0"/>
+    <component id="n2" name="headIcon" src="t5hdnfp" pkg="0tyncec1" xy="62,34" size="105,110"/>
+    <text id="n3" name="name" xy="31,132" pivot="0.5,0.5" size="149,29" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" autoSize="none" text="战力榜&#xA;"/>
+    <text id="n4" name="property" xy="32,162" size="146,31" font="方正粗圆简体" fontSize="22" color="#1e67af" align="center" vAlign="middle" autoSize="none" text="1段3级"/>
+    <text id="n5" name="rank" xy="91,205" size="26,31" font="ui://0tyncec1x0conjj" fontSize="18" align="center" vAlign="middle" autoSize="none" text="9"/>
+  </displayList>
+</component>jg8tm.xml|226|<component size="820,44">
+  <displayList>
+    <image id="n9" name="select" src="oox7nk6" pkg="0tyncec1" xy="0,0" size="820,44"/>
+    <image id="n8" name="line" src="jg8td" xy="0,40" size="816,2"/>
+  </displayList>
+</component>package.xml|1385|<packageDescription id="7dvfcqzn" name="Rank">
+  <resources>
+    <atlas id="atlas0" size="1024,512" file="atlas0.png"/>
+    <component id="er75s" name="RankColName" exported="true" size="78,38"/>
+    <component id="er75t" name="RankColRank" exported="true" size="61,40"/>
+    <component id="er75u" name="RankColNormal" exported="true" size="78,27"/>
+    <component id="er75v" name="RankColCareer" exported="true" size="104,36"/>
+    <component id="jg8tl" name="RankHead" exported="true" size="216,254"/>
+    <component id="jg8tm" name="RankItem" exported="true" size="820,44"/>
+    <component id="wjp8w" name="RankTop" size="816,60"/>
+    <component id="ygx0r" name="RankContent" exported="true" size="1334,750"/>
+    <image id="jg8t4" name="1" size="39,40" exported="true"/>
+    <image id="jg8t6" name="fight" size="29,27"/>
+    <image id="jg8t8" name="wardbg" size="62,60" scale="9grid" scale9grid="16,15,30,30"/>
+    <image id="jg8ta" name="headbg" size="216,254"/>
+    <image id="jg8tc" name="myRank" size="27,18"/>
+    <image id="jg8td" name="line" size="816,2"/>
+    <image id="jg8te" name="bg" size="600,232"/>
+    <image id="jg8tg" name="3" size="39,40" exported="true"/>
+    <image id="jg8ti" name="2" size="39,40" exported="true"/>
+    <image id="qjbsp" name="btn_1" size="234,62" exported="true" scale="9grid" scale9grid="59,16,118,14"/>
+  </resources>
+</packageDescription>wjp8w.xml|55|<component size="816,60">
+  <displayList/>
+</component>ygx0r.xml|1180|<component size="1334,750">
+  <displayList>
+    <image id="n7" name="headBg" src="jg8t8" xy="373,375" size="816,60"/>
+    <list id="n13" name="list" xy="371,434" size="820,224" overflow="scroll" margin="0,0,0,0" defaultItem="ui://7dvfcqznjg8tm"/>
+    <component id="n25" name="headContainer" src="wjp8w" xy="373,375"/>
+    <image id="n23" name="n23" src="jg8te" xy="483,127"/>
+    <component id="n2" name="head2" src="jg8tl" xy="406,121"/>
+    <component id="n3" name="head1" src="jg8tl" xy="674,117"/>
+    <component id="n4" name="head3" src="jg8tl" xy="945,117"/>
+    <image id="n14" name="n14" src="jg8tc" xy="401,681"/>
+    <text id="n15" name="myRank" xy="450,675" pivot="0.5,0.5" size="206,29" font="方正粗圆简体" fontSize="22" vAlign="middle" autoSize="none" text="我的排名：未上榜&#xA;"/>
+    <image id="n16" name="n16" src="jg8t6" xy="761,674"/>
+    <text id="n17" name="myRankInfo" xy="806,675" pivot="0.5,0.5" size="277,29" font="方正粗圆简体" fontSize="22" vAlign="middle" autoSize="none" text="我的战斗力:99999&#xA;"/>
+    <component id="n26" name="tipsBtn" src="f06tnnd" pkg="0tyncec1" xy="1071,663">
+      <Button icon="ui://0tyncec1f06tnnc"/>
+    </component>
+  </displayList>
+</component>

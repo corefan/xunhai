@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.math.BigInteger;
+import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
@@ -276,6 +277,15 @@ public abstract class AbstractServlet extends HttpServlet {
 	{
 		try {
 			return URLEncoder.encode(str,"utf-8");
+		} catch (Exception e) {
+		}
+		return "";
+	}
+	
+	protected String GetDecode(String str)
+	{
+		try {
+			return URLDecoder.decode(str,"utf-8");
 		} catch (Exception e) {
 		}
 		return "";

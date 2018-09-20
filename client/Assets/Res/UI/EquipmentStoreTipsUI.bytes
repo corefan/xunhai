@@ -1,0 +1,31 @@
+8y9r7.xml|600|<component size="1334,750">
+  <displayList>
+    <graph id="n8" name="mask" xy="0,0" size="1334,750" alpha="0.65" type="rect" fillColor="#ff000000"/>
+    <loader id="n9" name="loaderBG" xy="75,186" size="50,50"/>
+    <image id="n2" name="imageTips" src="8y9r2" xy="629,402"/>
+    <text id="n3" name="labelDate" xy="618,431" size="477,40" font="华康圆体W7(P)" fontSize="22" color="#92ffa1" vAlign="middle" autoSize="none" text="活动时间："/>
+    <component id="n5" name="btnEquipBoxOpen" src="kozm8" xy="651,488"/>
+    <component id="n10" name="btnClose" src="pjy89" xy="969,209"/>
+  </displayList>
+</component>kozm8.xml|323|<component size="217,61" extention="Button">
+  <displayList>
+    <loader id="n1" name="bg" xy="0,0" size="95,55" url="ui://0tyncec1dmzwnna"/>
+    <loader id="n0" name="icon" xy="27,6" size="95,55" url="ui://yalu98wx8y9r3" vAlign="middle"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>package.xml|546|<packageDescription id="yalu98wx" name="EquipmentStoreTipsUI">
+  <resources>
+    <atlas id="atlas0" size="512,32" file="atlas0.png"/>
+    <component id="8y9r7" name="EquipmentStoreTips" exported="true" size="1334,750"/>
+    <component id="kozm8" name="BtnEquipBoxOpen" size="217,61"/>
+    <component id="pjy89" name="BtnClose" size="50,50"/>
+    <image id="8y9r2" name="wenzi" size="273,24"/>
+    <image id="8y9r3" name="qianwangkaixiang" size="163,32"/>
+    <image id="8y9r5" name="btn_guanbi" size="23,23"/>
+  </resources>
+</packageDescription>pjy89.xml|203|<component size="50,50" extention="Button">
+  <displayList>
+    <image id="n0" name="imgClose" src="8y9r5" xy="12,12"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>

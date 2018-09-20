@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &173508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 421172}
+  - 33: {fileID: 3353794}
+  - 23: {fileID: 2374976}
+  - 114: {fileID: 11490646}
+  m_Layer: 0
+  m_Name: NavMesh_1524133904
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &421172
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173508}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.817605, y: 0.11566986, z: 63.21382}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2374976
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173508}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9aded4bfce541d3459505061529272ed, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3353794
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173508}
+  m_Mesh: {fileID: 4300000, guid: 5bbd9d4f46791c04ca6b95f110ea1d80, type: 2}
+--- !u!114 &11490646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ae0994596594d4685a6d5db0c9de69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoSplit: 0
+  splitAt: 4
+  yOffset: 0.015
+  list:
+  - {x: 0, y: 0, z: 0}
+  - {x: -0.8670044, y: 0.07492471, z: -0.6616249}
+  - {x: -3.4645433, y: 0.07413745, z: 2.5378494}
+  - {x: -2.3248549, y: 0.038525105, z: 3.5236511}
+  - {x: -3.375104, y: 0.016281128, z: 3.73938}
+  - {x: -0.099095345, y: 0, z: -1.2537384}
+  - {x: -2.168045, y: 0.01429677, z: -1.5022354}
+  - {x: -4.641488, y: 0.031646967, z: 1.797226}
+  - {x: -3.3899956, y: -0.0293684, z: -2.21146}
+  - {x: -5.9283133, y: -0.041721344, z: 0.76148987}
+  - {x: -5.2072186, y: -0.06680012, z: -3.0078163}
+  - {x: -7.329541, y: -0.04863882, z: 0.2180481}
+  - {x: -9.049107, y: -0.095225334, z: -0.33935928}
+  - {x: -7.5055017, y: -0.06557751, z: -4.2004623}
+  - {x: -9.838861, y: -0.11880469, z: -4.8736267}
+  - {x: -11.303245, y: -0.12497616, z: -1.2389679}
+  - {x: -11.88033, y: -0.16491127, z: -5.3379555}
+  - {x: -13.224285, y: -0.1731193, z: -1.5140533}
+  - {x: -13.44569, y: -0.14458394, z: -5.5752563}
+  - {x: -14.340944, y: -0.19346404, z: -5.541195}
+  - {x: -15.750802, y: -0.18835378, z: -1.8323593}
+  - {x: -14.008495, y: -0.1549294, z: -1.5527611}
+  - {x: -16.360638, y: -0.24954128, z: -5.945984}
+  - {x: -17.530127, y: -0.26544595, z: -2.221016}
+  - {x: -18.370556, y: -0.30118656, z: -6.0725174}
+  - {x: -19.141674, y: -0.32800078, z: -5.4916306}
+  - {x: -19.400131, y: -0.2482028, z: -2.4111862}
+  current: 
+  subPoints:
+  - list: 00000000010000000200000003000000
+  - list: 020000000400000003000000
+  - list: 010000000500000000000000
+  - list: 01000000060000000700000002000000
+  - list: 06000000080000000900000007000000
+  - list: 080000000a0000000b00000009000000
+  - list: 0b0000000c0000000d0000000a000000
+  - list: 0d0000000e0000000f0000000c000000
+  - list: 0e00000010000000110000000f000000
+  - list: 100000001200000013000000140000001500000011000000
+  - list: 13000000160000001700000014000000
+  - list: 1600000018000000190000001a00000017000000
+  subMesh: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 173508}
+  m_IsPrefabParent: 1

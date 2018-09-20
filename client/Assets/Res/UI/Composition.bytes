@@ -1,0 +1,80 @@
+ljhtg.xml|1252|<component size="133,46" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n6" name="layer0" xy="0,0" size="133,46" touchable="false" url="ui://0tyncec1ovhpnlm" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n7" name="layer1" xy="0,0" size="133,46" touchable="false" url="ui://0tyncec1ovhpnlp" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="133,46" font="方正粗圆简体" fontSize="22" color="#003341" align="center" vAlign="middle" autoSize="none" singleLine="true" text="111">
+      <relation target="" sidePair="width-width,height-height"/>
+      <gearColor controller="button" pages="0,1" values="#003341|#e5e5e5" default="#000000"/>
+    </text>
+    <loader id="n5" name="icon" xy="0,0" size="133,46" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button mode="Radio"/>
+</component>package.xml|828|<packageDescription id="qr7fvjxi" name="Composition">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="ljhtg" name="CompositionTabBtn" exported="true" size="133,46"/>
+    <component id="rj72d" name="CompositionBtn" size="162,58"/>
+    <component id="sdush" name="CompositionItemInfo" exported="true" size="419,129"/>
+    <component id="xy1x3" name="CompositionUI" exported="true" size="972,614"/>
+    <component id="xy1x4" name="CompositionUILeft" exported="true" size="446,614"/>
+    <component id="xy1x5" name="CompositionUIRight" exported="true" size="519,527"/>
+    <image id="xy1x6" name="zhongjianyuan" size="329,329"/>
+    <image id="xy1x7" name="zhongjianyuan2" size="415,417"/>
+    <image id="xy1x8" name="touminghuaweng" size="519,527"/>
+  </resources>
+</packageDescription>rj72d.xml|530|<component size="162,58" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="img_btn" src="x0conj1" pkg="0tyncec1" xy="0,0" size="162,58">
+      <gearDisplay controller="button" pages="0,1"/>
+    </image>
+    <text id="n1" name="title" xy="15,14" size="134,31" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" text="合成"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>sdush.xml|833|<component size="419,129">
+  <displayList>
+    <image id="n0" name="bg0" src="sdusnnl" pkg="0tyncec1" xy="0,0" size="419,129"/>
+    <image id="n1" name="bg1" src="sdusnnm" pkg="0tyncec1" xy="20,18" size="379,27"/>
+    <text id="n2" name="labelName" xy="19,19" size="379,27" font="方正粗圆简体" fontSize="20" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" text="">
+      <relation target="n1" sidePair="width-width,height-height"/>
+    </text>
+    <richtext id="n4" name="richLabelEffect0" xy="18,48" size="382,27" font="方正粗圆简体" fontSize="20" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text=""/>
+    <richtext id="n5" name="richLabelEffect1" xy="18,75" size="382,27" font="方正粗圆简体" fontSize="20" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text=""/>
+  </displayList>
+</component>xy1x3.xml|416|<component size="972,614">
+  <displayList>
+    <component id="n0" name="uiLeft" src="xy1x4" xy="0,0"/>
+    <component id="n1" name="uiRight" src="xy1x5" xy="453,51"/>
+    <image id="n2" name="imgTips" src="js4ynq3" pkg="0tyncec1" xy="573,19"/>
+    <text id="n3" name="labelTips" xy="596,18" size="279,24" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="长按物品图标会有物品提示"/>
+  </displayList>
+</component>xy1x4.xml|652|<component size="446,614">
+  <displayList>
+    <image id="n2" name="bg" src="x0conix" pkg="0tyncec1" xy="0,0" size="446,614"/>
+    <image id="n6" name="bgType" src="gk0nni9" pkg="0tyncec1" xy="10,8" size="426,57"/>
+    <image id="n4" name="bgContent" src="gk0nni9" pkg="0tyncec1" xy="12,64" size="421,532"/>
+    <list id="n3" name="scrollViewTypeTab" xy="15,11" size="416,44" layout="row" overflow="scroll" scroll="horizontal" margin="0,0,0,0" colGap="5"/>
+    <list id="n1" name="scrollViewContent" xy="15,65" size="415,392" layout="flow_hz" overflow="scroll" margin="8,0,8,0" lineGap="10" colGap="16" lineItemCount="4"/>
+  </displayList>
+</component>xy1x5.xml|785|<component size="519,527">
+  <displayList>
+    <image id="n2" name="bg0" src="xy1x8" xy="0,0" group="n6"/>
+    <image id="n0" name="bg1" src="xy1x6" xy="93,41" group="n6"/>
+    <image id="n1" name="bg2" src="xy1x7" xy="51,3" group="n6"/>
+    <group id="n6" name="groupBG" xy="0,0" size="519,527" advanced="true"/>
+    <component id="n9" name="layer_items" src="t5hdnfx" pkg="0tyncec1" xy="0,0"/>
+    <component id="n7" name="btnComposition" src="rj72d" xy="187,484"/>
+    <graph id="n8" name="effect_root" xy="0,0" size="1,1"/>
+    <loader id="n10" name="loader_consume_icon" xy="209,425" size="39,36"/>
+    <text id="n11" name="label_consume_cnt" xy="247,430" size="196,31" font="方正粗圆简体" fontSize="24" color="#ffffff" ubb="true" autoSize="none" text=""/>
+  </displayList>
+</component>

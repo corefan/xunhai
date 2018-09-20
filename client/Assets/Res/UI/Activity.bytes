@@ -1,0 +1,110 @@
+mfyi2.xml|1440|<component size="1334,750">
+  <displayList>
+    <image id="n0" name="n0" src="gk0nni9" pkg="0tyncec1" xy="150,176" size="1058,359"/>
+    <list id="n3" name="list" xy="153,181" size="1049,342" layout="row" overflow="scroll" scroll="horizontal" margin="0,0,18,18" colGap="20" defaultItem="ui://oa3ahys9mfyib"/>
+    <image id="n14" name="n14" src="dz07t" xy="137,533" size="1087,180"/>
+    <image id="n15" name="n15" src="dz07q" xy="875,536"/>
+    <image id="n5" name="n5" src="sdusnnn" pkg="0tyncec1" xy="176,560"/>
+    <text id="n7" name="desc" xy="198,558" pivot="0.5,0.5" size="951,29" font="华康圆体W7(P)" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" text="活动描述:&#xA;"/>
+    <image id="n6" name="n6" src="sdusnnn" pkg="0tyncec1" xy="176,604"/>
+    <text id="n9" name="name" xy="199,599" pivot="0.5,0.5" size="125,29" font="华康圆体W7(P)" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" text="主要奖励："/>
+    <text id="n18" name="n18" xy="828,122" size="247,41" font="华康圆体W7(P)" fontSize="22" align="right" vAlign="middle" autoSize="none" text="活动于每日0点刷新"/>
+    <component id="n16" name="signBtn" src="t5hdnfq" pkg="0tyncec1" xy="1057,118" size="47,48">
+      <Button icon="ui://oa3ahys9dz07s"/>
+    </component>
+    <component id="n17" name="weekBtn" src="t5hdnfq" pkg="0tyncec1" xy="1092,119" size="47,48">
+      <Button icon="ui://oa3ahys9dz07r"/>
+    </component>
+  </displayList>
+</component>mfyi3.xml|416|<component size="1334,750">
+  <displayList>
+    <image id="n1" name="n1" src="mfyi8" xy="163,135"/>
+    <image id="n13" name="select" src="mfyi5" xy="1046,131" size="142,557"/>
+    <list id="n12" name="list" xy="166,191" size="1022,465" overflow="scroll" margin="0,0,0,0" defaultItem="ui://oa3ahys9mfyig"/>
+    <component id="n15" name="banner" src="mfyic" xy="166,144" size="1012,40"/>
+  </displayList>
+</component>mfyib.xml|990|<component size="250,352">
+  <displayList>
+    <loader id="n9" name="itemBg" xy="1,8" size="247,337" url="ui://oa3ahys9dz07m"/>
+    <image id="n2" name="select" src="dz07o" xy="-7,-2"/>
+    <text id="n3" name="name" xy="69,35" pivot="0.5,0.5" size="109,29" font="华康圆体W7(P)" fontSize="22" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="防守打法&#xA;"/>
+    <text id="n6" name="count" xy="61,178" pivot="0.5,0.5" size="127,31" font="华康圆体W7(P)" fontSize="20" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="none" text="防守打法&#xA;"/>
+    <text id="n8" name="time" xy="61,216" pivot="0.5,0.5" size="127,31" font="华康圆体W7(P)" fontSize="20" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="none" text="防守打法&#xA;"/>
+    <component id="n7" name="gotoBtn" src="skqrnkp" pkg="0tyncec1" xy="57,261" size="134,50">
+      <Button title="前往" titleColor="#000000" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>mfyic.xml|542|<component size="1022,40">
+  <displayList>
+    <component id="n16" name="b1" src="mfyid" xy="2,1"/>
+    <component id="n17" name="b8" src="mfyid" xy="891,1"/>
+    <component id="n18" name="b7" src="mfyid" xy="765,1"/>
+    <component id="n19" name="b6" src="mfyid" xy="639,1"/>
+    <component id="n20" name="b5" src="mfyid" xy="513,1"/>
+    <component id="n21" name="b4" src="mfyid" xy="387,1"/>
+    <component id="n22" name="b3" src="mfyid" xy="260,1"/>
+    <component id="n23" name="b2" src="mfyid" xy="131,1"/>
+  </displayList>
+</component>mfyid.xml|333|<component size="122,32">
+  <displayList>
+    <image id="n1" name="select" src="mfyi4" xy="0,0" size="122,40"/>
+    <text id="n0" name="name" xy="1,4" pivot="0.5,0.5" size="119,29" font="华康圆体W7(P)" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="星期一&#xA;"/>
+  </displayList>
+</component>mfyie.xml|336|<component size="130,76">
+  <displayList>
+    <image id="n0" name="select" src="mfyi6" xy="0,1" size="130,76"/>
+    <text id="n1" name="name" xy="0,21" pivot="0.5,0.5" size="131,29" font="华康圆体W7(P)" fontSize="22" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="10:00&#xA;"/>
+  </displayList>
+</component>mfyig.xml|542|<component size="1022,78">
+  <displayList>
+    <component id="n16" name="i0" src="mfyie" xy="0,1"/>
+    <component id="n17" name="i7" src="mfyie" xy="889,1"/>
+    <component id="n18" name="i6" src="mfyie" xy="762,1"/>
+    <component id="n19" name="i5" src="mfyie" xy="635,1"/>
+    <component id="n20" name="i4" src="mfyie" xy="509,1"/>
+    <component id="n21" name="i3" src="mfyie" xy="382,1"/>
+    <component id="n22" name="i2" src="mfyie" xy="255,1"/>
+    <component id="n23" name="i1" src="mfyie" xy="128,1"/>
+  </displayList>
+</component>package.xml|1729|<packageDescription id="oa3ahys9" name="Activity">
+  <resources>
+    <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
+    <component id="mfyi2" name="DayActivityPanel" exported="true" size="1334,750"/>
+    <component id="mfyi3" name="WeekActivityPanel" exported="true" size="1334,750"/>
+    <component id="mfyib" name="ActivityItem" exported="true" size="250,352"/>
+    <component id="mfyic" name="WeekTop" exported="true" size="1022,40"/>
+    <component id="mfyid" name="WeekTabBtn" size="122,32"/>
+    <component id="mfyie" name="WeekItemCell" exported="true" size="130,76"/>
+    <component id="mfyig" name="WeekItem" exported="true" size="1022,78"/>
+    <component id="ve3oh" name="WeekCellInfoPanel" exported="true" size="606,441"/>
+    <image id="dz07k" name="xuanshangItem" size="247,337" exported="true"/>
+    <image id="dz07m" name="huanItem" size="247,337" exported="true"/>
+    <image id="dz07n" name="fubenItem" size="247,337" exported="true"/>
+    <image id="dz07o" name="xuanzhong" size="263,351"/>
+    <image id="dz07p" name="weikaiqi" size="247,337" exported="true"/>
+    <image id="dz07q" name="tuan" size="349,172"/>
+    <image id="dz07r" name="btn_renwu2" size="47,48"/>
+    <image id="dz07s" name="btn_renwu1" size="47,48"/>
+    <image id="dz07t" name="1083X180" size="166,25" scale="9grid" scale9grid="42,7,82,11"/>
+    <image id="mfyi4" name="weekBannerSelect" size="129,53" scale="9grid" scale9grid="33,16,63,21"/>
+    <image id="mfyi5" name="weekSelect" size="102,102" scale="9grid" scale9grid="40,40,22,22"/>
+    <image id="mfyi6" name="weekItemBg1" size="134,84" scale="9grid" scale9grid="34,21,66,42"/>
+    <image id="mfyi8" name="weekPanel" size="1022,558"/>
+  </resources>
+</packageDescription>ve3oh.xml|2131|<component size="606,441">
+  <displayList>
+    <image id="n15" name="n15" src="hrgcnng" pkg="0tyncec1" xy="-10,-9" size="625,455"/>
+    <text id="n2" name="title" xy="122,22" pivot="0.5,0.5" size="175,32" font="华康圆体W7(P)" fontSize="26" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" text="掠龙战役&#xA;"/>
+    <image id="n3" name="n3" src="jsucnhi" pkg="0tyncec1" xy="12,124" size="580,2"/>
+    <image id="n4" name="n4" src="jsucnhi" pkg="0tyncec1" xy="12,301" size="580,2"/>
+    <text id="n5" name="n1" xy="13,144" pivot="0.5,0.5" size="88,32" font="华康圆体W7(P)" fontSize="18" color="#7bbcff" align="right" ubb="true" autoSize="none" text="活动时间:&#xA;"/>
+    <text id="n6" name="n0" xy="14,175" pivot="0.5,0.5" size="88,32" font="华康圆体W7(P)" fontSize="18" color="#7bbcff" align="right" ubb="true" autoSize="none" text="活动形式:&#xA;"/>
+    <text id="n8" name="t4" xy="13,238" pivot="0.5,0.5" size="88,32" font="华康圆体W7(P)" fontSize="18" color="#7bbcff" align="right" ubb="true" autoSize="none" text="活动描述:&#xA;"/>
+    <text id="n9" name="n3" xy="13,206" pivot="0.5,0.5" size="88,32" font="华康圆体W7(P)" fontSize="18" color="#7bbcff" align="right" ubb="true" autoSize="none" text="活动次数:&#xA;"/>
+    <text id="n10" name="n41" xy="13,319" pivot="0.5,0.5" size="88,32" font="华康圆体W7(P)" fontSize="18" color="#fff390" align="right" vAlign="middle" ubb="true" autoSize="none" text="活动奖励:&#xA;"/>
+    <text id="n11" name="time" xy="108,144" pivot="0.5,0.5" size="452,32" font="华康圆体W7(P)" fontSize="18" color="#ffffff" ubb="true" autoSize="none" text="掠龙战役&#xA;"/>
+    <text id="n12" name="type" xy="108,175" pivot="0.5,0.5" size="282,32" font="华康圆体W7(P)" fontSize="18" color="#ffffff" ubb="true" autoSize="none" text="掠龙战役&#xA;"/>
+    <text id="n13" name="count" xy="108,206" pivot="0.5,0.5" size="282,32" font="华康圆体W7(P)" fontSize="18" color="#ffffff" ubb="true" autoSize="none" text="掠龙战役&#xA;"/>
+    <text id="n14" name="desc" xy="108,238" pivot="0.5,0.5" size="455,43" font="华康圆体W7(P)" fontSize="18" color="#ffffff" ubb="true" autoSize="height" text="掠龙战役掠龙战役掠龙战役掠龙战役掠龙战役掠龙战役掠龙战役掠龙战役掠龙战役掠龙战役掠龙战役掠龙战役&#xA;"/>
+  </displayList>
+</component>

@@ -1,0 +1,169 @@
+iw5wdu.xml|1420|<component size="666,600">
+  <controller name="payListCtrl" pages="1,,2," selected="0"/>
+  <displayList>
+    <image id="n47" name="n47" src="x0conjw" pkg="0tyncec1" xy="0,-2" size="666,607">
+      <relation target="" sidePair="left-left,bottomext-bottom"/>
+    </image>
+    <text id="n0" name="title" xy="207,27" size="257,40" font="华康圆体W7(P)" fontSize="36" color="#0f0f0f" text="请选择支付方式">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <component id="n35" name="btnClose" src="iw5we4" xy="597,28">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n22" name="payNum" src="iw5we0" xy="45,135"/>
+    <component id="n48" name="getNum" src="iw5we0" xy="45,175"/>
+    <component id="n32" name="list1" src="iw5we3" xy="2,238" size="660,100">
+      <Button checked="true" icon="ui://zuudarvciw5wdr" selectedIcon="ui://zuudarvci4cce9" controller="payListCtrl" page="1"/>
+    </component>
+    <component id="n51" name="list2" src="iw5we3" xy="2,341" size="660,100">
+      <Button icon="ui://zuudarvciw5wdr" selectedIcon="ui://zuudarvci4cce9" controller="payListCtrl" page="2"/>
+    </component>
+    <image id="n49" name="n49" src="uedbnhz" pkg="0tyncec1" xy="2,441" size="660,1"/>
+    <component id="n44" name="btnPay" src="iw5we7" xy="0,443">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </component>
+  </displayList>
+</component>iw5we0.xml|347|<component size="298,36" extention="Label">
+  <displayList>
+    <text id="n20" name="title" xy="0,0" size="167,35" font="华康圆体W7(P)" fontSize="30" color="#4e4c4c" autoSize="none" text=""/>
+    <text id="n21" name="num" xy="152,0" size="143,34" font="华康圆体W7(P)" fontSize="30" color="#4e4c4c" autoSize="height" text=""/>
+  </displayList>
+</component>iw5we3.xml|454|<component size="666,100" extention="Button">
+  <displayList>
+    <loader id="n28" name="listIcon" xy="50,20" size="69,67"/>
+    <text id="n27" name="title" xy="129,32" size="204,47" font="华康圆体W7(P)" fontSize="36" color="#0f0f0f" autoSize="none" text=""/>
+    <loader id="n33" name="icon" xy="602,34" size="38,38"/>
+    <image id="n32" name="n32" src="uedbnhz" pkg="0tyncec1" xy="1,2" size="660,1"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>iw5we4.xml|198|<component size="40,40" extention="Button">
+  <displayList>
+    <image id="n34" name="n34" src="iw5wdt" xy="0,0"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>iw5we7.xml|354|<component size="666,118" extention="Button">
+  <displayList>
+    <image id="n44" name="btnPay" src="iw5we5" xy="27,33" size="608,85"/>
+    <text id="n43" name="title" xy="248,54" size="168,43" font="华康圆体W7(P)" fontSize="36" color="#ffffff" autoSize="none" text="确认充值"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>kxsyci.xml|1115|<component size="985,591" opaque="false">
+  <displayList>
+    <text id="n7" name="n7" xy="12,5" size="297,31" font="华康圆体W7(P)" fontSize="24" color="#2e3341" autoSize="none" text="首次充值有额外元宝赠送！"/>
+    <component id="n36" name="cell101" src="kxsycx" xy="-16,12">
+      <Button icon="ui://zuudarvckxsyct"/>
+    </component>
+    <component id="n43" name="cell102" src="kxsycx" xy="224,12">
+      <Button icon="ui://zuudarvckxsyct"/>
+    </component>
+    <component id="n50" name="cell103" src="kxsycx" xy="464,12">
+      <Button icon="ui://zuudarvckxsyct"/>
+    </component>
+    <component id="n57" name="cell104" src="kxsycx" xy="705,12">
+      <Button icon="ui://zuudarvckxsyct"/>
+    </component>
+    <component id="n60" name="cell105" src="kxsycn" xy="9,308" size="328,273">
+      <Button icon="ui://zuudarvc10j1c7"/>
+    </component>
+    <component id="n29" name="cell106" src="kxsycn" xy="330,308">
+      <Button icon="ui://zuudarvc10j1c7"/>
+    </component>
+    <component id="n32" name="cell107" src="kxsycn" xy="650,308">
+      <Button icon="ui://zuudarvc10j1c7"/>
+    </component>
+  </displayList>
+</component>kxsycn.xml|677|<component size="328,278" extention="Button">
+  <displayList>
+    <component id="n25" name="icon" src="t5hdnfy" pkg="0tyncec1" xy="0,0" size="328,280"/>
+    <component id="n23" name="shouchong" src="t5hdnfy" pkg="0tyncec1" xy="-1,1" size="64,74"/>
+    <component id="n24" name="hengfu" src="t5hdnfy" pkg="0tyncec1" xy="244,9" size="71,70"/>
+    <component id="n29" name="yuanbao" src="t5hdnfy" pkg="0tyncec1" xy="124,65" size="180,180"/>
+    <component id="n52" name="canGet" src="kxsyd1" xy="94,217"/>
+    <component id="n55" name="firstSong" src="kxsycy" xy="68,64"/>
+    <component id="n57" name="chongZhi" src="kxsycz" xy="60,21"/>
+  </displayList>
+  <Button/>
+</component>kxsycx.xml|689|<component size="288,293" extention="Button">
+  <displayList>
+    <loader id="n36" name="icon" xy="0,0" size="288,293"/>
+    <component id="n45" name="shouchong" src="t5hdnfy" pkg="0tyncec1" xy="22,26" size="64,74"/>
+    <component id="n46" name="hengfu" src="t5hdnfy" pkg="0tyncec1" xy="189,34" size="70,73"/>
+    <component id="n48" name="chongZhi" src="kxsycz" xy="42,48"/>
+    <component id="n55" name="yuanbao" src="t5hdnfy" pkg="0tyncec1" xy="48,71" size="180,180"/>
+    <component id="n49" name="canGet" src="kxsyd0" xy="41,247"/>
+    <component id="n50" name="firstSong" src="kxsycy" xy="30,98">
+      <Label title="100"/>
+    </component>
+  </displayList>
+  <Button/>
+</component>kxsycy.xml|723|<component size="209,32" extention="Label">
+  <displayList>
+    <text id="n37" name="n37" xy="29,1" size="118,31" font="华康圆体W7(P)" fontSize="24" color="#2e3341" autoSize="none" text="首充另送">
+      <relation target="n39" sidePair="right-left"/>
+    </text>
+    <text id="n39" name="title" xy="128,18" size="10,0" font="ui://0tyncec1hhg0eh" fontSize="12" color="#2e3341" align="center" vAlign="middle" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n40" name="n40" xy="137,0" size="55,32" font="华康圆体W7(P)" fontSize="24" color="#2e3341" align="right" autoSize="none" text="元宝">
+      <relation target="n39" sidePair="left-right"/>
+    </text>
+  </displayList>
+</component>kxsycz.xml|695|<component size="201,29" extention="Label">
+  <displayList>
+    <text id="n37" name="n37" xy="59,0" size="55,28" font="华康圆体W7(P)" fontSize="24" color="#2e3341" autoSize="none" text="充值">
+      <relation target="n38" sidePair="right-left"/>
+    </text>
+    <text id="n38" name="title" xy="109,0" size="10,28" font="华康圆体W7(P)" fontSize="24" color="#2e3341" align="center" vAlign="middle" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n39" name="n39" xy="116,0" size="31,28" font="华康圆体W7(P)" fontSize="24" color="#2e3341" autoSize="none" text="元">
+      <relation target="n38" sidePair="left-right"/>
+    </text>
+  </displayList>
+</component>kxsyd0.xml|584|<component size="223,45" extention="Label">
+  <displayList>
+    <image id="n42" name="n42" src="10j1c4" xy="18,9">
+      <relation target="n41" sidePair="right-left"/>
+    </image>
+    <text id="n41" name="title" xy="91,7" size="49,35" font="ui://0tyncec1hhg0eh" fontSize="13" color="#2e3341" align="center" text="128">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <loader id="n43" name="lvyuanbao" xy="150,0" size="43,45" url="ui://0tyncec1n2mycg">
+      <relation target="n41" sidePair="left-right"/>
+    </loader>
+  </displayList>
+</component>kxsyd1.xml|520|<component size="232,45" extention="Label">
+  <displayList>
+    <loader id="n11" name="kehuode" xy="0,7" size="75,33" url="ui://zuudarvc10j1c5"/>
+    <text id="n12" name="title" xy="75,7" size="49,35" font="ui://0tyncec1hhg0eh" fontSize="13" color="#2e3341" text="128">
+      <relation target="n11" sidePair="left-right"/>
+    </text>
+    <loader id="n13" name="lvyuanbao" xy="131,0" size="43,45" url="ui://0tyncec1n2mycg">
+      <relation target="n12" sidePair="left-right"/>
+    </loader>
+  </displayList>
+</component>package.xml|1405|<packageDescription id="zuudarvc" name="Pay">
+  <resources>
+    <atlas id="atlas0" size="1024,512" file="atlas0.png"/>
+    <component id="iw5wdu" name="PayCheckPanel" exported="true" size="666,600"/>
+    <component id="iw5we0" name="CheckNum" size="298,36"/>
+    <component id="iw5we3" name="PayWayList" size="666,100"/>
+    <component id="iw5we4" name="BtnPayClose" size="40,40"/>
+    <component id="iw5we7" name="BtnPay" size="666,118"/>
+    <component id="kxsyci" name="PayPanel" exported="true" size="985,591"/>
+    <component id="kxsycn" name="PayCellMonth" size="328,278"/>
+    <component id="kxsycx" name="PayCellSimple" size="288,293"/>
+    <component id="kxsycy" name="FirstSong" size="209,32"/>
+    <component id="kxsycz" name="ChongZhi" size="201,29"/>
+    <component id="kxsyd0" name="CanGetSimple" size="223,45"/>
+    <component id="kxsyd1" name="CanGetMonth" size="232,45"/>
+    <image id="10j1c4" name="kehuode2" size="70,26"/>
+    <image id="10j1c5" name="kehuode1" size="73,29"/>
+    <image id="10j1c7" name="big1" size="323,273" scale="tile"/>
+    <image id="i4cce9" name="xuanzhong" size="36,36"/>
+    <image id="iw5wdr" name="weixuanzhong" size="36,36"/>
+    <image id="iw5wdt" name="btn_guanbi" size="40,40"/>
+    <image id="iw5we5" name="btn_1" size="19,17" scale="9grid" scale9grid="5,5,9,7"/>
+    <image id="kxsyct" name="big3" size="288,293"/>
+  </resources>
+</packageDescription>

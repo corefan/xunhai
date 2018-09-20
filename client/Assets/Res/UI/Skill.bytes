@@ -1,0 +1,151 @@
+h394p.xml|292|<component size="305,194">
+  <displayList>
+    <image id="n0" name="bg" src="x0conix" pkg="0tyncec1" xy="0,0" size="305,202"/>
+    <list id="n1" name="content" xy="3,3" size="297,194" layout="flow_hz" overflow="hidden" margin="6,0,6,0" lineGap="12" colGap="12"/>
+  </displayList>
+</component>l6nql.xml|1277|<component size="189,203" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="image_alpha_bg" src="w5h89" xy="16,14" size="157,157" group="n7"/>
+    <loader id="n3" name="loader_skill_icon" xy="16,13" size="157,157" group="n7" fill="scaleFree"/>
+    <image id="n8" name="image_skill_icon_border" src="oqbynlm" pkg="0tyncec1" xy="14,11" size="162,162" group="n7"/>
+    <image id="n1" name="image_select" src="of36nm2" pkg="0tyncec1" xy="0,0" size="189,183" group="n7">
+      <gearDisplay controller="button" pages=""/>
+    </image>
+    <image id="n2" name="image_arrow" src="s7fmnlr" pkg="0tyncec1" xy="130,15" group="n7"/>
+    <group id="n7" name="group_skill" xy="0,0" size="189,183" advanced="true"/>
+    <image id="n4" name="bg_level" src="c4eznl4" pkg="0tyncec1" xy="54,174" size="73,29" group="n6"/>
+    <text id="n5" name="label_level" xy="63,178" size="56,24" group="n6" font="方正粗圆简体" fontSize="18" color="#2e3341" align="center" vAlign="middle" autoSize="height" text=""/>
+    <group id="n6" name="group_level" xy="54,174" size="74,29" advanced="true"/>
+    <graph id="n9" name="effect_root" xy="0,0" size="1,1"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>l6nqo.xml|474|<component size="212,38">
+  <displayList>
+    <text id="n0" name="label_name" xy="0,0" size="114,32" font="方正粗圆简体" fontSize="24" color="#1e67af" vAlign="middle" autoSize="none" text="技能伤害"/>
+    <text id="n1" name="label_value" xy="143,0" size="69,32" font="方正粗圆简体" fontSize="24" color="#1e67af" align="right" vAlign="middle" ubb="true" autoSize="none" text="xxx"/>
+    <image id="n2" name="image_split" src="igkdnlb" pkg="0tyncec1" xy="7,36"/>
+  </displayList>
+</component>package.xml|1064|<packageDescription id="tv6313j0" name="Skill">
+  <resources>
+    <atlas id="atlas0" size="512,256" file="atlas0.png"/>
+    <component id="h394p" name="SkillBook" exported="true" size="305,194"/>
+    <component id="l6nql" name="SkillBigItem" exported="true" size="189,203"/>
+    <component id="l6nqo" name="SkillEffectItem" exported="true" size="212,38"/>
+    <component id="w5h8c" name="SkillPanel" exported="true" size="955,612"/>
+    <component id="w5h8d" name="SkillItem" exported="true" size="108,132"/>
+    <component id="w5h8e" name="SkillEffect" exported="true" size="236,183"/>
+    <component id="w5h8g" name="SkillMasteryProcess" size="50,13"/>
+    <component id="w5h8h" name="ButtonAddMastery" size="33,33"/>
+    <component id="w5h8i" name="ButtonGoto" size="62,63"/>
+    <component id="w5h8k" name="SkillUpgradeConsume" exported="true" size="243,36"/>
+    <image id="w5h82" name="diwen" size="250,254"/>
+    <image id="w5h83" name="anniu" size="62,63"/>
+    <image id="w5h89" name="jinengtoumingdi" size="108,108"/>
+  </resources>
+</packageDescription>w5h8c.xml|3515|<component size="955,612">
+  <displayList>
+    <image id="n26" name="imgShuye3" src="x0conjo" pkg="0tyncec1" xy="15,429" group="n13"/>
+    <component id="n1" name="btnGoto" src="w5h8i" xy="10,20" group="n13"/>
+    <text id="n2" name="labelGoto" xy="75,35" size="166,32" group="n13" font="方正粗圆简体" fontSize="24" color="#2e3341" autoSize="none" text="跳转至斗神印"/>
+    <image id="n3" name="imgBgSkillItems" src="w5h82" xy="39,177" group="n13"/>
+    <component id="n28" name="skillItem1" src="l6nql" xy="130,273" group="n13"/>
+    <component id="n4" name="skillItem2" src="w5h8d" xy="11,352" group="n13"/>
+    <component id="n5" name="skillItem3" src="w5h8d" xy="0,221" group="n13"/>
+    <component id="n27" name="skillItem4" src="w5h8d" xy="89,135" group="n13"/>
+    <component id="n7" name="skillItem5" src="w5h8d" xy="209,154" group="n13"/>
+    <text id="n11" name="labelTips" xy="40,536" size="241,42" group="n13" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="选中技能进行操作"/>
+    <group id="n13" name="groupLeft" xy="0,20" size="319,582" advanced="true"/>
+    <image id="n24" name="imgShuye0" src="x0conjq" pkg="0tyncec1" xy="818,14" group="n23"/>
+    <image id="n25" name="imgShuye1" src="x0conjp" pkg="0tyncec1" xy="305,276" group="n23"/>
+    <image id="n9" name="imgFenge0" src="jsucnhg" pkg="0tyncec1" xy="330,0" size="16,612" group="n23"/>
+    <image id="n10" name="imgFenge1" src="gk0nnia" pkg="0tyncec1" xy="536,23" group="n23"/>
+    <text id="n12" name="labelSkillName" xy="559,29" size="173,38" group="n23" font="方正粗圆简体" fontSize="24" color="#058c9c" align="center" vAlign="middle" autoSize="none" text=""/>
+    <text id="n14" name="labelSkillDesc" xy="407,77" size="493,89" group="n23" font="方正粗圆简体" fontSize="22" color="#54595e" vAlign="middle" leading="6" autoSize="none" text="战士的入门剑术，也是最基础最牢靠的剑术。对敌人造成30点物理伤害，冷却时间1s"/>
+    <image id="n15" name="imgFenge" src="hx0xnip" pkg="0tyncec1" xy="441,187" size="425,11" group="n23"/>
+    <component id="n29" name="skillEffectCur" src="w5h8e" xy="382,223" group="n23"/>
+    <image id="n33" name="imgUpgradeArrow" src="s4zfnls" pkg="0tyncec1" xy="625,311" group="n23"/>
+    <component id="n30" name="skillEffectNext" src="w5h8e" xy="686,223" group="n23"/>
+    <component id="n32" name="skillEffectMax" src="w5h8e" xy="456,222" size="375,183" group="n23"/>
+    <text id="n16" name="labelMasteryTitle" xy="390,456" size="85,28" group="n23" font="方正粗圆简体" fontSize="20" color="#43515b" vAlign="middle" autoSize="none" text="熟练度："/>
+    <text id="n17" name="labelMasteryValue" xy="475,457" size="225,28" group="n23" font="方正粗圆简体" fontSize="20" color="#43515b" vAlign="middle" autoSize="none" text="10000/15450"/>
+    <component id="n18" name="masteryProcess" src="w5h8g" xy="394,490" size="477,13" group="n23">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n19" name="btnAddMastery" src="w5h8h" xy="878,479" group="n23"/>
+    <component id="n21" name="upgradeConsume" src="w5h8k" xy="575,512" group="n23"/>
+    <component id="n22" name="btnUpgrade" src="skqrnkp" pkg="0tyncec1" xy="577,552" size="151,56" group="n23">
+      <Button title="升级" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <text id="n34" name="labelSkillLearnTips" xy="466,430" size="391,28" group="n23" font="方正粗圆简体" fontSize="18" color="#43515b" align="center" vAlign="middle" autoSize="none" text="熟练度："/>
+    <group id="n23" name="groupRight" xy="305,0" size="650,612" advanced="true"/>
+  </displayList>
+</component>w5h8d.xml|1196|<component size="108,132" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="img_alpha_bg" src="w5h89" xy="3,1" size="99,100" group="n6"/>
+    <loader id="n3" name="loader_icon" xy="8,6" size="92,92" group="n6"/>
+    <image id="n8" name="img_skill_icon_border" src="oqbynlm" pkg="0tyncec1" xy="6,4" size="97,97" group="n6"/>
+    <image id="n2" name="img_select_bg" src="of36nm2" pkg="0tyncec1" xy="-3,-2" size="113,109" group="n6"/>
+    <image id="n1" name="img_arrow" src="s7fmnlr" pkg="0tyncec1" xy="73,5" group="n6"/>
+    <group id="n6" name="group_skill_icon" xy="-3,-2" size="113,109" advanced="true"/>
+    <image id="n4" name="img_bg_lev" src="c4eznl4" pkg="0tyncec1" xy="19,101" size="69,30" group="n7"/>
+    <text id="n5" name="label_lev" xy="26,105" size="58,24" group="n7" font="方正粗圆简体" fontSize="18" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n7" name="group_skill_lev" xy="19,101" size="70,31" advanced="true"/>
+    <graph id="n9" name="effect_root" xy="0,0" size="1,1"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>w5h8e.xml|662|<component size="236,183">
+  <displayList>
+    <image id="n0" name="img_title_bg" src="uchhnl1" pkg="0tyncec1" xy="1,0" size="235,34">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1" name="img_content_bg" src="gk0nni9" pkg="0tyncec1" xy="0,32" size="236,151">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2" name="label_title" xy="28,3" size="172,27" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="当前效果">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>w5h8g.xml|340|<component size="50,13" extention="ProgressBar">
+  <ProgressBar/>
+  <displayList>
+    <image id="n1" pkg="0tyncec1" src="mx4pnkw" name="n1" xy="0,0" size="50,13">
+      <relation target="" sidePair="width,height"/>
+    </image>
+    <image id="n2" pkg="0tyncec1" src="mx4pnkv" name="bar" xy="0,1" size="50,11"/>
+  </displayList>
+</component>w5h8h.xml|1012|<component size="33,33" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="n2myci" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="n2" src="n2myci" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3" name="n3" src="n2myci" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4" name="n4" src="n2myci" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>w5h8i.xml|265|<component size="62,63" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="img_anniu" src="w5h83" xy="0,0"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>w5h8k.xml|401|<component size="243,36">
+  <displayList>
+    <text id="n0" name="label_title" xy="0,4" size="56,28" font="方正粗圆简体" fontSize="22" color="#2e3341" autoSize="none" text="消耗"/>
+    <loader id="n1" name="loader_icon" xy="56,0" size="43,36"/>
+    <text id="n2" name="label_cnt" xy="98,4" size="144,26" font="方正粗圆简体" fontSize="22" color="#2e3341" autoSize="height" text="2000"/>
+  </displayList>
+</component>

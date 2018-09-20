@@ -1,0 +1,242 @@
+88mb18.xml|483|<component size="32,31">
+  <displayList>
+    <loader id="n0" name="icon" xy="0,0" size="32,31" url="ui://rkrzdlw3ez9z1d" fill="scaleFree"/>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n0" tween="true" startValue="0,0" endValue="-,-15" duration="24" ease="Linear"/>
+    <item time="24" type="XY" target="n0" tween="true" startValue="-,-15" endValue="0,0" duration="24" ease="Linear"/>
+  </transition>
+</component>88mb19.xml|182|<component size="30,32" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <loader id="n0" name="icon" xy="0,0" size="30,32" url="ui://rkrzdlw388mb17"/>
+  </displayList>
+</component>bag31s.xml|414|<component size="30,30" pivot="0.5,0.5" anchor="true" extention="Label">
+  <displayList>
+    <loader id="n4" name="icon" xy="4,1" pivot="0.5,0.5" size="23,23" url="ui://rkrzdlw3iuo02c" align="center" vAlign="middle" autoSize="true"/>
+    <text id="n3" name="title" xy="-48,20" size="126,23" fontSize="16" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="名字五个字"/>
+  </displayList>
+</component>bag31w.xml|202|<component size="36,29" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <image id="n1" name="ziIcon" src="ez9z1d" xy="17,14" pivot="0.5,0.5" anchor="true" scale="-1,1"/>
+  </displayList>
+</component>bag31x.xml|304|<component size="28,29" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <image id="n0" name="n0" src="bag31t" xy="0,0"/>
+    <text id="n1" name="title" xy="-41,26" size="108,23" fontSize="16" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="传送门名字"/>
+  </displayList>
+</component>elj82.xml|335|<component size="1334,750">
+  <displayList>
+    <component id="n12" name="mapLayer" src="elj8u" xy="0,0"/>
+    <component id="n25" name="btnClose" src="elj8t" xy="1218,10"/>
+    <component id="n30" name="changeSecMapBtn" src="g6r51r" xy="21,17"/>
+    <image id="n31" name="n31" src="kcbu2f" xy="752,633"/>
+  </displayList>
+</component>elj8t.xml|286|<component size="116,111" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="icon" src="elj89" xy="30,27"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>elj8u.xml|3830|<component size="1334,750" scroll="horizontal">
+  <displayList>
+    <image id="n0" name="bg" src="elj8a" xy="0,0"/>
+    <component id="n1" name="btn1" src="elj8v" xy="582,299" size="62,60">
+      <Button titleColor="#5ac9f7" icon="ui://rkrzdlw3elj8d"/>
+    </component>
+    <component id="n2" name="btn2" src="elj8v" xy="707,301">
+      <Button title="平原" icon="ui://rkrzdlw3elj8c"/>
+    </component>
+    <component id="n3" name="btn3" src="elj8v" xy="782,205">
+      <Button title="山林" icon="ui://rkrzdlw3elj8k"/>
+    </component>
+    <component id="n4" name="btn4" src="elj8v" xy="692,84" size="60,60">
+      <Button title="矿区" icon="ui://rkrzdlw3elj8n"/>
+    </component>
+    <component id="n5" name="btn5" src="elj8v" xy="946,131">
+      <Button title="山腰路战场" icon="ui://rkrzdlw3elj8j"/>
+    </component>
+    <component id="n6" name="btn6" src="elj8v" xy="1088,204">
+      <Button title="山顶" icon="ui://rkrzdlw3elj8l"/>
+    </component>
+    <component id="n7" name="btn7" src="elj8v" xy="256,226">
+      <Button title="藏龙原·三" icon="ui://rkrzdlw3elj8q"/>
+    </component>
+    <component id="n8" name="btn8" src="elj8v" xy="130,268">
+      <Button title="藏龙原·二" icon="ui://rkrzdlw3elj8q"/>
+    </component>
+    <component id="n9" name="btn9" src="elj8v" xy="240,352" size="60,60">
+      <Button title="藏龙原·一" icon="ui://rkrzdlw3elj8q"/>
+    </component>
+    <component id="n10" name="btn10" src="elj8v" xy="357,118">
+      <Button title="湾畔隐屿·二" icon="ui://rkrzdlw3elj8g"/>
+    </component>
+    <component id="n11" name="btn11" src="elj8v" xy="197,100">
+      <Button title="湾畔隐屿·一" icon="ui://rkrzdlw3elj8g"/>
+    </component>
+    <component id="n12" name="btn12" src="elj8v" xy="529,71">
+      <Button title="湾畔隐屿·三" icon="ui://rkrzdlw3elj8g"/>
+    </component>
+    <component id="n13" name="btn13" src="elj8v" xy="485,180">
+      <Button title="哀嚎谷·一" icon="ui://rkrzdlw3elj8r"/>
+    </component>
+    <component id="n14" name="btn14" src="elj8v" xy="381,232">
+      <Button title="哀嚎谷·二" icon="ui://rkrzdlw3elj8r"/>
+    </component>
+    <component id="n15" name="btn15" src="elj8v" xy="425,323">
+      <Button title="哀嚎谷·三" icon="ui://rkrzdlw3elj8r"/>
+    </component>
+    <component id="n16" name="btn16" src="elj8v" xy="409,437">
+      <Button title="恒古冰原·一" icon="ui://rkrzdlw3elj8o"/>
+    </component>
+    <component id="n17" name="btn17" src="elj8v" xy="217,478">
+      <Button title="恒古冰原·二" icon="ui://rkrzdlw3elj8o"/>
+    </component>
+    <component id="n18" name="btn18" src="elj8v" xy="362,528">
+      <Button title="恒古冰原·三" icon="ui://rkrzdlw3elj8o"/>
+    </component>
+    <component id="n19" name="btn19" src="elj8v" xy="512,546">
+      <Button title="天机洞·一" icon="ui://rkrzdlw3elj8h"/>
+    </component>
+    <component id="n20" name="btn20" src="elj8v" xy="406,642">
+      <Button title="天机洞·二" icon="ui://rkrzdlw3elj8h"/>
+    </component>
+    <component id="n21" name="btn21" src="elj8v" xy="248,595">
+      <Button title="天机洞·三" icon="ui://rkrzdlw3elj8h"/>
+    </component>
+    <component id="n22" name="btn22" src="elj8v" xy="721,429">
+      <Button title="干燥的平原" icon="ui://rkrzdlw3elj8p"/>
+    </component>
+    <component id="n23" name="btn23" src="elj8v" xy="851,407">
+      <Button title="石地" icon="ui://rkrzdlw3elj8i"/>
+    </component>
+    <component id="n24" name="btn24" src="elj8v" xy="973,453">
+      <Button title="溪流" icon="ui://rkrzdlw3elj8f"/>
+    </component>
+    <component id="n25" name="btn25" src="elj8v" xy="1056,358">
+      <Button title="森林战场" icon="ui://rkrzdlw3elj8m"/>
+    </component>
+    <component id="n26" name="btn26" src="elj8v" xy="1136,445">
+      <Button title="遗迹" icon="ui://rkrzdlw3elj8e"/>
+    </component>
+    <component id="n27" name="btn27" src="elj8v" xy="902,297">
+      <Button title="铭文矿洞" icon="ui://rkrzdlw3nje81e"/>
+    </component>
+  </displayList>
+</component>elj8v.xml|805|<component size="60,60" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n5" name="icon" xy="0,0" size="60,60" url="ui://rkrzdlw3elj8o" align="center" vAlign="middle" fill="scaleMatchWidth">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n6" name="bg" src="elj8b" xy="-18,58" size="92,21">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </image>
+    <text id="n7" name="title" xy="3,59" size="50,19" font="华康圆体W7(P)" fontSize="15" color="#d3eaf5" align="center" vAlign="middle" text="主城哈">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.10"/>
+</component>fhh926.xml|804|<component size="25,35" pivot="0.5,0.5">
+  <displayList>
+    <image id="n2" name="n2" src="fhh928" xy="-9,-27"/>
+    <image id="n3" name="n3" src="fhh927" xy="-10,-5" pivot="0.5,0.5"/>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n2" tween="true" startValue="-9,-28" endValue="-9,-33" duration="12"/>
+    <item time="12" type="XY" target="n2" tween="true" startValue="-9,-33" endValue="-9,-28" duration="12"/>
+  </transition>
+  <transition name="t2" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Scale" target="n3" tween="true" startValue="1,1" endValue="0.7,0.7" duration="12"/>
+    <item time="12" type="Scale" target="n3" tween="true" startValue="0.7,0.7" endValue="1,1" duration="12"/>
+  </transition>
+</component>g6r51r.xml|198|<component size="210,65" extention="Button">
+  <displayList>
+    <image id="n0" name="n0" src="kcbu2g" xy="9,13"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>hsye1j.xml|630|<component size="1334,750">
+  <displayList>
+    <graph id="n2" name="n2" xy="0,0" size="1334,750" alpha="0.75" type="rect" fillColor="#ff000000"/>
+    <loader id="n4" name="mapRoad" xy="1108,0" size="50,30" scale="-1,1" alpha="0.75" autoSize="true"/>
+    <component id="n5" name="signContain" src="t5hdnfx" pkg="0tyncec1" xy="1108,0" size="900,800" scale="-1,1"/>
+    <graph id="n7" name="touchLay" xy="1333,0" size="1336,750" scale="-1,1" alpha="0" type="rect"/>
+    <component id="n1" name="exitBtn" src="elj8t" xy="1218,10"/>
+    <component id="n3" name="changeWorMapBtn" src="g6r51r" xy="21,17"/>
+  </displayList>
+</component>i88s1i.xml|124|<component size="64,35">
+  <displayList>
+    <image id="n0" name="n0" src="i88s1h" xy="0,-3"/>
+  </displayList>
+</component>iuo02d.xml|159|<component size="56,56" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <image id="n0" name="bossIcon" src="iuo02e" xy="0,1"/>
+  </displayList>
+</component>nje81f.xml|124|<component size="70,40">
+  <displayList>
+    <image id="n0" name="bg" src="nje81g" xy="1,-1"/>
+  </displayList>
+</component>nruc1a.xml|125|<component size="21,21">
+  <displayList>
+    <image id="n0" name="icon" src="nruc1b" xy="0,0"/>
+  </displayList>
+</component>package.xml|3871|<packageDescription id="rkrzdlw3" name="WorldMaps">
+  <resources>
+    <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
+    <component id="88mb18" name="MeFlag" exported="true" size="32,31"/>
+    <component id="88mb19" name="TeamFlag" exported="true" size="30,32"/>
+    <component id="bag31s" name="NpcIcon" exported="true" size="30,30"/>
+    <component id="bag31w" name="PlayerIcon" exported="true" size="36,29"/>
+    <component id="bag31x" name="TransferIcon" exported="true" size="28,29"/>
+    <component id="elj82" name="WorldMapPanel" exported="true" size="1334,750"/>
+    <component id="elj8t" name="ReturnBtn" size="116,111"/>
+    <component id="elj8u" name="MapBg" exported="true" size="1334,750"/>
+    <component id="elj8v" name="MapBtn" exported="true" size="60,60"/>
+    <component id="fhh926" name="TargetAnima" exported="true" size="25,35"/>
+    <component id="g6r51r" name="ChangeMapBtn" size="210,65"/>
+    <component id="hsye1j" name="SecondMapPanel" exported="true" size="1334,750"/>
+    <component id="i88s1i" name="WorldMapQiecuoFlag" exported="true" size="64,35"/>
+    <component id="iuo02d" name="BossIcon" exported="true" size="56,56"/>
+    <component id="nje81f" name="WorldMapPkFlag" exported="true" size="70,40"/>
+    <component id="nruc1a" name="MapClickFlag" exported="true" size="21,21"/>
+    <component id="z0x424" name="TargetIcon" exported="true" size="22,22"/>
+    <image id="88mb14" name="owerLeader" size="32,31" exported="true"/>
+    <image id="88mb15" name="ownerMember" size="32,31" exported="true"/>
+    <image id="88mb16" name="teamLeader" size="30,32" exported="true"/>
+    <image id="88mb17" name="teamMember" size="30,32" exported="true"/>
+    <image id="bag31t" name="chuansongmen" size="27,28"/>
+    <image id="elj89" name="returnLayer" size="55,51"/>
+    <image id="elj8a" name="mapBg" size="1334,750"/>
+    <image id="elj8b" name="mapTitleBg" size="68,28" exported="true" scale="9grid" scale9grid="33,0,3,28"/>
+    <image id="elj8c" name="donglicaoyuan" size="60,60" exported="true"/>
+    <image id="elj8d" name="zhucheng" size="80,80" exported="true"/>
+    <image id="elj8e" name="fuxiling" size="60,60" exported="true"/>
+    <image id="elj8f" name="qiufengyuan" size="60,60" exported="true"/>
+    <image id="elj8g" name="ninghaizhou" size="60,60" exported="true"/>
+    <image id="elj8h" name="chaogeshan" size="60,60" exported="true"/>
+    <image id="elj8i" name="qiongshan" size="60,60" exported="true"/>
+    <image id="elj8j" name="cangxiuling" size="60,60" exported="true"/>
+    <image id="elj8k" name="linhai" size="60,60" exported="true"/>
+    <image id="elj8l" name="kunlun" size="60,60" exported="true"/>
+    <image id="elj8m" name="xuanyuanzhanchang" size="60,60" exported="true"/>
+    <image id="elj8n" name="lingshikuangdong" size="60,60" exported="true"/>
+    <image id="elj8o" name="henggubingya" size="60,60" exported="true"/>
+    <image id="elj8p" name="canyangyingdi" size="60,60" exported="true"/>
+    <image id="elj8q" name="canglongyuan" size="60,60" exported="true"/>
+    <image id="elj8r" name="baishougu" size="60,60" exported="true"/>
+    <image id="ez9z1d" name="ownerPos" size="34,46" exported="true"/>
+    <image id="fhh927" name="目的地2" size="21,13"/>
+    <image id="fhh928" name="目的地3" size="18,31"/>
+    <image id="i88s1h" name="切磋" size="64,38"/>
+    <image id="iuo02c" name="NPC2" size="23,23"/>
+    <image id="iuo02e" name="BOSS" size="56,55" scale="9grid" scale9grid="14,14,28,28"/>
+    <image id="kcbu2f" name="tishi" size="509,88"/>
+    <image id="kcbu2g" name="btn_qiehuan" size="191,41"/>
+    <image id="nje81e" name="mingwenkuangdong" size="60,60" exported="true"/>
+    <image id="nje81g" name="font_fight" size="64,38" exported="true"/>
+    <image id="nruc1b" name="targetSign" size="21,21" exported="true" scale="9grid" scale9grid="6,6,9,7"/>
+  </resources>
+</packageDescription>z0x424.xml|153|<component size="22,22" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <image id="n0" name="n0" src="nruc1b" xy="0,0"/>
+  </displayList>
+</component>

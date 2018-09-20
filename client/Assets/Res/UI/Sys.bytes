@@ -1,0 +1,98 @@
+awtm6.xml|74|<component size="212,368" overflow="scroll">
+  <displayList/>
+</component>exps3.xml|2686|<component size="414,402" extention="Label">
+  <displayList>
+    <graph id="n0" name="bg0" xy="-86,-3" size="414,404" type="rect" lineSize="0" fillColor="#ff663300">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n1" name="bg1" xy="-78,4" size="397,390" type="rect">
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n2" name="contentArea" src="exps4" xy="-74,81" size="389,304">
+      <relation target="n1" sidePair="width-width"/>
+    </component>
+    <text id="n3" name="title" xy="36,-30" size="162,27" fontSize="20" color="#33cc00" align="center" vAlign="middle" autoSize="height" bold="true" strokeColor="#000000" text="">
+      <relation target="" sidePair="top-top,center-center"/>
+    </text>
+    <graph id="n4" name="dragArea" xy="-84,-48" size="381,63" type="rect" lineSize="0" fillColor="#00ffffff">
+      <relation target="" sidePair="width-width%,middle-middle"/>
+    </graph>
+    <component id="n8" name="btnDebug" src="exps5" xy="228,50" size="78,28">
+      <relation target="" sidePair="right-right"/>
+      <Button title="调试"/>
+    </component>
+    <component id="n5" name="closeButton" src="ykv22" pkg="24ppc8nl" xy="300,-21">
+      <relation target="" sidePair="top-top,right-right"/>
+    </component>
+    <graph id="n10" name="n10" xy="-72,11" size="376,32" type="rect" fillColor="#ffcc6600">
+      <relation target="n9" sidePair="width-width,left-left"/>
+      <relation target="n9" sidePair="top-top"/>
+    </graph>
+    <text id="n9" name="inputMsg" xy="-71,13" size="373,29" input="true" prompt="调试>1.GM参数规则 xxx-xxx|2.命令规则@cmd｜3.普通lua语句" fontSize="22" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="n1" sidePair="left-left,width-width"/>
+    </text>
+    <component id="n11" name="btnLuaChange" src="exps5" xy="-167,-21" size="78,28" visible="false">
+      <Button title="热更Lua"/>
+    </component>
+    <component id="n16" name="btnStopAudio" src="exps5" xy="-149,9" size="59,27">
+      <Button title="静音"/>
+    </component>
+    <component id="n17" name="btnAddSound" src="exps5" xy="-149,42" size="59,27">
+      <Button title="+"/>
+    </component>
+    <component id="n18" name="btnSubSound" src="exps5" xy="-149,73" size="59,27">
+      <Button title="-"/>
+    </component>
+    <component id="n19" name="btnSkillSound" src="exps5" xy="-149,104" size="59,27">
+      <Button title="音效"/>
+    </component>
+    <component id="n21" name="container" src="awtm6" xy="326,29">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+  </displayList>
+  <relation target="" sidePair="width-width%,height-height%"/>
+</component>exps4.xml|449|<component size="375,291" overflow="scroll">
+  <displayList>
+    <graph id="n8" name="bg" xy="0,0" size="375,28" type="rect" fillColor="#ff336666">
+      <relation target="n9" sidePair="width-width,height-height"/>
+    </graph>
+    <richtext id="n9" name="txtContent" xy="2,2" size="371,26" fontSize="20" ubb="true" autoSize="height" text="">
+      <relation target="" sidePair="width-width,left-left"/>
+    </richtext>
+  </displayList>
+</component>exps5.xml|1209|<component size="106,42" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <graph id="n1" name="n1" xy="0,0" size="106,42" touchable="false" type="rect" lineSize="0" fillColor="#ff006600">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2" name="n2" xy="0,0" size="106,42" touchable="false" type="rect" lineSize="0" fillColor="#ff006600">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n3" name="n3" xy="0,0" size="106,42" touchable="false" type="rect" lineSize="0" fillColor="#ff009900">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n4" name="title" xy="0,0" size="106,42" font="方正粗圆简体" fontSize="12" color="#ffcc66" align="center" vAlign="middle" letterSpacing="2" autoSize="none" bold="true" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>ks3k2.xml|240|<component size="400,360">
+  <displayList>
+    <component id="n2" name="frame" src="exps3" xy="0,0">
+      <relation target="" sidePair="width-width%,height-height%"/>
+      <Label title="调试"/>
+    </component>
+  </displayList>
+</component>package.xml|432|<packageDescription id="0g1b4npu" name="Sys">
+  <resources>
+    <component id="awtm6" name="Container" size="212,368"/>
+    <component id="exps3" name="DebugFrame" size="414,402"/>
+    <component id="exps4" name="DebugContent" size="375,291"/>
+    <component id="exps5" name="BtnDebug" exported="true" size="106,42"/>
+    <component id="ks3k2" name="DebugWindow" exported="true" size="400,360"/>
+  </resources>
+</packageDescription>

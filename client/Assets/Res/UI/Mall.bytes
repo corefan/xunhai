@@ -1,0 +1,53 @@
+dpuqy.xml|1793|<component size="1334,750">
+  <displayList>
+    <image id="n33" name="n33" src="x0coniw" pkg="0tyncec1" xy="412,101" size="551,585"/>
+    <image id="n38" name="hehua" src="w3wlnlc" pkg="0tyncec1" xy="563,147" size="267,159"/>
+    <text id="n6" name="opoInfo" xy="495,306" size="400,70" font="方正粗圆简体" fontSize="20" color="#545e6c" align="center" ubb="true" autoSize="none" text=""/>
+    <text id="n28" name="sortInfo" xy="496,382" size="399,34" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="限时7天、2折、热销"/>
+    <text id="n32" name="limitBuy" xy="610,568" size="164,29" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <image id="n41" name="n41" src="x0conjx" pkg="0tyncec1" xy="539,424" size="361,65"/>
+    <component id="n34" name="numBar" src="x0conk2" pkg="0tyncec1" xy="594,424">
+      <Label maxLength="3" keyboardType="2"/>
+    </component>
+    <component id="n35" name="buyBtn" src="tnbmnka" pkg="0tyncec1" xy="605,598" size="176,48">
+      <Button title="购买" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <text id="n5" name="popTitle" xy="505,267" size="387,30" font="方正粗圆简体" fontSize="24" color="#1e67af" align="center" vAlign="middle" ubb="true" autoSize="height" strokeColor="#626161" strokeSize="2" text=""/>
+    <component id="n40" name="labelBar" src="nf8gnkt" pkg="0tyncec1" xy="483,498" size="412,63"/>
+    <text id="n36" name="putawayText" xy="460,444" size="101,34" font="方正粗圆简体" fontSize="24" color="#2e3341" align="right" vAlign="middle" autoSize="none" text="数量:"/>
+    <component id="n43" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="833,103" size="135,87">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>kt6kw.xml|344|<component size="364,120">
+  <displayList>
+    <component id="n20" name="content" src="m9i9z" xy="0,0"/>
+    <loader id="n17" name="leftMark" xy="11,5" size="71,70" touchable="false"/>
+    <loader id="n18" name="rightMark" xy="286,5" size="71,70" touchable="false" align="center" vAlign="middle" fill="scaleFree"/>
+  </displayList>
+</component>kt6kx.xml|399|<component size="955,612">
+  <displayList>
+    <image id="n3" name="bg" src="sl2z4" xy="0,0" size="955,612"/>
+    <list id="n2" name="contentList" xy="220,5" size="729,600" layout="flow_hz" overflow="scroll" margin="0,0,0,0" lineItemCount="2" defaultItem="ui://z5rl8hw3kt6kw"/>
+    <image id="n4" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="203,-2" size="11,607"/>
+  </displayList>
+</component>m9i9z.xml|963|<component size="364,120">
+  <displayList>
+    <image id="n20" name="n20" src="keyenis" pkg="0tyncec1" xy="0,0" size="364,120"/>
+    <image id="n21" name="select" src="keyenir" pkg="0tyncec1" xy="0,0" size="364,120"/>
+    <text id="n12" name="propName" xy="115,15" pivot="0.5,0.5" size="216,31" font="方正粗圆简体" fontSize="24" color="#1e67af" vAlign="middle" ubb="true" autoSize="none" strokeColor="#626161" text="魔法戒指&#xA;"/>
+    <text id="n13" name="cost2" xy="164,79" pivot="0.5,0.5" size="149,34" font="方正粗圆简体" fontSize="24" vAlign="bottom" autoSize="height" text="10086&#xA;"/>
+    <loader id="n14" name="costIcon" xy="115,49" size="40,40" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n16" name="cost1" xy="164,53" pivot="0.5,0.5" size="149,34" font="方正粗圆简体" fontSize="24" vAlign="bottom" autoSize="height" text="10086&#xA;"/>
+    <image id="n22" name="line" src="v6jenm3" pkg="0tyncec1" xy="158,69" size="44,2"/>
+  </displayList>
+</component>package.xml|568|<packageDescription id="z5rl8hw3" name="Mall">
+  <resources>
+    <atlas id="atlas0" size="64,64" file="atlas0.png"/>
+    <component id="dpuqy" name="MallBuyPanel" exported="true" size="1334,750"/>
+    <component id="kt6kw" name="MallItem" exported="true" size="364,120"/>
+    <component id="kt6kx" name="MallPanel" exported="true" size="955,612"/>
+    <component id="m9i9z" name="MallItemContent" exported="true" size="364,120"/>
+    <image id="sl2z4" name="底框" size="52,51" scale="9grid" scale9grid="13,13,26,25" exported="true"/>
+  </resources>
+</packageDescription>

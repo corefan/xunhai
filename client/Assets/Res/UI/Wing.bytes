@@ -1,0 +1,220 @@
+5v991g.xml|891|<component size="406,38">
+  <displayList>
+    <text id="n0" name="value1" xy="5,10" size="84,26" font="华康圆体W7(P)" fontSize="22" color="#1e67af" align="center" vAlign="middle" ubb="true" autoSize="none" text="生命">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <text id="n2" name="value2" xy="128,10" size="104,26" font="华康圆体W7(P)" fontSize="22" color="#1e67af" vAlign="middle" ubb="true" autoSize="none" text="233333">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <text id="n3" name="value3" xy="297,10" size="104,26" font="华康圆体W7(P)" fontSize="22" color="#00834d" vAlign="middle" ubb="true" autoSize="none" text="233333">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <image id="n4" name="n4" src="oox7z" xy="262,12"/>
+    <image id="n5" name="line" src="5v99nkc" pkg="0tyncec1" xy="14,3" size="380,1"/>
+  </displayList>
+</component>5v991j.xml|286|<component size="92,92">
+  <controller name="select" pages="0,选中,1,未选中" selected="0"/>
+  <displayList>
+    <image id="n1" name="select" src="uwggde" pkg="0tyncec1" xy="-12,-12" size="114,114">
+      <gearDisplay controller="select" pages="0"/>
+    </image>
+  </displayList>
+</component>igzg16.xml|524|<component size="512,542">
+  <displayList>
+    <image id="n0" name="n0" src="oox715" xy="0,0" size="512,542"/>
+    <list id="n3" name="list" xy="-12,10" size="534,516" overflow="scroll" margin="0,0,0,0" defaultItem="ui://d3en6n1nigzg19"/>
+    <image id="n4" name="n4" src="oox7y" xy="255,550" size="257,34"/>
+    <text id="n5" name="countInfo" xy="381,552" pivot="0.5,0.5" size="110,29" font="华康圆体W7(P)" fontSize="24" align="right" vAlign="middle" ubb="true" autoSize="none" text="20/50&#xA;"/>
+  </displayList>
+</component>igzg17.xml|3867|<component size="404,602">
+  <controller name="ctrMax" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="x0conj6" pkg="0tyncec1" xy="1,2"/>
+    <image id="n1" name="n1" src="jsucnhg" pkg="0tyncec1" xy="-29,-13" size="16,614"/>
+    <loader id="n2" name="bgRare" xy="11,10" size="375,124" fill="scaleFree" playing="false"/>
+    <text id="n4" name="powerTxt" xy="144,92" size="204,24" font="华康圆体W7(P)" fontSize="20" color="#cdbf87" vAlign="middle" autoSize="height" text=""/>
+    <text id="n6" name="level" xy="144,56" size="78,26" font="华康圆体W7(P)" fontSize="20" color="#bad4dc" vAlign="middle" leading="0" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n7" name="name" xy="144,20" pivot="0.5,0.5" size="149,29" font="华康圆体W7(P)" fontSize="22" vAlign="middle" ubb="true" autoSize="none" text="&#xA;"/>
+    <text id="n8" name="typeInfo" xy="251,56" size="78,26" font="华康圆体W7(P)" fontSize="20" color="#bad4dc" vAlign="middle" leading="0" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n9" name="Quality" xy="14,10" size="122,122" url="ui://0pzzz7o0d3t626" align="center" vAlign="middle"/>
+    <loader id="n10" name="icon" xy="36,32" size="78,78" align="center" vAlign="middle" fill="scale"/>
+    <text id="n11" name="grade" xy="29,142" size="149,28" font="华康圆体W7(P)" fontSize="24" color="#ffa200" vAlign="middle" autoSize="height" text=""/>
+    <image id="n13" name="line1" src="jsucnhh" pkg="0tyncec1" xy="24,227" size="347,2"/>
+    <image id="n14" name="line2" src="jsucnhh" pkg="0tyncec1" xy="24,352" size="347,2"/>
+    <list id="n15" name="proList" xy="32,243" size="143,117" touchable="false" selectionMode="none" overflow="scroll" margin="0,0,0,0" defaultItem="ui://d3en6n1nnhrf1d" autoItemSize="false">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n16" name="desc1" xy="31,374" size="298,68" font="华康圆体W7(P)" fontSize="20" color="#bad4dc" vAlign="middle" leading="0" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n17" name="desc2" xy="33,445" size="128,20" font="ui://0tyncec1x0conjj" fontSize="20" color="#cdbf87" vAlign="middle" autoSize="height" text=""/>
+    <component id="n18" name="upBtn" src="tnbmnka" pkg="0tyncec1" xy="39,516" size="128,51">
+      <Button title="羽化" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n19" name="putOnBtn" src="tnbmnka" pkg="0tyncec1" xy="229,516" size="128,51">
+      <Button title="装备" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <text id="n20" name="desc3" xy="162,448" size="79,29" font="华康圆体W7(P)" fontSize="20" color="#bad4dc" vAlign="middle" leading="0" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n33" name="maxBtn" src="k3xs1r" xy="297,142"/>
+    <image id="n23" name="n23" src="s4zfnls" pkg="0tyncec1" xy="165,140">
+      <gearDisplay controller="ctrMax" pages="1"/>
+    </image>
+    <image id="n24" name="n24" src="s4zfnls" pkg="0tyncec1" xy="165,264">
+      <gearDisplay controller="ctrMax" pages="1"/>
+    </image>
+    <text id="n26" name="gradeMax" xy="241,141" size="62,31" font="华康圆体W7(P)" fontSize="24" color="#ffa200" vAlign="middle" autoSize="none" text="">
+      <gearDisplay controller="ctrMax" pages="1"/>
+    </text>
+    <list id="n25" name="proMaxList" xy="205,243" size="143,117" touchable="false" overflow="scroll" margin="0,0,0,0" defaultItem="ui://d3en6n1nnhrf1d">
+      <gearDisplay controller="ctrMax" pages="1"/>
+    </list>
+    <text id="n34" name="getText" xy="201,485" size="184,29" font="华康圆体W7(P)" fontSize="20" color="#bad4dc" align="center" vAlign="middle" leading="0" autoSize="none" text=""/>
+  </displayList>
+</component>igzg18.xml|545|<component size="140,146">
+  <displayList>
+    <image id="n1" name="n1" src="eieknkn" pkg="0tyncec1" xy="0,0" size="140,146"/>
+    <image id="n4" name="n4" src="wjp8c" xy="16,140"/>
+    <loader id="n6" name="img" xy="5,6" size="129,134" url="ui://d3en6n1nwjp8b" align="center" vAlign="middle" fill="scale"/>
+    <image id="n2" name="select" src="wjp85" xy="-9,-9"/>
+    <image id="n3" name="lock" src="igzgnk7" pkg="0tyncec1" xy="42,55"/>
+    <image id="n7" name="equipMark" src="eieknko" pkg="0tyncec1" xy="65,5"/>
+  </displayList>
+</component>igzg19.xml|342|<component size="532,194">
+  <displayList>
+    <image id="n0" name="n0" src="eieknkm" pkg="0tyncec1" xy="1,139" size="536,56"/>
+    <component id="n1" name="item1" src="igzg18" xy="38,5"/>
+    <component id="n2" name="item2" src="igzg18" xy="198,5"/>
+    <component id="n3" name="item3" src="igzg18" xy="358,5"/>
+  </displayList>
+</component>k3xs1r.xml|433|<component size="60,29" extention="Button">
+  <displayList>
+    <image id="n31" name="icon1" src="gk0nnie" pkg="0tyncec1" xy="0,0" size="60,29"/>
+    <image id="n35" name="icon2" src="ovhpnlm" pkg="0tyncec1" xy="-1,-2" size="64,33"/>
+    <text id="n32" name="title" xy="2,3" size="56,22" font="华康圆体W7(P)" fontSize="18" align="center" vAlign="middle" autoSize="none" text="MAX"/>
+  </displayList>
+  <Button mode="Check"/>
+</component>lqpc1m.xml|432|<component size="46,46">
+  <displayList>
+    <image id="n0" name="down" src="mx4pnkx" pkg="0tyncec1" xy="1,2"/>
+    <image id="n2" name="up" src="mx4pnky" pkg="0tyncec1" xy="1,2"/>
+    <graph id="n3" name="role3D" xy="23,20" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <graph id="n4" name="moveRole3D" xy="92,91" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+  </displayList>
+</component>nhrf1d.xml|438|<component size="322,24" pivot="0.2,0">
+  <displayList>
+    <text id="n0" name="TitleName" xy="0,0" size="75,24" font="华康圆体W7(P)" fontSize="20" color="#bad4dc" ubb="true" autoSize="none" text="生命:">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <text id="n1" name="TitleValue" xy="63,0" size="75,24" font="华康圆体W7(P)" fontSize="20" color="#bad4dc" ubb="true" autoSize="none" text="999999"/>
+  </displayList>
+</component>package.xml|1927|<packageDescription id="d3en6n1n" name="Wing">
+  <resources>
+    <atlas id="atlas0" size="512,512" file="atlas0.png"/>
+    <component id="5v991g" name="UpProp" exported="true" size="406,38"/>
+    <component id="5v991j" name="WingCostPropItem" exported="true" size="92,92"/>
+    <component id="igzg16" name="WingPanel_Left" exported="true" size="512,542"/>
+    <component id="igzg17" name="WingPanel_Right" exported="true" size="404,602"/>
+    <component id="igzg18" name="WingItem" exported="true" size="140,146"/>
+    <component id="igzg19" name="WingItemGroup" exported="true" size="532,194"/>
+    <component id="k3xs1r" name="maxBtn" size="60,29"/>
+    <component id="lqpc1m" name="Start" exported="true" size="46,46"/>
+    <component id="nhrf1d" name="prop" exported="true" size="322,24"/>
+    <component id="rb401p" name="ChooseBtn" size="40,36"/>
+    <component id="rflk1k" name="Touch" exported="true" size="100,20"/>
+    <component id="v83r1l" name="WingActivePanel" exported="true" size="1334,750"/>
+    <component id="vetk1e" name="WingUpPanel" exported="true" size="942,597"/>
+    <component id="wjp82" name="WingPanel" exported="true" size="960,602"/>
+    <image id="oox710" name="bg2" size="9,34" scale="9grid" scale9grid="3,9,3,18"/>
+    <image id="oox712" name="titleBg" size="180,36"/>
+    <image id="oox713" name="gradeBg" size="129,46"/>
+    <image id="oox714" name="zhanlidi" size="116,36" scale="9grid" scale9grid="29,9,58,18"/>
+    <image id="oox715" name="bigBg" size="110,117" scale="9grid" scale9grid="40,40,30,37"/>
+    <image id="oox7y" name="shuliangdi" size="204,5" scale="9grid" scale9grid="51,2,102,1"/>
+    <image id="oox7z" name="jiantou" size="29,21"/>
+    <image id="vetk1f" name="upBg" size="386,245"/>
+    <image id="wjp85" name="select" size="157,163"/>
+    <image id="wjp8b" name="img" size="129,134"/>
+    <image id="wjp8c" name="foot" size="110,17"/>
+  </resources>
+</packageDescription>rb401p.xml|263|<component size="40,36" extention="Button">
+  <displayList>
+    <image id="n59" name="n59" src="5v99nke" pkg="0tyncec1" xy="5,4"/>
+    <image id="n60" name="chooseIcon" src="5v99nkf" pkg="0tyncec1" xy="3,0"/>
+  </displayList>
+  <Button mode="Check"/>
+</component>rflk1k.xml|171|<component size="100,20" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList/>
+  <Button/>
+</component>v83r1l.xml|815|<component size="1334,750">
+  <displayList>
+    <graph id="n7" name="n7" xy="0,0" size="1334,760" type="rect" fillColor="#99000000"/>
+    <graph id="n5" name="eft1" xy="638,272" size="100,100"/>
+    <graph id="n6" name="eft2" xy="638,272" size="100,100"/>
+    <graph id="n1" name="role3D" xy="638,272" size="100,100"/>
+    <image id="n0" name="activiteIcon" src="v83rnni" pkg="0tyncec1" xy="538,91"/>
+    <image id="n2" name="n2" src="v83rnnj" pkg="0tyncec1" xy="491,501" size="337,43">
+      <relation target="n3" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3" name="name" xy="538,507" pivot="0.5,0.5" size="258,32" font="华康圆体W7(P)" fontSize="26" color="#008c9c" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="天使翅膀天使翅膀&#xA;"/>
+  </displayList>
+</component>vetk1e.xml|4065|<component size="942,597">
+  <displayList>
+    <image id="n4" name="huaBg" src="vetk1f" xy="8,137" size="522,331"/>
+    <graph id="n7" name="role3D" xy="221,258" pivot="0.5,0.5" size="100,100"/>
+    <component id="n8" name="touch" src="rflk1k" xy="-3,-51" size="500,590"/>
+    <image id="n1" name="n1" src="gk0nnia" pkg="0tyncec1" xy="163,0"/>
+    <text id="n2" name="name" xy="189,9" pivot="0.5,0.5" size="165,30" font="华康圆体W7(P)" fontSize="26" color="#008c9c" align="center" vAlign="middle" ubb="true" autoSize="none" text="天使翅膀&#xA;"/>
+    <image id="n12" name="n12" src="oox714" xy="149,65" size="245,43"/>
+    <text id="n3" name="power" xy="175,60" size="196,53" font="ui://0tyncec1x0conjj" fontSize="20" color="#00ff00" align="center" vAlign="middle" autoSize="none" text="i66666"/>
+    <component id="n5" name="progess" src="5v99nkb" pkg="0tyncec1" xy="21,543" size="458,30">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <image id="n9" name="n9" src="oox713" xy="30,494"/>
+    <text id="n10" name="levelInfo" xy="54,499" pivot="0.5,0.5" size="82,34" font="华康圆体W7(P)" fontSize="30" color="#764601" align="center" vAlign="middle" ubb="true" autoSize="none" text="五阶&#xA;"/>
+    <text id="n50" name="progessLabel" xy="47,563" pivot="0.5,0.5" size="134,29" font="华康圆体W7(P)" fontSize="18" color="#00515b" vAlign="middle" ubb="true" autoSize="none" text="50/100"/>
+    <image id="n19" name="n19" src="oox712" xy="646,5"/>
+    <text id="n20" name="fds221" xy="661,11" pivot="0.5,0.5" size="151,30" font="华康圆体W7(P)" fontSize="22" color="#00834d" align="center" vAlign="middle" ubb="true" autoSize="none" text="羽翼属性&#xA;"/>
+    <image id="n31" name="n31" src="oox710" xy="536,53" size="203,34"/>
+    <text id="n28" name="vxcw23" xy="536,56" pivot="0.5,0.5" size="203,29" font="华康圆体W7(P)" fontSize="20" align="center" vAlign="middle" ubb="true" autoSize="none" text="当前属性&#xA;"/>
+    <image id="n32" name="n32" src="oox710" xy="739,53" size="203,34"/>
+    <text id="n33" name="dsa2112" xy="739,56" pivot="0.5,0.5" size="203,29" font="华康圆体W7(P)" fontSize="20" align="center" vAlign="middle" ubb="true" autoSize="none" text="升星提升"/>
+    <image id="n37" name="listBg" src="gk0nni9" pkg="0tyncec1" xy="536,86" size="406,162"/>
+    <list id="n30" name="list" xy="536,86" size="406,162" touchable="false" overflow="scroll" margin="0,0,0,0" defaultItem="ui://d3en6n1n5v991g">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n22" name="be32" src="oox712" xy="653,263"/>
+    <text id="n23" name="fsq" xy="668,269" pivot="0.5,0.5" size="151,30" font="华康圆体W7(P)" fontSize="22" color="#00834d" align="center" vAlign="middle" ubb="true" autoSize="none" text="羽化消耗&#xA;"/>
+    <image id="n40" name="listBg" src="gk0nni9" pkg="0tyncec1" xy="534,311" size="407,162"/>
+    <component id="n41" name="cost1" src="5v991j" xy="541,333"/>
+    <component id="n42" name="cost2" src="5v991j" xy="642,333"/>
+    <component id="n43" name="cost3" src="5v991j" xy="743,333"/>
+    <component id="n52" name="cost4" src="5v991j" xy="844,332"/>
+    <text id="n62" name="textYuling" xy="537,433" size="403,35" font="华康圆体W7(P)" fontSize="20" color="#2e3341" align="center" vAlign="middle" leading="0" letterSpacing="1" autoSize="none" bold="true" singleLine="true" text="（当前拥有羽灵：0）"/>
+    <component id="n44" name="upBtn" src="tnbmnka" pkg="0tyncec1" xy="771,539" size="156,57">
+      <Button title="羽化" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n53" name="returnBtn" src="tnbmnka" pkg="0tyncec1" xy="544,539" size="156,57">
+      <Button title="返还羽灵" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <text id="n56" name="n56" xy="682,491" size="150,35" font="华康圆体W7(P)" fontSize="20" color="#2e3341" vAlign="middle" leading="0" letterSpacing="1" autoSize="none" bold="true" singleLine="true" text="选择羽灵注入"/>
+    <component id="n61" name="chooseBtn" src="rb401p" xy="643,491"/>
+    <graph id="n51" name="successEft" xy="271,227" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+  </displayList>
+</component>wjp82.xml|193|<component size="960,602">
+  <displayList>
+    <component id="n5" name="left" src="igzg16" xy="1,0"/>
+    <component id="n6" name="right" src="igzg17" xy="556,0"/>
+  </displayList>
+</component>

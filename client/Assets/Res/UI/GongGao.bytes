@@ -1,0 +1,21 @@
+package.xml|426|<packageDescription id="aw910de4" name="GongGao">
+  <resources>
+    <component id="twn4q" name="GgMainPanel" exported="true" size="1334,750"/>
+    <component id="yumar" name="GgOpenServerPanel" exported="true" size="848,586"/>
+    <component id="yumas" name="GgUpadatePanel" exported="true" size="848,586"/>
+    <component id="yumat" name="GgRealNamePanel" exported="true" size="848,586"/>
+  </resources>
+</packageDescription>twn4q.xml|439|<component size="1334,750">
+  <displayList>
+    <image id="n16" name="n16" src="gk0nnid" pkg="0tyncec1" xy="319,75" size="21,653"/>
+    <image id="n18" name="n18" src="j67wnhd" pkg="0tyncec1" xy="331,105" size="877,616"/>
+    <image id="n9" name="n9" src="j67wnhe" pkg="0tyncec1" xy="138,103" size="181,611"/>
+    <component id="n13" name="lightList" src="t5hdnfw" pkg="0tyncec1" xy="142,106" size="170,605"/>
+  </displayList>
+</component>yumar.xml|56|<component size="848,586">
+  <displayList/>
+</component>yumas.xml|56|<component size="848,586">
+  <displayList/>
+</component>yumat.xml|56|<component size="848,586">
+  <displayList/>
+</component>

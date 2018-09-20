@@ -1,0 +1,134 @@
+apkz1a.xml|666|<component size="609,256">
+  <displayList>
+    <loader id="n1" name="imgBg" xy="557,0" size="50,50" url="ui://00dfg718apkz13" align="right"/>
+    <loader id="n2" name="imgRole" xy="246,27" size="50,50" url="ui://00dfg718apkz10" align="center" vAlign="middle"/>
+    <text id="n3" name="txtName" xy="61,222" size="166,26" font="华康圆体W7(P)" fontSize="22" color="#ffffff" bold="true" text="名字最多七个字"/>
+    <text id="n4" name="txtLv" xy="254,222" size="51,26" font="华康圆体W7(P)" fontSize="22" color="#cacaca" text="Lv45"/>
+    <text id="n5" name="txtDuanwei" xy="338,220" size="83,26" font="华康圆体W7(P)" fontSize="22" color="#ffc13d" text="铂金2星"/>
+  </displayList>
+</component>apkz1b.xml|623|<component size="609,256">
+  <displayList>
+    <image id="n0" name="imgBg" src="apkz16" xy="0,0"/>
+    <loader id="n1" name="imgRole" xy="420,-1" size="50,50" url="ui://00dfg718apkz11" align="center" vAlign="middle"/>
+    <text id="n2" name="txtName" xy="333,222" size="166,26" font="华康圆体W7(P)" fontSize="22" color="#ffffff" bold="true" text="名字最多七个字"/>
+    <text id="n3" name="txtDuanwei" xy="82,221" size="83,26" font="华康圆体W7(P)" fontSize="22" color="#ffc13d" text="铂金2星"/>
+    <text id="n4" name="txtLv" xy="223,221" size="51,26" font="华康圆体W7(P)" fontSize="22" color="#cacaca" text="Lv45"/>
+  </displayList>
+</component>btvdm.xml|142|<component size="673,12" overflow="hidden">
+  <displayList>
+    <image id="n7" name="bar" src="sgyou" xy="0,0"/>
+  </displayList>
+</component>nah1w.xml|1511|<component size="1334,750">
+  <displayList>
+    <graph id="n2" name="imgBG" xy="0,0" size="1334,750" type="rect" lineSize="0"/>
+    <image id="n1" name="imgGameName" src="kn8vz" xy="373,245"/>
+  </displayList>
+  <transition name="fadeIn">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="0" endValue="1" duration="48" ease="Quad.In"/>
+    <item time="0" type="Alpha" target="n2" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
+    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
+    <item time="48" type="Alpha" target="n0" tween="true" startValue="1" ease="Quad.In"/>
+    <item time="48" type="Alpha" target="n1" tween="true" startValue="1" ease="Linear"/>
+    <item time="48" type="Alpha" target="n2" tween="true" startValue="1" ease="Linear"/>
+  </transition>
+  <transition name="fadeOut">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="1" endValue="0" duration="48"/>
+    <item time="0" type="Alpha" target="n2" tween="true" startValue="1" endValue="0" duration="48" ease="Linear"/>
+    <item time="0" type="Alpha" target="n1" tween="true" startValue="1" endValue="0" duration="48" ease="Linear"/>
+    <item time="48" type="Alpha" target="n0" tween="true" startValue="0"/>
+    <item time="48" type="Alpha" target="n1" tween="true" startValue="0" ease="Linear"/>
+    <item time="48" type="Alpha" target="n2" tween="true" startValue="0" ease="Linear"/>
+  </transition>
+</component>nah1y.xml|1331|<component size="1334,750">
+  <displayList>
+    <graph id="n1" name="imgBG" xy="0,0" size="1334,750" type="rect" fillColor="#ff000000"/>
+    <text id="n0" name="title" xy="253,111" size="810,456" font="华康圆体W7(P)" fontSize="50" color="#ffffff" align="center" vAlign="middle" leading="25" autoSize="none" text="健康游戏忠告&#xA;抵制不良游戏，拒绝盗版游戏。&#xA;注意自我保护，谨防受骗上当。&#xA;适度游戏益脑，沉迷游戏伤身。&#xA;合理安排时间，享受健康生活。"/>
+  </displayList>
+  <transition name="fadeIn">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
+    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
+    <item time="48" type="Alpha" target="n0" tween="true" startValue="1" ease="Linear"/>
+    <item time="48" type="Alpha" target="n1" tween="true" startValue="1" ease="Linear"/>
+  </transition>
+  <transition name="fadeOut">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="1" endValue="0" duration="48" ease="Linear"/>
+    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="0" duration="48" ease="Linear"/>
+    <item time="48" type="Alpha" target="n0" tween="true" startValue="0" ease="Linear"/>
+    <item time="48" type="Alpha" target="n1" tween="true" startValue="0" ease="Linear"/>
+  </transition>
+</component>package.xml|1277|<packageDescription id="00dfg718" name="Loader">
+  <resources>
+    <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
+    <component id="apkz1a" name="TiantiLeft" size="609,256"/>
+    <component id="apkz1b" name="TiantiRight" size="609,256"/>
+    <component id="btvdm" name="Bar" size="673,12"/>
+    <component id="nah1w" name="CompanyName" exported="true" size="1334,750"/>
+    <component id="nah1y" name="GamePrompt" exported="true" size="1334,750"/>
+    <component id="qpe61" name="AssetsLoader" exported="true" size="1334,750"/>
+    <component id="syhtg" name="LoadingBar" size="699,26"/>
+    <component id="yn2mp" name="Light" exported="true" size="143,151"/>
+    <image id="apkz10" name="juese1" size="434,318"/>
+    <image id="apkz11" name="juese2" size="461,379"/>
+    <image id="apkz12" name="VS" size="179,155"/>
+    <image id="apkz13" name="zuo1" size="609,256"/>
+    <image id="apkz16" name="you1" size="609,256"/>
+    <image id="kn8vz" name="logo" size="634,229"/>
+    <image id="qifav" name="bg1" size="1334,750"/>
+    <image id="sgyos" name="progressBg" size="75,20" scale="9grid" scale9grid="29,0,15,15"/>
+    <image id="sgyot" name="jinduguangdian" size="82,73"/>
+    <image id="sgyou" name="jindutiao" size="673,12"/>
+  </resources>
+</packageDescription>qpe61.xml|2745|<component size="1334,750" extention="Label">
+  <controller name="cont1" pages="0,tiantiAnimHide,1,tiantiAnimShow" selected="0" transitions="*-0=t1,*-1=t0"/>
+  <displayList>
+    <loader id="n7" name="icon" xy="667,375" size="0,0" url="ui://00dfg718qifav" align="center" vAlign="middle" playing="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <component id="n14" name="loaderBar" src="syhtg" xy="291,686">
+      <ProgressBar max="100"/>
+    </component>
+    <text id="n15" name="loadingTips" xy="76,641" size="1130,52" font="华康圆体W7(P)" fontSize="24" color="#c0e0fe" align="center" vAlign="middle" letterSpacing="1" ubb="true" autoSize="none" bold="true" shadowColor="#000000" shadowOffset="1,1" text="是地方撒的噶速度噶速度过"/>
+    <component id="n16" name="n16" src="apkz1a" xy="73,174"/>
+    <component id="n17" name="n17" src="apkz1b" xy="606,174"/>
+    <image id="n18" name="n18" src="apkz12" xy="544,216"/>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Visible" target="n18" value="false"/>
+    <item time="0" type="XY" target="n16" tween="true" startValue="-509,174" endValue="-366,174" duration="6" ease="Linear"/>
+    <item time="0" type="XY" target="n17" tween="true" startValue="1228,174" endValue="980,174" duration="6" ease="Linear"/>
+    <item time="6" type="XY" target="n16" tween="true" startValue="-366,174" endValue="73,174" duration="6" ease="Linear"/>
+    <item time="6" type="XY" target="n17" tween="true" startValue="980,174" endValue="606,174" duration="6" ease="Linear"/>
+    <item time="12" type="Visible" target="n18" value="false"/>
+    <item time="12" type="XY" target="n17" tween="true" startValue="606,174" endValue="593,188" duration="6"/>
+    <item time="12" type="XY" target="n16" tween="true" startValue="73,174" endValue="77,138" duration="6" ease="Sine.Out"/>
+    <item time="18" type="Pivot" target="n18" value="0.5,0.5"/>
+    <item time="18" type="Scale" target="n18" tween="true" startValue="3,3" endValue="1,1" duration="6" ease="Bounce.In"/>
+    <item time="18" type="Shake" target="n18" value="3,0.5"/>
+    <item time="18" type="Visible" target="n18" value="true"/>
+    <item time="18" type="XY" target="n17" tween="true" startValue="593,188" ease="Linear"/>
+    <item time="18" type="XY" target="n16" tween="true" startValue="77,138" ease="Linear"/>
+    <item time="24" type="Scale" target="n18" tween="true" startValue="1,1"/>
+    <item time="24" type="Shake" target="n18" value="3,0.5"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="Visible" target="n16" value="false"/>
+    <item time="0" type="Visible" target="n17" value="false"/>
+    <item time="0" type="Visible" target="n18" value="false"/>
+  </transition>
+</component>syhtg.xml|714|<component size="699,26" opaque="false" extention="ProgressBar">
+  <displayList>
+    <image id="n8" name="n8" src="sgyos" xy="0,1" size="696,20"/>
+    <component id="n9" name="bar" src="btvdm" xy="11,3"/>
+    <text id="n6" name="txt_title" xy="-184,30" size="1067,28" font="华康圆体W7(P)" fontSize="20" color="#c0e0fe" align="center" vAlign="middle" leading="0" letterSpacing="1" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n12" name="ani" src="yn2mp" xy="615,-63" pivot="0.5,0.5">
+      <relation target="n9" sidePair="right-right"/>
+    </component>
+  </displayList>
+  <ProgressBar/>
+</component>yn2mp.xml|143|<component size="143,151" opaque="false">
+  <displayList>
+    <image id="n10" name="n10" src="sgyot" xy="29,42"/>
+  </displayList>
+</component>

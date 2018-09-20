@@ -1,0 +1,43 @@
+package.xml|633|<packageDescription id="bveep9rg" name="AccConsum">
+  <resources>
+    <atlas id="atlas0" size="1024,512" file="atlas0.png"/>
+    <component id="sjzg7" name="ConsumPanel" exported="true" size="888,612"/>
+    <component id="sjzg8" name="ConsumItem" exported="true" size="834,108"/>
+    <image id="o67za" name="yilingqu" size="94,40"/>
+    <image id="sjzg5" name="dian" size="10,10"/>
+    <image id="snzyb" name="leijixiaofei" size="214,52"/>
+    <image id="snzyc" name="861X602(2)" size="861,327" scale="9grid" scale9grid="29,226,800,81"/>
+    <image id="snzye" name="xiaofeiwenzi" size="482,139"/>
+  </resources>
+</packageDescription>sjzg7.xml|772|<component size="888,612">
+  <displayList>
+    <image id="n9" name="n9" src="snzyc" xy="21,4" size="861,599"/>
+    <image id="n10" name="n10" src="snzye" xy="38,28"/>
+    <text id="n2" name="n2" xy="670,183" size="95,22" font="华康圆体W7(P)" fontSize="18" color="#1eff00" strokeColor="#240000" strokeSize="2" text="累计消费："/>
+    <text id="n3" name="cumulate" xy="761,183" size="71,22" font="华康圆体W7(P)" fontSize="18" color="#1eff00" strokeColor="#240000" strokeSize="2" text="999元宝">
+      <relation target="n2" sidePair="left-right"/>
+    </text>
+    <list id="n7" name="itemList" xy="38,228" size="830,365" overflow="scroll" scrollBarFlags="128" margin="0,0,0,0" lineGap="8"/>
+    <image id="n8" name="n8" src="gk0nnid" pkg="0tyncec1" xy="0,31"/>
+  </displayList>
+</component>sjzg8.xml|1173|<component size="834,108">
+  <controller name="getRec" pages="0,no,1,can,2,rec" selected="0"/>
+  <displayList>
+    <image id="n2" name="n2" src="keyenis" pkg="0tyncec1" xy="0,-3" size="834,113"/>
+    <image id="n6" name="n6" src="sjzg5" xy="31,68"/>
+    <text id="n3" name="jine" xy="44,59" size="117,26" font="华康圆体W7(P)" fontSize="22" color="#2e3341" text="达到50元宝"/>
+    <list id="n18" name="reward" xy="252,6" size="373,95" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" margin="0,0,2,2" colGap="5"/>
+    <component id="n15" name="noRec" src="l2b8nnq" pkg="0tyncec1" xy="662,31" size="136,46">
+      <gearDisplay controller="getRec" pages="0"/>
+      <Button title="前往商城" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n14" name="canRec" src="l2b8nnq" pkg="0tyncec1" xy="662,31" size="136,46">
+      <gearDisplay controller="getRec" pages="1"/>
+      <Button title="领取奖励" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <image id="n19" name="received" src="o67za" xy="683,34">
+      <gearDisplay controller="getRec" pages="2"/>
+    </image>
+    <image id="n20" name="n20" src="snzyb" xy="1,0"/>
+  </displayList>
+</component>

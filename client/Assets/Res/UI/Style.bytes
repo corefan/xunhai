@@ -1,0 +1,70 @@
+eieka.xml|1110|<component size="324,138">
+  <displayList>
+    <image id="n1" name="n1" src="eieknkm" pkg="0tyncec1" xy="0,82" size="323,56"/>
+    <image id="n2" name="bg" src="keyenis" pkg="0tyncec1" xy="24,0" size="268,114"/>
+    <image id="n3" name="selectBg" src="keyenir" pkg="0tyncec1" xy="25,0" size="268,114"/>
+    <text id="n4" name="name" xy="138,22" pivot="0.5,0.5" size="149,29" font="华康圆体W7(P)" fontSize="24" color="#292c34" vAlign="middle" ubb="true" autoSize="none" text="防守打法&#xA;"/>
+    <image id="n5" name="n5" src="eiek7" xy="138,57"/>
+    <text id="n6" name="power" xy="182,62" size="96,31" fontSize="24" color="#da620a" autoSize="none" text="3456"/>
+    <image id="n10" name="equipMark" src="eieknko" pkg="0tyncec1" xy="220,4"/>
+    <image id="n8" name="n8" src="eieknkn" pkg="0tyncec1" xy="38,11" size="94,94"/>
+    <loader id="n9" name="img" xy="43,16" size="84,84" url="ui://d3en6n1nwjp8b" align="center" vAlign="middle" fill="scale"/>
+    <image id="n7" name="lock" src="igzgnk7" pkg="0tyncec1" xy="62,42"/>
+    <image id="n11" name="selectHight" src="eiek9" xy="22,-3"/>
+  </displayList>
+</component>eiekb.xml|477|<component size="218,28" pivot="0.2,0">
+  <displayList>
+    <text id="n0" name="TitleName" xy="4,0" size="75,26" font="华康圆体W7(P)" fontSize="22" color="#1e67af" align="right" ubb="true" autoSize="none" text="生命:"/>
+    <text id="n1" name="TitleValue" xy="85,0" size="88,26" font="华康圆体W7(P)" fontSize="22" color="#1e67af" ubb="true" autoSize="none" text="999999"/>
+    <image id="n2" name="line" src="5v99nkc" pkg="0tyncec1" xy="6,26" size="204,1"/>
+  </displayList>
+</component>glhb2.xml|2863|<component size="946,590">
+  <displayList>
+    <image id="n6" name="n6" src="eiek6" xy="272,41" size="486,308"/>
+    <image id="n3" name="listBg" src="gk0nni9" pkg="0tyncec1" xy="15,43" size="289,544"/>
+    <component id="n2" name="list" src="t5hdnfw" pkg="0tyncec1" xy="0,51" size="320,525"/>
+    <graph id="n5" name="role3D" xy="504,484" size="100,100"/>
+    <image id="n7" name="n7" src="gk0nnia" pkg="0tyncec1" xy="728,0"/>
+    <text id="n8" name="name" xy="754,9" pivot="0.5,0.5" size="165,30" font="华康圆体W7(P)" fontSize="26" color="#008c9c" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <image id="n13" name="n13" src="uchhnl1" pkg="0tyncec1" xy="728,64" size="218,34"/>
+    <image id="n18" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="728,96" size="218,152"/>
+    <list id="n19" name="proList" xy="736,102" size="200,140" touchable="false" selectionMode="none" overflow="scroll" margin="0,0,0,0" defaultItem="ui://jqof8qcoeiekb"/>
+    <text id="n20" name="proName" xy="729,67" pivot="0.5,0.5" size="212,29" font="华康圆体W7(P)" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="属性加成&#xA;"/>
+    <image id="n12" name="n12" src="uchhnl1" pkg="0tyncec1" xy="728,256" size="218,34"/>
+    <text id="n21" name="effectName" xy="731,259" pivot="0.5,0.5" size="212,29" font="华康圆体W7(P)" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="时装效果&#xA;"/>
+    <image id="n23" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="728,289" size="218,68"/>
+    <text id="n25" name="eftTxt" xy="730,292" pivot="0.5,0.5" size="212,58" font="华康圆体W7(P)" fontSize="22" color="#00620e" align="center" ubb="true" autoSize="none" text="&#xA;"/>
+    <image id="n11" name="n11" src="uchhnl2" pkg="0tyncec1" xy="728,364" size="218,34"/>
+    <text id="n22" name="descName" xy="730,368" pivot="0.5,0.5" size="212,29" font="华康圆体W7(P)" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="描述&#xA;"/>
+    <image id="n24" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="728,397" size="218,130"/>
+    <text id="n27" name="descTxt" xy="731,400" pivot="0.5,0.5" size="212,124" font="华康圆体W7(P)" fontSize="22" color="#2e3341" align="center" ubb="true" autoSize="none" text=""/>
+    <component id="n32" name="allBtn" src="tnbmnka" pkg="0tyncec1" xy="767,534" size="150,56">
+      <Button title="装备" icon="ui://0tyncec1x0conj1" selectedIcon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n33" name="touch" src="t5hdnfs" pkg="0tyncec1" xy="302,3" size="425,590"/>
+    <text id="n34" name="getInfo" xy="418,542" pivot="0.5,0.5" size="228,29" font="华康圆体W7(P)" fontSize="24" color="#ffc36d" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#003253" strokeSize="2" text="激活可预览&#xA;"/>
+  </displayList>
+</component>package.xml|632|<packageDescription id="jqof8qco" name="Style">
+  <resources>
+    <atlas id="atlas0" size="1024,512" file="atlas0.png"/>
+    <component id="eieka" name="StyleItem" exported="true" size="324,138"/>
+    <component id="eiekb" name="StyleProp" exported="true" size="218,28"/>
+    <component id="glhb2" name="StylePanel" exported="true" size="946,590"/>
+    <component id="v83rc" name="StyleActivePanel" exported="true" size="1334,750"/>
+    <image id="eiek6" name="zhuangshi" size="522,331"/>
+    <image id="eiek7" name="zhanli" size="38,33"/>
+    <image id="eiek9" name="xuanzhong" size="273,121"/>
+  </resources>
+</packageDescription>v83rc.xml|813|<component size="1334,750">
+  <displayList>
+    <graph id="n8" name="n8" xy="0,0" size="1334,760" type="rect" fillColor="#99000000"/>
+    <graph id="n9" name="eft1" xy="620,330" size="100,100"/>
+    <graph id="n10" name="eft2" xy="620,330" size="100,100"/>
+    <graph id="n11" name="role3D" xy="620,570" size="100,100"/>
+    <image id="n12" name="n12" src="v83rnni" pkg="0tyncec1" xy="546,93"/>
+    <image id="n13" name="n13" src="v83rnnj" pkg="0tyncec1" xy="507,503" size="337,43">
+      <relation target="n14" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n14" name="name" xy="554,509" pivot="0.5,0.5" size="258,32" font="华康圆体W7(P)" fontSize="26" color="#008c9c" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="天使翅膀天使翅膀&#xA;"/>
+  </displayList>
+</component>

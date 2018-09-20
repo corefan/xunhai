@@ -1,0 +1,138 @@
+6rikz.xml|127|<component size="241,34">
+  <displayList>
+    <image id="n2" name="n21" src="6rik10" xy="9,-25"/>
+  </displayList>
+</component>cbu01c.xml|282|<component size="200,25">
+  <displayList>
+    <image id="n3" name="n3" src="igkdnlb" pkg="0tyncec1" xy="8,-3" size="380,2"/>
+    <richtext id="n2" name="desc" xy="22,0" size="337,24" font="方正粗圆简体" fontSize="20" color="#eeee22" autoSize="none" text=""/>
+  </displayList>
+</component>fqe0c.xml|202|<component size="800,400">
+  <displayList>
+    <component id="n0" name="SkepEquip" src="hb6f8" xy="397,0"/>
+    <component id="n1" name="PlayerEquip" src="hb6f8" xy="0,0"/>
+  </displayList>
+</component>hb6f8.xml|639|<component size="400,440" overflow="scroll">
+  <displayList>
+    <image id="n0" name="bg" src="hrgcnng" pkg="0tyncec1" xy="-7,-8" size="413,461"/>
+    <component id="n4" name="TipsTopComp" src="hb6f9" xy="6,5"/>
+    <image id="n1" name="IsEquipMask" src="eieknko" pkg="0tyncec1" xy="323,4"/>
+    <component id="n9" name="base" src="owh818" xy="6,152" size="384,47"/>
+    <component id="n10" name="extra" src="owh811" xy="0,201"/>
+    <component id="n11" name="wakan" src="owh812" xy="0,238"/>
+    <component id="n12" name="brand" src="owh813" xy="0,321"/>
+  </displayList>
+  <relation target="n0" sidePair="bottomext-bottom"/>
+</component>hb6f9.xml|1231|<component size="396,152">
+  <displayList>
+    <loader id="n7" name="bg" xy="0,0" size="396,109" fill="scaleFree"/>
+    <text id="n2" name="itemNameText" xy="115,11" size="77,28" font="方正粗圆简体" fontSize="24" color="#3dc476" text="灵魂刀"/>
+    <text id="n3" name="itemLevelText" xy="115,48" size="47,24" font="方正粗圆简体" fontSize="20" color="#bad4dc" ubb="true" text="50级"/>
+    <component id="n9" name="icon" src="ek9hnha" pkg="0tyncec1" xy="7,13"/>
+    <text id="n4" name="careerText" xy="115,80" size="50,24" font="方正粗圆简体" fontSize="20" color="#bad4dc" ubb="true" text="职业:"/>
+    <text id="n5" name="itemType" xy="262,48" size="85,24" font="方正粗圆简体" fontSize="20" color="#bad4dc" text="装备种类"/>
+    <loader id="n8" name="compareMask" xy="352,117" size="23,27" align="center" vAlign="middle" fill="scaleMatchHeight"/>
+    <text id="n10" name="powerText" xy="12,114" size="211,33" font="ui://0tyncec1x0conjj" fontSize="20" autoSize="height" text="i2856"/>
+    <text id="n11" name="addText" xy="239,114" size="111,33" font="方正粗圆简体" fontSize="20" color="#bad4dc" vAlign="middle" ubb="true" autoSize="none" text="(+321312)"/>
+    <image id="n12" name="n12" src="igkdnlb" pkg="0tyncec1" xy="5,149" size="380,2"/>
+  </displayList>
+</component>i9rp1a.xml|622|<component size="391,138">
+  <displayList>
+    <image id="n2" name="n2" src="igkdnlb" pkg="0tyncec1" xy="8,3" size="380,2"/>
+    <text id="n3" name="title" xy="47,13" size="198,24" font="方正粗圆简体" fontSize="20" color="#ffa200" vAlign="middle" leading="0" ubb="true" autoSize="none" text=""/>
+    <loader id="n4" name="icon" xy="13,0" size="50,50" align="center" vAlign="middle" fill="scale"/>
+    <text id="n5" name="desc" xy="23,44" size="369,92" font="方正粗圆简体" fontSize="20" color="#bad4dc" leading="1" ubb="true" autoSize="none" text=""/>
+  </displayList>
+  <relation target="n5" sidePair="bottomext-bottom"/>
+</component>m24po.xml|127|<component size="241,34">
+  <displayList>
+    <image id="n1" name="icon" src="u3j6w" xy="9,-25"/>
+  </displayList>
+</component>owh811.xml|325|<component size="400,40">
+  <displayList>
+    <image id="n0" name="n0" src="igkdnlb" pkg="0tyncec1" xy="10,2" size="380,2"/>
+    <list id="n1" name="list" xy="6,6" size="384,30" selectionMode="none" margin="0,0,15,0" lineItemCount="1" defaultItem="ui://ixdopynlowh815">
+      <item/>
+    </list>
+  </displayList>
+</component>owh812.xml|500|<component size="400,86">
+  <displayList>
+    <image id="n2" name="n2" src="igkdnlb" pkg="0tyncec1" xy="10,2" size="380,2"/>
+    <text id="n0" name="name" xy="24,6" size="198,24" font="方正粗圆简体" fontSize="20" color="#ffa200" vAlign="middle" ubb="true" autoSize="height" text="注灵:【5级】"/>
+    <list id="n1" name="list" xy="0,32" size="384,50" selectionMode="none" margin="0,0,15,0" lineItemCount="1" defaultItem="ui://ixdopynlowh816">
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>owh813.xml|56|<component size="400,110">
+  <displayList/>
+</component>owh815.xml|216|<component size="200,25">
+  <displayList>
+    <text id="n1" name="desc" xy="0,0" size="198,24" font="方正粗圆简体" fontSize="20" color="#54a3d5" ubb="true" autoSize="height" text="法术攻击：+15%"/>
+  </displayList>
+</component>owh816.xml|262|<component size="200,25">
+  <displayList>
+    <text id="n1" name="TitleValue" xy="0,0" size="198,24" font="方正粗圆简体" fontSize="20" color="#3dc476" vAlign="middle" ubb="true" autoSize="height" text="[color=#00ff00] 物理攻击+ 15%[/color]"/>
+  </displayList>
+</component>owh818.xml|256|<component size="384,48">
+  <displayList>
+    <list id="n1" name="list" xy="0,0" size="384,48" selectionMode="none" margin="0,0,15,0" lineItemCount="1" defaultItem="ui://ixdopynlowh819">
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>owh819.xml|601|<component size="204,25">
+  <displayList>
+    <text id="n2" name="TitleName" xy="0,0" size="68,25" font="方正粗圆简体" fontSize="21" color="#bad4dc" ubb="true" text="生命：">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <text id="n3" name="TitleValue" xy="65,1" size="139,25" font="方正粗圆简体" fontSize="21" color="#bad4dc" ubb="true" text="999999[color=#00ff00] + 9999[/color]">
+      <relation target="n2" sidePair="left-right"/>
+    </text>
+    <loader id="n4" name="CompareMask" xy="208,-2" size="23,27" align="center" vAlign="middle" fill="scaleMatchHeight"/>
+  </displayList>
+</component>package.xml|1866|<packageDescription id="ixdopynl" name="Tips">
+  <resources>
+    <atlas id="atlas0" size="512,128" file="atlas0.png"/>
+    <component id="6rikz" name="AutoFightTips" exported="true" size="241,34"/>
+    <component id="cbu01c" name="EquipmentInfoTips_BrandEmptyItem" exported="true" size="200,25"/>
+    <component id="fqe0c" name="EquipmentInfoCompareTips" exported="true" size="800,400"/>
+    <component id="hb6f8" name="EquipmentInfoTips" exported="true" size="400,440"/>
+    <component id="hb6f9" name="EquipmentInfoTipsTop" exported="true" size="396,152"/>
+    <component id="i9rp1a" name="EquipmentInfoTips_BrandItem" exported="true" size="391,138"/>
+    <component id="m24po" name="AutoRunTips" exported="true" size="241,34"/>
+    <component id="owh811" name="EquipmentInfoTips_Extra" size="400,40"/>
+    <component id="owh812" name="EquipmentInfoTips_Wakan" size="400,86"/>
+    <component id="owh813" name="EquipmentInfoTips_Brand" size="400,110"/>
+    <component id="owh815" name="EquipmentInfoTips_ExtraItem" size="200,25"/>
+    <component id="owh816" name="EquipmentInfoTips_WakanItem" size="200,25"/>
+    <component id="owh818" name="EquipmentInfoTips_Base" size="384,48"/>
+    <component id="owh819" name="EquipmentInfoTips_BaseItem" size="204,25"/>
+    <component id="qwdnl" name="PowerTips" exported="true" size="300,50"/>
+    <component id="roks1d" name="LoginNameTips" exported="true" size="478,81"/>
+    <component id="vl9cy" name="RoleSkillTips" exported="true" size="281,121"/>
+    <image id="6rik10" name="auto_fight" size="217,83" exported="true"/>
+    <image id="erysm" name="底" size="285,27" exported="true"/>
+    <image id="erysn" name="底(2)" size="285,28" exported="true"/>
+    <image id="hb6f7" name="x" size="43,44" exported="true"/>
+    <image id="u3j6w" name="auto_find" size="217,83" exported="true"/>
+  </resources>
+</packageDescription>qwdnl.xml|400|<component size="300,50">
+  <displayList>
+    <loader id="n1" name="bg" xy="7,1" size="285,50" url="ui://ixdopynlerysm" fill="scaleFree"/>
+    <text id="n0" name="title" xy="-72,3" size="444,43" font="ui://0tyncec1hhg0eg" fontSize="16" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>roks1d.xml|346|<component size="478,81">
+  <displayList>
+    <graph id="n8" name="bg0" xy="2,1" size="474,79" type="rect" lineColor="#ff999999" corner="24"/>
+    <richtext id="n7" name="richTextTips" xy="0,0" size="478,81" font="方正粗圆简体" fontSize="18" align="center" vAlign="middle" leading="15" ubb="true" autoSize="none" text=""/>
+  </displayList>
+</component>vl9cy.xml|500|<component size="281,121">
+  <displayList>
+    <image id="n0" name="img_bg" src="hrgcnng" pkg="0tyncec1" xy="0,0" size="281,121"/>
+    <text id="n1" name="label_skill_name" xy="29,22" size="227,26" font="方正粗圆简体" fontSize="20" color="#ffa200" leading="0" letterSpacing="2" autoSize="none" text="基本剑术"/>
+    <text id="n2" name="label_skill_desc" xy="28,49" size="228,52" font="方正粗圆简体" fontSize="20" color="#bad4dc" leading="6" autoSize="none" text="战士的入门剑术，也是最基础最牢靠的剑术。"/>
+  </displayList>
+</component>

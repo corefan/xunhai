@@ -1,0 +1,24 @@
+kbgf8.xml|1041|<component size="887,609">
+  <displayList>
+    <image id="n0" name="n0" src="kbgf9" xy="27,3"/>
+    <image id="n1" name="n1" src="gk0nnid" pkg="0tyncec1" xy="2,30"/>
+    <image id="n5" name="n5" src="kbgf7" xy="496,26"/>
+    <image id="n3" name="n3" src="kbgf2" xy="131,96" size="504,137"/>
+    <text id="n4" name="n4" xy="136,107" size="492,98" font="华康圆体W7(P)" fontSize="26" color="#dce5ff" align="center" vAlign="middle" leading="10" autoSize="none" text="输入正确的兑奖码，即可获得对应的奖励奖励通过邮箱发送"/>
+    <image id="n6" name="n6" src="kbgf6" xy="175,269"/>
+    <image id="n7" name="n7" src="x0conjw" pkg="0tyncec1" xy="183,343" size="400,50"/>
+    <text id="n9" name="txtShuru" xy="186,346" size="392,41" input="true" prompt="请输入兑奖码" font="华康圆体W7(P)" fontSize="22" color="#a7a7a7" align="center" vAlign="middle" autoSize="none" singleLine="true" text=""/>
+    <component id="n10" name="btnQD" src="ipc7nq8" pkg="0tyncec1" xy="282,449" size="219,63">
+      <Button title="兑换奖励" icon="ui://0tyncec1dmzwnna"/>
+    </component>
+  </displayList>
+</component>package.xml|484|<packageDescription id="7hqeitv8" name="RewardCode">
+  <resources>
+    <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
+    <component id="kbgf8" name="CodePanel" exported="true" size="887,609"/>
+    <image id="kbgf2" name="duihuakuang" size="85,56" scale="9grid" scale9grid="22,12,9,12"/>
+    <image id="kbgf6" name="wenzi" size="418,61"/>
+    <image id="kbgf7" name="renwu" size="389,576"/>
+    <image id="kbgf9" name="1" size="861,602"/>
+  </resources>
+</packageDescription>

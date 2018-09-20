@@ -1,0 +1,1337 @@
+5v99nkb.xml|628|<component size="458,30" extention="ProgressBar">
+  <displayList>
+    <image id="n0" name="bg" src="x0conjs" xy="0,0" size="458,30">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n7" name="bar" src="x0conjr" xy="26,8" size="408,10"/>
+    <text id="n6" name="title" xy="154,-1" pivot="0.5,0.5" size="149,29" visible="false" font="方正粗圆简体" fontSize="14" color="#cccccc" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#4e4e4e" text="">
+      <relation target="" sidePair="middle-middle,center-center"/>
+    </text>
+  </displayList>
+  <ProgressBar/>
+</component>5v99nkh.xml|300|<component size="29,29">
+  <controller name="state" pages="0,0,1,1" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="5v99nke" xy="0,0"/>
+    <image id="n1" name="n1" src="5v99nkf" xy="-1,-4">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+  </displayList>
+</component>9u5tnlj.xml|887|<component size="278,27" opaque="false" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n3" name="bg" xy="-4,-3" size="286,32" fill="scaleFree">
+      <relation target="n2" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n0" name="icon" src="5v99nkd" xy="0,0">
+      <relation target="" sidePair="left-left"/>
+    </image>
+    <image id="n1" name="check" src="5v99nkf" xy="-4,-6">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="left-left"/>
+    </image>
+    <richtext id="n2" name="title" xy="33,1" size="244,24" touchable="false" font="方正粗圆简体" fontSize="20" color="#434343" vAlign="middle" ubb="true" autoSize="height" text="">
+      <relation target="" sidePair="left-left,width-width"/>
+    </richtext>
+  </displayList>
+  <Button mode="Check"/>
+</component>a8b4nlt.xml|779|<component size="64,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="keyenis" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="n2" src="keyenir" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3" name="title" xy="0,0" size="64,64" fontSize="22" color="#666666" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Check"/>
+</component>a8b4nlu.xml|705|<component size="249,18" extention="ProgressBar">
+  <displayList>
+    <image id="n0" name="bg" src="mx4pnkw" xy="0,2" size="249,14">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n7" name="bar" src="mx4pnkv" xy="2,4" size="245,10">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n6" name="title" xy="49,-5" pivot="0.5,0.5" size="149,29" visible="false" font="方正粗圆简体" fontSize="14" color="#333333" align="center" vAlign="middle" ubb="true" autoSize="none" text="">
+      <relation target="" sidePair="middle-middle,center-center"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>a8b4nlx.xml|257|<component size="76,74" extention="Button">
+  <displayList>
+    <image id="n0" name="n0" src="a8b4nlw" xy="-11,-12"/>
+    <image id="n1" name="n1" src="a8b4nlv" xy="16,16"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>deqznhb.xml|1538|<component size="97,53" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <loader id="n10" name="bg" xy="0,0" size="97,53" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n9" name="layer0" xy="0,0" size="97,53" touchable="false" url="ui://0tyncec1ovhpnlm" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n8" name="layer1" xy="0,0" size="97,53" touchable="false" url="ui://0tyncec1ovhpnlp" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="97,53" font="方正粗圆简体" fontSize="22" color="#cccccc" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="游戏中">
+      <relation target="" sidePair="width-width,height-height"/>
+      <gearColor controller="button" pages="0,1" values="#2e3341|#cccccc" default="#2e3341"/>
+    </text>
+    <image id="n7" name="red" src="xnis91" xy="77,1">
+      <relation target="" sidePair="right-right,top-top%"/>
+    </image>
+    <loader id="n5" name="icon" xy="0,0" size="50,30" touchable="false" align="center" vAlign="middle" autoSize="true" playing="false"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>ek9hnha.xml|1487|<component size="88,88" extention="Button">
+  <displayList>
+    <loader id="n0" name="bg" xy="0,0" size="88,88" touchable="false" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n1" name="icon" xy="0,0" size="88,88" touchable="false" align="center" vAlign="middle" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n2" name="title" xy="2,57" size="84,27" font="方正粗圆简体" fontSize="23" color="#e5e5e5" align="right" vAlign="middle" ubb="true" autoSize="none" strokeColor="#2e4552" text="">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </text>
+    <image id="n3" name="red" src="xnis91" xy="65,6" visible="false">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+    <text id="n4" name="wakanLevel" xy="35,58" size="51,28" font="ui://0tyncec1hhg0eg" fontSize="12" align="right" vAlign="middle" autoSize="none" text=""/>
+    <loader id="n5" name="leftTopLoader" xy="0,0" size="41,40" align="center" vAlign="middle" fill="scaleFree"/>
+    <loader id="n6" name="mask" xy="4,4" size="80,80" visible="false" touchable="false" url="ui://0tyncec1mcq1nns" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="n1" sidePair="width-width,height-height"/>
+      <relation target="n1" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>f06tnnd.xml|249|<component size="130,60" extention="Button">
+  <displayList>
+    <loader id="n4" name="icon" xy="48,12" size="32,32" align="center" vAlign="middle" playing="false"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.96"/>
+</component>f06tnne.xml|400|<component size="31,46">
+  <displayList>
+    <image id="n1" name="n1" src="mkaznh3" pkg="0tyncec1" xy="0,0" size="31,46">
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n0" name="content" xy="10,11" size="10,24" font="方正粗圆简体" fontSize="20" ubb="true" text=""/>
+  </displayList>
+  <relation target="n1" sidePair="width-width,height-height"/>
+</component>gk0nnig.xml|821|<component size="80,36" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n16" name="icon" xy="0,0" size="80,36" fill="scaleFree">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n18" name="downLayer" xy="0,0" size="80,36" fill="scaleFree">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n19" name="title" xy="0,0" size="80,36" font="方正粗圆简体" fontSize="20" color="#ded4fc" align="center" vAlign="middle" autoSize="shrink" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>gp6dnfh.xml|498|<component size="336,22" extention="ProgressBar">
+  <displayList>
+    <image id="n1" name="bg" src="gp6dnfj" xy="0,0" size="333,23"/>
+    <component id="n2" name="bar" src="gp6dnfk" xy="13,5" size="307,11"/>
+    <text id="n3" name="Label" xy="117,-19" size="104,20" font="方正粗圆简体" fontSize="16" color="#fef1d5" bold="true" strokeColor="#000000" text="回城中...0.2s">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>gp6dnfk.xml|144|<component size="307,11" overflow="hidden">
+  <displayList>
+    <image id="n0" name="bar" src="gp6dnfi" xy="0,0"/>
+  </displayList>
+</component>gp6dnfl.xml|189|<component size="336,32">
+  <displayList>
+    <component id="n0" name="bar" src="gp6dnfh" xy="0,8">
+      <ProgressBar value="100" max="100"/>
+    </component>
+  </displayList>
+</component>gvrnnh4.xml|830|<component size="210,44" opaque="false" extention="Label">
+  <displayList>
+    <image id="n3" name="bg" src="n2mycf" xy="17,3" size="187,39">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <text id="n1" name="title" xy="39,9" size="145,31" font="方正粗圆简体" fontSize="18" color="#e5e5e5" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="">
+      <relation target="n3" sidePair="width-width,left-left"/>
+    </text>
+    <loader id="n2" name="icon" xy="-1,0" size="42,43" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="left-left"/>
+    </loader>
+    <component id="n4" name="btnAdd" src="t5hdnfq" xy="176,6" size="33,33">
+      <relation target="" sidePair="right-right"/>
+      <Button icon="ui://0tyncec1n2myci"/>
+    </component>
+  </displayList>
+</component>gvrnnh7.xml|1535|<component size="127,99" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <loader id="n8" name="line00" xy="13,0" size="110,2" touchable="false" url="ui://0tyncec1jqanca" align="center" vAlign="middle" fill="scaleFree" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="0,1"/>
+    </loader>
+    <loader id="n7" name="line01" xy="13,97" size="110,2" touchable="false" url="ui://0tyncec1jqanca" align="center" vAlign="middle" fill="scaleFree" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="0,1"/>
+    </loader>
+    <loader id="n6" name="bg" xy="0,0" size="139,105" touchable="false" url="ui://0tyncec1jqanc9" align="center" vAlign="middle" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="1"/>
+    </loader>
+    <loader id="n12" name="layer0" xy="43,36" size="50,30" touchable="false" align="center" vAlign="middle" playing="false">
+      <gearDisplay controller="button" pages="0"/>
+    </loader>
+    <loader id="n13" name="layer1" xy="43,36" size="50,30" touchable="false" align="center" vAlign="middle" playing="false">
+      <gearDisplay controller="button" pages="1"/>
+    </loader>
+    <text id="n10" name="title" xy="24,16" size="83,73" font="方正粗圆简体" fontSize="30" color="#202020" align="center" vAlign="middle" autoSize="none" strokeColor="#666600" text=""/>
+    <image id="n14" name="red" src="xnis91" xy="97,3" visible="false"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>gvrnnh8.xml|992|<component size="1334,750" extention="Button">
+  <controller name="_tabCtrl" pages="" selected="-1"/>
+  <displayList>
+    <graph id="n13" name="alpha" xy="0,0" size="1334,750" type="rect" lineSize="0" lineColor="#01000000" fillColor="#a6000000"/>
+    <loader id="n12" name="bg" xy="642,374" size="50,50" touchable="false" align="center" vAlign="middle" playing="false"/>
+    <image id="n7" name="topBg" src="n2mych" xy="291,0" size="751,47" visible="false"/>
+    <component id="n10" name="topContainer" src="t5hdnfx" xy="0,0"/>
+    <loader id="n6" name="icon" xy="582,54" size="169,63" touchable="false" align="center" vAlign="middle" playing="false"/>
+    <text id="n1" name="title" xy="536,73" size="262,30" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="height" text=""/>
+    <component id="n2" name="close" src="zk42nn7" xy="1114,28" size="108,71">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+  <Button/>
+</component>h2penq1.fnt|563|info creator=UIBuilder
+char id=48 img=h2penq0 xoffset=0 yoffset=0 xadvance=0
+char id=49 img=h2penpz xoffset=0 yoffset=0 xadvance=0
+char id=50 img=h2penpy xoffset=0 yoffset=0 xadvance=0
+char id=51 img=h2penpx xoffset=0 yoffset=0 xadvance=0
+char id=52 img=h2penpw xoffset=0 yoffset=0 xadvance=0
+char id=53 img=h2penpv xoffset=0 yoffset=0 xadvance=0
+char id=54 img=h2penpu xoffset=0 yoffset=0 xadvance=0
+char id=55 img=h2penpt xoffset=0 yoffset=0 xadvance=0
+char id=56 img=h2penps xoffset=0 yoffset=0 xadvance=0
+char id=57 img=h2penpr xoffset=0 yoffset=0 xadvance=0
+hhg0eg.fnt|705|info creator=UIBuilder size=18 resizable=true
+char id=43 img=hhg0e3 xoffset=0 yoffset=-5 xadvance=20
+char id=48 img=hhg0e2 xoffset=0 yoffset=-5 xadvance=20
+char id=49 img=hhg0e1 xoffset=0 yoffset=-5 xadvance=20
+char id=50 img=hhg0e0 xoffset=0 yoffset=-5 xadvance=20
+char id=51 img=hhg0dz xoffset=0 yoffset=-5 xadvance=20
+char id=52 img=hhg0dy xoffset=0 yoffset=-5 xadvance=20
+char id=53 img=hhg0dx xoffset=0 yoffset=-5 xadvance=20
+char id=54 img=hhg0dw xoffset=0 yoffset=-5 xadvance=20
+char id=55 img=hhg0dv xoffset=0 yoffset=-5 xadvance=20
+char id=56 img=hhg0du xoffset=0 yoffset=-5 xadvance=20
+char id=57 img=hhg0dt xoffset=0 yoffset=-5 xadvance=20
+char id=105 img=hhg0ds xoffset=0 yoffset=0 xadvance=0
+hhg0eh.fnt|705|info creator=UIBuilder size=18 resizable=true
+char id=45 img=hhg0e4 xoffset=0 yoffset=-5 xadvance=20
+char id=48 img=hhg0ef xoffset=0 yoffset=-5 xadvance=20
+char id=49 img=hhg0ee xoffset=0 yoffset=-5 xadvance=20
+char id=50 img=hhg0ed xoffset=0 yoffset=-5 xadvance=20
+char id=51 img=hhg0ec xoffset=0 yoffset=-5 xadvance=20
+char id=52 img=hhg0eb xoffset=0 yoffset=-5 xadvance=20
+char id=53 img=hhg0ea xoffset=0 yoffset=-5 xadvance=20
+char id=54 img=hhg0e9 xoffset=0 yoffset=-5 xadvance=20
+char id=55 img=hhg0e8 xoffset=0 yoffset=-5 xadvance=20
+char id=56 img=hhg0e7 xoffset=0 yoffset=-5 xadvance=20
+char id=57 img=hhg0e6 xoffset=0 yoffset=-5 xadvance=20
+char id=105 img=hhg0e5 xoffset=0 yoffset=0 xadvance=0
+hymbnqd.xml|637|<component size="80,80" extention="Label">
+  <displayList>
+    <loader id="n2" name="bg" xy="-1,-1" size="82,82" url="ui://0tyncec1pu0xnq6" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n1" name="icon" xy="0,0" size="80,80" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n3" name="title" xy="35,29" pivot="0.5,0.5" size="10,27" font="方正粗圆简体" fontSize="20" align="center" vAlign="middle" singleLine="true" text=""/>
+  </displayList>
+</component>i342nm5.xml|257|<component size="32,32" extention="Label">
+  <displayList>
+    <loader id="n0" name="icon" xy="0,0" size="32,32" touchable="false" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+</component>i4ccnn4.fnt|578|info creator=UIBuilder resizable=true
+char id=48 img=i4ccnmu xoffset=0 yoffset=0 xadvance=0
+char id=49 img=i4ccnn3 xoffset=0 yoffset=0 xadvance=0
+char id=50 img=i4ccnn2 xoffset=0 yoffset=0 xadvance=0
+char id=51 img=i4ccnn1 xoffset=0 yoffset=0 xadvance=0
+char id=52 img=i4ccnn0 xoffset=0 yoffset=0 xadvance=0
+char id=53 img=i4ccnmz xoffset=0 yoffset=0 xadvance=0
+char id=54 img=i4ccnmy xoffset=0 yoffset=0 xadvance=0
+char id=55 img=i4ccnmx xoffset=0 yoffset=0 xadvance=0
+char id=56 img=i4ccnmw xoffset=0 yoffset=0 xadvance=0
+char id=57 img=i4ccnmv xoffset=0 yoffset=0 xadvance=0
+l2b8nnq.xml|704|<component size="130,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n5" name="icon" xy="0,0" size="130,64" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="130,64" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" letterSpacing="2" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>la7znqg.xml|858|<component size="227,22" extention="Slider">
+  <displayList>
+    <image id="n8" name="bg" src="mx4pnkw" xy="0,0" size="225,22">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n9" name="bar" src="mx4pnkv" xy="2,2" size="221,18">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <graph id="n12" name="grip" xy="219,-2" size="11,27" type="eclipse" lineColor="#ff003300" fillColor="#ff009900">
+      <relation target="n9" sidePair="right-right,middle-middle"/>
+    </graph>
+    <text id="n11" name="title" xy="64,1" size="99,20" font="方正粗圆简体" fontSize="14" align="center" vAlign="middle" leading="0" autoSize="height" singleLine="true" text="">
+      <relation target="" sidePair="middle-middle,center-center"/>
+    </text>
+  </displayList>
+  <Slider titleType="value"/>
+</component>ltlvnnt.fnt|23|info creator=UIBuilder
+lwwwnks.xml|1339|<component size="100,40" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n3" name="layer0" xy="0,0" size="100,40" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n2" name="layer1" xy="0,0" size="100,40" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n1" name="title" xy="0,0" size="100,40" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n0" name="icon0" xy="0,0" size="50,30" touchable="false" align="center" vAlign="middle" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="0"/>
+    </loader>
+    <loader id="n4" name="icon1" xy="0,0" size="50,30" touchable="false" align="center" vAlign="middle" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="1"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>mkaznh2.xml|512|<component size="180,55" extention="Button">
+  <displayList>
+    <loader id="n2" name="icon" xy="0,0" size="180,55" url="ui://0tyncec1mkaznh3" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <richtext id="n1" name="title" xy="0,0" size="180,55" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="0.80"/>
+</component>mouenl5.xml|1198|<component size="379,132">
+  <displayList>
+    <image id="n5" name="bg" src="eieknkn" xy="-6,-1" size="390,138">
+      <relation target="" sidePair="height-height"/>
+    </image>
+    <loader id="n1" name="bgRare" xy="0,4" size="375,124" touchable="false" fill="scaleFree" playing="false"/>
+    <text id="n35" name="txtName" xy="116,17" size="10,33" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" bold="true" text=""/>
+    <text id="n36" name="txtBind" xy="132,25" size="95,24" visible="false" font="方正粗圆简体" fontSize="18" color="#ded4fc" autoSize="height" text="(已绑定)">
+      <relation target="n35" sidePair="left-right"/>
+    </text>
+    <text id="n37" name="txtLev" xy="118,61" size="150,24" font="方正粗圆简体" fontSize="18" color="#ded4fc" vAlign="middle" autoSize="height" text=""/>
+    <text id="n38" name="txtSubType" xy="271,61" size="90,24" font="方正粗圆简体" fontSize="18" color="#ded4fc" align="center" vAlign="middle" autoSize="height" text="">
+      <relation target="n37" sidePair="top-top"/>
+    </text>
+    <text id="n39" name="txtCareer" xy="118,90" size="166,24" font="方正粗圆简体" fontSize="18" color="#ded4fc" vAlign="middle" autoSize="height" text=""/>
+  </displayList>
+</component>nf8gnkt.xml|886|<component size="396,63" extention="Label">
+  <displayList>
+    <image id="n0" name="bg" src="x0conjx" xy="52,0" size="344,63">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <text id="n1" name="title" xy="-48,17" size="125,28" font="方正粗圆简体" fontSize="24" color="#2e3341" align="right" vAlign="middle" autoSize="none" text="xxx：">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <loader id="n3" name="icon" xy="81,7" size="48,48" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="n1" sidePair="left-right"/>
+    </loader>
+    <text id="n5" name="txt" xy="137,9" size="249,45" fontSize="22" color="#2e3341" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="width-width"/>
+      <relation target="n3" sidePair="left-right"/>
+    </text>
+  </displayList>
+</component>nf8gnku.xml|1116|<component size="396,63" extention="Label">
+  <displayList>
+    <image id="n0" name="bg" src="x0conjx" xy="52,0" size="344,63">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <text id="n1" name="title" xy="-48,17" size="125,28" font="方正粗圆简体" fontSize="24" color="#2e3341" align="right" vAlign="middle" autoSize="none" text="xxx：">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <loader id="n3" name="icon" xy="81,7" size="48,48" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="n1" sidePair="left-right"/>
+    </loader>
+    <image id="n6" name="n6" src="x0conjw" xy="131,9" size="260,48">
+      <relation target="" sidePair="width-width"/>
+      <relation target="n3" sidePair="left-right"/>
+    </image>
+    <text id="n5" name="txt" xy="137,9" size="249,45" input="true" maxLength="10" keyboardType="2" fontSize="22" color="#2e3341" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="width-width"/>
+      <relation target="n3" sidePair="left-right"/>
+    </text>
+  </displayList>
+</component>ockmnmb.xml|511|<component size="27,27" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bg" src="5v99nkd" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1" name="tick" src="5v99nkf" xy="-3,-5" size="36,32">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>p5ffau.fnt|561|info creator=UIBuilder size=23
+char id=48 img=p5ffat xoffset=0 yoffset=0 xadvance=0
+char id=49 img=p5ffas xoffset=0 yoffset=0 xadvance=0
+char id=50 img=p5ffar xoffset=0 yoffset=0 xadvance=0
+char id=51 img=p5ffaq xoffset=0 yoffset=0 xadvance=0
+char id=52 img=p5ffap xoffset=0 yoffset=0 xadvance=0
+char id=53 img=p5ffao xoffset=0 yoffset=0 xadvance=0
+char id=54 img=p5ffan xoffset=0 yoffset=0 xadvance=0
+char id=55 img=p5ffam xoffset=0 yoffset=0 xadvance=0
+char id=56 img=p5ffal xoffset=0 yoffset=0 xadvance=0
+char id=57 img=p5ffak xoffset=0 yoffset=0 xadvance=0
+p8e4ax.fnt|553|info creator=UIBuilder
+char id=48 img=p8e4az xoffset=0 yoffset=0 xadvance=0
+char id=49 img=p8e4b8 xoffset=0 yoffset=0 xadvance=0
+char id=50 img=p8e4b7 xoffset=0 yoffset=0 xadvance=0
+char id=51 img=p8e4b6 xoffset=0 yoffset=0 xadvance=0
+char id=52 img=p8e4b5 xoffset=0 yoffset=0 xadvance=0
+char id=53 img=p8e4b4 xoffset=0 yoffset=0 xadvance=0
+char id=54 img=p8e4b3 xoffset=0 yoffset=0 xadvance=0
+char id=55 img=p8e4b2 xoffset=0 yoffset=0 xadvance=0
+char id=56 img=p8e4b1 xoffset=0 yoffset=0 xadvance=0
+char id=57 img=p8e4b0 xoffset=0 yoffset=0 xadvance=0
+package.xml|29155|<packageDescription id="0tyncec1" name="Common">
+  <resources>
+    <atlas id="atlas0" size="2048,2048" file="atlas0.png"/>
+    <atlas id="atlas1" size="1024,1024" file="atlas1.png"/>
+    <component id="5v99nkb" name="CustomProgess" exported="true" size="458,30"/>
+    <component id="5v99nkh" name="CustomRadio" exported="true" size="29,29"/>
+    <component id="9u5tnlj" name="CustomCheckLabel" exported="true" size="278,27"/>
+    <component id="a8b4nlt" name="CustomCheckBox1" exported="true" size="64,64"/>
+    <component id="a8b4nlu" name="CustomProgess1" exported="true" size="249,18"/>
+    <component id="a8b4nlx" name="BtnJiaHao" exported="true" size="76,74"/>
+    <component id="deqznhb" name="CustomTabbarBtn" exported="true" size="97,53"/>
+    <component id="ek9hnha" name="GoodsItem" exported="true" size="88,88"/>
+    <component id="f06tnnd" name="InfoBtn" exported="true" size="130,60"/>
+    <component id="f06tnne" name="DescPanel" exported="true" size="31,46"/>
+    <component id="gk0nnig" name="RadioBtn1" exported="true" size="80,36"/>
+    <component id="gp6dnfh" name="ReturnCutDownBar" size="336,22"/>
+    <component id="gp6dnfk" name="ReturnCutDownFBar" size="307,11"/>
+    <component id="gp6dnfl" name="ReturnCDBar" exported="true" size="336,32"/>
+    <component id="gvrnnh4" name="MoneyLabelComp" exported="true" size="210,44"/>
+    <component id="gvrnnh7" name="RadioBtn0" exported="true" size="127,99"/>
+    <component id="gvrnnh8" name="CustomBigGround" exported="true" size="1334,750"/>
+    <component id="hymbnqd" name="CustomIconI" exported="true" size="80,80"/>
+    <component id="i342nm5" name="CustomSprite" exported="true" size="32,32"/>
+    <component id="l2b8nnq" name="CustomBtn1" exported="true" size="130,64"/>
+    <component id="la7znqg" name="CustomSliderBar" exported="true" size="227,22"/>
+    <component id="lwwwnks" name="CustomCheckBox0" exported="true" size="100,40"/>
+    <component id="mkaznh2" name="CustomMenuItem" exported="true" size="180,55"/>
+    <component id="mouenl5" name="CustomTipLayer" exported="true" size="379,132"/>
+    <component id="nf8gnkt" name="CustomLabel0" exported="true" size="396,63"/>
+    <component id="nf8gnku" name="CustomLabel1" exported="true" size="396,63"/>
+    <component id="ockmnmb" name="CustomCheckBox" exported="true" size="27,27"/>
+    <component id="ppo026" name="CustomJoystick" exported="true" size="212,212"/>
+    <component id="ppo02g" name="CustomJoystickTumb" size="56,56"/>
+    <component id="prinnn6" name="CustomSubWinBg" exported="true" size="558,191"/>
+    <component id="rdc8br" name="MsgUI" exported="true" size="1334,750"/>
+    <component id="rdc8bs" name="RollMsgUI" exported="true" size="1049,49"/>
+    <component id="rdc8bt" name="TipsMsgUI" exported="true" size="1334,200"/>
+    <component id="rdc8bu" name="TipsMsgItem" exported="true" size="394,38"/>
+    <component id="rdc8bv" name="MultyHitItem" exported="true" size="473,110"/>
+    <component id="rdc8bx" name="MultyHit" exported="true" size="1334,750"/>
+    <component id="rfrrnms" name="TrumpetMsgUI" exported="true" size="456,40"/>
+    <component id="s1mjnnb" name="CustomSubWinBg2" exported="true" size="558,191"/>
+    <component id="sbfonii" name="AccordionBtn" exported="true" size="180,68"/>
+    <component id="sbfonij" name="AccordionCellItem" exported="true" size="178,42"/>
+    <component id="sbfonil" name="AccordionCellItems" exported="true" size="178,165"/>
+    <component id="sbfonim" name="AccordionHeadItem" exported="true" size="178,66"/>
+    <component id="skqrnkp" name="CustomButton3" exported="true" size="144,64"/>
+    <component id="sw74nlz" name="CustomRadio1" exported="true" size="138,29"/>
+    <component id="sw74nm0" name="CustomRadio2" exported="true" size="74,29"/>
+    <component id="t5hdnfo" name="AwardIcon" exported="true" size="80,80"/>
+    <component id="t5hdnfp" name="CircleHeadComponent" exported="true" size="80,80"/>
+    <component id="t5hdnfq" name="CustomBtn0" exported="true" size="64,64"/>
+    <component id="t5hdnfs" name="CustomButton0" exported="true" size="64,64"/>
+    <component id="t5hdnft" name="CustomButton1" exported="true" size="64,64"/>
+    <component id="t5hdnfu" name="CustomLayerH" exported="true" size="1,1"/>
+    <component id="t5hdnfv" name="CustomLayerHV" exported="true" size="1,1"/>
+    <component id="t5hdnfw" name="CustomLayerV" exported="true" size="1,1"/>
+    <component id="t5hdnfx" name="CustomLayerN" exported="true" size="1,1"/>
+    <component id="t5hdnfy" name="CustomSprite0" exported="true" size="80,80"/>
+    <component id="t5hdnfz" name="HeadIcon" exported="true" size="80,80"/>
+    <component id="t5hdng1" name="LevelComponent" exported="true" size="34,32"/>
+    <component id="tebrnmj" name="CustomRollLabel" exported="true" size="159,26"/>
+    <component id="tfo1dj" name="ButtonArrow" exported="true" size="59,45"/>
+    <component id="tfo1dl" name="ButtonNextPage" exported="true" size="31,53"/>
+    <component id="tfo1dm" name="ButtonPrevPage" exported="true" size="31,53"/>
+    <component id="tfo1do" name="ButtonYellow" exported="true" size="225,46"/>
+    <component id="tnbmnka" name="CustomButton2" exported="true" size="130,64"/>
+    <component id="uedbni0" name="line0001" exported="true" size="50,2"/>
+    <component id="x0conk2" name="NumberBar" exported="true" size="300,64"/>
+    <component id="x0conk3" name="NumberBar2" exported="true" size="215,282"/>
+    <component id="x0conk4" name="NumberTypeBtn" size="62,62"/>
+    <component id="ydonnn5" name="CustomBtn2" exported="true" size="64,64"/>
+    <component id="z03enli" name="HeadIcon2" exported="true" size="80,80"/>
+    <component id="zk42nn7" name="CustomBtn3" exported="true" size="64,64"/>
+    <font id="h2penq1" name="num_11" exported="true"/>
+    <font id="hhg0eg" name="num_5" exported="true"/>
+    <font id="hhg0eh" name="num_4" exported="true"/>
+    <font id="i4ccnn4" name="num_9" exported="true"/>
+    <font id="ltlvnnt" name="TestFont" exported="true"/>
+    <font id="p5ffau" name="num_8" exported="true"/>
+    <font id="p8e4ax" name="num_7" exported="true"/>
+    <font id="pqvb7d" name="num_AddHpFont" exported="true"/>
+    <font id="pqvb7e" name="num_6" exported="true"/>
+    <font id="pqvb7f" name="num_CritFont" exported="true"/>
+    <font id="pqvb7g" name="num_MonsterDamageFont" exported="true"/>
+    <font id="pqvb7h" name="num_PlayerDamageFont" exported="true"/>
+    <font id="pqvb7i" name="num_FightOtherFont" exported="true"/>
+    <font id="rmqhnp6" name="num_10" exported="true"/>
+    <font id="t5hdng3" name="num_0" exported="true"/>
+    <font id="t5hdnge" name="num_1" exported="true"/>
+    <font id="t5hdngp" name="num_2" exported="true"/>
+    <font id="x0conjj" name="num_3" exported="true"/>
+    <image id="5v99nkc" name="line04" size="2,3" exported="true" scale="9grid" scale9grid="1,1,1,2"/>
+    <image id="5v99nkd" name="checkBox" size="27,27" exported="true"/>
+    <image id="5v99nke" name="radio" size="29,29" exported="true"/>
+    <image id="5v99nkf" name="tick" size="36,32" exported="true"/>
+    <image id="a8b4nlv" name="jiaHao" size="43,42" exported="true"/>
+    <image id="a8b4nlw" name="jiaHaoBg" size="99,99" exported="true"/>
+    <image id="c18wnl9" name="gray" size="26,22" exported="true" scale="9grid" scale9grid="7,6,14,12"/>
+    <image id="c18wnla" name="arrow1" size="13,8" exported="true"/>
+    <image id="c4eznl4" name="baidi" size="45,14" exported="true" scale="9grid" scale9grid="12,4,21,6"/>
+    <image id="c8esnou" name="btn_tishi" size="35,36" exported="true"/>
+    <image id="c8esnov" name="dikuang" size="147,18" exported="true" scale="9grid" scale9grid="37,6,74,4"/>
+    <image id="ckrkcx" name="3+" size="19,25"/>
+    <image id="ckrkcy" name="3-" size="19,25"/>
+    <image id="cnepnqa" name="titlebg" size="118,13" scale="9grid" scale9grid="30,2,58,5" exported="true"/>
+    <image id="cnepnqb" name="di" size="1071,556" exported="true" scale="9grid" scale9grid="268,139,536,278"/>
+    <image id="csuxnlk" name="tip_bg" size="481,88" exported="true" scale="9grid" scale9grid="198,47,81,7"/>
+    <image id="csuxnll" name="title_bg1" size="307,44" exported="true" scale="9grid" scale9grid="96,10,117,22"/>
+    <image id="dmzwnna" name="btn_1" size="222,67" exported="true"/>
+    <image id="ea8vnmo" name="btnBg_06" size="93,95" exported="true" scale="9grid" scale9grid="20,20,53,55"/>
+    <image id="ea8vnmp" name="btnBg_07" size="93,95" exported="true" scale="9grid" scale9grid="24,24,48,48"/>
+    <image id="eieknkm" name="table" size="410,56" scale="9grid" scale9grid="103,14,206,16" exported="true"/>
+    <image id="eieknkn" name="itembg1" size="33,32" scale="9grid" scale9grid="9,9,15,14" exported="true"/>
+    <image id="eieknko" name="font_yizhuangbei" size="70,70" exported="true"/>
+    <image id="f06tnnc" name="qitapaihang" size="32,32" exported="true"/>
+    <image id="f6sann9" name="tabDi0" size="293,42" exported="true"/>
+    <image id="g9qxnm4" name="teamLeaderSign" size="34,30" exported="true"/>
+    <image id="gk0nni9" name="bg_alpha" size="13,11" exported="true" scale="9grid" scale9grid="6,4,3,2"/>
+    <image id="gk0nnia" name="title_bg" size="217,52" exported="true" scale="9grid" scale9grid="55,13,110,26"/>
+    <image id="gk0nnid" name="line_fenge" size="20,607" exported="true"/>
+    <image id="gk0nnie" name="btn_erji2" size="39,46" exported="true" scale="9grid" scale9grid="16,11,8,25"/>
+    <image id="gk0nnif" name="btn_erji1" size="39,46" exported="true" scale="9grid" scale9grid="17,11,4,25"/>
+    <image id="gp6dnfi" name="collocet_pro_bar" size="307,11" exported="true"/>
+    <image id="gp6dnfj" name="collocet_pro_bar_bg" size="58,23" exported="true" scale="9grid" scale9grid="20,0,14,23"/>
+    <image id="h2penpr" name="119" size="19,21"/>
+    <image id="h2penps" name="118" size="19,21"/>
+    <image id="h2penpt" name="117" size="19,21"/>
+    <image id="h2penpu" name="116" size="19,21"/>
+    <image id="h2penpv" name="115" size="19,21"/>
+    <image id="h2penpw" name="114" size="19,21"/>
+    <image id="h2penpx" name="113" size="19,21"/>
+    <image id="h2penpy" name="112" size="19,21"/>
+    <image id="h2penpz" name="111" size="19,21"/>
+    <image id="h2penq0" name="110" size="19,21"/>
+    <image id="hclvnmr" name="btn_guanbi" size="57,58" exported="true"/>
+    <image id="hhg0ds" name="5i" size="104,53"/>
+    <image id="hhg0dt" name="59" size="34,42"/>
+    <image id="hhg0du" name="58" size="34,42"/>
+    <image id="hhg0dv" name="57" size="34,42"/>
+    <image id="hhg0dw" name="56" size="34,42"/>
+    <image id="hhg0dx" name="55" size="34,42"/>
+    <image id="hhg0dy" name="54" size="34,42"/>
+    <image id="hhg0dz" name="53" size="34,42"/>
+    <image id="hhg0e0" name="52" size="34,42"/>
+    <image id="hhg0e1" name="51" size="34,42"/>
+    <image id="hhg0e2" name="50" size="34,42"/>
+    <image id="hhg0e3" name="5+" size="34,42"/>
+    <image id="hhg0e4" name="4-" size="34,42"/>
+    <image id="hhg0e5" name="4i" size="104,53"/>
+    <image id="hhg0e6" name="49" size="34,42"/>
+    <image id="hhg0e7" name="48" size="34,42"/>
+    <image id="hhg0e8" name="47" size="34,42"/>
+    <image id="hhg0e9" name="46" size="34,42"/>
+    <image id="hhg0ea" name="45" size="34,42"/>
+    <image id="hhg0eb" name="44" size="34,42"/>
+    <image id="hhg0ec" name="43" size="34,42"/>
+    <image id="hhg0ed" name="42" size="34,42"/>
+    <image id="hhg0ee" name="41" size="34,42"/>
+    <image id="hhg0ef" name="40" size="34,42"/>
+    <image id="hmasnmn" name="btn_2" size="222,67" exported="true"/>
+    <image id="hrgcnng" name="tipsBg" size="79,70" exported="true" scale="9grid" scale9grid="23,23,33,24"/>
+    <image id="hx0xnip" name="line_fenge1" size="286,11" exported="true" scale9grid="72,3,144,6"/>
+    <image id="i4ccnmu" name="90" size="27,36"/>
+    <image id="i4ccnmv" name="99" size="27,36"/>
+    <image id="i4ccnmw" name="98" size="27,36"/>
+    <image id="i4ccnmx" name="97" size="27,36"/>
+    <image id="i4ccnmy" name="96" size="27,36"/>
+    <image id="i4ccnmz" name="95" size="27,36"/>
+    <image id="i4ccnn0" name="94" size="27,36"/>
+    <image id="i4ccnn1" name="93" size="27,36"/>
+    <image id="i4ccnn2" name="92" size="27,36"/>
+    <image id="i4ccnn3" name="91" size="27,36"/>
+    <image id="igkdnlb" name="line06" size="201,2" exported="true" scale="9grid" scale9grid="51,1,102,1"/>
+    <image id="igzgnk7" name="lock" size="50,59" exported="true"/>
+    <image id="ih4gnm1" name="mianyi" size="94,52"/>
+    <image id="j67wnhd" name="bg_itemcell" size="48,46" exported="true" scale="9grid" scale9grid="16,15,16,15"/>
+    <image id="j67wnhe" name="bg_gridpanel" size="56,56" exported="true" scale="9grid" scale9grid="14,14,28,28"/>
+    <image id="jqanc9" name="rb_000" size="139,105" exported="true" scale="9grid" scale9grid="32,24,61,60"/>
+    <image id="jqanca" name="line12" size="110,2" exported="true"/>
+    <image id="js4ynq3" name="gantanhao" size="20,20" exported="true"/>
+    <image id="jsucnhf" name="txtBg1" size="20,12" exported="true" scale="9grid" scale9grid="5,4,9,4"/>
+    <image id="jsucnhg" name="line10" size="16,622" exported="true" scale="9grid" scale9grid="4,156,8,312"/>
+    <image id="jsucnhh" name="line01" size="110,2" exported="true" scale="9grid" scale9grid="28,1,56,1"/>
+    <image id="jsucnhi" name="line00" size="138,2" exported="true" scale="9grid" scale9grid="35,1,70,1"/>
+    <image id="keyenir" name="itemBg01" size="64,64" scale="9grid" scale9grid="22,22,20,20" exported="true"/>
+    <image id="keyenis" name="itemBg00" size="64,64" exported="true" scale="9grid" scale9grid="22,22,20,20"/>
+    <image id="kftjnki" name="btn02" size="135,46" exported="true" scale="9grid" scale9grid="34,12,68,24"/>
+    <image id="ktxinq2" name="bg_alpha1" size="554,4" exported="true" scale="9grid" scale9grid="67,1,5,1"/>
+    <image id="ltlvno6" name="monster_number_4" size="24,25"/>
+    <image id="ltlvno7" name="monster_number_3" size="24,25"/>
+    <image id="ltlvno8" name="monster_number_2" size="24,25"/>
+    <image id="ltlvno9" name="monster_number_1" size="24,25"/>
+    <image id="ltlvnoa" name="monster_number_0" size="24,25"/>
+    <image id="ltlvnob" name="monster_minus_Sign" size="24,25"/>
+    <image id="ltlvnoc" name="monster_plus" size="29,30"/>
+    <image id="ltlvnod" name="monster_number_9" size="24,25"/>
+    <image id="ltlvnoe" name="monster_number_8" size="24,25"/>
+    <image id="ltlvnof" name="monster_number_7" size="24,25"/>
+    <image id="ltlvnog" name="monster_number_6" size="24,25"/>
+    <image id="ltlvnoh" name="monster_number_5" size="24,25"/>
+    <image id="ltlvnoi" name="player_plus" size="29,30"/>
+    <image id="ltlvnoj" name="player_number_9" size="24,25"/>
+    <image id="ltlvnok" name="player_number_8" size="24,25"/>
+    <image id="ltlvnol" name="player_number_7" size="24,25"/>
+    <image id="ltlvnom" name="player_number_6" size="24,25"/>
+    <image id="ltlvnon" name="player_number_5" size="24,25"/>
+    <image id="ltlvnoo" name="player_number_4" size="24,25"/>
+    <image id="ltlvnop" name="player_number_3" size="24,25"/>
+    <image id="ltlvnoq" name="player_number_2" size="24,25"/>
+    <image id="ltlvnor" name="player_number_1" size="24,25"/>
+    <image id="ltlvnos" name="player_number_0" size="24,25"/>
+    <image id="ltlvnot" name="player_minus_Sign" size="24,25"/>
+    <image id="mcq1nns" name="beibaozhezhao" size="7,7" exported="true"/>
+    <image id="me2f1c" name="bg_resource" size="62,34" scale="9grid" scale9grid="22,9,19,15" exported="true"/>
+    <image id="mkaznh3" name="menuItemBg0" size="58,55" scale="9grid" scale9grid="22,18,13,15" exported="true"/>
+    <image id="mx4pnkv" name="shuliandu2" size="35,11" scale="9grid" scale9grid="9,3,18,4" exported="true"/>
+    <image id="mx4pnkw" name="shuliandu" size="35,13" scale="9grid" scale9grid="9,2,18,9" exported="true"/>
+    <image id="mx4pnkx" name="star2" size="42,41" exported="true"/>
+    <image id="mx4pnky" name="star1" size="42,41" exported="true"/>
+    <image id="mx4pnl0" name="font_yiguoqi" size="71,70" exported="true"/>
+    <image id="n2mycf" name="txtBg0" size="187,39" scale="9grid" scale9grid="47,14,94,12" exported="true"/>
+    <image id="n2mycg" name="yuanbao" size="43,38" exported="true"/>
+    <image id="n2mych" name="bg_small0" size="751,42" exported="true"/>
+    <image id="n2myci" name="btnAddBg0" size="33,33" exported="true"/>
+    <image id="n3qsneq" name="btnBg_001" size="36,63" scale="9grid" scale9grid="16,16,3,31" exported="true"/>
+    <image id="n3qsner" name="btnBg_000" size="34,52" scale="9grid" scale9grid="14,14,5,23" exported="true"/>
+    <image id="o49v4g" name="line05" size="387,3" exported="true" scale="9grid" scale9grid="97,1,194,2"/>
+    <image id="o49v4h" name="line11" size="231,10" exported="true" scale="9grid" scale9grid="58,5,116,2"/>
+    <image id="oe8ynnk" name="shanglakuang" size="23,23" exported="true" scale="9grid" scale9grid="5,5,13,13"/>
+    <image id="of36nm2" name="btnBg_005" size="106,104" exported="true"/>
+    <image id="oox7nk5" name="selectBg1_1" size="28,43" scale="9grid" scale9grid="8,10,12,23" exported="true"/>
+    <image id="oox7nk6" name="selectBg1_2" size="28,43" scale="9grid" scale9grid="8,10,12,24" exported="true"/>
+    <image id="oqbynlm" name="btnBg_004" size="92,92" exported="true"/>
+    <image id="ovhpnlm" name="btn_fenye1" size="40,47" exported="true" scale="9grid" scale9grid="16,12,8,23"/>
+    <image id="ovhpnlp" name="btn_fenye2" size="34,42" exported="true" scale="9grid" scale9grid="15,8,4,25"/>
+    <image id="p5ffak" name="89" size="18,27"/>
+    <image id="p5ffal" name="88" size="19,26"/>
+    <image id="p5ffam" name="87" size="19,26"/>
+    <image id="p5ffan" name="86" size="18,27"/>
+    <image id="p5ffao" name="85" size="17,27"/>
+    <image id="p5ffap" name="84" size="19,27"/>
+    <image id="p5ffaq" name="83" size="19,27"/>
+    <image id="p5ffar" name="82" size="19,26"/>
+    <image id="p5ffas" name="81" size="10,27"/>
+    <image id="p5ffat" name="80" size="19,27"/>
+    <image id="p8e4az" name="70" size="30,37"/>
+    <image id="p8e4b0" name="79" size="30,37"/>
+    <image id="p8e4b1" name="78" size="30,37"/>
+    <image id="p8e4b2" name="77" size="30,37"/>
+    <image id="p8e4b3" name="76" size="30,37"/>
+    <image id="p8e4b4" name="75" size="30,37"/>
+    <image id="p8e4b5" name="74" size="30,37"/>
+    <image id="p8e4b6" name="73" size="30,37"/>
+    <image id="p8e4b7" name="72" size="30,37"/>
+    <image id="p8e4b8" name="71" size="30,37"/>
+    <image id="ppo02h" name="joystickCircle" size="56,56"/>
+    <image id="ppo02i" name="joystickBg" size="155,155"/>
+    <image id="pqvb5n" name="crit_number_0" size="31,32"/>
+    <image id="pqvb5o" name="crit_number_9" size="31,32"/>
+    <image id="pqvb5p" name="crit_number_8" size="31,32"/>
+    <image id="pqvb5q" name="crit_number_7" size="31,32"/>
+    <image id="pqvb5r" name="crit_number_6" size="31,32"/>
+    <image id="pqvb5s" name="crit_number_5" size="31,32"/>
+    <image id="pqvb5t" name="crit_number_4" size="31,32"/>
+    <image id="pqvb5u" name="crit_number_3" size="31,32"/>
+    <image id="pqvb5v" name="crit_number_2" size="31,32"/>
+    <image id="pqvb5w" name="crit_number_1" size="31,32"/>
+    <image id="pqvb5x" name="crit_txt_baoji" size="92,52"/>
+    <image id="pqvb6o" name="addHp_number_2" size="25,26"/>
+    <image id="pqvb6p" name="addHp_number_1" size="25,26"/>
+    <image id="pqvb6q" name="addHp_number_0" size="25,26"/>
+    <image id="pqvb6r" name="addHp_plus" size="25,26"/>
+    <image id="pqvb6s" name="addHp_number_9" size="25,26"/>
+    <image id="pqvb6t" name="addHp_number_8" size="25,26"/>
+    <image id="pqvb6u" name="addHp_number_7" size="25,26"/>
+    <image id="pqvb6v" name="addHp_number_6" size="25,26"/>
+    <image id="pqvb6w" name="addHp_number_5" size="25,26"/>
+    <image id="pqvb6x" name="addHp_number_4" size="25,26"/>
+    <image id="pqvb6y" name="addHp_number_3" size="25,26"/>
+    <image id="pqvb70" name="63" size="37,47"/>
+    <image id="pqvb71" name="62" size="37,47"/>
+    <image id="pqvb72" name="61" size="37,47"/>
+    <image id="pqvb73" name="60" size="37,47"/>
+    <image id="pqvb74" name="69" size="37,47"/>
+    <image id="pqvb75" name="68" size="37,47"/>
+    <image id="pqvb76" name="67" size="37,47"/>
+    <image id="pqvb77" name="66" size="37,47"/>
+    <image id="pqvb78" name="65" size="37,47"/>
+    <image id="pqvb79" name="64" size="37,47"/>
+    <image id="pqvb7c" name="txt_gedang" size="131,48"/>
+    <image id="pu0xnq5" name="wenghao" size="39,41" exported="true"/>
+    <image id="pu0xnq6" name="grid_cell_bg" size="90,90" exported="true"/>
+    <image id="pu0xnq7" name="jiantou2" size="52,31" exported="true"/>
+    <image id="pu0xnq8" name="beibaowenzidi" size="105,18" scale="9grid" scale9grid="4,5,97,8" exported="true"/>
+    <image id="pu0xnq9" name="txtBg2" size="183,34" exported="true" scale="9grid" scale9grid="46,9,92,18"/>
+    <image id="rdc8bw" name="txt_lianji2" size="277,80"/>
+    <image id="rgh0nl6" name="btn_jia" size="47,47" exported="true"/>
+    <image id="rgh0nl7" name="itembg2" size="29,27" scale="9grid" scale9grid="8,7,13,13" gridTile="15" exported="true"/>
+    <image id="rgh0nl8" name="itembg3" size="19,21" scale="9grid" scale9grid="5,6,9,9" exported="true"/>
+    <image id="rmqhnow" name="105" size="16,22"/>
+    <image id="rmqhnox" name="104" size="16,22"/>
+    <image id="rmqhnoy" name="103" size="16,22"/>
+    <image id="rmqhnoz" name="102" size="16,22"/>
+    <image id="rmqhnp0" name="101" size="16,22"/>
+    <image id="rmqhnp1" name="100" size="16,22"/>
+    <image id="rmqhnp2" name="109" size="16,22"/>
+    <image id="rmqhnp3" name="108" size="16,22"/>
+    <image id="rmqhnp4" name="107" size="16,22"/>
+    <image id="rmqhnp5" name="106" size="16,22"/>
+    <image id="rnfrnmq" name="shuliangdi" size="204,5" scale="9grid" scale9grid="51,2,102,1" exported="true"/>
+    <image id="s4zfnls" name="arrow3" size="52,31" exported="true"/>
+    <image id="s7fmnlq" name="arrow_10" size="23,27" exported="true"/>
+    <image id="s7fmnlr" name="arrow_00" size="23,27" exported="true"/>
+    <image id="s8z9nnh" name="fenyezhuangshi" size="215,94" exported="true"/>
+    <image id="s9mpnqe" name="x" size="43,44" exported="true"/>
+    <image id="sbfonik" name="line3" size="163,2" exported="true"/>
+    <image id="sbfonin" name="arrow2" size="13,8" exported="true"/>
+    <image id="sdusnnl" name="hechengditu" size="67,68" exported="true" scale="9grid" scale9grid="21,28,24,13"/>
+    <image id="sdusnnm" name="hechengditu2" size="15,15" exported="true" scale="9grid" scale9grid="4,4,8,8"/>
+    <image id="sdusnnn" name="zhuangshi1" size="17,18" exported="true"/>
+    <image id="skqrnkq" name="btnBg_003" size="126,41" exported="true"/>
+    <image id="t02wnno" name="zhujiemian" size="15,26" exported="true"/>
+    <image id="t02wnnp" name="btn_zhujiemian" size="31,61" exported="true"/>
+    <image id="t5hdng0" name="headBg" size="80,80" exported="true"/>
+    <image id="t5hdng2" name="levelBg" size="32,32" exported="true"/>
+    <image id="t5hdng4" name="00" size="61,72"/>
+    <image id="t5hdng5" name="01" size="61,72"/>
+    <image id="t5hdng6" name="02" size="61,72"/>
+    <image id="t5hdng7" name="03" size="61,72"/>
+    <image id="t5hdng8" name="04" size="61,72"/>
+    <image id="t5hdng9" name="05" size="61,72"/>
+    <image id="t5hdnga" name="06" size="61,72"/>
+    <image id="t5hdngb" name="07" size="61,72"/>
+    <image id="t5hdngc" name="08" size="61,72"/>
+    <image id="t5hdngd" name="09" size="61,72"/>
+    <image id="t5hdngf" name="10" size="34,47"/>
+    <image id="t5hdngg" name="11" size="34,47"/>
+    <image id="t5hdngh" name="12" size="34,47"/>
+    <image id="t5hdngi" name="13" size="34,47"/>
+    <image id="t5hdngj" name="14" size="34,47"/>
+    <image id="t5hdngk" name="15" size="34,47"/>
+    <image id="t5hdngl" name="16" size="34,47"/>
+    <image id="t5hdngm" name="17" size="34,47"/>
+    <image id="t5hdngn" name="18" size="34,47"/>
+    <image id="t5hdngo" name="19" size="34,47"/>
+    <image id="t5hdngq" name="21" size="87,89"/>
+    <image id="t5hdngr" name="22" size="87,89"/>
+    <image id="t5hdngs" name="23" size="87,89"/>
+    <image id="tfo1di" name="task_arrow" size="59,45" exported="true"/>
+    <image id="tfo1dk" name="scroll_arrow" size="31,53" exported="true"/>
+    <image id="u0dhc1" name="btn_close0" size="108,72" exported="true"/>
+    <image id="uchhnl1" name="bannerBlue" size="3,34" scale="9grid" scale9grid="1,7,1,20" exported="true"/>
+    <image id="uchhnl2" name="bannerYellow" size="3,34" scale="9grid" scale9grid="1,7,1,20" exported="true"/>
+    <image id="uchhnl3" name="bannerGray" size="9,34" scale="9grid" scale9grid="3,9,3,18" exported="true"/>
+    <image id="uedbnhx" name="line03" size="24,2" scale="9grid" scale9grid="6,1,12,1" exported="true"/>
+    <image id="uedbnhy" name="lineP0" size="12,12" exported="true"/>
+    <image id="uedbnhz" name="line02" size="5,2" scale9grid="0,0,5,2" scale="9grid" exported="true"/>
+    <image id="uq4wnmc" name="bg_04" size="14,558" exported="true" scale="9grid" scale9grid="4,140,8,280"/>
+    <image id="uq4wnme" name="btn_zhanghao" size="45,48" exported="true"/>
+    <image id="uq4wnmf" name="fengexian2" size="16,1" exported="true"/>
+    <image id="uq4wnmg" name="1liuchang" size="24,24" exported="true"/>
+    <image id="uq4wnmh" name="3huobao" size="24,24" exported="true"/>
+    <image id="uq4wnmi" name="2yongji" size="24,24" exported="true"/>
+    <image id="uwggde" name="grid_selected" size="102,102" exported="true" scale="9grid" scale9grid="40,40,22,22"/>
+    <image id="uwggdg" name="bg_middle0" size="276,97" scale="9grid" scale9grid="115,45,52,16" exported="true"/>
+    <image id="v6jenm3" name="line13" size="13,3" exported="true" scale="9grid" scale9grid="4,1,5,1"/>
+    <image id="v83rnni" name="jihuo" size="259,67" exported="true"/>
+    <image id="v83rnnj" name="jihuodi" size="244,41" exported="true" scale="9grid" scale9grid="83,11,96,22"/>
+    <image id="vrddnq4" name="relifeDi" size="31,29" exported="true" scale="9grid" scale9grid="8,8,16,16"/>
+    <image id="w3wlnlc" name="hehua" size="306,183" exported="true"/>
+    <image id="w3wlnld" name="goods_title_bg01" size="112,40" exported="true" scale="9grid" scale9grid="47,10,23,16"/>
+    <image id="w6zznnf" name="teamMateSign" size="34,30" exported="true"/>
+    <image id="x0coniw" name="bg_sub" size="631,107" exported="true" scale="9grid" scale9grid="271,55,108,11"/>
+    <image id="x0conix" name="bg_sub_ditu" size="40,38" exported="true" scale="9grid" scale9grid="10,10,20,20"/>
+    <image id="x0conj0" name="btn_001" size="41,58" exported="true" scale9grid="18,24,5,10" scale="9grid"/>
+    <image id="x0conj1" name="btn_000" size="41,58" exported="true" scale="9grid" scale9grid="18,24,5,10"/>
+    <image id="x0conj4" name="btnBg_002" size="36,63" exported="true" scale="9grid" scale9grid="17,18,2,26"/>
+    <image id="x0conj6" name="juanzhou" size="397,601" exported="true"/>
+    <image id="x0conj7" name="3i" size="75,34"/>
+    <image id="x0conj8" name="39" size="24,29"/>
+    <image id="x0conj9" name="38" size="24,29"/>
+    <image id="x0conja" name="37" size="24,29"/>
+    <image id="x0conjb" name="36" size="24,29"/>
+    <image id="x0conjc" name="35" size="24,29"/>
+    <image id="x0conjd" name="34" size="24,29"/>
+    <image id="x0conje" name="33" size="24,29"/>
+    <image id="x0conjf" name="32" size="24,29"/>
+    <image id="x0conjg" name="31" size="24,29"/>
+    <image id="x0conjh" name="30" size="24,29"/>
+    <image id="x0conjl" name="zhezhao" size="13,10" exported="true" scale="9grid" scale9grid="4,3,6,4"/>
+    <image id="x0conjo" name="shuye3" size="186,173" exported="true"/>
+    <image id="x0conjp" name="shuye2" size="137,56" exported="true"/>
+    <image id="x0conjq" name="shuye1" size="137,63" exported="true"/>
+    <image id="x0conjr" name="yuyi2" size="9,10" exported="true" scale="9grid" scale9grid="3,4,3,3"/>
+    <image id="x0conjs" name="yuyi1" size="458,30" exported="true" scale="9grid" scale9grid="27,7,402,16"/>
+    <image id="x0conju" name="paixu_01" size="11,41" exported="true" scale="9grid" scale9grid="4,11,4,22"/>
+    <image id="x0conjv" name="paixu_00" size="11,41" exported="true" scale="9grid" scale9grid="4,11,3,22"/>
+    <image id="x0conjw" name="txtBg_num" size="29,44" exported="true" scale="9grid" scale9grid="8,11,13,22"/>
+    <image id="x0conjx" name="txtBg_type" size="195,20" exported="true" scale="9grid" scale9grid="91,5,27,10"/>
+    <image id="x0conjy" name="numAdd" size="62,63" exported="true"/>
+    <image id="x0conjz" name="numSub" size="62,63" exported="true"/>
+    <image id="x0conk0" name="numUp" size="62,63" exported="true"/>
+    <image id="x0conk1" name="numBg" size="62,63" exported="true" scale="9grid" scale9grid="16,16,32,32"/>
+    <image id="xnis91" name="red_tips" size="20,20" exported="true"/>
+    <image id="z03enle" name="bg_sub01" size="315,255" exported="true" scale="9grid" scale9grid="114,82,83,68"/>
+    <image id="z03enlf" name="mingzidi" size="259,9" exported="true" scale="9grid" scale9grid="65,3,130,3"/>
+    <image id="zf9fnqc" name="selected" size="64,62" scale="9grid" scale9grid="16,15,32,33" exported="true"/>
+    <image id="zk42nn8" name="background—template" size="1222,710" exported="true"/>
+  </resources>
+</packageDescription>ppo026.xml|623|<component size="212,212" pivot="0.5,0.5" anchor="true" opaque="false" scroll="both">
+  <displayList>
+    <loader id="n3" name="bg" xy="29,29" pivot="0.5,0.5" size="155,155" url="ui://0tyncec1ppo02i" align="center" vAlign="middle"/>
+    <component id="n0" name="joystick" src="ppo02g" xy="106,106" pivot="0.5,0.5" anchor="true">
+      <Button icon="ui://0tyncec1ppo02h"/>
+    </component>
+    <graph id="n1" name="joystick_touch" xy="0,0" pivot="0,1" size="214,214" type="rect" lineSize="0" fillColor="#00000000">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </graph>
+  </displayList>
+</component>ppo02g.xml|273|<component size="56,56" scroll="both" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n3" name="icon" xy="0,0" size="56,56" url="ui://0tyncec1ppo02h"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>pqvb7d.fnt|625|info creator=UIBuilder
+common xadvance=22
+char id=48 img=pqvb6q xoffset=0 yoffset=0 xadvance=0
+char id=49 img=pqvb6p xoffset=0 yoffset=0 xadvance=0
+char id=50 img=pqvb6o xoffset=0 yoffset=0 xadvance=0
+char id=51 img=pqvb6y xoffset=0 yoffset=0 xadvance=0
+char id=52 img=pqvb6x xoffset=0 yoffset=0 xadvance=0
+char id=53 img=pqvb6w xoffset=0 yoffset=0 xadvance=0
+char id=54 img=pqvb6v xoffset=0 yoffset=0 xadvance=0
+char id=55 img=pqvb6u xoffset=0 yoffset=0 xadvance=0
+char id=56 img=pqvb6t xoffset=0 yoffset=0 xadvance=0
+char id=57 img=pqvb6s xoffset=0 yoffset=0 xadvance=0
+char id=43 img=pqvb6r xoffset=0 yoffset=0 xadvance=0
+pqvb7e.fnt|553|info creator=UIBuilder
+char id=48 img=pqvb73 xoffset=0 yoffset=0 xadvance=0
+char id=49 img=pqvb72 xoffset=0 yoffset=0 xadvance=0
+char id=50 img=pqvb71 xoffset=0 yoffset=0 xadvance=0
+char id=51 img=pqvb70 xoffset=0 yoffset=0 xadvance=0
+char id=52 img=pqvb79 xoffset=0 yoffset=0 xadvance=0
+char id=53 img=pqvb78 xoffset=0 yoffset=0 xadvance=0
+char id=54 img=pqvb77 xoffset=0 yoffset=0 xadvance=0
+char id=55 img=pqvb76 xoffset=0 yoffset=0 xadvance=0
+char id=56 img=pqvb75 xoffset=0 yoffset=0 xadvance=0
+char id=57 img=pqvb74 xoffset=0 yoffset=0 xadvance=0
+pqvb7f.fnt|626|info creator=UIBuilder
+char id=48 img=pqvb5n xoffset=0 yoffset=-10 xadvance=0
+char id=49 img=pqvb5w xoffset=0 yoffset=-10 xadvance=0
+char id=50 img=pqvb5v xoffset=0 yoffset=-10 xadvance=0
+char id=51 img=pqvb5u xoffset=0 yoffset=-10 xadvance=0
+char id=52 img=pqvb5t xoffset=0 yoffset=-10 xadvance=0
+char id=53 img=pqvb5s xoffset=0 yoffset=-10 xadvance=0
+char id=54 img=pqvb5r xoffset=0 yoffset=-10 xadvance=0
+char id=55 img=pqvb5q xoffset=0 yoffset=-10 xadvance=0
+char id=56 img=pqvb5p xoffset=0 yoffset=-10 xadvance=0
+char id=57 img=pqvb5o xoffset=0 yoffset=-10 xadvance=0
+char id=99 img=pqvb5x xoffset=0 yoffset=0 xadvance=0
+pqvb7g.fnt|747|info creator=UIBuilder
+common xadvance=22
+char id=110 img=ltlvnob xoffset=0 yoffset=0 xadvance=0
+char id=48 img=ltlvnoa xoffset=0 yoffset=0 xadvance=0
+char id=49 img=ltlvno9 xoffset=0 yoffset=0 xadvance=0
+char id=50 img=ltlvno8 xoffset=0 yoffset=0 xadvance=0
+char id=51 img=ltlvno7 xoffset=0 yoffset=0 xadvance=0
+char id=52 img=ltlvno6 xoffset=0 yoffset=0 xadvance=0
+char id=53 img=ltlvnoh xoffset=0 yoffset=0 xadvance=0
+char id=54 img=ltlvnog xoffset=0 yoffset=0 xadvance=0
+char id=55 img=ltlvnof xoffset=0 yoffset=0 xadvance=0
+char id=56 img=ltlvnoe xoffset=0 yoffset=0 xadvance=0
+char id=57 img=ltlvnod xoffset=0 yoffset=0 xadvance=0
+char id=115 img=ltlvnoc xoffset=0 yoffset=0 xadvance=0
+char id=105 img=ih4gnm1 xoffset=0 yoffset=0 xadvance=0
+pqvb7h.fnt|728|info creator=UIBuilder
+char id=110 img=ltlvnot xoffset=0 yoffset=0 xadvance=0
+char id=48 img=ltlvnos xoffset=0 yoffset=0 xadvance=0
+char id=49 img=ltlvnor xoffset=0 yoffset=0 xadvance=0
+char id=50 img=ltlvnoq xoffset=0 yoffset=0 xadvance=0
+char id=51 img=ltlvnop xoffset=0 yoffset=0 xadvance=0
+char id=52 img=ltlvnoo xoffset=0 yoffset=0 xadvance=0
+char id=53 img=ltlvnon xoffset=0 yoffset=0 xadvance=0
+char id=54 img=ltlvnom xoffset=0 yoffset=0 xadvance=0
+char id=55 img=ltlvnol xoffset=0 yoffset=0 xadvance=0
+char id=56 img=ltlvnok xoffset=0 yoffset=0 xadvance=0
+char id=57 img=ltlvnoj xoffset=0 yoffset=0 xadvance=0
+char id=115 img=ltlvnoi xoffset=0 yoffset=0 xadvance=0
+char id=105 img=ih4gnm1 xoffset=0 yoffset=0 xadvance=0
+pqvb7i.fnt|77|info creator=UIBuilder
+char id=103 img=pqvb7c xoffset=0 yoffset=0 xadvance=0
+prinnn6.xml|679|<component size="558,191" extention="Label">
+  <displayList>
+    <image id="n0" name="icon" src="x0coniw" xy="0,0" size="561,191">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1" name="title" xy="129,6" size="301,28" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="height" text="标题">
+      <relation target="n0" sidePair="top-top,center-center"/>
+    </text>
+    <component id="n3" name="close" src="zk42nn7" xy="435,9" size="136,79">
+      <relation target="" sidePair="top-top,right-right"/>
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>rdc8br.xml|329|<component size="1334,750" opaque="false">
+  <displayList>
+    <component id="n6" name="rollMsgUI" src="rdc8bs" xy="137,71" touchable="false"/>
+    <component id="n8" name="tipsMsgUI" src="rdc8bt" xy="0,173" touchable="false"/>
+    <component id="n9" name="trumpetMsgUI" src="rfrrnms" xy="435,539"/>
+  </displayList>
+</component>rdc8bs.xml|345|<component size="1049,49" overflow="hidden">
+  <displayList>
+    <image id="n1" name="mark" src="x0conjx" xy="0,2" size="1049,49"/>
+    <text id="n0" name="msgInfo" xy="1054,9" size="427,30" font="方正粗圆简体" fontSize="23" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="adadasda"/>
+  </displayList>
+</component>rdc8bt.xml|193|<component size="1334,200" opaque="false">
+  <displayList>
+    <text id="n0" name="test" xy="153,216" size="40,16" font="方正粗圆简体" fontSize="12" ubb="true" text=""/>
+  </displayList>
+</component>rdc8bu.xml|462|<component size="394,38" opaque="false">
+  <displayList>
+    <image id="n0" name="bg" src="me2f1c" xy="-30,0" pivot="0.5,0.5" size="456,37">
+      <relation target="n4" sidePair="width-width,height-height"/>
+    </image>
+    <richtext id="n4" name="title" xy="-15,0" pivot="0.5,0.5" size="425,35" touchable="false" font="方正粗圆简体" fontSize="24" color="#fefefe" align="center" vAlign="middle" ubb="true" autoSize="none" text="标题文字标题"/>
+  </displayList>
+</component>rdc8bv.xml|491|<component size="473,110">
+  <displayList>
+    <image id="n2" name="hit" src="rdc8bw" xy="196,18"/>
+    <text id="n1" name="title" xy="-31,33" size="325,56" font="ui://0tyncec1pqvb7e" fontSize="0" align="right" leading="0" letterSpacing="-13" autoSize="none" text=""/>
+  </displayList>
+  <transition name="hitAnimation">
+    <item time="0" type="Pivot" value="1,0"/>
+    <item time="0" type="Scale" tween="true" startValue="1.5,1.5" endValue="1,1" duration="6"/>
+  </transition>
+</component>rdc8bx.xml|177|<component size="1334,750" opaque="false">
+  <displayList>
+    <component id="n3" name="multyHitItem" src="rdc8bv" xy="852,168" touchable="false"/>
+  </displayList>
+</component>rfrrnms.xml|435|<component size="456,40" opaque="false" mask="n5">
+  <displayList>
+    <graph id="n5" name="mask" xy="0,0" size="456,40" type="rect" corner="30"/>
+    <image id="n0" name="bg" src="me2f1c" xy="0,1" pivot="0.5,0.5" size="456,37"/>
+    <richtext id="n4" name="content" xy="862,7" pivot="0.5,0.5" size="10,26" touchable="false" font="方正粗圆简体" fontSize="22" color="#fefefe" vAlign="middle" ubb="true" text=""/>
+  </displayList>
+</component>rmqhnp6.fnt|586|info creator=UIBuilder size=13 resizable=true
+char id=48 img=rmqhnp1 xoffset=0 yoffset=0 xadvance=0
+char id=49 img=rmqhnp0 xoffset=0 yoffset=0 xadvance=0
+char id=50 img=rmqhnoz xoffset=0 yoffset=0 xadvance=0
+char id=51 img=rmqhnoy xoffset=0 yoffset=0 xadvance=0
+char id=52 img=rmqhnox xoffset=0 yoffset=0 xadvance=0
+char id=53 img=rmqhnow xoffset=0 yoffset=0 xadvance=0
+char id=54 img=rmqhnp5 xoffset=0 yoffset=0 xadvance=0
+char id=55 img=rmqhnp4 xoffset=0 yoffset=0 xadvance=0
+char id=56 img=rmqhnp3 xoffset=0 yoffset=0 xadvance=0
+char id=57 img=rmqhnp2 xoffset=0 yoffset=0 xadvance=0
+s1mjnnb.xml|484|<component size="558,191" extention="Label">
+  <displayList>
+    <image id="n0" name="icon" src="csuxnlk" xy="0,0" size="561,191">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1" name="title" xy="129,6" size="301,28" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="height" text="标题">
+      <relation target="n0" sidePair="top-top,center-center"/>
+    </text>
+  </displayList>
+</component>sbfonii.xml|212|<component size="180,68">
+  <displayList>
+    <component id="n14" name="subTabs" src="sbfonil" xy="0,66" size="178,165"/>
+    <component id="n16" name="head" src="sbfonim" xy="1,1"/>
+  </displayList>
+</component>sbfonij.xml|479|<component size="178,42">
+  <displayList>
+    <image id="n4" name="select" src="oox7nk5" xy="12,0" size="153,42"/>
+    <image id="n5" name="unSelect" src="oox7nk6" xy="12,0" size="153,42"/>
+    <image id="n1" name="line" src="sbfonik" xy="0,0" size="146,1"/>
+    <text id="n3" name="cellName" xy="22,7" pivot="0.5,0.5" size="131,27" font="方正粗圆简体" fontSize="20" color="#444d59" align="center" vAlign="middle" ubb="true" autoSize="none" text="&#xA;"/>
+  </displayList>
+</component>sbfonil.xml|262|<component size="178,165" overflow="hidden">
+  <displayList>
+    <list id="n11" name="list" xy="0,-165" size="178,165" selectionMode="none" overflow="scroll" scrollBarFlags="160" margin="0,0,0,0" defaultItem="ui://0tyncec1sbfonij"/>
+  </displayList>
+</component>sbfonim.xml|791|<component size="178,66" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n8" name="icon" xy="0,0" size="178,66" url="ui://0tyncec1n3qsneq" fill="scaleFree"/>
+    <text id="n3" name="title" xy="8,17" pivot="0.5,0.5" size="158,31" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="&#xA;">
+      <relation target="" sidePair="width-width"/>
+    </text>
+    <image id="n6" name="arrowUp" src="sbfonin" xy="138,30">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n7" name="arrowDown" src="sbfonin" xy="138,30" flip="vt">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>skqrnkp.xml|824|<component size="144,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n5" name="icon" xy="6,2" size="131,60" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n4" name="title" xy="7,2" size="130,60" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="">
+      <relation target="n5" sidePair="width-width,height-height"/>
+      <relation target="n5" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>sw74nlz.xml|855|<component size="138,29" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n2" name="icon" xy="0,0" size="29,29" url="ui://0tyncec15v99nke" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="left-left,top-top"/>
+    </loader>
+    <loader id="n4" name="tickLoader" xy="-1,-1" size="32,32" url="ui://0tyncec15v99nkf" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="1"/>
+    </loader>
+    <text id="n5" name="title" xy="32,0" size="102,29" font="方正粗圆简体" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" text="">
+      <relation target="" sidePair="right-right,top-top"/>
+      <relation target="n2" sidePair="left-left"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>sw74nm0.xml|571|<component size="74,29" extention="Button">
+  <displayList>
+    <loader id="n7" name="icon" xy="0,0" size="74,29" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n9" name="title" xy="0,0" size="74,29" font="方正粗圆简体" fontSize="19" color="#3e3e3e" align="center" vAlign="middle" ubb="true" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>t5hdnfo.xml|715|<component size="80,80" extention="Button">
+  <displayList>
+    <loader id="n0" name="bg" xy="0,0" size="80,80" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n1" name="icon" xy="0,0" size="80,80" align="center" vAlign="middle" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n2" name="title" xy="44,59" size="34,19" font="方正粗圆简体" fontSize="12" color="#fefefe" align="right" vAlign="middle" autoSize="none" strokeColor="#4e4e4e" text="">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>t5hdnfp.xml|526|<component size="80,80" opaque="false" extention="Label" mask="n6">
+  <displayList>
+    <loader id="n2" name="icon" xy="40,40" pivot="0.5,0.5" anchor="true" size="50,30" touchable="false" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </loader>
+    <graph id="n6" name="mask" xy="0,0" size="80,80" touchable="false" type="eclipse">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </graph>
+  </displayList>
+</component>t5hdnfq.xml|390|<component size="64,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n4" name="icon" xy="0,0" size="64,64" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.98"/>
+</component>t5hdnfs.xml|664|<component size="64,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n5" name="icon" xy="0,0" size="64,64" touchable="false" align="center" vAlign="middle" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="64,64" font="方正粗圆简体" fontSize="24" color="#e5e5e5" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>t5hdnft.xml|1116|<component size="64,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n6" name="upLayer" xy="0,0" size="64,64" touchable="false" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n7" name="downLayer" xy="0,0" size="64,64" touchable="false" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n5" name="icon" xy="0,0" size="64,64" touchable="false" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="64,64" font="方正粗圆简体" fontSize="24" color="#e5e5e5" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>t5hdnfu.xml|126|<component size="1,1" overflow="scroll" opaque="false" scroll="horizontal" scrollBarFlags="256">
+  <displayList/>
+</component>t5hdnfv.xml|120|<component size="1,1" overflow="scroll" opaque="false" scroll="both" scrollBarFlags="256">
+  <displayList/>
+</component>t5hdnfw.xml|106|<component size="1,1" overflow="scroll" opaque="false" scrollBarFlags="256">
+  <displayList/>
+</component>t5hdnfx.xml|67|<component size="1,1" opaque="false">
+  <displayList/>
+</component>t5hdnfy.xml|306|<component size="80,80" extention="Label">
+  <displayList>
+    <loader id="n0" name="icon" xy="0,0" size="80,80" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </loader>
+  </displayList>
+</component>t5hdnfz.xml|248|<component size="80,80" opaque="false" extention="Label">
+  <displayList>
+    <image id="n0" name="bg" src="t5hdng0" xy="0,0"/>
+    <component id="n8" name="icon" src="t5hdnfp" xy="3,3" size="74,74" touchable="false"/>
+  </displayList>
+</component>t5hdng1.xml|311|<component size="34,32" extention="Label">
+  <displayList>
+    <image id="n1" name="lvBg" src="t5hdng2" xy="0,0"/>
+    <text id="n4" name="title" xy="-2,5" size="37,20" font="方正粗圆简体" fontSize="14" color="#d4defc" align="center" vAlign="middle" autoSize="none" bold="true" text=""/>
+  </displayList>
+</component>t5hdng3.fnt|605|info creator=UIBuilder size=13 resizable=true
+common xadvance=31
+char id=48 img=t5hdng4 xoffset=0 yoffset=0 xadvance=0
+char id=49 img=t5hdng5 xoffset=0 yoffset=0 xadvance=0
+char id=50 img=t5hdng6 xoffset=0 yoffset=0 xadvance=0
+char id=51 img=t5hdng7 xoffset=0 yoffset=0 xadvance=0
+char id=52 img=t5hdng8 xoffset=0 yoffset=0 xadvance=0
+char id=53 img=t5hdng9 xoffset=0 yoffset=0 xadvance=0
+char id=54 img=t5hdnga xoffset=0 yoffset=0 xadvance=0
+char id=55 img=t5hdngb xoffset=0 yoffset=0 xadvance=0
+char id=56 img=t5hdngc xoffset=0 yoffset=0 xadvance=0
+char id=57 img=t5hdngd xoffset=0 yoffset=0 xadvance=0
+t5hdnge.fnt|605|info creator=UIBuilder size=28 resizable=true
+common xadvance=28
+char id=48 img=t5hdngf xoffset=0 yoffset=0 xadvance=0
+char id=49 img=t5hdngg xoffset=0 yoffset=0 xadvance=0
+char id=50 img=t5hdngh xoffset=0 yoffset=0 xadvance=0
+char id=51 img=t5hdngi xoffset=0 yoffset=0 xadvance=0
+char id=52 img=t5hdngj xoffset=0 yoffset=0 xadvance=0
+char id=53 img=t5hdngk xoffset=0 yoffset=0 xadvance=0
+char id=54 img=t5hdngl xoffset=0 yoffset=0 xadvance=0
+char id=55 img=t5hdngm xoffset=0 yoffset=0 xadvance=0
+char id=56 img=t5hdngn xoffset=0 yoffset=0 xadvance=0
+char id=57 img=t5hdngo xoffset=0 yoffset=0 xadvance=0
+t5hdngp.fnt|204|info creator=UIBuilder
+common xadvance=61
+char id=49 img=t5hdngq xoffset=0 yoffset=0 xadvance=0
+char id=50 img=t5hdngr xoffset=0 yoffset=0 xadvance=0
+char id=51 img=t5hdngs xoffset=0 yoffset=0 xadvance=0
+tebrnmj.xml|380|<component size="159,26" overflow="scroll" scrollBarFlags="256" extention="Label">
+  <displayList>
+    <richtext id="n0" name="title" xy="0,0" size="159,26" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="height" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+  </displayList>
+</component>tfo1dj.xml|198|<component size="59,45" extention="Button">
+  <displayList>
+    <image id="n0" name="icon" src="tfo1di" xy="0,0"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>tfo1dl.xml|198|<component size="31,53" extention="Button">
+  <displayList>
+    <image id="n0" name="icon" src="tfo1dk" xy="0,0"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>tfo1dm.xml|208|<component size="31,53" extention="Button">
+  <displayList>
+    <image id="n0" name="icon" src="tfo1dk" xy="0,0" flip="hz"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>tfo1do.xml|474|<component size="225,46" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="icon" src="gk0nnie" xy="1,0" size="225,46"/>
+    <text id="n0" name="title" xy="6,2" size="216,40" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text=""/>
+  </displayList>
+  <Button mode="Radio" downEffect="scale" downEffectValue="0.95"/>
+</component>tnbmnka.xml|726|<component size="130,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n5" name="icon" xy="0,0" size="130,64" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="130,64" font="方正粗圆简体" fontSize="22" color="#fff9e2" align="center" vAlign="middle" letterSpacing="2" ubb="true" autoSize="none" strokeColor="#626161" singleLine="true" text="">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>uedbni0.xml|474|<component size="50,2" opaque="false">
+  <displayList>
+    <image id="n0" name="n0" src="uedbnhx" xy="14,0" size="22,2">
+      <relation target="" sidePair="width-width,top-top"/>
+    </image>
+    <image id="n1" name="n1" src="uedbnhy" xy="-3,-5">
+      <relation target="" sidePair="top-top,left-left"/>
+    </image>
+    <image id="n2" name="n2" src="uedbnhy" xy="41,-5">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+  </displayList>
+</component>x0conjj.fnt|767|info creator=UIBuilder size=24 resizable=true
+common xadvance=18
+char id=48 img=x0conjh xoffset=0 yoffset=0 xadvance=0
+char id=49 img=x0conjg xoffset=0 yoffset=0 xadvance=0
+char id=50 img=x0conjf xoffset=0 yoffset=0 xadvance=0
+char id=51 img=x0conje xoffset=0 yoffset=0 xadvance=0
+char id=52 img=x0conjd xoffset=0 yoffset=0 xadvance=0
+char id=53 img=x0conjc xoffset=0 yoffset=0 xadvance=0
+char id=54 img=x0conjb xoffset=0 yoffset=0 xadvance=0
+char id=55 img=x0conja xoffset=0 yoffset=0 xadvance=0
+char id=56 img=x0conj9 xoffset=0 yoffset=0 xadvance=0
+char id=57 img=x0conj8 xoffset=0 yoffset=0 xadvance=0
+char id=105 img=x0conj7 xoffset=0 yoffset=0 xadvance=77
+char id=43 img=ckrkcx xoffset=0 yoffset=0 xadvance=0
+char id=45 img=ckrkcy xoffset=0 yoffset=0 xadvance=0
+x0conk2.xml|769|<component size="300,64" extention="Label">
+  <displayList>
+    <image id="n0" name="n0" src="x0conjw" xy="65,12" size="102,44"/>
+    <component id="n2" name="btnSub" src="t5hdnfq" xy="2,1" size="62,63">
+      <Button icon="ui://0tyncec1x0conjz"/>
+    </component>
+    <component id="n3" name="btnAdd" src="t5hdnfq" xy="169,1" size="62,63">
+      <Button icon="ui://0tyncec1x0conjy"/>
+    </component>
+    <component id="n4" name="btnMax" src="t5hdnfq" xy="237,1" size="62,63">
+      <Button icon="ui://0tyncec1x0conk0"/>
+    </component>
+    <text id="n5" name="title" xy="72,18" size="88,31" input="true" maxLength="3" keyboardType="2" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="0"/>
+  </displayList>
+</component>x0conk3.xml|1391|<component size="215,282">
+  <displayList>
+    <image id="n21" name="n21" src="x0conjw" xy="0,2" size="215,282"/>
+    <component id="n7" name="t7" src="x0conk4" xy="12,11">
+      <Button title="7"/>
+    </component>
+    <component id="n8" name="t8" src="x0conk4" xy="77,11">
+      <Button title="8"/>
+    </component>
+    <component id="n9" name="t6" src="x0conk4" xy="142,76">
+      <Button title="6"/>
+    </component>
+    <component id="n10" name="t5" src="x0conk4" xy="77,76">
+      <Button title="5"/>
+    </component>
+    <component id="n11" name="t4" src="x0conk4" xy="12,76">
+      <Button title="4"/>
+    </component>
+    <component id="n12" name="t9" src="x0conk4" xy="142,11">
+      <Button title="9"/>
+    </component>
+    <component id="n13" name="t2" src="x0conk4" xy="77,141">
+      <Button title="2"/>
+    </component>
+    <component id="n14" name="t1" src="x0conk4" xy="12,141">
+      <Button title="1"/>
+    </component>
+    <component id="n15" name="t3" src="x0conk4" xy="142,141">
+      <Button title="3"/>
+    </component>
+    <component id="n17" name="t0" src="x0conk4" xy="77,206">
+      <Button title="0"/>
+    </component>
+    <component id="n16" name="tDo" src="x0conk4" xy="143,206">
+      <Button title="退出"/>
+    </component>
+    <component id="n19" name="tDel" src="x0conk4" xy="12,206">
+      <Button title="删除"/>
+    </component>
+  </displayList>
+</component>x0conk4.xml|402|<component size="62,62" extention="Button">
+  <displayList>
+    <loader id="n2" name="icon" xy="0,0" size="50,50" url="ui://0tyncec1x0conk1"/>
+    <text id="n0" name="title" xy="4,2" size="56,57" font="方正粗圆简体" fontSize="21" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#5e5e5e" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>ydonnn5.xml|750|<component size="64,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n4" name="icon" xy="0,0" size="64,64" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n5" name="upLayer" xy="0,0" size="64,64" align="center" vAlign="middle">
+      <relation target="n4" sidePair="center-center,middle-middle"/>
+      <relation target="n4" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n6" name="title" xy="0,0" size="64,64" font="方正粗圆简体" fontSize="24" color="#e5e5e5" autoSize="none" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.98"/>
+</component>z03enli.xml|653|<component size="80,80" opaque="false" extention="Label">
+  <displayList>
+    <image id="n0" name="bg" src="t5hdng0" xy="0,0">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </image>
+    <component id="n8" name="icon" src="t5hdnfp" xy="3,3" size="74,74" touchable="false">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </component>
+    <component id="n11" name="title" src="t5hdng1" xy="51,51" size="32,32" touchable="false">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </component>
+  </displayList>
+</component>zk42nn7.xml|546|<component size="64,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n4" name="icon" xy="7,17" size="50,30" align="center" vAlign="middle" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n6" name="title" xy="-9,17" size="83,30" font="方正粗圆简体" fontSize="24" color="#e5e5e5" align="center" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.98"/>
+</component>

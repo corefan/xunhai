@@ -1,0 +1,835 @@
+88mbdk.xml|358|<component size="86,86" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="Bg" src="88mbdj" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>9l3bet.xml|270|<component size="0,0">
+  <displayList>
+    <loader id="n26" name="mapRoad1" xy="0,0" size="50,30" scale="-1,1" autoSize="true"/>
+    <component id="n27" name="signContain1" src="t5hdnfx" pkg="0tyncec1" xy="0,0" size="900,800" scale="-1,1"/>
+  </displayList>
+</component>9l3beu.xml|308|<component size="0,0" mask="n0">
+  <displayList>
+    <component id="n4" name="mapScale" src="9l3bet" xy="0,0"/>
+    <graph id="n0" name="mask" xy="0,0" size="154,110" type="rect"/>
+    <component id="n5" name="playerIcon" src="bag31w" pkg="rkrzdlw3" xy="81,54" pivot="0.5,0.5"/>
+  </displayList>
+</component>cdsbej.xml|326|<component size="156,139">
+  <displayList>
+    <image id="n1" name="n1" src="imszed" xy="8,0"/>
+    <text id="n2" name="title" xy="0,98" size="156,28" font="方正粗圆简体" fontSize="24" color="#fff9b7" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="回城复活"/>
+  </displayList>
+</component>ckrkb0.xml|143|<component size="215,16" overflow="hidden">
+  <displayList>
+    <image id="n2" name="bar" src="mlf3cp" xy="0,0"/>
+  </displayList>
+</component>ckrkb1.xml|159|<component size="1334,6" overflow="hidden">
+  <displayList>
+    <image id="n1" name="Front" src="ckrkb3" xy="0,0" size="1334,6"/>
+  </displayList>
+</component>ckrkb5.xml|777|<component size="1334,6" extention="ProgressBar">
+  <displayList>
+    <image id="n0" name="Bg" src="ckrkb2" xy="0,0" size="1334,6"/>
+    <component id="n1" name="bar" src="ckrkb1" xy="0,0"/>
+    <image id="n2" name="line" src="ckrkb4" xy="133,0"/>
+    <image id="n3" name="line" src="ckrkb4" xy="808,0"/>
+    <image id="n4" name="line" src="ckrkb4" xy="403,0"/>
+    <image id="n5" name="line" src="ckrkb4" xy="538,0"/>
+    <image id="n6" name="line" src="ckrkb4" xy="673,0"/>
+    <image id="n7" name="line" src="ckrkb4" xy="268,0"/>
+    <image id="n8" name="line" src="ckrkb4" xy="943,0"/>
+    <image id="n9" name="line" src="ckrkb4" xy="1078,0"/>
+    <image id="n10" name="line" src="ckrkb4" xy="1213,0"/>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>eg11aj.xml|4597|<component size="1334,750">
+  <controller name="SwitchMorF" pages="0,CityUI,1,FightUI,2,TiantiUI" selected="0"/>
+  <displayList>
+    <component id="n0" name="MiniMap" src="eg11am" xy="1166,0">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n2" name="PlayerInfo" src="eg11ak" xy="0,5"/>
+    <component id="n3" name="FightController" src="eg11an" xy="0,2">
+      <gearDisplay controller="SwitchMorF" pages="1,2"/>
+    </component>
+    <component id="n5" name="SwitchBtn" src="eg11ap" xy="1261,162" pivot="0.5,0.5">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+      <Button checked="true"/>
+    </component>
+    <component id="n6" name="Function" src="t5hdnfx" pkg="0tyncec1" xy="1254,250" size="79,534">
+      <gearDisplay controller="SwitchMorF" pages="0"/>
+    </component>
+    <component id="n11" name="chatMain" src="om7mbn" xy="424,616"/>
+    <component id="n9" name="PlayerExpBar" src="ckrkb5" xy="0,744">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n10" name="TaskTeam" src="hudkb6" xy="0,125">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n12" name="BagBtn" src="gv0lce" xy="341,666" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n27" name="equipStoreBtn" src="gv0lce" xy="1173,235" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n28" name="decompositionBtn" src="gv0lce" xy="1167,162" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n13" name="Activites" src="t5hdnfx" pkg="0tyncec1" xy="521,5" pivot="1,0" size="500,100">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n15" name="pkModel" src="nv56d6" xy="259,7">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n16" name="modelSelect" src="nv56dc" xy="264,36"/>
+    <component id="n17" name="FBFlag" src="sgyode" xy="1106,0">
+      <gearDisplay controller="SwitchMorF" pages="1"/>
+    </component>
+    <list id="n19" name="buffContainer" xy="73,112" size="211,76" layout="flow_hz" overflow="scroll" margin="0,0,0,0" lineGap="1" colGap="1" defaultItem="ui://0042gnitfx79el"/>
+    <component id="n8" name="MonInfo" src="gvm85g" xy="375,36"/>
+    <component id="n23" name="btnVipIcon" src="t5hdnfs" pkg="0tyncec1" xy="37,94" size="48,28"/>
+    <component id="n24" name="buffDescPanel" src="fx79em" xy="73,188"/>
+    <component id="n25" name="PlayerInfoRight" src="nnjff3" xy="1328,3" scale="-1,1">
+      <gearDisplay controller="SwitchMorF" pages="2"/>
+    </component>
+    <text id="n26" name="txtCutdown" xy="568,46" size="186,30" font="方正粗圆简体" fontSize="24" color="#ff2d2d" strokeColor="#280000" strokeSize="2" text="剩余时间  : 120秒">
+      <gearDisplay controller="SwitchMorF" pages="2"/>
+    </text>
+    <component id="n30" name="furnaceBtn" src="gv0lce" xy="1077,162" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n31" name="gangBtn" src="gv0lce" xy="987,162" pivot="0.5,0.5" size="74,73">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+    <component id="n14" name="returnBtn" src="gv0lce" xy="939,675" pivot="0.5,0.5" size="62,62">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+      <Button icon="ui://0042gnitgv0lcg"/>
+    </component>
+    <component id="n32" name="transBtn" src="gv0lce" xy="941,602" size="62,62">
+      <gearDisplay controller="SwitchMorF" pages="0,1"/>
+    </component>
+  </displayList>
+  <transition name="SwitchBtnEffect">
+    <item time="0" type="Rotation" target="n5" tween="true" startValue="0" endValue="45" duration="12" ease="Quad.InOut"/>
+    <item time="12" type="Rotation" target="n5" tween="true" startValue="45" ease="Quad.InOut"/>
+  </transition>
+  <transition name="SwitchBtnEffect2">
+    <item time="0" type="Rotation" target="n5" tween="true" startValue="45" endValue="0" duration="12"/>
+  </transition>
+  <transition name="fightcontrollerEffectIn">
+    <item time="0" type="XY" target="n3" tween="true" startValue="389,-" endValue="0,-" duration="8"/>
+  </transition>
+  <transition name="functionIn">
+    <item time="0" type="XY" target="n6" tween="true" startValue="1332,-" endValue="1248.69,-" duration="12"/>
+    <item time="12" type="XY" target="n6" tween="true" startValue="1248.69,-"/>
+  </transition>
+</component>eg11ak.xml|806|<component size="391,110">
+  <displayList>
+    <image id="n3" name="BgName" src="mlf3cn" xy="3,-6"/>
+    <component id="n1" name="HpBar" src="gvm853" xy="128,34">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n2" name="MpBar" src="gvm855" xy="112,52">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <loader id="n6" name="HeadIcon" xy="9,0" size="105,110" align="center" vAlign="middle" fill="scaleMatchWidth"/>
+    <text id="n11" name="PowerLabel" xy="109,73" size="223,30" font="ui://0tyncec1hhg0eg" fontSize="11" vAlign="middle" autoSize="none" text=""/>
+    <text id="n12" name="LevelLabel" xy="109,18" pivot="0.5,0.5" size="27,27" font="方正粗圆简体" fontSize="20" color="#fffffe" align="center" vAlign="middle" text="00&#xA;"/>
+  </displayList>
+</component>eg11am.xml|676|<component size="170,152">
+  <displayList>
+    <image id="n6" name="bg" src="f50ner" xy="1,31" size="166,124"/>
+    <image id="n1" name="Bg2" src="sgyodd" xy="-48,0" size="215,32"/>
+    <text id="n2" name="MapName" xy="48,4" size="122,25" font="方正粗圆简体" fontSize="16" color="#c6d6db" autoSize="none" text="地图名称(99级)">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <image id="n4" name="bg3" src="nv56d7" xy="26,9"/>
+    <text id="n5" name="ServerLabel" xy="-11,4" size="37,24" font="方正粗圆简体" fontSize="16" color="#c6d5db" align="right" autoSize="none" text="1线"/>
+    <component id="n20" name="smallMap" src="9l3beu" xy="9,37"/>
+  </displayList>
+</component>eg11an.xml|758|<component size="1334,750" overflow="hidden" opaque="false">
+  <displayList>
+    <component id="n5" name="BtnAgentia01" src="gvm861" xy="1174,339"/>
+    <component id="n6" name="BtnAgentia02" src="gvm861" xy="1258,338"/>
+    <component id="n0" name="BtnSkill01" src="tvxi6s" xy="1042,636"/>
+    <component id="n1" name="BtnSkill02" src="tvxi6s" xy="1042,528"/>
+    <component id="n2" name="BtnSkill03" src="tvxi6s" xy="1117,448" size="100,100"/>
+    <component id="n3" name="BtnSkill04" src="tvxi6s" xy="1224,428"/>
+    <component id="n4" name="BtnAttack" src="tvxi6u" xy="1147,556"/>
+    <component id="n8" name="BtnAgentia03" src="gvm861" xy="1174,340"/>
+    <component id="n9" name="BtnAgentia04" src="gvm861" xy="1256,340"/>
+  </displayList>
+</component>eg11ap.xml|333|<component size="69,69" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="icon" src="n2myas" xy="0,0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>eg11ar.xml|300|<component size="100,100" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n2" name="icon" xy="0,0" size="100,100" align="center" vAlign="middle" fill="scaleMatchWidth"/>
+  </displayList>
+  <Button/>
+</component>fx79el.xml|305|<component size="36,36">
+  <displayList>
+    <loader id="n4" name="icon" xy="10,0" size="36,36" fill="scale"/>
+    <text id="n2" name="title" xy="16,14" size="30,23" fontSize="16" color="#ffffff" align="right" vAlign="bottom" autoSize="none" strokeColor="#000000" text="91"/>
+  </displayList>
+</component>fx79em.xml|364|<component size="24,24">
+  <displayList>
+    <image id="n0" name="n0" src="hrgcnng" pkg="0tyncec1" xy="-9,-10" size="44,46">
+      <relation target="n3" sidePair="width-width"/>
+    </image>
+    <component id="n3" name="descContainer" src="fx79en" xy="4,5" size="15,13"/>
+  </displayList>
+  <relation target="n0" sidePair="width-width,height-height"/>
+</component>fx79en.xml|54|<component size="20,20">
+  <displayList/>
+</component>g9qxe8.xml|767|<component size="241,86">
+  <displayList>
+    <component id="n28" name="hpBar" src="nuxfe2" xy="72,58" size="150,9">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n22" name="headIcon" src="z03enli" pkg="0tyncec1" xy="1,6"/>
+    <image id="n24" name="n0" src="t5hdng2" pkg="0tyncec1" xy="0,0" size="30,30"/>
+    <component id="n23" name="careerIcon" src="t5hdnfy" pkg="0tyncec1" xy="5,5" size="20,20"/>
+    <richtext id="n26" name="txtName" xy="83,28" size="10,24" font="方正粗圆简体" fontSize="20" color="#dedcf4" strokeColor="#666666" text=""/>
+    <loader id="n30" name="leadSign" xy="90,25" size="34,30" url="ui://0tyncec1g9qxnm4">
+      <relation target="n26" sidePair="right-right,top-top"/>
+    </loader>
+  </displayList>
+</component>gv0lc8.xml|300|<component size="78,82" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n4" name="icon" xy="0,0" size="50,50"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>gv0lce.xml|425|<component size="80,80" opaque="false" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n4" name="icon" xy="0,0" size="80,80" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>gvm853.xml|468|<component size="214,15" extention="ProgressBar">
+  <displayList>
+    <component id="n6" name="bar" src="xyqw7s" xy="0,0" size="214,16"/>
+    <text id="n3" name="title" xy="0,-4" size="214,23" font="方正粗圆简体" fontSize="17" color="#ececec" align="center" vAlign="middle" autoSize="height" strokeColor="#000000" text="1111">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>gvm855.xml|453|<component size="217,16" extention="ProgressBar">
+  <displayList>
+    <component id="n4" name="bar" src="ckrkb0" xy="1,0"/>
+    <text id="n3" name="title" xy="0,-5" size="217,27" font="方正粗圆简体" fontSize="17" color="#ececec" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="11111">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>gvm85g.xml|830|<component size="595,65">
+  <displayList>
+    <list id="n50" name="buffList" xy="97,56" size="351,34" layout="row" selectionMode="none" overflow="scroll" margin="0,0,0,0" colGap="-5" defaultItem="ui://0042gnitfx79el"/>
+    <image id="n56" name="bar" src="xyqw7y" xy="69,0"/>
+    <component id="n61" name="progressLifeSlowly" src="nh7oa7" xy="80,7">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n57" name="progressLife" src="gvm85i" xy="80,7" size="414,37">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n60" name="name" xy="69,-17" size="435,26" font="方正粗圆简体" fontSize="22" color="#fff7cb" align="center" autoSize="none" strokeColor="#333333" strokeSize="2" text=""/>
+    <component id="n63" name="buffDescPanel" src="fx79em" xy="97,91"/>
+  </displayList>
+</component>gvm85i.xml|528|<component size="414,37" extention="ProgressBar">
+  <displayList>
+    <component id="n4" name="bar" src="xyqw80" xy="0,2">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n3" name="title" xy="0,0" size="414,40" font="方正粗圆简体" fontSize="16" color="#ececec" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>gvm861.xml|1519|<component size="75,75" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n9" name="BtnAgentiaBg" src="wdv796" xy="5,5" size="80,80"/>
+    <loader id="n14" name="Shadow" xy="19,2" size="44,62" fill="scale"/>
+    <loader id="n11" name="BtnAgentiaIcon" xy="19,12" size="48,52" align="center" vAlign="middle" fill="scale" playing="false"/>
+    <image id="n2" name="BtnAgentiaCdIcon" src="gvm863" xy="10,9" size="55,55" alpha="0.7" color="#333333" fillMethod="radial360" fillClockwise="false"/>
+    <text id="n8" name="BtnAgentianumTxt" xy="3,45" size="71,23" font="方正粗圆简体" fontSize="17" color="#cdcbce" align="center" vAlign="middle" autoSize="none" strokeColor="#171823" text="0">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <text id="n12" name="BtnAgentiacdTxt" xy="19,20" size="38,30" font="方正粗圆简体" fontSize="24" color="#cdcbce" align="center" vAlign="middle" autoSize="none" strokeColor="#171823" text="">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <text id="n13" name="BtnAutoTxt" xy="0,20" size="74,30" font="方正粗圆简体" fontSize="24" color="#cdcbce" align="center" vAlign="middle" autoSize="none" strokeColor="#171823" text="">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <image id="n15" name="lock" src="igzgnk7" pkg="0tyncec1" xy="29,23" scale="0.4,0.4" visible="false"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>hudkb6.xml|2130|<component size="486,335" opaque="false" extention="Button">
+  <controller name="c1" pages="2,,3," selected="0"/>
+  <displayList>
+    <image id="n12" name="bg_btn_extend" src="hudkb9" xy="0,40" group="n13"/>
+    <component id="n9" name="button_task" src="o6dhbj" xy="0,85" group="n13">
+      <Button checked="true" controller="c1" page="2"/>
+    </component>
+    <component id="n10" name="button_team" src="o6dhbi" xy="0,200" group="n13">
+      <Button controller="c1" page="3"/>
+    </component>
+    <component id="n11" name="taskConn" src="o6dhbk" xy="43,62" group="n13">
+      <gearDisplay controller="c1" pages="2"/>
+    </component>
+    <component id="n16" name="teamConn" src="t5hdnfw" pkg="0tyncec1" xy="43,60" size="284,252" group="n13">
+      <gearDisplay controller="c1" pages="3"/>
+    </component>
+    <image id="n17" name="teamTip" src="xnis91" pkg="0tyncec1" xy="25,219" group="n13" visible="false"/>
+    <group id="n13" name="group_need_move" xy="0,40" size="347,294" advanced="true"/>
+    <component id="n8" name="button_extend" src="o6dhbh" xy="0,40"/>
+  </displayList>
+  <Button/>
+  <transition name="effect_move_out">
+    <item time="0" type="XY" target="n13" tween="true" startValue="0,40" endValue="-347,40" duration="12"/>
+    <item time="12" type="XY" target="n13" tween="true" startValue="-347,40" ease="Quad.In"/>
+  </transition>
+  <transition name="effect_rotate_out">
+    <item time="0" type="Skew" target="n8" value="0,0"/>
+    <item time="0" type="XY" target="n8" value="0,40"/>
+    <item time="12" type="Skew" target="n8" value="0,180"/>
+    <item time="12" type="XY" target="n8" tween="true" startValue="42,40" ease="Quad.InOut"/>
+  </transition>
+  <transition name="effect_move_in">
+    <item time="0" type="XY" target="n13" tween="true" startValue="-347,40" endValue="0,40" duration="12"/>
+    <item time="12" type="XY" target="n13" tween="true" startValue="0,40" ease="Quad.In"/>
+  </transition>
+  <transition name="effect_rotate_in">
+    <item time="12" type="Skew" target="n8" value="0,0"/>
+    <item time="12" type="XY" target="n8" tween="true" startValue="0,40"/>
+  </transition>
+</component>imszeh.xml|710|<component size="1334,750">
+  <displayList>
+    <graph id="n4" name="n4" xy="0,0" pivot="0.5,0.5" size="1334,750" scale="1.5,1.5" type="rect" lineSize="0" lineColor="#80000000" fillColor="#80000000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <component id="n2" name="reliftBtn" src="cdsbej" xy="589,431" size="156,139"/>
+    <image id="n5" name="bgName" src="vrddnq4" pkg="0tyncec1" xy="667,177" pivot="0.5,0.5" anchor="true" size="464,44"/>
+    <text id="n6" name="txtName" xy="665,178" pivot="0.5,0.5" anchor="true" size="247,26" font="方正粗圆简体" fontSize="22" color="#c6d6db" align="center" vAlign="middle" ubb="true" text="玩家名字特别长将你击杀"/>
+  </displayList>
+</component>imszei.xml|1610|<component size="1334,750">
+  <displayList>
+    <graph id="n0" name="n0" xy="0,0" pivot="0.5,0.5" size="1334,750" scale="1.5,1.5" type="rect" lineSize="0" lineColor="#80000000" fillColor="#80000000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <image id="n1" name="n1" src="imszef" xy="361,168" group="n11"/>
+    <image id="n2" name="n2" src="imszeg" xy="568,162" group="n11"/>
+    <image id="n3" name="n3" src="imszec" xy="613,288" group="n11"/>
+    <component id="n4" name="btn1" src="skqrnkp" pkg="0tyncec1" xy="481,429" size="122,42" group="n11">
+      <Button title="还魂复活" titleColor="#000000" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n5" name="btn2" src="skqrnkp" pkg="0tyncec1" xy="603,429" size="122,42" group="n11">
+      <Button title="等待观战" titleColor="#000000" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n6" name="btn3" src="skqrnkp" pkg="0tyncec1" xy="727,429" size="122,42" group="n11">
+      <Button title="退出副本" titleColor="#000000" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <text id="n7" name="desc" xy="451,389" size="413,28" group="n11" font="方正粗圆简体" fontSize="20" color="#fff9b7" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n11" name="reliftPanel" xy="361,162" size="612,362" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n12" name="reliftBtn" src="cdsbej" xy="586,417">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>io2p7a.xml|702|<component size="340,54">
+  <displayList>
+    <loader id="n4" name="icon" xy="1,6" size="36,36" fill="scale"/>
+    <text id="n2" name="title" xy="39,7" size="200,23" font="方正粗圆简体" fontSize="18" color="#ffffff" ubb="true" autoSize="none" text="不是滴发"/>
+    <text id="n5" name="desc" xy="39,30" size="230,22" font="方正粗圆简体" fontSize="18" color="#ffffff" ubb="true" autoSize="height" text="调息止血之术，不动时"/>
+    <text id="n6" name="time" xy="241,7" size="96,22" font="方正粗圆简体" fontSize="18" color="#fb6161" ubb="true" autoSize="none" text="（永久）"/>
+    <image id="n7" name="line" src="jsucnhi" pkg="0tyncec1" xy="4,1" size="330,2"/>
+  </displayList>
+  <relation target="n5" sidePair="height-height"/>
+</component>ldfud2.xml|571|<component size="177,40" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="ldfucs" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2" name="n2" xy="11,4" size="108,32" font="方正粗圆简体" fontSize="20" color="#e5fffe" align="center" vAlign="middle" autoSize="none" text="前往组队"/>
+    <image id="n3" name="n3" src="ldfucr" xy="122,4"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>lnqzf8.xml|461|<component size="68,51" extention="Button">
+  <displayList>
+    <image id="n16" name="btn_siliaoTip" src="lnqzf5" xy="14,9"/>
+    <image id="n17" name="n17" src="lnqzf4" xy="43,0"/>
+    <text id="n18" name="numSiliao" xy="43,-4" size="25,29" fontSize="15" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#871515" strokeSize="2" text="1"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>nc9af0.xml|495|<component size="219,204">
+  <displayList>
+    <image id="n1" name="bgKuang" src="jsyyey" xy="0,0" size="219,122"/>
+    <image id="n3" name="n3" src="rnfrnmq" pkg="0tyncec1" xy="197,11" size="180,29" scale="-1,1"/>
+    <text id="n4" name="n4" xy="24,12" size="171,26" font="方正粗圆简体" fontSize="22" color="#2e3341" ubb="true" autoSize="height" text="请选择"/>
+    <list id="n2" name="btnList" xy="20,42" size="178,66" margin="0,0,0,0" defaultItem="ui://0tyncec1skqrnkp"/>
+  </displayList>
+</component>nh7oa6.xml|143|<component size="414,37" overflow="hidden">
+  <displayList>
+    <image id="n2" name="bar" src="kita9f" xy="0,0"/>
+  </displayList>
+</component>nh7oa7.xml|275|<component size="414,37" extention="ProgressBar">
+  <displayList>
+    <component id="n4" name="bar" src="nh7oa6" xy="0,2">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>nnjff2.xml|373|<component size="140,40" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="nnjff1" xy="0,0" size="140,40">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>nnjff3.xml|1083|<component size="391,213">
+  <displayList>
+    <image id="n3" name="BgName" src="mlf3cn" xy="3,-6"/>
+    <component id="n1" name="HpBar" src="gvm853" xy="128,34">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n2" name="MpBar" src="gvm855" xy="112,52">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <loader id="n6" name="HeadIcon" xy="9,0" size="105,110" align="center" vAlign="middle" fill="scaleMatchWidth"/>
+    <text id="n11" name="PowerLabel" xy="109,73" size="223,30" font="ui://0tyncec1hhg0eg" fontSize="11" vAlign="middle" autoSize="none" text=""/>
+    <text id="n12" name="LevelLabel" xy="109,18" pivot="0.5,0.5" size="27,27" font="方正粗圆简体" fontSize="20" color="#fffffe" align="center" vAlign="middle" text="00&#xA;"/>
+    <list id="n13" name="buffContainer" xy="292,106" size="211,76" scale="-1,1" layout="flow_hz" overflow="scroll" margin="0,0,0,0" lineGap="1" colGap="1" defaultItem="ui://0042gnitfx79el"/>
+    <component id="n14" name="buffDescPanel" src="fx79em" xy="363,221" scale="-1,1"/>
+  </displayList>
+</component>nuxfe2.xml|279|<component size="150,9" extention="ProgressBar">
+  <displayList>
+    <image id="n8" name="bar" src="utkidu" xy="0,0" size="148,9">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>nv56d6.xml|394|<component size="106,30" extention="Button">
+  <displayList>
+    <image id="n0" name="n0" src="nv56d3" xy="0,2" size="104,26"/>
+    <text id="n1" name="modelTxt" xy="22,4" size="45,22" font="方正粗圆简体" fontSize="18" color="#93e69c" align="center" vAlign="middle" autoSize="height" text="和平"/>
+    <component id="n3" name="smallBtn" src="nv56d8" xy="0,0"/>
+  </displayList>
+  <Button/>
+</component>nv56d8.xml|156|<component size="106,30" extention="Button">
+  <displayList>
+    <image id="n0" name="n0" src="nv56d7" xy="72,9"/>
+  </displayList>
+  <Button/>
+</component>nv56d9.xml|431|<component size="296,218">
+  <displayList>
+    <image id="n1" name="n1" src="nv56d5" xy="0,0" size="296,219"/>
+    <component id="n2" name="m1" src="nv56db" xy="0,1"/>
+    <component id="n6" name="m2" src="nv56db" xy="0,44"/>
+    <component id="n4" name="m3" src="nv56db" xy="1,87"/>
+    <component id="n3" name="m4" src="nv56db" xy="0,130"/>
+    <component id="n8" name="m5" src="nv56db" xy="0,173"/>
+  </displayList>
+</component>nv56db.xml|420|<component size="294,42">
+  <displayList>
+    <image id="n0" name="n0" src="nv56d4" xy="0,0" size="294,42"/>
+    <text id="n1" name="model" xy="14,10" size="44,22" font="方正粗圆简体" fontSize="18" color="#fc5757" vAlign="middle" autoSize="none" text=""/>
+    <text id="n2" name="desc" xy="63,10" size="229,22" font="方正粗圆简体" fontSize="18" color="#c6d6db" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+</component>nv56dc.xml|439|<component size="296,220" overflow="hidden">
+  <controller name="c1" pages="0,滑入,1,滑出" selected="1"/>
+  <displayList>
+    <component id="n0" name="content" src="nv56d9" xy="-1,-220">
+      <gearDisplay controller="c1" pages="0,1"/>
+      <gearXY controller="c1" pages="0,1" values="0,0|-1,-220" default="0,-206" tween="true" duration="0.2"/>
+    </component>
+  </displayList>
+  <relation target="n0" sidePair="height-height"/>
+</component>o6dhbh.xml|399|<component size="42,68" extention="Button">
+  <displayList>
+    <image id="n0" name="n0" src="hudkb9" xy="0,0" visible="false"/>
+    <image id="n1" name="n1" src="hudkb8" xy="7,24"/>
+  </displayList>
+  <Button/>
+  <transition name="t0">
+    <item time="0" type="Skew" target="n1" value="0,180"/>
+    <item time="0" type="XY" target="n1" tween="true" startValue="37,24"/>
+  </transition>
+</component>o6dhbi.xml|822|<component size="42,134" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="hudkbe" xy="0,0" size="42,134">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n1" name="n1" src="hudkbd" xy="0,0" size="42,134">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <text id="n2" name="title_down" xy="5,36" size="32,67" font="方正粗圆简体" fontSize="24" color="#272727" autoSize="none" text="队伍">
+      <gearDisplay controller="button" pages="1"/>
+    </text>
+    <text id="n3" name="title_up" xy="5,36" size="32,67" font="方正粗圆简体" fontSize="24" color="#c6c0a6" autoSize="none" text="队伍">
+      <gearDisplay controller="button" pages="0"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>o6dhbj.xml|822|<component size="42,134" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="hudkbb" xy="0,0" size="42,134">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n1" name="n1" src="hudkbc" xy="0,0" size="42,134">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n2" name="title_up" xy="5,33" size="32,67" font="方正粗圆简体" fontSize="24" color="#c6c0a6" autoSize="none" text="任务">
+      <gearDisplay controller="button" pages="0"/>
+    </text>
+    <text id="n3" name="title_down" xy="5,33" size="32,67" font="方正粗圆简体" fontSize="24" color="#272727" autoSize="none" text="任务">
+      <gearDisplay controller="button" pages="1"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>o6dhbk.xml|190|<component size="304,280" opaque="false">
+  <displayList>
+    <list id="n0" name="list" xy="0,0" size="304,280" overflow="scroll" margin="0,0,0,0" lineGap="2"/>
+  </displayList>
+</component>om7mbn.xml|2501|<component size="510,127" opaque="false">
+  <displayList>
+    <image id="n0" name="bg" src="om7mbx" xy="0,-1" size="510,129"/>
+    <image id="n6" name="lin" src="jqanca" pkg="0tyncec1" xy="46,0" size="120,2" rotation="90">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n9" name="BtnExtend" src="om7mby" xy="473,-37" pivot="0.5,0.5">
+      <relation target="n0" sidePair="middle-middle,middle-middle"/>
+    </component>
+    <component id="n11" name="BtnAuto" src="om7mc0" xy="120,-53">
+      <relation target="n0" sidePair="middle-middle,middle-middle"/>
+    </component>
+    <component id="n12" name="BtnEmail" src="om7mbz" xy="-3,-53">
+      <relation target="n0" sidePair="middle-middle,middle-middle"/>
+    </component>
+    <list id="n8" name="msgList" xy="48,4" pivot="0,1" size="457,120" overflow="scroll" margin="0,0,0,0">
+      <relation target="n0" sidePair="height-height"/>
+    </list>
+    <component id="n13" name="BtenVoiceWorld" src="om7mc1" xy="-3,55"/>
+    <image id="n14" name="mailRed" src="xnis91" pkg="0tyncec1" xy="81,-43" visible="false"/>
+    <component id="n15" name="BtnRenshu" src="nnjff2" xy="-2,-48"/>
+    <component id="n19" name="btn_siliaoTip" src="lnqzf8" xy="339,-57"/>
+  </displayList>
+  <transition name="ExpandControl">
+    <item time="0" type="Pivot" target="n0" value="0,1"/>
+    <item time="0" type="Rotation" target="n9" value="0"/>
+    <item time="0" type="Size" target="n0" tween="true" startValue="510,130" endValue="510,360" duration="12"/>
+    <item time="0" type="XY" target="n16" tween="true" startValue="340,-49.45" endValue="340,-280.45" duration="12"/>
+    <item time="0" type="XY" target="n19" tween="true" startValue="339,-57" endValue="339,-283" duration="12"/>
+    <item time="12" type="Pivot" target="n0" value="0,1"/>
+    <item time="12" type="Rotation" target="n9" value="180"/>
+    <item time="12" type="Size" target="n0" tween="true" startValue="510,360"/>
+  </transition>
+  <transition name="siliao" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n19" tween="true" startValue="1" endValue="0.39" duration="18"/>
+    <item time="0" type="Alpha" target="n16" tween="true" startValue="1" endValue="0.36" duration="18"/>
+    <item time="18" type="Alpha" target="n16" tween="true" startValue="0.36" endValue="1" duration="18"/>
+    <item time="18" type="Alpha" target="n19" tween="true" startValue="0.39" endValue="1" duration="18"/>
+  </transition>
+</component>om7mby.xml|405|<component size="51,51" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="icon" src="hudkb8" xy="17,18" pivot="0.5,0.5" size="16,18" rotation="90">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>om7mbz.xml|373|<component size="122,51" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="om7mbw" xy="4,5" size="112,41">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>om7mc0.xml|375|<component size="160,51" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="icon" src="om7mbu" xy="1,5" size="154,41">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>om7mc1.xml|388|<component size="55,75" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n4" name="worldbg" src="om7mbv" xy="12,8" visible="false"/>
+    <text id="n5" name="text" xy="17,42" size="27,22" font="方正粗圆简体" fontSize="18" color="#c6d6db" autoSize="height" text="世"/>
+  </displayList>
+  <Button/>
+</component>p0nwc5.xml|496|<component size="444,27" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <richtext id="n4" name="text" xy="71,2" size="369,24" font="方正粗圆简体" fontSize="20" color="#c6d6db" leading="4" autoSize="height" text=""/>
+    <loader id="n5" name="icon" xy="12,3" size="50,24" url="ui://0042gnitom7mbt" vAlign="middle" fill="scale"/>
+  </displayList>
+  <Button/>
+  <relation target="n4" sidePair="bottomext-bottom%"/>
+</component>package.xml|9900|<packageDescription id="0042gnit" name="Main">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="88mbdk" name="QuitFBBtn" size="86,86"/>
+    <component id="9l3bet" name="MapScalPanel" exported="true" size="0,0"/>
+    <component id="9l3beu" name="SmallMap" exported="true" size="0,0"/>
+    <component id="cdsbej" name="ReLifeBtn" size="156,139"/>
+    <component id="ckrkb0" name="mpBar" size="215,16"/>
+    <component id="ckrkb1" name="ExpBar" size="1334,6"/>
+    <component id="ckrkb5" name="PlayerExpBar" size="1334,6"/>
+    <component id="eg11aj" name="MainCityUI" exported="true" size="1334,750"/>
+    <component id="eg11ak" name="PlayerInfo" exported="true" size="391,110"/>
+    <component id="eg11am" name="MiniMap" exported="true" size="170,152"/>
+    <component id="eg11an" name="FightController" exported="true" size="1334,750"/>
+    <component id="eg11ap" name="SwitchBtn" exported="true" size="69,69"/>
+    <component id="eg11ar" name="BtnFunction" exported="true" size="100,100"/>
+    <component id="fx79el" name="BuffUIItem" exported="true" size="36,36"/>
+    <component id="fx79em" name="BuffDescPanel" size="24,24"/>
+    <component id="fx79en" name="BuffDescItems" exported="true" size="20,20"/>
+    <component id="g9qxe8" name="TeamItem" exported="true" size="241,86"/>
+    <component id="gv0lc8" name="FunctionBtn" exported="true" size="78,82"/>
+    <component id="gv0lce" name="ActivityBtn" exported="true" size="80,80"/>
+    <component id="gvm853" name="ProgressPlayerLife" exported="true" size="214,15"/>
+    <component id="gvm855" name="ProgressPlayerMagic" size="217,16"/>
+    <component id="gvm85g" name="MonsterHeadComponent" exported="true" size="595,65"/>
+    <component id="gvm85i" name="ProgressMonsterLife" size="414,37"/>
+    <component id="gvm861" name="BtnAgentia" exported="true" size="75,75"/>
+    <component id="hudkb6" name="TaskTeam" exported="true" size="486,335"/>
+    <component id="imszeh" name="ReLifeBtnPanel" exported="true" size="1334,750"/>
+    <component id="imszei" name="ReLifePanel" exported="true" size="1334,750"/>
+    <component id="io2p7a" name="BuffDescItem" exported="true" size="340,54"/>
+    <component id="ldfud2" name="BtnTeam" exported="true" size="177,40"/>
+    <component id="lnqzf8" name="btn_siliaoTip" exported="true" size="68,51"/>
+    <component id="nc9af0" name="ClickChoose" exported="true" size="219,204"/>
+    <component id="nh7oa6" name="SlowlyBar" size="414,37"/>
+    <component id="nh7oa7" name="ProgressMonsterLifeSlowly" exported="true" size="414,37"/>
+    <component id="nnjff2" name="BtnRenshu" size="140,40"/>
+    <component id="nnjff3" name="PlayerInfoRight" exported="true" size="391,213"/>
+    <component id="nuxfe2" name="TeamHpBar" exported="true" size="150,9"/>
+    <component id="nv56d6" name="PkModel" exported="true" size="106,30"/>
+    <component id="nv56d8" name="samllArrowBtn" size="106,30"/>
+    <component id="nv56d9" name="PkContent" exported="true" size="296,218"/>
+    <component id="nv56db" name="PkItem" exported="true" size="294,42"/>
+    <component id="nv56dc" name="PkSelect" exported="true" size="296,220"/>
+    <component id="o6dhbh" name="ButtonExtend" exported="true" size="42,68"/>
+    <component id="o6dhbi" name="ButtonTeam" exported="true" size="42,134"/>
+    <component id="o6dhbj" name="ButtonTask" exported="true" size="42,134"/>
+    <component id="o6dhbk" name="TaskTraceList" exported="true" size="304,280"/>
+    <component id="om7mbn" name="ChatMain" exported="true" size="510,127"/>
+    <component id="om7mby" name="BtnExtend" size="51,51"/>
+    <component id="om7mbz" name="BtnEmail" size="122,51"/>
+    <component id="om7mc0" name="BtnAuto" size="160,51"/>
+    <component id="om7mc1" name="BtnVoiceWorld" size="55,75"/>
+    <component id="p0nwc5" name="MainChatItem" exported="true" size="444,27"/>
+    <component id="sgyode" name="FBFlag" exported="true" size="226,32"/>
+    <component id="t02wes" name="BtnHide" exported="true" size="31,61"/>
+    <component id="tvxi6s" name="BtnSkill" exported="true" size="100,100"/>
+    <component id="tvxi6u" name="BtnAttack" exported="true" size="157,157"/>
+    <component id="ukjyel" name="QuickEquipCell" exported="true" size="170,170"/>
+    <component id="uujrbl" name="TaskTraceItem" exported="true" size="294,85"/>
+    <component id="xyqw7s" name="hpBar" size="213,16"/>
+    <component id="xyqw80" name="bossBar" size="414,37"/>
+    <component id="z03ee4" name="PlayerFuncPanel" exported="true" size="430,298"/>
+    <component id="z03ee6" name="PlayerFunBtn" exported="true" size="180,56"/>
+    <image id="88mbdj" name="副本返回按钮" size="86,86" exported="true"/>
+    <image id="anfh7f" name="resource_icon_coin" size="55,55" exported="true"/>
+    <image id="bhdd91" name="skill_cd_chant(2)" size="21,22"/>
+    <image id="bhdd92" name="skill_cd(2)" size="100,100"/>
+    <image id="bhdd93" name="skill_attack(3)" size="157,157"/>
+    <image id="bhdd94" name="skill_small(2)" size="92,92"/>
+    <image id="ckrkax" name="蓝条" size="247,17" exported="true" scale="9grid" scale9grid="62,5,124,10"/>
+    <image id="ckrkb2" name="经验条底（1334X6）" size="10,6" exported="true" scale="9grid" scale9grid="3,0,5,6"/>
+    <image id="ckrkb3" name="经验条（1334X6）" size="10,6" exported="true" scale="9grid" scale9grid="3,0,3,6"/>
+    <image id="ckrkb4" name="分割线" size="2,6" exported="true"/>
+    <image id="cq4geo" name="x" size="43,44"/>
+    <image id="f50ner" name="1" size="182,123" scale="9grid" scale9grid="46,31,92,62"/>
+    <image id="gv0lcg" name="go_city" size="62,68" exported="true"/>
+    <image id="gvm852" name="role_icon1(3)" size="87,105" exported="true"/>
+    <image id="gvm863" name="zd_jncd" size="89,87"/>
+    <image id="hudkb8" name="收起展开按钮" size="23,26"/>
+    <image id="hudkb9" name="收起按钮底" size="42,68" scale="9grid" scale9grid="1,23,40,22"/>
+    <image id="hudkba" name="任务追踪底框" size="294,9" scale="9grid" scale9grid="1,0,221,9"/>
+    <image id="hudkbb" name="任务按钮未选中（42X134）" size="42,62" scale="9grid" scale9grid="5,23,32,14"/>
+    <image id="hudkbc" name="任务按钮（42X134）" size="42,62" scale="9grid" scale9grid="5,23,32,14"/>
+    <image id="hudkbd" name="队伍按钮未选中（42X134）" size="42,61" scale="9grid" scale9grid="2,21,38,18"/>
+    <image id="hudkbe" name="队伍按钮（42X134）" size="42,61" scale="9grid" scale9grid="2,21,38,18"/>
+    <image id="imszec" name="huanhundan" size="80,80"/>
+    <image id="imszed" name="fuhuoanniu" size="141,139"/>
+    <image id="imszef" name="fuhuodi" size="612,356"/>
+    <image id="imszeg" name="wenzi" size="183,99"/>
+    <image id="jsyyey" name="chooseBg" size="219,204" scale="9grid" scale9grid="79,67,60,36"/>
+    <image id="kita9f" name="progress_monster_sur2" size="414,37"/>
+    <image id="ldfucr" name="前往组队" size="32,31"/>
+    <image id="ldfucs" name="底" size="177,40"/>
+    <image id="lnqzf4" name="tishi4" size="24,24" exported="true"/>
+    <image id="lnqzf5" name="btn_siliaotishi" size="43,34" exported="true"/>
+    <image id="lnqzf6" name="tishidi" size="529,44" exported="true"/>
+    <image id="lnqzf7" name="tubiao" size="30,27" exported="true"/>
+    <image id="lskq9a" name="skill_small_di" size="92,92"/>
+    <image id="lskq9b" name="skill_attack_di" size="157,157"/>
+    <image id="mlf3cn" name="left_top_head_bg" size="349,126" exported="true"/>
+    <image id="mlf3co" name="hp_bar" size="211,16" exported="true"/>
+    <image id="mlf3cp" name="mp_bar" size="214,16" exported="true"/>
+    <image id="n2myas" name="菜单下拉收起按钮" size="69,69" exported="true"/>
+    <image id="nnjff1" name="btn_renshu" size="125,34"/>
+    <image id="nv56d3" name="pk_btn_bg" size="50,26" scale="9grid" scale9grid="23,10,4,6"/>
+    <image id="nv56d4" name="pk_item_bg" size="245,4" scale="9grid" scale9grid="62,1,124,2"/>
+    <image id="nv56d5" name="pk_bg" size="9,9" scale="9grid" scale9grid="3,3,3,3"/>
+    <image id="nv56d7" name="箭头按钮" size="18,11" exported="true"/>
+    <image id="om7mbu" name="自动战斗按钮" size="125,34"/>
+    <image id="om7mbv" name="语音说话按钮" size="30,32"/>
+    <image id="om7mbw" name="邮件功能按钮" size="93,34"/>
+    <image id="om7mbx" name="底（501X138）" size="31,20" scale="9grid" scale9grid="8,5,16,10"/>
+    <image id="p5ff99" name="button_battle_automatic2" size="122,122" exported="true"/>
+    <image id="p8e4ac" name="di" size="203,27" exported="true"/>
+    <image id="p8e4ad" name="ceng" size="26,25" exported="true"/>
+    <image id="sgyodd" name="地图名称+换线（226X32）" size="120,32" exported="true" scale="9grid" scale9grid="98,0,7,32"/>
+    <image id="sgyodi" name="功能图标按钮" size="117,104" exported="true"/>
+    <image id="utkidu" name="teamHp" size="148,9" scale9grid="37,0,74,9"/>
+    <image id="vc6k7e" name="zd_jncd2" size="157,157"/>
+    <image id="wdv796" name="button_yao(2)" size="94,94"/>
+    <image id="wdv797" name="hongyao" size="82,82" exported="true"/>
+    <image id="wdv798" name="lanyao" size="82,82" exported="true"/>
+    <image id="xn3sat" name="noUse" size="92,92"/>
+    <image id="xyqw7y" name="progress_monster_bg(3)" size="436,56" exported="true"/>
+    <image id="xyqw7z" name="progress_monster_sur(3)" size="414,37" exported="true"/>
+    <image id="xyqw8g" name="skill_cd" size="100,100" exported="true"/>
+    <image id="xyqw8h" name="skill_attack(2)" size="187,187" exported="true"/>
+    <image id="xyqw8i" name="skill_small" size="100,100" exported="true"/>
+    <image id="xyqw8j" name="skill_cd_chant" size="21,22" exported="true"/>
+    <image id="xyqw8l" name="progress_hp_enemy" size="91,7" exported="true"/>
+    <image id="xyqw8m" name="progress_di_friend" size="95,11" exported="true"/>
+    <image id="xyqw8n" name="progress_hp_friend" size="91,7" exported="true"/>
+    <image id="xyqw8o" name="progress_di_self" size="95,16" exported="true"/>
+    <image id="xyqw8p" name="progress_mp" size="91,4" exported="true"/>
+    <image id="xyqw8q" name="progress_hp_self" size="91,7" exported="true"/>
+  </resources>
+</packageDescription>sgyode.xml|335|<component size="226,32">
+  <displayList>
+    <image id="n0" name="Bg" src="sgyodd" xy="0,0" size="226,32"/>
+    <text id="n1" name="title" xy="59,3" size="154,24" font="方正粗圆简体" fontSize="20" color="#c6d6db" ubb="true" text="副本结束：50:60"/>
+    <component id="n2" name="QuitFBBtn" src="88mbdk" xy="133,38"/>
+  </displayList>
+</component>t02wes.xml|1104|<component size="31,61" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="t02wnnp" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="n2" src="t02wnnp" pkg="0tyncec1" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n3" name="icon" xy="0,0" size="31,61" url="ui://0tyncec1t02wnno" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button/>
+  <transition name="arrowToLeft">
+    <item time="1" type="Skew" target="n3" value="0,0"/>
+    <item time="1" type="XY" target="n3" value="0,0"/>
+  </transition>
+  <transition name="arrowToRight">
+    <item time="0" type="Skew" target="n3" value="0,180"/>
+    <item time="0" type="XY" target="n3" value="30,0"/>
+  </transition>
+</component>tvxi6s.xml|1162|<component size="100,100" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n16" name="n16" src="lskq9a" xy="3,4"/>
+    <loader id="n7" name="icon" xy="0,0" size="100,100" align="center" vAlign="middle"/>
+    <image id="n13" name="n13" src="bhdd94" xy="4,4"/>
+    <image id="n14" name="mask" src="bhdd92" xy="0,0" fillMethod="radial360" fillClockwise="false"/>
+    <image id="n15" name="cdPoint" src="bhdd91" xy="39,-7"/>
+    <text id="n17" name="cdTxt" xy="22,24" size="52,52" fontSize="36" color="#e5eefe" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" strokeSize="3" text="10"/>
+    <image id="n18" name="cantUse" src="xn3sat" xy="4,5"/>
+    <graph id="n19" name="role3D" xy="50,50" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <image id="n20" name="lock" src="igzgnk7" pkg="0tyncec1" xy="28,27"/>
+    <graph id="n21" name="nBrole3D" xy="50,50" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <image id="n23" name="cantUse2" src="xn3sat" xy="4,3" visible="false"/>
+  </displayList>
+  <Button/>
+</component>tvxi6u.xml|1101|<component size="157,157" extention="Button" hitTest="bhdd93,0,0">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n14" name="n14" src="lskq9b" xy="0,0" visible="false"/>
+    <loader id="n7" name="icon" xy="0,0" size="157,157" align="center" vAlign="middle" fill="scale"/>
+    <image id="n12" name="mask" src="vc6k7e" xy="0,0" size="157,157" visible="false" alpha="0.7" fillMethod="radial360" fillClockwise="false">
+      <relation target="n7" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n13" name="n13" src="bhdd93" xy="0,0"/>
+    <text id="n15" name="cdTxt" xy="44,46" size="52,52" fontSize="36" color="#e5eefe" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" strokeSize="3" text="10"/>
+    <graph id="n16" name="role3D" xy="76,76" pivot="0.5,0.5" anchor="true" size="158,158" touchable="false"/>
+    <image id="n17" name="lock" src="igzgnk7" pkg="0tyncec1" xy="56,52"/>
+    <image id="n18" name="cantUse2" src="xn3sat" xy="0,0" size="157,157"/>
+  </displayList>
+  <Button/>
+</component>ukjyel.xml|465|<component size="170,170">
+  <displayList>
+    <image id="n0" name="n0" src="mkaznh3" pkg="0tyncec1" xy="0,0" size="180,180"/>
+    <component id="n4" name="btnClose" src="ydonnn5" pkg="0tyncec1" xy="126,-9">
+      <Button icon="ui://0042gnitcq4geo"/>
+    </component>
+    <component id="n5" name="btnEquip" src="skqrnkp" pkg="0tyncec1" xy="6,124" size="170,50">
+      <Button title="点击装备" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>uujrbl.xml|1415|<component size="294,85" extention="Button">
+  <displayList>
+    <image id="n0" name="image_bg_type1" src="hudkba" xy="0,0" size="294,60" group="n9"/>
+    <text id="n1" name="label_task_name_type1" xy="7,6" size="268,27" group="n9" font="方正粗圆简体" fontSize="20" color="#3cda68" leading="0" ubb="true" autoSize="none" text="师门(10/10)"/>
+    <text id="n2" name="label_task_desc_type1" xy="7,32" size="268,27" group="n9" font="方正粗圆简体" fontSize="20" color="#cdcbbe" leading="0" ubb="true" autoSize="height" text="击败邪瓶法师：0/10"/>
+    <group id="n9" name="group_task_type1" xy="0,0" size="294,60" advanced="true"/>
+    <image id="n3" name="image_bg_type2" src="hudkba" xy="0,0" size="294,85" group="n8"/>
+    <loader id="n7" name="loader_icon_type2" xy="5,1" size="31,31" group="n8"/>
+    <text id="n5" name="label_task_name_type2" xy="35,4" size="248,27" group="n8" font="方正粗圆简体" fontSize="20" color="#f0d864" leading="0" ubb="true" autoSize="height" text="轻功"/>
+    <text id="n6" name="label_task_content_type2" xy="9,34" size="275,119" group="n8" font="方正粗圆简体" fontSize="20" color="#cdcbbe" leading="0" ubb="true" autoSize="height" text="学习并使用四段式轻功，逐风万里，俯瞰中洲学习并使用四段式轻功，逐风万里，俯瞰中洲学习并使用四段式轻功，逐风万里，俯瞰中洲"/>
+    <group id="n8" name="group_task_type_2" xy="0,0" size="294,170" advanced="true">
+      <relation target="n8" sidePair="width-width,height-height"/>
+    </group>
+  </displayList>
+  <Button mode="Radio"/>
+</component>xyqw7s.xml|143|<component size="213,16" overflow="hidden">
+  <displayList>
+    <image id="n2" name="bar" src="mlf3co" xy="0,0"/>
+  </displayList>
+</component>xyqw80.xml|143|<component size="414,37" overflow="hidden">
+  <displayList>
+    <image id="n2" name="bar" src="xyqw7z" xy="0,0"/>
+  </displayList>
+</component>z03ee4.xml|731|<component size="430,298">
+  <displayList>
+    <image id="n0" name="n0" src="z03enle" pkg="0tyncec1" xy="0,0" size="430,298">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n9" name="n9" src="z03enlf" pkg="0tyncec1" xy="100,38" size="290,40"/>
+    <component id="n8" name="headIcon" src="z03enli" pkg="0tyncec1" xy="36,30" size="89,90"/>
+    <text id="n3" name="playerName" xy="141,39" size="206,40" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" autoSize="none" bold="true" text="你好的说法"/>
+    <text id="n12" name="groupName" xy="141,78" size="206,33" font="方正粗圆简体" fontSize="24" color="#007f88" vAlign="middle" autoSize="none" text="家族:暂无"/>
+  </displayList>
+</component>z03ee6.xml|342|<component size="180,56" extention="Button">
+  <displayList>
+    <image id="n1" name="n1" src="mkaznh3" pkg="0tyncec1" xy="0,0" size="180,56"/>
+    <text id="n2" name="title" xy="8,9" size="165,39" font="方正粗圆简体" fontSize="24" color="#003341" align="center" vAlign="middle" autoSize="none" text="邀请"/>
+  </displayList>
+  <Button/>
+</component>

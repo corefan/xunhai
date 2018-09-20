@@ -477,7 +477,7 @@ public class PayServlet extends AbstractServlet {
 						return;
 			        }
 			        
-			        int rs = this.sucPay(extinfo, appid, Integer.valueOf(amount), orderid, cporderid, reqUrl);
+			        int rs = this.sucPay(GetDecode(extinfo), appid, Double.valueOf(amount).intValue(), orderid, cporderid, reqUrl);
 			        if(rs == 0){
 			        	this.postData(resp, "SUCCESS");
 			        }else{
@@ -714,7 +714,7 @@ public class PayServlet extends AbstractServlet {
 						return;
 			        }
 			        
-			        int rs = this.sucPay(ext, appid, Integer.valueOf(product_price) / 100, order_id, cp_order_id, reqUrl);
+			        int rs = this.sucPay(GetDecode(ext), appid, Double.valueOf(product_price).intValue(), order_id, cp_order_id, reqUrl);
 			        if(rs == 0){
 			        	this.postData(resp, "SUCCESS");
 			        }else{
@@ -735,7 +735,6 @@ public class PayServlet extends AbstractServlet {
 			LogUtil.error("运营商="+Config.AGENT+" appid="+appid+"  自定义参数个数不对content="+content);
 			return 1;
 		}
-		
 		try {
 			
 			Long userId = Long.valueOf(contents[0]); // 玩家账号

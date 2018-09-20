@@ -1,0 +1,104 @@
+dmzw2.xml|3108|<component size="892,635">
+  <controller name="state" pages="0,绑定,1,已绑定" selected="0"/>
+  <controller name="bandState" pages="0,确定绑定,1,领取奖励,2,已领取" selected="0"/>
+  <displayList>
+    <image id="n28" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,28" size="20,607"/>
+    <image id="n1" name="n1" src="dmzw9" xy="26,0"/>
+    <image id="n2" name="n2" src="dmzwh" xy="375,31"/>
+    <image id="n3" name="n3" src="dmzw7" xy="292,43"/>
+    <image id="n4" name="n4" src="dmzw7" xy="620,60" rotation="180"/>
+    <text id="n5" name="n5" xy="183,87" size="555,78" font="华康圆体W7(P)" fontSize="26" color="#dce5ff" align="center" leading="9" autoSize="none" text="尊敬的玩家，绑定手机可以短信找回账号/密码&#xA;还可以领取丰厚礼品哦"/>
+    <image id="n6" name="n6" src="dmzw6" xy="276,183"/>
+    <image id="n8" name="n8" src="dmzw5" xy="244,228"/>
+    <text id="n16" name="n16" xy="172,362" size="552,35" font="华康圆体W7(P)" fontSize="22" color="#aab0c1" align="center" vAlign="middle" leading="0" letterSpacing="1" autoSize="none" text="输入手机号>获取验证码>输入验证码>确认绑定"/>
+    <component id="n17" name="bindBtn" src="skqrnkp" pkg="0tyncec1" xy="345,510" size="232,66">
+      <Button icon="ui://0tyncec1dmzwnna"/>
+    </component>
+    <text id="n9" name="n9" xy="210,261" size="140,35" group="n18" font="华康圆体W7(P)" fontSize="26" color="#dce5ff" align="right" leading="0" autoSize="none" text="手机号："/>
+    <text id="n10" name="n10" xy="209,315" size="141,30" group="n18" font="华康圆体W7(P)" fontSize="26" color="#dce5ff" align="right" vAlign="middle" leading="0" autoSize="none" text="验证码："/>
+    <component id="n12" name="numberInput" src="dmzwk" xy="352,254" size="324,44" group="n18"/>
+    <component id="n14" name="checkInput" src="dmzwk" xy="352,309" size="169,44" group="n18"/>
+    <component id="n15" name="getCheckBtn" src="skqrnkp" pkg="0tyncec1" xy="520,306" size="166,50" group="n18">
+      <Button title="获取验证码" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <group id="n18" name="bindOperateGroup" xy="209,254" size="477,102" advanced="true">
+      <gearDisplay controller="state" pages="0"/>
+    </group>
+    <image id="n19" name="n19" src="dmzwf" xy="147,258" size="574,86" group="n24"/>
+    <component id="n21" name="changBtn" src="skqrnkp" pkg="0tyncec1" xy="555,279" size="159,50" group="n24">
+      <Button title="更改手机" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <text id="n23" name="bindInfo" xy="107,283" size="436,35" group="n24" font="华康圆体W7(P)" fontSize="26" color="#ffe384" align="right" vAlign="middle" leading="0" autoSize="none" text="您绑定的手机号为：150****4587"/>
+    <group id="n24" name="bindInfoGroup" xy="107,258" size="614,86" advanced="true">
+      <gearDisplay controller="state" pages="1"/>
+    </group>
+    <image id="n25" name="bandState1" src="dmzw4" xy="396,526">
+      <gearDisplay controller="bandState" pages="0"/>
+    </image>
+    <image id="n26" name="bandState2" src="dmzwg" xy="395,527">
+      <gearDisplay controller="bandState" pages="1"/>
+    </image>
+    <image id="n27" name="bandState3" src="dmzwe" xy="412,527">
+      <gearDisplay controller="bandState" pages="2"/>
+    </image>
+  </displayList>
+</component>dmzwk.xml|476|<component size="302,44">
+  <displayList>
+    <image id="n0" name="n0" src="dmzwa" xy="0,0" size="302,44">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1" name="input" xy="1,1" size="300,42" input="true" keyboardType="4" font="华康圆体W7(P)" fontSize="22" color="#a7a7a7" vAlign="middle" ubb="true" autoSize="none" text="">
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>package.xml|1130|<packageDescription id="wn6osdzs" name="Account">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="dmzw2" name="AccountPanel" exported="true" size="892,635"/>
+    <component id="dmzwk" name="AccountInput" exported="true" size="302,44"/>
+    <component id="s1mjn" name="ReBindStepOne" exported="true" size="444,278"/>
+    <component id="s1mjr" name="ReBindStepTow" exported="true" size="444,278"/>
+    <image id="dmzw4" name="anniuwenzi" size="130,32"/>
+    <image id="dmzw5" name="5" size="418,15"/>
+    <image id="dmzw6" name="4" size="353,42"/>
+    <image id="dmzw7" name="3" size="60,15"/>
+    <image id="dmzw9" name="1" size="861,602"/>
+    <image id="dmzwa" name="shurukuang" size="11,43" scale="9grid" scale9grid="3,11,5,22"/>
+    <image id="dmzwe" name="yilingqu" size="95,32"/>
+    <image id="dmzwf" name="shoujibangdingdikuang" size="29,27" scale="9grid" scale9grid="8,8,13,11"/>
+    <image id="dmzwg" name="lingqujiangli" size="129,32"/>
+    <image id="dmzwh" name="2(2)" size="163,41"/>
+    <image id="dmzwi" name="zhizhen" size="22,22"/>
+  </resources>
+</packageDescription>s1mjn.xml|916|<component size="444,278">
+  <displayList>
+    <component id="n0" name="n0" src="s1mjnnb" pkg="0tyncec1" xy="-19,-3" size="484,282"/>
+    <text id="n1" name="n1" xy="64,60" size="331,32" font="华康圆体W7(P)" fontSize="24" color="#42a4ff" autoSize="none" text="第一步：请解锁当前手机号码"/>
+    <text id="n2" name="n2" xy="64,99" size="331,32" font="华康圆体W7(P)" fontSize="24" color="#43515b" autoSize="none" text="第二步：请绑定新的手机号码"/>
+    <component id="n3" name="deBindBtn" src="skqrnkp" pkg="0tyncec1" xy="272,143" size="163,50">
+      <Button title="解除绑定" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n4" name="numberInput" src="dmzwk" xy="24,147" size="250,44"/>
+    <component id="n6" name="closeBtn" src="skqrnkp" pkg="0tyncec1" xy="138,205" size="168,63">
+      <Button title="关闭" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <image id="n7" name="n7" src="dmzwi" xy="37,63"/>
+  </displayList>
+</component>s1mjr.xml|1032|<component size="444,278">
+  <displayList>
+    <component id="n0" name="n0" src="s1mjnnb" pkg="0tyncec1" xy="-19,-3" size="484,282"/>
+    <text id="n1" name="n1" xy="64,60" size="331,32" font="华康圆体W7(P)" fontSize="24" color="#42a4ff" autoSize="none" text="第二步：请绑定新的手机号码"/>
+    <component id="n3" name="getCheckBtn" src="skqrnkp" pkg="0tyncec1" xy="239,149" size="163,50">
+      <Button title="获取验证码" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n4" name="numberInput" src="dmzwk" xy="70,102" size="324,43"/>
+    <component id="n6" name="closeBtn" src="skqrnkp" pkg="0tyncec1" xy="38,206" size="169,63">
+      <Button title="关闭" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <image id="n7" name="n7" src="dmzwi" xy="37,63"/>
+    <component id="n8" name="checkInput" src="dmzwk" xy="71,154" size="171,42"/>
+    <component id="n9" name="comfirmBtn" src="skqrnkp" pkg="0tyncec1" xy="238,206" size="169,63">
+      <Button title="确定绑定" icon="ui://0tyncec1x0conj0"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,62 @@
+kzve9.xml|1456|<component size="915,634">
+  <displayList>
+    <image id="n6" name="bgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,27"/>
+    <image id="n0" name="bg" src="kzve7" xy="25,0"/>
+    <list id="n1" name="list" xy="25,110" size="859,341" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="256" margin="0,0,0,0"/>
+    <text id="n2" name="labelTitle" xy="73,508" size="104,30" font="方正粗圆简体" fontSize="22" color="#ffba60" align="center" vAlign="middle" autoSize="none" strokeColor="#00161b" strokeSize="2" text="累计充值"/>
+    <text id="n3" name="labelTotalRecharge" xy="49,540" size="155,29" font="方正粗圆简体" fontSize="22" color="#fdaaaa" align="center" vAlign="middle" autoSize="none" strokeColor="#7d0000" strokeSize="2" text="(10000/100)"/>
+    <component id="n4" name="btnGet" src="tnbmnka" pkg="0tyncec1" xy="723,511">
+      <Button title="领取" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <text id="n5" name="labelHasGet" xy="726,511" size="127,62" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" autoSize="none" text="已经领取"/>
+    <list id="n9" name="pkgCellRoot" xy="216,489" size="470,95" layout="row" overflow="hidden" scroll="horizontal" margin="0,0,0,0" colGap="6"/>
+    <image id="n10" name="imgArrow" src="jgb0np" xy="864,205" visible="false"/>
+    <component id="n11" name="btnNext" src="t5hdnfs" pkg="0tyncec1" xy="864,205" size="51,86">
+      <Button icon="ui://c76fl6zbjgb0np"/>
+    </component>
+  </displayList>
+</component>kzveb.xml|1750|<component size="221,329" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0" name="bgSmallIcon" src="kzve4" xy="40,146" group="n5">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n1" name="bgSmallSelected" src="kzve3" xy="39,114" group="n5">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <loader id="n2" name="smallIcon" xy="53,155" size="146,146" group="n5" align="center" vAlign="middle"/>
+    <image id="n3" name="bgSmallName" src="c4eznl4" pkg="0tyncec1" xy="39,293" size="175,36" group="n5"/>
+    <text id="n4" name="labelSmallName" xy="41,297" size="173,29" group="n5" font="方正粗圆简体" fontSize="22" ubb="true" autoSize="none" strokeColor="#874642" strokeSize="2" text=""/>
+    <group id="n5" name="smallType" xy="39,114" size="175,215" advanced="true"/>
+    <image id="n6" name="bgBigIcon" src="kzve6" xy="0,52" group="n11">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n7" name="bgBigSelected" src="kzve5" xy="0,14" group="n11">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <loader id="n8" name="bigIcon" xy="81,136" size="50,30" group="n11" align="center" vAlign="middle" autoSize="true"/>
+    <image id="n9" name="bgBigName" src="c4eznl4" pkg="0tyncec1" xy="19,202" size="175,36" group="n11"/>
+    <text id="n10" name="labelBigName" xy="21,206" size="173,29" group="n11" font="方正粗圆简体" fontSize="22" ubb="true" autoSize="none" strokeColor="#874642" strokeSize="2" text=""/>
+    <group id="n11" name="bigType" xy="0,14" size="210,236" advanced="true"/>
+    <graph id="n12" name="effectRoot" xy="0,0" size="1,1"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>package.xml|1088|<packageDescription id="c76fl6zb" name="TotalRechargeUI">
+  <resources>
+    <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
+    <component id="kzve9" name="TotalRechargeUI" exported="true" size="915,634"/>
+    <component id="kzveb" name="TotalRechargeItem" exported="true" size="221,329"/>
+    <image id="100rni" name="1350601" size="231,182" exported="true"/>
+    <image id="100rnj" name="1350101" size="231,182" exported="true"/>
+    <image id="100rnk" name="1250601" size="231,182" exported="true"/>
+    <image id="100rnl" name="1250101" size="231,182" exported="true"/>
+    <image id="100rnm" name="1150601" size="231,182" exported="true"/>
+    <image id="100rnn" name="1150101" size="231,182" exported="true"/>
+    <image id="jgb0np" name="jiantou" size="51,86"/>
+    <image id="kzve3" name="btn_small_2" size="173,197"/>
+    <image id="kzve4" name="btn_small" size="173,165"/>
+    <image id="kzve5" name="btn_big_2" size="210,236"/>
+    <image id="kzve6" name="btn_big" size="210,198"/>
+    <image id="kzve7" name="bg_1" size="861,602"/>
+  </resources>
+</packageDescription>

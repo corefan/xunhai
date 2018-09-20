@@ -1,0 +1,199 @@
+e5r2g.xml|2387|<component size="892,635">
+  <displayList>
+    <image id="n11" name="n11" src="e5r2j" xy="28,2"/>
+    <image id="n27" name="n27" src="c8es19" xy="72,29"/>
+    <image id="n10" name="n10" src="e5r2i" xy="-310,-109" visible="false"/>
+    <image id="n9" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,26" size="20,607"/>
+    <image id="n13" name="n13" src="e5r2n" xy="628,26"/>
+    <component id="n12" name="btnChakan" src="t5hdnfq" pkg="0tyncec1" xy="410,28" size="35,35">
+      <Button icon="ui://0tyncec1c8esnou"/>
+    </component>
+    <text id="n15" name="txtTombName" xy="89,45" pivot="0,0.5" anchor="true" size="322,35" font="华康圆体W7(P)" fontSize="22" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" bold="true" text="东皇古墓"/>
+    <text id="n16" name="txt_desc1" xy="693,96" size="105,24" font="华康圆体W7(P)" fontSize="20" color="#2e3341" text="已挖掘墓室"/>
+    <text id="n17" name="txt_desc2" xy="693,179" size="105,24" font="华康圆体W7(P)" fontSize="20" color="#2e3341" text="绿色秘宝数"/>
+    <text id="n18" name="txt_desc3" xy="691,262" size="105,24" font="华康圆体W7(P)" fontSize="20" color="#2e3341" text="蓝色秘宝数"/>
+    <text id="n19" name="txt_desc4" xy="694,344" size="105,24" font="华康圆体W7(P)" fontSize="20" color="#2e3341" text="紫色秘宝数"/>
+    <text id="n20" name="txt_desc5" xy="694,428" size="105,24" font="华康圆体W7(P)" fontSize="20" color="#2e3341" text="橙色秘宝数"/>
+    <text id="n21" name="txt_num1" xy="747,138" pivot="0.5,0.5" anchor="true" size="16,24" font="华康圆体W7(P)" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <text id="n22" name="txt_num2" xy="747,221" pivot="0.5,0.5" anchor="true" size="16,24" font="华康圆体W7(P)" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <text id="n23" name="txt_num3" xy="746,303" pivot="0.5,0.5" anchor="true" size="16,24" font="华康圆体W7(P)" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <text id="n24" name="txt_num4" xy="747,388" pivot="0.5,0.5" anchor="true" size="16,24" font="华康圆体W7(P)" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <text id="n25" name="txt_num5" xy="746,471" pivot="0.5,0.5" anchor="true" size="16,24" font="华康圆体W7(P)" fontSize="20" color="#ff8787" strokeColor="#9e0606" strokeSize="2" text="0"/>
+    <component id="n26" name="n26" src="e5r2p" xy="638,525"/>
+  </displayList>
+</component>e5r2k.xml|332|<component size="120,126" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <component id="n3" name="btn" src="t5hdnfq" pkg="0tyncec1" xy="0,1" size="120,126">
+      <Button icon="ui://g35bobp2e5r2m"/>
+    </component>
+    <component id="n1" name="rewardConn" src="t5hdnfx" pkg="0tyncec1" xy="58,60"/>
+  </displayList>
+</component>e5r2p.xml|619|<component size="215,52" extention="Button">
+  <displayList>
+    <image id="n1" name="n1" src="x0conj0" pkg="0tyncec1" xy="0,-1" size="215,52"/>
+    <text id="n2" name="txtChange" xy="19,11" size="101,28" font="华康圆体W7(P)" fontSize="24" color="#fff9e3" ubb="true" strokeColor="#6d4f41" strokeSize="2" text="更换陵墓"/>
+    <loader id="n3" name="icon_cost" xy="121,0" size="50,50"/>
+    <text id="n4" name="txt_cost_num" xy="169,10" size="31,28" font="华康圆体W7(P)" fontSize="24" color="#fff9e3" strokeColor="#6d4f41" strokeSize="2" text="10"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>e5r2q.xml|865|<component size="470,405">
+  <displayList>
+    <image id="n0" name="n0" src="oe8ynnk" pkg="0tyncec1" xy="-2,0" size="508,405"/>
+    <image id="n1" name="n1" src="e5r2o" xy="297,102" size="205,287"/>
+    <text id="n2" name="txt_desc" xy="321,144" size="160,236" fontSize="19" color="#2e3341" ubb="true" autoSize="none" text="6666666666666666666666666"/>
+    <text id="n3" name="txt_name" xy="400,119" pivot="0.5,0.5" anchor="true" size="166,23" font="华康圆体W7(P)" fontSize="19" color="#2e3341" align="center" ubb="true" autoSize="height" text="物品名"/>
+    <image id="n4" name="n4" src="c8esnov" pkg="0tyncec1" xy="5,14" size="492,76"/>
+    <text id="n5" name="n5" xy="250,53" pivot="0.5,0.5" anchor="true" size="486,50" font="华康圆体W7(P)" fontSize="19" color="#b76a32" autoSize="none" text="陵墓探宝需要消耗摸金令，每3次探索后消耗的摸金令上升一级。重置墓室后，消耗的摸金令变回最初级。"/>
+  </displayList>
+</component>jui016.xml|1272|<component size="450,450">
+  <displayList>
+    <image id="n0" name="n0" src="jui010" xy="225,225" pivot="0.5,0.5" anchor="true"/>
+    <component id="n1" name="item1" src="jui017" xy="169,4"/>
+    <component id="n2" name="item2" src="jui017" xy="308,78" pivot="0.5,0.5" anchor="true" rotation="30"/>
+    <component id="n3" name="item3" src="jui017" xy="370,141" pivot="0.5,0.5" anchor="true" rotation="60"/>
+    <component id="n4" name="item4" src="jui017" xy="447,172" rotation="90"/>
+    <component id="n5" name="item5" src="jui017" xy="443,289" rotation="120"/>
+    <component id="n6" name="item6" src="jui017" xy="254,320" pivot="0.5,0.5" rotation="150"/>
+    <component id="n7" name="item7" src="jui017" xy="170,343" pivot="0.5,0.5" rotation="180"/>
+    <component id="n8" name="item8" src="jui017" xy="85,319" pivot="0.5,0.5" rotation="-150"/>
+    <component id="n9" name="item9" src="jui017" xy="23,257" pivot="0.5,0.5" rotation="-120"/>
+    <component id="n10" name="item10" src="jui017" xy="55,226" pivot="0.5,0.5" anchor="true" rotation="-90"/>
+    <component id="n11" name="item11" src="jui017" xy="4,163" rotation="-60"/>
+    <component id="n12" name="item12" src="jui017" xy="139,81" pivot="0.5,0.5" anchor="true" rotation="-30"/>
+  </displayList>
+</component>jui017.xml|522|<component size="110,106">
+  <displayList>
+    <image id="n0" name="imgXuanzhong" src="jui012" xy="0,0" visible="false"/>
+    <loader id="n1" name="icon1" xy="56,32" pivot="0.5,0.5" anchor="true" size="50,50" align="center"/>
+    <loader id="n2" name="icon2" xy="56,31" pivot="0.5,0.5" anchor="true" size="50,50" align="center"/>
+    <text id="n3" name="n3" xy="56,89" pivot="0.5,0.5" anchor="true" size="45,24" fontSize="18" color="#dfc7af" strokeColor="#240000" strokeSize="2" text="X100"/>
+  </displayList>
+</component>jui018.xml|383|<component size="234,74">
+  <displayList>
+    <text id="n0" name="txtDesc1" xy="1,17" pivot="0,0.5" anchor="true" size="204,24" font="华康圆体W7(P)" fontSize="20" color="#ffffff" ubb="true" text="恭喜 少时诵诗书 获得:"/>
+    <text id="n1" name="txtDesc2" xy="1,45" pivot="0,0.5" anchor="true" size="131,24" font="华康圆体W7(P)" fontSize="20" ubb="true" text="咕咕咕咕X100"/>
+  </displayList>
+</component>jui0x.xml|1562|<component size="892,635">
+  <displayList>
+    <image id="n27" name="n27" src="jui015" xy="28,2"/>
+    <image id="n9" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,26" size="20,607"/>
+    <text id="n15" name="txtDesc1" xy="328,578" pivot="0.5,0.5" anchor="true" size="267,22" font="华康圆体W7(P)" fontSize="18" color="#ffe88c" strokeColor="#240000" strokeSize="2" text="每天0点重置转盘奖励和免费次数"/>
+    <image id="n28" name="n28" src="jui0z" xy="48,7"/>
+    <component id="n37" name="comTurnBg" src="jui016" xy="325,286" pivot="0.5,0.5" anchor="true"/>
+    <image id="n30" name="n30" src="jui013" xy="48,1"/>
+    <component id="n36" name="btnChoujiang" src="t5hdnfs" pkg="0tyncec1" xy="227,195" size="193,189">
+      <Button icon="ui://g35bobp2jui014"/>
+    </component>
+    <loader id="n33" name="iconCost" xy="283,322" pivot="0.5,0.5" anchor="true" size="50,30" touchable="false" align="right" vAlign="middle" fill="scale"/>
+    <text id="n34" name="txtCostNum" xy="346,324" pivot="0.5,0.5" anchor="true" size="56,34" font="华康圆体W7(P)" fontSize="30" color="#100a04" text="X30"/>
+    <image id="n35" name="n35" src="jui011" xy="286,135"/>
+    <text id="n39" name="n39" xy="703,32" size="85,24" font="华康圆体W7(P)" fontSize="20" color="#2e3341" text="中奖信息"/>
+    <text id="n40" name="txtFree" xy="324,324" pivot="0.5,0.5" anchor="true" size="85,28" font="华康圆体W7(P)" fontSize="25" color="#ff0000" text="免费X1"/>
+    <list id="n38" name="listHistory" xy="621,62" size="250,522" overflow="scroll" margin="0,0,0,0" defaultItem="ui://g35bobp2jui018"/>
+  </displayList>
+</component>l1qp9.xml|726|<component size="892,635">
+  <displayList>
+    <loader id="n2" name="loaderBG" xy="26,0" size="50,50" url="ui://g35bobp2l1qp6"/>
+    <text id="n4" name="titleTime" xy="650,119" size="234,29" font="华康圆体W7(P)" fontSize="19" color="#1f0502" vAlign="middle" autoSize="none" text=""/>
+    <image id="n5" name="imgSplit" src="gk0nnid" pkg="0tyncec1" xy="0,28" size="20,607"/>
+    <image id="n8" name="imgList" src="gk0nni9" pkg="0tyncec1" xy="26,154" size="864,452"/>
+    <list id="n6" name="list" xy="26,156" size="866,446" overflow="scroll" margin="0,0,0,0" lineGap="-1" defaultItem="ui://g35bobp2l1qpe">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>l1qpe.xml|635|<component size="862,113" extention="Button">
+  <displayList>
+    <image id="n0" name="bg_item0" src="keyenis" pkg="0tyncec1" xy="1,0" size="862,113"/>
+    <image id="n1" name="imgArrow" src="l1qp7" xy="2,37"/>
+    <image id="n2" name="imgOnline" src="l1qp3" xy="17,48"/>
+    <text id="n3" name="titleTime" xy="133,44" size="110,33" font="华康圆体W7(P)" fontSize="20" vAlign="middle" autoSize="none" text="11110分钟"/>
+    <component id="n4" name="buttonGet" src="l1qpf" xy="720,30">
+      <Button title="领取"/>
+    </component>
+    <image id="n5" name="imgGet" src="l1qp2" xy="718,18"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>l1qpf.xml|1325|<component size="111,53" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="gk0nnie" pkg="0tyncec1" xy="0,0" size="112,51">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="n2" src="gk0nnie" pkg="0tyncec1" xy="0,0" size="112,51">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3" name="n3" src="gk0nnie" pkg="0tyncec1" xy="0,0" size="112,51">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4" name="n4" src="gk0nnie" pkg="0tyncec1" xy="0,0" size="112,51">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n5" name="title" xy="0,0" size="111,50" font="华康圆体W7(P)" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>osjzr.xml|1887|<component size="479,259">
+  <displayList>
+    <component id="n59" name="n59" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,259"/>
+    <text id="n22" name="txtTitle" xy="188,6" size="119,28" font="华康圆体W7(P)" fontSize="24" color="#cccccc" autoSize="none" text="探索墓室"/>
+    <component id="n61" name="btnQuxiao" src="l2b8nnq" pkg="0tyncec1" xy="96,192" size="122,42">
+      <Button title="取消" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n62" name="btnQueding" src="l2b8nnq" pkg="0tyncec1" xy="270,192" size="122,42">
+      <Button title="确定" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <richtext id="n72" name="txtTansuo" xy="240,75" pivot="0.5,0.5" anchor="true" size="429,26" group="n67" font="华康圆体W7(P)" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="height" text=""/>
+    <richtext id="n73" name="txtTansuoCost" xy="243,152" pivot="0.5,0.5" anchor="true" size="391,28" group="n67" font="华康圆体W7(P)" fontSize="24" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="height" text="666666">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </richtext>
+    <group id="n67" name="comTansuo" xy="240,75" size="429,105" advanced="true"/>
+    <text id="n68" name="txtChange1" xy="82,61" size="307,30" group="n71" font="华康圆体W7(P)" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="shrink" text="更换陵墓会重置奖励"/>
+    <text id="n69" name="txtChange2" xy="116,97" size="243,30" group="n71" font="华康圆体W7(P)" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="none" text="花费元宝刷新奖励?"/>
+    <text id="n70" name="txtChange3" xy="63,158" size="362,25" group="n71" font="华康圆体W7(P)" fontSize="20" color="#858687" align="center" ubb="true" autoSize="none" text="(探索完所有墓室后可免费更换陵墓)"/>
+    <group id="n71" name="comChange" xy="63,61" size="362,122" advanced="true"/>
+  </displayList>
+</component>package.xml|2170|<packageDescription id="g35bobp2" name="Welfare">
+  <resources>
+    <atlas id="atlas0" size="2048,2048" file="atlas0.png"/>
+    <component id="e5r2g" name="TombContent" exported="true" size="892,635"/>
+    <component id="e5r2k" name="TombCell" exported="true" size="120,126"/>
+    <component id="e5r2p" name="ChangeTombBtn" size="215,52"/>
+    <component id="e5r2q" name="TombRewardShow" exported="true" size="470,405"/>
+    <component id="jui016" name="TurnBg" size="450,450"/>
+    <component id="jui017" name="TurnRewardCell" size="110,106"/>
+    <component id="jui018" name="TurnHistoryCell" exported="true" size="234,74"/>
+    <component id="jui0x" name="TurnContent" exported="true" size="892,635"/>
+    <component id="l1qp9" name="OnlineRewardContent" exported="true" size="892,635"/>
+    <component id="l1qpe" name="OnlineRewardItem" exported="true" size="862,113"/>
+    <component id="l1qpf" name="ButtonGet" exported="true" size="111,53"/>
+    <component id="osjzr" name="TombPopLayer" exported="true" size="479,259"/>
+    <image id="c8es19" name="wenzidi" size="376,32"/>
+    <image id="e5r2i" name="示意图" size="1334,750"/>
+    <image id="e5r2j" name="bg_lmtb" size="855,594"/>
+    <image id="e5r2l" name="btn_mushi2" size="139,118" exported="true"/>
+    <image id="e5r2m" name="btn_mushi1" size="119,126" exported="true"/>
+    <image id="e5r2n" name="bg_tbxx" size="233,493"/>
+    <image id="e5r2o" name="bg_170X287" size="170,51" scale="9grid" scale9grid="43,36,86,10"/>
+    <image id="jui010" name="turn_zhuanpan" size="450,450"/>
+    <image id="jui011" name="turn_zhizhen" size="72,64"/>
+    <image id="jui012" name="turn_xuanzhong" size="110,106"/>
+    <image id="jui013" name="turn_caidai" size="555,526"/>
+    <image id="jui014" name="turn_btn_dianjichoujiang" size="186,186"/>
+    <image id="jui015" name="turn_bg_ditu" size="861,602"/>
+    <image id="jui0z" name="turn_zhuanpandi" size="555,526"/>
+    <image id="l1qp2" name="font_ylq" size="107,61"/>
+    <image id="l1qp3" name="font_ljzx" size="89,24"/>
+    <image id="l1qp6" name="title_bg" size="863,152"/>
+    <image id="l1qp7" name="online_bg" size="128,48"/>
+  </resources>
+</packageDescription>

@@ -1,0 +1,136 @@
+lgaa1k.xml|955|<component size="949,200">
+  <displayList>
+    <loader id="n0" name="Bg" xy="0,1" size="948,198" url="ui://wetrdvlhlgaa17" align="center" vAlign="middle"/>
+    <text id="n1" name="FbName" xy="26,19" size="125,28" font="方正粗圆简体" fontSize="24" color="#2e3341" text="热浪的沙漠"/>
+    <text id="n3" name="FbLevel" xy="27,58" size="141,24" font="方正粗圆简体" fontSize="20" color="#fe2626" text="怪物战力: 2888"/>
+    <component id="n7" name="EnterBtn" src="skqrnkp" pkg="0tyncec1" xy="827,30" size="109,137">
+      <Button title="挑战" titleColor="#2e3341" icon="ui://wetrdvlhftdy2n"/>
+    </component>
+    <component id="n11" name="rewardConn" src="t5hdnfx" pkg="0tyncec1" xy="29,191"/>
+    <image id="n10" name="imgGray" src="c18wnl9" pkg="0tyncec1" xy="0,-2" size="952,204"/>
+    <text id="n6" name="txtUnlock" xy="389,80" size="169,44" font="方正粗圆简体" fontSize="40" color="#ffffff" ubb="true" strokeColor="#1c1b1b" strokeSize="3" text="20级解锁"/>
+  </displayList>
+</component>lgaa1o.xml|1131|<component size="963,604" opaque="false">
+  <controller name="c1" pages="0,,1,,2,,3,,4,,5,,6," selected="0"/>
+  <displayList>
+    <image id="n9" name="n9" src="gk0nni9" pkg="0tyncec1" xy="-3,53" size="954,542"/>
+    <list id="n3" name="List" xy="-1,53" size="947,530" overflow="scroll" margin="9,0,2,0" lineGap="3" defaultItem="ui://wetrdvlhlgaa1k"/>
+    <image id="n10" name="imgArrowDown" src="iqif2k" xy="513,563"/>
+    <image id="n11" name="imgArrowUp" src="iqif2k" xy="552,32" rotation="180"/>
+    <text id="n12" name="n12" xy="29,14" size="265,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="副本难度较大，建议组队前往"/>
+    <image id="n13" name="n13" src="rnfrnmq" pkg="0tyncec1" xy="706,7" size="241,39"/>
+    <text id="n14" name="n14" xy="758,15" size="110,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="剩余总次数:"/>
+    <text id="n15" name="txtTimes" xy="865,15" size="55,24" font="方正粗圆简体" fontSize="20" color="#084b0f" align="center" text="33/30"/>
+    <loader id="n16" name="imgFlag" xy="912,9" size="50,50" url="ui://wetrdvlhlgaa1b"/>
+    <image id="n17" name="n17" src="fsws2m" xy="7,16"/>
+  </displayList>
+</component>mllx2g.xml|1206|<component size="655,318">
+  <displayList>
+    <image id="n0" name="n0" src="mllx2e" xy="0,0"/>
+    <image id="n6" name="n6" src="mllx2f" xy="36,58" size="151,35"/>
+    <text id="n7" name="title" xy="45,64" size="130,26" font="方正粗圆简体" fontSize="22" color="#00834d" align="center" vAlign="middle" autoSize="none" text="秘境"/>
+    <text id="n9" name="desc" xy="36,107" size="568,79" font="方正粗圆简体" fontSize="22" color="#003341" autoSize="none" text="射发射发发生发放射发射发发生发放射发射发发生发放射发射发发生发放射发射发发生发放射发射发发生发放发生发放射发射发发生发放"/>
+    <image id="n10" name="n10" src="hx0xnip" pkg="0tyncec1" xy="164,192"/>
+    <text id="n11" name="hasLabel" xy="36,211" size="142,26" font="方正粗圆简体" fontSize="22" color="#0586ab" text="持有的千叶街:"/>
+    <text id="n12" name="count" xy="222,211" size="29,26" font="方正粗圆简体" fontSize="22" color="#0586ab" text="20"/>
+    <loader id="n13" name="icon" xy="180,203" size="40,40" fill="scale"/>
+    <component id="n14" name="btn1" src="mllx2h" xy="98,266"/>
+    <component id="n15" name="btn2" src="mllx2i" xy="332,266"/>
+    <component id="n16" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="514,6" size="151,88">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>mllx2h.xml|839|<component size="210,52" extention="Button">
+  <displayList>
+    <image id="n2" name="n2" src="x0conj0" pkg="0tyncec1" xy="0,0" size="210,52"/>
+    <text id="n1" name="title" xy="7,7" size="108,38" font="方正粗圆简体" fontSize="24" color="#fff9e2" align="right" vAlign="middle" ubb="true" autoSize="none" strokeColor="#414e6d" singleLine="true" text="普通秘境">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n3" name="icon" xy="125,4" size="40,40" align="right" fill="scale"/>
+    <text id="n4" name="count" xy="157,7" size="45,38" font="方正粗圆简体" fontSize="24" color="#fff9e2" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#414e6d" singleLine="true" text="1">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>mllx2i.xml|839|<component size="210,52" extention="Button">
+  <displayList>
+    <image id="n2" name="n2" src="x0conj1" pkg="0tyncec1" xy="0,0" size="210,52"/>
+    <text id="n1" name="title" xy="7,7" size="108,38" font="方正粗圆简体" fontSize="24" color="#fff9e2" align="right" vAlign="middle" ubb="true" autoSize="none" strokeColor="#414e6d" singleLine="true" text="高级秘境">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n3" name="icon" xy="125,4" size="40,40" align="right" fill="scale"/>
+    <text id="n4" name="count" xy="157,7" size="45,38" font="方正粗圆简体" fontSize="24" color="#fff9e2" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#414e6d" singleLine="true" text="1">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>otx720.xml|1473|<component size="1334,750" opaque="false">
+  <displayList>
+    <image id="n22" name="victoryBg" src="otx71z" xy="465,158" group="n9"/>
+    <graph id="n19" name="vRole3D" xy="662,275" size="1,1" group="n9" touchable="false"/>
+    <image id="n1" name="n1" src="otx721" xy="663,467" size="162,41" group="n9"/>
+    <image id="n2" name="n2" src="otx721" xy="501,467" size="162,41" group="n9" flip="hz"/>
+    <text id="n8" name="victoryText" xy="552,473" size="224,33" group="n9" font="方正粗圆简体" fontSize="20" color="#c6d6db" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n9" name="victory" xy="465,158" size="390,350" visible="false" advanced="true"/>
+    <image id="n23" name="defeatedBg" src="otx71y" xy="466,160" group="n14"/>
+    <graph id="n18" name="dRole3D" xy="662,275" size="1,1" group="n14" touchable="false"/>
+    <image id="n11" name="n11" src="otx721" xy="663,467" size="162,41" group="n14"/>
+    <image id="n12" name="n12" src="otx721" xy="501,467" size="162,41" group="n14" flip="hz"/>
+    <text id="n13" name="victoryText_2" xy="552,473" size="224,33" group="n14" font="方正粗圆简体" fontSize="20" color="#c6d6db" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <group id="n14" name="defeated" xy="466,160" size="390,348" visible="false" advanced="true"/>
+    <loader id="n25" name="imgTimeOut" xy="623,308" size="50,50" url="ui://wetrdvlhjyou2l" align="center" vAlign="middle"/>
+  </displayList>
+</component>package.xml|1842|<packageDescription id="wetrdvlh" name="FB">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="lgaa1k" name="FBItem" exported="true" size="949,200"/>
+    <component id="lgaa1o" name="FBUI" exported="true" size="963,604"/>
+    <component id="mllx2g" name="EnterPanel1" exported="true" size="655,318"/>
+    <component id="mllx2h" name="EnterBtn1" size="210,52"/>
+    <component id="mllx2i" name="EnterBtn2" size="210,52"/>
+    <component id="otx720" name="PoPFinishFB" exported="true" size="1334,750"/>
+    <component id="tr2p1r" name="CDMessageBox" exported="true" size="1334,750"/>
+    <component id="wf1g2j" name="FBTeamHead" exported="true" size="137,103"/>
+    <image id="fsws2m" name="内有附件标识" size="20,20"/>
+    <image id="ftdy2n" name="btn_fuben" size="99,135" exported="true"/>
+    <image id="iqif2k" name="jiantou" size="51,30"/>
+    <image id="jyou2l" name="8" size="234,58"/>
+    <image id="lgaa18" name="未开启" size="17,18" exported="true" scale="9grid" scale9grid="7,8,4,4"/>
+    <image id="lgaa19" name="分页标志（选中）" size="74,83" exported="true"/>
+    <image id="lgaa1a" name="分页标志（未选中）" size="74,83" exported="true"/>
+    <image id="lgaa1b" name="等级不足" size="36,39" exported="true"/>
+    <image id="lgaa1c" name="CD中" size="36,39" exported="true"/>
+    <image id="lgaa1d" name="CD完成" size="36,39" exported="true"/>
+    <image id="lgaa1f" name="标题底（可拉伸）" size="307,44" exported="true" scale="9grid" scale9grid="149,0,6,44"/>
+    <image id="mllx2e" name="di" size="641,303"/>
+    <image id="mllx2f" name="biaotidi" size="130,13" scale="9grid" scale9grid="40,6,50,1"/>
+    <image id="otx71y" name="fail" size="390,250"/>
+    <image id="otx71z" name="win" size="390,250"/>
+    <image id="otx721" name="3" size="103,32" scale="9grid" scale9grid="26,8,52,16"/>
+  </resources>
+</packageDescription>tr2p1r.xml|1318|<component size="1334,750">
+  <displayList>
+    <image id="n0" name="bg" src="n3qsneq" pkg="0tyncec1" xy="364,214" pivot="0.5,0.5" size="620,280"/>
+    <image id="n1" name="bg2" src="lgaa1f" xy="506,226" size="337,44"/>
+    <image id="n2" name="line" src="igkdnlb" pkg="0tyncec1" xy="482,393" size="379,2"/>
+    <text id="n4" name="txt_cd" xy="608,401" size="135,26" font="方正粗圆简体" fontSize="20" color="#43515b" align="center" vAlign="middle" text="即将开始：5秒">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <text id="n5" name="title" xy="603,233" size="135,33" font="方正粗圆简体" fontSize="26" color="#2e3341" align="center" vAlign="middle" text="热情的沙漠">
+      <relation target="n1" sidePair="center-center"/>
+    </text>
+    <component id="n6" name="btnCancel" src="skqrnkp" pkg="0tyncec1" xy="468,428" size="130,55">
+      <Button title="放弃" titleColor="#2e3341" icon="ui://0tyncec1gk0nnif" selectedIcon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n7" name="btnAgree" src="skqrnkp" pkg="0tyncec1" xy="751,428" size="130,55">
+      <Button title="同意" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie" selectedIcon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n12" name="teamerConn" src="t5hdnfx" pkg="0tyncec1" xy="376,274" size="596,120"/>
+  </displayList>
+</component>wf1g2j.xml|367|<component size="137,103" extention="Button">
+  <displayList>
+    <component id="n0" name="headIcon" src="z03enli" pkg="0tyncec1" xy="28,-1" size="80,80"/>
+    <richtext id="n1" name="title" xy="-6,80" size="148,24" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="height" text="哈哈哈哈哈或或"/>
+  </displayList>
+  <Button/>
+</component>

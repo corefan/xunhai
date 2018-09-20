@@ -1,0 +1,63 @@
+ez9z3.xml|843|<component size="1334,750">
+  <displayList>
+    <image id="n0" name="bg" src="ez9z2" xy="0,0"/>
+    <component id="n1" name="returnBtn" src="ez9z6" xy="1,0"/>
+    <component id="n2" name="btn1" src="ez9zi" xy="739,320"/>
+    <component id="n3" name="btn2" src="ez9zi" xy="508,222" visible="false">
+      <Button title="幻境" icon="ui://ny6nt56pez9ze"/>
+    </component>
+    <component id="n4" name="btn3" src="ez9zi" xy="272,246" visible="false">
+      <Button title="部族战场" icon="ui://ny6nt56pez9zh"/>
+    </component>
+    <component id="n5" name="btn4" src="ez9zi" xy="403,484" visible="false">
+      <Button title="妖族入侵" icon="ui://ny6nt56pez9zd"/>
+    </component>
+    <component id="n6" name="btn5" src="ez9zi" xy="740,35" visible="false">
+      <Button title="古神试炼" icon="ui://ny6nt56pez9zf"/>
+    </component>
+  </displayList>
+</component>ez9z6.xml|360|<component size="117,95" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="icon" src="ez9z4" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>ez9zi.xml|1105|<component size="188,197" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n2" name="icon" xy="0,-27" size="188,182" url="ui://ny6nt56pez9zc" fill="scaleMatchHeight"/>
+    <image id="n3" name="bg1" src="ez9zk" xy="12,153"/>
+    <image id="n5" name="NoOpenMask" src="ez9zl" xy="12,153"/>
+    <text id="n4" name="title" xy="55,162" size="77,30" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" text="大荒塔">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <image id="n6" name="Lock" src="ez9zj" xy="29,94"/>
+    <text id="n7" name="LockLevel" xy="61,97" size="87,27" font="方正粗圆简体" fontSize="20" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" strokeSize="2" text="30级开放"/>
+    <text id="n9" name="txtLessTime" xy="0,196" size="187,32" font="方正粗圆简体" fontSize="22" color="#ffcc33" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#000000" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>package.xml|1413|<packageDescription id="ny6nt56p" name="ShenJing">
+  <resources>
+    <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
+    <component id="ez9z3" name="ShenJingPanel" exported="true" size="1334,750"/>
+    <component id="ez9z6" name="SJReturnBtn" size="117,95"/>
+    <component id="ez9zi" name="InLetBtn" exported="true" size="188,197"/>
+    <image id="ez9z2" name="分层-地图" size="1334,750" exported="true"/>
+    <image id="ez9z4" name="返回按钮" size="117,95" exported="true"/>
+    <image id="ez9z8" name="图标-妖族入侵" size="188,182" exported="true"/>
+    <image id="ez9z9" name="图标-神战" size="188,182" exported="true"/>
+    <image id="ez9za" name="图标-古神试炼" size="188,182" exported="true"/>
+    <image id="ez9zb" name="图标-大荒塔" size="188,182" exported="true"/>
+    <image id="ez9zc" name="图标-部族战场" size="188,182" exported="true"/>
+    <image id="ez9zd" name="图标-妖族入侵(2)" size="188,182" exported="true"/>
+    <image id="ez9ze" name="图标-神战(2)" size="188,182" exported="true"/>
+    <image id="ez9zf" name="图标-古神试炼(2)" size="188,182" exported="true"/>
+    <image id="ez9zg" name="图标-大荒塔(2)" size="188,182" exported="true"/>
+    <image id="ez9zh" name="图标-部族战场(2)" size="188,182" exported="true"/>
+    <image id="ez9zj" name="锁" size="27,32" exported="true"/>
+    <image id="ez9zk" name="开放" size="164,45" exported="true"/>
+    <image id="ez9zl" name="未开放" size="164,45" exported="true"/>
+  </resources>
+</packageDescription>

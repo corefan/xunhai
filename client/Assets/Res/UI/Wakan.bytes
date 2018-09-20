@@ -1,0 +1,155 @@
+nkol1j.xml|754|<component size="70,70">
+  <displayList>
+    <image id="n0" name="n0" src="uchhp" xy="0,0"/>
+    <image id="n4" name="n4" src="c4eznl4" pkg="0tyncec1" xy="4,71" size="62,28"/>
+    <text id="n5" name="levelTxt" xy="1,73" size="69,28" font="华康圆体W7(P)" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="2级&#xA;"/>
+    <graph id="n7" name="downEft" xy="32,32" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <loader id="n1" name="icon" xy="0,0" size="68,68" align="center" vAlign="middle" fill="scaleFree"/>
+    <graph id="n6" name="upEft" xy="32,32" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <image id="n3" name="select" src="uchhn" xy="-11,-7"/>
+  </displayList>
+</component>nkol1k.xml|576|<component size="387,395">
+  <displayList>
+    <component id="n0" name="item1" src="nkol1j" xy="154,0"/>
+    <component id="n1" name="item8" src="nkol1j" xy="41,60"/>
+    <component id="n2" name="item2" src="nkol1j" xy="258,60"/>
+    <component id="n3" name="item7" src="nkol1j" xy="0,172"/>
+    <component id="n4" name="item3" src="nkol1j" xy="317,170"/>
+    <component id="n5" name="item6" src="nkol1j" xy="41,270"/>
+    <component id="n6" name="item4" src="nkol1j" xy="258,272"/>
+    <component id="n7" name="item5" src="nkol1j" xy="154,325"/>
+  </displayList>
+</component>nkol1m.xml|610|<component size="179,38">
+  <displayList>
+    <text id="n0" name="value1" xy="2,10" size="64,26" font="华康圆体W7(P)" fontSize="22" color="#1e67af" align="right" vAlign="middle" ubb="true" autoSize="none" text="生命">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <text id="n3" name="value3" xy="74,10" size="104,26" font="华康圆体W7(P)" fontSize="22" color="#00834d" vAlign="middle" ubb="true" autoSize="none" text="+233333">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <image id="n5" name="line" src="5v99nkc" pkg="0tyncec1" xy="5,4" size="167,1"/>
+  </displayList>
+</component>package.xml|1391|<packageDescription id="jh3vd6rk" name="Wakan">
+  <resources>
+    <atlas id="atlas0" size="1024,512" file="atlas0.png"/>
+    <component id="nkol1j" name="WakanSelectItem" exported="true" size="70,70"/>
+    <component id="nkol1k" name="WakanSelectItems" exported="true" size="387,395"/>
+    <component id="nkol1m" name="WakanProperty" exported="true" size="179,38"/>
+    <component id="rgh01r" name="WakanCostItemSelectPanel" exported="true" size="320,224"/>
+    <component id="uchh6" name="AwakePanelItem" exported="true" size="609,40"/>
+    <component id="uchh9" name="AwakePanel" exported="true" size="1334,750"/>
+    <component id="uchhb" name="ProgessBar" size="258,16"/>
+    <component id="uchhc" name="WakanCostItem" exported="true" size="92,92"/>
+    <component id="uchhe" name="WakanPanel" exported="true" size="976,624"/>
+    <image id="rgh01p" name="awakeBtn12" size="29,27" scale="9grid" scale9grid="8,7,13,13" gridTile="15"/>
+    <image id="rgh01q" name="awakeBtn22" size="19,21" scale="9grid" scale9grid="5,6,9,9"/>
+    <image id="uchhj" name="kuang" size="462,249"/>
+    <image id="uchhk" name="beijinghuawen" size="495,477"/>
+    <image id="uchhl" name="anniu" size="93,83"/>
+    <image id="uchhm" name="youbianhuawen" size="433,77"/>
+    <image id="uchhn" name="xuanzhong" size="91,86"/>
+    <image id="uchhp" name="kuang2" size="70,70"/>
+  </resources>
+</packageDescription>rgh01r.xml|322|<component size="320,224">
+  <displayList>
+    <image id="n1" name="n1" src="x0conix" pkg="0tyncec1" xy="0,0" size="320,224"/>
+    <list id="n6" name="list" xy="4,5" size="311,217" layout="flow_hz" overflow="scroll" margin="6,0,6,0" lineGap="12" colGap="12" defaultItem="ui://jh3vd6rkuchhc"/>
+  </displayList>
+</component>uchh6.xml|1273|<component size="609,40">
+  <controller name="state" pages="0,激活,1,未激活" selected="1"/>
+  <displayList>
+    <image id="n9" name="n9" src="rgh01p" xy="0,0" size="609,40">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <image id="n10" name="n10" src="rgh01q" xy="0,0" size="609,40">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <text id="n4" name="limitLevel" xy="95,2" size="95,38" font="华康圆体W7(P)" fontSize="20" color="#495e70" vAlign="middle" autoSize="none" text="注灵10级"/>
+    <text id="n5" name="desc" xy="208,2" size="396,38" font="华康圆体W7(P)" fontSize="20" color="#495e70" vAlign="middle" autoSize="none" text="全属性"/>
+    <text id="n3" name="activeLevel" xy="25,2" size="58,38" font="华康圆体W7(P)" fontSize="20" color="#003341" vAlign="middle" autoSize="none" text="10段&#xA;">
+      <gearDisplay controller="state" pages="0"/>
+    </text>
+    <text id="n7" name="noActiveLevel" xy="25,2" size="58,38" font="华康圆体W7(P)" fontSize="20" color="#003341" vAlign="middle" autoSize="none" text="技能伤害">
+      <gearDisplay controller="state" pages="1"/>
+    </text>
+    <image id="n13" name="line" src="5v99nkc" pkg="0tyncec1" xy="86,5" size="1,30">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+  </displayList>
+</component>uchh9.xml|620|<component size="1334,750">
+  <displayList>
+    <component id="n0" name="bg" src="prinnn6" pkg="0tyncec1" xy="310,92" size="725,563">
+      <Label title="觉醒属性"/>
+    </component>
+    <image id="n1" name="n1" src="jsucnhf" pkg="0tyncec1" xy="356,159" size="623,420"/>
+    <text id="n2" name="noActiveLevel" xy="359,584" size="616,38" font="华康圆体W7(P)" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="所有部位注灵等级达到要求以后，将永久获得注灵属性加成"/>
+    <list id="n3" name="list" xy="363,170" size="609,400" overflow="scroll" margin="0,0,0,0" defaultItem="ui://jh3vd6rkuchh6"/>
+  </displayList>
+</component>uchhb.xml|197|<component size="258,16" extention="ProgressBar">
+  <displayList>
+    <image id="n13" name="bar" src="mx4pnkv" pkg="0tyncec1" xy="4,3" size="250,10"/>
+  </displayList>
+  <ProgressBar/>
+</component>uchhc.xml|781|<component size="92,92">
+  <displayList>
+    <loader id="n9" name="quality" xy="1,1" size="90,90" fill="scale"/>
+    <image id="n1" name="select" src="uwggde" pkg="0tyncec1" xy="-6,-4"/>
+    <loader id="n8" name="icon" xy="1,2" size="86,86" align="center" vAlign="middle" fill="scale"/>
+    <text id="n7" name="count" xy="10,64" size="77,24" font="华康圆体W7(P)" fontSize="20" color="#e5e5e5" align="right" autoSize="height" strokeColor="#666666" text="50"/>
+    <image id="n10" name="jia" src="rgh0nl6" pkg="0tyncec1" xy="22,23"/>
+    <graph id="n11" name="role3D" xy="44,46" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <graph id="n12" name="moveRole3D" xy="44,46" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+  </displayList>
+</component>uchhe.xml|4569|<component size="976,624" opaque="false">
+  <displayList>
+    <image id="n61" name="n61" src="uchhm" xy="499,14"/>
+    <image id="n58" name="n58" src="uchhk" xy="-10,57"/>
+    <loader id="n93" name="bgImg" xy="-32,23" size="465,512" align="center" vAlign="middle"/>
+    <image id="n63" name="n63" src="uchhj" xy="498,76"/>
+    <image id="n3" name="VerLine" src="jsucnhg" pkg="0tyncec1" xy="466,0"/>
+    <component id="n34" name="wakanBtn" src="tnbmnka" pkg="0tyncec1" xy="626,557" size="146,56">
+      <Button title="注灵" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n38" name="propItem1" src="uchhc" xy="570,337"/>
+    <component id="n41" name="propItem3" src="uchhc" xy="774,337"/>
+    <component id="n42" name="propItem2" src="uchhc" xy="672,337"/>
+    <text id="n45" name="infoMore" xy="495,471" size="459,41" font="华康圆体W7(P)" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="超出的灵力值，升到下一级时不被保留！&#xA;"/>
+    <text id="n16" name="partName" xy="636,38" size="172,41" font="华康圆体W7(P)" fontSize="24" color="#058c9c" align="center" vAlign="middle" autoSize="none" text="头盔.部位"/>
+    <text id="n18" name="progessTxt" xy="622,77" size="204,31" font="华康圆体W7(P)" fontSize="18" color="#003341" align="center" vAlign="middle" autoSize="none" text="100/300&#xA;"/>
+    <text id="n28" name="info" xy="749,279" size="144,32" font="华康圆体W7(P)" fontSize="20" color="#54595e" vAlign="middle" autoSize="none" text="50%"/>
+    <image id="n97" name="progessBg" src="rgh0nl8" pkg="0tyncec1" xy="598,103" size="254,14" color="#000000"/>
+    <component id="n95" name="progessPre" src="uchhb" xy="596,101" size="258,16" alpha="0.6">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n51" name="progess" src="uchhb" xy="596,101" size="258,16">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n52" name="infoLable" xy="625,279" size="133,32" font="华康圆体W7(P)" fontSize="20" color="#54595e" align="center" vAlign="middle" autoSize="none" text="注灵暴击率："/>
+    <text id="n55" name="costLable" xy="554,520" size="133,32" font="华康圆体W7(P)" fontSize="20" color="#54595e" align="right" vAlign="middle" autoSize="none" text="消耗："/>
+    <text id="n56" name="cost" xy="722,520" size="144,32" font="华康圆体W7(P)" fontSize="20" color="#54595e" vAlign="middle" autoSize="none" text="2000"/>
+    <component id="n64" name="radio" src="5v99nkh" pkg="0tyncec1" xy="649,436"/>
+    <text id="n65" name="selectInfo" xy="687,438" size="149,29" font="华康圆体W7(P)" fontSize="20" color="#2e3341" vAlign="middle" autoSize="none" text="自动放入&#xA;"/>
+    <loader id="n66" name="costIcon" xy="681,515" size="40,40" fill="scale"/>
+    <component id="n72" name="awakeBtn" src="tnbmnka" pkg="0tyncec1" xy="22,18" size="93,83">
+      <Button icon="ui://jh3vd6rkuchhl"/>
+    </component>
+    <image id="n73" name="n73" src="s4zfnls" pkg="0tyncec1" xy="701,182"/>
+    <image id="n67" name="n67" src="uchhnl1" pkg="0tyncec1" xy="512,135" size="176,34"/>
+    <image id="n68" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="511,167" size="178,100"/>
+    <text id="n70" name="curLevelName" xy="513,138" pivot="0.5,0.5" size="174,29" font="华康圆体W7(P)" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="2级"/>
+    <image id="n80" name="n80" src="uchhnl1" pkg="0tyncec1" xy="766,135" size="176,34"/>
+    <image id="n81" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="765,167" size="178,100"/>
+    <text id="n83" name="nextLevelName" xy="767,138" pivot="0.5,0.5" size="174,29" font="华康圆体W7(P)" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="2级"/>
+    <component id="n86" name="items" src="nkol1k" xy="50,100" pivot="0.5,0.5"/>
+    <component id="n87" name="curB1" src="nkol1m" xy="512,172"/>
+    <component id="n88" name="curB2" src="nkol1m" xy="512,211"/>
+    <component id="n89" name="nextB1" src="nkol1m" xy="765,172"/>
+    <component id="n90" name="nextB2" src="nkol1m" xy="765,211"/>
+    <component id="n91" name="selectPanel" src="rgh01r" xy="568,110"/>
+    <graph id="n92" name="successEft" xy="732,151" pivot="0.5,0.5" anchor="true" size="100,100" touchable="false"/>
+    <component id="n94" name="tipsBtn" src="f06tnnd" pkg="0tyncec1" xy="839,557">
+      <Button icon="ui://0tyncec1f06tnnc"/>
+    </component>
+    <text id="n96" name="yimanMark" xy="855,94" size="92,28" font="华康圆体W7(P)" fontSize="16" color="#ff0000" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="已满"/>
+  </displayList>
+</component>

@@ -1,0 +1,785 @@
+cckj2c.xml|935|<component size="645,576">
+  <displayList>
+    <image id="n0" name="n0" src="ci33f" xy="-17,-2" size="672,576"/>
+    <image id="n5" name="n5" src="jsucnhh" pkg="0tyncec1" xy="29,420" size="582,2"/>
+    <text id="n9" name="t1" xy="33,48" size="579,353" font="方正粗圆简体" fontSize="22" leading="6" ubb="true" autoSize="none" text=""/>
+    <component id="n11" name="b1" src="jyjf12" xy="27,432" size="590,38">
+      <Label title="召唤BOSS" titleColor="#336600"/>
+    </component>
+    <component id="n12" name="b2" src="jyjf12" xy="27,475" size="590,38">
+      <Label title="喂养BOSS" titleColor="#336600"/>
+    </component>
+    <component id="n13" name="b3" src="jyjf12" xy="26,519" size="590,38">
+      <Label title="提炼精华" titleColor="#336600"/>
+    </component>
+    <component id="n15" name="close" src="t5hdnfq" pkg="0tyncec1" xy="593,-6" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+  </displayList>
+</component>e5vk2b.xml|946|<component size="1334,750" extention="Label">
+  <displayList>
+    <graph id="n1" name="n1" xy="-31,-5" pivot="0.5,0.5" size="1334,750" scale="1.5,1.5" type="rect" lineSize="0" lineColor="#80000000" fillColor="#80000000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <image id="n2" name="n2" src="csuxnlk" pkg="0tyncec1" xy="361,269" size="597,251"/>
+    <text id="n3" name="title" xy="453,272" size="413,34" font="方正粗圆简体" fontSize="24" color="#d2dae0" align="center" vAlign="middle" autoSize="none" text="提示"/>
+    <component id="n4" name="btn" src="l2b8nnq" pkg="0tyncec1" xy="575,451" size="169,41">
+      <Button title="复活（60s）" titleColor="#2e3341" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <richtext id="n6" name="content" xy="407,323" size="514,29" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" vAlign="middle" ubb="true" autoSize="height" text=""/>
+  </displayList>
+</component>ip1h21.xml|1807|<component size="645,427">
+  <displayList>
+    <image id="n1" name="img_bg" src="ci33f" xy="-17,-2" size="672,431"/>
+    <text id="n2" name="n2" xy="37,21" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="none" text="长安守城方:"/>
+    <text id="n3" name="n3" xy="37,58" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="height" text="长安攻城方:"/>
+    <image id="n6" name="n6" src="jsucnhh" pkg="0tyncec1" xy="29,180" size="582,2"/>
+    <image id="n7" name="n7" src="jsucnhh" pkg="0tyncec1" xy="29,340" size="582,2"/>
+    <text id="n8" name="t1" xy="187,21" size="337,29" font="方正粗圆简体" fontSize="22" color="#0033cc" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n9" name="t2" xy="187,58" size="337,29" font="方正粗圆简体" fontSize="22" color="#ff3300" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n10" name="t3" xy="41,102" size="562,74" font="方正粗圆简体" fontSize="22" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <component id="n17" name="b1" src="jyjf12" xy="27,191" size="590,35">
+      <Label title="占城都护府提前进入战场" titleColor="#336600"/>
+    </component>
+    <component id="n12" name="b2" src="jyjf12" xy="27,235" size="590,35">
+      <Label title="攻城都护府列表" titleColor="#336600"/>
+    </component>
+    <component id="n18" name="b3" src="jyjf12" xy="27,278" size="590,35">
+      <Label title="都护府联盟" titleColor="#336600"/>
+    </component>
+    <component id="n15" name="b4" src="jyjf12" xy="27,355" size="590,44">
+      <Label title="都护府城战介绍" titleColor="#333333" icon="ui://0tyncec1pu0xnq5"/>
+    </component>
+    <component id="n16" name="close" src="t5hdnfq" pkg="0tyncec1" xy="593,-6" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+  </displayList>
+</component>jyjf10.xml|2994|<component size="935,582">
+  <displayList>
+    <image id="n13" name="n13" src="cnepnqb" pkg="0tyncec1" xy="622,0" size="313,368"/>
+    <image id="n44" name="n44" src="cnepnqa" pkg="0tyncec1" xy="621,1" size="310,50" color="#666666"/>
+    <component id="n22" name="btnTalk" src="jyjfz" xy="646,514" size="260,64">
+      <Button title="联系都护"/>
+    </component>
+    <component id="n71" name="btnOneKeySQ" src="jyjfz" xy="647,444" size="260,64">
+      <Button title="一键申请"/>
+    </component>
+    <component id="n72" name="btnSQ" src="jyjfz" xy="645,375" size="262,64">
+      <Button title="申请加入"/>
+    </component>
+    <image id="n97" name="n97" src="oox7nk5" pkg="0tyncec1" xy="3,516" size="596,59" alpha="0.3" color="#003366"/>
+    <text id="n100" name="n100" xy="637,7" size="275,33" font="方正粗圆简体" fontSize="26" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="都护府公告&#xA;&#xA;"/>
+    <text id="n101" name="txtNotice" xy="639,63" size="275,288" font="方正粗圆简体" fontSize="26" align="center" autoSize="none" text="暂时没有公告&#xA;&#xA;"/>
+    <text id="n105" name="inputFind" xy="12,526" size="519,38" input="true" prompt="请输入查找都护府名称" maxLength="12" font="方正粗圆简体" fontSize="24" color="#333333" vAlign="middle" leading="0" autoSize="none" text=""/>
+    <component id="n113" name="btn" src="t5hdnfq" pkg="0tyncec1" xy="546,520" size="51,51">
+      <Button icon="ui://lmxy2w9bpcv2w"/>
+    </component>
+    <image id="n73" name="n73" src="uchhnl3" pkg="0tyncec1" xy="7,3" size="228,43"/>
+    <image id="n74" name="n74" src="uchhnl3" pkg="0tyncec1" xy="236,3" size="163,43"/>
+    <image id="n75" name="n75" src="uchhnl3" pkg="0tyncec1" xy="400,3" size="73,43"/>
+    <image id="n76" name="n76" src="uchhnl3" pkg="0tyncec1" xy="474,3" size="71,43"/>
+    <text id="n106" name="n106" xy="10,9" size="222,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="都护府名称&#xA;&#xA;"/>
+    <text id="n107" name="n107" xy="257,8" size="135,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="都护&#xA;&#xA;"/>
+    <text id="n108" name="n108" xy="406,8" size="63,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="等级&#xA;&#xA;"/>
+    <text id="n109" name="n109" xy="478,8" size="66,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="人数&#xA;&#xA;"/>
+    <image id="n123" name="n123" src="uchhnl3" pkg="0tyncec1" xy="546,3" size="71,43"/>
+    <text id="n124" name="n124" xy="550,8" size="66,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="申请&#xA;&#xA;"/>
+    <image id="n122" name="n122" src="gk0nnid" pkg="0tyncec1" xy="610,6" size="16,567"/>
+    <component id="n125" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="3,50" size="613,464"/>
+  </displayList>
+</component>jyjf11.xml|1523|<component size="613,63" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n86" name="n86" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="612,63"/>
+    <graph id="n121" name="n121" xy="534,12" size="72,39" type="rect" lineSize="0" fillColor="#29333333"/>
+    <text id="n114" name="t1" xy="2,15" size="225,34" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="都护府名称&#xA;&#xA;"/>
+    <text id="n115" name="t2" xy="229,15" size="174,33" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="都护&#xA;&#xA;"/>
+    <text id="n116" name="t3" xy="405,15" size="63,33" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="等级&#xA;&#xA;"/>
+    <text id="n117" name="t4" xy="471,15" size="61,32" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="人数&#xA;&#xA;"/>
+    <text id="n120" name="t5" xy="535,17" size="70,27" font="方正粗圆简体" fontSize="20" color="#333333" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="可申请&#xA;&#xA;"/>
+    <image id="n119" name="n119" src="uwggde" pkg="0tyncec1" xy="-5,-2" size="618,68">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>jyjf12.xml|709|<component size="65,33" extention="Label">
+  <displayList>
+    <image id="n120" name="n0" src="gk0nni9" pkg="0tyncec1" xy="0,0" size="65,33">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n118" name="title" xy="0,1" pivot="0.5,0.5" size="65,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="&#xA;&#xA;">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n121" name="icon" xy="5,0" size="34,34" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="middle-middle"/>
+    </loader>
+  </displayList>
+</component>jyjf13.xml|538|<component size="159,53" extention="Button">
+  <displayList>
+    <image id="n71" name="n71" src="x0conk1" pkg="0tyncec1" xy="0,0" size="159,53">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n101" name="title" xy="1,5" size="154,42" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" text="声望商店">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="0.80"/>
+</component>jyjf14.xml|664|<component size="530,41" extention="Label">
+  <displayList>
+    <image id="n87" name="n87" src="j67wnhe" pkg="0tyncec1" xy="172,0" size="358,41">
+      <relation target="n86" sidePair="left-right"/>
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <text id="n86" name="title" xy="0,2" size="150,36" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" text="&#xA;"/>
+    <text id="n99" name="txtContent" xy="179,2" size="343,36" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="">
+      <relation target="n87" sidePair="width-width"/>
+    </text>
+  </displayList>
+</component>jyjf16.xml|1857|<component size="899,560">
+  <displayList>
+    <image id="n13" name="n13" src="cnepnqb" pkg="0tyncec1" xy="566,1" size="333,450"/>
+    <image id="n44" name="n44" src="cnepnqa" pkg="0tyncec1" xy="566,1" size="330,50"/>
+    <text id="n73" name="n73" xy="571,8" size="223,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="公告"/>
+    <component id="n22" name="btnGotoClan" src="jyjfz" xy="593,489" size="288,64">
+      <Button title="都护府领地"/>
+    </component>
+    <component id="n72" name="btnEdit" src="jyjf13" xy="806,2" size="92,49">
+      <Button title="编辑"/>
+    </component>
+    <text id="n100" name="inputNotice" xy="575,55" size="320,387" input="true" prompt="请输入都护府公告" maxLength="56" font="方正粗圆简体" fontSize="24" color="#666666" autoSize="none" text=""/>
+    <component id="n106" name="label1" src="jyjf14" xy="0,3">
+      <Label title="都护名称:"/>
+    </component>
+    <component id="n112" name="label2" src="jyjf14" xy="0,64">
+      <Label title="都护:"/>
+    </component>
+    <component id="n110" name="label3" src="jyjf14" xy="0,125">
+      <Label title="等级:"/>
+    </component>
+    <component id="n109" name="label4" src="jyjf14" xy="0,186">
+      <Label title="人数:"/>
+    </component>
+    <component id="n108" name="label5" src="jyjf14" xy="0,247">
+      <Label title="战力:"/>
+    </component>
+    <component id="n114" name="label6" src="jyjf14" xy="0,308">
+      <Label title="建设度:"/>
+    </component>
+    <component id="n115" name="label7" src="jyjf14" xy="0,369">
+      <Label title="资金:"/>
+    </component>
+    <component id="n119" name="label8" src="jyjf14" xy="0,430">
+      <Label title="创建时间:"/>
+    </component>
+    <component id="n120" name="label9" src="jyjf14" xy="0,491">
+      <Label title="个人贡献:"/>
+    </component>
+    <image id="n118" name="n118" src="gk0nnid" pkg="0tyncec1" xy="543,-2" size="16,559"/>
+  </displayList>
+</component>jyjf17.xml|2936|<component size="941,516" opaque="false">
+  <displayList>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="1,0" size="940,461"/>
+    <image id="n143" name="n143" src="c18wnl9" pkg="0tyncec1" xy="2,464" size="935,48"/>
+    <image id="n144" name="bg1" src="cnepnqb" pkg="0tyncec1" xy="486,469" size="86,39">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <image id="n145" name="bg2" src="cnepnqb" pkg="0tyncec1" xy="635,469" size="86,39">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <component id="n60" name="btnClear" src="jyjf13" xy="3,465" size="143,50">
+      <Button title="清空列表"/>
+    </component>
+    <image id="n70" name="n70" src="uchhnl3" pkg="0tyncec1" xy="4,1" size="94,43"/>
+    <image id="n71" name="n71" src="uchhnl3" pkg="0tyncec1" xy="99,1" size="278,43"/>
+    <image id="n72" name="n72" src="uchhnl3" pkg="0tyncec1" xy="379,1" size="91,43"/>
+    <image id="n74" name="n74" src="uchhnl3" pkg="0tyncec1" xy="471,1" size="184,43"/>
+    <image id="n76" name="n76" src="uchhnl3" pkg="0tyncec1" xy="657,1" size="282,43"/>
+    <text id="n77" name="n77" xy="23,8" size="66,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="职业&#xA;&#xA;"/>
+    <text id="n78" name="n78" xy="184,7" size="95,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="名称&#xA;"/>
+    <text id="n79" name="n79" xy="388,7" size="70,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="等级&#xA;&#xA;&#xA;"/>
+    <text id="n81" name="n81" xy="513,7" size="86,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="战斗力&#xA;&#xA;"/>
+    <text id="n83" name="n83" xy="688,7" size="220,29" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="操作&#xA;"/>
+    <component id="n129" name="btnCheck" src="jyjf18" xy="178,468" size="247,41">
+      <Button checked="true" title="允许申请加入"/>
+    </component>
+    <component id="n137" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="2,45" size="937,404"/>
+    <text id="n140" name="txtMinLv" xy="495,474" size="71,30" input="true" maxLength="3" keyboardType="4" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" autoSize="height" singleLine="true" text="0"/>
+    <text id="n141" name="txtMaxLv" xy="637,474" size="78,30" input="true" maxLength="3" keyboardType="4" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" autoSize="height" singleLine="true" text="999"/>
+    <text id="n142" name="n142" xy="588,474" size="26,30" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="height" singleLine="true" text="-"/>
+    <component id="n146" name="btnLimit" src="jyjf13" xy="730,465" size="205,50">
+      <Button title="修改等级限制"/>
+    </component>
+  </displayList>
+</component>jyjf18.xml|798|<component size="290,41" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n126" name="bg" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="291,44">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <image id="n124" name="n124" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="41,41"/>
+    <image id="n125" name="n125" src="5v99nkf" pkg="0tyncec1" xy="4,4">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n120" name="title" xy="46,4" size="244,33" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="&#xA;&#xA;">
+      <relation target="" sidePair="rightext-right"/>
+    </text>
+  </displayList>
+  <Button mode="Check"/>
+</component>jyjf19.xml|1166|<component size="931,76">
+  <displayList>
+    <image id="n88" name="n88" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="931,76"/>
+    <text id="n110" name="txt1" xy="6,24" size="86,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" text="未知&#xA;&#xA;"/>
+    <text id="n111" name="txt2" xy="99,24" size="271,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" text="无&#xA;"/>
+    <text id="n112" name="txt3" xy="384,24" size="77,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" text="0&#xA;&#xA;"/>
+    <text id="n113" name="txt4" xy="470,23" size="179,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" text="0&#xA;&#xA;"/>
+    <component id="n120" name="btnApply" src="l2b8nnq" pkg="0tyncec1" xy="679,14" size="119,48">
+      <Button title="同意" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n121" name="btnRefuse" src="l2b8nnq" pkg="0tyncec1" xy="802,14" size="119,48">
+      <Button title="拒绝" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+  </displayList>
+</component>jyjf1a.xml|608|<component size="940,513" overflow="hidden">
+  <displayList>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="940,514"/>
+    <list id="n96" name="list" xy="1,0" size="939,513" overflow="scroll" margin="0,0,0,0" defaultItem="ui://lmxy2w9bjyjf1d">
+      <item title="asdfas"/>
+      <item title="xxx离开了都护府"/>
+      <item title="qqwer加入了都护府"/>
+      <item title="xxx认命为副都护"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>jyjf1b.xml|2814|<component size="940,513" opaque="false">
+  <displayList>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="940,450"/>
+    <image id="n70" name="n70" src="uchhnl3" pkg="0tyncec1" xy="3,1" size="87,43"/>
+    <image id="n71" name="n71" src="uchhnl3" pkg="0tyncec1" xy="91,1" size="270,43"/>
+    <image id="n72" name="n72" src="uchhnl3" pkg="0tyncec1" xy="362,1" size="67,43"/>
+    <image id="n73" name="n73" src="uchhnl3" pkg="0tyncec1" xy="430,1" size="146,43"/>
+    <image id="n74" name="n74" src="uchhnl3" pkg="0tyncec1" xy="577,1" size="94,43"/>
+    <image id="n75" name="n75" src="uchhnl3" pkg="0tyncec1" xy="673,1" size="108,43"/>
+    <image id="n76" name="n76" src="uchhnl3" pkg="0tyncec1" xy="782,1" size="155,43"/>
+    <text id="n77" name="n77" xy="13,8" size="66,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="职业&#xA;&#xA;"/>
+    <text id="n78" name="n78" xy="99,8" size="254,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="名称&#xA;"/>
+    <text id="n79" name="n79" xy="369,8" size="56,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="等级&#xA;&#xA;&#xA;"/>
+    <text id="n80" name="n80" xy="436,8" size="135,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="职务&#xA;&#xA;"/>
+    <text id="n81" name="n81" xy="579,8" size="85,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="战斗力&#xA;&#xA;"/>
+    <text id="n82" name="n82" xy="676,8" size="99,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="历史贡献&#xA;"/>
+    <text id="n83" name="n83" xy="797,8" size="123,30" font="方正粗圆简体" fontSize="22" color="#333333" align="center" vAlign="middle" autoSize="none" text="离线时间&#xA;&#xA;"/>
+    <component id="n22" name="btnMsg" src="jyjfz" xy="685,451" size="250,64">
+      <Button title="广邀各路英雄"/>
+    </component>
+    <component id="n60" name="btnExit" src="jyjf13" xy="0,461" size="159,53">
+      <Button title="退出都护府"/>
+    </component>
+    <component id="n61" name="btnExchange" src="jyjf13" xy="170,461" size="159,53" visible="false">
+      <Button title="更换都护府"/>
+    </component>
+    <text id="n113" name="n113" xy="681,-40" size="147,30" font="方正粗圆简体" fontSize="24" color="#333333" vAlign="middle" leading="0" autoSize="none" text="成员数量：&#xA;"/>
+    <text id="n114" name="txtNum" xy="796,-41" size="138,34" font="方正粗圆简体" fontSize="26" color="#2e3341" vAlign="middle" leading="0" autoSize="none" text="0&#xA;&#xA;"/>
+    <component id="n115" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="1,45" size="938,404"/>
+  </displayList>
+</component>jyjf1c.xml|1686|<component size="931,49" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n88" name="n88" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="931,49"/>
+    <image id="n105" name="n105" src="zf9fnqc" pkg="0tyncec1" xy="-2,0" size="933,49">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n96" name="txt1" xy="5,6" size="81,33" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="职业&#xA;&#xA;"/>
+    <text id="n97" name="txt2" xy="87,6" size="272,33" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="无&#xA;"/>
+    <text id="n98" name="txt3" xy="359,6" size="67,33" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="0&#xA;&#xA;&#xA;"/>
+    <text id="n99" name="txt4" xy="427,7" size="149,33" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="成员&#xA;&#xA;"/>
+    <text id="n100" name="txt5" xy="577,9" size="100,30" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="shrink" singleLine="true" text="0&#xA;&#xA;"/>
+    <text id="n101" name="txt6" xy="678,6" size="95,33" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="&#xA;"/>
+    <richtext id="n103" name="txt7" xy="777,1" size="151,48" font="方正粗圆简体" fontSize="18" align="center" vAlign="middle" leading="2" autoSize="none" text="2018/12/12&#xA;18:00:00 离线"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>jyjf1d.xml|332|<component size="931,39" overflow="hidden" extention="Label">
+  <displayList>
+    <image id="n93" name="bg" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="931,39"/>
+    <richtext id="n94" name="title" xy="5,3" size="921,35" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" text=""/>
+  </displayList>
+</component>jyjf1e.xml|1254|<component size="479,562">
+  <displayList>
+    <component id="n80" name="n80" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,562"/>
+    <text id="n90" name="title" xy="104,2" size="270,39" font="方正粗圆简体" fontSize="28" color="#ffffff" align="center" autoSize="none" text="升降职务&#xA;"/>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="53,62" size="371,389"/>
+    <text id="n83" name="n83" xy="63,86" size="351,39" font="方正粗圆简体" fontSize="28" align="center" autoSize="none" text="请选择要让其调整的职务&#xA;"/>
+    <component id="n22" name="btnNormal" src="jyjfz" xy="86,286" size="306,68">
+      <Button title="转为普通成员" titleColor="#2e3341"/>
+    </component>
+    <component id="n81" name="btnClan2" src="jyjfz" xy="86,208" size="306,68">
+      <Button title="转为副都护" titleColor="#2e3341"/>
+    </component>
+    <component id="n82" name="btnClan" src="jyjfz" xy="86,131" size="306,68">
+      <Button title="转让都护" titleColor="#2e3341"/>
+    </component>
+    <component id="n84" name="btnCancel" src="jyjf13" xy="118,484" size="241,62">
+      <Button title="取消"/>
+    </component>
+    <component id="n91" name="btnKick" src="jyjfz" xy="85,372" size="306,68">
+      <Button title="踢出都护府" titleColor="#2e3341"/>
+    </component>
+  </displayList>
+</component>jyjf1f.xml|996|<component size="134,178" overflow="hidden" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n182" name="n182" src="keyenis" pkg="0tyncec1" xy="0,0" size="134,178"/>
+    <image id="n189" name="n189" src="keyenir" pkg="0tyncec1" xy="0,0" size="134,178">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n185" name="n185" src="jsucnhh" pkg="0tyncec1" xy="14,34" size="109,2"/>
+    <image id="n186" name="n186" src="oqbynlm" pkg="0tyncec1" xy="19,47"/>
+    <loader id="n187" name="icon" xy="19,47" size="92,92" fill="scaleFree"/>
+    <text id="n183" name="title" xy="12,6" size="112,32" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" autoSize="none" text="技能名字&#xA;"/>
+    <text id="n184" name="txtLv" xy="12,142" size="107,29" font="方正粗圆简体" fontSize="22" color="#003399" align="center" vAlign="middle" autoSize="none" text="技能等级&#xA;"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>jyjf1g.xml|2041|<component size="930,580" opaque="false">
+  <displayList>
+    <image id="n80" name="n80" src="cnepnqb" pkg="0tyncec1" xy="573,52" size="357,528"/>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="563,578"/>
+    <component id="n22" name="btnDev" src="jyjfz" xy="670,511" size="174,64">
+      <Button title="研发"/>
+    </component>
+    <image id="n84" name="n84" src="cnepnqb" pkg="0tyncec1" xy="573,106" size="353,191"/>
+    <text id="n220" name="txtName" xy="581,64" size="141,33" font="方正粗圆简体" fontSize="22" color="#0099cc" autoSize="none" strokeColor="#000000" text="&#xA;"/>
+    <text id="n221" name="txtLv" xy="726,64" size="196,33" font="方正粗圆简体" fontSize="20" color="#33cc33" autoSize="none" strokeColor="#000000" text="&#xA;&#xA;"/>
+    <text id="n222" name="txtDesc" xy="580,116" size="338,173" font="方正粗圆简体" fontSize="22" leading="8" ubb="true" autoSize="none" text=""/>
+    <text id="n223" name="labelNextCondition" xy="579,305" size="326,33" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <image id="n244" name="n244" src="c18wnl9" pkg="0tyncec1" xy="576,357" size="344,42" alpha="0.8"/>
+    <image id="n245" name="n245" src="c18wnl9" pkg="0tyncec1" xy="576,406" size="344,42" alpha="0.8"/>
+    <text id="n229" name="labelCost1" xy="580,363" size="168,30" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <text id="n232" name="labelCost2" xy="579,414" size="168,30" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <text id="n228" name="txtCost1" xy="754,363" size="161,30" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <text id="n231" name="txtCost2" xy="754,414" size="161,30" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+    <image id="n249" name="n249" src="gk0nnid" pkg="0tyncec1" xy="559,8" size="16,573"/>
+    <component id="n250" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="12,2" size="549,573"/>
+    <text id="n251" name="txtLimit" xy="576,462" size="345,41" font="方正粗圆简体" fontSize="22" autoSize="none" text=""/>
+  </displayList>
+</component>jyjfy.xml|2906|<component size="948,585">
+  <displayList>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="582,584"/>
+    <image id="n13" name="n13" src="cnepnqb" pkg="0tyncec1" xy="597,1" size="351,113"/>
+    <image id="n36" name="n36" src="cnepnqb" pkg="0tyncec1" xy="597,118" size="351,222"/>
+    <image id="n39" name="n39" src="cnepnqa" pkg="0tyncec1" xy="597,347" size="341,50"/>
+    <image id="n41" name="n41" src="cnepnqb" pkg="0tyncec1" xy="597,456" size="351,51"/>
+    <image id="n42" name="n42" src="cnepnqb" pkg="0tyncec1" xy="597,397" size="351,51"/>
+    <image id="n43" name="n43" src="cnepnqa" pkg="0tyncec1" xy="597,118" size="341,50"/>
+    <image id="n44" name="n44" src="cnepnqa" pkg="0tyncec1" xy="597,1" size="341,50"/>
+    <image id="n15" name="n15" src="jsucnhh" pkg="0tyncec1" xy="19,61" size="536,2"/>
+    <text id="n58" name="label0" xy="26,18" size="333,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="建立都护府须知"/>
+    <text id="n46" name="label1" xy="599,9" size="244,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="都护府名称"/>
+    <text id="n48" name="label2" xy="602,125" size="244,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="都护府公告"/>
+    <text id="n51" name="label4" xy="604,354" size="218,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="创建都护府费用"/>
+    <text id="n49" name="txtInputName" xy="610,61" size="327,36" input="true" prompt="请输入都护府名称" maxLength="12" font="方正粗圆简体" fontSize="24" color="#666666" autoSize="none" text=""/>
+    <text id="n50" name="txtInputNotice" xy="610,175" size="327,143" input="true" prompt="请输入都护府公告" maxLength="56" font="方正粗圆简体" fontSize="24" color="#666666" autoSize="none" text=""/>
+    <text id="n55" name="labelCost1" xy="604,410" size="74,36" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" text="消耗"/>
+    <loader id="n33" name="iconCost1" xy="677,406" size="43,41" url="ui://j7ibmhypolnb2k" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n52" name="txtCost1" xy="726,409" size="181,36" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <text id="n56" name="labelCost2" xy="606,455" size="74,36" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" text="消耗"/>
+    <loader id="n54" name="iconCost2" xy="677,455" size="43,41" url="ui://j7ibmhypolnb2k" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n53" name="txtCost2" xy="727,457" size="181,36" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <text id="n59" name="txtInfo" xy="25,72" size="537,463" font="方正粗圆简体" fontSize="24" ubb="true" autoSize="none" text="建立都护府须知xxxxxxxxxxxxxxx"/>
+    <component id="n60" name="btnCreate" src="jyjfz" xy="628,510"/>
+    <image id="n61" name="n61" src="gk0nnid" pkg="0tyncec1" xy="579,-6" size="16,590"/>
+  </displayList>
+</component>jyjfz.xml|543|<component size="288,64" extention="Button">
+  <displayList>
+    <image id="n22" name="bg" src="x0conj0" pkg="0tyncec1" xy="0,0" size="288,64">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n57" name="title" xy="4,13" size="280,38" font="方正粗圆简体" fontSize="31" align="center" vAlign="middle" leading="0" autoSize="shrink" text="创建都护府">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>kjox27.xml|2194|<component size="646,544">
+  <displayList>
+    <image id="n0" name="n1" src="ci33f" xy="-17,-2" size="672,543"/>
+    <text id="n1" name="n1" xy="37,21" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="none" text="长安占城："/>
+    <text id="n2" name="n2" xy="37,58" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="height" text="长安城主："/>
+    <text id="n4" name="n4" xy="37,189" size="159,29" font="方正粗圆简体" fontSize="22" text="都护府城战收益"/>
+    <image id="n5" name="n5" src="jsucnhh" pkg="0tyncec1" xy="29,170" size="582,2"/>
+    <image id="n6" name="n6" src="jsucnhh" pkg="0tyncec1" xy="29,462" size="582,2"/>
+    <text id="n7" name="t1" xy="187,21" size="337,29" font="方正粗圆简体" fontSize="22" color="#0033cc" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n8" name="t2" xy="187,58" size="337,29" font="方正粗圆简体" fontSize="22" color="#e6e600" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n9" name="t3" xy="64,101" size="517,63" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <component id="n11" name="b1" src="jyjf12" xy="27,231" size="590,35">
+      <Label title="都护府每日税收" titleColor="#336600"/>
+    </component>
+    <component id="n12" name="b2" src="jyjf12" xy="27,271" size="590,35">
+      <Label title="都护府成员俸禄" titleColor="#336600"/>
+    </component>
+    <component id="n13" name="b3" src="jyjf12" xy="27,312" size="590,35">
+      <Label title="领取城战称霸礼包" titleColor="#336600"/>
+    </component>
+    <component id="n15" name="b5" src="jyjf12" xy="27,354" size="590,35">
+      <Label title="优惠购买" titleColor="#336600"/>
+    </component>
+    <component id="n18" name="b6" src="jyjf12" xy="27,401" size="590,42">
+      <Label title="开启凌烟阁" titleColor="#ffcc66"/>
+    </component>
+    <component id="n14" name="b4" src="jyjf12" xy="27,477" size="590,44">
+      <Label title="都护府城战介绍" titleColor="#333333" icon="ui://0tyncec1pu0xnq5"/>
+    </component>
+    <component id="n16" name="close" src="t5hdnfq" pkg="0tyncec1" xy="593,-6" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+  </displayList>
+</component>kjox28.xml|610|<component size="799,504" extention="Label">
+  <displayList>
+    <image id="n1" name="n1" src="x0coniw" pkg="0tyncec1" xy="-2,0" size="803,512"/>
+    <text id="n4" name="title" xy="255,5" size="288,30" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="都护府战利品"/>
+    <component id="n5" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="36,45" size="730,431"/>
+    <component id="n6" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="672,4" size="135,87">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>kjox29.xml|1147|<component size="364,120" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="keyenis" pkg="0tyncec1" xy="0,0" size="364,120"/>
+    <image id="n2" name="select" src="keyenir" pkg="0tyncec1" xy="0,0" size="364,120">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n3" name="title" xy="115,15" pivot="0.5,0.5" size="216,31" font="方正粗圆简体" fontSize="24" color="#1e67af" vAlign="middle" ubb="true" autoSize="none" strokeColor="#626161" text=""/>
+    <loader id="n5" name="costIcon" xy="115,49" size="40,40" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n6" name="cost1" xy="161,54" size="70,33" font="方正粗圆简体" fontSize="24" vAlign="bottom" singleLine="true" text="10086&#xA;"/>
+    <text id="n4" name="cost2" xy="161,79" size="70,33" font="方正粗圆简体" fontSize="24" vAlign="bottom" singleLine="true" text="10086&#xA;"/>
+    <image id="n9" name="line" src="v6jenm3" pkg="0tyncec1" xy="160,69" size="71,2">
+      <relation target="n6" sidePair="rightext-right"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>kjox2a.xml|1629|<component size="551,578" extention="Label">
+  <displayList>
+    <image id="n0" name="n0" src="x0coniw" pkg="0tyncec1" xy="0,0" size="551,585"/>
+    <image id="n5" name="n5" src="x0conjx" pkg="0tyncec1" xy="127,299" size="361,65"/>
+    <image id="n1" name="hehua" src="w3wlnlc" pkg="0tyncec1" xy="151,46" size="267,159"/>
+    <text id="n8" name="title" xy="82,170" size="387,30" font="方正粗圆简体" fontSize="24" color="#1e67af" align="center" vAlign="middle" ubb="true" autoSize="height" strokeColor="#626161" strokeSize="2" text=""/>
+    <text id="n2" name="desc" xy="75,208" size="400,84" font="方正粗圆简体" fontSize="20" color="#545e6c" align="center" ubb="true" autoSize="none" text=""/>
+    <text id="n4" name="txtLimit" xy="93,443" size="364,29" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text=""/>
+    <component id="n6" name="numBar" src="x0conk2" pkg="0tyncec1" xy="182,299">
+      <Label maxLength="3" keyboardType="2"/>
+    </component>
+    <component id="n10" name="labelBar" src="nf8gnkt" pkg="0tyncec1" xy="71,373" size="412,63"/>
+    <component id="n7" name="buyBtn" src="tnbmnka" pkg="0tyncec1" xy="193,473" size="176,48">
+      <Button title="购买" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <text id="n11" name="putawayText" xy="50,315" size="101,34" font="方正粗圆简体" fontSize="24" color="#2e3341" align="right" vAlign="middle" autoSize="none" text="数量:"/>
+    <component id="n12" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="421,2" size="135,87">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>mxc523.xml|740|<component size="702,36">
+  <displayList>
+    <text id="n6" name="tnum" xy="0,0" size="98,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="序号&#xA;&#xA;"/>
+    <text id="n16" name="tdff" xy="105,0" size="303,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="都护府名称&#xA;&#xA;"/>
+    <text id="n18" name="tlm" xy="412,0" size="290,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="联盟名称&#xA;&#xA;"/>
+    <image id="n19" name="n19" src="jsucnhh" pkg="0tyncec1" xy="-2,34" size="699,1"/>
+  </displayList>
+</component>mxc524.xml|499|<component size="684,45" extention="Label">
+  <displayList>
+    <image id="n3" name="n3" src="jsucnhh" pkg="0tyncec1" xy="8,42" size="668,1"/>
+    <text id="n1" name="title" xy="3,4" size="454,33" font="方正粗圆简体" fontSize="26" color="#333333" align="center" vAlign="middle" autoSize="none" singleLine="true" text="都护府名称&#xA;&#xA;"/>
+    <component id="n4" name="btn" src="jyjf12" xy="463,4" size="216,33">
+      <Label title="申请加入" titleColor="#00cc00"/>
+    </component>
+  </displayList>
+</component>mxc525.xml|501|<component size="684,45" extention="Label">
+  <displayList>
+    <image id="n3" name="n3" src="jsucnhh" pkg="0tyncec1" xy="8,42" size="668,1"/>
+    <text id="n1" name="title" xy="3,4" size="458,33" font="方正粗圆简体" fontSize="26" color="#333333" vAlign="middle" autoSize="none" singleLine="true" text="XXXXXXXXXXX都护府申请与我俯联盟&#xA;&#xA;"/>
+    <component id="n4" name="btn" src="jyjf12" xy="463,4" size="216,33">
+      <Label title="同意其加入" titleColor="#ffcc00"/>
+    </component>
+  </displayList>
+</component>n7lw1h.xml|2158|<component size="754,576">
+  <displayList>
+    <image id="n105" name="n105" src="cnepnqb" pkg="0tyncec1" xy="0,344" size="748,152"/>
+    <image id="n106" name="n106" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="754,152"/>
+    <image id="n110" name="n110" src="pu0xnq7" pkg="0tyncec1" xy="349,243"/>
+    <image id="n108" name="n108" src="cnepnqb" pkg="0tyncec1" xy="1,174" size="337,152"/>
+    <image id="n111" name="n111" src="uchhnl1" pkg="0tyncec1" xy="0,173" size="337,34"/>
+    <image id="n114" name="n114" src="cnepnqb" pkg="0tyncec1" xy="416,174" size="337,152"/>
+    <image id="n115" name="n115" src="uchhnl1" pkg="0tyncec1" xy="415,173" size="337,34"/>
+    <image id="n117" name="n117" src="jsucnhh" pkg="0tyncec1" xy="4,43" size="429,2"/>
+    <image id="n132" name="n132" src="vhgh4" xy="7,4" size="741,42"/>
+    <image id="n129" name="n129" src="cnepnqa" pkg="0tyncec1" xy="0,343" size="746,50"/>
+    <text id="n121" name="labelCurLv" xy="4,175" size="155,32" font="方正粗圆简体" fontSize="24" autoSize="none" text="当前等级"/>
+    <text id="n122" name="labelNextLv" xy="418,174" size="159,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="下一级"/>
+    <text id="n127" name="n127" xy="6,351" size="150,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="升级需求:"/>
+    <text id="n118" name="txtLv" xy="43,6" size="685,36" font="方正粗圆简体" fontSize="24" autoSize="none" text="都护府等级X"/>
+    <text id="n119" name="txtLvDesc" xy="8,51" size="738,98" font="方正粗圆简体" fontSize="24" leading="8" ubb="true" autoSize="none" text=""/>
+    <text id="n126" name="txtNextLvDesc" xy="441,228" size="276,92" font="方正粗圆简体" fontSize="24" color="#666666" leading="6" ubb="true" autoSize="none" text=""/>
+    <text id="n128" name="txtCurLvDesc" xy="29,229" size="276,92" font="方正粗圆简体" fontSize="24" color="#666666" leading="6" ubb="true" autoSize="none" text=""/>
+    <text id="n130" name="txtNeedDesc" xy="11,399" size="734,87" font="方正粗圆简体" fontSize="24" color="#666666" leading="6" ubb="true" autoSize="none" text=""/>
+    <component id="n104" name="btnUpGrade" src="jyjfz" xy="409,512" size="288,64">
+      <Button title="升级都护府"/>
+    </component>
+  </displayList>
+</component>n7lw1i.xml|1371|<component size="739,108" extention="Label">
+  <displayList>
+    <image id="n69" name="n69" src="ci33e" xy="0,0" size="739,108"/>
+    <image id="n78" name="n78" src="pu0xnq6" pkg="0tyncec1" xy="15,10"/>
+    <image id="n82" name="n82" src="jsucnhh" pkg="0tyncec1" xy="119,52" size="397,2"/>
+    <text id="n84" name="txtCost" xy="581,10" size="141,33" font="方正粗圆简体" fontSize="26" color="#006633" autoSize="none" text="0&#xA;"/>
+    <loader id="n85" name="iconCost" xy="528,6" size="43,41" url="ui://j7ibmhypolnb2k" fill="scaleFree"/>
+    <text id="n86" name="txtSW" xy="114,66" size="144,34" font="方正粗圆简体" fontSize="18" color="#336600" leading="0" autoSize="none" text="贡献：0&#xA;"/>
+    <text id="n87" name="txtZJ" xy="416,66" size="161,34" font="方正粗圆简体" fontSize="18" color="#336600" leading="0" autoSize="none" text="资金：0"/>
+    <text id="n88" name="txtJSD" xy="261,66" size="152,34" font="方正粗圆简体" fontSize="18" color="#336600" leading="0" autoSize="none" text="建设度：0"/>
+    <text id="n89" name="title" xy="115,14" size="402,39" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" text="金币捐献"/>
+    <loader id="n91" name="icon" xy="15,12" size="88,88" align="center" vAlign="middle" fill="scaleFree"/>
+    <component id="n22" name="btn" src="jyjfz" xy="578,45" size="152,56">
+      <Button title="已达上限"/>
+    </component>
+  </displayList>
+</component>n7lw1j.xml|254|<component size="754,585">
+  <displayList>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="754,585"/>
+    <component id="n107" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="0,1" size="753,583"/>
+  </displayList>
+</component>n7lw1k.xml|1307|<component size="755,575">
+  <displayList>
+    <image id="n12" name="n12" src="cnepnqb" pkg="0tyncec1" xy="0,0" size="754,509"/>
+    <image id="n104" name="n104" src="uchhnl3" pkg="0tyncec1" xy="1,0" size="752,52"/>
+    <image id="n114" name="n114" src="5v99nkc" pkg="0tyncec1" xy="318,5" size="2,45"/>
+    <image id="n115" name="n115" src="5v99nkc" pkg="0tyncec1" xy="409,5" size="2,45"/>
+    <image id="n116" name="n116" src="5v99nkc" pkg="0tyncec1" xy="524,5" size="2,45"/>
+    <text id="n108" name="n108" xy="6,8" size="307,38" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" text="都护府名称"/>
+    <text id="n109" name="n109" xy="325,9" size="79,36" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" text="等级"/>
+    <text id="n110" name="n110" xy="415,9" size="104,36" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" text="战力"/>
+    <text id="n111" name="n111" xy="531,7" size="210,39" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" text="宣战倒计时&#xA;"/>
+    <component id="n106" name="btn" src="jyjfz" xy="467,511" size="288,64">
+      <Button title="宣战"/>
+    </component>
+    <component id="n126" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="3,53" size="745,457"/>
+  </displayList>
+</component>n7lw1l.xml|1344|<component size="733,45" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n124" name="n124" src="j67wnhe" pkg="0tyncec1" xy="0,0" size="734,45"/>
+    <image id="n117" name="n117" src="5v99nkc" pkg="0tyncec1" xy="312,0" size="2,45"/>
+    <image id="n118" name="n118" src="5v99nkc" pkg="0tyncec1" xy="403,0" size="2,45"/>
+    <image id="n119" name="n119" src="5v99nkc" pkg="0tyncec1" xy="518,0" size="2,45"/>
+    <text id="n120" name="txtName" xy="0,5" size="309,38" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="名称"/>
+    <text id="n121" name="txtLv" xy="319,5" size="79,38" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="0"/>
+    <text id="n122" name="txtStatus" xy="412,5" size="104,38" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="0&#xA;"/>
+    <text id="n123" name="txtTime" xy="521,8" size="212,33" font="方正粗圆简体" fontSize="20" align="center" vAlign="middle" leading="0" ubb="true" autoSize="none" text="剩余时间 00:00:00&#xA;"/>
+    <image id="n125" name="selected" src="zf9fnqc" pkg="0tyncec1" xy="-2,0" size="737,45">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>package.xml|3542|<packageDescription id="lmxy2w9b" name="Duhufu">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="cckj2c" name="GuildBossPane" exported="true" size="645,576"/>
+    <component id="e5vk2b" name="WarRelifePane" exported="true" size="1334,750"/>
+    <component id="ip1h21" name="WarReadyPane" exported="true" size="645,427"/>
+    <component id="jyjf10" name="SQPanel" exported="true" size="935,582"/>
+    <component id="jyjf11" name="SQItem" exported="true" size="613,63"/>
+    <component id="jyjf12" name="LabelBtn" size="65,33"/>
+    <component id="jyjf13" name="Btn2" size="159,53"/>
+    <component id="jyjf14" name="LabelInfo" size="530,41"/>
+    <component id="jyjf16" name="XXPanel" exported="true" size="899,560"/>
+    <component id="jyjf17" name="CYMemberSQPane" exported="true" size="941,516"/>
+    <component id="jyjf18" name="CheckBox" size="290,41"/>
+    <component id="jyjf19" name="CYMemberSQItem" exported="true" size="931,76"/>
+    <component id="jyjf1a" name="CYEventPane" exported="true" size="940,513"/>
+    <component id="jyjf1b" name="CYMemberPane" exported="true" size="940,513"/>
+    <component id="jyjf1c" name="CYMemberItem" exported="true" size="931,49"/>
+    <component id="jyjf1d" name="CYEventItem" exported="true" size="931,39"/>
+    <component id="jyjf1e" name="ChangeJobPane" exported="true" size="479,562"/>
+    <component id="jyjf1f" name="SkillCell" exported="true" size="134,178"/>
+    <component id="jyjf1g" name="JNPane" exported="true" size="930,580"/>
+    <component id="jyjfy" name="CJPanel" exported="true" size="948,585"/>
+    <component id="jyjfz" name="Btn1" size="288,64"/>
+    <component id="kjox27" name="WarTaxPane" exported="true" size="646,544"/>
+    <component id="kjox28" name="WarGiftMall" exported="true" size="799,504"/>
+    <component id="kjox29" name="WarGiftItem" exported="true" size="364,120"/>
+    <component id="kjox2a" name="WarGiftAlert" exported="true" size="551,578"/>
+    <component id="mxc523" name="WarMemItem" exported="true" size="702,36"/>
+    <component id="mxc524" name="WarLeagueItemI" exported="true" size="684,45"/>
+    <component id="mxc525" name="WarLeagueItemII" exported="true" size="684,45"/>
+    <component id="n7lw1h" name="HDUpGradePane" exported="true" size="754,576"/>
+    <component id="n7lw1i" name="HDContributeItem" exported="true" size="739,108"/>
+    <component id="n7lw1j" name="HDContributePane" exported="true" size="754,585"/>
+    <component id="n7lw1k" name="HDFightPane" exported="true" size="755,575"/>
+    <component id="n7lw1l" name="HDFightItem" exported="true" size="733,45"/>
+    <component id="s9mp1n" name="WarBaomingPane" exported="true" size="643,562"/>
+    <component id="s9mp1o" name="WarLeaguePane" exported="true" size="756,660"/>
+    <component id="s9mp1q" name="WarMemPane" exported="true" size="741,468"/>
+    <component id="s9mp1r" name="WarUsualPane" exported="true" size="645,316"/>
+    <component id="s9mp1z" name="WarJieshaoPane" exported="true" size="934,686"/>
+    <component id="s9mp20" name="WarBeginPane" exported="true" size="645,400"/>
+    <image id="ci33e" name="个人信息按钮(179X55)" size="58,55" scale="9grid" scale9grid="25,23,8,9"/>
+    <image id="ci33f" name="底（可拉伸）" size="315,255" scale="9grid" scale9grid="140,118,27,17"/>
+    <image id="mxc522" name="descmap" size="627,646" exported="true"/>
+    <image id="pcv2w" name="cha" size="47,48"/>
+    <image id="vhgh4" name="labelbg" size="323,32" scale="9grid" scale9grid="35,27,207,3"/>
+  </resources>
+</packageDescription>s9mp1n.xml|2292|<component size="643,562">
+  <displayList>
+    <image id="n6" name="n1" src="ci33f" xy="-17,-2" size="672,566"/>
+    <text id="n9" name="n9" xy="37,21" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="none" text="长安守城方:"/>
+    <text id="n10" name="n10" xy="37,58" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="height" text="长安攻城方:"/>
+    <text id="n11" name="n11" xy="37,95" size="363,29" font="方正粗圆简体" fontSize="22" text="都护府城战已经开始报名，报名时间:"/>
+    <text id="n13" name="n13" xy="37,189" size="99,29" font="方正粗圆简体" fontSize="22" text="报名条件:"/>
+    <image id="n18" name="n18" src="jsucnhh" pkg="0tyncec1" xy="29,180" size="582,2"/>
+    <image id="n20" name="n20" src="jsucnhh" pkg="0tyncec1" xy="29,495" size="582,2"/>
+    <text id="n26" name="t1" xy="187,21" size="337,29" font="方正粗圆简体" fontSize="22" color="#0033cc" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n27" name="t2" xy="187,58" size="337,29" font="方正粗圆简体" fontSize="22" color="#ff3300" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n25" name="t3" xy="120,132" size="431,42" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <text id="n14" name="t4" xy="52,227" size="391,29" font="方正粗圆简体" fontSize="22" ubb="true" autoSize="height" text="?"/>
+    <component id="n15" name="b1" src="jyjf12" xy="27,331" size="590,35">
+      <Label title="攻城报名" titleColor="#336600"/>
+    </component>
+    <component id="n16" name="b2" src="jyjf12" xy="27,371" size="590,35">
+      <Label title="攻城都护府列表" titleColor="#336600"/>
+    </component>
+    <component id="n17" name="b3" src="jyjf12" xy="27,412" size="590,35">
+      <Label title="都护府联盟" titleColor="#336600"/>
+    </component>
+    <component id="n21" name="b4" src="jyjf12" xy="27,510" size="590,44">
+      <Label title="都护府城战介绍" titleColor="#333333" icon="ui://0tyncec1pu0xnq5"/>
+    </component>
+    <component id="n28" name="b5" src="jyjf12" xy="27,454" size="590,35">
+      <Label title="提交攻城令" titleColor="#336600"/>
+    </component>
+    <component id="n24" name="close" src="t5hdnfq" pkg="0tyncec1" xy="593,-6" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+  </displayList>
+</component>s9mp1o.xml|1959|<component size="756,660" extention="Label">
+  <displayList>
+    <image id="n5" name="img_bg" src="ci33f" xy="-11,1" size="774,659"/>
+    <image id="n16" name="n16" src="j67wnhe" pkg="0tyncec1" xy="25,61" size="708,585"/>
+    <image id="n10" name="n10" src="j67wnhe" pkg="0tyncec1" xy="46,70" size="455,48">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <text id="n11" name="txtName" xy="53,73" size="440,43" input="true" prompt="请在此输入联盟名称，最多包含4个汉字 " maxLength="4" font="方正粗圆简体" fontSize="24" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="">
+      <relation target="n10" sidePair="width-width"/>
+    </text>
+    <component id="n14" name="btnCreate" src="jyjfz" xy="512,67" size="187,55">
+      <Button title="创建联盟"/>
+    </component>
+    <component id="n15" name="close" src="t5hdnfq" pkg="0tyncec1" xy="706,-4" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+    <image id="n20" name="n20" src="gk0nnia" pkg="0tyncec1" xy="163,5" size="430,52"/>
+    <text id="n17" name="title" xy="193,12" size="368,37" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" leading="0" autoSize="none" text="联盟"/>
+    <image id="n28" name="n28" src="cnepnqb" pkg="0tyncec1" xy="32,166" size="696,218"/>
+    <image id="n23" name="n23" src="vhgh4" xy="35,124" size="687,30"/>
+    <text id="n24" name="label1" xy="71,125" size="594,30" font="方正粗圆简体" fontSize="24" autoSize="none" text="联盟列表"/>
+    <image id="n25" name="n25" src="vhgh4" xy="35,388" size="687,30"/>
+    <text id="n26" name="label2" xy="71,389" size="594,30" font="方正粗圆简体" fontSize="24" autoSize="none" text="联盟请求"/>
+    <image id="n29" name="n29" src="cnepnqb" pkg="0tyncec1" xy="31,422" size="696,218"/>
+    <component id="n30" name="listConn1" src="t5hdnfw" pkg="0tyncec1" xy="37,170" size="686,209"/>
+    <component id="n31" name="listConn2" src="t5hdnfw" pkg="0tyncec1" xy="35,427" size="686,209"/>
+  </displayList>
+</component>s9mp1q.xml|1686|<component size="741,468" extention="Label">
+  <displayList>
+    <image id="n3" name="n3" src="x0coniw" pkg="0tyncec1" xy="-28,-37" size="800,509">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1" name="n1" src="cnepnqb" pkg="0tyncec1" xy="10,6" size="725,438">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n4" name="title" xy="277,-30" size="199,30" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" autoSize="height" singleLine="true" text="攻城都护府列表">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <image id="n5" name="n5" src="uchhnl3" pkg="0tyncec1" xy="15,12" size="107,43"/>
+    <text id="n6" name="n6" xy="13,17" size="105,33" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" singleLine="true" text="序号&#xA;&#xA;"/>
+    <image id="n15" name="n15" src="uchhnl3" pkg="0tyncec1" xy="125,12" size="299,43"/>
+    <text id="n16" name="n16" xy="124,17" size="296,33" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" singleLine="true" text="都护府名称&#xA;&#xA;"/>
+    <image id="n17" name="n17" src="uchhnl3" pkg="0tyncec1" xy="427,12" size="301,43"/>
+    <text id="n18" name="n18" xy="420,17" size="304,33" font="方正粗圆简体" fontSize="26" align="center" vAlign="middle" autoSize="none" singleLine="true" text="联盟名称&#xA;&#xA;"/>
+    <component id="n21" name="close" src="t5hdnfq" pkg="0tyncec1" xy="654,-25" size="108,72">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <component id="n22" name="listConn" src="t5hdnfw" pkg="0tyncec1" xy="15,58" size="716,384"/>
+  </displayList>
+</component>s9mp1r.xml|1589|<component size="645,316">
+  <displayList>
+    <image id="n1" name="img_bg" src="ci33f" xy="-15,-1" size="672,317"/>
+    <text id="n2" name="n2" xy="34,22" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="none" text="长安守城方:"/>
+    <text id="n3" name="n3" xy="34,59" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="height" text="长安攻城方:"/>
+    <text id="n4" name="n4" xy="34,96" size="363,29" font="方正粗圆简体" fontSize="22" text="都护府城战已经开始报名，报名时间:"/>
+    <text id="n5" name="n5" xy="34,190" size="225,29" font="方正粗圆简体" fontSize="22" text="都护府城战暂时没开始"/>
+    <image id="n6" name="n6" src="jsucnhh" pkg="0tyncec1" xy="36,181" size="582,2"/>
+    <image id="n7" name="n7" src="jsucnhh" pkg="0tyncec1" xy="36,232" size="582,2"/>
+    <text id="n9" name="t1" xy="184,22" size="337,29" font="方正粗圆简体" fontSize="22" color="#0033cc" vAlign="middle" leading="0" autoSize="none" singleLine="true" text=""/>
+    <text id="n10" name="t2" xy="184,59" size="337,29" font="方正粗圆简体" fontSize="22" color="#ff3300" vAlign="middle" leading="0" autoSize="none" singleLine="true" text=""/>
+    <text id="n11" name="t3" xy="117,133" size="431,42" font="方正粗圆简体" fontSize="22" color="#006633" align="center" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <component id="n16" name="b4" src="jyjf12" xy="34,247" size="590,44">
+      <Label title="都护府城战介绍" titleColor="#333333" icon="ui://0tyncec1pu0xnq5"/>
+    </component>
+    <component id="n17" name="close" src="t5hdnfq" pkg="0tyncec1" xy="590,-5" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+  </displayList>
+</component>s9mp1z.xml|1173|<component size="934,686" extention="Label">
+  <displayList>
+    <image id="n0" name="n0" src="z03enle" pkg="0tyncec1" xy="-17,-7" size="961,701">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1" name="n1" src="cnepnqb" pkg="0tyncec1" xy="5,5" size="923,640">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n2" name="icon" xy="45,8" size="842,633" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <richtext id="n3" name="title" xy="45,37" size="841,589" font="方正粗圆简体" fontSize="22" ubb="true" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+    <component id="n4" name="pre" src="jyjf12" xy="36,648" size="75,33">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Label title="&lt;&lt;"/>
+    </component>
+    <component id="n5" name="nxt" src="jyjf12" xy="813,648" size="75,33">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Label title=">>"/>
+    </component>
+  </displayList>
+</component>s9mp20.xml|1815|<component size="645,400">
+  <displayList>
+    <image id="n0" name="img_bg" src="ci33f" xy="-17,-2" size="672,405"/>
+    <text id="n1" name="n1" xy="37,21" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="none" text="长安守城方:"/>
+    <text id="n2" name="n2" xy="37,58" size="136,29" font="方正粗圆简体" fontSize="22" autoSize="height" text="长安攻城方:"/>
+    <image id="n5" name="n5" src="jsucnhh" pkg="0tyncec1" xy="29,170" size="582,2"/>
+    <image id="n6" name="n6" src="jsucnhh" pkg="0tyncec1" xy="29,321" size="582,2"/>
+    <text id="n7" name="t1" xy="187,21" size="337,29" font="方正粗圆简体" fontSize="22" color="#0033cc" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n8" name="t2" xy="187,58" size="337,29" font="方正粗圆简体" fontSize="22" color="#ff3300" vAlign="middle" leading="0" autoSize="none" singleLine="true" text="???????????????"/>
+    <text id="n9" name="t3" xy="110,115" size="431,42" font="方正粗圆简体" fontSize="22" align="center" vAlign="middle" leading="0" autoSize="none" text="?"/>
+    <component id="n11" name="b1" src="jyjf12" xy="27,191" size="590,35">
+      <Label title="进入战场" titleColor="#336600"/>
+    </component>
+    <component id="n12" name="b2" src="jyjf12" xy="27,231" size="590,35">
+      <Label title="都护府联盟" titleColor="#336600"/>
+    </component>
+    <component id="n13" name="b3" src="jyjf12" xy="27,272" size="590,35">
+      <Label title="攻城都护府列表" titleColor="#336600"/>
+    </component>
+    <component id="n14" name="b4" src="jyjf12" xy="27,336" size="590,44">
+      <Label title="都护府城战介绍" titleColor="#333333" icon="ui://0tyncec1pu0xnq5"/>
+    </component>
+    <component id="n15" name="close" src="t5hdnfq" pkg="0tyncec1" xy="593,-6" size="54,54">
+      <Button icon="ui://0tyncec1s9mpnqe"/>
+    </component>
+  </displayList>
+</component>

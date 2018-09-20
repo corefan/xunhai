@@ -1,0 +1,314 @@
+a8b461.xml|1768|<component size="960,625">
+  <displayList>
+    <image id="n24" name="n24" src="s8z96x" xy="697,38" size="683,25" rotation="180"/>
+    <image id="n0" name="bg" src="jsucnhf" pkg="0tyncec1" xy="0,47" size="958,510"/>
+    <component id="n2" name="typeLayer" src="t5hdnfx" pkg="0tyncec1" xy="8,50" size="942,500"/>
+    <text id="n4" name="n5" xy="14,13" size="65,24" font="方正粗圆简体" fontSize="20" text="目标："/>
+    <text id="n5" name="txtTarget" xy="80,13" size="195,24" font="方正粗圆简体" fontSize="20" autoSize="height" text=""/>
+    <text id="n6" name="n6" xy="276,13" size="105,24" font="方正粗圆简体" fontSize="20" text="等级限制："/>
+    <text id="n7" name="txtLimitLev" xy="387,13" size="104,24" font="方正粗圆简体" fontSize="20" autoSize="height" text="{0}级"/>
+    <component id="n14" name="btnChangeType" src="skqrnkp" pkg="0tyncec1" xy="496,3" size="144,41">
+      <Button title="更换目标" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n15" name="btnRequestList" src="skqrnkp" pkg="0tyncec1" xy="798,3" size="144,41">
+      <Button title="申请列表" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <image id="n16" name="reqTip" src="xnis91" pkg="0tyncec1" xy="919,4" visible="false"/>
+    <component id="n22" name="btnHandle" src="tnbmnka" pkg="0tyncec1" xy="568,561" size="144,49">
+      <Button title="归队|自动匹配" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n23" name="btnQuit" src="tnbmnka" pkg="0tyncec1" xy="764,561" size="144,49">
+      <Button title="退出队伍" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n25" name="btnHanhua" src="tnbmnka" pkg="0tyncec1" xy="380,561" size="144,49">
+      <Button title="一键喊话" icon="ui://0tyncec1x0conj0"/>
+    </component>
+  </displayList>
+</component>a8b462.xml|2078|<component size="720,113">
+  <displayList>
+    <image id="n0" name="bg" src="keyenis" pkg="0tyncec1" xy="-2,-3" size="722,118"/>
+    <image id="n2" name="selected" src="keyenir" pkg="0tyncec1" xy="-2,-3" size="722,118" visible="false"/>
+    <image id="n5" name="n5" src="csuxnll" pkg="0tyncec1" xy="84,22" size="210,39"/>
+    <text id="n6" name="txtName" xy="92,25" size="197,32" font="方正粗圆简体" fontSize="22" color="#2e2e2e" align="center" vAlign="middle" ubb="true" autoSize="none" text="????????"/>
+    <component id="n4" name="headIcon" src="z03enli" pkg="0tyncec1" xy="22,14" touchable="false">
+      <Label title="??"/>
+    </component>
+    <text id="n7" name="txtCareer" xy="111,66" size="76,24" font="方正粗圆简体" fontSize="20" color="#2e2e2e" align="center" vAlign="middle" autoSize="height" text="????"/>
+    <loader id="n8" name="iconCareer" xy="196,64" size="28,28" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false"/>
+    <component id="n14" name="progress" src="a8b4nlu" pkg="0tyncec1" xy="299,33" size="270,18" touchable="false">
+      <ProgressBar max="4"/>
+    </component>
+    <image id="n16" name="n16" src="5v99nkc" pkg="0tyncec1" xy="366,37" size="2,10">
+      <relation target="n14" sidePair="top-top,left-left"/>
+    </image>
+    <image id="n17" name="n17" src="5v99nkc" pkg="0tyncec1" xy="433,37" size="2,10">
+      <relation target="n14" sidePair="top-top,left-left"/>
+    </image>
+    <image id="n18" name="n18" src="5v99nkc" pkg="0tyncec1" xy="500,37" size="2,10">
+      <relation target="n14" sidePair="top-top,left-left"/>
+    </image>
+    <text id="n19" name="txtLimitLev" xy="296,69" size="274,22" font="方正粗圆简体" fontSize="18" color="#2e2e2e" align="center" vAlign="middle" autoSize="height" text="等级限制：??级"/>
+    <component id="n20" name="btnApply" src="skqrnkp" pkg="0tyncec1" xy="581,34" size="122,51">
+      <Button title="申请" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n23" name="clickMask" src="tnbmnka" pkg="0tyncec1" xy="4,5" size="565,103"/>
+  </displayList>
+</component>a8b463.xml|1813|<component size="227,488">
+  <displayList>
+    <image id="n1" name="n1" src="qcs831" xy="-2,-3" size="231,493"/>
+    <image id="n19" name="icon_tuteng" src="tosw6u" xy="31,130"/>
+    <graph id="n5" name="modelConn" xy="97,366" size="32,31"/>
+    <text id="n6" name="txtName" xy="30,418" size="168,24" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" autoSize="height" text="???">
+      <relation target="n1" sidePair="middle-middle"/>
+    </text>
+    <image id="n20" name="img_leveldi" src="8f0z6v" xy="165,10"/>
+    <text id="n7" name="txtLev" xy="172,14" size="52,22" font="方正粗圆简体" fontSize="18" color="#eaf8ff" align="center" vAlign="middle" autoSize="height" strokeColor="#000a3f" text="??级"/>
+    <text id="n8" name="labelPos" xy="10,451" size="52,23" font="方正粗圆简体" fontSize="19" color="#058c9c" align="center" vAlign="middle" autoSize="height" text="位置:"/>
+    <text id="n9" name="txtMap" xy="62,451" size="160,23" font="方正粗圆简体" fontSize="19" color="#058c9c" align="center" vAlign="middle" autoSize="height" text="???"/>
+    <loader id="n14" name="iconCareer" xy="180,22" size="30,30" fill="scaleFree"/>
+    <component id="n15" name="leaderSign" src="a8b464" xy="16,14" visible="false" touchable="false"/>
+    <image id="n2" name="bgOff" src="c18wnl9" pkg="0tyncec1" xy="1,0" size="225,488" group="n4"/>
+    <text id="n3" name="txtOff" xy="36,297" size="155,99" group="n4" font="方正粗圆简体" fontSize="44" color="#3e3e3e" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="离线"/>
+    <group id="n4" name="offTeam" xy="1,0" size="225,488" visible="false" advanced="true"/>
+    <component id="n18" name="btnAdd" src="a8b4nlx" pkg="0tyncec1" xy="75,207" visible="false"/>
+    <image id="n21" name="img_huawen" src="8f0z6w" xy="30,406"/>
+  </displayList>
+</component>a8b464.xml|196|<component size="47,47">
+  <displayList>
+    <image id="n11" name="n11" src="qcs83d" xy="0,0"/>
+    <image id="n12" name="n12" src="g9qxnm4" pkg="0tyncec1" xy="8,8"/>
+  </displayList>
+</component>a8b465.xml|989|<component size="630,510">
+  <displayList>
+    <image id="n10" name="n10" src="x0coniw" pkg="0tyncec1" xy="0,0" size="630,510"/>
+    <image id="n11" name="n11" src="x0conix" pkg="0tyncec1" xy="54,55" size="526,354"/>
+    <component id="n1" name="appplyConn" src="t5hdnfw" pkg="0tyncec1" xy="64,65" size="504,334"/>
+    <text id="n5" name="n5" xy="208,2" size="225,37" font="方正粗圆简体" fontSize="20" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="申请列表"/>
+    <component id="n9" name="clAutoAgree" src="9u5tnlj" pkg="0tyncec1" xy="65,441" size="126,27">
+      <Button checked="true" title="自动同意"/>
+    </component>
+    <component id="n14" name="btnClose2" src="skqrnkp" pkg="0tyncec1" xy="504,-8" size="108,64">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <component id="n16" name="btnClear" src="tnbmnka" pkg="0tyncec1" xy="448,421" size="130,49">
+      <Button title="清空列表" icon="ui://0tyncec1x0conj0"/>
+    </component>
+  </displayList>
+</component>a8b466.xml|1259|<component size="504,100">
+  <displayList>
+    <image id="n0" name="bg" src="keyenis" pkg="0tyncec1" xy="-3,-4" size="506,108"/>
+    <text id="n2" name="txtName" xy="83,20" size="197,32" font="方正粗圆简体" fontSize="22" color="#2e2e2e" align="center" vAlign="middle" ubb="true" autoSize="none" text="????????"/>
+    <component id="n3" name="headIcon" src="z03enli" pkg="0tyncec1" xy="11,7" touchable="false">
+      <Label title="??"/>
+    </component>
+    <text id="n4" name="txtCareer" xy="104,62" size="76,24" font="方正粗圆简体" fontSize="20" color="#2e2e2e" align="center" vAlign="middle" autoSize="height" text="????"/>
+    <loader id="n5" name="iconCareer" xy="189,60" size="28,28" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false"/>
+    <component id="n6" name="btnRefuse" src="skqrnkp" pkg="0tyncec1" xy="307,30" size="91,37">
+      <Button title="拒绝" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n7" name="btnAgree" src="skqrnkp" pkg="0tyncec1" xy="398,30" size="91,37">
+      <Button title="同意" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n8" name="clickMask" src="tnbmnka" pkg="0tyncec1" xy="6,6" size="281,88"/>
+  </displayList>
+</component>a8b467.xml|2077|<component size="554,450">
+  <controller name="c1" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n3" name="n3" src="x0coniw" pkg="0tyncec1" xy="-4,-3" size="556,450"/>
+    <text id="n5" name="n5" xy="163,-1" size="225,37" font="方正粗圆简体" fontSize="20" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="组队邀请"/>
+    <component id="n6" name="btnClose" src="skqrnkp" pkg="0tyncec1" xy="427,-13" size="106,66">
+      <Button titleColor="#3e3e3e" icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <component id="n15" name="radio1" src="sw74nm0" pkg="0tyncec1" xy="25,63" size="93,45" rotation="90">
+      <Button checked="true" icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="c1" page="0"/>
+    </component>
+    <component id="n16" name="radio2" src="sw74nm0" pkg="0tyncec1" xy="25,157" size="93,45" rotation="90">
+      <Button icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="c1" page="1"/>
+    </component>
+    <component id="n17" name="radio3" src="sw74nm0" pkg="0tyncec1" xy="25,248" size="93,45" rotation="90">
+      <Button icon="ui://0tyncec1ovhpnlm" selectedIcon="ui://0tyncec1ovhpnlp" controller="c1" page="2"/>
+    </component>
+    <image id="n18" name="n18" src="x0conix" pkg="0tyncec1" xy="48,53" size="452,350"/>
+    <image id="n19" name="n19" src="s8z9nnh" pkg="0tyncec1" xy="-51,-6" size="215,94" scale="0.8,0.8"/>
+    <text id="n20" name="lb1" xy="-10,82" size="28,56" font="方正粗圆简体" fontSize="20" color="#cccccc" autoSize="none" text="好友">
+      <gearDisplay controller="c1" pages="0,1,2"/>
+    </text>
+    <text id="n21" name="lb2" xy="-10,177" size="28,55" font="方正粗圆简体" fontSize="20" autoSize="none" text="家族">
+      <gearDisplay controller="c1" pages="0,1,2"/>
+    </text>
+    <text id="n22" name="lb3" xy="-9,269" size="25,54" font="方正粗圆简体" fontSize="20" autoSize="none" text="附近">
+      <gearDisplay controller="c1" pages="0,1,2"/>
+    </text>
+    <component id="n1" name="inviteConn" src="t5hdnfw" pkg="0tyncec1" xy="57,62" size="436,331"/>
+  </displayList>
+</component>a8b468.xml|1073|<component size="434,100">
+  <displayList>
+    <image id="n0" name="bg" src="keyenis" pkg="0tyncec1" xy="-3,-4" size="436,108"/>
+    <text id="n2" name="txtName" xy="83,20" size="197,32" font="方正粗圆简体" fontSize="22" color="#2e2e2e" align="center" vAlign="middle" ubb="true" autoSize="none" text="????????"/>
+    <component id="n3" name="headIcon" src="z03enli" pkg="0tyncec1" xy="11,7" touchable="false">
+      <Label title="??"/>
+    </component>
+    <text id="n4" name="txtCareer" xy="104,62" size="111,24" font="方正粗圆简体" fontSize="20" color="#2e2e2e" align="center" vAlign="middle" autoSize="height" text="????"/>
+    <loader id="n5" name="iconCareer" xy="220,59" size="28,28" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false"/>
+    <component id="n7" name="btnInvite" src="skqrnkp" pkg="0tyncec1" xy="308,32" size="91,37">
+      <Button title="邀请" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n8" name="clickMask" src="tnbmnka" pkg="0tyncec1" xy="4,4" size="280,88"/>
+  </displayList>
+</component>bp7w71.xml|1302|<component size="600,500">
+  <displayList>
+    <image id="n3" name="n3" src="x0coniw" pkg="0tyncec1" xy="-4,-3" size="600,500"/>
+    <text id="n5" name="n5" xy="182,0" size="225,37" font="方正粗圆简体" fontSize="20" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="更换目标"/>
+    <image id="n24" name="n24" src="s8z9nnh" pkg="0tyncec1" xy="-49,-6" scale="0.8,0.8"/>
+    <image id="n25" name="n25" src="x0conix" pkg="0tyncec1" xy="52,79" size="487,320"/>
+    <image id="n27" name="n27" src="rnfrnmq" pkg="0tyncec1" xy="256,68" size="204,23" rotation="180"/>
+    <text id="n29" name="n29" xy="54,47" size="77,22" font="方正粗圆简体" fontSize="18" color="#2e3341" text="选择目标"/>
+    <component id="n1" name="typeConn" src="t5hdnfw" pkg="0tyncec1" xy="59,87" size="473,305"/>
+    <component id="n30" name="btnClose" src="tnbmnka" pkg="0tyncec1" xy="150,412" size="118,46">
+      <Button title="取消" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n31" name="btnApply" src="tnbmnka" pkg="0tyncec1" xy="327,413" size="118,46">
+      <Button title="确定" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n32" name="btnCloseNew" src="skqrnkp" pkg="0tyncec1" xy="469,-9" size="106,66">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>hqbs6t.xml|618|<component size="473,44" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n2" name="n0" src="jsucnhh" pkg="0tyncec1" xy="29,42" size="257,2" scale="1.4,1"/>
+    <image id="n0" name="selected" src="n3qsner" pkg="0tyncec1" xy="9,1" size="230,44" scale="2,1">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <richtext id="n1" name="title" xy="36,6" size="399,33" touchable="false" font="方正粗圆简体" fontSize="20" color="#3e3e3e" align="center" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>kob76j.xml|558|<component size="132,40" extention="ComboBox">
+  <displayList>
+    <component id="n0" name="button" src="kob76k" xy="-1,0" size="132,40">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n1" name="title" xy="5,8" size="87,25" font="方正粗圆简体" fontSize="18" color="#2e3341" align="center" autoSize="none" text="">
+      <relation target="" sidePair="width-width"/>
+    </text>
+  </displayList>
+  <ComboBox dropdown="ui://0tnseunokob76p"/>
+  <relation target="n0" sidePair="width-width,rightext-right"/>
+</component>kob76k.xml|888|<component size="132,40" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n7" name="n7" src="x0conjw" pkg="0tyncec1" xy="1,0" size="131,43">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n5" name="n5" src="w9356y" xy="93,3" size="34,36">
+      <relation target="" sidePair="top-top,right-right"/>
+      <relation target="" sidePair="height-height"/>
+      <gearColor controller="button" pages="0" values="#ffffff" default="#cccccc"/>
+    </image>
+    <text id="n8" name="title" xy="10,6" size="78,27" font="方正粗圆简体" fontSize="20" color="#5e5e5e" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+      <gearColor controller="button" default="#5e5e5e"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>kob76p.xml|427|<component size="0,100">
+  <displayList>
+    <image id="n2" name="n2" src="x0conjw" pkg="0tyncec1" xy="0,2" size="132,97">
+      <relation target="n1" sidePair="height-height"/>
+    </image>
+    <list id="n1" name="list" xy="0,2" size="130,94" overflow="scroll" margin="0,0,0,0" defaultItem="ui://0tnseunokob76r" autoItemSize="false"/>
+  </displayList>
+  <relation target="" sidePair="rightext-right,width-width"/>
+</component>kob76r.xml|462|<component size="132,30" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <text id="n5" name="title" xy="6,1" pivot="0.5,0.5" size="120,27" font="方正粗圆简体" fontSize="16" color="#2e3341" align="center" vAlign="middle" leading="0" autoSize="none" text="cdvd"/>
+    <image id="n6" name="n6" src="w9356z" xy="-1,28" size="132,2"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>package.xml|1899|<packageDescription id="0tnseuno" name="Team">
+  <resources>
+    <atlas id="atlas0" size="512,512" file="atlas0.png"/>
+    <component id="a8b461" name="ZDMinePanel" exported="true" size="960,625"/>
+    <component id="a8b462" name="ZDItem" exported="true" size="720,113"/>
+    <component id="a8b463" name="ZDMemCell" exported="true" size="227,488"/>
+    <component id="a8b464" name="LeaderSign" size="47,47"/>
+    <component id="a8b465" name="ZDApplyPanel" exported="true" size="630,510"/>
+    <component id="a8b466" name="ZDApplyItem" exported="true" size="504,100"/>
+    <component id="a8b467" name="ZDInvitePanel" exported="true" size="554,450"/>
+    <component id="a8b468" name="ZDInviteItem" exported="true" size="434,100"/>
+    <component id="bp7w71" name="ZDJoinTarget2" exported="true" size="600,500"/>
+    <component id="hqbs6t" name="ZDTargetItem" exported="true" size="473,44"/>
+    <component id="kob76j" name="ZDLevelBtnDropdown" size="132,40"/>
+    <component id="kob76k" name="ZDLevelBtn0" size="132,40"/>
+    <component id="kob76p" name="ZDLevelBtnDropdownList" size="0,100"/>
+    <component id="kob76r" name="ZDLevelCell" size="132,30"/>
+    <component id="sw7469" name="ZDJoinTarget" exported="true" size="600,500"/>
+    <component id="ugrl5z" name="ZDHallPanel" exported="true" size="960,613"/>
+    <image id="8f0z6v" name="dengji" size="71,38"/>
+    <image id="8f0z6w" name="huawen" size="166,9"/>
+    <image id="po2c70" name="btn_fenye11" size="47,40" exported="true"/>
+    <image id="qcs831" name="memCellBg" size="272,344" scale9grid="17,35,238,39" scale="9grid"/>
+    <image id="qcs83d" name="leadSignBg" size="47,47"/>
+    <image id="s8z96x" name="shuliangdi" size="204,5"/>
+    <image id="tosw6u" name="tuteng" size="169,182"/>
+    <image id="w9356y" name="btn_xiala" size="42,42"/>
+    <image id="w9356z" name="fengexian" size="163,2"/>
+  </resources>
+</packageDescription>sw7469.xml|2413|<component size="600,500">
+  <displayList>
+    <image id="n3" name="n3" src="x0coniw" pkg="0tyncec1" xy="-4,-3" size="600,500"/>
+    <text id="n5" name="n5" xy="182,0" size="225,37" font="方正粗圆简体" fontSize="20" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="更换目标"/>
+    <image id="n24" name="n24" src="s8z9nnh" pkg="0tyncec1" xy="-49,-6" scale="0.8,0.8"/>
+    <image id="n25" name="n25" src="x0conix" pkg="0tyncec1" xy="52,79" size="487,175"/>
+    <image id="n26" name="n26" src="x0conix" pkg="0tyncec1" xy="56,310" size="482,90"/>
+    <image id="n27" name="n27" src="rnfrnmq" pkg="0tyncec1" xy="256,68" size="204,23" rotation="180"/>
+    <text id="n29" name="n29" xy="54,47" size="77,22" font="方正粗圆简体" fontSize="18" color="#2e3341" text="选择目标"/>
+    <image id="n28" name="n28" src="rnfrnmq" pkg="0tyncec1" xy="262,302" size="204,25" rotation="180"/>
+    <text id="n19" name="n19" xy="57,273" size="225,32" font="方正粗圆简体" fontSize="18" color="#071c20" vAlign="middle" autoSize="none" text="等级限制"/>
+    <text id="n20" name="n20" xy="174,338" size="108,32" font="方正粗圆简体" fontSize="18" color="#071c20" align="right" vAlign="middle" autoSize="none" text="最低等级："/>
+    <component id="n23" name="comboxBtn" src="kob76j" xy="287,334">
+      <relation target="" sidePair=""/>
+      <ComboBox visibleItemCount="6">
+        <item title="无限制" value="1"/>
+        <item title="10级" value="10"/>
+        <item title="20级" value="20"/>
+        <item title="30级" value="30"/>
+        <item title="40级" value="40"/>
+        <item title="50级" value="50"/>
+        <item title="60级" value="60"/>
+        <item title="70级" value="70"/>
+        <item title="80级" value="80"/>
+        <item title="90级" value="90"/>
+        <item title="100级" value="100"/>
+      </ComboBox>
+    </component>
+    <component id="n1" name="typeConn" src="t5hdnfw" pkg="0tyncec1" xy="59,87" size="473,160"/>
+    <component id="n30" name="btnClose" src="tnbmnka" pkg="0tyncec1" xy="150,412" size="118,46">
+      <Button title="取消" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n31" name="btnApply" src="tnbmnka" pkg="0tyncec1" xy="327,413" size="118,46">
+      <Button title="确定" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n32" name="btnCloseNew" src="skqrnkp" pkg="0tyncec1" xy="469,-9" size="106,66">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>ugrl5z.xml|1046|<component size="960,613">
+  <displayList>
+    <image id="n0" name="bg" src="jsucnhf" pkg="0tyncec1" xy="0,0" size="958,560"/>
+    <image id="n3" name="n3" src="gk0nnid" pkg="0tyncec1" xy="210,5" size="20,552"/>
+    <component id="n4" name="typeLayer" src="t5hdnfw" pkg="0tyncec1" xy="7,5" size="201,545"/>
+    <component id="n5" name="teamLayer" src="t5hdnfw" pkg="0tyncec1" xy="232,5" size="722,545"/>
+    <component id="n6" name="btnCreate" src="skqrnkp" pkg="0tyncec1" xy="516,563" size="154,49">
+      <Button title="创建队伍" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n2" name="btnRefresh" src="skqrnkp" pkg="0tyncec1" xy="775,563" size="154,49">
+      <Button title="刷新" titleColor="#3e3e3e" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n7" name="cbAutoMatch" src="skqrnkp" pkg="0tyncec1" xy="233,563" size="154,49">
+      <Button title="自动匹配" titleColor="#000000" icon="ui://0tyncec1gk0nnif" selectedIcon="ui://0tyncec1gk0nnif"/>
+    </component>
+  </displayList>
+</component>

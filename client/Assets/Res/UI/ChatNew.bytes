@@ -1,0 +1,287 @@
+cdsb18.xml|55|<component size="70,203">
+  <displayList/>
+</component>cdsb2.xml|1973|<component size="690,742">
+  <displayList>
+    <image id="n1" name="n1" src="cdsb9" xy="1,1"/>
+    <image id="n2" name="n2" src="cdsb7" xy="2,13"/>
+    <component id="n5" name="closeBtn" src="cdsb18" xy="634,248" size="70,203"/>
+    <component id="n7" name="micBtn" src="cdsbi" xy="23,663" visible="false" touchable="false"/>
+    <component id="n8" name="inputCom" src="cdsbk" xy="109,667"/>
+    <component id="n9" name="addBtn" src="cdsbj" xy="458,663"/>
+    <component id="n10" name="sendBtn" src="skqrnkp" pkg="0tyncec1" xy="530,667" size="110,56">
+      <Button title="发送" titleColor="#000000" icon="ui://m2d8gld1cdsb6"/>
+    </component>
+    <text id="n11" name="GouText" xy="291,32" size="202,27" visible="false" touchable="false" font="方正粗圆简体" fontSize="20" color="#545e6c" autoSize="height" text="自动播放频道语音"/>
+    <component id="n12" name="n12" src="cdsbl" xy="250,27" visible="false" touchable="false"/>
+    <image id="n16" name="n16" src="cdsbm" xy="118,68"/>
+    <component id="n17" name="system" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n18" name="world" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n19" name="near" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n20" name="family" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n34" name="clan" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n21" name="team" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n22" name="trumpet" src="cdsbn" xy="112,78" size="528,573"/>
+    <component id="n23" name="keyBtn" src="gzhz39" xy="23,663" visible="false" touchable="false"/>
+    <component id="n24" name="micStateBar" src="gzhz3a" xy="109,667" visible="false" touchable="false"/>
+    <component id="n25" name="cancelAudioTips" src="gzhz3c" xy="557,221"/>
+    <component id="n26" name="playingAudioTips" src="gzhz3d" xy="558,219"/>
+    <component id="n33" name="privateChatBtn" src="lnqz3n" xy="109,19"/>
+  </displayList>
+</component>cdsbh.xml|526|<component size="108,80">
+  <controller name="state" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n0" name="n0" src="cdsb8" xy="0,0">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <text id="n1" name="title" xy="1,17" size="106,49" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="系统"/>
+    <image id="n7" name="n7" src="cdsbe" xy="8,78" size="90,2">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+  </displayList>
+</component>cdsbi.xml|207|<component size="63,64" extention="Button">
+  <displayList>
+    <image id="n0" name="n0" src="cdsbf" xy="1,2"/>
+    <image id="n1" name="n1" src="cdsbg" xy="16,17"/>
+  </displayList>
+  <Button/>
+</component>cdsbj.xml|176|<component size="63,64">
+  <displayList>
+    <image id="n0" name="n0" src="cdsbf" xy="1,2"/>
+    <image id="n1" name="n1" src="cdsba" xy="16,17"/>
+  </displayList>
+</component>cdsbk.xml|301|<component size="342,58">
+  <displayList>
+    <image id="n0" name="n0" src="cdsbb" xy="0,0" size="342,58"/>
+    <text id="n1" name="input" xy="7,7" size="327,43" input="true" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" ubb="true" autoSize="none" text=""/>
+  </displayList>
+</component>cdsbl.xml|295|<component size="32,31">
+  <controller name="state" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0" name="n0" src="cdsb3" xy="0,0"/>
+    <image id="n1" name="n1" src="cdsb4" xy="-3,-10">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+  </displayList>
+</component>cdsbn.xml|70|<component size="0,0" overflow="scroll">
+  <displayList/>
+</component>cdsbo.xml|1093|<component size="482,106">
+  <displayList>
+    <image id="n0" name="msgBg" src="cdsbc" xy="85,50" size="439,45">
+      <relation target="n2" sidePair="left-left,top-top"/>
+    </image>
+    <text id="n1" name="nameText" xy="97,22" size="220,27" font="方正粗圆简体" fontSize="20" color="#2e3341" vAlign="middle" autoSize="none" bold="true" text="匡景"/>
+    <component id="n2" name="playerIcon" src="z03enli" pkg="0tyncec1" xy="5,13"/>
+    <richtext id="n3" name="msgText" xy="102,60" size="406,29" font="方正粗圆简体" fontSize="22" color="#40332e" vAlign="middle" leading="6" ubb="true" autoSize="height" text="">
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </richtext>
+    <loader id="n4" name="vip" xy="98,2" size="50,50" align="center" vAlign="middle"/>
+    <component id="n5" name="infoClick" src="cdsb18" xy="-4,-3" size="100,97"/>
+    <movieclip id="n6" name="voiceMc" src="gzhz3h" xy="106,64" visible="false" playing="false">
+      <relation target="n2" sidePair="left-left,top-top"/>
+    </movieclip>
+  </displayList>
+  <relation target="n0" sidePair="height-height"/>
+</component>cdsbq.xml|951|<component size="482,106">
+  <displayList>
+    <image id="n4" name="msgBg" src="khgi2r" xy="-42,50" size="439,45"/>
+    <text id="n5" name="nameText" xy="159,22" size="220,27" font="方正粗圆简体" fontSize="20" color="#2e3341" align="right" vAlign="middle" autoSize="none" bold="true" text="玩家名字只有七个字"/>
+    <component id="n6" name="playerIcon" src="z03enli" pkg="0tyncec1" xy="396,17"/>
+    <richtext id="n7" name="msgText" xy="-30,60" size="406,29" font="方正粗圆简体" fontSize="22" color="#40332e" leading="6" ubb="true" autoSize="height" text="">
+      <relation target="" sidePair="right-right"/>
+    </richtext>
+    <loader id="n8" name="vip" xy="329,7" size="50,50" align="center" vAlign="middle"/>
+    <component id="n9" name="infoClick" src="cdsb18" xy="378,4" size="100,97"/>
+    <movieclip id="n10" name="voiceMc" src="gzhz3l" xy="351,64" visible="false" playing="false"/>
+  </displayList>
+  <relation target="n4" sidePair="height-height"/>
+</component>dj4d1s.xml|555|<component size="482,32">
+  <displayList>
+    <graph id="n8" name="bg" xy="60,0" size="482,32" type="rect" lineSize="0" fillColor="#00ffffff">
+      <relation target="n7" sidePair="left-left,bottomext-bottom"/>
+    </graph>
+    <richtext id="n7" name="msgText" xy="62,3" size="406,26" font="方正粗圆简体" fontSize="22" color="#40332e" leading="6" ubb="true" autoSize="height" text=""/>
+    <loader id="n9" name="mark" xy="3,5" size="50,23" url="ui://m2d8gld1wxn51t" fill="scale"/>
+  </displayList>
+  <relation target="n7" sidePair="height-height"/>
+</component>ea8v1i.xml|436|<component size="1139,268">
+  <displayList>
+    <image id="n0" name="n0" src="ea8v1j" xy="0,0"/>
+    <component id="n1" name="btnItemList" src="ea8v1p" xy="14,28" size="310,210"/>
+    <image id="n2" name="Bg1" src="ea8v1k" xy="322,13" size="805,240"/>
+    <image id="n3" name="bg2" src="cdsb3" xy="321,222" size="806,31"/>
+    <component id="n4" name="typeContent" src="ea8v1p" xy="332,30" size="791,175"/>
+  </displayList>
+</component>ea8v1m.xml|426|<component size="91,91" extention="Button">
+  <displayList>
+    <image id="n8" name="graybg" src="ea8vnmo" pkg="0tyncec1" xy="-1,-1"/>
+    <image id="n9" name="selectbg" src="ea8vnmp" pkg="0tyncec1" xy="1,0"/>
+    <text id="n6" name="titleText" xy="8,1" size="74,87" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text="文字表情"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>ea8v1p.xml|70|<component size="0,0" overflow="scroll">
+  <displayList/>
+</component>ea8v1q.xml|482|<component size="1139,268" mask="n1">
+  <controller name="state" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n0" name="com" src="ea8v1i" xy="0,268">
+      <gearDisplay controller="state" pages="0,1"/>
+      <gearXY controller="state" pages="0" values="0,268" default="0,0" tween="true" duration="0.17"/>
+    </component>
+    <graph id="n1" name="n1" xy="0,0" size="1139,268" type="rect" lineColor="#80ff0000" fillColor="#80ffffff"/>
+  </displayList>
+</component>ea8v1r.xml|257|<component size="60,60" extention="Button">
+  <displayList>
+    <loader id="n4" name="icon" xy="9,10" size="52,52" scale="0.8,0.8" url="ui://0mti9cudqewe2v" align="center" vAlign="middle" fill="scale"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>gzhz39.xml|154|<component size="62,62" extention="Button">
+  <displayList>
+    <image id="n0" name="n0" src="gzhz38" xy="0,0"/>
+  </displayList>
+  <Button/>
+</component>gzhz3a.xml|370|<component size="342,58" extention="Button">
+  <displayList>
+    <image id="n0" name="n0" src="gzhz3b" xy="0,0" size="342,58"/>
+    <image id="n1" name="n1" src="cdsbg" xy="105,14"/>
+    <text id="n2" name="title" xy="143,7" size="106,49" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" autoSize="none" text="按住说话"/>
+  </displayList>
+  <Button/>
+</component>gzhz3c.xml|361|<component size="235,235">
+  <displayList>
+    <image id="n0" name="n0" src="gzhz2u" xy="0,0" size="235,235"/>
+    <image id="n1" name="n1" src="gzhz2t" xy="58,52"/>
+    <text id="n2" name="title" xy="4,180" size="227,49" font="方正粗圆简体" fontSize="22" color="#ff5d5d" align="center" vAlign="middle" autoSize="none" text="松开手指，取消发送"/>
+  </displayList>
+</component>gzhz3d.xml|365|<component size="235,235">
+  <displayList>
+    <image id="n0" name="n0" src="gzhz2u" xy="0,0" size="235,235"/>
+    <movieclip id="n3" name="n3" src="gzhz3g" xy="35,54"/>
+    <text id="n4" name="title" xy="4,180" size="227,49" font="方正粗圆简体" fontSize="22" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="手指滑开，取消语音"/>
+  </displayList>
+</component>gzhz3g.xml|205|<movieclip interval="208" frameCount="4">
+  <frames>
+    <frame rect="0,0,138,110"/>
+    <frame rect="0,0,147,110"/>
+    <frame rect="0,0,156,110"/>
+    <frame rect="0,0,165,110"/>
+  </frames>
+</movieclip>gzhz3h.xml|166|<movieclip interval="208" frameCount="3">
+  <frames>
+    <frame rect="0,10,5,7"/>
+    <frame rect="0,5,11,16"/>
+    <frame rect="0,0,18,26"/>
+  </frames>
+</movieclip>gzhz3l.xml|166|<movieclip interval="208" frameCount="3">
+  <frames>
+    <frame rect="13,9,5,7"/>
+    <frame rect="7,5,11,16"/>
+    <frame rect="0,0,18,26"/>
+  </frames>
+</movieclip>lnqz3m.xml|661|<component size="529,44" extention="Button">
+  <displayList>
+    <image id="n27" name="n27" src="lnqzf6" pkg="0042gnit" xy="0,0"/>
+    <image id="n28" name="n28" src="lnqzf7" pkg="0042gnit" xy="177,9"/>
+    <text id="n29" name="n29" xy="210,11" size="105,27" font="方正粗圆简体" fontSize="20" color="#545e6c" text="有人私聊你"/>
+    <image id="n30" name="n30" src="lnqzf4" pkg="0042gnit" xy="319,11"/>
+    <text id="n31" name="numSiliaoTxt" xy="319,9" size="25,26" fontSize="16" color="#fffefe" align="center" vAlign="middle" autoSize="none" strokeColor="#871515" strokeSize="2" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.97"/>
+</component>lnqz3n.xml|576|<component size="529,44">
+  <displayList>
+    <component id="n0" name="btn_siliao" src="lnqz3m" xy="0,0"/>
+    <component id="n3" name="btnClose" src="skqrnkp" pkg="0tyncec1" xy="479,0" size="50,44">
+      <Button icon="ui://0tyncec1hclvnmr"/>
+    </component>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="1" endValue="0.41" duration="18"/>
+    <item time="18" type="Alpha" target="n0" tween="true" startValue="0.41" endValue="1" duration="18"/>
+  </transition>
+</component>package.xml|5520|<packageDescription id="m2d8gld1" name="ChatNew">
+  <resources>
+    <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
+    <component id="cdsb18" name="CloseBtn" size="70,203"/>
+    <component id="cdsb2" name="ChatNewPanel" exported="true" size="690,742"/>
+    <component id="cdsbh" name="ChannelBtn" exported="true" size="108,80"/>
+    <component id="cdsbi" name="MicBtn" exported="true" size="63,64"/>
+    <component id="cdsbj" name="AddBtn" exported="true" size="63,64"/>
+    <component id="cdsbk" name="ChatInput" exported="true" size="342,58"/>
+    <component id="cdsbl" name="AutoBtn" exported="true" size="32,31"/>
+    <component id="cdsbn" name="ContentContainer" exported="true" size="0,0"/>
+    <component id="cdsbo" name="ContentLeft" exported="true" size="482,106"/>
+    <component id="cdsbq" name="ContentRight" exported="true" size="482,106"/>
+    <component id="dj4d1s" name="ContentSystem" exported="true" size="482,32"/>
+    <component id="ea8v1i" name="TypeSelectCom" exported="true" size="1139,268"/>
+    <component id="ea8v1m" name="SelectBtn" exported="true" size="91,91"/>
+    <component id="ea8v1p" name="TypeContentContainer" size="0,0"/>
+    <component id="ea8v1q" name="TypeSelectPanel" exported="true" size="1139,268"/>
+    <component id="ea8v1r" name="Face" exported="true" size="60,60"/>
+    <component id="gzhz39" name="KeyBtn" exported="true" size="62,62"/>
+    <component id="gzhz3a" name="MicStateBar" exported="true" size="342,58"/>
+    <component id="gzhz3c" name="CancelAudioTips" exported="true" size="235,235"/>
+    <component id="gzhz3d" name="PlayingAudioTips" exported="true" size="235,235"/>
+    <component id="lnqz3m" name="BtnSiliao" size="529,44"/>
+    <component id="lnqz3n" name="PrivateChatBtn" exported="true" size="529,44"/>
+    <component id="rfrr1t" name="HistorySay" exported="true" size="245,83"/>
+    <image id="cdsb3" name="goudi" size="32,31" scale="9grid" scale9grid="8,8,16,16"/>
+    <image id="cdsb4" name="gou" size="44,39"/>
+    <image id="cdsb6" name="fasonganniu" size="115,58" exported="true"/>
+    <image id="cdsb7" name="diyoubian" size="640,639"/>
+    <image id="cdsb8" name="dicebian" size="108,80"/>
+    <image id="cdsb9" name="di2" size="690,741"/>
+    <image id="cdsba" name="＋" size="33,32"/>
+    <image id="cdsbb" name="wenzikuang2" size="35,33" scale="9grid" scale9grid="9,9,17,15"/>
+    <image id="cdsbc" name="wenzikuang" size="51,42" scale="9grid" scale9grid="19,21,20,12"/>
+    <image id="cdsbe" name="leibie_fengexian" size="86,2"/>
+    <image id="cdsbf" name="huatonganniu" size="62,63"/>
+    <image id="cdsbg" name="huatong" size="30,32"/>
+    <image id="cdsbm" name="fengexian11" size="509,11"/>
+    <image id="ea8v1j" name="beijing" size="1139,268"/>
+    <image id="ea8v1k" name="beijing2" size="44,44" scale="9grid" scale9grid="11,11,22,22"/>
+    <image id="gzhz2t" name="quxiao" size="104,110"/>
+    <image id="gzhz2u" name="di" size="39,36" scale="9grid" scale9grid="10,10,19,16"/>
+    <image id="gzhz38" name="btn_jianpang" size="60,61"/>
+    <image id="gzhz3b" name="btn_liaotiananniu1" size="21,61" scale="9grid" scale9grid="8,16,5,32"/>
+    <image id="khgi2r" name="wenzikuang_2" size="51,42" scale="9grid" scale9grid="13,25,20,8"/>
+    <image id="rfrr1v" name="fn" size="64,64" exported="true"/>
+    <image id="rfrr1w" name="dy" size="64,64" exported="true"/>
+    <image id="rfrr1x" name="dd" size="64,64" exported="true"/>
+    <image id="rfrr1y" name="dx" size="64,64" exported="true"/>
+    <image id="rfrr1z" name="bs" size="64,64" exported="true"/>
+    <image id="rfrr20" name="yx" size="64,64" exported="true"/>
+    <image id="rfrr21" name="yun" size="64,64" exported="true"/>
+    <image id="rfrr22" name="ys" size="64,64" exported="true"/>
+    <image id="rfrr23" name="xk" size="64,64" exported="true"/>
+    <image id="rfrr24" name="xh" size="64,64" exported="true"/>
+    <image id="rfrr25" name="wy" size="64,64" exported="true"/>
+    <image id="rfrr26" name="ww" size="64,64" exported="true"/>
+    <image id="rfrr27" name="wx" size="64,64" exported="true"/>
+    <image id="rfrr28" name="wn" size="64,64" exported="true"/>
+    <image id="rfrr29" name="tq" size="64,64" exported="true"/>
+    <image id="rfrr2a" name="tt" size="64,64" exported="true"/>
+    <image id="rfrr2b" name="tp" size="64,64" exported="true"/>
+    <image id="rfrr2c" name="sy" size="64,64" exported="true"/>
+    <image id="rfrr2d" name="sh" size="64,64" exported="true"/>
+    <image id="rfrr2e" name="bl" size="64,64" exported="true"/>
+    <image id="rfrr2f" name="qy" size="64,64" exported="true"/>
+    <image id="rfrr2g" name="lyj" size="64,64" exported="true"/>
+    <image id="rfrr2h" name="kx" size="64,64" exported="true"/>
+    <image id="rfrr2i" name="ku" size="64,64" exported="true"/>
+    <image id="rfrr2j" name="kb" size="64,64" exported="true"/>
+    <image id="rfrr2k" name="jy" size="64,64" exported="true"/>
+    <image id="rfrr2l" name="jk" size="64,64" exported="true"/>
+    <image id="rfrr2m" name="hh" size="64,64" exported="true"/>
+    <image id="rfrr2n" name="hy" size="64,64" exported="true"/>
+    <image id="rfrr2o" name="gt" size="64,64" exported="true"/>
+    <image id="rfrr2p" name="fw" size="64,64" exported="true"/>
+    <image id="rfrr2q" name="ff" size="64,64" exported="true"/>
+    <movieclip id="gzhz3g" name="PlayingAudioMc" size="165,110"/>
+    <movieclip id="gzhz3h" name="ItemLeftVoicePlayMc" size="18,26"/>
+    <movieclip id="gzhz3l" name="ItemRightVoicePlayMc" size="18,26"/>
+  </resources>
+</packageDescription>rfrr1t.xml|321|<component size="245,83">
+  <displayList>
+    <image id="n0" name="bg" src="mkaznh3" pkg="0tyncec1" xy="0,0" size="245,83"/>
+    <richtext id="n1" name="content" xy="0,0" size="245,83" font="方正粗圆简体" fontSize="24" color="#2e3441" align="center" vAlign="middle" autoSize="none" text="测试表情测试"/>
+  </displayList>
+</component>

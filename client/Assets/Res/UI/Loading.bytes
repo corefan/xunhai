@@ -1,0 +1,14 @@
+oky09.xml|502|<component size="1334,750">
+  <displayList>
+    <image id="n1" name="n1" src="dzma23" xy="539,247" pkg="0tyncec1"/>
+    <image id="n0" name="n0" src="dzma22" xy="627,312" size="79,125" pkg="0tyncec1"/>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Pivot" target="n1" value="0.5,0.5"/>
+    <item time="0" type="Rotation" target="n1" tween="true" startValue="360" endValue="0" duration="36" ease="Linear" repeat="-1"/>
+  </transition>
+</component>package.xml|178|<packageDescription id="37s0no48" name="Loading">
+  <resources>
+    <component id="oky09" name="MW_Waiting" exported="true" size="1334,750"/>
+  </resources>
+</packageDescription>

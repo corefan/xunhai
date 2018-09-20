@@ -1,0 +1,277 @@
+8s1o2a.xml|249|<component size="173,26">
+  <displayList>
+    <text id="n64" name="n64" xy="0,0" size="145,24" font="方正粗圆简体" fontSize="20" color="#545e6c" text="点击可编辑公告"/>
+    <component id="n65" name="btnPen" src="e9ze26" xy="148,0"/>
+  </displayList>
+</component>8s1o2d.xml|804|<component size="479,259">
+  <displayList>
+    <component id="n59" name="n59" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,259"/>
+    <text id="n22" name="n22" xy="188,6" size="119,28" font="方正粗圆简体" fontSize="24" color="#ffffff" autoSize="none" text="创建家族"/>
+    <text id="n24" name="n24" xy="71,74" size="358,26" font="方正粗圆简体" fontSize="22" color="#43515b" autoSize="none" text="请输入家族名称，创建后无法修改"/>
+    <component id="n33" name="inputFName" src="i4cc1k" xy="75,115">
+      <Label maxLength="7"/>
+    </component>
+    <component id="n32" name="btnCreatPay" src="i4cc1j" xy="210,185" touchable="false" grayed="true"/>
+    <component id="n58" name="btnCancelPay" src="e9ze1u" xy="53,185" size="119,52">
+      <Button title="取消" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+  </displayList>
+</component>8s1o2e.xml|905|<component size="479,259">
+  <displayList>
+    <component id="n63" name="n63" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,259"/>
+    <text id="n37" name="n37" xy="189,5" size="119,28" font="方正粗圆简体" fontSize="24" color="#ffffff" autoSize="none" text="温馨提示"/>
+    <text id="n41" name="n41" xy="121,90" size="261,31" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" autoSize="none" text="确定要创建家族"/>
+    <text id="n62" name="familyName" xy="121,122" size="261,31" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="none" text=""/>
+    <component id="n59" name="btnCancel" src="e9ze1u" xy="88,189" size="122,52">
+      <Button title="取消" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n60" name="btnCreat" src="e9ze1u" xy="272,189" size="122,52">
+      <Button title="创建" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>8s1o2f.xml|785|<component size="481,258">
+  <displayList>
+    <component id="n69" name="n69" src="s1mjnnb" pkg="0tyncec1" xy="0,0" size="479,259"/>
+    <text id="n62" name="txtInvite" xy="67,78" size="345,58" font="方正粗圆简体" fontSize="22" color="#43515b" align="center" ubb="true" autoSize="none" text="您的好友 名字最多七个字 正在&#xA;邀请您加入 家族名字七个字 家族"/>
+    <component id="n64" name="btnRef" src="e9ze1u" xy="78,187" size="144,51">
+      <Button title="拒绝" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n65" name="btnAgr" src="e9ze1u" xy="264,186" size="143,51">
+      <Button title="同意" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <text id="n68" name="n68" xy="189,5" size="119,28" font="方正粗圆简体" fontSize="24" color="#ffffff" autoSize="none" text="温馨提示"/>
+  </displayList>
+</component>8s1o2g.xml|843|<component size="732,587">
+  <displayList>
+    <image id="n32" name="n32" src="x0coniw" pkg="0tyncec1" xy="0,10" size="732,573"/>
+    <image id="n35" name="n35" src="j67wnhe" pkg="0tyncec1" xy="50,83" size="636,366"/>
+    <component id="n36" name="layerHead" src="t5hdnfw" pkg="0tyncec1" xy="60,95" size="617,342"/>
+    <text id="n57" name="n57" xy="56,482" size="265,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="请编辑家族成员的排位和称号"/>
+    <component id="n59" name="btnCancelGL" src="i4cc1o" xy="392,468" size="132,54">
+      <Button title="取消" icon="ui://0tyncec1x0conj0"/>
+    </component>
+    <component id="n60" name="btnComGL" src="i4cc1o" xy="547,468" size="132,54">
+      <Button title="确定" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n63" name="btnClose" src="olnb2l" xy="596,0"/>
+  </displayList>
+</component>8s1o2h.xml|753|<component size="732,587">
+  <displayList>
+    <image id="n62" name="n62" src="x0coniw" pkg="0tyncec1" xy="0,10" size="732,573"/>
+    <image id="n63" name="n63" src="j67wnhe" pkg="0tyncec1" xy="49,63" size="636,395"/>
+    <text id="n67" name="txtGG" xy="59,71" size="617,378" input="true" prompt="请点击输入家族公告" maxLength="32" font="方正粗圆简体" fontSize="24" color="#43515b" align="center" vAlign="middle" autoSize="none" text=""/>
+    <component id="n95" name="btnBJ" src="8s1o2a" xy="502,423" visible="false"/>
+    <component id="n66" name="btnComGG" src="i4cc1o" xy="298,477" size="136,54">
+      <Button title="确定" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n96" name="btnClose" src="olnb2l" xy="596,0"/>
+  </displayList>
+</component>8s1o2i.xml|754|<component size="732,587">
+  <displayList>
+    <image id="n69" name="n69" src="x0coniw" pkg="0tyncec1" xy="0,10" size="732,573"/>
+    <image id="n71" name="n71" src="j67wnhe" pkg="0tyncec1" xy="43,106" size="648,436"/>
+    <component id="n77" name="layerHY" src="t5hdnfw" pkg="0tyncec1" xy="53,115" size="630,417"/>
+    <text id="n80" name="textNF" xy="197,241" size="317,30" font="方正粗圆简体" fontSize="26" color="#21334e" text="当前没有可邀请的在线好友"/>
+    <component id="n81" name="btnClose" src="olnb2l" xy="596,0"/>
+    <text id="n82" name="n82" xy="82,69" size="425,26" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" text="只能邀请无家族且20级以上的好友加入家族"/>
+    <image id="n83" name="n83" src="a4f92m" xy="53,72"/>
+  </displayList>
+</component>8s1o2j.xml|1024|<component size="413,297">
+  <displayList>
+    <image id="n82" name="n82" src="z03enle" pkg="0tyncec1" xy="0,0" size="413,296"/>
+    <image id="n91" name="n91" src="i4ccx" xy="99,29"/>
+    <component id="n94" name="headIcon" src="z03enli" pkg="0tyncec1" xy="38,20"/>
+    <text id="n92" name="name" xy="127,31" size="180,30" font="方正粗圆简体" fontSize="24" color="#2e3341" bold="true" text="名字只有七个字"/>
+    <component id="n89" name="GRXX" src="oh4u29" xy="30,110">
+      <Button title="个人信息"/>
+    </component>
+    <component id="n85" name="YQZD" src="oh4u29" xy="212,110" size="180,55">
+      <Button title="邀请组队"/>
+    </component>
+    <component id="n86" name="FSXX" src="oh4u29" xy="30,167" size="180,55">
+      <Button title="发送信息"/>
+    </component>
+    <component id="n87" name="ZRZZ" src="oh4u29" xy="212,167" size="180,55">
+      <Button title="转让族长"/>
+    </component>
+    <component id="n88" name="QCJZ" src="oh4u29" xy="30,224" size="180,55">
+      <Button title="请出家族"/>
+    </component>
+  </displayList>
+</component>e9ze1r.xml|1151|<component size="217,480" extention="Button">
+  <displayList>
+    <image id="n18" name="n18" src="i4ccy" xy="0,0" size="216,479"/>
+    <graph id="n23" name="modelConn" xy="108,383" pivot="0.5,0.5" anchor="true" size="29,25"/>
+    <image id="n9" name="n9" src="i4cc10" xy="6,8"/>
+    <text id="n14" name="state" xy="17,26" size="35,19" font="方正粗圆简体" fontSize="15" color="#5fff53" ubb="true" text="在线"/>
+    <text id="n13" name="chenghao" xy="19,61" size="30,112" font="方正粗圆简体" fontSize="20" color="#ffffff" align="center" leading="2" autoSize="height" text="称号五个字"/>
+    <text id="n15" name="lv" xy="120,12" size="88,25" font="方正粗圆简体" fontSize="20" color="#495e70" align="right" autoSize="none" text="Lv. 390"/>
+    <component id="n22" name="jiaHao" src="a8b4nlx" pkg="0tyncec1" xy="69,199" visible="false"/>
+    <text id="n16" name="name" xy="31,419" size="171,28" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" autoSize="none" text="名字只有七个字"/>
+    <text id="n20" name="offTime" xy="44,445" size="144,27" font="方正粗圆简体" fontSize="20" color="#54595e" align="center" autoSize="none" text="离线1天10小时"/>
+  </displayList>
+  <Button/>
+</component>e9ze1u.xml|694|<component size="144,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n5" name="icon" xy="0,0" size="144,64" touchable="false" url="ui://j7ibmhypi4cc1h" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="144,64" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>e9ze23.xml|190|<component size="49,50">
+  <displayList>
+    <image id="n46" name="n46" src="i4ccq" xy="0,0"/>
+    <image id="n47" name="n47" src="i4ccp" xy="13,13" flip="vt"/>
+  </displayList>
+</component>e9ze24.xml|180|<component size="49,50">
+  <displayList>
+    <image id="n49" name="n49" src="i4ccq" xy="0,0"/>
+    <image id="n50" name="n50" src="i4ccp" xy="12,14"/>
+  </displayList>
+</component>e9ze26.xml|198|<component size="25,26" extention="Button">
+  <displayList>
+    <image id="n52" name="n52" src="e9ze25" xy="0,0"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>e9ze27.xml|988|<component size="616,93">
+  <displayList>
+    <image id="n45" name="n45" src="i4ccy" xy="0,0" size="616,93"/>
+    <image id="n33" name="n33" src="i4ccn" xy="18,26"/>
+    <text id="n34" name="title" xy="18,27" size="36,28" font="方正粗圆简体" fontSize="24" color="#ffffff" align="center" autoSize="height" strokeColor="#657786" text="1"/>
+    <component id="n54" name="headIcon" src="z03enli" pkg="0tyncec1" xy="74,7"/>
+    <text id="n43" name="name" xy="159,34" size="145,24" font="方正粗圆简体" fontSize="20" color="#071c20" text="名字只有七个字"/>
+    <text id="n44" name="chenghao" xy="321,34" size="105,24" input="true" maxLength="5" font="方正粗圆简体" fontSize="20" color="#084b0f" text="族长哦哦哦">
+      <relation target="" sidePair="right-right,top-top"/>
+    </text>
+    <component id="n53" name="btnPen" src="e9ze26" xy="434,33" visible="false"/>
+    <component id="n48" name="btnDown" src="e9ze23" xy="554,25"/>
+    <component id="n51" name="btnUp" src="e9ze24" xy="494,25"/>
+  </displayList>
+</component>i4cc1j.xml|459|<component size="218,52" extention="Button">
+  <displayList>
+    <loader id="n34" name="n34" xy="0,0" size="218,52" url="ui://0tyncec1gk0nnie" fill="scaleFree"/>
+    <loader id="n32" name="icon" xy="19,3" size="43,41" url="ui://j7ibmhypolnb2k"/>
+    <text id="n33" name="title" xy="58,10" size="148,28" font="方正粗圆简体" fontSize="24" ubb="true" autoSize="none" text="100000创建"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>i4cc1k.xml|402|<component size="329,38" extention="Label">
+  <displayList>
+    <image id="n25" name="n25" src="jsucnhf" pkg="0tyncec1" xy="0,0" size="328,37"/>
+    <text id="n26" name="title" xy="0,1" size="326,34" input="true" prompt="[color=#666666]输入家族名称（7字以内）[color]" maxLength="7" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+</component>i4cc1o.xml|684|<component size="144,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n5" name="icon" xy="0,0" size="144,64" touchable="false" align="center" vAlign="middle" fill="scaleFree" playing="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4" name="title" xy="0,0" size="144,64" font="方正粗圆简体" fontSize="24" color="#e5e5e5" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>i4cc1p.xml|1336|<component size="979,617" opaque="false">
+  <displayList>
+    <image id="n0" name="n0" src="i4ccn" xy="26,11"/>
+    <text id="n1" name="txtName" xy="67,16" size="10,28" font="方正粗圆简体" fontSize="24" color="#2f7f88" text=""/>
+    <text id="n30" name="txtDisband" xy="99,17" size="85,24" visible="false" font="方正粗圆简体" fontSize="20" color="#e10404" align="right" vAlign="middle" text="濒临解散">
+      <relation target="n1" sidePair="left-right"/>
+    </text>
+    <component id="n24" name="btnGG" src="e9ze1u" xy="805,4" size="149,53">
+      <Button title="家族公告" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <image id="n6" name="n6" src="i4ccz" xy="8,55" size="958,16"/>
+    <image id="n5" name="n5" src="jsucnhf" pkg="0tyncec1" xy="16,67" size="942,488"/>
+    <component id="n8" name="layerInfo" src="t5hdnfu" pkg="0tyncec1" xy="22,69" size="930,480"/>
+    <component id="n26" name="btnGL" src="i4cc1o" xy="416,563" size="175,52">
+      <Button title="家族管理" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n27" name="btnZD" src="i4cc1o" xy="601,563" size="175,52">
+      <Button title="家族组队" icon="ui://0tyncec1x0conj1"/>
+    </component>
+    <component id="n28" name="btnJS" src="i4cc1o" xy="788,563" size="175,52">
+      <Button title="解散家族" icon="ui://0tyncec1x0conj0"/>
+    </component>
+  </displayList>
+</component>i4cc2.xml|1868|<component size="979,617" opaque="false">
+  <displayList>
+    <image id="n15" name="n15" src="i4cco" xy="11,20"/>
+    <image id="n0" name="n0" src="i4ccm" xy="85,80"/>
+    <text id="n2" name="n2" xy="118,83" size="120,31" font="方正粗圆简体" fontSize="24" color="#43515b" autoSize="none" text="创建条件"/>
+    <text id="n4" name="n4" xy="99,125" size="757,26" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·玩家到达20级可创建家族"/>
+    <text id="n5" name="n5" xy="99,156" size="757,26" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·玩家只能加入一个家族，家族解散后可重新加入家族"/>
+    <text id="n7" name="n7" xy="99,186" size="757,26" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·创建家族时，需要3名或3名以上玩家组队，且他们互为好友"/>
+    <text id="n8" name="n8" xy="99,217" size="757,26" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·创建家族时队长要支付10万金币"/>
+    <text id="n53" name="n53" xy="99,249" size="757,26" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·72小时内无家族成员上线，家族会自动解散"/>
+    <text id="n54" name="n54" xy="99,281" size="757,26" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·家族成员少于3人起算，72小时后家族会自动解散"/>
+    <image id="n1" name="n1" src="i4ccm" xy="85,348"/>
+    <text id="n3" name="n3" xy="118,351" size="124,31" font="方正粗圆简体" fontSize="24" color="#43515b" autoSize="height" text="家族福利"/>
+    <text id="n10" name="n10" xy="99,389" size="757,26" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·得到特别的家族头衔"/>
+    <text id="n11" name="n11" xy="99,421" size="757,26" font="方正粗圆简体" fontSize="20" color="#2e3341" autoSize="none" text="·同一家族成员3人或以上组队时，队中家族成员可获得经验加成buff"/>
+    <component id="n52" name="btnFamily" src="i4cc1o" xy="787,556" size="175,52" touchable="false" grayed="true">
+      <Button title="创建家族" icon="ui://0tyncec1x0conj1"/>
+    </component>
+  </displayList>
+</component>oh4u28.xml|517|<component size="617,94">
+  <displayList>
+    <image id="n72" name="n72" src="i4ccy" xy="0,0" size="617,93"/>
+    <component id="n76" name="headIcon" src="z03enli" pkg="0tyncec1" xy="33,6"/>
+    <text id="n74" name="name" xy="151,36" size="173,31" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" text="队长名字七个字"/>
+    <component id="n75" name="btnYQ" src="e9ze1u" xy="453,24" size="97,50">
+      <Button title="邀请" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+  </displayList>
+</component>oh4u29.xml|381|<component size="180,55" extention="Button">
+  <displayList>
+    <image id="n84" name="icon" src="i4ccy" xy="0,0" size="180,55"/>
+    <text id="n85" name="title" xy="10,9" size="158,34" font="方正粗圆简体" fontSize="24" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+</component>olnb2l.xml|219|<component size="108,72" extention="Button">
+  <displayList>
+    <image id="n62" name="btnClose" src="u0dhc1" pkg="0tyncec1" xy="0,0"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>package.xml|2455|<packageDescription id="j7ibmhyp" name="Family">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="8s1o2a" name="btnBJ" size="173,26"/>
+    <component id="8s1o2d" name="FamilySubCreatePanel" exported="true" size="479,259"/>
+    <component id="8s1o2e" name="FamilyComCreatePanel" exported="true" size="479,259"/>
+    <component id="8s1o2f" name="FamilyYQPanel" exported="true" size="481,258"/>
+    <component id="8s1o2g" name="FamilyPWPanel" exported="true" size="732,587"/>
+    <component id="8s1o2h" name="FamilyGGPanel" exported="true" size="732,587"/>
+    <component id="8s1o2i" name="FamilyHYPanel" exported="true" size="732,587"/>
+    <component id="8s1o2j" name="FamilySubPanel" exported="true" size="413,297"/>
+    <component id="e9ze1r" name="FamilyCell" exported="true" size="217,480"/>
+    <component id="e9ze1u" name="BtnGG" size="144,64"/>
+    <component id="e9ze23" name="BtnDown" size="49,50"/>
+    <component id="e9ze24" name="BtnUp" size="49,50"/>
+    <component id="e9ze26" name="Pen" size="25,26"/>
+    <component id="e9ze27" name="FamilyItem" exported="true" size="616,93"/>
+    <component id="i4cc1j" name="BtnCreatPay" size="218,52"/>
+    <component id="i4cc1k" name="InputFName" size="329,38"/>
+    <component id="i4cc1o" name="CustomButton" size="144,64"/>
+    <component id="i4cc1p" name="FamilyMainPanel" exported="true" size="979,617"/>
+    <component id="i4cc2" name="FamilyCreatePanel" exported="true" size="979,617"/>
+    <component id="oh4u28" name="FamilyHYItem" exported="true" size="617,94"/>
+    <component id="oh4u29" name="btnSubInfo" size="180,55"/>
+    <component id="olnb2l" name="btnClose" size="108,72"/>
+    <image id="a4f92m" name="内有附件标识" size="20,20"/>
+    <image id="e9ze25" name="pen" size="25,26" exported="true"/>
+    <image id="i4cc10" name="1(2)" size="55,173"/>
+    <image id="i4ccm" name="1" size="323,32"/>
+    <image id="i4ccn" name="排名标识" size="36,42"/>
+    <image id="i4cco" name="底图" size="959,525"/>
+    <image id="i4ccp" name="按钮标识" size="24,22"/>
+    <image id="i4ccq" name="按钮" size="49,50" scale9grid="13,13,26,26"/>
+    <image id="i4ccx" name="个人信息名字底" size="259,35"/>
+    <image id="i4ccy" name="个人信息按钮(179X55)" size="58,55" scale="9grid" scale9grid="16,17,25,22"/>
+    <image id="i4ccz" name="底框花纹(959X16)" size="167,16" scale="9grid" scale9grid="42,4,84,8"/>
+    <image id="olnb2k" name="gold" size="43,38"/>
+  </resources>
+</packageDescription>

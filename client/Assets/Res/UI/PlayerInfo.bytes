@@ -1,0 +1,314 @@
+cws9g.xml|2415|<component size="349,615">
+  <displayList>
+    <image id="n10" name="BaseBg" src="cws9j" xy="7,168" size="320,138" group="n6"/>
+    <list id="n0" name="BasePropList" xy="14,175" size="304,120" group="n6" margin="0,0,0,0" defaultItem="ui://0oudtuxpcws9h">
+      <item/>
+    </list>
+    <text id="n1" name="BasePropLabel" xy="7,144" size="85,24" group="n6" font="方正粗圆简体" fontSize="20" color="#545e6c" text="基础属性"/>
+    <group id="n6" name="BasePropGround" xy="7,144" size="320,162" advanced="true"/>
+    <image id="n11" name="FightBg" src="cws9j" xy="9,330" size="320,212" group="n7"/>
+    <text id="n2" name="FightPropLabel" xy="9,306" size="85,24" group="n7" font="方正粗圆简体" fontSize="20" color="#545e6c" text="战斗属性"/>
+    <list id="n3" name="FightPropList" xy="15,338" size="304,189" group="n7" margin="0,0,0,0" defaultItem="ui://0oudtuxpcws9h">
+      <item/>
+    </list>
+    <group id="n7" name="FightPropGround" xy="9,306" size="320,236" advanced="true"/>
+    <image id="n8" name="PowerBg" src="cws9i" xy="5,94" size="320,44" group="n9"/>
+    <text id="n4" name="Power" xy="12,97" size="312,41" group="n9" font="ui://0tyncec1hhg0eg" fontSize="12" color="#ff9900" autoSize="none" singleLine="true" text=""/>
+    <group id="n9" name="PowerGround" xy="5,94" size="320,44" advanced="true"/>
+    <image id="n12" name="BangHuiBg" src="cws9k" xy="0,8" group="n19" visible="false"/>
+    <loader id="n14" name="BangHuiIcon" xy="2,10" size="95,72" group="n19" visible="false" url="ui://0oudtuxpcws9l" fill="scale" autoSize="true"/>
+    <text id="n15" name="ZhanShenLevel" xy="99,19" size="125,28" group="n19" visible="false" font="方正粗圆简体" fontSize="24" color="#43596b" text="战神等级："/>
+    <text id="n16" name="ZhanShenLevelLabel" xy="219,19" size="18,28" group="n19" visible="false" font="方正粗圆简体" fontSize="24" color="#43596b" text="0">
+      <relation target="n15" sidePair="right-left,top-top"/>
+    </text>
+    <text id="n18" name="BangHuiLabel" xy="98,51" size="10,28" group="n19" font="方正粗圆简体" fontSize="24" color="#43596b" ubb="true" text=""/>
+    <group id="n19" name="BangHuiGround" xy="0,8" size="305,80" advanced="true"/>
+    <component id="n20" name="TianFuBtn" src="cws9n" xy="93,558" visible="false"/>
+    <component id="n21" name="SpecialPropBtn" src="wirr3r" xy="230,304" size="97,30">
+      <Button title="特殊属性" titleColor="#000000" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>cws9h.xml|544|<component size="295,23">
+  <displayList>
+    <text id="n0" name="PropName" xy="0,0" size="65,24" font="方正粗圆简体" fontSize="20" color="#2e3341" text="属性名">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <text id="n1" name="PropValue" xy="222,0" size="71,24" font="方正粗圆简体" fontSize="20" color="#3370b7" text="000000">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <image id="n2" name="line" src="n1gao" xy="-2,21">
+      <relation target="" sidePair="width-width"/>
+    </image>
+  </displayList>
+</component>cws9n.xml|463|<component size="153,52" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="icon" src="cws9m" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2" name="title" xy="27,10" size="101,28" font="方正粗圆简体" fontSize="24" color="#cccccc" align="center" vAlign="middle" text="职业天赋"/>
+  </displayList>
+  <Button/>
+</component>e0wd42.xml|375|<component size="388,617" overflow="hidden">
+  <controller name="state" pages="0,滑入,1,滑出" selected="0"/>
+  <displayList>
+    <component id="n0" name="page" src="fqe0t" xy="12,4">
+      <gearDisplay controller="state" pages="0,1"/>
+      <gearXY controller="state" pages="0,1" values="12,4|391,4" default="725,111" tween="true"/>
+    </component>
+  </displayList>
+</component>fqe012.xml|332|<component size="43,44" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="Bg" src="s9mpnqe" xy="0,0" pkg="0tyncec1">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>fqe0t.xml|560|<component size="371,611">
+  <displayList>
+    <image id="n0" name="bg" src="ckrk14" xy="-7,-7"/>
+    <image id="n8" name="line1" src="fqe0z" xy="237,29"/>
+    <text id="n9" name="title" xy="134,20" size="101,28" font="方正粗圆简体" fontSize="24" text="装备列表"/>
+    <image id="n7" name="line2" src="fqe010" xy="61,31"/>
+    <list id="n2" name="equipList" xy="2,67" size="367,537" overflow="scroll" margin="0,0,0,0" defaultItem="ui://0oudtuxpfqe0v" autoItemSize="false"/>
+    <component id="n10" name="closeBtn" src="fqe012" xy="323,16"/>
+  </displayList>
+</component>fqe0v.xml|980|<component size="366,114">
+  <displayList>
+    <image id="n0" name="bg" src="keyenis" pkg="0tyncec1" xy="0,0" size="367,115"/>
+    <text id="n3" name="equipName" xy="114,21" size="77,28" font="方正粗圆简体" fontSize="24" strokeColor="#002b2b" strokeSize="2" text="灵魂刀"/>
+    <text id="n4" name="powerText" xy="114,72" size="125,24" font="方正粗圆简体" fontSize="20" color="#545e6c" ubb="true" text="战斗力:99999"/>
+    <component id="n8" name="upORdown" src="gv0l3p" xy="238,70">
+      <relation target="n4" sidePair="left-right"/>
+    </component>
+    <component id="n1" name="equipBtn" src="tnbmnka" pkg="0tyncec1" xy="267,40" size="88,45">
+      <Button title="装备" icon="ui://0tyncec1gk0nnie" selectedTitle="卸下" selectedIcon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <component id="n10" name="icon" src="ek9hnha" pkg="0tyncec1" xy="18,12"/>
+    <graph id="n9" name="clickMask" xy="5,3" size="234,107" type="rect" lineColor="#00000000" fillColor="#00ffffff"/>
+  </displayList>
+</component>gv0l3p.xml|181|<component size="23,27">
+  <displayList>
+    <loader id="n1" name="icon" xy="0,0" size="23,27" align="center" vAlign="middle" fill="scaleMatchHeight"/>
+  </displayList>
+</component>mllx44.xml|3719|<component size="876,632">
+  <displayList>
+    <image id="n50" name="n50" src="uwggdg" pkg="0tyncec1" xy="0,0" size="876,632"/>
+    <image id="n20" name="bg" src="ueo73q" xy="98,85"/>
+    <graph id="n19" name="role3D" xy="318,467" size="10,10"/>
+    <list id="n3" name="equipList" xy="74,91" size="500,393" layout="flow_vt" selectionMode="none" overflow="scroll" scrollBarFlags="32" margin="0,0,0,0" lineGap="10" colGap="310" defaultItem="ui://0oudtuxpn1gar"/>
+    <image id="n22" name="n22" src="mllx45" xy="31,42"/>
+    <text id="n23" name="power" xy="41,33" size="246,53" font="ui://0tyncec1hhg0eg" fontSize="11" color="#00ff00" vAlign="middle" autoSize="none" text="i66666"/>
+    <image id="n21" name="n21" src="cws9i" xy="613,100" size="200,30"/>
+    <text id="n26" name="achiveTitle" xy="613,103" size="200,27" font="方正粗圆简体" fontSize="20" color="#545e6c" align="center" vAlign="middle" autoSize="none" text="无"/>
+    <image id="n6" name="nameBg" src="w3wlnld" pkg="0tyncec1" xy="600,54" size="225,36"/>
+    <text id="n7" name="playerName" xy="627,59" size="170,29" font="方正粗圆简体" fontSize="22" color="#2e3341" align="center" vAlign="middle" autoSize="height" text="角色名哈哈哈哈"/>
+    <image id="n9" name="n9" src="uchhnl2" pkg="0tyncec1" xy="602,136" size="232,32"/>
+    <text id="n10" name="desfsfcName" xy="602,137" pivot="0.5,0.5" size="232,29" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="信息&#xA;"/>
+    <image id="n11" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="607,165" size="234,130"/>
+    <image id="n32" name="line" src="jsucnhh" pkg="0tyncec1" xy="613,219" size="204,1"/>
+    <image id="n35" name="n35" src="mllx46" xy="732,229" size="53,30">
+      <relation target="n61" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n61" name="sortName" xy="736,232" size="45,27" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" text="暂无"/>
+    <text id="n33" name="fdsda21312s" xy="622,230" size="90,29" font="方正粗圆简体" fontSize="22" color="#2e3341" align="right" autoSize="none" text="家族："/>
+    <text id="n34" name="groupInName" xy="642,263" size="45,27" font="方正粗圆简体" fontSize="20" color="#058c9c" align="center" vAlign="middle" text="暂无"/>
+    <text id="n30" name="fdsda21s" xy="622,180" size="90,29" font="方正粗圆简体" fontSize="22" color="#2e3341" align="right" autoSize="none" text="等级："/>
+    <text id="n31" name="level" xy="736,180" size="67,27" font="方正粗圆简体" fontSize="20" color="#058c9c" autoSize="height" text="99级"/>
+    <image id="n14" name="n14" src="uchhnl2" pkg="0tyncec1" xy="603,305" size="232,32"/>
+    <text id="n15" name="descName" xy="602,307" pivot="0.5,0.5" size="232,29" font="方正粗圆简体" fontSize="20" color="#2e3341" align="center" vAlign="middle" ubb="true" autoSize="none" text="属性&#xA;"/>
+    <image id="n16" name="proListBg" src="gk0nni9" pkg="0tyncec1" xy="601,335" size="234,255"/>
+    <list id="n48" name="propList" xy="608,341" size="220,242" overflow="scroll" margin="0,0,0,0" defaultItem="ui://0oudtuxpcws9h"/>
+    <component id="n49" name="touch" src="t5hdnfs" pkg="0tyncec1" xy="189,92" size="275,392"/>
+    <text id="n52" name="title" xy="367,-1" size="130,41" font="方正粗圆简体" fontSize="20" color="#fff9e2" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#414e6d" singleLine="true" text="信息">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n59" name="btn_vipIcon" src="t5hdnfs" pkg="0tyncec1" xy="287,51" size="47,47"/>
+    <component id="n60" name="btnClose" src="zk42nn7" pkg="0tyncec1" xy="742,-16" size="143,80">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+  </displayList>
+</component>n1gap.xml|187|<component size="287,2">
+  <displayList>
+    <image id="n0" name="icon" src="n1gao" xy="0,0">
+      <relation target="" sidePair="width-width"/>
+    </image>
+  </displayList>
+</component>n1gaq.xml|1112|<component size="546,420" opaque="false">
+  <controller name="c1" pages="0,,1,,2,,3,,4,,5,,6,,7,,8," selected="0"/>
+  <displayList>
+    <component id="n0" name="item1" src="n1gar" xy="0,0">
+      <Button controller="c1" page="1"/>
+    </component>
+    <component id="n1" name="item2" src="n1gar" xy="-1,100">
+      <Button controller="c1" page="2"/>
+    </component>
+    <component id="n2" name="item3" src="n1gar" xy="-1,200">
+      <Button controller="c1" page="3"/>
+    </component>
+    <component id="n3" name="item4" src="n1gar" xy="452,0">
+      <Button controller="c1" page="4"/>
+    </component>
+    <component id="n5" name="item5" src="n1gar" xy="452,100">
+      <Button controller="c1" page="5"/>
+    </component>
+    <component id="n6" name="item6" src="n1gar" xy="452,200">
+      <Button controller="c1" page="6"/>
+    </component>
+    <component id="n7" name="item7" src="n1gar" xy="-1,300">
+      <Button controller="c1" page="7"/>
+    </component>
+    <component id="n8" name="item8" src="n1gar" xy="452,300">
+      <Button controller="c1" page="8"/>
+    </component>
+  </displayList>
+</component>n1gar.xml|1248|<component size="90,90" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n2" name="quality" xy="0,0" size="90,90" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <loader id="n9" name="shuiYin" xy="1,1" size="90,90" url="ui://0oudtuxpgv0l3m" align="center" vAlign="middle"/>
+    <loader id="n5" name="icon" xy="6,6" size="78,78" align="center" vAlign="middle"/>
+    <text id="n3" name="levelLabel" xy="63,67" size="19,16" font="方正粗圆简体" fontSize="12" color="#fefeff" align="center" vAlign="middle" text="00">
+      <relation target="n2" sidePair="right-right"/>
+    </text>
+    <loader id="n4" name="conpareFlag" xy="2,2" size="16,17" url="ui://0tyncec1s7fmnlr" fill="scale"/>
+    <image id="n8" name="mask" src="uwggde" pkg="0tyncec1" xy="-6,-6">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n10" name="wakanLevel" xy="16,58" size="68,28" font="ui://0tyncec1hhg0eg" fontSize="12" align="right" vAlign="middle" autoSize="none" text="+11"/>
+    <image id="n11" name="red" src="xnis91" pkg="0tyncec1" xy="72,0"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>package.xml|3771|<packageDescription id="0oudtuxp" name="PlayerInfo">
+  <resources>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <component id="cws9g" name="PropInfo" exported="true" size="349,615"/>
+    <component id="cws9h" name="PropItem" exported="true" size="295,23"/>
+    <component id="cws9n" name="PropInfoBtn" exported="true" size="153,52"/>
+    <component id="e0wd42" name="PlayerEquipListPage" size="388,617"/>
+    <component id="fqe012" name="CloseEquipListBtn" size="43,44"/>
+    <component id="fqe0t" name="PlayerEquipSkepList" exported="true" size="371,611"/>
+    <component id="fqe0v" name="PlayerEquipSkepListItem" exported="true" size="366,114"/>
+    <component id="gv0l3p" name="upORdown" size="23,27"/>
+    <component id="mllx44" name="OtherPlayerInfoPanel" exported="true" size="876,632"/>
+    <component id="n1gap" name="PropItemSplitLine" exported="true" size="287,2"/>
+    <component id="n1gaq" name="PlayerEquipList" exported="true" size="546,420"/>
+    <component id="n1gar" name="PlayerEquipItem" exported="true" size="90,90"/>
+    <component id="pdi62" name="PlayerInfoUI" exported="true" size="1334,750"/>
+    <component id="pdi68" name="PlayerRole" exported="true" size="226,750"/>
+    <component id="pdi6b" name="Touch" exported="true" size="100,20"/>
+    <component id="pdi6c" name="ExpProbar" exported="true" size="265,24"/>
+    <component id="qjex3x" name="DescBaseProUI" exported="true" size="372,244"/>
+    <component id="qjex3y" name="DescSpecialProUI" exported="true" size="372,292"/>
+    <component id="qjex3z" name="InfoItem" size="275,25"/>
+    <component id="qjex41" name="SimpleCloseBtn" size="43,44"/>
+    <component id="wirr3r" name="SpecialPropBtn" size="97,30"/>
+    <image id="ckrk14" name="右边底" size="387,624" exported="true"/>
+    <image id="cws9i" name="战力底" size="308,44" exported="true" scale="9grid" scale9grid="77,11,154,22"/>
+    <image id="cws9j" name="文字底" size="32,31" scale="9grid" scale9grid="8,8,16,15" exported="true"/>
+    <image id="cws9k" name="帮会图标底" size="305,80" exported="true"/>
+    <image id="cws9l" name="帮会图标" size="95,72" exported="true"/>
+    <image id="cws9m" name="灰色按钮" size="153,52" exported="true"/>
+    <image id="fqe010" name="花纹" size="64,7" exported="true"/>
+    <image id="fqe0z" name="花纹2" size="64,7" exported="true"/>
+    <image id="gv0l3g" name="clothes_s" size="53,42" exported="true"/>
+    <image id="gv0l3h" name="shoes_s" size="35,44" exported="true"/>
+    <image id="gv0l3i" name="necklace_s" size="41,39" exported="true"/>
+    <image id="gv0l3k" name="ring_s" size="38,42" exported="true"/>
+    <image id="gv0l3l" name="sword_s" size="36,47" exported="true"/>
+    <image id="gv0l3m" name="wrist_s" size="38,37" exported="true"/>
+    <image id="gv0l3n" name="cap_s" size="36,45" exported="true"/>
+    <image id="gv0l3o" name="shield_s" size="38,44" exported="true"/>
+    <image id="mllx45" name="zhanlidi" size="252,33"/>
+    <image id="mllx46" name="banghuihuawen" size="77,30" scale="9grid" scale9grid="20,8,37,14"/>
+    <image id="n1gao" name="分割线" size="299,2" exported="true"/>
+    <image id="pdi64" name="装备2" size="57,83" exported="true"/>
+    <image id="pdi65" name="装备" size="57,83" exported="true"/>
+    <image id="pdi66" name="锤子" size="56,55" exported="true"/>
+    <image id="pdi67" name="锤子2" size="63,63" exported="true"/>
+    <image id="pdi6d" name="进度条" size="257,12" exported="true"/>
+    <image id="pdi6e" name="进度条2" size="134,10" scale="9grid" scale9grid="34,0,68,10" exported="true"/>
+    <image id="pdi6f" name="进度条底" size="347,28" exported="true"/>
+    <image id="qjex3w" name="底（387X320）" size="41,320" scale="9grid" scale9grid="11,80,19,160"/>
+    <image id="ueo73q" name="背景(2)" size="456,440" exported="true"/>
+  </resources>
+</packageDescription>pdi62.xml|1628|<component size="1334,750" opaque="false">
+  <displayList>
+    <image id="n18" name="bg" src="ueo73q" xy="254,183"/>
+    <image id="n13" name="verLine" src="jsucnhg" pkg="0tyncec1" xy="751,108"/>
+    <component id="n6" name="playerRole" src="pdi68" xy="354,162" size="226,586" group="n9"/>
+    <component id="n8" name="expProBar" src="pdi6c" xy="819,681" group="n9">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <image id="n10" name="barBg" src="pdi6f" xy="746,674" group="n9"/>
+    <text id="n11" name="playerLevel" xy="758,672" size="53,30" group="n9" font="方正粗圆简体" fontSize="24" text="??级"/>
+    <group id="n9" name="playerProp" xy="354,162" size="739,586" advanced="true"/>
+    <component id="n12" name="propInfo" src="cws9g" xy="764,102"/>
+    <component id="n14" name="playerEquipList" src="n1gaq" xy="178,201" size="546,420"/>
+    <image id="n15" name="nameBg" src="w3wlnld" pkg="0tyncec1" xy="166,126" size="225,36" group="n17"/>
+    <text id="n16" name="playerName" xy="238,131" size="77,30" group="n17" font="方正粗圆简体" fontSize="24" color="#2e3341" text="角色名">
+      <relation target="n15" sidePair="center-center"/>
+    </text>
+    <component id="n20" name="btnVipIcon" src="t5hdnfs" pkg="0tyncec1" xy="394,106" group="n17"/>
+    <group id="n17" name="playerNameGroup" xy="166,106" size="292,64" advanced="true"/>
+    <component id="n19" name="equipListPage" src="e0wd42" xy="712,116" size="388,617"/>
+    <text id="n21" name="labelPlayerUID" xy="160,167" size="238,27" font="方正粗圆简体" fontSize="18" color="#2e3341" align="center" vAlign="middle" autoSize="none" text=""/>
+  </displayList>
+</component>pdi68.xml|209|<component size="226,750">
+  <displayList>
+    <graph id="n2" name="Role3D" xy="69,640" size="100,100"/>
+    <component id="n1" name="Touch" src="pdi6b" xy="2,31" size="226,686"/>
+  </displayList>
+</component>pdi6b.xml|171|<component size="100,20" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList/>
+  <Button/>
+</component>pdi6c.xml|420|<component size="265,24" extention="ProgressBar">
+  <displayList>
+    <image id="n0" name="bg" src="pdi6d" xy="2,4"/>
+    <image id="n1" name="bar" src="pdi6e" xy="4,5" size="254,10"/>
+    <text id="n2" name="title" xy="166,-27" size="95,26" font="方正粗圆简体" fontSize="22" text="77/11111">
+      <relation target="" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>qjex3x.xml|659|<component size="372,244">
+  <displayList>
+    <image id="n3" name="n3" src="qjex3w" xy="0,0" size="372,249"/>
+    <text id="n0" name="n0" xy="76,31" size="221,34" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" autoSize="none" text="基础属性"/>
+    <image id="n1" name="n1" src="fqe010" xy="57,44"/>
+    <image id="n2" name="n2" src="fqe0z" xy="243,44"/>
+    <image id="n4" name="BaseBg" src="cws9j" xy="27,74" size="320,153"/>
+    <list id="n7" name="list" xy="38,89" size="299,123" overflow="scroll" margin="0,0,0,0" defaultItem="ui://0oudtuxpqjex3z"/>
+    <component id="n12" name="closeBtn" src="qjex41" xy="311,25"/>
+  </displayList>
+</component>qjex3y.xml|691|<component size="372,292">
+  <displayList>
+    <image id="n0" name="n0" src="qjex3w" xy="0,0" size="372,292"/>
+    <text id="n1" name="n1" xy="73,24" size="221,34" font="方正粗圆简体" fontSize="24" align="center" vAlign="middle" autoSize="none" text="特殊属性"/>
+    <image id="n2" name="n2" src="fqe010" xy="54,37"/>
+    <image id="n3" name="n3" src="fqe0z" xy="240,37"/>
+    <component id="n11" name="closeBtn" src="qjex41" xy="311,19"/>
+    <image id="n4" name="BaseBg" src="cws9j" xy="28,75" size="320,176"/>
+    <list id="n7" name="list" xy="38,88" size="300,160" overflow="scroll" margin="0,0,0,0" lineGap="2" defaultItem="ui://0oudtuxpcws9h" autoItemSize="false"/>
+  </displayList>
+</component>qjex3z.xml|211|<component size="275,25">
+  <displayList>
+    <text id="n0" name="desc" xy="0,0" size="275,24" font="方正粗圆简体" fontSize="18" ubb="true" autoSize="height" text="力量:影响物理攻击和少量生命值&#xA;"/>
+  </displayList>
+</component>qjex41.xml|176|<component size="43,44" extention="Button">
+  <displayList>
+    <image id="n6" name="closeBtn" src="s9mpnqe" xy="0,0" pkg="0tyncec1"/>
+  </displayList>
+  <Button/>
+</component>wirr3r.xml|365|<component size="97,30" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="icon" src="gk0nnie" pkg="0tyncec1" xy="0,0" size="97,30"/>
+    <text id="n2" name="title" xy="9,3" size="77,22" font="方正粗圆简体" fontSize="18" text="特殊属性"/>
+  </displayList>
+  <Button/>
+</component>

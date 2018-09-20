@@ -1,0 +1,32 @@
+f3gzd.xml|530|<component size="1334,750">
+  <displayList>
+    <graph id="n7" name="mask" xy="0,0" size="1334,750" alpha="0.65" type="rect" fillColor="#ff000000"/>
+    <image id="n0" name="n0" src="hkz0l" xy="7,67"/>
+    <component id="n2" name="btnClose" src="skqrnkp" pkg="0tyncec1" xy="1117,123" size="60,52">
+      <Button icon="ui://gyl54s25hkz0g"/>
+    </component>
+    <list id="n3" name="itemList" xy="400,221" size="750,434" overflow="scroll" margin="4,0,0,0" lineGap="7" defaultItem="ui://gyl54s25f3gzf"/>
+  </displayList>
+</component>f3gzf.xml|607|<component size="748,113">
+  <displayList>
+    <image id="n4" name="n4" src="hkz0h" xy="0,0" size="748,113"/>
+    <image id="n11" name="n11" src="hkz0j" xy="36,5"/>
+    <loader id="n5" name="dayIcon" xy="32,36" size="107,50" align="center" vAlign="middle"/>
+    <component id="n6" name="btnLQ" src="skqrnkp" pkg="0tyncec1" xy="592,32" size="122,52">
+      <Button title="领取" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <image id="n9" name="yiLqImg" src="hkz0k" xy="602,33"/>
+    <component id="n8" name="rewardCon" src="t5hdnfx" pkg="0tyncec1" xy="142,9" size="449,95"/>
+  </displayList>
+</component>package.xml|657|<packageDescription id="gyl54s25" name="SevenLogining">
+  <resources>
+    <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
+    <component id="f3gzd" name="SevenLoginPanel" exported="true" size="1334,750"/>
+    <component id="f3gzf" name="DayItem" exported="true" size="748,113"/>
+    <image id="hkz0g" name="btn_guanbi" size="25,25"/>
+    <image id="hkz0h" name="752X115" size="96,115" scale="9grid" scale9grid="39,54,17,5"/>
+    <image id="hkz0j" name="zhuangshi" size="99,103"/>
+    <image id="hkz0k" name="yilingqu" size="100,46"/>
+    <image id="hkz0l" name="di" size="1172,623" scale9grid="600,239,279,214"/>
+  </resources>
+</packageDescription>

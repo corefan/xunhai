@@ -1,0 +1,33 @@
+package.xml|416|<packageDescription id="vgwyw6jp" name="Strong">
+  <resources>
+    <atlas id="atlas0" size="256,128" file="atlas0.png"/>
+    <component id="reao4" name="StrongPanel" exported="true" size="1334,750"/>
+    <component id="reao6" name="ItemStrong" exported="true" size="570,107"/>
+    <image id="phrb7" name="yimanji" size="131,100"/>
+    <image id="reao5" name="2001" size="72,74"/>
+  </resources>
+</packageDescription>reao4.xml|795|<component size="1334,750">
+  <displayList>
+    <image id="n0" name="n0" src="x0coniw" pkg="0tyncec1" xy="223,89" size="876,558"/>
+    <image id="n2" name="n2" src="j67wnhe" pkg="0tyncec1" xy="469,143" size="582,455"/>
+    <text id="n6" name="title" xy="612,94" size="96,35" font="华康圆体W7(P)" fontSize="26" color="#cccccc" align="center" vAlign="middle" autoSize="none" text="提升"/>
+    <list id="n3" name="list" xy="475,150" size="571,445" overflow="hidden" margin="0,0,0,0" lineGap="3" defaultItem="ui://vgwyw6jpreao6"/>
+    <component id="n11" name="btnClose" src="skqrnkp" pkg="0tyncec1" xy="944,74" size="135,80">
+      <Button icon="ui://0tyncec1u0dhc1"/>
+    </component>
+    <image id="n12" name="n12" src="gk0nnid" pkg="0tyncec1" xy="447,133" size="16,485"/>
+  </displayList>
+</component>reao6.xml|1095|<component size="570,107">
+  <displayList>
+    <image id="n4" name="n4" src="keyenis" pkg="0tyncec1" xy="0,0" size="569,107"/>
+    <loader id="n5" name="icon" xy="32,12" size="83,85" url="ui://vgwyw6jpreao5" fill="scale"/>
+    <text id="n7" name="title" xy="131,19" size="216,34" font="华康圆体W7(P)" fontSize="24" color="#2e3341" vAlign="middle" leading="0" ubb="true" autoSize="none" text="注灵"/>
+    <text id="n8" name="des" xy="132,52" size="271,32" font="华康圆体W7(P)" fontSize="18" color="#058c9c" vAlign="middle" leading="0" autoSize="none" text="平均等级：10"/>
+    <component id="n9" name="btnGo" src="ipc7nq9" pkg="0tyncec1" xy="416,28" size="114,53">
+      <Button title="前往" titleColor="#000000" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+    <image id="n11" name="isUpIcon" src="phrb7" xy="406,4"/>
+    <text id="n12" name="isUpText" xy="276,52" size="96,32" font="华康圆体W7(P)" fontSize="18" color="#ed0101" vAlign="middle" autoSize="none" text="建议提升"/>
+    <graph id="n10" name="effect" xy="284,54" pivot="0.5,0.5" anchor="true" size="559,99" touchable="false"/>
+  </displayList>
+</component>

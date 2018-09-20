@@ -1,0 +1,54 @@
+hudk9.xml|2405|<component size="1334,750">
+  <displayList>
+    <image id="n26" name="n3" src="gk0nni9" pkg="0tyncec1" xy="146,114" size="193,595" group="n10"/>
+    <image id="n4" name="n4" src="hudk3" xy="361,114" size="850,596" group="n10"/>
+    <image id="n5" name="n5" src="gk0nnid" pkg="0tyncec1" xy="340,110" group="n10"/>
+    <image id="n27" name="n6" src="f6sann9" pkg="0tyncec1" xy="364,133" group="n10"/>
+    <image id="n28" name="n7" src="f6sann9" pkg="0tyncec1" xy="364,275" group="n10"/>
+    <image id="n29" name="n8" src="f6sann9" pkg="0tyncec1" xy="364,463" group="n10"/>
+    <group id="n10" name="group_bg" xy="146,110" size="1065,607" advanced="true"/>
+    <text id="n11" name="label_title_task_target" xy="393,140" size="671,28" group="n19" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text="任务目标"/>
+    <text id="n12" name="label_task_name" xy="396,179" size="668,83" group="n19" font="方正粗圆简体" fontSize="22" color="#545e6c" leading="0" ubb="true" autoSize="none" text=""/>
+    <group id="n19" name="group_task_target" xy="393,140" size="671,122" advanced="true"/>
+    <text id="n13" name="label_title_task_info" xy="393,282" size="671,28" group="n20" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text="任务资料"/>
+    <text id="n14" name="label_task_info" xy="395,320" size="668,143" group="n20" font="方正粗圆简体" fontSize="22" color="#545e6c" leading="0" ubb="true" autoSize="none" text=""/>
+    <group id="n20" name="group_task_info" xy="393,282" size="671,181" advanced="true"/>
+    <text id="n15" name="label_title_task_awards" xy="397,472" size="671,28" group="n21" font="方正粗圆简体" fontSize="24" color="#2e3341" vAlign="middle" ubb="true" autoSize="height" text="可得奖励"/>
+    <component id="n16" name="list_award" src="hudki" xy="393,517" group="n21"/>
+    <group id="n21" name="group_task_awards" xy="393,472" size="702,141" advanced="true"/>
+    <component id="n30" name="list_tree" src="t5hdnfw" pkg="0tyncec1" xy="150,119" size="186,586"/>
+    <component id="n31" name="button_abandon" src="l2b8nnq" pkg="0tyncec1" xy="464,648" size="130,46">
+      <Button title="放弃" icon="ui://0tyncec1gk0nnif"/>
+    </component>
+    <component id="n32" name="button_goto" src="l2b8nnq" pkg="0tyncec1" xy="959,648" size="130,46">
+      <Button title="前往" icon="ui://0tyncec1gk0nnie"/>
+    </component>
+  </displayList>
+</component>hudkh.xml|550|<component size="90,90" extention="Button">
+  <displayList>
+    <loader id="n0" name="loader_quality" xy="0,0" size="90,90"/>
+    <loader id="n1" name="icon" xy="0,0" size="90,90" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+      <relation target="n0" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n2" name="title" xy="4,67" size="81,19" font="方正粗圆简体" fontSize="12" align="right" autoSize="none" text="122&#xA;"/>
+  </displayList>
+  <Button/>
+</component>hudki.xml|168|<component size="702,96">
+  <displayList>
+    <list id="n0" name="list" xy="0,0" size="702,96" layout="row" margin="0,0,0,0" colGap="11"/>
+  </displayList>
+</component>package.xml|504|<packageDescription id="ioaemb0c" name="Task">
+  <resources>
+    <atlas id="atlas0" size="1024,512" file="atlas0.png"/>
+    <component id="hudk9" name="TaskPanel" exported="true" size="1334,750"/>
+    <component id="hudkh" name="AwardItem" exported="true" size="90,90"/>
+    <component id="hudki" name="AwardList" exported="true" size="702,96"/>
+    <component id="v8b1q" name="TaskEffect" exported="true" size="1,1"/>
+    <image id="hudk3" name="bg" size="711,477"/>
+  </resources>
+</packageDescription>v8b1q.xml|128|<component size="1,1">
+  <displayList>
+    <graph id="n1" name="effectModel" xy="0,0" size="1,1"/>
+  </displayList>
+</component>

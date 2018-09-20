@@ -1,0 +1,47 @@
+k3gy1.xml|409|<component size="14,26" opaque="false" extention="Label">
+  <displayList>
+    <richtext id="n1" name="title" xy="2,1" size="10,25" touchable="false" font="方正粗圆简体" fontSize="19" color="#ffffff" align="center" vAlign="middle" leading="2" ubb="true" shadowColor="#000000" shadowOffset="2,2" text="">
+      <relation target="" sidePair="middle-middle,center-center"/>
+    </richtext>
+  </displayList>
+</component>k3gy8.xml|229|<component size="96,6" extention="ProgressBar">
+  <displayList>
+    <image id="n2" name="bg" src="zaobb" xy="0,-2" size="95,10"/>
+    <image id="n1" name="bar" src="k3gy6" xy="2,0"/>
+  </displayList>
+  <ProgressBar/>
+</component>k3gy9.xml|163|<component size="91,4" extention="ProgressBar">
+  <displayList>
+    <image id="n4" name="bar" src="zaobg" xy="0,0"/>
+  </displayList>
+  <ProgressBar/>
+</component>lvfkj.xml|455|<component size="200,24" extention="Label">
+  <displayList>
+    <image id="n3" name="bg" src="vwzwk" xy="93,0" size="1,20">
+      <relation target="n0" sidePair="width-width,center-center"/>
+    </image>
+    <text id="n0" name="title" xy="95,1" size="10,23" fontSize="16" color="#ffffff" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+</component>package.xml|955|<packageDescription id="bzlrokop" name="Map">
+  <resources>
+    <atlas id="atlas0" size="128,32" file="atlas0.png"/>
+    <component id="k3gy1" name="HeadName" exported="true" size="14,26"/>
+    <component id="k3gy8" name="HpBar" exported="true" size="96,6"/>
+    <component id="k3gy9" name="MpBar" exported="true" size="91,4"/>
+    <component id="lvfkj" name="DropItem" exported="true" size="200,24"/>
+    <component id="zaobf" name="HpBarOther" exported="true" size="91,7"/>
+    <image id="k3gy6" name="progress_small_player" size="91,7" scale="9grid" scale9grid="2,1,87,5"/>
+    <image id="vwzwk" name="dropbg" size="16,13" scale="9grid" scale9grid="3,3,10,7"/>
+    <image id="zaobb" name="bg" size="6,10" scale="9grid" scale9grid="1,1,4,8"/>
+    <image id="zaobe" name="otherhp" size="91,7" scale="9grid" scale9grid="3,2,3,3"/>
+    <image id="zaobg" name="playermp" size="91,4" scale="9grid" scale9grid="2,1,87,2"/>
+  </resources>
+</packageDescription>zaobf.xml|230|<component size="91,7" extention="ProgressBar">
+  <displayList>
+    <image id="n12" name="bg" src="zaobb" xy="-2,0" size="95,11"/>
+    <image id="n9" name="bar" src="zaobe" xy="0,2"/>
+  </displayList>
+  <ProgressBar/>
+</component>
