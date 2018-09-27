@@ -17,7 +17,7 @@ public class LoginLog implements Serializable{
 	/** 自增ID*/
 	private long logId; 	
 	/** 账号编号*/
-	private int userId;
+	private long userId;
 	/** 登录时间*/
 	private Date createTime;
 	/** 运营商*/
@@ -31,10 +31,10 @@ public class LoginLog implements Serializable{
 	public void setLogId(long logId) {
 		this.logId = logId;
 	}
-	public int getUserId() {
+	public long getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 	public Date getCreateTime() {

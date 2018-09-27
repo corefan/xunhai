@@ -18,8 +18,9 @@ import com.util.LogUtil;
  * @author ken
  * @date 2016-12-27
  */
-@SuppressWarnings("serial")
 public class StopSeverServlet extends BaseServlet {
+
+	private static final long serialVersionUID = -6183210645705622841L;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -32,9 +33,8 @@ public class StopSeverServlet extends BaseServlet {
 			throws ServletException, IOException {
 		
 		initReqResp(req, resp);
-		
-		JSONObject jsonObject = dealMsg(req);
-		if (jsonObject == null) return;
+		JSONObject jsonObject = this.dealMsg(req);
+		if(jsonObject == null) return;
 		
 		try {
 			String time = jsonObject.getString("time");
@@ -44,7 +44,6 @@ public class StopSeverServlet extends BaseServlet {
 			if(!_key.equals(key)){
 				return;
 			}
-			
 			LoginServer.getInstance().stopServer();
 		} catch (JSONException e) {
 			LogUtil.error("停服异常:",e);

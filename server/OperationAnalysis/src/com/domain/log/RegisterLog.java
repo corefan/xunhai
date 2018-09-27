@@ -15,7 +15,7 @@ public class RegisterLog implements Serializable {
 	/** 自增编号*/
 	private long logId;
 	/** 账户编号*/
-	private int userId;
+	private long userId;
 	/** 创建时间*/
 	private Date createTime;
 	/** 运营商*/
@@ -31,11 +31,12 @@ public class RegisterLog implements Serializable {
 		this.logId = logId;
 	}
 
-	public int getUserId() {
+
+	public long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(int userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 

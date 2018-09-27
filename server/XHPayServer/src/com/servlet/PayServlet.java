@@ -102,6 +102,9 @@ public class PayServlet extends AbstractServlet {
 			}else if(Config.AGENT.equals("zhongfu")){
 				//中富
 				this.zhongfuPay(req, resp);
+			}else if(Config.AGENT.equals("juliang")){
+				//中富-聚量
+				this.juliangPay(req, resp);
 			}
 		} catch (Exception e) {
 			LogUtil.error(e);
@@ -333,6 +336,9 @@ public class PayServlet extends AbstractServlet {
 		
 		String reqUrl = req.getQueryString();
 		
+		if(reqUrl == null) return;
+		
+		System.out.println("reqUrl: "+reqUrl);
 		synchronized (reqUrl) {
 			String data = req.getParameter("data");
 			if(data == null || "".equals(data.trim())){
@@ -382,7 +388,7 @@ public class PayServlet extends AbstractServlet {
 			
 			if(mySign.equalsIgnoreCase(sign)){
 				if(trade_status.equals("TRADE_SUCCESS")){
-			        int rs = this.sucPay(content, "0", Integer.valueOf(price), out_trade_no, game_trade_no, reqUrl);
+			        int rs = this.sucPay(content, "0", Integer.valueOf(price), out_trade_no, null, reqUrl);
 			        if(rs == 0){
 			        	this.postData(resp, "success");
 			        }else{
@@ -404,6 +410,8 @@ public class PayServlet extends AbstractServlet {
 	private void zhongfuPay(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, Exception {
 		
 		String reqUrl = req.getQueryString();
+		
+		System.out.println("reqUrl:  "+reqUrl);
 		
 		if(reqUrl == null) return;
 		
@@ -427,7 +435,7 @@ public class PayServlet extends AbstractServlet {
 							String userId = req.getParameter("Account"); //Uid
 							if(userId != null){
 								try {
-									appid = HttpUtil.httpsRequest(baseAgentConfig.getAccountUrl() + PathConstant.APPID, "?userId="+userId, "application/x-www-form-urlencoded");
+									appid = HttpUtil.httpsRequest(baseAgentConfig.getAccountUrl() + PathConstant.APPID, "userId="+userId, "application/x-www-form-urlencoded");
 								} catch (Exception e) {
 									LogUtil.error("获取登录appid异常：", e);
 									return;
@@ -436,7 +444,7 @@ public class PayServlet extends AbstractServlet {
 								String userName = req.getParameter("userId"); //充值用户账号
 								if(userName != null){
 									try {
-										appid = HttpUtil.httpsRequest(baseAgentConfig.getAccountUrl() + PathConstant.APPID, "?userName="+userName, "application/x-www-form-urlencoded");
+										appid = HttpUtil.httpsRequest(baseAgentConfig.getAccountUrl() + PathConstant.APPID, "userName="+userName, "application/x-www-form-urlencoded");
 									} catch (Exception e) {
 										LogUtil.error("获取登录appid异常：", e);
 										return;
@@ -645,7 +653,9 @@ public class PayServlet extends AbstractServlet {
 					params.put("payOrderId", payOrderId);
 					params.put("payPrice", payPrice);
 					params.put("payStatus", payStatus);
-					params.put("applePay", applePay);
+					if(applePay != null){
+						params.put("applePay", applePay);
+					}
 					
 					List<String> keys = new ArrayList<String>(params.keySet());
 					Collections.sort(keys);
@@ -660,7 +670,7 @@ public class PayServlet extends AbstractServlet {
 					if(appid.equals("10012")){
 						payKey = "FNAFOUAPTJODFKPN";
 					}
-					String mdsign = MD5Service.encryptToLowerString(preStr + payKey);
+					String mdsign = MD5Service.encryptToLowerString(preStr + "&appKey="+payKey);
 					
 			        //签名失败
 			        if(!mdsign.equalsIgnoreCase(sign))
@@ -674,7 +684,7 @@ public class PayServlet extends AbstractServlet {
 			        if(rs == 0){
 			        	this.postData(resp, "0");
 			        }else{
-			        	this.postData(resp, "ERROR");
+			        	this.postData(resp, "0"); //因为他们除了0   其他都会继续回调
 			        }
 				}else if(appid.equals("6327") || appid.equals("6328") 
 						|| appid.equals("6333") || appid.equals("6010")){ //太古封神 太古伏魔录 武动九州 仙侠幻梦录
@@ -723,6 +733,85 @@ public class PayServlet extends AbstractServlet {
 				}
 			}
 		}
+	}
+	
+	/**
+	 * 中富-聚量支付回调
+	 */
+	private void juliangPay(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, Exception {
+		
+		String reqUrl = req.getQueryString();
+		
+		if(reqUrl == null) return;
+		
+		synchronized (reqUrl) {
+			String app = req.getParameter("app"); //十六进制字符串形式的应用 ID
+			String cbi = req.getParameter("cbi"); //支付信息 
+			String ct = req.getParameter("ct"); //支付完成时间
+			String fee = req.getParameter("fee"); //金额（分）
+			String pt = req.getParameter("pt"); //付费时间
+			String sdk = req.getParameter("sdk");     //渠道在易接服务器的 ID
+			String ssid = req.getParameter("ssid"); // cp订单号
+			String st = req.getParameter("st"); //是否支付成功标志， 1 标示支付成功
+			String tcd = req.getParameter("tcd"); //订单在易接服务器上的订单号
+			String uid = req.getParameter("uid"); //渠道平台上的唯一标记
+			String ver = req.getParameter("ver"); //协议版本号
+			String sign = req.getParameter("sign"); //签名
+			
+			
+			Map<String, String> params = new HashMap<String, String>();
+			params.put("app", app);
+			params.put("cbi", cbi);
+			params.put("ct", ct);
+			params.put("fee", fee);
+			params.put("pt", pt);
+			params.put("sdk", sdk);
+			params.put("ssid", ssid);
+			params.put("st", st);
+			params.put("tcd", tcd);
+			params.put("uid", uid);
+			params.put("ver", ver);
+			
+			List<String> keys = new ArrayList<String>(params.keySet());
+			Collections.sort(keys);
+			
+			String preStr = new String();
+			for(String key : keys){
+				preStr += String.format("%s=%s&", key, params.get(key));
+			}
+			preStr = preStr.substring(0, preStr.length() - 1);
+			
+			String appid = "3";
+			String payKey = "RJ205B7RCT4CP5H0GL5PMQ27FLG57VZF";
+			if(app.equals("9B6403A0C0DE0D67")){
+				payKey = "TQWA7SHLXQWWQALQCBVNWCVTZI34BKK6";
+				appid = "4";
+			}
+			String mdsign = MD5Service.encryptToLowerString(preStr + payKey);
+			
+	        //签名失败
+	        if(!mdsign.equalsIgnoreCase(sign))
+	        {
+	        	LogUtil.error("中富-聚量运营支付  签名不正确 appid="+appid);
+				this.postData(resp, "FAILURE");
+				return;
+	        }
+	        
+	        
+			if(!st.equals("1")){
+		       	LogUtil.error("中富-聚量运营支付  支付不成功 appid="+appid+" st="+st);
+				this.postData(resp, "FAILURE");
+				return;
+			}
+			
+	        int rs = this.sucPay(cbi, appid, Integer.valueOf(fee) / 100, tcd, ssid, reqUrl);
+	        if(rs == 0){
+	        	this.postData(resp, "SUCCESS");
+	        }else{
+	        	this.postData(resp, "FAILURE");
+	        }
+		}
+		
 	}
 	
 	/**

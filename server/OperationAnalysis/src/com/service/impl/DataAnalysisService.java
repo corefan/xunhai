@@ -189,7 +189,7 @@ public class DataAnalysisService implements IDataAnalysisService {
 			List<Date> findDates = DateService.findDates(startTime, endTime);
 			for(Date findDate : findDates){
 				String findDateStr = DateService.dateFormatYMD(findDate);
-				Set<Integer> registerList = new HashSet<Integer>();
+				Set<Long> registerList = new HashSet<Long>();
 				int num1= 0;
 				int num2= 0;
 				int num3= 0;
@@ -530,7 +530,7 @@ public class DataAnalysisService implements IDataAnalysisService {
 			List<Date> findDates = DateService.findDates(startTime, endTime);
 			for(Date findDate : findDates){
 				String findDateStr = DateService.dateFormatYMD(findDate);
-				Set<Integer> registerList = new HashSet<Integer>();
+				Set<Long> registerList = new HashSet<Long>();
 				int registerNum = 0;
 				int num2= 0;
 				int num3= 0;
@@ -595,11 +595,11 @@ public class DataAnalysisService implements IDataAnalysisService {
 	 * delayDay留存天数
 	 * registerList 注册的账号
 	 */
-	private int calRetain(String gSite, Date findDate,  int delayDay, Set<Integer> registerList){
+	private int calRetain(String gSite, Date findDate,  int delayDay, Set<Long> registerList){
 		int num = 0;
 		List<String> list2 = RedisUtil.getValueOfList("log@" + gSite + "@LoginLogList@"+DateService.dateFormatYMD(DateService.addDateByType(findDate, Calendar.DAY_OF_MONTH, delayDay)), 0, -1);
 		if(list2 != null){
-			Set<Integer> hasLoginIds = new HashSet<Integer>();
+			Set<Long> hasLoginIds = new HashSet<Long>();
 			for (String str : list2) {
 				LoginLog loginLog = RedisUtil.deserializelist(str, new TypeToken<LoginLog>() {});
 				if(hasLoginIds.contains(loginLog.getUserId())){
@@ -840,7 +840,7 @@ public class DataAnalysisService implements IDataAnalysisService {
 
 				Date findDate = DateService.parseDate(serverConf.getOpenServerDate());
 				String findDateStr = DateService.dateFormatYMD(findDate);
-				Set<Integer> registerList = new HashSet<Integer>();
+				Set<Long> registerList = new HashSet<Long>();
 				int registerNum = 0;
 				int num2= 0;
 				int num7= 0;
@@ -920,8 +920,8 @@ public class DataAnalysisService implements IDataAnalysisService {
 				//在线峰值
 				int onlineNum = 0;
 				
-				Set<Integer> registerList = new HashSet<Integer>();
-				Set<Integer> loginList = new HashSet<Integer>();
+				Set<Long> registerList = new HashSet<Long>();
+				Set<Long> loginList = new HashSet<Long>();
 				for (String gSite : gameSites) {
 					List<String> list = RedisUtil.getValueOfList("log@" + gSite + "@RegisterLogList@" + findDateStr, 0, -1);
 					if (list != null) {
@@ -1164,8 +1164,8 @@ public class DataAnalysisService implements IDataAnalysisService {
 				//日期
 				String findDateStr = DateService.dateFormatYMD(findDate);
 
-				Set<Integer> registerList = new HashSet<Integer>();
-				Set<Integer> loginList = new HashSet<Integer>();
+				Set<Long> registerList = new HashSet<Long>();
+				Set<Long> loginList = new HashSet<Long>();
 				for (String gSite : gameSites) {
 					List<String> list = RedisUtil.getValueOfList("log@" + gSite + "@RegisterLogList@" + findDateStr, 0, -1);
 					if (list != null) {

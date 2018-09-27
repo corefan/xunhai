@@ -267,13 +267,13 @@ public class HttpUtil {
 	        client.newCall(request).enqueue(new Callback() {
 	            @Override
 	            public void onFailure(Call call, IOException e) {
-	                LogUtil.error("okHttpPost fail:",e);
+	                //LogUtil.error("okHttpPost fail:",e);
 	            }
 
 	            @Override
 	            public void onResponse(Call call, Response response) throws IOException {
 
-	            	System.out.println(response.body().string());
+	            	//System.out.println(response.body().string());
 	            }
 	        });
 	        

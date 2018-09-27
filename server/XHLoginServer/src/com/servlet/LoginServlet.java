@@ -54,12 +54,14 @@ public class LoginServlet extends BaseServlet {
 			}else if("zhongfu".equals(Config.AGENT)){
 				//中富
 				zhongfuLogin(req, resp);
+			}else if("juliang".equals(Config.AGENT)){
+				//聚量
+				juliangLogin(req, resp);
 			}
 			
 
 		} catch (Exception e) {
 			LogUtil.error("登陆异常: ",e);
-			return;
 		}
 	}
 
@@ -190,7 +192,6 @@ public class LoginServlet extends BaseServlet {
 		String url = "http://lll.lygames.cc/index.php";
 		
 		StringBuilder param = new StringBuilder();
-		param.append("?");
 		param.append("m=index");
 		param.append("&c=user");
 		param.append("&a=Token");
@@ -310,7 +311,7 @@ public class LoginServlet extends BaseServlet {
 			String sign = MD5Service.encryptToLowerString(param.toString() + Login_Key);
 			param.append("&sign=").append(sign);
 			
-			String js = HttpUtil.httpsRequest(url, "?"+param.toString(), "application/x-www-form-urlencoded");
+			String js = HttpUtil.httpsRequest(url, param.toString(), "application/x-www-form-urlencoded");
 			if(js.equals("0")){
 				
 				this.postData(resp, this.sucLogin(Long.valueOf(uid), userName, "123456", null, 1, Integer.valueOf(appid)));
@@ -364,14 +365,13 @@ public class LoginServlet extends BaseServlet {
 				//登录失败
 				LogUtil.error("登录失败  appid："+appid);
 				result.put("result", 6);
-				this.postData(resp, result.toString());
+				this.postData(resp, result.toString());  
 				return;
 			}
 			
 			String url = "http://api.sy.7k7k.com/index.php/newUser/checkuser";
 			String key =MD5Service.encryptToLowerString(MD5Service.encryptToLowerString("api.sy.7k7k.com/index.php") + "uid="+uid+"&vkey="+token); 
 			StringBuilder param = new StringBuilder();
-			param.append("?");
 			param.append("uid="+Integer.valueOf(uid));
 			param.append("&key="+key);
 			param.append("&vkey="+token);
@@ -471,6 +471,60 @@ public class LoginServlet extends BaseServlet {
 	}
 	
 	/**
+	 * 中富-聚量登录
+	 */
+	private void juliangLogin(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException, Exception {
+		JSONObject result = new JSONObject();
+		
+		String appid = req.getParameter("appid");
+		if(appid == null){
+			//登录失败
+			LogUtil.error("juliangLogin appid："+appid);
+			result.put("result", 6);
+			this.postData(resp, result.toString());
+			return;
+		}
+		
+		if(appid.equals("3")){ 	//剑霸山河
+
+			String userName = req.getParameter("userName");
+			String token = req.getParameter("token");
+			String sdk = req.getParameter("time");
+			String app = req.getParameter("sign");
+			
+			if(userName == null || token == null || sdk == null || app == null){
+				//登录失败
+				LogUtil.error("juliangLogin登录失败  appid："+appid);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			String url = "http://sync.1sdk.cn/login/check.html";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("sdk="+sdk);
+			param.append("&app="+app);
+			param.append("&uin="+GetEncode(userName));
+			param.append("&sess="+GetEncode(token));
+			
+			System.out.println("param="+param.toString());
+			String js = HttpUtil.sendGet(url, param.toString());
+			if(js.equals("0")){
+				
+				this.postData(resp, this.sucLogin(0, userName, "123456", null, 1, Integer.valueOf(appid)));
+			}else {
+				//登录失败
+				LogUtil.error("juliangLogin登录失败 appid："+appid+" js："+js);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+			}
+		}
+	}
+	
+	
+	/**
 	 * 成功登录后
 	 * @throws Exception 
 	 */
@@ -555,4 +609,5 @@ public class LoginServlet extends BaseServlet {
 		
 		return result.toString();
 	}
+	
 }

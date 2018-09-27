@@ -16,6 +16,7 @@ import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
 import com.service.ISmsService;
+import com.util.LogUtil;
 
 
 /**
@@ -62,7 +63,7 @@ public class SmsService implements ISmsService{
 			temple.put("code", code);
 		    request.setTemplateParam(temple.toString());
 		} catch (JSONException e) {
-			e.printStackTrace();
+			LogUtil.error("sendSms 异常：", e);
 		}
         
  
@@ -103,7 +104,7 @@ public class SmsService implements ISmsService{
 			temple.put("password", password);
 		    request.setTemplateParam(temple.toString());
 		} catch (JSONException e) {
-			e.printStackTrace();
+			LogUtil.error("sendSmsRetPwd 异常：", e);
 		}
         
 
