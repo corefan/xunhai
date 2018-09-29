@@ -214,7 +214,7 @@ public class DataAnalysisService implements IDataAnalysisService {
 						String date = DateService.dateFormatYMD(DateService.addDateByType(findDate, Calendar.DAY_OF_MONTH, i));
 						List<Map<String, Object>> payMaps = payAnalysisDAO.sumNum(date, agent, gameSite);
 						for(Map<String, Object> map : payMaps){
-							int userId = Integer.valueOf(map.get("userId").toString());
+							long userId = Long.valueOf(map.get("userId").toString());
 							if(registerList.contains(userId)){
 								switch (i) {
 								case 0:
@@ -961,11 +961,11 @@ public class DataAnalysisService implements IDataAnalysisService {
 				// 新注册付费金额
 				int nMnum = 0;
 				
-				Set<Integer> payList = new HashSet<Integer>();
-				Set<Integer> nPayList = new HashSet<Integer>();
+				Set<Long> payList = new HashSet<Long>();
+				Set<Long> nPayList = new HashSet<Long>();
 				List<Map<String, Object>> payMaps = payAnalysisDAO.sumNum(findDateStr, agent, gameSite);
 				for(Map<String, Object> map : payMaps){
-					int userId = Integer.valueOf(map.get("userId").toString());
+					long userId = Long.valueOf(map.get("userId").toString());
 					int money = Integer.valueOf(map.get("money").toString());
 					
 					mnum += money;

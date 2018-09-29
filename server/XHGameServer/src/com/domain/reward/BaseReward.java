@@ -17,7 +17,9 @@ public class BaseReward implements Serializable{
 	private int condition;	
 	/**领奖限制条件*/
 	private int resCondition;
-	/**奖励*/	 
+	/** 奖励描述*/
+	private String des;
+	/**奖励*/	
 	private String reward;
 	private List<Reward> rewardList;
 	
@@ -56,5 +58,11 @@ public class BaseReward implements Serializable{
 	}
 	public void setResCondition(int resCondition) {
 		this.resCondition = resCondition;
+	}
+	public String getDes() {
+		return des;
+	}
+	public void setDes(String des) {
+		this.des = des;
 	}
 }

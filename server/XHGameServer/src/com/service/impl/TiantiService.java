@@ -1092,7 +1092,7 @@ public class TiantiService implements ITiantiService {
 		BaseMap baseMap = serviceCollection.getSceneService().getBaseMap(sceneModel.getMapId());
 		for(Reward reward : rewardList){
 			index = battleService.createDrop(dropItems, "", baseDropItem.getPosList().get(0),  baseDropItem.getPosList().get(1), 
-					baseDropItem.getPosList().get(2), reward.getType(), reward.getId(), reward.getNum(), 0, null, index, baseMap,
+					baseDropItem.getPosList().get(2), reward.getType(), reward.getId(), reward.getNum(), reward.getBlind(), 0, null, index, baseMap,
 					sceneModel,	70, 0);
 		}
 		

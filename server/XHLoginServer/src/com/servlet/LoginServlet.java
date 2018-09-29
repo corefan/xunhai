@@ -2,6 +2,7 @@ package com.servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -175,46 +176,136 @@ public class LoginServlet extends BaseServlet {
 	private void yunyouLogin(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException, Exception {
 		
-		String appid = req.getParameter("appid");
-		String userName = req.getParameter("userName");
-		String token = req.getParameter("token");
-		
 		JSONObject result = new JSONObject();
 		
-		if(userName == null || "".equals(userName.trim()) 
-		   || token == null || "".equals(token.trim())){
-			//登录失败
-			result.put("result", 6);
-			this.postData(resp, result.toString());
-			return;
-		}
+		String appid = req.getParameter("appid");
 		
-		String url = "http://lll.lygames.cc/index.php";
-		
-		StringBuilder param = new StringBuilder();
-		param.append("m=index");
-		param.append("&c=user");
-		param.append("&a=Token");
-		param.append("&uid=").append(userName);
-		param.append("&token=").append(token);
-		
-		String js = HttpUtil.sendGet(url, param.toString());
-		if(js == null){
-			//登录失败
-			result.put("result", 6);
-			this.postData(resp, result.toString());
-			return;
-		}
-		
-		JSONObject resultJson = new JSONObject(js);
-		if(resultJson.getString("isSuccess") .equals("1")){
+		if(appid.equals("1") || appid.equals("2") || appid.equals("3")){   //大唐降魔传  大唐仙侠  降魔苍穹
+			String userName = req.getParameter("userName"); 
+			String token = req.getParameter("token");
+			
+			if(userName == null || "".equals(userName.trim()) 
+			   || token == null || "".equals(token.trim())){
+				//登录失败
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			String url = "http://lll.lygames.cc/index.php";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("m=index");
+			param.append("&c=user");
+			param.append("&a=Token");
+			param.append("&uid=").append(userName);
+			param.append("&token=").append(token);
+			
+			String js = HttpUtil.sendGet(url, param.toString());
+			if(js == null){
+				//登录失败
+				LogUtil.error("登录失败 appid："+appid+" js："+js);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			JSONObject resultJson = new JSONObject(js);
+			if(resultJson.getString("isSuccess") .equals("1")){
 
-			this.postData(resp, this.sucLogin(0, userName, "123456", null, 1, Integer.valueOf(appid)));
-		}else{
-			//登录失败
-			result.put("result", 6);
-			this.postData(resp, result.toString());
+				this.postData(resp, this.sucLogin(0, userName, "123456", null, 1, Integer.valueOf(appid)));
+			}else{
+				//登录失败
+				LogUtil.error("登录失败 appid："+appid+" js："+js);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+			}
+		}else if(appid.equals("275")){ //剑雨江湖
+			String uid = req.getParameter("userId");
+			String token = req.getParameter("token");
+			
+			if(uid == null || token == null){
+				//登录失败
+				LogUtil.error("登录失败  appid："+appid);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			String Login_Key = "6d430a1ae023494e968e9efa28d38e93";
+			String url = "http://cfsdk2.cftdcm.com:8080/payserver/account/check_login";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("app="+appid);
+			param.append("&token="+token);
+			param.append("&ts="+System.currentTimeMillis());
+			param.append("&uin=").append(uid);
+			String sign = MD5Service.encryptToLowerString(param.toString() + Login_Key);
+			param.append("&sign=").append(sign);
+			
+			String js = HttpUtil.httpsRequest(url, param.toString(), "application/x-www-form-urlencoded");
+			if(js.equals("0")){
+				
+				this.postData(resp, this.sucLogin(0, uid, "123456", null, 1, Integer.valueOf(appid)));
+			}else {
+				//登录失败
+				LogUtil.error("登录失败 appid："+appid+" js："+js);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+			}
+		}else if(appid.equals("4")){ //诛仙青云录
+			String uid = req.getParameter("userId");
+			String userName = req.getParameter("userName");
+			String token = req.getParameter("token");
+			
+			if(uid == null || userName == null || token == null){
+				//登录失败
+				LogUtil.error("登录失败  appid："+appid);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			String Login_Key = "Wykj4iHo452mVthczm9jKNAWsIfUzqgp";
+			String url = "http://carapi.hbook.us/game/sdklogin";
+			
+			String timestamp = DateService.dateFormt(new Date(),"yyyyMMddHHmmss");
+			StringBuilder param = new StringBuilder();
+			param.append("userid="+uid);
+			param.append("&timestamp="+timestamp);
+			param.append("&companycode=dxyydtzx");
+			String sign = MD5Service.encryptToUpperString("timestamp="+timestamp+"&userid="+uid+"&key="+Login_Key);
+			param.append("&sign=").append(sign);
+			
+			String js = HttpUtil.httpsRequest(url, param.toString(), "application/x-www-form-urlencoded");
+			if(js == null){
+				//登录失败
+				LogUtil.error("登录失败 appid："+appid+" js："+js);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			JSONObject resultJson = new JSONObject(js);
+			if(resultJson.getString("errorcode").equals("0")){
+
+				String uname = resultJson.getString("username");
+				if(!userName.equals(uname)){
+					LogUtil.error("登录失败 appid："+appid+" uname："+uname+"  sdkName="+userName);
+					result.put("result", 6);
+					this.postData(resp, result.toString());
+					return;
+				}
+				this.postData(resp, this.sucLogin(0, uname, "123456", null, 1, Integer.valueOf(appid)));
+			}else{
+				//登录失败
+				LogUtil.error("登录失败 appid："+appid+" js："+js);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+			}
+			
 		}
+
 	}
 	
 	/**
@@ -265,10 +356,10 @@ public class LoginServlet extends BaseServlet {
         	int jsCode = resultJson.getInt("code");
         	if(jsCode == 1){
         		JSONObject userInfo = resultJson.getJSONObject("userInfo");
-        		long userId = userInfo.getLong("uid");
+//        		long userId = userInfo.getLong("uid");
         		String userName = userInfo.getString("username");
         		
-        		this.postData(resp, this.sucLogin(userId, userName, "123456", null, 1, Integer.valueOf(appid)));
+        		this.postData(resp, this.sucLogin(0, userName, "123456", null, 1, Integer.valueOf(appid)));
         	}else{
 				//登录失败
         		LogUtil.error("zhongfuLogin login返回错误："+js);
@@ -280,10 +371,9 @@ public class LoginServlet extends BaseServlet {
 				|| appid.equals("325")){ //百转修仙  幻域修仙 仙道至尊 仙侠大劫主 修仙道主
 			
 			String uid = req.getParameter("userId");
-			String userName = req.getParameter("userName");
 			String token = req.getParameter("token");
 			
-			if(uid == null || userName == null || token == null){
+			if(uid == null || token == null){
 				//登录失败
 				LogUtil.error("登录失败  appid："+appid);
 				result.put("result", 6);
@@ -314,7 +404,7 @@ public class LoginServlet extends BaseServlet {
 			String js = HttpUtil.httpsRequest(url, param.toString(), "application/x-www-form-urlencoded");
 			if(js.equals("0")){
 				
-				this.postData(resp, this.sucLogin(Long.valueOf(uid), userName, "123456", null, 1, Integer.valueOf(appid)));
+				this.postData(resp, this.sucLogin(0, uid, "123456", null, 1, Integer.valueOf(appid)));
 			}else {
 				//登录失败
 				LogUtil.error("登录失败 appid："+appid+" js："+js);
@@ -349,7 +439,7 @@ public class LoginServlet extends BaseServlet {
 			JSONObject resultJson = new JSONObject(js);
 			if(resultJson.getString("status") .equals("1")){
 
-				this.postData(resp, this.sucLogin(Long.valueOf(uid), uid, "123456", null, 1, Integer.valueOf(appid)));
+				this.postData(resp, this.sucLogin(0, uid, "123456", null, 1, Integer.valueOf(appid)));
 			}else{
 				//登录失败
 				result.put("result", 6);
@@ -358,10 +448,9 @@ public class LoginServlet extends BaseServlet {
 		}else if(appid.equals("1") || appid.equals("2")){ //大唐修仙传  风暴国度
 			
 			String uid = req.getParameter("userId");
-			String userName = req.getParameter("userName");
 			String token = req.getParameter("token");
 			
-			if(uid == null  || userName == null || token == null){
+			if(uid == null  || token == null){
 				//登录失败
 				LogUtil.error("登录失败  appid："+appid);
 				result.put("result", 6);
@@ -372,7 +461,7 @@ public class LoginServlet extends BaseServlet {
 			String url = "http://api.sy.7k7k.com/index.php/newUser/checkuser";
 			String key =MD5Service.encryptToLowerString(MD5Service.encryptToLowerString("api.sy.7k7k.com/index.php") + "uid="+uid+"&vkey="+token); 
 			StringBuilder param = new StringBuilder();
-			param.append("uid="+Integer.valueOf(uid));
+			param.append("uid="+uid);
 			param.append("&key="+key);
 			param.append("&vkey="+token);
 			
@@ -380,7 +469,7 @@ public class LoginServlet extends BaseServlet {
 			JSONObject resultJson = new JSONObject(js);
 			if(resultJson.getString("status") .equals("0")){
 
-				this.postData(resp, this.sucLogin(Long.valueOf(uid), userName, "123456", null, 1, Integer.valueOf(appid)));
+				this.postData(resp, this.sucLogin(0, uid, "123456", null, 1, Integer.valueOf(appid)));
 			}else{
 				//登录失败
 				result.put("result", 6);
@@ -422,7 +511,9 @@ public class LoginServlet extends BaseServlet {
 				this.postData(resp, result.toString());
 			}
 		}else if(appid.equals("6327") || appid.equals("6328") 
-				|| appid.equals("6333") || appid.equals("6010")){ //太古封神 太古伏魔录 武动九州 仙侠幻梦录
+				|| appid.equals("6333") || appid.equals("6010")
+				|| appid.equals("6089") || appid.equals("6094")
+				|| appid.equals("6095")){ //太古封神 太古伏魔录 武动九州 仙侠幻梦录 隋唐修仙传 修仙侠隐
 			String uid = req.getParameter("userId");
 			String token = req.getParameter("token");
 			if(uid == null || token == null){
@@ -444,6 +535,18 @@ public class LoginServlet extends BaseServlet {
 				app_key = "2cff258feccca00617a71301bc2b68d7";
 				
 				url = "https://api.8fen.2lyx.com/api/v7/cp/user/check";
+			}else if(appid.equals("6089")){
+				app_key = "dea52672cfed4d7b4e071967a9a2da45";
+				
+				url = "https://api.wx903.com/api/v7/cp/user/check";
+			}else if(appid.equals("6094")){
+				app_key = "1093cacfbd5c8be8e5ab6e7c7f2ee2dd";
+				
+				url = "https://api.wx903.com/api/v7/cp/user/check";
+			}else if(appid.equals("6095")){
+				app_key = "ca8c3511907b7937161660d5dfdfa551";
+				
+				url = "https://api.wx903.com/api/v7/cp/user/check";
 			}
 			
 			StringBuilder param = new StringBuilder();
@@ -466,6 +569,79 @@ public class LoginServlet extends BaseServlet {
 				result.put("result", 6);
 				this.postData(resp, result.toString());
 			}
+		}else if(appid.equals("10") || appid.equals("11") 
+				|| appid.equals("12") || appid.equals("13") 
+				|| appid.equals("14")){ //古剑苍穹 九州剑雨  太古仙盟 天剑侠客 天之剑
+			String uid = req.getParameter("userId");
+			String userName = req.getParameter("userName");
+			String token = req.getParameter("token");
+			if(uid == null || token == null){
+				//登录失败
+				LogUtil.error("登录失败  appid："+appid);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			String url = "http://quickgame.sdk.quicksdk.net/webapi/checkUserInfo";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("uid="+uid);
+			param.append("&token="+token);
+			
+			String js = HttpUtil.sendGet(url, param.toString());
+			JSONObject resultJson = new JSONObject(js);
+			if(resultJson.getString("status") .equals("true")){
+
+				this.postData(resp, this.sucLogin(0, userName, "123456", null, 1, Integer.valueOf(appid)));
+			}else{
+				//登录失败
+				LogUtil.error("登录失败  js："+resultJson);
+				
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+			}
+		}else if(appid.equals("2018000008") || appid.equals("2018000009")){  //苍穹传奇 仙侠轩辕世界
+			String uid = req.getParameter("userId");
+			String token = req.getParameter("token");
+			
+			if(uid == null || token == null){
+				//登录失败
+				LogUtil.error("登录失败  appid："+appid);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			String appkey = "aa52b72559547bfd4135605bed186f29";
+			if(appid.equals("2018000009")){
+				appkey = "baa5834a6effd194113d956f7206929d";
+			}
+			
+			String url = "http://120.78.131.209/appcenterserver/sdk/service/check_token";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("?");
+			param.append("appid="+appid);
+			param.append("&accesstoken="+token);
+			String sign = MD5Service.encryptToLowerString(appid + token + appkey);
+			param.append("&sign"+sign);
+			
+			String js = HttpUtil.httpsRequest(url, param.toString(), "application/x-www-form-urlencoded");
+			JSONObject resultJson = new JSONObject(js);
+			if(resultJson.getString("code") .equals("0")){
+
+				uid = resultJson.getString("accountid");
+				
+				this.postData(resp, this.sucLogin(0, uid, "123456", null, 1, Integer.valueOf(appid)));
+			}else{
+				//登录失败
+				LogUtil.error("登录失败  js："+resultJson);
+				
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+			}
+			
 		}
 		
 	}
@@ -491,7 +667,7 @@ public class LoginServlet extends BaseServlet {
 			String userName = req.getParameter("userName");
 			String token = req.getParameter("token");
 			String sdk = req.getParameter("time");
-			String app = req.getParameter("sign");
+			String app = req.getParameter("passWord");
 			
 			if(userName == null || token == null || sdk == null || app == null){
 				//登录失败
@@ -582,6 +758,9 @@ public class LoginServlet extends BaseServlet {
 		
 		List<JSONObject> jsonList = new ArrayList<JSONObject>();
 		for(BaseServerConfig model : serverList){
+			long openServerDate = DateService.getDateByString(model.getOpenServerDate()).getTime();
+			if(time < openServerDate) continue;
+			
 			Integer serverNo = model.getServerNo();
 			JSONObject json = new JSONObject();
 			json.put("serverNo", model.getServerNo());
@@ -591,7 +770,6 @@ public class LoginServlet extends BaseServlet {
 			json.put("loginFlag", svrList.contains(serverNo)? 1 : 0);
 			json.put("endStopTime", 0);
 			json.put("severType", model.getSeverType());
-			long openServerDate = DateService.getDateByString(model.getOpenServerDate()).getTime();
 			json.put("openServerDate", openServerDate);
 			int serverState = model.getSeverState();
 			if(model.getEndStopDate() != null){

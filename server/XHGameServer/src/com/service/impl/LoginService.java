@@ -120,11 +120,15 @@ public class LoginService implements ILoginService {
 				return;
 			}
 
-
 			// 非正常状态下，不能提前进入
 			if (serverConfig.getSeverState() < 1 || serverConfig.getSeverState() > 3) {
 				return;
 			} 
+			
+			//未在开服时间
+			if(serverConfig.getOpenServerDate() != null && System.currentTimeMillis() < DateService.parseDate(serverConfig.getOpenServerDate()).getTime()){
+				return;
+			}
 			
 			//维护中
 			if(serverConfig.getEndStopDate() != null && System.currentTimeMillis() < DateService.parseDate(serverConfig.getEndStopDate()).getTime()){

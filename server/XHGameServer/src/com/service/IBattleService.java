@@ -107,7 +107,7 @@ public interface IBattleService {
 	 * randomType 0：九宫格类型    1：园内随机点
 	 */
 	int createDrop(Map<Integer, List<DropItemInfo>> dropItems, String targetGuid,
-			int x, int y, int z, int goodsType, int itemId, int num, long playerEquipmentId, 
+			int x, int y, int z, int goodsType, int itemId, int num, int blind, long playerEquipmentId, 
 			List<Long> belongPlayerIds, int index, BaseMap baseMap, SceneModel sceneModel,
 			int offset, int randomType);
 }

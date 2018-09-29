@@ -1436,7 +1436,7 @@ public class ActivityService implements IActivityService{
 					index++;
 			}
 			
-			mailService.systemSendMail(playerId, ResourceUtil.getValue("act_code_1"), ResourceUtil.getValue("act_code_2"), SplitStringUtil.getStringByIntIntList(mailItems), 0);
+			mailService.systemSendMail(playerId, baseReward.getDes(), ResourceUtil.getValue("act_code_2"), SplitStringUtil.getStringByIntIntList(mailItems), 0);
 	
 			S_GetGiftAward.Builder builder = S_GetGiftAward.newBuilder();	
 			builder.setState(state);	

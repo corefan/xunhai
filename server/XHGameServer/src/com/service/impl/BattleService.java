@@ -596,7 +596,7 @@ public class BattleService implements IBattleService {
 							if(baseInstanceReward != null){
 								index = this.createDrop(dropItems, "", basePuppet.getX(),
 										basePuppet.getY(), basePuppet.getZ(), 
-										RewardTypeConstant.BOX, 0, 0, 0, null,
+										RewardTypeConstant.BOX, 0, 0, 0, 0, null,
 										index, baseMap, sceneModel, 300, 0);
 							}
 						}
@@ -995,7 +995,7 @@ public class BattleService implements IBattleService {
 							// 掉落
 							index = this.createDrop(dropItems, target.getGuid(), target.getX(), 
 									target.getY(), target.getZ(), model.getType(), model.getId(), 
-									model.getNum(), 0, belongPlayerIds, index, baseMap, sceneModel, 100, rand);
+									model.getNum(), model.getBlind(), 0, belongPlayerIds, index, baseMap, sceneModel, 100, rand);
 						}
 					}
 				}
@@ -1107,7 +1107,7 @@ public class BattleService implements IBattleService {
 					
 					index = this.createDrop(dropItems, target.getGuid(), target.getX(), 
 							target.getY(), target.getZ(), RewardTypeConstant.EQUIPMENT, 
-							equip.getEquipmentId(), 1, equip.getPlayerEquipmentId(), null,
+							equip.getEquipmentId(), 1, ItemConstant.ITEM_NOT_BINDING, equip.getPlayerEquipmentId(), null,
 							index, baseMap, sceneModel, 100, 0);
 					
 					// 只掉一件
@@ -1152,7 +1152,7 @@ public class BattleService implements IBattleService {
 	 */
 	@Override
 	public int createDrop(Map<Integer, List<DropItemInfo>> dropItems, String targetGuid, 
-			int x, int y, int z, int goodsType, int itemId, int num, long playerEquipmentId,
+			int x, int y, int z, int goodsType, int itemId, int num, int blind, long playerEquipmentId,
 			List<Long> belongPlayerIds, int index, BaseMap baseMap, SceneModel sceneModel, 
 			int offset, int randomType){
 		// 掉落
@@ -1163,6 +1163,7 @@ public class BattleService implements IBattleService {
 		drop.setX(x);
 		drop.setY(y);
 		drop.setZ(z);	
+		drop.setBlind(blind);
 		
 		if(goodsType != RewardTypeConstant.BOX){
 			drop.setTargetGuid(targetGuid);
@@ -1405,7 +1406,7 @@ public class BattleService implements IBattleService {
 					if(info.getPlayerEquipmentId() > 0){
 						rewardService.fetchDropEquipment(playerId, info.getPlayerEquipmentId());
 					}else{
-						rewardService.fetchRewardOne(playerId, info.getGoodsType(), info.getItemId(), info.getNum(), 0);	
+						rewardService.fetchRewardOne(playerId, info.getGoodsType(), info.getItemId(), info.getNum(), info.getBlind());	
 					}
 
 				}				

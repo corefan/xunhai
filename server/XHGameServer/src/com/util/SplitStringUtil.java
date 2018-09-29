@@ -155,7 +155,10 @@ public class SplitStringUtil {
 				reward.setId(Integer.valueOf(strArr2[1].trim()));
 				reward.setNum(Integer.valueOf(strArr2[2].trim()));
 				reward.setRate(Integer.valueOf(strArr2[3].trim()));
-
+				if(strArr2.length > 4){
+					reward.setBlind(Integer.valueOf(strArr2[4].trim()));
+				}
+				
 				lists.add(reward);
 			}
 		} catch (Exception e) {

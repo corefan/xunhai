@@ -18,7 +18,7 @@ public class CostLog implements Serializable{
 	/** 自增ID*/
 	private long logId; 	
 	/** 账号编号*/
-	private int userId;
+	private long userId;
 	/** 玩家编号*/
 	private long playerId;
 	/** 角色名称*/
@@ -36,10 +36,10 @@ public class CostLog implements Serializable{
 	/** 站点*/
 	private String gameSite;
 	
-	public int getUserId() {
+	public long getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 	public long getPlayerId() {

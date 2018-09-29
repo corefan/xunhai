@@ -22,6 +22,8 @@ public class DropItemInfo implements Serializable {
 	private int itemId;
 	/** 掉落数量*/
 	private int num;
+	/** 是否绑定*/
+	private int blind;
 	/** 资源类型  @RewardTypeConstant */
 	private int goodsType;
 	/** 掉落位置*/
@@ -123,6 +125,12 @@ public class DropItemInfo implements Serializable {
 	}
 	public void setPickLock(Object pickLock) {
 		this.pickLock = pickLock;
+	}
+	public int getBlind() {
+		return blind;
+	}
+	public void setBlind(int blind) {
+		this.blind = blind;
 	}
 	
 }

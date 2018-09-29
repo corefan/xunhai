@@ -91,25 +91,25 @@ public class CodeUtil {
 	/** 生成激活码 */
 	public static void genCode() {
 		
-		try {
-			ActCodeDAO actCodeDAO = new ActCodeDAO();
-			actCodeDAO.deleteActCode();
-		} catch (Exception e1) {
-			e1.printStackTrace();
-		}
+//		try {
+//			ActCodeDAO actCodeDAO = new ActCodeDAO();
+//			actCodeDAO.deleteActCode();
+//		} catch (Exception e1) {
+//			e1.printStackTrace();
+//		}
+//		
+//		try {
+//			Thread.sleep(3*1000);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 		
-		try {
-			Thread.sleep(3*1000);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		int num = 10;
+		int num = 500;
 		System.out.println("激活码表清理完毕！准备生成新的"+num+"条激活码");
 		
 		List<GameEntity> objList = new ArrayList<GameEntity>();
 		for (int i=1;i<=num;i++) {
-			ActCode actCode = buildCode("xh", 20, 2001, 1, getRandomChar());
+			ActCode actCode = buildCode("juliang", 20, 2109, 1, getRandomChar());
 			objList.add(actCode);
 		}
 		
