@@ -846,6 +846,9 @@ public class PayServlet extends AbstractServlet {
 							GetEncode(product_price), app_key);
 					
 					String md5 = getMD5(code);
+					
+					System.out.println(code);
+					System.out.println("md5sign="+md5);
 			        //签名失败
 			        if(!md5.equalsIgnoreCase(sign))
 			        {

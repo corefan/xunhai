@@ -623,6 +623,14 @@ public class LoginService implements ILoginService {
 				playerExt.setX(playerExt.getLastX());
 				playerExt.setY(playerExt.getLastY());
 				playerExt.setZ(playerExt.getLastZ());
+			}else{
+				//卡地图检测
+				if(baseMap.isBlock(playerExt.getX(), playerExt.getZ())){
+					Position position = baseMap.getRevivePositions().get(0);
+					playerExt.setX(position.getX());
+					playerExt.setY(position.getY());
+					playerExt.setZ(position.getZ());
+				}
 			}
 		}
 		
