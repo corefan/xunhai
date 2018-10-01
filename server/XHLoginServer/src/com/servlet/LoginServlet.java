@@ -772,7 +772,7 @@ public class LoginServlet extends BaseServlet {
 			json.put("severType", model.getSeverType());
 			json.put("openServerDate", openServerDate);
 			int serverState = model.getSeverState();
-			if(model.getEndStopDate() != null){
+			if(model.getEndStopDate() != null && !model.getEndStopDate().equals("")){
 				long endStopTime = DateService.getDateByString(model.getEndStopDate()).getTime();
 				if(curTime < endStopTime){
 					serverState = 4;
