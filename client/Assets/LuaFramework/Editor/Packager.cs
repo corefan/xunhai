@@ -93,9 +93,6 @@ public class Packager {
 	/// </summary>
 	static void BuildAssetsBundle()
 	{
-		BuildNormalAB("Assets/Res/Audio");
-		BuildNormalAB("Assets/Res/Prefabs");
-		BuildNormalAB("Assets/IGSoft_Resources/Projects/Effect");
         BuildAllUI();
         BuildAllScene();
 	}

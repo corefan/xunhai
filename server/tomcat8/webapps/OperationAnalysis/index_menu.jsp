@@ -6,7 +6,7 @@
 		pageIndex = Integer.parseInt(request.getAttribute("pageIndex").toString());
 	}
 %>
-<link type="text/css" href="<%= request.getContextPath()%>/css/index_menu.css" rel="stylesheet" />
+<link type="text/css" href="<%= request.getContextPath()%>/css/index_menu.css" rel="stylesheet"  data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-28" data-genuitec-path="/OperationAnalysis/WebRoot/index_menu.jsp"/>
 <script type="text/javascript" src="<%= request.getContextPath()%>/js/index_menu.js"> </script>
 
 <div id="menu">

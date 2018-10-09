@@ -65,18 +65,18 @@ function SkillManager:AddBomEffect(fighter, skillId)
 			if skillVo.targetType == SkillTargetType.My then
 				local tarGridList = SkillManager.GetOrganCircularPos(self._figther, skillVo)
 				if #tarGridList > 0 then--有坐标算出显示的特效
-					for i = 1, #tarGridList do
-						local grid = tarGridList[i]
-						local ppos = Vector3.New(MapUtil.GridToLocalX(grid[1]), 0, MapUtil.GridToLocalX(grid[2]))
-						EffectTool.AddEffect(self._figther.modelId, skillVo.bombAnimation, myPlayer, 0, false, nil, ppos, Vector3.New(grid[3], grid[3], grid[3]))
-					end
+					-- for i = 1, #tarGridList do
+					-- 	local grid = tarGridList[i]
+					-- 	local ppos = Vector3.New(MapUtil.GridToLocalX(grid[1]), 0, MapUtil.GridToLocalX(grid[2]))
+					-- 	EffectTool.AddEffect(self._figther.modelId, skillVo.bombAnimation, myPlayer, 0, false, nil, ppos, Vector3.New(grid[3], grid[3], grid[3]))
+					-- end
 				end
 			end
 		else
 			local warningEffect = SceneController:GetInstance():GetScene():GetWarnByIndex( 1 )
 			-- print(" ******************* 预警是否存在  ",warningEffect)
 			if warningEffect then
-				EffectTool.AddEffect(fighter.modelId, skillVo.bombAnimation, self._figther, nil, false, nil, warningEffect.transform.position)
+				-- EffectTool.AddEffect(fighter.modelId, skillVo.bombAnimation, self._figther, nil, false, nil, warningEffect.transform.position)
 				warningEffect:Release()
 			else
 			end

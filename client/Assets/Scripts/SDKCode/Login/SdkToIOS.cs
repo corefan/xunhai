@@ -18,7 +18,7 @@ public class SdkToIOS : MonoSingleton<SdkToIOS>
     private static extern void  _Pay(string svrId, string rId, string rName, string cpOrderId,
                                         string pdId, string pdName, string pdDesc, int total, string desc);
     [DllImport("__Internal")]
-    private static extern void  _UploadRoleInfo(string svrId, string rId, string svrName, string rName, int lv);
+    private static extern void  _UploadRoleInfo(string svrId, string rId, string svrName, string rName, int lv, int state);
 
     #region me call ios
     //定义接口函数供游戏逻辑调用
@@ -52,9 +52,11 @@ public class SdkToIOS : MonoSingleton<SdkToIOS>
                         string pdId, string pdName="", string pdDesc="", int total=0, string desc=""){
         _Pay(svrId, rId, rName, cpOrderId, pdId, pdName, pdDesc, total, desc);
     }
-    public void UploadRoleInfo(string svrId, string rId, string svrName="", string rName="", int lv=0){
-        _UploadRoleInfo(svrId, rId, svrName, rName, lv);
+    //state 0创建角色 1登录游戏 2角色升级
+    public void UploadRoleInfo(string svrId, string rId, string svrName, string rName, int lv, int state){
+        _UploadRoleInfo(svrId, rId, svrName, rName, lv, state);
     }
+   
     #endregion
 
     void Start()

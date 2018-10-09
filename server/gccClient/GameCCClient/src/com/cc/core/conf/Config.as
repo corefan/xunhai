@@ -5,7 +5,7 @@ package  com.cc.core.conf
 		public static var key:String = "QY7RODDDshen-16SDEDE-WAN-0668-2525-7ROAD-SHENQU-lovDDe777";
         public static var assets:String = "";
 		// 14.18.236.140
-		public static var host:String = "106.75.222.211";
+		public static var host:String = "47.106.208.235";
 		public static var port:int = 9200;
 		
 		public static var width:int = 1280;

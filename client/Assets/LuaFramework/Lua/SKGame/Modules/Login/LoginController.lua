@@ -304,7 +304,7 @@ end
 		model:AddRole(c)
 		print("进入游戏, 玩家id：", role.playerId)
 		model:SetLastRole(role.playerId)
-		-- GlobalDispatcher:DispatchEvent(EventName.StartCG, role.playerId)
+		self:UploadRoleInfo(0)
 		self:C_EnterGame( role.playerId ) -- 直接进入游戏不用CG
 	end
 	-- 进入游戏获取角色基础信息
@@ -324,7 +324,9 @@ end
 				character:SetPlayerCommonMsg(comm)
 				print("角色入场信息：", character:ToString())
 				model:SetLoginRole( character )
-				self:_uploadRoleInfo( character )
+				
+				self:UploadRoleInfo(1)
+
 				AfterLoginRequire()
 				if info.mapId then
 					SceneController:GetInstance():C_EnterScene(info.mapId, 0)
@@ -338,21 +340,20 @@ end
 	end
 
 	-- 上传信息到sdk平台
-	function LoginController:_uploadRoleInfo( character )
+	function LoginController:UploadRoleInfo(state)
 		if isSDKPlat then
-			self:UploadRoleInfo(character)
+			local model = self.model
+			local character = model:GetLoginRole()
+			local srvVo = model.loginServer
+			local svrId = srvVo.serverNo or "0"
+			local svrName = srvVo.serverName or "s1"
+			local role = character or {}
+			local rId = role.playerId or ""
+			local rName = role.name or ""
+			local lv = role.level or 0
+			print("上传角色信息：",rId, rName, lv, "svrNo=", svrId, "svrName=", svrName)
+			sdkToIOS:UploadRoleInfo(svrId, rId, svrName, rName, lv, state)
 		end
-	end
-	function LoginController:UploadRoleInfo(character)
-		print("上传角色信息：", character:ToString())
-		local srvVo = LoginModel:GetInstance().loginServer
-		local role = character or {}
-		local svrId = srvVo.serverNo or "0"
-		local svrName = srvVo.serverName or ""
-		local rId = role.playerId or ""
-		local rName = role.name or ""
-		local lv = role.level or 0
-		sdkToIOS:UploadRoleInfo(svrId, rId, svrName, rName, lv)
 	end
 
 
@@ -460,7 +461,9 @@ end
 			msg.time = model.loginAccountData.time
 			msg.sign = model.loginAccountData.sign
 			msg.playerId = model.loginPlayerId
-			msg.serverNo = model:GetLastServerNo()
+			local no = model:GetLastServerNo()
+			msg.serverNo = no
+			model.loginServer = model:GetServerByserverNo(no)
 
 			self:SendMsg("C_LoginAgain", msg)
 			if NewbieGuideController then
@@ -495,7 +498,9 @@ end
 			msg.key = data.key
 			msg.time = tostring(data.time)
 			msg.sign = data.sign
-			msg.serverNo = model:GetLastServerNo()
+			local no = model:GetLastServerNo()
+			msg.serverNo = no
+			model.loginServer = model:GetServerByserverNo(no)
 			self:SendMsg("C_LoginGame", msg)
 		end
 	end
@@ -505,7 +510,9 @@ end
 		msg.career = career
 		msg.playerName = name
 		local model = self.model
-		msg.serverNo = model:GetLastServerNo()
+		local no = model:GetLastServerNo()
+		msg.serverNo = no
+		model.loginServer = model:GetServerByserverNo(no)
 		msg.telePhone = toLong(model.telePhone)
 		
 		self:SendMsg("C_CreatePlayer", msg)
@@ -546,86 +553,6 @@ end
 function LoginController:Open( t )
 	if self.view == nil then return end
 	self.view:OpenPanelByType(t)
-end
-
--- 新版角色创建和选择界面
-function LoginController:OpenRoleCreatePanel()
-	if self.view == nil then return false end
-	self.view:OpenRoleCreatePanel()
-	return true
-end
-
-function LoginController:OpenRoleSelectPanel()
-	if self.view == nil then return false end
-	self.view:OpenRoleSelectPanel()
-	return true
-end
-
-function LoginController:OpenLoginPanel()
-	if self.view == nil then return false end
-	self.view:OpenLoginPanel()
-	return true
-end
-
-function LoginController:OpenCreateAccountPanel(isVisitorBind)
-	if self.view == nil then return false end
-	self.view:OpenCreateAccountPanel(isVisitorBind)
-	return true
-end
-
-function LoginController:OpenPhoneBindPanel()
-	if self.view == nil then return false end
-	self.view:OpenPhoneBindPanel()
-	return true
-end
-
-function LoginController:OpenAccountManagerPanel()
-	if self.view == nil then return false end
-	self.view:OpenAccountManagerPanel()
-	return true
-end
-
-function LoginController:OpenVisitorLoginPanel(accountData)
-	if self.view == nil then return false end
-	self.view:OpenVisitorLoginPanel(accountData)
-	return true
-end
-
-function LoginController:OpenServerSelectPanel(accountData)
-	if self.view == nil then return false end
-	self.view:OpenServerSelectPanel(accountData)
-	return true
-end
-
-function LoginController:OpenResetPasswordPanel(accountData)
-	if self.view == nil then return false end
-	self.view:OpenResetPasswordPanel(accountData)
-	return true
-end
-
-function LoginController:LoadRoleCreateSelectScene(callback)
-	if self.view == nil then return end
-	self.view:LoadRoleCreateSelectScene(callback)
-end
-
-function LoginController:OpenLoginNameTips(accountData)
-	if self.view == nil then return end
-	self.view:Win_FloatTip(accountData)
-end
-
-function LoginController:GetCurPanel()
-	return self.view.curPanel
-end
-
-function LoginController:Close()
-	if self.view == nil then return end
-	self.view:Close()
-end
-function LoginController:GetInstance()
-	if LoginController.inst == nil then
-		LoginController.inst = LoginController.New()
-	end
-	return LoginController.inst
 end
 
 --注册账号http请求
@@ -697,10 +624,10 @@ function LoginController:ReqLoginAccount( ... )
 
 	if isSDKPlat then
 		local data = GetIOSData(args[1]) -- 转成table数据
-		if data.code and data.code ~= 0 then UIMgr.Win_FloatTip("登录失败！"..data.code) return end -- 个别平台sdk返回code,非0表示登录失败
+		if data.code and tonumber(data.code) ~= 0 then UIMgr.Win_FloatTip("登录失败！"..data.code) return end -- 个别平台sdk返回code,非0表示登录失败
 
-		GameConst.GId = tonumber(data.gid or GameConst.GId) or 0
-		GameConst.SId = tonumber(data.subid or GameConst.SId) or 0
+		GameConst.GId = data.gid or GameConst.GId
+		GameConst.SId = data.subid or GameConst.SId
 
 		appid = data.appid or ""
 		userId = data.userId or ""
@@ -710,23 +637,26 @@ function LoginController:ReqLoginAccount( ... )
 		token = data.token or ""
 		time = data.time or time
 
-		print("------|appid",appid, "|userId",userId, "|userName",userName, "|passWord",passWord, "|tourist",tourist, "|token",token, "|time",time)
+		print("来自sdk数据", GameConst.GId, GameConst.SId)
 		sign = Util.md5( StringFormat("{0}{1}{2}{3}{4}{5}{6}{7}", appid, userId, userName, passWord, tourist, token, time, key) )
 		reqHttpData = {"appid",appid, "userId",userId, "userName",userName, "passWord",passWord, "tourist",tourist, "token",token, "time",time, "sign", sign}
 
 	else --原原生开发登录
+		print("来自本地数据")
 		userName = args[1]
 		passWord = args[2]
 		tourist = args[3]
 		sign = Util.md5( StringFormat("{0}{1}{2}{3}{4}{5}{6}{7}", appid, userId, userName, passWord, tourist, token, time, key) )
 		reqHttpData = {"appid",appid, "userId",userId, "userName",userName, "passWord",passWord, "tourist",tourist, "token",token, "time",time, "sign", sign}
 	end
+	local s = StringFormat("appid={0}&userId={1}&userName={2}&passWord={3}&tourist={4}&token={5}&time={6}&key={7}", appid, userId, userName, passWord, tourist, token, time, key)
+	print(GameConst.LoginURL.."/?"..s)
 	networkMgr:HttpRequest(1, GameConst.LoginURL, reqHttpData, function (state, js) self:HandleReqLoginAccount(state, js) end)
 end
 
 --登录账号http请求回调
 function LoginController:HandleReqLoginAccount(state, js)
-	print(">>>>>>>>>>>HandleReqLoginAccount ", js)
+	print(">>>>>>HandleReqLoginAccount>>>>> ", state, js)
 	if state == 1 then
 		local data = JSON:decode(js)
 		local result = data.result
@@ -925,4 +855,84 @@ function LoginController:__delete()
 		self.view:Destroy()
 	end
 	LoginController.inst = nil
+end
+
+-- 新版角色创建和选择界面
+function LoginController:OpenRoleCreatePanel()
+	if self.view == nil then return false end
+	self.view:OpenRoleCreatePanel()
+	return true
+end
+
+function LoginController:OpenRoleSelectPanel()
+	if self.view == nil then return false end
+	self.view:OpenRoleSelectPanel()
+	return true
+end
+
+function LoginController:OpenLoginPanel()
+	if self.view == nil then return false end
+	self.view:OpenLoginPanel()
+	return true
+end
+
+function LoginController:OpenCreateAccountPanel(isVisitorBind)
+	if self.view == nil then return false end
+	self.view:OpenCreateAccountPanel(isVisitorBind)
+	return true
+end
+
+function LoginController:OpenPhoneBindPanel()
+	if self.view == nil then return false end
+	self.view:OpenPhoneBindPanel()
+	return true
+end
+
+function LoginController:OpenAccountManagerPanel()
+	if self.view == nil then return false end
+	self.view:OpenAccountManagerPanel()
+	return true
+end
+
+function LoginController:OpenVisitorLoginPanel(accountData)
+	if self.view == nil then return false end
+	self.view:OpenVisitorLoginPanel(accountData)
+	return true
+end
+
+function LoginController:OpenServerSelectPanel(accountData)
+	if self.view == nil then return false end
+	self.view:OpenServerSelectPanel(accountData)
+	return true
+end
+
+function LoginController:OpenResetPasswordPanel(accountData)
+	if self.view == nil then return false end
+	self.view:OpenResetPasswordPanel(accountData)
+	return true
+end
+
+function LoginController:LoadRoleCreateSelectScene(callback)
+	if self.view == nil then return end
+	self.view:LoadRoleCreateSelectScene(callback)
+end
+
+function LoginController:OpenLoginNameTips(accountData)
+	if self.view == nil then return end
+	self.view:Win_FloatTip(accountData)
+end
+
+function LoginController:GetCurPanel()
+	return self.view.curPanel
+end
+
+function LoginController:Close()
+	if self.view == nil then return end
+	self.view:Close()
+end
+function LoginController:GetInstance()
+	if LoginController.inst == nil then
+		LoginController.inst = LoginController.New()
+	end
+	return LoginController.inst
 end

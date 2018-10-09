@@ -348,6 +348,7 @@ end
 		if vo.teamId == 0 and ZDModel then
 			ZDModel:GetInstance():ClearMine() -- 重置队伍信息
 		end
+
 		self.sceneSpawnPos = vo.position
 		self.model.endSceneTime = msg.endTime
 		LoginModel:GetInstance():SetRoleSelectPanelOpenFlag(false)

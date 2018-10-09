@@ -87,26 +87,34 @@ end
 
 --是否已经进行了月卡充值
 function PayModel:HasMonthCardPay()
-	local rtnIsHas = false
 	for __ , payItemId in pairs(self.yichong) do
 		local payItemCfg = GetCfgData("charge"):Get(payItemId)
 		if payItemCfg and payItemCfg.type == PayConst.PayType.MonthCard then
-			rtnIsHas = true
-			break
+			return true
 		end
 	end
-	return rtnIsHas
+	return false
 end
 
 -- 单元点击事件
 function PayModel:OnCellClick( eve )
 	if self.checkPanel then return end
 	local id = eve.sender.data
-	self.checkPanel = PayCheckPanel.New( id )
-	self.checkPanel:SetPayPanel()
-	UIMgr.ShowCenterPopup(self.checkPanel, function ()
-		self.checkPanel = nil
-	end, true)
+	if GameConst.isAppleIAP then
+		PayCtrl:GetInstance():C_Pay(tonumber(id), 3)
+	else
+		if isSDKPlat then
+			PayCtrl:GetInstance():C_Pay(tonumber(id), 3)
+		else
+			self.checkPanel = PayCheckPanel.New( id )
+			self.checkPanel:SetPayPanel()
+			UIMgr.ShowCenterPopup(self.checkPanel, function ()
+				self.checkPanel = nil
+			end, true)
+		end
+		
+	end
+	
 end
 
 --获取某个商品对应的信息

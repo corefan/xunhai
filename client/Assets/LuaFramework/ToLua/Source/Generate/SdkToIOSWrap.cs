@@ -116,14 +116,15 @@ public class SdkToIOSWrap
 	{
 		try
 		{
-			ToLua.CheckArgsCount(L, 6);
+			ToLua.CheckArgsCount(L, 7);
 			SdkToIOS obj = (SdkToIOS)ToLua.CheckObject(L, 1, typeof(SdkToIOS));
 			string arg0 = ToLua.CheckString(L, 2);
 			string arg1 = ToLua.CheckString(L, 3);
 			string arg2 = ToLua.CheckString(L, 4);
 			string arg3 = ToLua.CheckString(L, 5);
 			int arg4 = (int)LuaDLL.luaL_checknumber(L, 6);
-			obj.UploadRoleInfo(arg0, arg1, arg2, arg3, arg4);
+			int arg5 = (int)LuaDLL.luaL_checknumber(L, 7);
+			obj.UploadRoleInfo(arg0, arg1, arg2, arg3, arg4, arg5);
 			return 0;
 		}
 		catch(Exception e)

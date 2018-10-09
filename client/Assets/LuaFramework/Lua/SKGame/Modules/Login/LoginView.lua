@@ -87,7 +87,7 @@ end
 function LoginView:OpenPhoneBindPanel()
 	if not self.isInited then return end
 	self:Close()
-	local p =phoneBindPanel.New()
+	local p =PhoneBindPanel.New()
 	if p then
 		p:Open()
 		self.curPanel =p

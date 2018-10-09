@@ -116,11 +116,10 @@ end
 
 function Skill:PlaySound()
 	local aud = self._skillVo.skillAudio
-	if #aud == 2 then 
-		local soundId = aud[1]
+	if #aud == 2 then
 		local delay = aud[2] *0.001
 		DelayCall(function() 
-			soundMgr:PlayEffect("audio/"..soundId..".unity3d", soundId)
+			soundMgr:PlayEffect(tostring(aud[1]))
 		end, delay)
 	end
 end

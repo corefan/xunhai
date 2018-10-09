@@ -34,7 +34,7 @@
 		username = user.getUserName();
 	}
 %>
-<link type="text/css" href="<%= path%>/css/index_header.css" rel="stylesheet" />
+<link type="text/css" href="<%= path%>/css/index_header.css" rel="stylesheet"  data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-27" data-genuitec-path="/OperationAnalysis/WebRoot/index_header.jsp"/>
 
 <div>
 	<div class="header_top">

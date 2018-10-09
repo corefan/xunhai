@@ -681,10 +681,10 @@ end
 		local endNum = groupIndex * ServerSelectConst.ServerGroupItemCnt
 
 		if firstNum ~= 0 and endNum ~= 0 and firstNum < endNum then
-			for index = 1, #self.serverList do
-				local curServer = self.serverList[index]
+			for i = 1, #self.serverList do
+				local curServer = self.serverList[i]
 				if not TableIsEmpty(curServer) then
-					if index >= firstNum and index <= endNum then
+					if i >= firstNum and i <= endNum then
 						table.insert(rtnServerList, curServer)
 					end
 				end
@@ -694,13 +694,14 @@ end
 	end
 
 	--获取当前类型服务器列表
-	function LoginModel:GetServerListByType(typeData)
-		if typeData == LoginConst.ServerTabType.My then
+	function LoginModel:GetServerListByType(v)
+		local t = LoginConst.ServerTabType
+		if v == t.My then
 			return self:GetHasLoginServerList()
-		elseif typeData == LoginConst.ServerTabType.Recommend then
+		elseif v == t.Recommend then
 			return self:GetRecommendServerList()
-		elseif typeData > LoginConst.ServerTabType.Recommend then
-			return self:GetServerListByGroup(typeData - 1)
+		elseif v > t.Recommend then
+			return self:GetServerListByGroup(v - 1)
 		end
 		return {}
 	end
@@ -709,7 +710,6 @@ end
 	function LoginModel:SetLastServer(v)
 		if v then
 			v.phonePlat = GameConst.PhonePlat
-			self.loginServer = v
 			DataMgr.WriteData(LoginConst.LastServerKey, v)
 		end
 	end
@@ -722,13 +722,8 @@ end
 			for i = 1, #self.serverList do
 				local cur = self.serverList[i]
 				if not TableIsEmpty(cur) and cur.serverNo == lastServerNo then
-					if lastServer.endStopTime ~= cur.endStopTime or 
-						lastServer.severState ~= cur.severState or 
-						lastServer.severType ~= cur.severType or
-						(lastServer.phonePlat and lastServer.phonePlat ~= GameConst.PhonePlat) then
-						self:SetLastServer(cur)
-						break
-					end
+					self:SetLastServer(cur)
+					break
 				end
 			end
 		end
@@ -740,17 +735,17 @@ end
 	end
 
 	function LoginModel:GetLastServerNo()
-		local lastServerData = self:GetLastServer()
-		if not TableIsEmpty(lastServerData) then
-			return lastServerData.serverNo or 0
+		local data = self:GetLastServer()
+		if not TableIsEmpty(data) then
+			return data.serverNo or 0
 		end
 		return 0
 	end
 
 	function LoginModel:GetLastServerName()
-		local lastServerData = self:GetLastServer()
-		if not TableIsEmpty(lastServerData) then
-			return lastServerData.serverName or ""
+		local data = self:GetLastServer()
+		if not TableIsEmpty(data) then
+			return data.serverName or ""
 		end
 		return ""
 	end

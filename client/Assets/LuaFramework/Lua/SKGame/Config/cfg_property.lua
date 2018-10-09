@@ -772,7 +772,7 @@ local cfg={
 	},
 	[1059]={
 		levelId=1059,
-		needexp=2000000000,
+		needexp=100000000,
 		freebiePoints=0,
 		strength=1160,
 		intelligence=580,
@@ -2072,7 +2072,7 @@ local cfg={
 	},
 	[2059]={
 		levelId=2059,
-		needexp=2000000000,
+		needexp=100000000,
 		freebiePoints=0,
 		strength=680,
 		intelligence=1160,
@@ -3372,7 +3372,7 @@ local cfg={
 	},
 	[3059]={
 		levelId=3059,
-		needexp=2000000000,
+		needexp=100000000,
 		freebiePoints=0,
 		strength=780,
 		intelligence=870,

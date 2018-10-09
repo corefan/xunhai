@@ -7,7 +7,7 @@
 cd ..
 
 @rem 
-set "EXCEL_FILE=chargeActivity.xlsx"
+set "EXCEL_FILE=monster.xlsx"
 
 set "STATIC_PATH=E:/xunhai/development/database/excel/"
 

@@ -785,6 +785,24 @@ end
 			if self.isDestroyed then return end
 			if ToLuaIsNull(go) or not self.model:GetPlayer( vo.guid ) then return end
 			local tf = go.transform
+
+			local gx, gy = MapUtil.LocalToGrid(vo.position)
+			if vo.isMainRole and Astar.block ~= nil and Astar.isBlock(gx, gy) then
+				local block = Astar.block
+				for j=1,#block do
+					for i=#block[1],1,-1 do
+						if block[j][i] == 0 then
+							local v = {x=i,y=j}
+							local px, py = MapUtil.GridToLocal( v )
+							vo.position.x = px
+							vo.position.z = py
+							break
+						end
+					end
+				end
+				block=nil
+			end
+
 			Util.SetLocalPosition(tf, vo.position.x or 0 , vo.position.y or 0 , vo.position.z or 0)
 			Util.SetLocalRot(tf, vo.direction.x or 0 , vo.direction.y or 0 , vo.direction.z or 0)
 			go.layer = LayerMask.NameToLayer("Character")

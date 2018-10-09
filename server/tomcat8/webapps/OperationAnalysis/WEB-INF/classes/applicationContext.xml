@@ -9,9 +9,9 @@
 	<bean id="db_gcc" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
-		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/xh_gcc?useUnicode=true&amp;characterEncoding=UTF-8" />
+		<property name="jdbcUrl" value="jdbc:mysql://47.106.208.235:3306/juliang_gcc?useUnicode=true&amp;characterEncoding=UTF-8" />
 		<property name="user" value="root" />
-		<property name="password" value="root" />
+		<property name="password" value="XHgame@2018" />
 
 		<property name="minPoolSize" value="1" />
 		<property name="maxPoolSize" value="20" />

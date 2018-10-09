@@ -679,7 +679,7 @@ end
 		local cfg = GetCfgData("mapManger"):Get(sceneId)
 		if cfg == nil then logWarn("场景配置不对。。。"..sceneId) return end 
 		if soundMgr and cfg.sound and cfg.sound ~= "" then
-			soundMgr:PlayBackSound(StringFormat("audio/{0}.unity3d", cfg.sound), cfg.sound)	-- soundMgr:PlayBackSound(StringFormat("audio/scene_{0}.unity3d", sid), "scene_"..sid)
+			soundMgr:PlayBackSound(tostring(cfg.sound))
 		end
 
 		local map_type = cfg.mapType 

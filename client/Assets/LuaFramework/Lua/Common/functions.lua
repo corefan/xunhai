@@ -1499,25 +1499,12 @@ end
 	printwk = print_r
 	
 -- loader --
-	-- 加载U3D资源对象 resId(xxxx资源名) abName(对应 Packager:BuildAssetsBundle()中的相对路径名开始+/xxx.unity3d)
-	function LoadPrefab( abName, resId, callback )
-		if type(resId) ~= "table" then
-			resId = {tostring(resId)}
-		else
-			if #resId == 1 then
-				resId[1] = tostring(resId[1])
-			else
-				for i,v in ipairs(resId) do
-					resId[i] = tostring(v)
-				end
-			end
-		end
-		resMgr:LoadPrefab(tostring(abName), resId, callback)
+	-- 加载U3D资源对象 res
+	function LoadPrefab( path, callback )
+		resMgr:LoadPrefab(path, callback)
 	end
 	-- 卸掉之前的所有相关ab, isThorough:true包含关系的依赖ab(注意创建的对象会丢掉贴图之类的)
-	function UnloadAssetBundle( abName, isThorough)
-
-		resMgr:UnloadAssetBundle(abName, isThorough==true)
+	function UnloadAssetBundle( path, isThorough)
 	end
 	-- "Assets/IGSoft_Resources/Projects/Effect" 下的 res 特效
 	function LoadEffect(res, finishCallback)
@@ -1526,136 +1513,93 @@ end
 			return
 		end
 		local loadCallBack = function ( obj )
-			if ToLuaIsNull(obj) then return end
-			local prefab = obj[0]
-			if ToLuaIsNull(prefab) then logWarn("LoadEffect error res!"..res) return end
-			finishCallback(prefab)
+			if ToLuaIsNull(obj) then logWarn("LoadEffect error res!"..res) return end
+			finishCallback(obj)
 		end
-		LoadPrefab( StringFormat("effect/{0}.unity3d", res), res, loadCallBack )
+		LoadPrefab( StringFormat("Effect/{0}", res), loadCallBack )
 	end
 	function UnLoadEffect(res, isThorough)
-		UnloadAssetBundle(StringFormat("effect/{0}.unity3d", res), isThorough)
 	end
-
 	-- "Assets/Res/Prefabs/Drop" 下的 res 特效
 	function LoadDrop(res, finishCallback)
 		local loadCallBack = function ( obj )
-			if ToLuaIsNull(obj) then return end
-			local prefab = obj[0]
-			if ToLuaIsNull(prefab) then logWarn("LoadDrop error res!"..res) return end
-			finishCallback(prefab)
+			if ToLuaIsNull(obj) then logWarn("LoadDrop error res!"..res) return end
+			finishCallback(obj)
 		end
-		LoadPrefab( StringFormat("prefabs/drop/{0}.unity3d", res), res, loadCallBack )
+		LoadPrefab( StringFormat("Prefabs/Drop/{0}", res), loadCallBack )
 	end
 	function UnLoadDrop(res,isThorough)
-		UnloadAssetBundle(StringFormat("prefabs/drop/{0}.unity3d", res), isThorough)
 	end
 	-- "Assets/Res/Prefabs/Player" 下的 res 特效
 	function LoadPlayer(res, finishCallback)
 		local loadCallBack = function ( obj )
-			if ToLuaIsNull(obj) then return end
-			local prefab = obj[0]
-			if ToLuaIsNull(prefab) then logWarn("LoadPlayer error res!"..res) return end
-			finishCallback(prefab)
+			if ToLuaIsNull(obj) then logWarn("LoadPlayer error res!"..res) return end
+			finishCallback(obj)
 		end
-		LoadPrefab( StringFormat("prefabs/player/{0}.unity3d", res), res, loadCallBack )
+		LoadPrefab( StringFormat("Prefabs/Player/{0}", res), loadCallBack )
 	end
 	function UnLoadPlayer(res,isThorough)
-		UnloadAssetBundle(StringFormat("prefabs/player/{0}.unity3d", res), isThorough)
 	end
 	-- "Assets/Res/Prefabs/Weapon" 下的 res 特效
 	function LoadWeapon(res, finishCallback)
 		local loadCallBack = function ( obj )
-			if ToLuaIsNull(obj) then return end
-			local prefab = obj[0]
-			if ToLuaIsNull(prefab) then logWarn("LoadWeapon error res!") return end
-			finishCallback(prefab)
+			if ToLuaIsNull(obj) then logWarn("LoadWeapon error res!") return end
+			finishCallback(obj)
 		end
-		LoadPrefab( StringFormat("prefabs/weapon/{0}.unity3d", res), res, loadCallBack )
+		LoadPrefab( StringFormat("Prefabs/Weapon/{0}", res), loadCallBack )
 	end
 	function UnLoadWeapon(res,isThorough)
-		UnloadAssetBundle(StringFormat("prefabs/weapon/{0}.unity3d", res), isThorough)
 	end
 	-- "Assets/Res/Prefabs/Wing" 下的 res 特效
 	function LoadWing(res, finishCallback)
 		local loadCallBack = function ( obj )
-			if ToLuaIsNull(obj) then return end
-			local prefab = obj[0]
-			if ToLuaIsNull(prefab) then logWarn("LoadWing error res!"..res) return end
-			finishCallback(prefab)
+			if ToLuaIsNull(obj) then logWarn("LoadWing error res!"..res) return end
+			finishCallback(obj)
 		end
-		LoadPrefab( StringFormat("prefabs/Wing/{0}.unity3d", res), res, loadCallBack )
+		LoadPrefab( StringFormat("Prefabs/Wing/{0}", res), loadCallBack )
 	end
 	function UnLoadWing(res,isThorough)
-		UnloadAssetBundle(StringFormat("prefabs/Wing/{0}.unity3d", res), isThorough)
 	end
 	-- "Assets/Res/Prefabs/NPC" 下的 res 特效
 	function LoadNPC(res, finishCallback)
 		local loadCallBack = function ( obj )
-			if ToLuaIsNull(obj) then return end
-			local prefab = obj[0]
-			if ToLuaIsNull(prefab) then logWarn("LoadNPC error res!"..res) return end
-			finishCallback(prefab)
+			if ToLuaIsNull(obj) then logWarn("LoadNPC error res!"..res) return end
+			finishCallback(obj)
 		end
-		LoadPrefab( StringFormat("prefabs/npc/{0}.unity3d", res), res, loadCallBack )
+		LoadPrefab( StringFormat("Prefabs/NPC/{0}", res), loadCallBack )
 	end
 	function UnLoadNPC(res,isThorough)
-		UnloadAssetBundle(StringFormat("prefabs/npc/{0}.unity3d", res), isThorough)
 	end
 	-- "Assets/Res/Prefabs/Monster" 下的 res 特效
 	function LoadMonster(res, finishCallback)
 		local loadCallBack = function ( obj )
-			if ToLuaIsNull(obj) then return end
-			local prefab = obj[0]
-			if ToLuaIsNull(prefab) then logWarn("LoadMonster error res!"..res) return end
-			finishCallback(prefab)
+			if ToLuaIsNull(obj) then logWarn("LoadMonster error res!"..res) return end
+			finishCallback(obj)
 		end
-		LoadPrefab( StringFormat("prefabs/monster/{0}.unity3d", res), res, loadCallBack )
+		LoadPrefab( StringFormat("Prefabs/Monster/{0}", res), loadCallBack )
 	end
 	function UnLoadMonster(res,isThorough)
-		UnloadAssetBundle(StringFormat("prefabs/monster/{0}.unity3d", res), isThorough)
 	end
 	-- "Assets/Res/Prefabs/Cam" 下的 res 特效
 	function LoadCam(res, finishCallback)
 		local loadCallBack = function ( obj )
-			if ToLuaIsNull(obj) then return end
-			local prefab = obj[0]
-			if ToLuaIsNull(prefab) then logWarn("LoadCam error res!"..res) return end
-			finishCallback(prefab)
+			if ToLuaIsNull(obj) then logWarn("LoadCam error res!"..res) return end
+			finishCallback(obj)
 		end
-		LoadPrefab( StringFormat("prefabs/cam/{0}.unity3d", res), res, loadCallBack )
+		LoadPrefab( StringFormat("Prefabs/Cam/{0}", res), loadCallBack )
 	end
 	function UnLoadCam(res,isThorough)
-		UnloadAssetBundle(StringFormat("prefabs/cam/{0}.unity3d", res), isThorough)
 	end
 
 	-- "Assets/Res/Prefabs/Drop" 下的模型加载（掉落和采集模型）
 	function LoadCollect(res, finishCallback)
 		local loadCallBack = function (obj)
-			if ToLuaIsNull(obj) then return end
-			local prefab = obj[0]
-			if ToLuaIsNull(prefab) then logWarn("LoadCollect error res!" .. res) return end
-			finishCallback(prefab)
+			if ToLuaIsNull(obj) then logWarn("LoadCollect error res!" .. res) return end
+			finishCallback(obj)
 		end
-		LoadPrefab(StringFormat("prefabs/drop/{0}.unity3d", res), res, loadCallBack)
+		LoadPrefab(StringFormat("Prefabs/Drop/{0}", res), loadCallBack)
 	end
-
 	function UnLoadCollect(res, isThorough)
-		UnloadAssetBundle(StringFormat("prefabs/drop/{0}.unity3d", res), isThorough)
-	end
-
-	-- (注意，不能与UI中的资源共用) icon3d/goods下的资源 res ->  xxxxid texture
-	function LoadGoodsIcon(res, finishCallback)
-		local loadCallBack = function ( obj )
-			if ToLuaIsNull(obj) then return end
-			local texture = obj[0]
-			if ToLuaIsNull(texture) then logWarn("LoadIcon error res!"..res) return end
-			finishCallback(texture)
-		end
-		resMgr:LoadTexture(StringFormat("Icon/Goods/{0}.unity3d", res), res, loadCallBack)
-	end
-	function UnLoadGoodsIcon(res, isThorough)
-		UnloadAssetBundle(StringFormat("Icon/Goods/{0}.unity3d", res), isThorough)
 	end
 
 

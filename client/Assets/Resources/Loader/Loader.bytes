@@ -39,24 +39,22 @@ apkz1a.xml|645|<component size="609,256">
     <item time="48" type="Alpha" target="n1" tween="true" startValue="0" ease="Linear"/>
     <item time="48" type="Alpha" target="n2" tween="true" startValue="0" ease="Linear"/>
   </transition>
-</component>nah1y.xml|1341|<component size="1334,750">
+</component>nah1y.xml|1040|<component size="1334,750">
   <displayList>
-    <graph id="n1" name="imgBG" xy="0,0" size="1334,750" type="rect" lineSize="0" fillColor="#ff333333"/>
+    <loader id="n2" name="n2" xy="-13,-17" size="1357,786" url="ui://00dfg718skt11c" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
     <text id="n0" name="title" xy="253,111" size="810,456" font="方正粗圆简体" fontSize="50" color="#ffcc00" align="center" vAlign="middle" leading="25" autoSize="none" text="健康游戏忠告&#xA;抵制不良游戏，拒绝盗版游戏。&#xA;注意自我保护，谨防受骗上当。&#xA;适度游戏益脑，沉迷游戏伤身。&#xA;合理安排时间，享受健康生活。"/>
   </displayList>
   <transition name="fadeIn">
     <item time="0" type="Alpha" target="n0" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
-    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
     <item time="48" type="Alpha" target="n0" tween="true" startValue="1" ease="Linear"/>
-    <item time="48" type="Alpha" target="n1" tween="true" startValue="1" ease="Linear"/>
   </transition>
   <transition name="fadeOut">
     <item time="0" type="Alpha" target="n0" tween="true" startValue="1" endValue="0" duration="48" ease="Linear"/>
-    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="0" duration="48" ease="Linear"/>
     <item time="48" type="Alpha" target="n0" tween="true" startValue="0" ease="Linear"/>
-    <item time="48" type="Alpha" target="n1" tween="true" startValue="0" ease="Linear"/>
   </transition>
-</component>package.xml|1631|<packageDescription id="00dfg718" name="Loader">
+</component>package.xml|1677|<packageDescription id="00dfg718" name="Loader">
   <resources>
     <atlas id="atlas0" size="2048,1024" file="atlas0.png"/>
     <component id="apkz1a" name="TiantiLeft" size="609,256"/>
@@ -81,6 +79,7 @@ apkz1a.xml|645|<component size="609,256">
     <image id="sgyos" name="progressBg" size="75,20" scale="9grid" scale9grid="29,0,15,15"/>
     <image id="sgyot" name="jinduguangdian" size="82,73"/>
     <image id="sgyou" name="jindutiao" size="673,12"/>
+    <image id="skt11c" name="bg" size="8,8"/>
   </resources>
 </packageDescription>qpe61.xml|2623|<component size="1334,750" extention="Label">
   <controller name="c1" pages="0,tiantiAnimHide,1,tiantiAnimShow" selected="0" transitions="*-0=t1,*-1=t0"/>
@@ -119,12 +118,12 @@ apkz1a.xml|645|<component size="609,256">
     <item time="0" type="Visible" target="n17" value="false"/>
     <item time="0" type="Visible" target="n18" value="false"/>
   </transition>
-</component>syhtg.xml|711|<component size="699,26" opaque="false" extention="ProgressBar">
+</component>syhtg.xml|695|<component size="699,26" opaque="false" extention="ProgressBar">
   <displayList>
     <image id="n8" name="n8" src="sgyos" xy="0,1" size="696,20"/>
     <component id="n9" name="bar" src="btvdm" xy="11,3"/>
-    <text id="n6" name="txt_title" xy="-184,30" size="1067,28" font="方正粗圆简体" fontSize="20" color="#c0e0fe" align="center" vAlign="middle" leading="0" letterSpacing="1" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="">
-      <relation target="" sidePair="center-center,middle-middle"/>
+    <text id="n6" name="txt_title" xy="44,31" size="10,27" font="方正粗圆简体" fontSize="20" color="#c0e0fe" align="center" vAlign="middle" leading="0" letterSpacing="1" shadowColor="#000000" shadowOffset="1,1" singleLine="true" text="">
+      <relation target="" sidePair="middle-middle"/>
     </text>
     <component id="n12" name="ani" src="yn2mp" xy="615,-63" pivot="0.5,0.5">
       <relation target="n9" sidePair="right-right"/>

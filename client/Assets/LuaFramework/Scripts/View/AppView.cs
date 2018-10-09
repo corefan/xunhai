@@ -142,6 +142,13 @@ public class AppView : View
         }
         else
         {
+            msg = context.data.ToString().Split('@');
+            if(msg.Length > 1)
+            {
+                progress.value = int.Parse(msg[1]);
+                loadTxt.text = msg[0];
+            }
+            else
             loadTxt.text = context.data.ToString();
         }
     }

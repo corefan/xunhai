@@ -239,7 +239,7 @@ public static class LuaBinder
 		L.RegFunction("Comparison_int", System_Comparison_int);
 		L.RegFunction("Action_string", System_Action_string);
 		L.RegFunction("Action_float", System_Action_float);
-		L.RegFunction("Action_UnityEngine_Objects", System_Action_UnityEngine_Objects);
+		L.RegFunction("Action_UnityEngine_Object", System_Action_UnityEngine_Object);
 		L.BeginModule("Collections");
 		System_Collections_QueueWrap.Register(L);
 		L.EndModule();
@@ -971,7 +971,7 @@ public static class LuaBinder
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int System_Action_UnityEngine_Objects(IntPtr L)
+	static int System_Action_UnityEngine_Object(IntPtr L)
 	{
 		try
 		{
@@ -980,13 +980,13 @@ public static class LuaBinder
 
 			if (count == 1)
 			{
-				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(System.Action<UnityEngine.Object[]>), func);
+				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(System.Action<UnityEngine.Object>), func);
 				ToLua.Push(L, arg1);
 			}
 			else
 			{
 				LuaTable self = ToLua.CheckLuaTable(L, 2);
-				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(System.Action<UnityEngine.Object[]>), func, self);
+				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(System.Action<UnityEngine.Object>), func, self);
 				ToLua.Push(L, arg1);
 			}
 			return 1;

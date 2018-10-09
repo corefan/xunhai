@@ -457,7 +457,7 @@ public class EffectRenderObj : Node
     // 创建特效
     private void CreateEffect(string effctName, string url)
     {
-        LuaHelper.GetResManager().LoadPrefab(url, effctName,effectCallBack);
+        // LuaHelper.GetResManager().LoadPrefab(url, effctName,effectCallBack);
     }
 
     private void effectCallBack(Object[] obj)

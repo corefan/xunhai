@@ -120,17 +120,14 @@ function GameLoader._LoadPreData(list, i)
 	if item[2] == 1 then
 		LoadEffect(item[1], function ( o )
 			if #list ~= 0 then
-				CSharpDispatcher:DispatchEvent("LOADER_PROGRESS", "载入炫丽的特效资源中，请稍等...|"..math.floor((i/preLoadCount)*100))
+				CSharpDispatcher:DispatchEvent("LOADER_PROGRESS", "初始化游戏角色特效中，请稍等...|"..math.floor((i/preLoadCount)*100))
 				this._LoadPreData(list, i+1)
-			-- else
-			-- 	CSharpDispatcher:DispatchEvent(EventName.LOADER_ALL_COMPLETED) -- 资源及lua 更新初始化完成
-			-- 	this.LoadResFinish()
 			end
 		end)
 	elseif item[2] == 0 then
 		LoadPlayer(item[1], function ( o )
 			if #list ~= 0 then
-				CSharpDispatcher:DispatchEvent("LOADER_PROGRESS", "载入炫丽的特效资源中，请稍等...|"..math.floor((i/preLoadCount)*100))
+				CSharpDispatcher:DispatchEvent("LOADER_PROGRESS", "初始化游戏角色特效中，请稍等...|"..math.floor((i/preLoadCount)*100))
 				this._LoadPreData(list, i+1)
 			else
 				CSharpDispatcher:DispatchEvent(EventName.LOADER_ALL_COMPLETED) -- 资源及lua 更新初始化完成

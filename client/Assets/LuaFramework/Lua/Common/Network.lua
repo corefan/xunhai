@@ -18,7 +18,7 @@ end
 
 function Network.DealMessage()
 	while true do
-		for i=1,20 do -- 每次最多x条协议处理
+		for i=1,50 do -- 每次最多x条协议处理
 			if next(Network.ReceiveMessages) then
 				local msg = table.remove(Network.ReceiveMessages, 1)
 				-- if GameConst.PRINT_PROTO then

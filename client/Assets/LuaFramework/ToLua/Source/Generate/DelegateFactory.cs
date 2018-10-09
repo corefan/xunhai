@@ -34,7 +34,7 @@ public static class DelegateFactory
 		dict.Add(typeof(UnityEngine.RectTransform.ReapplyDrivenProperties), UnityEngine_RectTransform_ReapplyDrivenProperties);
 		dict.Add(typeof(System.Action<string>), System_Action_string);
 		dict.Add(typeof(System.Action<float>), System_Action_float);
-		dict.Add(typeof(System.Action<UnityEngine.Object[]>), System_Action_UnityEngine_Objects);
+		dict.Add(typeof(System.Action<UnityEngine.Object>), System_Action_UnityEngine_Object);
 		dict.Add(typeof(FairyGUI.ListItemRenderer), FairyGUI_ListItemRenderer);
 		dict.Add(typeof(FairyGUI.ListItemProvider), FairyGUI_ListItemProvider);
 		dict.Add(typeof(FairyGUI.UIPackage.LoadResource), FairyGUI_UIPackage_LoadResource);
@@ -853,12 +853,12 @@ public static class DelegateFactory
 		}
 	}
 
-	class System_Action_UnityEngine_Objects_Event : LuaDelegate
+	class System_Action_UnityEngine_Object_Event : LuaDelegate
 	{
-		public System_Action_UnityEngine_Objects_Event(LuaFunction func) : base(func) { }
-		public System_Action_UnityEngine_Objects_Event(LuaFunction func, LuaTable self) : base(func, self) { }
+		public System_Action_UnityEngine_Object_Event(LuaFunction func) : base(func) { }
+		public System_Action_UnityEngine_Object_Event(LuaFunction func, LuaTable self) : base(func, self) { }
 
-		public void Call(UnityEngine.Object[] param0)
+		public void Call(UnityEngine.Object param0)
 		{
 			func.BeginPCall();
 			func.Push(param0);
@@ -866,7 +866,7 @@ public static class DelegateFactory
 			func.EndPCall();
 		}
 
-		public void CallWithSelf(UnityEngine.Object[] param0)
+		public void CallWithSelf(UnityEngine.Object param0)
 		{
 			func.BeginPCall();
 			func.Push(self);
@@ -876,22 +876,22 @@ public static class DelegateFactory
 		}
 	}
 
-	public static Delegate System_Action_UnityEngine_Objects(LuaFunction func, LuaTable self, bool flag)
+	public static Delegate System_Action_UnityEngine_Object(LuaFunction func, LuaTable self, bool flag)
 	{
 		if (func == null)
 		{
-			System.Action<UnityEngine.Object[]> fn = delegate(UnityEngine.Object[] param0) { };
+			System.Action<UnityEngine.Object> fn = delegate(UnityEngine.Object param0) { };
 			return fn;
 		}
 
 		if(!flag)
 		{
-			System.Action<UnityEngine.Object[]> d = (new System_Action_UnityEngine_Objects_Event(func)).Call;
+			System.Action<UnityEngine.Object> d = (new System_Action_UnityEngine_Object_Event(func)).Call;
 			return d;
 		}
 		else
 		{
-			System.Action<UnityEngine.Object[]> d = (new System_Action_UnityEngine_Objects_Event(func, self)).CallWithSelf;
+			System.Action<UnityEngine.Object> d = (new System_Action_UnityEngine_Object_Event(func, self)).CallWithSelf;
 			return d;
 		}
 	}

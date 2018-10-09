@@ -67,7 +67,6 @@ function DebugView:Config()
 	self.btnSkillSound = self.panel:GetChild("btnSkillSound")
 	self.btnSkillSound.onClick:Add(function ( e )
 		local sound = soundeff[math.random(1, #soundeff)]
-		-- soundMgr:PlayEffect(sound.r, sound.id)
 		EffectMgr.PlaySound(sound.id)
 	end)
 	

@@ -74,13 +74,14 @@ namespace LuaFramework {
 			if (File.Exists(localMapFile)) //删除旧的map文件
 				File.Delete(localMapFile);
 
-			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "正在分析资源中..." + pkgMapFile);
+            GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)正在解析资源中..." + pkgMapFile);
 			if (Application.platform == RuntimePlatform.Android) {
 				WWW www = new WWW(pkgMapFile);
+                Debug.Log("大小：" + www.size);
 				yield return www;
                 while (!www.isDone)
                 {
-                    GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "正在分析资源中...|" + www.progress * 100);
+                    GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)正在解析资源中...|" + www.progress * 100);
                     yield return null;
                 }
 				if (www.isDone)
@@ -102,7 +103,7 @@ namespace LuaFramework {
 				if (fs.Length != 2) break;
 				pkgMapFile = pkgPath + fs[0];
 				localMapFile = dataPath + fs[0];
-				GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "[不消耗流量，请放心等待]正在解包文件中... |" + Mathf.FloorToInt((++step * 100 / count)));
+                GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)正在初始化游戏中... |" + Mathf.FloorToInt((++step * 100 / count)));
 
 #if !SyncLocal //进行更新场景		
 			    if(fs[0].Contains("scene/")){//跳过场景资源，进行动态加载
@@ -151,7 +152,7 @@ namespace LuaFramework {
 			string lastVersion = lastLine;//最近版本号
 			gameVersion = lastVersion.Trim();
 #if SyncLocal //不进行更新
-			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "更新资源中... |35");
+			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)更新资源中... |35");
 			for (int i = 0; i < count; i++)
 			{
 				if (string.IsNullOrEmpty(lastMapList[i])) continue;
@@ -164,14 +165,14 @@ namespace LuaFramework {
 				if (!string.IsNullOrEmpty(f) && f.IndexOf("lua/lua_skgame_modules_") != -1)
 					if (f.IndexOf(".manifest") == -1)
 						moduleABPaths.Add(f);
-				GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "更新资源中... |" + Mathf.FloorToInt((++step * 100 / count)));
+				GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)更新资源中... |" + Mathf.FloorToInt((++step * 100 / count)));
 				// if(keyValue[0].Contains("scene/")){//跳过场景资源，进行动态加载
 				// 	loaderMgr.CacheAssetBundleLoaderData(keyValue[0], keyValue[1]);
 				// 	continue;
 				// }
 			}
 #else
-			bool hasUpdate = false;//是否存在必要更新
+            bool hasUpdate = false;//是否存在必要更新
 			#region 本地资源版本
 			//收集当前版本文件信息
 			for (int i = 0; i < count; i++)
@@ -189,19 +190,20 @@ namespace LuaFramework {
 			#endregion
 			
 			#region 服务器资源版本
-			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "请求更新资源中... |35");
+			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "请求版本资源中... ");
 			string remoteVersion = lastVersion;//cdn版本号 暂定与本地一样
 			string url = AppConst.WebUrl;
 			string random = DateTime.Now.ToString("yyyymmddhhmmss");
 			string webMapUrl = url + "files.txt?v=" + random;
 			WWW www = new WWW(webMapUrl);
+            Debug.Log("资源位置：" + webMapUrl);
             yield return www;
 			if (www.error != null)
 			{
 				Debug.Log("可能网络问题，也可能服务器资源没提交!  此处可以考虑直接进游戏用本地资源[不进行更新 #SyncLocal]");
 
 				#region 临时解决方案(没有连接上cdn 使用本地资源)
-				GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "连接不到资源服务器中心，自动使用最近版本资源进入游戏，建议稍候重启游戏更新!! |100");
+				GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "连接不到资源服务器中心，应用最近版本资源进入游戏，建议稍候重启游戏更新!! |100");
 				for (int i = 0; i < count; i++)
 				{
 					if (string.IsNullOrEmpty(lastMapList[i])) continue;
@@ -224,10 +226,13 @@ namespace LuaFramework {
 				yield break;
 				#endregion
 
-				GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "更新资源失败,您的网络可能不稳定，请稍后再重新启动游戏试试！");
+                GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)请求资源失败,您的网络可能不稳定，请稍后再重新启动游戏！");
 				yield break;
 			}else{
-				GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "更新资源中... |" + Mathf.FloorToInt(www.progress*100));
+                Debug.Log("大小：" + www.size);
+                int p = Mathf.FloorToInt(www.progress * 100);
+                int size = Mathf.CeilToInt(www.size * 0.001f);
+                GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "加载版本资源中,需要消耗流量约 " + size + "kb, 已经完成 |" + p);
 			}
 			byte[] webMapData = www.bytes;
 			string webMap = www.text.Trim();
@@ -288,7 +293,7 @@ namespace LuaFramework {
 				}
 				if (lastVersion == remoteVersion)//版本一样，不用更新
 				{
-					GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "更新资源中... |" + Mathf.FloorToInt((++step * 100 / count)));
+                    GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)初始化游戏环境中... |" + Mathf.FloorToInt((++step * 100 / count)));
 					continue;
 				}
 				
@@ -331,14 +336,27 @@ namespace LuaFramework {
 						OnUpdateFailed(path);
 						yield break;
 					}
-					message = String.Format("更新{0}资源中... |", msgRes);
-
-					if (msgRes == " UI ")
-						GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, message + Mathf.FloorToInt((++uiStep)*100/uiCount));
-					else if (msgRes == "配置")
-						GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, message + Mathf.FloorToInt((++luaStep)*100/luaCount));
-					else if (msgRes == "环境")
-						GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, message + Mathf.FloorToInt((++resStep)*100/resCount));
+                    int size = 0;//Mathf.CeilToInt(www.size * 0.001f);
+                    //ui 300kb/g
+                    //lua 6kb/g
+                    if (msgRes == " UI ")
+                    {
+                        size = 311 * uiCount;
+                        message = String.Format("正在更新{0}文件, 需要消耗流量约 {1} kb@", msgRes, size);
+                        GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, message + Mathf.FloorToInt((++uiStep) * 100 / uiCount));
+                    }
+                    else if (msgRes == "配置")
+                    {
+                        size = 6 * luaCount;
+                        message = String.Format("正在更新{0}文件, 需要消耗流量约 {1} kb@", msgRes, size);
+                        GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, message + Mathf.FloorToInt((++luaStep) * 100 / luaCount));
+                    }
+                    else if (msgRes == "环境")
+                    {
+                        size = 151 * resCount;
+                        message = String.Format("正在更新{0}文件, 需要消耗流量约 {1} kb@", msgRes, size);
+                        GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, message + Mathf.FloorToInt((++resStep) * 100 / resCount));
+                    }
                     //float r = UnityEngine.Random.Range(0.1f, 0.15f); //双进度条时可以用这个，要关掉前面的  yield return www;
                     //while (!www.isDone)
                     //{
@@ -361,7 +379,7 @@ namespace LuaFramework {
 			//Debug.Log("=================版本：===================>>最近:" + lastVersion + "| 远程:" + remoteVersion);
 			yield return new WaitForEndOfFrame();
 
-			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_COMPLETED, " 更新完成!!");
+			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_COMPLETED, " 游戏环境初始成功!!");
 			OnResourceInited();
 			yield return 0;
 		}
@@ -382,7 +400,7 @@ namespace LuaFramework {
 		//加载失败
 		void OnUpdateFailed(string file)
 		{
-			string message = "更新失败!>" + file;
+            string message = "游戏环境初始失败!>" + file;
 			Debug.Log("更新失败!>" + file);
 			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, message);
 		}

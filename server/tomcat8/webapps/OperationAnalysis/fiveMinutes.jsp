@@ -32,11 +32,11 @@
 		int length = fiveOnlineData.length();
 		for (int i = 0; i < length; i++) {
 			obj = fiveOnlineData.getJSONObject(i);
-			if (!obj.isNull("num")) {
+			if (obj.has("num")) {
 				fiveOnlineData_1 += obj.getString("num") + ",";
 				maxIndex = i;
 			}
-			if (!obj.isNull("num1")) {
+			if (obj.has("num1")) {
 				fiveOnlineData_2 += obj.getString("num1") + ",";
 			}
 		}
@@ -91,7 +91,7 @@
 		int length = fiveRegisterData.length();
 		for (int i = 1; i < fiveRegisterData.length(); i++) {
 			obj = fiveRegisterData.getJSONObject(i);
-			if (!obj.isNull("num")) {
+			if (obj.has("num")) {
 				curVal = Integer.parseInt(obj.getString("num"));
 				fiveRegisterData_1 += curVal + ",";
 				if (i % 3 == 0  || i == 287) {
@@ -101,7 +101,7 @@
 				maxIndex = i;
 			}
 				
-			if (!obj.isNull("num1")) {
+			if (obj.has("num1")) {
 				curVal = Integer.parseInt(obj.getString("num1"));
 				fiveRegisterData_2 += curVal + ",";
 				if (i % 3 == 0  || i == 287) {
@@ -164,7 +164,7 @@
 		int length = fivePayData.length();
 		for (int i = 1; i < fivePayData.length(); i++) {
 			obj = fivePayData.getJSONObject(i);
-			if (!obj.isNull("num")) {
+			if (obj.has("num")) {
 				curVal = Integer.parseInt(obj.getString("num"));
 				fivePayData_1 += curVal + ",";
 				if (i % 3 == 0 || i == 287) {
@@ -174,7 +174,7 @@
 				maxIndex = i;
 			}
 				
-			if (!obj.isNull("num1")) {
+			if (obj.has("num1")) {
 				curVal = Integer.parseInt(obj.getString("num1"));
 				fivePayData_2 += curVal + ",";
 				if (i % 3 == 0 || i == 287) {
@@ -514,10 +514,10 @@
 		});
 	});
 </script>
-</head>
+<script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"55542",secure:"55551"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
 
-<body>
-	<div class="container">
+<body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-20" data-genuitec-path="/OperationAnalysis/WebRoot/fiveMinutes.jsp">
+	<div class="container" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-20" data-genuitec-path="/OperationAnalysis/WebRoot/fiveMinutes.jsp">
 		<div class="header">
 			<%@ include file="index_header.jsp"%>
 		</div>

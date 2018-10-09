@@ -185,12 +185,12 @@ function GetIOSData( param )
 		local data = {}
 		for i,v in ipairs(content) do
 			if v~="" then
-				if string.find(v, "[{|}]") then
-					local i,j = string.find(v, ____eq)
-					local n = string.sub(v, 1, i-1)
-					local v = string.sub(v,j+1)
-					data[n] = GetIOSData(ClearAllLetter(ClearAllLetter(v, "[{|}]"), ";", "&"))
-				else
+				-- if string.find(v, "[{|}]") then
+				-- 	local i,j = string.find(v, ____eq)
+				-- 	local n = string.sub(v, 1, i-1)
+				-- 	local v = string.sub(v,j+1)
+				-- 	data[n] = GetIOSData(ClearAllLetter(ClearAllLetter(v, "[{|}]"), ";", "&"))
+				-- else
 					-- local tmp = StringSplit(v, '=')
 					-- data[tmp[1]] = tmp[2]
 					
@@ -210,7 +210,7 @@ function GetIOSData( param )
 					local vv = tmp[2]
 					vv = string.gsub( vv, eqb, ____eq)
 					data[k] = vv
-				end
+				-- end
 			end
 		end
 		return data

@@ -118,6 +118,11 @@ function RoleVo:SetValue( k, v, old, dataTab )
    		end
 		
 		if self.isMainRole then
+			if k == "level" then
+				if isSDKPlat then
+					LoginController:GetInstance():UploadRoleInfo(2)
+				end
+			end
 			LoginModel:GetInstance():UpdateLoginData(k, v)
 		end
 		self:OnChange(k, v, old, dataTab)

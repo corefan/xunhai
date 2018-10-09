@@ -491,12 +491,12 @@ end
 -- 对特效绑定音效 soundRes 只处理Audio路径内的音频文件
 function EffectMgr.PlaySound(soundId)
 	if not soundId then return end
-	soundMgr:PlayEffect(StringFormat("audio/{0}.unity3d", soundId), soundId)
+	soundMgr:PlayEffect(tostring(soundId))
 end
 
 function EffectMgr.PlayBGSound(soundId)
 	if not soundId then return end 
-	soundMgr:PlayBackSound(StringFormat("audio/{0}.unity3d", soundId), soundId)
+	soundMgr:PlayBackSound(tostring(soundId))
 end
 
 -- 销毁指定特效以一定时间 useDestroyCallback是否启用销毁回调

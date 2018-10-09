@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1334,750" bgColorEnabled="true" bgColor="#000000">
   <displayList>
-    <graph id="n1" name="imgBG" xy="0,0" size="1334,750" type="rect" lineSize="0" fillColor="#ff333333"/>
+    <loader id="n2" name="n2" xy="-13,-17" size="1357,786" url="ui://00dfg718skt11c" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
     <text id="n0" name="title" xy="253,111" size="810,456" font="方正粗圆简体" fontSize="50" color="#ffcc00" align="center" vAlign="middle" leading="25" autoSize="none" text="健康游戏忠告&#xA;抵制不良游戏，拒绝盗版游戏。&#xA;注意自我保护，谨防受骗上当。&#xA;适度游戏益脑，沉迷游戏伤身。&#xA;合理安排时间，享受健康生活。"/>
   </displayList>
   <transition name="fadeIn">
     <item time="0" type="Alpha" target="n0" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
-    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="1" duration="48" ease="Linear"/>
     <item time="48" type="Alpha" target="n0" tween="true" startValue="1" ease="Linear"/>
-    <item time="48" type="Alpha" target="n1" tween="true" startValue="1" ease="Linear"/>
   </transition>
   <transition name="fadeOut">
     <item time="0" type="Alpha" target="n0" tween="true" startValue="1" endValue="0" duration="48" ease="Linear"/>
-    <item time="0" type="Alpha" target="n1" tween="true" startValue="0" endValue="0" duration="48" ease="Linear"/>
     <item time="48" type="Alpha" target="n0" tween="true" startValue="0" ease="Linear"/>
-    <item time="48" type="Alpha" target="n1" tween="true" startValue="0" ease="Linear"/>
   </transition>
 </component>
