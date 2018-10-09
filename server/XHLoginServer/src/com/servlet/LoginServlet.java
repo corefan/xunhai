@@ -513,7 +513,7 @@ public class LoginServlet extends BaseServlet {
 		}else if(appid.equals("6327") || appid.equals("6328") 
 				|| appid.equals("6333") || appid.equals("6010")
 				|| appid.equals("6089") || appid.equals("6094")
-				|| appid.equals("6095")){ //太古封神 太古伏魔录 武动九州 仙侠幻梦录 隋唐修仙传 修仙侠隐
+				|| appid.equals("6095")){ //太古封神 太古伏魔录 武动九州 仙侠幻梦录 隋唐修仙传 逍遥仙途 修仙侠隐
 			String uid = req.getParameter("userId");
 			String token = req.getParameter("token");
 			if(uid == null || token == null){

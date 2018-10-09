@@ -391,11 +391,13 @@ public class DataAnalysisService implements IDataAnalysisService {
 
 					if (num1 == null)
 						num1 = 0;
+					
 					JSONObject jsonObject = new JSONObject();
 					jsonObject.put("date", DateService.dateFormatHMS(time));
 
-					if (num != null)
+					if(num != null){
 						jsonObject.put("num", num);
+					}
 					jsonObject.put("num1", num1);
 
 					cal.add(Calendar.MINUTE, 5);
@@ -496,11 +498,13 @@ public class DataAnalysisService implements IDataAnalysisService {
 
 					if (num1 == null)
 						num1 = 0;
+					
 					JSONObject jsonObject = new JSONObject();
 					jsonObject.put("date", DateService.dateFormatHMS(time));
 
-					if (num != null)
+					if(num != null){
 						jsonObject.put("num", num);
+					}
 					jsonObject.put("num1", num1);
 
 					cal.add(Calendar.MINUTE, 5);
@@ -652,11 +656,13 @@ public class DataAnalysisService implements IDataAnalysisService {
 					}
 					if (num1 == null)
 						num1 = 0;
-
+					
 					JSONObject jsonObject = new JSONObject();
 					jsonObject.put("date", DateService.dateFormatHMS(time));
-					if (num != null)
+
+					if(num != null){
 						jsonObject.put("num", num);
+					}
 					jsonObject.put("num1", num1);
 
 					cal.add(Calendar.MINUTE, 5);

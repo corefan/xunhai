@@ -24,7 +24,7 @@ public class RedisServer {
 			poolConfig.setTestOnReturn(true);
 			poolConfig.setTestWhileIdle(true);
 			poolConfig.setMaxWaitMillis(3000);
-			jedisPool = new JedisPool(poolConfig, "10.25.219.23", 10001, 3000, "Ken@2018");			
+			jedisPool = new JedisPool(poolConfig, "47.106.208.235", 10001, 3000, "Ken@2018");			
 			//jedisPool = new JedisPool(poolConfig, IP, port, maxWait);			
 		} catch (Exception e) {
 			e.printStackTrace();

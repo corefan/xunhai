@@ -811,7 +811,7 @@ public class PayServlet extends AbstractServlet {
 				}else if(appid.equals("6327") || appid.equals("6328") 
 						|| appid.equals("6333") || appid.equals("6010")
 						|| appid.equals("6089") || appid.equals("6094")
-						|| appid.equals("6095")){ //太古封神 太古伏魔录 武动九州 仙侠幻梦录 隋唐修仙传 修仙侠隐
+						|| appid.equals("6095")){ //太古封神 太古伏魔录 武动九州 仙侠幻梦录 隋唐修仙传  逍遥仙途 修仙侠隐
 					
 					String cp_order_id = req.getParameter("cp_order_id"); //cp平台订单号
 					String mem_id = req.getParameter("mem_id"); //玩家ID

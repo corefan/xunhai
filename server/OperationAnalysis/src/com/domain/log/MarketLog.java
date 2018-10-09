@@ -18,7 +18,7 @@ public class MarketLog implements Serializable{
 	/** 自增ID*/
 	private long logId; 	
 	/** 账号编号*/
-	private int userId;
+	private long userId;
 	/** 玩家编号*/
 	private long playerId;
 	/** 角色名称*/
@@ -44,10 +44,10 @@ public class MarketLog implements Serializable{
 	public void setLogId(long logId) {
 		this.logId = logId;
 	}
-	public int getUserId() {
+	public long getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 	public long getPlayerId() {
