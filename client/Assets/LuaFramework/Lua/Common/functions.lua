@@ -895,7 +895,7 @@ end
 
 	function copyToClass(target, result)
 		for k,v in pairs(target) do
-			if type(k) ~= "function" and k ~= "_class_type" then
+			if type(v) ~= "function" and k ~= "_class_type" then
 				result[k] = v
 			end
 		end

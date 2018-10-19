@@ -60,7 +60,7 @@ local cfg={
 		attRing={{13,30}},
 		attArm1={{5,40},{7,40}},
 		attArm2={{3,210}},
-		needMana=10,
+		needMana=75,
 		expGold=75,
 		needLevel=6
 	},
@@ -76,7 +76,7 @@ local cfg={
 		attRing={{13,50}},
 		attArm1={{5,70},{7,70}},
 		attArm2={{3,340}},
-		needMana=20,
+		needMana=125,
 		expGold=125,
 		needLevel=9
 	},
@@ -92,7 +92,7 @@ local cfg={
 		attRing={{13,80}},
 		attArm1={{5,100},{7,100}},
 		attArm2={{3,490}},
-		needMana=35,
+		needMana=175,
 		expGold=175,
 		needLevel=12
 	},
@@ -108,7 +108,7 @@ local cfg={
 		attRing={{13,110}},
 		attArm1={{5,130},{7,130}},
 		attArm2={{3,660}},
-		needMana=65,
+		needMana=250,
 		expGold=250,
 		needLevel=15
 	},
@@ -124,7 +124,7 @@ local cfg={
 		attRing={{13,140}},
 		attArm1={{5,170},{7,170}},
 		attArm2={{3,860}},
-		needMana=120,
+		needMana=375,
 		expGold=375,
 		needLevel=18
 	},
@@ -140,7 +140,7 @@ local cfg={
 		attRing={{13,180}},
 		attArm1={{5,220},{7,220}},
 		attArm2={{3,1100}},
-		needMana=200,
+		needMana=600,
 		expGold=600,
 		needLevel=21
 	},
@@ -156,7 +156,7 @@ local cfg={
 		attRing={{13,220}},
 		attArm1={{5,280},{7,280}},
 		attArm2={{3,1380}},
-		needMana=350,
+		needMana=800,
 		expGold=800,
 		needLevel=24
 	},
@@ -172,7 +172,7 @@ local cfg={
 		attRing={{13,270}},
 		attArm1={{5,340},{7,340}},
 		attArm2={{3,1690}},
-		needMana=575,
+		needMana=1200,
 		expGold=1200,
 		needLevel=27
 	},
@@ -188,7 +188,7 @@ local cfg={
 		attRing={{13,330}},
 		attArm1={{5,410},{7,410}},
 		attArm2={{3,2040}},
-		needMana=920,
+		needMana=2000,
 		expGold=2000,
 		needLevel=30
 	},
@@ -204,7 +204,7 @@ local cfg={
 		attRing={{13,390}},
 		attArm1={{5,490},{7,490}},
 		attArm2={{3,2440}},
-		needMana=1450,
+		needMana=2800,
 		expGold=2800,
 		needLevel=33
 	},
@@ -220,7 +220,7 @@ local cfg={
 		attRing={{13,460}},
 		attArm1={{5,580},{7,580}},
 		attArm2={{3,2900}},
-		needMana=2200,
+		needMana=4400,
 		expGold=4400,
 		needLevel=36
 	},
@@ -236,7 +236,7 @@ local cfg={
 		attRing={{13,550}},
 		attArm1={{5,680},{7,680}},
 		attArm2={{3,3410}},
-		needMana=3300,
+		needMana=6000,
 		expGold=6000,
 		needLevel=39
 	},
@@ -252,7 +252,7 @@ local cfg={
 		attRing={{13,640}},
 		attArm1={{5,790},{7,790}},
 		attArm2={{3,3970}},
-		needMana=4850,
+		needMana=10000,
 		expGold=10000,
 		needLevel=42
 	},
@@ -268,7 +268,7 @@ local cfg={
 		attRing={{13,730}},
 		attArm1={{5,920},{7,920}},
 		attArm2={{3,4590}},
-		needMana=7000,
+		needMana=15000,
 		expGold=15000,
 		needLevel=45
 	},
@@ -284,7 +284,7 @@ local cfg={
 		attRing={{13,840}},
 		attArm1={{5,1060},{7,1060}},
 		attArm2={{3,5280}},
-		needMana=9850,
+		needMana=22000,
 		expGold=22000,
 		needLevel=48
 	},
@@ -300,7 +300,7 @@ local cfg={
 		attRing={{13,970}},
 		attArm1={{5,1210},{7,1210}},
 		attArm2={{3,6040}},
-		needMana=13500,
+		needMana=33000,
 		expGold=33000,
 		needLevel=51
 	},
@@ -316,7 +316,7 @@ local cfg={
 		attRing={{13,1100}},
 		attArm1={{5,1380},{7,1380}},
 		attArm2={{3,6880}},
-		needMana=18800,
+		needMana=50000,
 		expGold=50000,
 		needLevel=54
 	},
@@ -332,7 +332,7 @@ local cfg={
 		attRing={{13,1250}},
 		attArm1={{5,1560},{7,1560}},
 		attArm2={{3,7780}},
-		needMana=25500,
+		needMana=75000,
 		expGold=75000,
 		needLevel=57
 	},
@@ -348,7 +348,7 @@ local cfg={
 		attRing={{13,1400}},
 		attArm1={{5,1750},{7,1750}},
 		attArm2={{3,8760}},
-		needMana=34250,
+		needMana=110000,
 		expGold=110000,
 		needLevel=60
 	},
@@ -364,7 +364,7 @@ local cfg={
 		attRing={{13,1570}},
 		attArm1={{5,1970},{7,1970}},
 		attArm2={{3,9830}},
-		needMana=45500,
+		needMana=165000,
 		expGold=165000,
 		needLevel=63
 	},
@@ -380,7 +380,7 @@ local cfg={
 		attRing={{13,1760}},
 		attArm1={{5,2200},{7,2200}},
 		attArm2={{3,10990}},
-		needMana=60000,
+		needMana=250000,
 		expGold=250000,
 		needLevel=66
 	},
@@ -396,7 +396,7 @@ local cfg={
 		attRing={{13,1960}},
 		attArm1={{5,2450},{7,2450}},
 		attArm2={{3,12230}},
-		needMana=79000,
+		needMana=375000,
 		expGold=375000,
 		needLevel=69
 	},
@@ -412,7 +412,7 @@ local cfg={
 		attRing={{13,2170}},
 		attArm1={{5,2710},{7,2710}},
 		attArm2={{3,13570}},
-		needMana=103500,
+		needMana=560000,
 		expGold=560000,
 		needLevel=72
 	},
@@ -428,7 +428,7 @@ local cfg={
 		attRing={{13,2400}},
 		attArm1={{5,3000},{7,3000}},
 		attArm2={{3,15000}},
-		needMana=135000,
+		needMana=840000,
 		expGold=840000,
 		needLevel=75
 	}

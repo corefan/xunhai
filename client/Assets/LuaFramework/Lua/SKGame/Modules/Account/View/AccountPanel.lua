@@ -108,9 +108,9 @@ end
 
 function AccountPanel:GetReward()
 	local rewardCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(rewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.PhoneBind then
-			self.cfg = cfgVal
+	for k , v in pairs(rewardCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.PhoneBind then
+			self.cfg = v
 		end
 	end
 	if self.cfg then

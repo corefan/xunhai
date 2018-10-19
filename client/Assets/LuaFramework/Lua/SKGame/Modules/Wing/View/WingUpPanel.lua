@@ -184,9 +184,9 @@ function WingUpPanel:OnUpBtnClickHandler()
 		else
 			local marketId = 0
 			local cfg = GetCfgData("market")
-			for k , cfgVal in pairs(cfg) do
-				if type(k) == 'number' and cfgVal and cfgVal.itemId == self.curSelectCost and cfgVal.pageId == 2 then
-					marketId = cfgVal.marketId
+			for k , v in pairs(cfg) do
+				if type(v) ~= 'function' and v and v.itemId == self.curSelectCost and v.pageId == 2 then
+					marketId = v.marketId
 					break
 				end
 			end

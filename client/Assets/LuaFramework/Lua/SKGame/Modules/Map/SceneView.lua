@@ -494,13 +494,16 @@ end
 		self.lookMon = false
 		self:InitEvent()
 		self:LoadCamera() -- 加载相机
-		SceneLoader.Show(false)
 		GlobalDispatcher:DispatchEvent(EventName.SCENE_LOAD_FINISH, self.sceneId)
 		self.loadFinish = true
 		GlobalDispatcher:DispatchEvent(EventName.CAMERA_READY)
 		self:Start()
 		-- self.model.headerId = self.model:GetMainPlayer().playerId -- 测试
 		SceneController:GetInstance():ReqShixiang()
+
+		DelayCall(function ()
+			SceneLoader.Show(false)	
+		end, 2)
 	end
 	
 	function SceneView:SkillPreviewInit()
@@ -820,6 +823,7 @@ end
 				if (self.model:IsTower() or self.model:IsCopy()) and self.cameraFocusTemp then --副本或者大荒塔主角朝向boss出生点
 					self.mainPlayer:SetDirByTargetRightNow(self.cameraFocusTemp.transform.position)
 				end
+				self.ctrl:__ReqRoundElement()
 			else
 				go.name = "P_"..vo.guid.."_"..vo.dressStyle
 			end

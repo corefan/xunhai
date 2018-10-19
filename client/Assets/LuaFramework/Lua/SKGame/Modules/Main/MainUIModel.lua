@@ -46,11 +46,11 @@ end
 
 function MainUIModel:InitMainUIVoList()
 	local pushNotice = GetCfgData("pushNotice")
-	for key , noticeVal in pairs(pushNotice) do
-		if type(key) == "number" then
+	for key , v in pairs(pushNotice) do
+		if type(v) ~= 'function' then
 			local curMainUIVo = MainUIVo.New()
-			local isFadeIn = noticeVal.appear == 1 or false
-			curMainUIVo:SetData(nil , noticeVal.apper , noticeVal.id , nil , noticeVal.level , noticeVal.taskId , noticeVal.moduleId , isFadeIn)
+			local isFadeIn = v.appear == 1 or false
+			curMainUIVo:SetData(nil , v.apper , v.id , nil , v.level , v.taskId , v.moduleId , isFadeIn)
 			table.insert(self.mainUIVoList , curMainUIVo)
 		end
 	end
@@ -554,7 +554,7 @@ function MainUIModel:GetActivitesPushNotice()
 	local rtnData = {}
 	local pushNoticeCfg = GetCfgData("pushNotice")
 	for k , v in pairs(pushNoticeCfg) do
-		if type(k) == 'number' then
+		if type(v) ~= 'function' then
 			if v and v.apper > 0 and v.apper < 13 then
 				table.insert(rtnData , v)
 			end

@@ -9,7 +9,7 @@
 ]]
 
 local cfg={
-	[1]={
+	["1"]={
 		id=1,
 		needLevel=5,
 		segmentDes="1段",
@@ -18,7 +18,7 @@ local cfg={
 		attValue="5%",
 		attAwaken={{35,50}}
 	},
-	[2]={
+	["2"]={
 		id=2,
 		needLevel=10,
 		segmentDes="2段",
@@ -27,7 +27,7 @@ local cfg={
 		attValue="10%",
 		attAwaken={{31,90},{32,90}}
 	},
-	[3]={
+	["3"]={
 		id=3,
 		needLevel=15,
 		segmentDes="3段",
@@ -36,7 +36,7 @@ local cfg={
 		attValue="15%",
 		attAwaken={{33,50},{34,50},{35,50}}
 	},
-	[4]={
+	["4"]={
 		id=4,
 		needLevel=20,
 		segmentDes="4段",
@@ -45,7 +45,7 @@ local cfg={
 		attValue="20%",
 		attAwaken={{31,160},{32,160},{33,100},{34,100}}
 	},
-	[5]={
+	["5"]={
 		id=5,
 		needLevel=25,
 		segmentDes="5段",

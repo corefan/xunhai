@@ -137,7 +137,7 @@ function PowerModel:InitLevelingRewardData()
 	local rewardCfg = GetCfgData("reward")
 	local career = LoginModel:GetInstance():GetLoginRole().career
 	for k , v in pairs(rewardCfg) do
-		if type(k) == "number" and v and v.type == RewardConst.Type.LevelingMadmanReward then
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.LevelingMadmanReward then
 			self.leveRewardId = v.id			
 			table.insert(self.leveingMadmanData , {id = v.id , grade = v.condition , total = v.resCondition ,rewards = v.reward ,isCanLingQuBool = true ,num = 0, state = PowerConst.OnLevelingRewardState.None})
 			
@@ -264,7 +264,7 @@ function PowerModel:InitImproveBattleRewardData()
 	local rewardCfg = GetCfgData("reward")
 
 	for k , v in pairs(rewardCfg) do
-		if type(k) == "number" and v and v.type == RewardConst.Type.CombatPowerReward then
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.CombatPowerReward then
 			self.ImproveRewardId = v.id			
 			table.insert(self.improveBattleData , {id = v.id , battleValue = v.condition , total = v.resCondition ,rewards = v.reward ,isCanLingQuBool = true ,num = 0, state = PowerConst.OnImproveBattleRewardState.None})
 			
@@ -345,7 +345,6 @@ function PowerModel:IsCanGetBattleReward(rewardId)
 	local IsCan = false
 	if rewardId then
 		local rewardCfg = self:GetBattleRewradCfgById(rewardId)
-		
 		 if self:GetCurrentRolebattleValue() >= rewardCfg.condition or self:GetShengJiRoBattleValue() >= rewardCfg.condition then
 		    IsCan = true 
 		 end

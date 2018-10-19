@@ -10,9 +10,9 @@ end
 function ChouDiModel:GetResMarketId(itemId)
 	local id = 0
 	local data = GetCfgData("market")
-	for k , cfgVal in pairs(data) do
-		if type(k) == 'number' and cfgVal and cfgVal.itemId == itemId then
-			id = cfgVal.marketId
+	for k , v in pairs(data) do
+		if type(v) ~= 'function' and v and v.itemId == itemId then
+			id = v.marketId
 			break
 		end
 	end

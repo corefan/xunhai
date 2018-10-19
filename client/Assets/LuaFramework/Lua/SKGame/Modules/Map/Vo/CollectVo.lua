@@ -36,8 +36,7 @@ end
 
 function CollectVo:InitVo(attrs)
 	for k,v in pairs(attrs) do
-		if type(k) ~= "function" and type(k) ~="_class_type" then
-			-- body
+		if type(v) ~= "function" and k ~="_class_type" then
 			self[k] = v
 		end
 	end
@@ -81,7 +80,7 @@ end
 function CollectVo:UpdateVo(attrs)
 	
 	for k, v in pairs(attrs) do
-		if type(k) ~= "function" and type(k) ~= "_class_type" then
+		if type(k) ~= "function" and k ~= "_class_type" then
 			-- body
 			if self[k] then
 				self:SetValue(k, v, self[k])

@@ -75,9 +75,9 @@ end
 function VipModel:GetDailyRewardCfgData()                  --获取每日奖励列表
 	local dailyList = {}
 	local data = GetCfgData("reward")
-	for k , cfgVal in pairs(data) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.VIPDailyWelfare then
-			dailyList = cfgVal.reward
+	for k , v in pairs(data) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.VIPDailyWelfare then
+			dailyList = v.reward
 			break
 		end
 	end
@@ -96,9 +96,9 @@ end
 function VipModel:GetPayNumListData(i)
 	local list = GetCfgData("charge")
 	local tab = {}
-	for k , cfgVal in pairs(list) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == 3 then
-			table.insert(tab, cfgVal)
+	for k , v in pairs(list) do
+		if type(v) ~= 'function' and v and v.type == 3 then
+			table.insert(tab, v)
 		end
 	end
 	table.sort(tab , function(a , b)

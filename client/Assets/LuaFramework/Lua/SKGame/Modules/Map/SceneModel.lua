@@ -228,7 +228,7 @@ end
 		monster:InitVo(vo)
 		self.monList[vo.guid] = monster
 		table.insert(self.cacheSceneObjList, {monster,"mon"})
-		GlobalDispatcher:DispatchEvent(EventName.MONSTER_ADDED, vo.guid)
+		GlobalDispatcher:Fire(EventName.MONSTER_ADDED, vo.guid)
 	end
 
 	function SceneModel:RemoveMon( data )
@@ -286,7 +286,7 @@ end
 		summonThing:InitVo(vo)
 		self.summonThingList[vo.guid] = summonThing
 		table.insert(self.cacheSceneObjList, {summonThing,"summon"})
-		GlobalDispatcher:DispatchEvent(EventName.SummonThing_ADDED, vo.guid)
+		GlobalDispatcher:Fire(EventName.SummonThing_ADDED, vo.guid)
 	end
 
 	function SceneModel:RemoveSummonThing( data )
@@ -348,7 +348,7 @@ end
 		npcVo:InitVo(vo)
 		self.npcList[vo.eid] = npcVo
 		table.insert(self.cacheSceneObjList, {npcVo, "npc"})
-		GlobalDispatcher:DispatchEvent(EventName.NPC_ADDED, vo.eid)
+		GlobalDispatcher:Fire(EventName.NPC_ADDED, vo.eid)
 	end
 	function SceneModel:RemoveNpc( eid )
 		if self.npcList[eid] then
@@ -399,7 +399,7 @@ end
 		doorVo.objective = Vector3.New(vo.toLocation[1],vo.toLocation[2], vo.toLocation[3])
 		self.doorList[vo.eid] = doorVo
 		table.insert(self.cacheSceneObjList, {doorVo, "door"})
-		GlobalDispatcher:DispatchEvent(EventName.DOOR_ADDED, vo.eid)
+		GlobalDispatcher:Fire(EventName.DOOR_ADDED, vo.eid)
 	end
 
 	function SceneModel:GetDoor( eid )
@@ -424,7 +424,7 @@ end
 		local vo = SceneModel.DropItemInfoMsgToDropVo(vo)
 		self.dropList[vo.eid] = vo
 		table.insert(self.cacheSceneObjList, {vo, "drop"})
-		GlobalDispatcher:DispatchEvent(EventName.DROP_ADDED, vo.eid)
+		GlobalDispatcher:Fire(EventName.DROP_ADDED, vo.eid)
 	end
 	function SceneModel:GetDrop(eid)
 		return self.dropList[eid]
@@ -442,7 +442,7 @@ end
 	function SceneModel:AddWigSkill(vo)
 		if not vo or self.persistEffectList[vo.guid] then return end
 		self.persistEffectList[vo.guid] = vo
-		GlobalDispatcher:DispatchEvent(EventName.WIGSKILL_ADDED, vo.guid)
+		GlobalDispatcher:Fire(EventName.WIGSKILL_ADDED, vo.guid)
 	end
 	function SceneModel:GetWigSkill(guid)
 		return self.persistEffectList[guid]
@@ -468,7 +468,7 @@ end
 
 		collectVo:InitVo(vo)
 		self.collectList[collectVo.playerCollectId] = collectVo
-		GlobalDispatcher:DispatchEvent(EventName.AddCollectItem, self.collectList[collectVo.playerCollectId])
+		GlobalDispatcher:Fire(EventName.AddCollectItem, self.collectList[collectVo.playerCollectId])
 	end
 
 	function SceneModel:AddCollectList(voList)
@@ -486,7 +486,7 @@ end
 			table.insert(collectList, curCollectVo)
 			self:AddCollect(curCollectInfo)
 		end
-		GlobalDispatcher:DispatchEvent(EventName.AddCollectItemList, collectList)
+		GlobalDispatcher:Fire(EventName.AddCollectItemList, collectList)
 	end
 
 

@@ -358,47 +358,47 @@ local cfg={
 	},
 	["101_90002_799"]={
 		id="101_90002_799",
-		pdid="com.mmo.yb.dtshy.101",
+		pdid="com.mmo.yb.dtshy_101",
 	},
 	["102_90002_799"]={
 		id="102_90002_799",
-		pdid="com.mmo.yb.dtshy.102",
+		pdid="com.mmo.yb.dtshy_102",
 	},
 	["103_90002_799"]={
 		id="103_90002_799",
-		pdid="com.mmo.yb.dtshy.103",
+		pdid="com.mmo.yb.dtshy_103",
 	},
 	["104_90002_799"]={
 		id="104_90002_799",
-		pdid="com.mmo.yb.dtshy.104",
+		pdid="com.mmo.yb.dtshy_104",
 	},
 	["105_90002_799"]={
 		id="105_90002_799",
-		pdid="com.mmo.yb.dtshy.105",
+		pdid="com.mmo.yb.dtshy_105",
 	},
 	["106_90002_799"]={
 		id="106_90002_799",
-		pdid="com.mmo.yb.dtshy.106",
+		pdid="com.mmo.yb.dtshy_106",
 	},
 	["107_90002_799"]={
 		id="107_90002_799",
-		pdid="com.mmo.yb.dtshy.107",
+		pdid="com.mmo.yb.dtshy_107",
 	},
 	["201_90002_799"]={
 		id="201_90002_799",
-		pdid="com.mmo.sq.dtshy.201",
+		pdid="com.mmo.sq.dtshy_201",
 	},
 	["301_90002_799"]={
 		id="301_90002_799",
-		pdid="com.mmo.qt.dtshy.301",
+		pdid="com.mmo.qt.dtshy_301",
 	},
 	["302_90002_799"]={
 		id="302_90002_799",
-		pdid="com.mmo.by.dtshy.302",
+		pdid="com.mmo.by.dtshy_302",
 	},
 	["303_90002_799"]={
 		id="303_90002_799",
-		pdid="com.mmo.hj.dtshy.303",
+		pdid="com.mmo.hj.dtshy_303",
 	},
 	["101_90002_1"]={
 		id="101_90002_1",
@@ -1194,47 +1194,47 @@ local cfg={
 	},
 	["101_90002_11"]={
 		id="101_90002_11",
-		pdid="com.xh.game.jzjy_101",
+		pdid="com.mmo.yb.jzjy_101",
 	},
 	["102_90002_11"]={
 		id="102_90002_11",
-		pdid="com.xh.game.jzjy_102",
+		pdid="com.mmo.yb.jzjy_102",
 	},
 	["103_90002_11"]={
 		id="103_90002_11",
-		pdid="com.xh.game.jzjy_103",
+		pdid="com.mmo.yb.jzjy_103",
 	},
 	["104_90002_11"]={
 		id="104_90002_11",
-		pdid="com.xh.game.jzjy_104",
+		pdid="com.mmo.yb.jzjy_104",
 	},
 	["105_90002_11"]={
 		id="105_90002_11",
-		pdid="com.xh.game.jzjy_105",
+		pdid="com.mmo.yb.jzjy_105",
 	},
 	["106_90002_11"]={
 		id="106_90002_11",
-		pdid="com.xh.game.jzjy_106",
+		pdid="com.mmo.yb.jzjy_106",
 	},
 	["107_90002_11"]={
 		id="107_90002_11",
-		pdid="com.xh.game.jzjy_107",
+		pdid="com.mmo.yb.jzjy_107",
 	},
 	["201_90002_11"]={
 		id="201_90002_11",
-		pdid="com.xh.game.jzjy_201",
+		pdid="com.mmo.sq.jzjy_201",
 	},
 	["301_90002_11"]={
 		id="301_90002_11",
-		pdid="com.xh.game.jzjy_301",
+		pdid="com.mmo.qt.jzjy_301",
 	},
 	["302_90002_11"]={
 		id="302_90002_11",
-		pdid="com.xh.game.jzjy_302",
+		pdid="com.mmo.by.jzjy_302",
 	},
 	["303_90002_11"]={
 		id="303_90002_11",
-		pdid="com.xh.game.jzjy_303",
+		pdid="com.mmo.hj.jzjy_303",
 	},
 	["101_90002_12"]={
 		id="101_90002_12",

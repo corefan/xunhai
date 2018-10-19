@@ -27,9 +27,9 @@ function OpenGiftModel:InitEvent()
 	local equip = {}
 	local career = LoginModel:GetInstance():GetLoginRole().career
 	local allRewardCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(allRewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.OpenGift then
-			cfgReward = cfgVal.reward
+	for k , v in pairs(allRewardCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.OpenGift then
+			cfgReward = v.reward
 		end
 	end
 
@@ -102,9 +102,9 @@ end
 
 function OpenGiftModel:GetId()
 	local allRewardCfg = GetCfgData("charge")
-	for k , cfgVal in pairs(allRewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == 2 then
-			return cfgVal.id
+	for k , v in pairs(allRewardCfg) do
+		if type(v) ~= 'function' and v and v.type == 2 then
+			return v.id
 		end
 	end
 end

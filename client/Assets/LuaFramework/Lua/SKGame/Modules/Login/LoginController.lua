@@ -323,6 +323,7 @@ end
 				model:SetServerTime(serverTime or os.time()*1000, true)
 				character:SetPlayerCommonMsg(comm)
 				print("角色入场信息：", character:ToString())
+				model.loginServerNo = character.severNo or model.loginServerNo
 				model:SetLoginRole( character )
 				
 				self:UploadRoleInfo(1)
@@ -344,9 +345,8 @@ end
 		if isSDKPlat then
 			local model = self.model
 			local character = model:GetLoginRole()
-			local srvVo = model.loginServer
-			local svrId = srvVo.serverNo or "0"
-			local svrName = srvVo.serverName or "s1"
+			local svrId = model.loginServerNo or "0"
+			local svrName = model.loginServerNo or "0"
 			local role = character or {}
 			local rId = role.playerId or ""
 			local rName = role.name or ""
@@ -461,9 +461,7 @@ end
 			msg.time = model.loginAccountData.time
 			msg.sign = model.loginAccountData.sign
 			msg.playerId = model.loginPlayerId
-			local no = model:GetLastServerNo()
-			msg.serverNo = no
-			model.loginServer = model:GetServerByserverNo(no)
+			msg.serverNo = model.loginServerNo
 
 			self:SendMsg("C_LoginAgain", msg)
 			if NewbieGuideController then
@@ -500,7 +498,7 @@ end
 			msg.sign = data.sign
 			local no = model:GetLastServerNo()
 			msg.serverNo = no
-			model.loginServer = model:GetServerByserverNo(no)
+			model.loginServerNo = no
 			self:SendMsg("C_LoginGame", msg)
 		end
 	end
@@ -510,9 +508,8 @@ end
 		msg.career = career
 		msg.playerName = name
 		local model = self.model
-		local no = model:GetLastServerNo()
+		local no = model.loginServerNo
 		msg.serverNo = no
-		model.loginServer = model:GetServerByserverNo(no)
 		msg.telePhone = toLong(model.telePhone)
 		
 		self:SendMsg("C_CreatePlayer", msg)

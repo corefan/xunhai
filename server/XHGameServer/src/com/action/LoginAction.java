@@ -35,10 +35,13 @@ public class LoginAction {
 		ILoginService loginService = serviceCollection.getLoginService();
 		
 		long userId = gameMessage.getConnection().getUserId();
+		int serverNo= gameMessage.getConnection().getServerNo();
+		
+		if(userId == 0 || serverNo == 0) return;
 		
 		C_CreatePlayer msg = C_CreatePlayer.parseFrom(gameMessage.getData());
 		
-		loginService.createPlayer(userId, msg.getServerNo(), msg.getCareer(), msg.getPlayerName(), msg.getTelePhone());
+		loginService.createPlayer(userId, serverNo, msg.getCareer(), msg.getPlayerName(), msg.getTelePhone());
 	}
 
 	/** 进入游戏*/

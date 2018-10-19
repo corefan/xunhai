@@ -839,25 +839,24 @@ end
 			end
 			self.view:AddPlayer(self.model.mainPlayer)
 		end
-		self:__ReqRoundElement(0)
 
 		if LoginController:GetInstance().kickState then
 			LoginController:GetInstance():UserExitGame()
 		end
 	end
-	function SceneController:__ReqRoundElement(step)
-		DelayCall(function ()
-			if self:GetScene() then
-				if self:GetScene():GetMainPlayer() then
-					self:C_GetSceneElementList()
-				else
-					step = step + 1
-					if step < 10 then
-						self:__ReqRoundElement(step)
-					end
-				end
-			end
-		end, 0.1)
+	function SceneController:__ReqRoundElement()
+		-- DelayCall(function ()
+		-- 	if self:GetScene() then
+		-- 		if self:GetScene():GetMainPlayer() then
+		self:C_GetSceneElementList()
+	-- 			else
+	-- 				step = step + 1
+	-- 				if step < 10 then
+	-- 					self:__ReqRoundElement(step)
+	-- 				end
+	-- 			end
+	-- 		end
+	-- 	end, 0.1)
 	end
 
 	-- 请求调息

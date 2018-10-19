@@ -54,14 +54,14 @@ end
 function TotalRechargeModel:InitRewardDataFromCfg()
 	self.rewardData = {} --累积充值的奖励数据（配置表）
 	local allRewardCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(allRewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.AccumulatedRecharge then
+	for k , v in pairs(allRewardCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.AccumulatedRecharge then
 			table.insert(self.rewardData, {
-				id = cfgVal.id , 
+				id = v.id , 
 				state = TotalRechargeConst.RewardState.None , 
-				condition = cfgVal.condition,
-				des = cfgVal.des,
-				reward = cfgVal.reward}
+				condition = v.condition,
+				des = v.des,
+				reward = v.reward}
 			)
 		end
 	end

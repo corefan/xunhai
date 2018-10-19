@@ -42,9 +42,9 @@ end
 function SevenLoginModel:GetRewardList()
 	local sevenLoginData = {}
 	local sevenLoginCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(sevenLoginCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.SevenLogin then    
-			table.insert(sevenLoginData, {cfgVal.id, cfgVal.reward, cfgVal.condition})
+	for k , v in pairs(sevenLoginCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.SevenLogin then    
+			table.insert(sevenLoginData, {v.id, v.reward, v.condition})
 		end
 	end
 

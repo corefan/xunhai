@@ -15233,7 +15233,7 @@ local cfg={
 		nextTask={83223},
 		taskName="翠阳楼",
 		content="通关[COLOR=#0894d5]天尊洞府(简单)[/COLOR]",
-		description="通关副本天尊洞府(简单难度)",
+		description="通关副本伏羲陵(简单难度)",
 		npcWord={},
 		submitNpc=1105,
 		submitWord="",

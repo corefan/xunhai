@@ -653,7 +653,7 @@ end
 function TaskModel:GetConsignForSaleNPCID()
 	local npcCfg = GetCfgData("npc")
 	for k , v in pairs(npcCfg) do
-		if k and type(k) == 'number' then
+		if k and type(v) ~= 'function' then
 			for idx , funId in pairs(v.functionId) do
 				if funId == FunctionConst.FunEnum.ConsignForSale then
 					return v.eid or -1

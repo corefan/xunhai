@@ -43,17 +43,23 @@
 		
 		if (length > maxIndex) {
 			obj = fiveOnlineData.getJSONObject(maxIndex);
-			curNum_1 = Integer.parseInt(obj.getString("num"));
+			if(obj.has("num")){
+				curNum_1 = Integer.parseInt(obj.getString("num"));
+			}
 		}
 		
 		if (length > maxIndex - 1 && maxIndex > 0) {
 			obj = fiveOnlineData.getJSONObject(maxIndex - 1);
-			fiveminNum_1 = Integer.parseInt(obj.getString("num"));
+			if(obj.has("num")){
+			  fiveminNum_1 = Integer.parseInt(obj.getString("num"));
+			}
 		}
 		
 		if (length > maxIndex - 13 && maxIndex > 12) {
 			obj = fiveOnlineData.getJSONObject(maxIndex - 13);
-			onehourNum_1 = Integer.parseInt(obj.getString("num"));
+			if(obj.has("num")){
+			  onehourNum_1 = Integer.parseInt(obj.getString("num"));
+			}
 		}
 	}
 	String fiveminStr_1 = "";
@@ -113,17 +119,25 @@
 		
 		if (length > maxIndex) {
 			obj = fiveRegisterData.getJSONObject(maxIndex);
-			curNum_2 = Integer.parseInt(obj.getString("num"));
+			if (obj.has("num")) {
+				curNum_2 = Integer.parseInt(obj.getString("num"));	
+			}
+			
 		}
 		
 		if (length > maxIndex - 1 && maxIndex > 0) {
 			obj = fiveRegisterData.getJSONObject(maxIndex - 1);
-			fiveminNum_2 = Integer.parseInt(obj.getString("num"));
+			if(obj.has("num")){
+			  fiveminNum_2 = Integer.parseInt(obj.getString("num"));
+			}
+			
 		}
 		
 		if (length > maxIndex - 13 && maxIndex > 12) {
 			obj = fiveRegisterData.getJSONObject(maxIndex - 13);
-			onehourNum_2 = Integer.parseInt(obj.getString("num"));
+			if(obj.has("num")){
+			  onehourNum_2 = Integer.parseInt(obj.getString("num"));
+			}
 		}
 	}
 	
@@ -186,17 +200,25 @@
 		
 		if (length > maxIndex) {
 			obj = fivePayData.getJSONObject(maxIndex);
-			curNum_3 = Integer.parseInt(obj.getString("num"));
+			if(obj.has("num")){
+			  curNum_3 = Integer.parseInt(obj.getString("num"));
+			}
+			
 		}
 		
 		if (length > maxIndex - 1 && maxIndex > 0) {
 			obj = fivePayData.getJSONObject(maxIndex - 1);
-			fiveminNum_3 = Integer.parseInt(obj.getString("num"));
+			if(obj.has("num")){
+			  fiveminNum_3 = Integer.parseInt(obj.getString("num"));
+			}
 		}
 		
 		if (length > maxIndex - 13 && maxIndex > 12) {
 			obj = fivePayData.getJSONObject(maxIndex - 13);
-			onehourNum_3 = Integer.parseInt(obj.getString("num"));
+			if(obj.has("num")){
+			  onehourNum_3 = Integer.parseInt(obj.getString("num"));
+			}
+			
 		}
 	}
 	

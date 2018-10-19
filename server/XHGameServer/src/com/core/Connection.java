@@ -32,6 +32,9 @@ public class Connection implements Serializable {
     /** 连接ip*/
     private String connectIP;
     
+    /** 连接服务器编号*/
+    private int serverNo;
+    
     /**
      * 连接状态(已连接  登录  游戏中  退出)
      */
@@ -113,6 +116,14 @@ public class Connection implements Serializable {
 
 	public void setConnectIP(String connectIP) {
 		this.connectIP = connectIP;
+	}
+
+	public int getServerNo() {
+		return serverNo;
+	}
+
+	public void setServerNo(int serverNo) {
+		this.serverNo = serverNo;
 	}
  
 }

@@ -112,9 +112,9 @@ function ConsumModel:IsHasCanGet()
 	local allCondition = {} 
 
 	local allRewardCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(allRewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.ConsumPay then
-			table.insert(allCondition, cfgVal.condition)
+	for k , v in pairs(allRewardCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.ConsumPay then
+			table.insert(allCondition, v.condition)
 		end
 	end
 
@@ -155,10 +155,10 @@ end
 -- 读表
 function ConsumModel:GetCfgData()
 	local allRewardCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(allRewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.ConsumPay then
-			table.insert(self.idList, cfgVal.id)
-			table.insert(self.rewardList, {cfgVal.condition, cfgVal.reward, cfgVal.id})
+	for k , v in pairs(allRewardCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.ConsumPay then
+			table.insert(self.idList, v.id)
+			table.insert(self.rewardList, {v.condition, v.reward, v.id})
 		end
 	end
 	table.sort( self.idList )

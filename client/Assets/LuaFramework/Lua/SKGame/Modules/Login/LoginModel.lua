@@ -43,13 +43,13 @@ function LoginModel:__init()
 	self.loginUseName = nil -- 最后登录的玩家用户名
 	self.loginUsePwd = ""
 	self.loginAccountData = {}
+	self.loginServerNo = 0
 
 	--异常码1309错误提示累积次数
 	self.dropItemErrorCodeCnt = 0
 	self.autoHttpLogin = false
 	self.roleSelectPanelOpenFlag = false
 
-	self.loginServer = {} -- 当前登录的服务器信息
 end
 
 -- 获取初始角色信息数据
@@ -769,9 +769,6 @@ end
 			end
 		end
 		return {}
-	end
-	function LoginModel:GetCurServer()
-		return self.loginServer
 	end
 
 	--获取最新的服务器

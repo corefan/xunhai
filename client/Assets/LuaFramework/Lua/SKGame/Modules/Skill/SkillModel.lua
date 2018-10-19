@@ -329,30 +329,27 @@ end
 
 --获取当前职业中的某个技能
 function SkillModel:GetSkillById(skillId)
-	local rntSkillInfo = {}
 	if skillId ~= nil then
 		for index = 1, #self.allSkillList do
 			if self.allSkillList[index].skillId == skillId then
-				rntSkillInfo = self.allSkillList[index]
+				return self.allSkillList[index]
 			end
 		end
 	end
-	return rntSkillInfo
+	return {}
 end
 
 --获取技能熟练度
 function SkillModel:GetSkillMastery(skillId)
-	local rtnSkillMastery = 0
 	if skillId ~= nil then
 		local curSkillMsgVoList = self:GetSkillMsgVoList()
 		for index = 1, #curSkillMsgVoList do
 			if curSkillMsgVoList[index].id == skillId then
-				rtnSkillMastery = curSkillMsgVoList[index].mastery
-				break
+				return curSkillMsgVoList[index].mastery
 			end
 		end
 	end
-	return rtnSkillMastery
+	return 0
 end
 
 --获取某个职业的某个技能槽的最低技能id
@@ -360,12 +357,12 @@ function SkillModel:GetLowestSkillByCareerIndex(career, skillIndex)
 	local rtnSkillId = -1
 	local lowestLev = 1000000
 	if career ~= nil and skillIndex ~= nil then
-		for key , skillUpInfo in pairs(self.skillUpCfg) do
-			if type(key) == "number" then
-				if skillUpInfo.clanId == career and skillUpInfo.skillIndex == skillIndex then
-					if lowestLev > self:GetLevelBySkillId(skillUpInfo.id) then
-						lowestLev = self:GetLevelBySkillId(skillUpInfo.id)
-						rtnSkillId = skillUpInfo.id
+		for key , v in pairs(self.skillUpCfg) do
+			if type(v) ~= 'function' then
+				if v.clanId == career and v.skillIndex == skillIndex then
+					if lowestLev > self:GetLevelBySkillId(v.id) then
+						lowestLev = self:GetLevelBySkillId(v.id)
+						rtnSkillId = v.id
 					end
 				end
 			end
@@ -436,18 +433,18 @@ function SkillModel:InitAllSkillList()
 	self.allSkillList = {}
 	local player = SceneModel:GetInstance():GetMainPlayer()
 	if not TableIsEmpty(player) then
-		for key , skillUpInfo in pairs(self.skillUpCfg) do
-			if type(key) == "number" then
-				if skillUpInfo.clanId == player.career and self:IsHasSkillIndex(skillUpInfo.skillIndex) == false then
+		for key , v in pairs(self.skillUpCfg) do
+			if type(v) ~= 'function' then
+				if v.clanId == player.career and self:IsHasSkillIndex(v.skillIndex) == false then
 					local curSkillId = -1
 					--如果已经拥有
-					if self:IsHasSkill(skillUpInfo.id) == true then
-						curSkillId = skillUpInfo.id
+					if self:IsHasSkill(v.id) == true then
+						curSkillId = v.id
 					else
 					--如果还未拥有，则取等级最低的那个技能
-						if self:IsPlaceHoldSkillIndex(skillUpInfo.skillIndex) == false then
-							--local lowestSkillId = self:GetLowestSkillByCareerIndex(skillUpInfo.clanId, skillUpInfo.skillIndex)
-							local lowestSkillId = self:GetInitSkillId(skillUpInfo.clanId, skillUpInfo.skillIndex)
+						if self:IsPlaceHoldSkillIndex(v.skillIndex) == false then
+							--local lowestSkillId = self:GetLowestSkillByCareerIndex(v.clanId, v.skillIndex)
+							local lowestSkillId = self:GetInitSkillId(v.clanId, v.skillIndex)
 							if lowestSkillId ~= -1  then
 								curSkillId = lowestSkillId
 							end
@@ -777,44 +774,40 @@ end
 
 --获取技能名称通过一个技能id
 function SkillModel:GetSkillNameById(skillId)
-	local rtnName = ""
 	if skillId then
 		local curSkillCfg = self:GetSkillVo(skillId)
 		if curSkillCfg then
-			rtnName = curSkillCfg.name
+			return curSkillCfg.name
 		end
 	end
-	return rtnName
+	return ""
 end
 
 --获取SkillMsgVo中的技能id通过技能id
 function SkillModel:GetSkillIdById(skillId)
-	local rtnSkillId = 0
 	if skillId then
 		for index = 1, #self.skillMsgVoList do
 			if self.skillMsgVoList[index].id == skillId then
-				rtnSkillId = self.skillMsgVoList[index].skillId
-				break
+				return self.skillMsgVoList[index].skillId
 			end
 		end
 	end
 	
-	return rtnSkillId
+	return 0
 end
 
 --获取初始技能通过职业和技能下标
 function SkillModel:GetInitSkillId(career, skillIndex)
-	local rtnSkillId = -1
 	if career and skillIndex then
 		local newDefaultCfg = GetCfgData("newroleDefaultvalue")
 		local curPlayerVo = SceneModel:GetInstance():GetMainPlayer()
 		local initSkillList = {}
 		if curPlayerVo then
 			if curPlayerVo.career == career  then
-				for key, defaultInfo in pairs(newDefaultCfg) do
-					if type(key) == "number" then
-						if defaultInfo.career == curPlayerVo.career then
-							initSkillList = defaultInfo.initSkills
+				for key, v in pairs(newDefaultCfg) do
+					if type(v) ~= 'function' then
+						if v.career == curPlayerVo.career then
+							initSkillList = v.initSkills
 							break
 						end
 					end
@@ -822,15 +815,14 @@ function SkillModel:GetInitSkillId(career, skillIndex)
 
 				for index = 1, #initSkillList do
 					if self:GetSkillIndexById(initSkillList[index]) == skillIndex then
-						rtnSkillId = initSkillList[index]
-						break
+						return initSkillList[index]
 					end
 				end
 			end
 		end
 	end
 	
-	return rtnSkillId
+	return -1
 end
 
 ------接入后台协议end

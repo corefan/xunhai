@@ -58,6 +58,12 @@ public class LoginServlet extends BaseServlet {
 			}else if("juliang".equals(Config.AGENT)){
 				//聚量
 				juliangLogin(req, resp);
+			}else if("qlj".equals(Config.AGENT)){
+				//齐乐佳
+				qljLogin(req, resp);
+			}else if("yaya".equals(Config.AGENT)){
+				//吖呀
+				yayaLogin(req, resp);
 			}
 			
 
@@ -359,7 +365,7 @@ public class LoginServlet extends BaseServlet {
 //        		long userId = userInfo.getLong("uid");
         		String userName = userInfo.getString("username");
         		
-        		this.postData(resp, this.sucLogin(0, userName, "123456", null, 1, Integer.valueOf(appid)));
+        		this.postData(resp, this.sucLogin(0, appid+"_"+userName, "123456", null, 1, Integer.valueOf(appid)));
         	}else{
 				//登录失败
         		LogUtil.error("zhongfuLogin login返回错误："+js);
@@ -404,7 +410,7 @@ public class LoginServlet extends BaseServlet {
 			String js = HttpUtil.httpsRequest(url, param.toString(), "application/x-www-form-urlencoded");
 			if(js.equals("0")){
 				
-				this.postData(resp, this.sucLogin(0, uid, "123456", null, 1, Integer.valueOf(appid)));
+				this.postData(resp, this.sucLogin(0, appid+"_"+uid, "123456", null, 1, Integer.valueOf(appid)));
 			}else {
 				//登录失败
 				LogUtil.error("登录失败 appid："+appid+" js："+js);
@@ -433,13 +439,13 @@ public class LoginServlet extends BaseServlet {
 			}
 			
 			StringBuilder param = new StringBuilder();
-			param.append("?uid="+uid);
+			param.append("uid="+uid);
 			param.append("&token="+token);
 			String js = HttpUtil.httpsRequest(url, param.toString(), "application/x-www-form-urlencoded");
 			JSONObject resultJson = new JSONObject(js);
 			if(resultJson.getString("status") .equals("1")){
 
-				this.postData(resp, this.sucLogin(0, uid, "123456", null, 1, Integer.valueOf(appid)));
+				this.postData(resp, this.sucLogin(0, appid+"_"+uid, "123456", null, 1, Integer.valueOf(appid)));
 			}else{
 				//登录失败
 				result.put("result", 6);
@@ -561,7 +567,7 @@ public class LoginServlet extends BaseServlet {
 			JSONObject resultJson = new JSONObject(js);
 			if(resultJson.getString("status").equals("0")){
 				
-				this.postData(resp, this.sucLogin(0, uid, "123456", null, 1, Integer.valueOf(appid)));
+				this.postData(resp, this.sucLogin(0, appid+"_"+uid, "123456", null, 1, Integer.valueOf(appid)));
 			}else{
 				//登录失败
 				LogUtil.error("登录失败  js："+js);
@@ -593,7 +599,7 @@ public class LoginServlet extends BaseServlet {
 			JSONObject resultJson = new JSONObject(js);
 			if(resultJson.getString("status") .equals("true")){
 
-				this.postData(resp, this.sucLogin(0, userName, "123456", null, 1, Integer.valueOf(appid)));
+				this.postData(resp, this.sucLogin(0, appid+"_"+userName, "123456", null, 1, Integer.valueOf(appid)));
 			}else{
 				//登录失败
 				LogUtil.error("登录失败  js："+resultJson);
@@ -613,19 +619,18 @@ public class LoginServlet extends BaseServlet {
 				return;
 			}
 			
-			String appkey = "aa52b72559547bfd4135605bed186f29";
+			String appSecret = "aa52b72559547bfd4135605bed186f29";
 			if(appid.equals("2018000009")){
-				appkey = "baa5834a6effd194113d956f7206929d";
+				appSecret = "baa5834a6effd194113d956f7206929d";
 			}
 			
 			String url = "http://120.78.131.209/appcenterserver/sdk/service/check_token";
 			
 			StringBuilder param = new StringBuilder();
-			param.append("?");
 			param.append("appid="+appid);
 			param.append("&accesstoken="+token);
-			String sign = MD5Service.encryptToLowerString(appid + token + appkey);
-			param.append("&sign"+sign);
+			String sign = MD5Service.encryptToLowerString(appid + token + appSecret);
+			param.append("&sign="+sign);
 			
 			String js = HttpUtil.httpsRequest(url, param.toString(), "application/x-www-form-urlencoded");
 			JSONObject resultJson = new JSONObject(js);
@@ -633,7 +638,7 @@ public class LoginServlet extends BaseServlet {
 
 				uid = resultJson.getString("accountid");
 				
-				this.postData(resp, this.sucLogin(0, uid, "123456", null, 1, Integer.valueOf(appid)));
+				this.postData(resp, this.sucLogin(0, appid+"_"+uid, "123456", null, 1, Integer.valueOf(appid)));
 			}else{
 				//登录失败
 				LogUtil.error("登录失败  js："+resultJson);
@@ -699,6 +704,108 @@ public class LoginServlet extends BaseServlet {
 		}
 	}
 	
+	/**
+	 * 中富-齐乐佳登录
+	 */
+	private void qljLogin(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException, Exception {
+		JSONObject result = new JSONObject();
+		
+		String appid = req.getParameter("appid");
+		if(appid == null){
+			//登录失败
+			LogUtil.error("qljLogin appid："+appid);
+			result.put("result", 6);
+			this.postData(resp, result.toString());
+			return;
+		}
+		
+		if(appid.equals("5")){ 	//大唐诛仙
+
+			String userName = req.getParameter("userName");
+			String token = req.getParameter("token");
+			String sdk = req.getParameter("time");
+			String app = req.getParameter("passWord");
+			
+			if(userName == null || token == null || sdk == null || app == null){
+				//登录失败
+				LogUtil.error("qljLogin登录失败  appid："+appid);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			String url = "http://sync.1sdk.cn/login/check.html";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("sdk="+sdk);
+			param.append("&app="+app);
+			param.append("&uin="+GetEncode(userName));
+			param.append("&sess="+GetEncode(token));
+			
+			String js = HttpUtil.sendGet(url, param.toString());
+			if(js.equals("0")){
+				
+				this.postData(resp, this.sucLogin(0, userName, "123456", null, 1, Integer.valueOf(appid)));
+			}else {
+				//登录失败
+				LogUtil.error("qljLogin登录失败 appid："+appid+" js："+js);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+			}
+		}
+	}
+	
+	/**
+	 * 中富-吖呀登录
+	 */
+	private void yayaLogin(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException, Exception {
+		JSONObject result = new JSONObject();
+		
+		String appid = req.getParameter("appid");
+		if(appid == null){
+			//登录失败
+			LogUtil.error("yayaLogin appid："+appid);
+			result.put("result", 6);
+			this.postData(resp, result.toString());
+			return;
+		}
+		
+		if(appid.equals("7")){ 	//创誓记
+
+			String uid = req.getParameter("userId");
+			String userName = req.getParameter("userName");
+			String token = req.getParameter("token");
+			String product_code = req.getParameter("time");
+			if(uid == null || userName == null || token == null || product_code == null){
+				//登录失败
+				LogUtil.error("yayaLogin登录失败  appid："+appid);
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+				return;
+			}
+			
+			String url = "http://checkuser.sdk.quicksdk.net/v2/checkUserInfo";
+			
+			StringBuilder param = new StringBuilder();
+			param.append("uid="+uid);
+			param.append("&token="+token);
+			param.append("&product_code="+product_code);
+			
+			String js = HttpUtil.sendGet(url, param.toString());
+			if(js.equals("1")){
+
+				this.postData(resp, this.sucLogin(0, appid+"_"+userName, "123456", null, 1, Integer.valueOf(appid)));
+			}else{
+				//登录失败
+				LogUtil.error("登录失败  js："+js);
+				
+				result.put("result", 6);
+				this.postData(resp, result.toString());
+			}
+		}
+	}
 	
 	/**
 	 * 成功登录后

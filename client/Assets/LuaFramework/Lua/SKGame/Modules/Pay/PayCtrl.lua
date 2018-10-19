@@ -64,11 +64,10 @@ function PayCtrl:S_Pay( buffer )
 	local cfg = GetCfgData("charge")
 	local pdId = msg.payItemId or 0
 	local chargeVo = cfg[pdId]
-
-	local srvVo = LoginModel:GetInstance().loginServer
+	local loginModel = LoginModel:GetInstance()
 	local roleVo = SceneModel:GetInstance().mainPlayer or {}
-	local svrId = srvVo.serverNo or "0"
-	local svrName = srvVo.serverName or ""
+	local svrId = loginModel.loginServerNo or "0"
+	local svrName = loginModel.loginServerNo or "0"
 	local rId = roleVo.playerId or ""
 	local rName = roleVo.name or ""
 

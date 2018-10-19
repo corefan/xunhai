@@ -76,7 +76,7 @@ end
 function WelfareModel:InitOnlineRewardData()
 	local rewardCfg = GetCfgData("reward")
 	for k , v in pairs(rewardCfg) do
-		if type(k) == "number" and v and v.type == RewardConst.Type.OnlineReward then
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.OnlineReward then
 			table.insert(self.onlineRewardData , {id = v.id , state = WelfareConst.OnlineRewardState.None})
 		end
 	end
@@ -285,7 +285,7 @@ end
 	function WelfareModel:GetIdentifyReward()
 		local rewardCfg = GetCfgData("reward")
 		for k , v in pairs(rewardCfg) do
-			if type(k) == "number" and v and v.type == RewardConst.Type.Identify then
+			if type(v) ~= 'function' and v and v.type == RewardConst.Type.Identify then
 				self.indentifyRewardId = v.id
 				return v.reward
 			end

@@ -16,7 +16,7 @@
 ]]
 
 local cfg={
-	["101"]={
+	[101]={
 		id=101,
 		type=1,
 		iconID=10001,
@@ -31,7 +31,7 @@ local cfg={
 		addProperty={1,100},
 		des="生命增加100"
 	},
-	["102"]={
+	[102]={
 		id=102,
 		type=1,
 		iconID=10001,
@@ -46,7 +46,7 @@ local cfg={
 		addProperty={1,200},
 		des="生命增加200"
 	},
-	["103"]={
+	[103]={
 		id=103,
 		type=1,
 		iconID=10001,
@@ -61,7 +61,7 @@ local cfg={
 		addProperty={1,300},
 		des="生命增加300"
 	},
-	["104"]={
+	[104]={
 		id=104,
 		type=1,
 		iconID=10001,
@@ -76,7 +76,7 @@ local cfg={
 		addProperty={1,400},
 		des="生命增加400"
 	},
-	["105"]={
+	[105]={
 		id=105,
 		type=1,
 		iconID=10001,
@@ -91,7 +91,7 @@ local cfg={
 		addProperty={1,500},
 		des="生命增加500"
 	},
-	["106"]={
+	[106]={
 		id=106,
 		type=1,
 		iconID=10001,
@@ -106,7 +106,7 @@ local cfg={
 		addProperty={1,700},
 		des="生命增加700"
 	},
-	["107"]={
+	[107]={
 		id=107,
 		type=1,
 		iconID=10001,
@@ -121,7 +121,7 @@ local cfg={
 		addProperty={1,900},
 		des="生命增加900"
 	},
-	["108"]={
+	[108]={
 		id=108,
 		type=1,
 		iconID=10001,
@@ -136,7 +136,7 @@ local cfg={
 		addProperty={1,1100},
 		des="生命增加1100"
 	},
-	["109"]={
+	[109]={
 		id=109,
 		type=1,
 		iconID=10001,
@@ -151,7 +151,7 @@ local cfg={
 		addProperty={1,1300},
 		des="生命增加1300"
 	},
-	["110"]={
+	[110]={
 		id=110,
 		type=1,
 		iconID=10001,
@@ -166,7 +166,7 @@ local cfg={
 		addProperty={1,1500},
 		des="生命增加1500"
 	},
-	["111"]={
+	[111]={
 		id=111,
 		type=1,
 		iconID=10001,
@@ -181,7 +181,7 @@ local cfg={
 		addProperty={1,1800},
 		des="生命增加1800"
 	},
-	["112"]={
+	[112]={
 		id=112,
 		type=1,
 		iconID=10001,
@@ -196,7 +196,7 @@ local cfg={
 		addProperty={1,2100},
 		des="生命增加2100"
 	},
-	["113"]={
+	[113]={
 		id=113,
 		type=1,
 		iconID=10001,
@@ -211,7 +211,7 @@ local cfg={
 		addProperty={1,2400},
 		des="生命增加2400"
 	},
-	["114"]={
+	[114]={
 		id=114,
 		type=1,
 		iconID=10001,
@@ -226,7 +226,7 @@ local cfg={
 		addProperty={1,2700},
 		des="生命增加2700"
 	},
-	["115"]={
+	[115]={
 		id=115,
 		type=1,
 		iconID=10001,
@@ -241,7 +241,7 @@ local cfg={
 		addProperty={1,3000},
 		des="生命增加3000"
 	},
-	["116"]={
+	[116]={
 		id=116,
 		type=1,
 		iconID=10001,
@@ -256,7 +256,7 @@ local cfg={
 		addProperty={1,3400},
 		des="生命增加3400"
 	},
-	["117"]={
+	[117]={
 		id=117,
 		type=1,
 		iconID=10001,
@@ -271,7 +271,7 @@ local cfg={
 		addProperty={1,3800},
 		des="生命增加3800"
 	},
-	["118"]={
+	[118]={
 		id=118,
 		type=1,
 		iconID=10001,
@@ -286,7 +286,7 @@ local cfg={
 		addProperty={1,4200},
 		des="生命增加4200"
 	},
-	["119"]={
+	[119]={
 		id=119,
 		type=1,
 		iconID=10001,
@@ -301,7 +301,7 @@ local cfg={
 		addProperty={1,4600},
 		des="生命增加4600"
 	},
-	["120"]={
+	[120]={
 		id=120,
 		type=1,
 		iconID=10001,
@@ -316,7 +316,7 @@ local cfg={
 		addProperty={1,5000},
 		des="生命增加5000"
 	},
-	["121"]={
+	[121]={
 		id=121,
 		type=1,
 		iconID=10001,
@@ -331,7 +331,7 @@ local cfg={
 		addProperty={1,5500},
 		des="生命增加5500"
 	},
-	["122"]={
+	[122]={
 		id=122,
 		type=1,
 		iconID=10001,
@@ -346,7 +346,7 @@ local cfg={
 		addProperty={1,6000},
 		des="生命增加6000"
 	},
-	["123"]={
+	[123]={
 		id=123,
 		type=1,
 		iconID=10001,
@@ -361,7 +361,7 @@ local cfg={
 		addProperty={1,6500},
 		des="生命增加6500"
 	},
-	["124"]={
+	[124]={
 		id=124,
 		type=1,
 		iconID=10001,
@@ -376,7 +376,7 @@ local cfg={
 		addProperty={1,7000},
 		des="生命增加7000"
 	},
-	["125"]={
+	[125]={
 		id=125,
 		type=1,
 		iconID=10001,
@@ -391,7 +391,7 @@ local cfg={
 		addProperty={1,7500},
 		des="生命增加7500"
 	},
-	["126"]={
+	[126]={
 		id=126,
 		type=1,
 		iconID=10001,
@@ -406,7 +406,7 @@ local cfg={
 		addProperty={1,8100},
 		des="生命增加8100"
 	},
-	["127"]={
+	[127]={
 		id=127,
 		type=1,
 		iconID=10001,
@@ -421,7 +421,7 @@ local cfg={
 		addProperty={1,8700},
 		des="生命增加8700"
 	},
-	["128"]={
+	[128]={
 		id=128,
 		type=1,
 		iconID=10001,
@@ -436,7 +436,7 @@ local cfg={
 		addProperty={1,9300},
 		des="生命增加9300"
 	},
-	["129"]={
+	[129]={
 		id=129,
 		type=1,
 		iconID=10001,
@@ -451,7 +451,7 @@ local cfg={
 		addProperty={1,9900},
 		des="生命增加9900"
 	},
-	["130"]={
+	[130]={
 		id=130,
 		type=1,
 		iconID=10001,
@@ -466,7 +466,7 @@ local cfg={
 		addProperty={1,10500},
 		des="生命增加10500"
 	},
-	["131"]={
+	[131]={
 		id=131,
 		type=1,
 		iconID=10001,
@@ -481,7 +481,7 @@ local cfg={
 		addProperty={1,11200},
 		des="生命增加11200"
 	},
-	["132"]={
+	[132]={
 		id=132,
 		type=1,
 		iconID=10001,
@@ -496,7 +496,7 @@ local cfg={
 		addProperty={1,11900},
 		des="生命增加11900"
 	},
-	["133"]={
+	[133]={
 		id=133,
 		type=1,
 		iconID=10001,
@@ -511,7 +511,7 @@ local cfg={
 		addProperty={1,12600},
 		des="生命增加12600"
 	},
-	["134"]={
+	[134]={
 		id=134,
 		type=1,
 		iconID=10001,
@@ -526,7 +526,7 @@ local cfg={
 		addProperty={1,13300},
 		des="生命增加13300"
 	},
-	["135"]={
+	[135]={
 		id=135,
 		type=1,
 		iconID=10001,
@@ -541,7 +541,7 @@ local cfg={
 		addProperty={1,14000},
 		des="生命增加14000"
 	},
-	["136"]={
+	[136]={
 		id=136,
 		type=1,
 		iconID=10001,
@@ -556,7 +556,7 @@ local cfg={
 		addProperty={1,14800},
 		des="生命增加14800"
 	},
-	["137"]={
+	[137]={
 		id=137,
 		type=1,
 		iconID=10001,
@@ -571,7 +571,7 @@ local cfg={
 		addProperty={1,15600},
 		des="生命增加15600"
 	},
-	["138"]={
+	[138]={
 		id=138,
 		type=1,
 		iconID=10001,
@@ -586,7 +586,7 @@ local cfg={
 		addProperty={1,16400},
 		des="生命增加16400"
 	},
-	["139"]={
+	[139]={
 		id=139,
 		type=1,
 		iconID=10001,
@@ -601,7 +601,7 @@ local cfg={
 		addProperty={1,17200},
 		des="生命增加17200"
 	},
-	["140"]={
+	[140]={
 		id=140,
 		type=1,
 		iconID=10001,
@@ -616,7 +616,7 @@ local cfg={
 		addProperty={1,18000},
 		des="生命增加18000"
 	},
-	["201"]={
+	[201]={
 		id=201,
 		type=2,
 		iconID=10002,
@@ -631,7 +631,7 @@ local cfg={
 		addProperty={3,100},
 		des="法力增加100"
 	},
-	["202"]={
+	[202]={
 		id=202,
 		type=2,
 		iconID=10002,
@@ -646,7 +646,7 @@ local cfg={
 		addProperty={3,200},
 		des="法力增加200"
 	},
-	["203"]={
+	[203]={
 		id=203,
 		type=2,
 		iconID=10002,
@@ -661,7 +661,7 @@ local cfg={
 		addProperty={3,300},
 		des="法力增加300"
 	},
-	["204"]={
+	[204]={
 		id=204,
 		type=2,
 		iconID=10002,
@@ -676,7 +676,7 @@ local cfg={
 		addProperty={3,400},
 		des="法力增加400"
 	},
-	["205"]={
+	[205]={
 		id=205,
 		type=2,
 		iconID=10002,
@@ -691,7 +691,7 @@ local cfg={
 		addProperty={3,500},
 		des="法力增加500"
 	},
-	["206"]={
+	[206]={
 		id=206,
 		type=2,
 		iconID=10002,
@@ -706,7 +706,7 @@ local cfg={
 		addProperty={3,700},
 		des="法力增加700"
 	},
-	["207"]={
+	[207]={
 		id=207,
 		type=2,
 		iconID=10002,
@@ -721,7 +721,7 @@ local cfg={
 		addProperty={3,900},
 		des="法力增加900"
 	},
-	["208"]={
+	[208]={
 		id=208,
 		type=2,
 		iconID=10002,
@@ -736,7 +736,7 @@ local cfg={
 		addProperty={3,1100},
 		des="法力增加1100"
 	},
-	["209"]={
+	[209]={
 		id=209,
 		type=2,
 		iconID=10002,
@@ -751,7 +751,7 @@ local cfg={
 		addProperty={3,1300},
 		des="法力增加1300"
 	},
-	["210"]={
+	[210]={
 		id=210,
 		type=2,
 		iconID=10002,
@@ -766,7 +766,7 @@ local cfg={
 		addProperty={3,1500},
 		des="法力增加1500"
 	},
-	["211"]={
+	[211]={
 		id=211,
 		type=2,
 		iconID=10002,
@@ -781,7 +781,7 @@ local cfg={
 		addProperty={3,1800},
 		des="法力增加1800"
 	},
-	["212"]={
+	[212]={
 		id=212,
 		type=2,
 		iconID=10002,
@@ -796,7 +796,7 @@ local cfg={
 		addProperty={3,2100},
 		des="法力增加2100"
 	},
-	["213"]={
+	[213]={
 		id=213,
 		type=2,
 		iconID=10002,
@@ -811,7 +811,7 @@ local cfg={
 		addProperty={3,2400},
 		des="法力增加2400"
 	},
-	["214"]={
+	[214]={
 		id=214,
 		type=2,
 		iconID=10002,
@@ -826,7 +826,7 @@ local cfg={
 		addProperty={3,2700},
 		des="法力增加2700"
 	},
-	["215"]={
+	[215]={
 		id=215,
 		type=2,
 		iconID=10002,
@@ -841,7 +841,7 @@ local cfg={
 		addProperty={3,3000},
 		des="法力增加3000"
 	},
-	["216"]={
+	[216]={
 		id=216,
 		type=2,
 		iconID=10002,
@@ -856,7 +856,7 @@ local cfg={
 		addProperty={3,3400},
 		des="法力增加3400"
 	},
-	["217"]={
+	[217]={
 		id=217,
 		type=2,
 		iconID=10002,
@@ -871,7 +871,7 @@ local cfg={
 		addProperty={3,3800},
 		des="法力增加3800"
 	},
-	["218"]={
+	[218]={
 		id=218,
 		type=2,
 		iconID=10002,
@@ -886,7 +886,7 @@ local cfg={
 		addProperty={3,4200},
 		des="法力增加4200"
 	},
-	["219"]={
+	[219]={
 		id=219,
 		type=2,
 		iconID=10002,
@@ -901,7 +901,7 @@ local cfg={
 		addProperty={3,4600},
 		des="法力增加4600"
 	},
-	["220"]={
+	[220]={
 		id=220,
 		type=2,
 		iconID=10002,
@@ -916,7 +916,7 @@ local cfg={
 		addProperty={3,5000},
 		des="法力增加5000"
 	},
-	["221"]={
+	[221]={
 		id=221,
 		type=2,
 		iconID=10002,
@@ -931,7 +931,7 @@ local cfg={
 		addProperty={3,5500},
 		des="法力增加5500"
 	},
-	["222"]={
+	[222]={
 		id=222,
 		type=2,
 		iconID=10002,
@@ -946,7 +946,7 @@ local cfg={
 		addProperty={3,6000},
 		des="法力增加6000"
 	},
-	["223"]={
+	[223]={
 		id=223,
 		type=2,
 		iconID=10002,
@@ -961,7 +961,7 @@ local cfg={
 		addProperty={3,6500},
 		des="法力增加6500"
 	},
-	["224"]={
+	[224]={
 		id=224,
 		type=2,
 		iconID=10002,
@@ -976,7 +976,7 @@ local cfg={
 		addProperty={3,7000},
 		des="法力增加7000"
 	},
-	["225"]={
+	[225]={
 		id=225,
 		type=2,
 		iconID=10002,
@@ -991,7 +991,7 @@ local cfg={
 		addProperty={3,7500},
 		des="法力增加7500"
 	},
-	["226"]={
+	[226]={
 		id=226,
 		type=2,
 		iconID=10002,
@@ -1006,7 +1006,7 @@ local cfg={
 		addProperty={3,8100},
 		des="法力增加8100"
 	},
-	["227"]={
+	[227]={
 		id=227,
 		type=2,
 		iconID=10002,
@@ -1021,7 +1021,7 @@ local cfg={
 		addProperty={3,8700},
 		des="法力增加8700"
 	},
-	["228"]={
+	[228]={
 		id=228,
 		type=2,
 		iconID=10002,
@@ -1036,7 +1036,7 @@ local cfg={
 		addProperty={3,9300},
 		des="法力增加9300"
 	},
-	["229"]={
+	[229]={
 		id=229,
 		type=2,
 		iconID=10002,
@@ -1051,7 +1051,7 @@ local cfg={
 		addProperty={3,9900},
 		des="法力增加9900"
 	},
-	["230"]={
+	[230]={
 		id=230,
 		type=2,
 		iconID=10002,
@@ -1066,7 +1066,7 @@ local cfg={
 		addProperty={3,10500},
 		des="法力增加10500"
 	},
-	["231"]={
+	[231]={
 		id=231,
 		type=2,
 		iconID=10002,
@@ -1081,7 +1081,7 @@ local cfg={
 		addProperty={3,11200},
 		des="法力增加11200"
 	},
-	["232"]={
+	[232]={
 		id=232,
 		type=2,
 		iconID=10002,
@@ -1096,7 +1096,7 @@ local cfg={
 		addProperty={3,11900},
 		des="法力增加11900"
 	},
-	["233"]={
+	[233]={
 		id=233,
 		type=2,
 		iconID=10002,
@@ -1111,7 +1111,7 @@ local cfg={
 		addProperty={3,12600},
 		des="法力增加12600"
 	},
-	["234"]={
+	[234]={
 		id=234,
 		type=2,
 		iconID=10002,
@@ -1126,7 +1126,7 @@ local cfg={
 		addProperty={3,13300},
 		des="法力增加13300"
 	},
-	["235"]={
+	[235]={
 		id=235,
 		type=2,
 		iconID=10002,
@@ -1141,7 +1141,7 @@ local cfg={
 		addProperty={3,14000},
 		des="法力增加14000"
 	},
-	["236"]={
+	[236]={
 		id=236,
 		type=2,
 		iconID=10002,
@@ -1156,7 +1156,7 @@ local cfg={
 		addProperty={3,14800},
 		des="法力增加14800"
 	},
-	["237"]={
+	[237]={
 		id=237,
 		type=2,
 		iconID=10002,
@@ -1171,7 +1171,7 @@ local cfg={
 		addProperty={3,15600},
 		des="法力增加15600"
 	},
-	["238"]={
+	[238]={
 		id=238,
 		type=2,
 		iconID=10002,
@@ -1186,7 +1186,7 @@ local cfg={
 		addProperty={3,16400},
 		des="法力增加16400"
 	},
-	["239"]={
+	[239]={
 		id=239,
 		type=2,
 		iconID=10002,
@@ -1201,7 +1201,7 @@ local cfg={
 		addProperty={3,17200},
 		des="法力增加17200"
 	},
-	["240"]={
+	[240]={
 		id=240,
 		type=2,
 		iconID=10002,
@@ -1216,7 +1216,7 @@ local cfg={
 		addProperty={3,18000},
 		des="法力增加18000"
 	},
-	["301"]={
+	[301]={
 		id=301,
 		type=3,
 		iconID=10003,
@@ -1231,7 +1231,7 @@ local cfg={
 		addProperty={9,50},
 		des="物防增加50"
 	},
-	["302"]={
+	[302]={
 		id=302,
 		type=3,
 		iconID=10003,
@@ -1246,7 +1246,7 @@ local cfg={
 		addProperty={9,60},
 		des="物防增加60"
 	},
-	["303"]={
+	[303]={
 		id=303,
 		type=3,
 		iconID=10003,
@@ -1261,7 +1261,7 @@ local cfg={
 		addProperty={9,70},
 		des="物防增加70"
 	},
-	["304"]={
+	[304]={
 		id=304,
 		type=3,
 		iconID=10003,
@@ -1276,7 +1276,7 @@ local cfg={
 		addProperty={9,80},
 		des="物防增加80"
 	},
-	["305"]={
+	[305]={
 		id=305,
 		type=3,
 		iconID=10003,
@@ -1291,7 +1291,7 @@ local cfg={
 		addProperty={9,90},
 		des="物防增加90"
 	},
-	["306"]={
+	[306]={
 		id=306,
 		type=3,
 		iconID=10003,
@@ -1306,7 +1306,7 @@ local cfg={
 		addProperty={9,110},
 		des="物防增加110"
 	},
-	["307"]={
+	[307]={
 		id=307,
 		type=3,
 		iconID=10003,
@@ -1321,7 +1321,7 @@ local cfg={
 		addProperty={9,130},
 		des="物防增加130"
 	},
-	["308"]={
+	[308]={
 		id=308,
 		type=3,
 		iconID=10003,
@@ -1336,7 +1336,7 @@ local cfg={
 		addProperty={9,150},
 		des="物防增加150"
 	},
-	["309"]={
+	[309]={
 		id=309,
 		type=3,
 		iconID=10003,
@@ -1351,7 +1351,7 @@ local cfg={
 		addProperty={9,170},
 		des="物防增加170"
 	},
-	["310"]={
+	[310]={
 		id=310,
 		type=3,
 		iconID=10003,
@@ -1366,7 +1366,7 @@ local cfg={
 		addProperty={9,190},
 		des="物防增加190"
 	},
-	["311"]={
+	[311]={
 		id=311,
 		type=3,
 		iconID=10003,
@@ -1381,7 +1381,7 @@ local cfg={
 		addProperty={9,220},
 		des="物防增加220"
 	},
-	["312"]={
+	[312]={
 		id=312,
 		type=3,
 		iconID=10003,
@@ -1396,7 +1396,7 @@ local cfg={
 		addProperty={9,250},
 		des="物防增加250"
 	},
-	["313"]={
+	[313]={
 		id=313,
 		type=3,
 		iconID=10003,
@@ -1411,7 +1411,7 @@ local cfg={
 		addProperty={9,280},
 		des="物防增加280"
 	},
-	["314"]={
+	[314]={
 		id=314,
 		type=3,
 		iconID=10003,
@@ -1426,7 +1426,7 @@ local cfg={
 		addProperty={9,310},
 		des="物防增加310"
 	},
-	["315"]={
+	[315]={
 		id=315,
 		type=3,
 		iconID=10003,
@@ -1441,7 +1441,7 @@ local cfg={
 		addProperty={9,340},
 		des="物防增加340"
 	},
-	["316"]={
+	[316]={
 		id=316,
 		type=3,
 		iconID=10003,
@@ -1456,7 +1456,7 @@ local cfg={
 		addProperty={9,380},
 		des="物防增加380"
 	},
-	["317"]={
+	[317]={
 		id=317,
 		type=3,
 		iconID=10003,
@@ -1471,7 +1471,7 @@ local cfg={
 		addProperty={9,420},
 		des="物防增加420"
 	},
-	["318"]={
+	[318]={
 		id=318,
 		type=3,
 		iconID=10003,
@@ -1486,7 +1486,7 @@ local cfg={
 		addProperty={9,460},
 		des="物防增加460"
 	},
-	["319"]={
+	[319]={
 		id=319,
 		type=3,
 		iconID=10003,
@@ -1501,7 +1501,7 @@ local cfg={
 		addProperty={9,500},
 		des="物防增加500"
 	},
-	["320"]={
+	[320]={
 		id=320,
 		type=3,
 		iconID=10003,
@@ -1516,7 +1516,7 @@ local cfg={
 		addProperty={9,540},
 		des="物防增加540"
 	},
-	["321"]={
+	[321]={
 		id=321,
 		type=3,
 		iconID=10003,
@@ -1531,7 +1531,7 @@ local cfg={
 		addProperty={9,600},
 		des="物防增加600"
 	},
-	["322"]={
+	[322]={
 		id=322,
 		type=3,
 		iconID=10003,
@@ -1546,7 +1546,7 @@ local cfg={
 		addProperty={9,660},
 		des="物防增加660"
 	},
-	["323"]={
+	[323]={
 		id=323,
 		type=3,
 		iconID=10003,
@@ -1561,7 +1561,7 @@ local cfg={
 		addProperty={9,720},
 		des="物防增加720"
 	},
-	["324"]={
+	[324]={
 		id=324,
 		type=3,
 		iconID=10003,
@@ -1576,7 +1576,7 @@ local cfg={
 		addProperty={9,780},
 		des="物防增加780"
 	},
-	["325"]={
+	[325]={
 		id=325,
 		type=3,
 		iconID=10003,
@@ -1591,7 +1591,7 @@ local cfg={
 		addProperty={9,840},
 		des="物防增加840"
 	},
-	["326"]={
+	[326]={
 		id=326,
 		type=3,
 		iconID=10003,
@@ -1606,7 +1606,7 @@ local cfg={
 		addProperty={9,940},
 		des="物防增加940"
 	},
-	["327"]={
+	[327]={
 		id=327,
 		type=3,
 		iconID=10003,
@@ -1621,7 +1621,7 @@ local cfg={
 		addProperty={9,1040},
 		des="物防增加1040"
 	},
-	["328"]={
+	[328]={
 		id=328,
 		type=3,
 		iconID=10003,
@@ -1636,7 +1636,7 @@ local cfg={
 		addProperty={9,1140},
 		des="物防增加1140"
 	},
-	["329"]={
+	[329]={
 		id=329,
 		type=3,
 		iconID=10003,
@@ -1651,7 +1651,7 @@ local cfg={
 		addProperty={9,1240},
 		des="物防增加1240"
 	},
-	["330"]={
+	[330]={
 		id=330,
 		type=3,
 		iconID=10003,
@@ -1666,7 +1666,7 @@ local cfg={
 		addProperty={9,1340},
 		des="物防增加1340"
 	},
-	["331"]={
+	[331]={
 		id=331,
 		type=3,
 		iconID=10003,
@@ -1681,7 +1681,7 @@ local cfg={
 		addProperty={9,1540},
 		des="物防增加1540"
 	},
-	["332"]={
+	[332]={
 		id=332,
 		type=3,
 		iconID=10003,
@@ -1696,7 +1696,7 @@ local cfg={
 		addProperty={9,1740},
 		des="物防增加1740"
 	},
-	["333"]={
+	[333]={
 		id=333,
 		type=3,
 		iconID=10003,
@@ -1711,7 +1711,7 @@ local cfg={
 		addProperty={9,1940},
 		des="物防增加1940"
 	},
-	["334"]={
+	[334]={
 		id=334,
 		type=3,
 		iconID=10003,
@@ -1726,7 +1726,7 @@ local cfg={
 		addProperty={9,2140},
 		des="物防增加2140"
 	},
-	["335"]={
+	[335]={
 		id=335,
 		type=3,
 		iconID=10003,
@@ -1741,7 +1741,7 @@ local cfg={
 		addProperty={9,2340},
 		des="物防增加2340"
 	},
-	["336"]={
+	[336]={
 		id=336,
 		type=3,
 		iconID=10003,
@@ -1756,7 +1756,7 @@ local cfg={
 		addProperty={9,2690},
 		des="物防增加2690"
 	},
-	["337"]={
+	[337]={
 		id=337,
 		type=3,
 		iconID=10003,
@@ -1771,7 +1771,7 @@ local cfg={
 		addProperty={9,3000},
 		des="物防增加3000"
 	},
-	["338"]={
+	[338]={
 		id=338,
 		type=3,
 		iconID=10003,
@@ -1786,7 +1786,7 @@ local cfg={
 		addProperty={9,3310},
 		des="物防增加3310"
 	},
-	["339"]={
+	[339]={
 		id=339,
 		type=3,
 		iconID=10003,
@@ -1801,7 +1801,7 @@ local cfg={
 		addProperty={9,3620},
 		des="物防增加3620"
 	},
-	["340"]={
+	[340]={
 		id=340,
 		type=3,
 		iconID=10003,
@@ -1816,7 +1816,7 @@ local cfg={
 		addProperty={9,3930},
 		des="物防增加3930"
 	},
-	["401"]={
+	[401]={
 		id=401,
 		type=4,
 		iconID=10004,
@@ -1831,7 +1831,7 @@ local cfg={
 		addProperty={11,50},
 		des="法防增加50"
 	},
-	["402"]={
+	[402]={
 		id=402,
 		type=4,
 		iconID=10004,
@@ -1846,7 +1846,7 @@ local cfg={
 		addProperty={11,60},
 		des="法防增加60"
 	},
-	["403"]={
+	[403]={
 		id=403,
 		type=4,
 		iconID=10004,
@@ -1861,7 +1861,7 @@ local cfg={
 		addProperty={11,70},
 		des="法防增加70"
 	},
-	["404"]={
+	[404]={
 		id=404,
 		type=4,
 		iconID=10004,
@@ -1876,7 +1876,7 @@ local cfg={
 		addProperty={11,80},
 		des="法防增加80"
 	},
-	["405"]={
+	[405]={
 		id=405,
 		type=4,
 		iconID=10004,
@@ -1891,7 +1891,7 @@ local cfg={
 		addProperty={11,90},
 		des="法防增加90"
 	},
-	["406"]={
+	[406]={
 		id=406,
 		type=4,
 		iconID=10004,
@@ -1906,7 +1906,7 @@ local cfg={
 		addProperty={11,110},
 		des="法防增加110"
 	},
-	["407"]={
+	[407]={
 		id=407,
 		type=4,
 		iconID=10004,
@@ -1921,7 +1921,7 @@ local cfg={
 		addProperty={11,130},
 		des="法防增加130"
 	},
-	["408"]={
+	[408]={
 		id=408,
 		type=4,
 		iconID=10004,
@@ -1936,7 +1936,7 @@ local cfg={
 		addProperty={11,150},
 		des="法防增加150"
 	},
-	["409"]={
+	[409]={
 		id=409,
 		type=4,
 		iconID=10004,
@@ -1951,7 +1951,7 @@ local cfg={
 		addProperty={11,170},
 		des="法防增加170"
 	},
-	["410"]={
+	[410]={
 		id=410,
 		type=4,
 		iconID=10004,
@@ -1966,7 +1966,7 @@ local cfg={
 		addProperty={11,190},
 		des="法防增加190"
 	},
-	["411"]={
+	[411]={
 		id=411,
 		type=4,
 		iconID=10004,
@@ -1981,7 +1981,7 @@ local cfg={
 		addProperty={11,220},
 		des="法防增加220"
 	},
-	["412"]={
+	[412]={
 		id=412,
 		type=4,
 		iconID=10004,
@@ -1996,7 +1996,7 @@ local cfg={
 		addProperty={11,250},
 		des="法防增加250"
 	},
-	["413"]={
+	[413]={
 		id=413,
 		type=4,
 		iconID=10004,
@@ -2011,7 +2011,7 @@ local cfg={
 		addProperty={11,280},
 		des="法防增加280"
 	},
-	["414"]={
+	[414]={
 		id=414,
 		type=4,
 		iconID=10004,
@@ -2026,7 +2026,7 @@ local cfg={
 		addProperty={11,310},
 		des="法防增加310"
 	},
-	["415"]={
+	[415]={
 		id=415,
 		type=4,
 		iconID=10004,
@@ -2041,7 +2041,7 @@ local cfg={
 		addProperty={11,340},
 		des="法防增加340"
 	},
-	["416"]={
+	[416]={
 		id=416,
 		type=4,
 		iconID=10004,
@@ -2056,7 +2056,7 @@ local cfg={
 		addProperty={11,380},
 		des="法防增加380"
 	},
-	["417"]={
+	[417]={
 		id=417,
 		type=4,
 		iconID=10004,
@@ -2071,7 +2071,7 @@ local cfg={
 		addProperty={11,420},
 		des="法防增加420"
 	},
-	["418"]={
+	[418]={
 		id=418,
 		type=4,
 		iconID=10004,
@@ -2086,7 +2086,7 @@ local cfg={
 		addProperty={11,460},
 		des="法防增加460"
 	},
-	["419"]={
+	[419]={
 		id=419,
 		type=4,
 		iconID=10004,
@@ -2101,7 +2101,7 @@ local cfg={
 		addProperty={11,500},
 		des="法防增加500"
 	},
-	["420"]={
+	[420]={
 		id=420,
 		type=4,
 		iconID=10004,
@@ -2116,7 +2116,7 @@ local cfg={
 		addProperty={11,540},
 		des="法防增加540"
 	},
-	["421"]={
+	[421]={
 		id=421,
 		type=4,
 		iconID=10004,
@@ -2131,7 +2131,7 @@ local cfg={
 		addProperty={11,600},
 		des="法防增加600"
 	},
-	["422"]={
+	[422]={
 		id=422,
 		type=4,
 		iconID=10004,
@@ -2146,7 +2146,7 @@ local cfg={
 		addProperty={11,660},
 		des="法防增加660"
 	},
-	["423"]={
+	[423]={
 		id=423,
 		type=4,
 		iconID=10004,
@@ -2161,7 +2161,7 @@ local cfg={
 		addProperty={11,720},
 		des="法防增加720"
 	},
-	["424"]={
+	[424]={
 		id=424,
 		type=4,
 		iconID=10004,
@@ -2176,7 +2176,7 @@ local cfg={
 		addProperty={11,780},
 		des="法防增加780"
 	},
-	["425"]={
+	[425]={
 		id=425,
 		type=4,
 		iconID=10004,
@@ -2191,7 +2191,7 @@ local cfg={
 		addProperty={11,840},
 		des="法防增加840"
 	},
-	["426"]={
+	[426]={
 		id=426,
 		type=4,
 		iconID=10004,
@@ -2206,7 +2206,7 @@ local cfg={
 		addProperty={11,940},
 		des="法防增加940"
 	},
-	["427"]={
+	[427]={
 		id=427,
 		type=4,
 		iconID=10004,
@@ -2221,7 +2221,7 @@ local cfg={
 		addProperty={11,1040},
 		des="法防增加1040"
 	},
-	["428"]={
+	[428]={
 		id=428,
 		type=4,
 		iconID=10004,
@@ -2236,7 +2236,7 @@ local cfg={
 		addProperty={11,1140},
 		des="法防增加1140"
 	},
-	["429"]={
+	[429]={
 		id=429,
 		type=4,
 		iconID=10004,
@@ -2251,7 +2251,7 @@ local cfg={
 		addProperty={11,1240},
 		des="法防增加1240"
 	},
-	["430"]={
+	[430]={
 		id=430,
 		type=4,
 		iconID=10004,
@@ -2266,7 +2266,7 @@ local cfg={
 		addProperty={11,1340},
 		des="法防增加1340"
 	},
-	["431"]={
+	[431]={
 		id=431,
 		type=4,
 		iconID=10004,
@@ -2281,7 +2281,7 @@ local cfg={
 		addProperty={11,1540},
 		des="法防增加1540"
 	},
-	["432"]={
+	[432]={
 		id=432,
 		type=4,
 		iconID=10004,
@@ -2296,7 +2296,7 @@ local cfg={
 		addProperty={11,1740},
 		des="法防增加1740"
 	},
-	["433"]={
+	[433]={
 		id=433,
 		type=4,
 		iconID=10004,
@@ -2311,7 +2311,7 @@ local cfg={
 		addProperty={11,1940},
 		des="法防增加1940"
 	},
-	["434"]={
+	[434]={
 		id=434,
 		type=4,
 		iconID=10004,
@@ -2326,7 +2326,7 @@ local cfg={
 		addProperty={11,2140},
 		des="法防增加2140"
 	},
-	["435"]={
+	[435]={
 		id=435,
 		type=4,
 		iconID=10004,
@@ -2341,7 +2341,7 @@ local cfg={
 		addProperty={11,2340},
 		des="法防增加2340"
 	},
-	["436"]={
+	[436]={
 		id=436,
 		type=4,
 		iconID=10004,
@@ -2356,7 +2356,7 @@ local cfg={
 		addProperty={11,2690},
 		des="法防增加2690"
 	},
-	["437"]={
+	[437]={
 		id=437,
 		type=4,
 		iconID=10004,
@@ -2371,7 +2371,7 @@ local cfg={
 		addProperty={11,3000},
 		des="法防增加3000"
 	},
-	["438"]={
+	[438]={
 		id=438,
 		type=4,
 		iconID=10004,
@@ -2386,7 +2386,7 @@ local cfg={
 		addProperty={11,3310},
 		des="法防增加3310"
 	},
-	["439"]={
+	[439]={
 		id=439,
 		type=4,
 		iconID=10004,
@@ -2401,7 +2401,7 @@ local cfg={
 		addProperty={11,3620},
 		des="法防增加3620"
 	},
-	["440"]={
+	[440]={
 		id=440,
 		type=4,
 		iconID=10004,
@@ -2416,7 +2416,7 @@ local cfg={
 		addProperty={11,3930},
 		des="法防增加3930"
 	},
-	["501"]={
+	[501]={
 		id=501,
 		type=5,
 		iconID=10005,
@@ -2431,7 +2431,7 @@ local cfg={
 		addProperty={5,100},
 		des="物攻增加100"
 	},
-	["502"]={
+	[502]={
 		id=502,
 		type=5,
 		iconID=10005,
@@ -2446,7 +2446,7 @@ local cfg={
 		addProperty={5,110},
 		des="物攻增加110"
 	},
-	["503"]={
+	[503]={
 		id=503,
 		type=5,
 		iconID=10005,
@@ -2461,7 +2461,7 @@ local cfg={
 		addProperty={5,120},
 		des="物攻增加120"
 	},
-	["504"]={
+	[504]={
 		id=504,
 		type=5,
 		iconID=10005,
@@ -2476,7 +2476,7 @@ local cfg={
 		addProperty={5,130},
 		des="物攻增加130"
 	},
-	["505"]={
+	[505]={
 		id=505,
 		type=5,
 		iconID=10005,
@@ -2491,7 +2491,7 @@ local cfg={
 		addProperty={5,140},
 		des="物攻增加140"
 	},
-	["506"]={
+	[506]={
 		id=506,
 		type=5,
 		iconID=10005,
@@ -2506,7 +2506,7 @@ local cfg={
 		addProperty={5,160},
 		des="物攻增加160"
 	},
-	["507"]={
+	[507]={
 		id=507,
 		type=5,
 		iconID=10005,
@@ -2521,7 +2521,7 @@ local cfg={
 		addProperty={5,180},
 		des="物攻增加180"
 	},
-	["508"]={
+	[508]={
 		id=508,
 		type=5,
 		iconID=10005,
@@ -2536,7 +2536,7 @@ local cfg={
 		addProperty={5,230},
 		des="物攻增加230"
 	},
-	["509"]={
+	[509]={
 		id=509,
 		type=5,
 		iconID=10005,
@@ -2551,7 +2551,7 @@ local cfg={
 		addProperty={5,260},
 		des="物攻增加260"
 	},
-	["510"]={
+	[510]={
 		id=510,
 		type=5,
 		iconID=10005,
@@ -2566,7 +2566,7 @@ local cfg={
 		addProperty={5,290},
 		des="物攻增加290"
 	},
-	["511"]={
+	[511]={
 		id=511,
 		type=5,
 		iconID=10005,
@@ -2581,7 +2581,7 @@ local cfg={
 		addProperty={5,320},
 		des="物攻增加320"
 	},
-	["512"]={
+	[512]={
 		id=512,
 		type=5,
 		iconID=10005,
@@ -2596,7 +2596,7 @@ local cfg={
 		addProperty={5,350},
 		des="物攻增加350"
 	},
-	["513"]={
+	[513]={
 		id=513,
 		type=5,
 		iconID=10005,
@@ -2611,7 +2611,7 @@ local cfg={
 		addProperty={5,390},
 		des="物攻增加390"
 	},
-	["514"]={
+	[514]={
 		id=514,
 		type=5,
 		iconID=10005,
@@ -2626,7 +2626,7 @@ local cfg={
 		addProperty={5,430},
 		des="物攻增加430"
 	},
-	["515"]={
+	[515]={
 		id=515,
 		type=5,
 		iconID=10005,
@@ -2641,7 +2641,7 @@ local cfg={
 		addProperty={5,470},
 		des="物攻增加470"
 	},
-	["516"]={
+	[516]={
 		id=516,
 		type=5,
 		iconID=10005,
@@ -2656,7 +2656,7 @@ local cfg={
 		addProperty={5,510},
 		des="物攻增加510"
 	},
-	["517"]={
+	[517]={
 		id=517,
 		type=5,
 		iconID=10005,
@@ -2671,7 +2671,7 @@ local cfg={
 		addProperty={5,550},
 		des="物攻增加550"
 	},
-	["518"]={
+	[518]={
 		id=518,
 		type=5,
 		iconID=10005,
@@ -2686,7 +2686,7 @@ local cfg={
 		addProperty={5,600},
 		des="物攻增加600"
 	},
-	["519"]={
+	[519]={
 		id=519,
 		type=5,
 		iconID=10005,
@@ -2701,7 +2701,7 @@ local cfg={
 		addProperty={5,650},
 		des="物攻增加650"
 	},
-	["520"]={
+	[520]={
 		id=520,
 		type=5,
 		iconID=10005,
@@ -2716,7 +2716,7 @@ local cfg={
 		addProperty={5,700},
 		des="物攻增加700"
 	},
-	["521"]={
+	[521]={
 		id=521,
 		type=5,
 		iconID=10005,
@@ -2731,7 +2731,7 @@ local cfg={
 		addProperty={5,770},
 		des="物攻增加770"
 	},
-	["522"]={
+	[522]={
 		id=522,
 		type=5,
 		iconID=10005,
@@ -2746,7 +2746,7 @@ local cfg={
 		addProperty={5,840},
 		des="物攻增加840"
 	},
-	["523"]={
+	[523]={
 		id=523,
 		type=5,
 		iconID=10005,
@@ -2761,7 +2761,7 @@ local cfg={
 		addProperty={5,910},
 		des="物攻增加910"
 	},
-	["524"]={
+	[524]={
 		id=524,
 		type=5,
 		iconID=10005,
@@ -2776,7 +2776,7 @@ local cfg={
 		addProperty={5,980},
 		des="物攻增加980"
 	},
-	["525"]={
+	[525]={
 		id=525,
 		type=5,
 		iconID=10005,
@@ -2791,7 +2791,7 @@ local cfg={
 		addProperty={5,1050},
 		des="物攻增加1050"
 	},
-	["526"]={
+	[526]={
 		id=526,
 		type=5,
 		iconID=10005,
@@ -2806,7 +2806,7 @@ local cfg={
 		addProperty={5,1150},
 		des="物攻增加1150"
 	},
-	["527"]={
+	[527]={
 		id=527,
 		type=5,
 		iconID=10005,
@@ -2821,7 +2821,7 @@ local cfg={
 		addProperty={5,1250},
 		des="物攻增加1250"
 	},
-	["528"]={
+	[528]={
 		id=528,
 		type=5,
 		iconID=10005,
@@ -2836,7 +2836,7 @@ local cfg={
 		addProperty={5,1350},
 		des="物攻增加1350"
 	},
-	["529"]={
+	[529]={
 		id=529,
 		type=5,
 		iconID=10005,
@@ -2851,7 +2851,7 @@ local cfg={
 		addProperty={5,1450},
 		des="物攻增加1450"
 	},
-	["530"]={
+	[530]={
 		id=530,
 		type=5,
 		iconID=10005,
@@ -2866,7 +2866,7 @@ local cfg={
 		addProperty={5,1550},
 		des="物攻增加1550"
 	},
-	["531"]={
+	[531]={
 		id=531,
 		type=5,
 		iconID=10005,
@@ -2881,7 +2881,7 @@ local cfg={
 		addProperty={5,1750},
 		des="物攻增加1750"
 	},
-	["532"]={
+	[532]={
 		id=532,
 		type=5,
 		iconID=10005,
@@ -2896,7 +2896,7 @@ local cfg={
 		addProperty={5,1950},
 		des="物攻增加1950"
 	},
-	["533"]={
+	[533]={
 		id=533,
 		type=5,
 		iconID=10005,
@@ -2911,7 +2911,7 @@ local cfg={
 		addProperty={5,2150},
 		des="物攻增加2150"
 	},
-	["534"]={
+	[534]={
 		id=534,
 		type=5,
 		iconID=10005,
@@ -2926,7 +2926,7 @@ local cfg={
 		addProperty={5,2350},
 		des="物攻增加2350"
 	},
-	["535"]={
+	[535]={
 		id=535,
 		type=5,
 		iconID=10005,
@@ -2941,7 +2941,7 @@ local cfg={
 		addProperty={5,2550},
 		des="物攻增加2550"
 	},
-	["536"]={
+	[536]={
 		id=536,
 		type=5,
 		iconID=10005,
@@ -2956,7 +2956,7 @@ local cfg={
 		addProperty={5,2850},
 		des="物攻增加2850"
 	},
-	["537"]={
+	[537]={
 		id=537,
 		type=5,
 		iconID=10005,
@@ -2971,7 +2971,7 @@ local cfg={
 		addProperty={5,3150},
 		des="物攻增加3150"
 	},
-	["538"]={
+	[538]={
 		id=538,
 		type=5,
 		iconID=10005,
@@ -2986,7 +2986,7 @@ local cfg={
 		addProperty={5,3450},
 		des="物攻增加3450"
 	},
-	["539"]={
+	[539]={
 		id=539,
 		type=5,
 		iconID=10005,
@@ -3001,7 +3001,7 @@ local cfg={
 		addProperty={5,3750},
 		des="物攻增加3750"
 	},
-	["540"]={
+	[540]={
 		id=540,
 		type=5,
 		iconID=10005,
@@ -3016,7 +3016,7 @@ local cfg={
 		addProperty={5,4050},
 		des="物攻增加4050"
 	},
-	["601"]={
+	[601]={
 		id=601,
 		type=6,
 		iconID=10006,
@@ -3031,7 +3031,7 @@ local cfg={
 		addProperty={7,100},
 		des="法攻增加100"
 	},
-	["602"]={
+	[602]={
 		id=602,
 		type=6,
 		iconID=10006,
@@ -3046,7 +3046,7 @@ local cfg={
 		addProperty={7,110},
 		des="法攻增加110"
 	},
-	["603"]={
+	[603]={
 		id=603,
 		type=6,
 		iconID=10006,
@@ -3061,7 +3061,7 @@ local cfg={
 		addProperty={7,120},
 		des="法攻增加120"
 	},
-	["604"]={
+	[604]={
 		id=604,
 		type=6,
 		iconID=10006,
@@ -3076,7 +3076,7 @@ local cfg={
 		addProperty={7,130},
 		des="法攻增加130"
 	},
-	["605"]={
+	[605]={
 		id=605,
 		type=6,
 		iconID=10006,
@@ -3091,7 +3091,7 @@ local cfg={
 		addProperty={7,140},
 		des="法攻增加140"
 	},
-	["606"]={
+	[606]={
 		id=606,
 		type=6,
 		iconID=10006,
@@ -3106,7 +3106,7 @@ local cfg={
 		addProperty={7,160},
 		des="法攻增加160"
 	},
-	["607"]={
+	[607]={
 		id=607,
 		type=6,
 		iconID=10006,
@@ -3121,7 +3121,7 @@ local cfg={
 		addProperty={7,180},
 		des="法攻增加180"
 	},
-	["608"]={
+	[608]={
 		id=608,
 		type=6,
 		iconID=10006,
@@ -3136,7 +3136,7 @@ local cfg={
 		addProperty={7,230},
 		des="法攻增加230"
 	},
-	["609"]={
+	[609]={
 		id=609,
 		type=6,
 		iconID=10006,
@@ -3151,7 +3151,7 @@ local cfg={
 		addProperty={7,260},
 		des="法攻增加260"
 	},
-	["610"]={
+	[610]={
 		id=610,
 		type=6,
 		iconID=10006,
@@ -3166,7 +3166,7 @@ local cfg={
 		addProperty={7,290},
 		des="法攻增加290"
 	},
-	["611"]={
+	[611]={
 		id=611,
 		type=6,
 		iconID=10006,
@@ -3181,7 +3181,7 @@ local cfg={
 		addProperty={7,320},
 		des="法攻增加320"
 	},
-	["612"]={
+	[612]={
 		id=612,
 		type=6,
 		iconID=10006,
@@ -3196,7 +3196,7 @@ local cfg={
 		addProperty={7,350},
 		des="法攻增加350"
 	},
-	["613"]={
+	[613]={
 		id=613,
 		type=6,
 		iconID=10006,
@@ -3211,7 +3211,7 @@ local cfg={
 		addProperty={7,390},
 		des="法攻增加390"
 	},
-	["614"]={
+	[614]={
 		id=614,
 		type=6,
 		iconID=10006,
@@ -3226,7 +3226,7 @@ local cfg={
 		addProperty={7,430},
 		des="法攻增加430"
 	},
-	["615"]={
+	[615]={
 		id=615,
 		type=6,
 		iconID=10006,
@@ -3241,7 +3241,7 @@ local cfg={
 		addProperty={7,470},
 		des="法攻增加470"
 	},
-	["616"]={
+	[616]={
 		id=616,
 		type=6,
 		iconID=10006,
@@ -3256,7 +3256,7 @@ local cfg={
 		addProperty={7,510},
 		des="法攻增加510"
 	},
-	["617"]={
+	[617]={
 		id=617,
 		type=6,
 		iconID=10006,
@@ -3271,7 +3271,7 @@ local cfg={
 		addProperty={7,550},
 		des="法攻增加550"
 	},
-	["618"]={
+	[618]={
 		id=618,
 		type=6,
 		iconID=10006,
@@ -3286,7 +3286,7 @@ local cfg={
 		addProperty={7,600},
 		des="法攻增加600"
 	},
-	["619"]={
+	[619]={
 		id=619,
 		type=6,
 		iconID=10006,
@@ -3301,7 +3301,7 @@ local cfg={
 		addProperty={7,650},
 		des="法攻增加650"
 	},
-	["620"]={
+	[620]={
 		id=620,
 		type=6,
 		iconID=10006,
@@ -3316,7 +3316,7 @@ local cfg={
 		addProperty={7,700},
 		des="法攻增加700"
 	},
-	["621"]={
+	[621]={
 		id=621,
 		type=6,
 		iconID=10006,
@@ -3331,7 +3331,7 @@ local cfg={
 		addProperty={7,770},
 		des="法攻增加770"
 	},
-	["622"]={
+	[622]={
 		id=622,
 		type=6,
 		iconID=10006,
@@ -3346,7 +3346,7 @@ local cfg={
 		addProperty={7,840},
 		des="法攻增加840"
 	},
-	["623"]={
+	[623]={
 		id=623,
 		type=6,
 		iconID=10006,
@@ -3361,7 +3361,7 @@ local cfg={
 		addProperty={7,910},
 		des="法攻增加910"
 	},
-	["624"]={
+	[624]={
 		id=624,
 		type=6,
 		iconID=10006,
@@ -3376,7 +3376,7 @@ local cfg={
 		addProperty={7,980},
 		des="法攻增加980"
 	},
-	["625"]={
+	[625]={
 		id=625,
 		type=6,
 		iconID=10006,
@@ -3391,7 +3391,7 @@ local cfg={
 		addProperty={7,1050},
 		des="法攻增加1050"
 	},
-	["626"]={
+	[626]={
 		id=626,
 		type=6,
 		iconID=10006,
@@ -3406,7 +3406,7 @@ local cfg={
 		addProperty={7,1150},
 		des="法攻增加1150"
 	},
-	["627"]={
+	[627]={
 		id=627,
 		type=6,
 		iconID=10006,
@@ -3421,7 +3421,7 @@ local cfg={
 		addProperty={7,1250},
 		des="法攻增加1250"
 	},
-	["628"]={
+	[628]={
 		id=628,
 		type=6,
 		iconID=10006,
@@ -3436,7 +3436,7 @@ local cfg={
 		addProperty={7,1350},
 		des="法攻增加1350"
 	},
-	["629"]={
+	[629]={
 		id=629,
 		type=6,
 		iconID=10006,
@@ -3451,7 +3451,7 @@ local cfg={
 		addProperty={7,1450},
 		des="法攻增加1450"
 	},
-	["630"]={
+	[630]={
 		id=630,
 		type=6,
 		iconID=10006,
@@ -3466,7 +3466,7 @@ local cfg={
 		addProperty={7,1550},
 		des="法攻增加1550"
 	},
-	["631"]={
+	[631]={
 		id=631,
 		type=6,
 		iconID=10006,
@@ -3481,7 +3481,7 @@ local cfg={
 		addProperty={7,1750},
 		des="法攻增加1750"
 	},
-	["632"]={
+	[632]={
 		id=632,
 		type=6,
 		iconID=10006,
@@ -3496,7 +3496,7 @@ local cfg={
 		addProperty={7,1950},
 		des="法攻增加1950"
 	},
-	["633"]={
+	[633]={
 		id=633,
 		type=6,
 		iconID=10006,
@@ -3511,7 +3511,7 @@ local cfg={
 		addProperty={7,2150},
 		des="法攻增加2150"
 	},
-	["634"]={
+	[634]={
 		id=634,
 		type=6,
 		iconID=10006,
@@ -3526,7 +3526,7 @@ local cfg={
 		addProperty={7,2350},
 		des="法攻增加2350"
 	},
-	["635"]={
+	[635]={
 		id=635,
 		type=6,
 		iconID=10006,
@@ -3541,7 +3541,7 @@ local cfg={
 		addProperty={7,2550},
 		des="法攻增加2550"
 	},
-	["636"]={
+	[636]={
 		id=636,
 		type=6,
 		iconID=10006,
@@ -3556,7 +3556,7 @@ local cfg={
 		addProperty={7,2850},
 		des="法攻增加2850"
 	},
-	["637"]={
+	[637]={
 		id=637,
 		type=6,
 		iconID=10006,
@@ -3571,7 +3571,7 @@ local cfg={
 		addProperty={7,3150},
 		des="法攻增加3150"
 	},
-	["638"]={
+	[638]={
 		id=638,
 		type=6,
 		iconID=10006,
@@ -3586,7 +3586,7 @@ local cfg={
 		addProperty={7,3450},
 		des="法攻增加3450"
 	},
-	["639"]={
+	[639]={
 		id=639,
 		type=6,
 		iconID=10006,
@@ -3601,7 +3601,7 @@ local cfg={
 		addProperty={7,3750},
 		des="法攻增加3750"
 	},
-	["640"]={
+	[640]={
 		id=640,
 		type=6,
 		iconID=10006,
@@ -3616,7 +3616,7 @@ local cfg={
 		addProperty={7,4050},
 		des="法攻增加4050"
 	},
-	["701"]={
+	[701]={
 		id=701,
 		type=7,
 		iconID=10007,
@@ -3631,7 +3631,7 @@ local cfg={
 		addProperty={13,30},
 		des="暴击增加30"
 	},
-	["702"]={
+	[702]={
 		id=702,
 		type=7,
 		iconID=10007,
@@ -3646,7 +3646,7 @@ local cfg={
 		addProperty={13,40},
 		des="暴击增加40"
 	},
-	["703"]={
+	[703]={
 		id=703,
 		type=7,
 		iconID=10007,
@@ -3661,7 +3661,7 @@ local cfg={
 		addProperty={13,50},
 		des="暴击增加50"
 	},
-	["704"]={
+	[704]={
 		id=704,
 		type=7,
 		iconID=10007,
@@ -3676,7 +3676,7 @@ local cfg={
 		addProperty={13,60},
 		des="暴击增加60"
 	},
-	["705"]={
+	[705]={
 		id=705,
 		type=7,
 		iconID=10007,
@@ -3691,7 +3691,7 @@ local cfg={
 		addProperty={13,70},
 		des="暴击增加70"
 	},
-	["706"]={
+	[706]={
 		id=706,
 		type=7,
 		iconID=10007,
@@ -3706,7 +3706,7 @@ local cfg={
 		addProperty={13,90},
 		des="暴击增加90"
 	},
-	["707"]={
+	[707]={
 		id=707,
 		type=7,
 		iconID=10007,
@@ -3721,7 +3721,7 @@ local cfg={
 		addProperty={13,110},
 		des="暴击增加110"
 	},
-	["708"]={
+	[708]={
 		id=708,
 		type=7,
 		iconID=10007,
@@ -3736,7 +3736,7 @@ local cfg={
 		addProperty={13,130},
 		des="暴击增加130"
 	},
-	["709"]={
+	[709]={
 		id=709,
 		type=7,
 		iconID=10007,
@@ -3751,7 +3751,7 @@ local cfg={
 		addProperty={13,150},
 		des="暴击增加150"
 	},
-	["710"]={
+	[710]={
 		id=710,
 		type=7,
 		iconID=10007,
@@ -3766,7 +3766,7 @@ local cfg={
 		addProperty={13,170},
 		des="暴击增加170"
 	},
-	["711"]={
+	[711]={
 		id=711,
 		type=7,
 		iconID=10007,
@@ -3781,7 +3781,7 @@ local cfg={
 		addProperty={13,200},
 		des="暴击增加200"
 	},
-	["712"]={
+	[712]={
 		id=712,
 		type=7,
 		iconID=10007,
@@ -3796,7 +3796,7 @@ local cfg={
 		addProperty={13,230},
 		des="暴击增加230"
 	},
-	["713"]={
+	[713]={
 		id=713,
 		type=7,
 		iconID=10007,
@@ -3811,7 +3811,7 @@ local cfg={
 		addProperty={13,260},
 		des="暴击增加260"
 	},
-	["714"]={
+	[714]={
 		id=714,
 		type=7,
 		iconID=10007,
@@ -3826,7 +3826,7 @@ local cfg={
 		addProperty={13,290},
 		des="暴击增加290"
 	},
-	["715"]={
+	[715]={
 		id=715,
 		type=7,
 		iconID=10007,
@@ -3841,7 +3841,7 @@ local cfg={
 		addProperty={13,320},
 		des="暴击增加320"
 	},
-	["716"]={
+	[716]={
 		id=716,
 		type=7,
 		iconID=10007,
@@ -3856,7 +3856,7 @@ local cfg={
 		addProperty={13,360},
 		des="暴击增加360"
 	},
-	["717"]={
+	[717]={
 		id=717,
 		type=7,
 		iconID=10007,
@@ -3871,7 +3871,7 @@ local cfg={
 		addProperty={13,400},
 		des="暴击增加400"
 	},
-	["718"]={
+	[718]={
 		id=718,
 		type=7,
 		iconID=10007,
@@ -3886,7 +3886,7 @@ local cfg={
 		addProperty={13,440},
 		des="暴击增加440"
 	},
-	["719"]={
+	[719]={
 		id=719,
 		type=7,
 		iconID=10007,
@@ -3901,7 +3901,7 @@ local cfg={
 		addProperty={13,480},
 		des="暴击增加480"
 	},
-	["720"]={
+	[720]={
 		id=720,
 		type=7,
 		iconID=10007,
@@ -3916,7 +3916,7 @@ local cfg={
 		addProperty={13,520},
 		des="暴击增加520"
 	},
-	["721"]={
+	[721]={
 		id=721,
 		type=7,
 		iconID=10007,
@@ -3931,7 +3931,7 @@ local cfg={
 		addProperty={13,580},
 		des="暴击增加580"
 	},
-	["722"]={
+	[722]={
 		id=722,
 		type=7,
 		iconID=10007,
@@ -3946,7 +3946,7 @@ local cfg={
 		addProperty={13,640},
 		des="暴击增加640"
 	},
-	["723"]={
+	[723]={
 		id=723,
 		type=7,
 		iconID=10007,
@@ -3961,7 +3961,7 @@ local cfg={
 		addProperty={13,700},
 		des="暴击增加700"
 	},
-	["724"]={
+	[724]={
 		id=724,
 		type=7,
 		iconID=10007,
@@ -3976,7 +3976,7 @@ local cfg={
 		addProperty={13,760},
 		des="暴击增加760"
 	},
-	["725"]={
+	[725]={
 		id=725,
 		type=7,
 		iconID=10007,
@@ -3991,7 +3991,7 @@ local cfg={
 		addProperty={13,820},
 		des="暴击增加820"
 	},
-	["726"]={
+	[726]={
 		id=726,
 		type=7,
 		iconID=10007,
@@ -4006,7 +4006,7 @@ local cfg={
 		addProperty={13,920},
 		des="暴击增加920"
 	},
-	["727"]={
+	[727]={
 		id=727,
 		type=7,
 		iconID=10007,
@@ -4021,7 +4021,7 @@ local cfg={
 		addProperty={13,1120},
 		des="暴击增加1120"
 	},
-	["728"]={
+	[728]={
 		id=728,
 		type=7,
 		iconID=10007,
@@ -4036,7 +4036,7 @@ local cfg={
 		addProperty={13,1320},
 		des="暴击增加1320"
 	},
-	["729"]={
+	[729]={
 		id=729,
 		type=7,
 		iconID=10007,
@@ -4051,7 +4051,7 @@ local cfg={
 		addProperty={13,1520},
 		des="暴击增加1520"
 	},
-	["730"]={
+	[730]={
 		id=730,
 		type=7,
 		iconID=10007,
@@ -4066,7 +4066,7 @@ local cfg={
 		addProperty={13,1720},
 		des="暴击增加1720"
 	},
-	["731"]={
+	[731]={
 		id=731,
 		type=7,
 		iconID=10007,
@@ -4081,7 +4081,7 @@ local cfg={
 		addProperty={13,1920},
 		des="暴击增加1920"
 	},
-	["732"]={
+	[732]={
 		id=732,
 		type=7,
 		iconID=10007,
@@ -4096,7 +4096,7 @@ local cfg={
 		addProperty={13,2120},
 		des="暴击增加2120"
 	},
-	["733"]={
+	[733]={
 		id=733,
 		type=7,
 		iconID=10007,
@@ -4111,7 +4111,7 @@ local cfg={
 		addProperty={13,2320},
 		des="暴击增加2320"
 	},
-	["734"]={
+	[734]={
 		id=734,
 		type=7,
 		iconID=10007,
@@ -4126,7 +4126,7 @@ local cfg={
 		addProperty={13,2520},
 		des="暴击增加2520"
 	},
-	["735"]={
+	[735]={
 		id=735,
 		type=7,
 		iconID=10007,
@@ -4141,7 +4141,7 @@ local cfg={
 		addProperty={13,2720},
 		des="暴击增加2720"
 	},
-	["736"]={
+	[736]={
 		id=736,
 		type=7,
 		iconID=10007,
@@ -4156,7 +4156,7 @@ local cfg={
 		addProperty={13,3050},
 		des="暴击增加3050"
 	},
-	["737"]={
+	[737]={
 		id=737,
 		type=7,
 		iconID=10007,
@@ -4171,7 +4171,7 @@ local cfg={
 		addProperty={13,3350},
 		des="暴击增加3350"
 	},
-	["738"]={
+	[738]={
 		id=738,
 		type=7,
 		iconID=10007,
@@ -4186,7 +4186,7 @@ local cfg={
 		addProperty={13,3650},
 		des="暴击增加3650"
 	},
-	["739"]={
+	[739]={
 		id=739,
 		type=7,
 		iconID=10007,
@@ -4201,7 +4201,7 @@ local cfg={
 		addProperty={13,3950},
 		des="暴击增加3950"
 	},
-	["740"]={
+	[740]={
 		id=740,
 		type=7,
 		iconID=10007,
@@ -4216,7 +4216,7 @@ local cfg={
 		addProperty={13,4250},
 		des="暴击增加4250"
 	},
-	["801"]={
+	[801]={
 		id=801,
 		type=8,
 		iconID=10008,
@@ -4231,7 +4231,7 @@ local cfg={
 		addProperty={15,30},
 		des="韧性增加30"
 	},
-	["802"]={
+	[802]={
 		id=802,
 		type=8,
 		iconID=10008,
@@ -4246,7 +4246,7 @@ local cfg={
 		addProperty={15,40},
 		des="韧性增加40"
 	},
-	["803"]={
+	[803]={
 		id=803,
 		type=8,
 		iconID=10008,
@@ -4261,7 +4261,7 @@ local cfg={
 		addProperty={15,50},
 		des="韧性增加50"
 	},
-	["804"]={
+	[804]={
 		id=804,
 		type=8,
 		iconID=10008,
@@ -4276,7 +4276,7 @@ local cfg={
 		addProperty={15,60},
 		des="韧性增加60"
 	},
-	["805"]={
+	[805]={
 		id=805,
 		type=8,
 		iconID=10008,
@@ -4291,7 +4291,7 @@ local cfg={
 		addProperty={15,70},
 		des="韧性增加70"
 	},
-	["806"]={
+	[806]={
 		id=806,
 		type=8,
 		iconID=10008,
@@ -4306,7 +4306,7 @@ local cfg={
 		addProperty={15,90},
 		des="韧性增加90"
 	},
-	["807"]={
+	[807]={
 		id=807,
 		type=8,
 		iconID=10008,
@@ -4321,7 +4321,7 @@ local cfg={
 		addProperty={15,110},
 		des="韧性增加110"
 	},
-	["808"]={
+	[808]={
 		id=808,
 		type=8,
 		iconID=10008,
@@ -4336,7 +4336,7 @@ local cfg={
 		addProperty={15,130},
 		des="韧性增加130"
 	},
-	["809"]={
+	[809]={
 		id=809,
 		type=8,
 		iconID=10008,
@@ -4351,7 +4351,7 @@ local cfg={
 		addProperty={15,150},
 		des="韧性增加150"
 	},
-	["810"]={
+	[810]={
 		id=810,
 		type=8,
 		iconID=10008,
@@ -4366,7 +4366,7 @@ local cfg={
 		addProperty={15,170},
 		des="韧性增加170"
 	},
-	["811"]={
+	[811]={
 		id=811,
 		type=8,
 		iconID=10008,
@@ -4381,7 +4381,7 @@ local cfg={
 		addProperty={15,200},
 		des="韧性增加200"
 	},
-	["812"]={
+	[812]={
 		id=812,
 		type=8,
 		iconID=10008,
@@ -4396,7 +4396,7 @@ local cfg={
 		addProperty={15,230},
 		des="韧性增加230"
 	},
-	["813"]={
+	[813]={
 		id=813,
 		type=8,
 		iconID=10008,
@@ -4411,7 +4411,7 @@ local cfg={
 		addProperty={15,260},
 		des="韧性增加260"
 	},
-	["814"]={
+	[814]={
 		id=814,
 		type=8,
 		iconID=10008,
@@ -4426,7 +4426,7 @@ local cfg={
 		addProperty={15,290},
 		des="韧性增加290"
 	},
-	["815"]={
+	[815]={
 		id=815,
 		type=8,
 		iconID=10008,
@@ -4441,7 +4441,7 @@ local cfg={
 		addProperty={15,320},
 		des="韧性增加320"
 	},
-	["816"]={
+	[816]={
 		id=816,
 		type=8,
 		iconID=10008,
@@ -4456,7 +4456,7 @@ local cfg={
 		addProperty={15,360},
 		des="韧性增加360"
 	},
-	["817"]={
+	[817]={
 		id=817,
 		type=8,
 		iconID=10008,
@@ -4471,7 +4471,7 @@ local cfg={
 		addProperty={15,400},
 		des="韧性增加400"
 	},
-	["818"]={
+	[818]={
 		id=818,
 		type=8,
 		iconID=10008,
@@ -4486,7 +4486,7 @@ local cfg={
 		addProperty={15,440},
 		des="韧性增加440"
 	},
-	["819"]={
+	[819]={
 		id=819,
 		type=8,
 		iconID=10008,
@@ -4501,7 +4501,7 @@ local cfg={
 		addProperty={15,480},
 		des="韧性增加480"
 	},
-	["820"]={
+	[820]={
 		id=820,
 		type=8,
 		iconID=10008,
@@ -4516,7 +4516,7 @@ local cfg={
 		addProperty={15,520},
 		des="韧性增加520"
 	},
-	["821"]={
+	[821]={
 		id=821,
 		type=8,
 		iconID=10008,
@@ -4531,7 +4531,7 @@ local cfg={
 		addProperty={15,580},
 		des="韧性增加580"
 	},
-	["822"]={
+	[822]={
 		id=822,
 		type=8,
 		iconID=10008,
@@ -4546,7 +4546,7 @@ local cfg={
 		addProperty={15,640},
 		des="韧性增加640"
 	},
-	["823"]={
+	[823]={
 		id=823,
 		type=8,
 		iconID=10008,
@@ -4561,7 +4561,7 @@ local cfg={
 		addProperty={15,700},
 		des="韧性增加700"
 	},
-	["824"]={
+	[824]={
 		id=824,
 		type=8,
 		iconID=10008,
@@ -4576,7 +4576,7 @@ local cfg={
 		addProperty={15,760},
 		des="韧性增加760"
 	},
-	["825"]={
+	[825]={
 		id=825,
 		type=8,
 		iconID=10008,
@@ -4591,7 +4591,7 @@ local cfg={
 		addProperty={15,820},
 		des="韧性增加820"
 	},
-	["826"]={
+	[826]={
 		id=826,
 		type=8,
 		iconID=10008,
@@ -4606,7 +4606,7 @@ local cfg={
 		addProperty={15,920},
 		des="韧性增加920"
 	},
-	["827"]={
+	[827]={
 		id=827,
 		type=8,
 		iconID=10008,
@@ -4621,7 +4621,7 @@ local cfg={
 		addProperty={15,1120},
 		des="韧性增加1120"
 	},
-	["828"]={
+	[828]={
 		id=828,
 		type=8,
 		iconID=10008,
@@ -4636,7 +4636,7 @@ local cfg={
 		addProperty={15,1320},
 		des="韧性增加1320"
 	},
-	["829"]={
+	[829]={
 		id=829,
 		type=8,
 		iconID=10008,
@@ -4651,7 +4651,7 @@ local cfg={
 		addProperty={15,1520},
 		des="韧性增加1520"
 	},
-	["830"]={
+	[830]={
 		id=830,
 		type=8,
 		iconID=10008,
@@ -4666,7 +4666,7 @@ local cfg={
 		addProperty={15,1720},
 		des="韧性增加1720"
 	},
-	["831"]={
+	[831]={
 		id=831,
 		type=8,
 		iconID=10008,
@@ -4681,7 +4681,7 @@ local cfg={
 		addProperty={15,1920},
 		des="韧性增加1920"
 	},
-	["832"]={
+	[832]={
 		id=832,
 		type=8,
 		iconID=10008,
@@ -4696,7 +4696,7 @@ local cfg={
 		addProperty={15,2120},
 		des="韧性增加2120"
 	},
-	["833"]={
+	[833]={
 		id=833,
 		type=8,
 		iconID=10008,
@@ -4711,7 +4711,7 @@ local cfg={
 		addProperty={15,2320},
 		des="韧性增加2320"
 	},
-	["834"]={
+	[834]={
 		id=834,
 		type=8,
 		iconID=10008,
@@ -4726,7 +4726,7 @@ local cfg={
 		addProperty={15,2520},
 		des="韧性增加2520"
 	},
-	["835"]={
+	[835]={
 		id=835,
 		type=8,
 		iconID=10008,
@@ -4741,7 +4741,7 @@ local cfg={
 		addProperty={15,2720},
 		des="韧性增加2720"
 	},
-	["836"]={
+	[836]={
 		id=836,
 		type=8,
 		iconID=10008,
@@ -4756,7 +4756,7 @@ local cfg={
 		addProperty={15,3050},
 		des="韧性增加3050"
 	},
-	["837"]={
+	[837]={
 		id=837,
 		type=8,
 		iconID=10008,
@@ -4771,7 +4771,7 @@ local cfg={
 		addProperty={15,3350},
 		des="韧性增加3350"
 	},
-	["838"]={
+	[838]={
 		id=838,
 		type=8,
 		iconID=10008,
@@ -4786,7 +4786,7 @@ local cfg={
 		addProperty={15,3650},
 		des="韧性增加3650"
 	},
-	["839"]={
+	[839]={
 		id=839,
 		type=8,
 		iconID=10008,
@@ -4801,7 +4801,7 @@ local cfg={
 		addProperty={15,3950},
 		des="韧性增加3950"
 	},
-	["840"]={
+	[840]={
 		id=840,
 		type=8,
 		iconID=10008,

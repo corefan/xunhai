@@ -11,13 +11,13 @@ function WarGiftMall:__init()
 	self.items = {}
 	self:Layout()
 end
-local _num = "number"
+local _func = "function"
 function WarGiftMall:Layout()
 	local listing = GetCfgData("guildbuy")
 	local i = 1
 	local c,r = 0, 0
 	for k,v in pairs(listing) do
-		if type(k) == _num then
+		if type(v) ~= _func then
 			local item = self.items[i]
 			item = WarGiftItem.New(v)
 			item:SetClickCallback(function (target, data)

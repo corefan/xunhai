@@ -94,9 +94,9 @@ end
 function FirstRechargeModel:GetPopTaskId()
 	local taskId = 0
 	local pushNotice = GetCfgData("pushNotice")
-	for key, noticeVal in pairs(pushNotice) do
-		if type(key) == "number" and noticeVal.moduleId == FunctionConst.FunEnum.firstRecharge and noticeVal.pop ~= 0 then
-			taskId = noticeVal.pop
+	for key, v in pairs(pushNotice) do
+		if type(v) ~= 'function' and v.moduleId == FunctionConst.FunEnum.firstRecharge and v.pop ~= 0 then
+			taskId = v.pop
 			self:SetTaskPop(true)
 			break
 		end
@@ -123,10 +123,10 @@ function FirstRechargeModel:GetReward()
 	local allReward = {}
 	local career = LoginModel:GetInstance():GetLoginRole().career
 	local allRewardCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(allRewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.FirstRecharge then
-			self.rewardId = cfgVal.id
-			allReward = cfgVal.reward
+	for k , v in pairs(allRewardCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.FirstRecharge then
+			self.rewardId = v.id
+			allReward = v.reward
 		end
 	end
 

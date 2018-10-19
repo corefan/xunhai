@@ -59,14 +59,14 @@ end
 -- 得到列表
 function PayModel:GetCellList()
 	local cfg = GetCfgData("charge")
-	for k , data in pairs(cfg) do
-		if type(k) == 'number' and data then
-			if data.type == PayConst.PayType.NormalCard then
-				table.insert(self.payCellList, data.id)
-			elseif data.type == PayConst.PayType.Growup then
-				table.insert(self.growupList, data.id)
-			elseif data.type == PayConst.PayType.Vip then
-				table.insert(self.vipList, data.id)
+	for k , v in pairs(cfg) do
+		if type(v) ~= 'function' and v then
+			if v.type == PayConst.PayType.NormalCard then
+				table.insert(self.payCellList, v.id)
+			elseif v.type == PayConst.PayType.Growup then
+				table.insert(self.growupList, v.id)
+			elseif v.type == PayConst.PayType.Vip then
+				table.insert(self.vipList, v.id)
 			end
 		end
 	end

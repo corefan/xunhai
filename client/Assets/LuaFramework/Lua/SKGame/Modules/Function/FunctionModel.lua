@@ -32,7 +32,7 @@ function FunctionModel:GetNPCIdByFun(funType)
 	if funType then
 		local npcCfg = GetCfgData("npc")
 		for k , v in pairs(npcCfg) do
-			if type(k) == "number" then
+			if type(v) ~= 'function' then
 				local funArr = v.functionId
 				for index = 1, #funArr do
 					if funArr[index] == funType then

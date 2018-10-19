@@ -74,14 +74,14 @@ namespace LuaFramework {
 			if (File.Exists(localMapFile)) //删除旧的map文件
 				File.Delete(localMapFile);
 
-            GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)正在解析资源中..." + pkgMapFile);
+            GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)首次进入游戏,初始化中..." + pkgMapFile);
 			if (Application.platform == RuntimePlatform.Android) {
 				WWW www = new WWW(pkgMapFile);
                 Debug.Log("大小：" + www.size);
 				yield return www;
                 while (!www.isDone)
                 {
-                    GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)正在解析资源中...|" + www.progress * 100);
+                    GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)首次进入游戏,初始化中...|" + www.progress * 100);
                     yield return null;
                 }
 				if (www.isDone)
@@ -103,7 +103,7 @@ namespace LuaFramework {
 				if (fs.Length != 2) break;
 				pkgMapFile = pkgPath + fs[0];
 				localMapFile = dataPath + fs[0];
-                GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)正在初始化游戏中... |" + Mathf.FloorToInt((++step * 100 / count)));
+                GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)正在准备进入游戏中... |" + Mathf.FloorToInt((++step * 100 / count)));
 
 #if !SyncLocal //进行更新场景		
 			    if(fs[0].Contains("scene/")){//跳过场景资源，进行动态加载
@@ -190,7 +190,7 @@ namespace LuaFramework {
 			#endregion
 			
 			#region 服务器资源版本
-			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "请求版本资源中... ");
+			GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "正在通讯中... ");
 			string remoteVersion = lastVersion;//cdn版本号 暂定与本地一样
 			string url = AppConst.WebUrl;
 			string random = DateTime.Now.ToString("yyyymmddhhmmss");
@@ -203,7 +203,7 @@ namespace LuaFramework {
 				Debug.Log("可能网络问题，也可能服务器资源没提交!  此处可以考虑直接进游戏用本地资源[不进行更新 #SyncLocal]");
 
 				#region 临时解决方案(没有连接上cdn 使用本地资源)
-				GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "连接不到资源服务器中心，应用最近版本资源进入游戏，建议稍候重启游戏更新!! |100");
+				GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "连接不到服务器中心，应用最近版本进入游戏，建议稍候重启游戏更新!! |100");
 				for (int i = 0; i < count; i++)
 				{
 					if (string.IsNullOrEmpty(lastMapList[i])) continue;
@@ -226,13 +226,13 @@ namespace LuaFramework {
 				yield break;
 				#endregion
 
-                GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)请求资源失败,您的网络可能不稳定，请稍后再重新启动游戏！");
+                GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "(此过程不消耗任何流量，请放心等待)请求失败,您的网络可能不稳定，请稍后再重新启动游戏！");
 				yield break;
 			}else{
                 Debug.Log("大小：" + www.size);
                 int p = Mathf.FloorToInt(www.progress * 100);
                 int size = Mathf.CeilToInt(www.size * 0.001f);
-                GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "加载版本资源中,需要消耗流量约 " + size + "kb, 已经完成 |" + p);
+                GlobalDispatcher.GetInstance().DispatchEvent(NotiConst.LOADER_PROGRESS, "加载版本配置中,需要消耗流量约 " + size + "kb, 已经完成 |" + p);
 			}
 			byte[] webMapData = www.bytes;
 			string webMap = www.text.Trim();

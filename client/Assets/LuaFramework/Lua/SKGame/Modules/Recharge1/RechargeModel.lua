@@ -53,9 +53,9 @@ end
 
 function RechargeModel:GetGrowJJID()
 	local cfgData = GetCfgData("charge")
-	for k , cfgVal in pairs(cfgData) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RechargeConst.RechargeType.GrowUpJijin then
-			return cfgVal.id
+	for k , v in pairs(cfgData) do
+		if type(v) ~= 'function' and v and v.type == RechargeConst.RechargeType.GrowUpJijin then
+			return v.id
 		end
 	end
 end
@@ -83,9 +83,9 @@ function RechargeModel:GetDailyRechargeTabData()
 	-- end
 
 	local allRewardCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(allRewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.DailyAccumulatedRecharge then
-			table.insert(rtnTabDataDaily, {cfgVal.condition, cfgVal.reward, cfgVal.id})
+	for k , v in pairs(allRewardCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.DailyAccumulatedRecharge then
+			table.insert(rtnTabDataDaily, {v.condition, v.reward, v.id})
 		end
 	end
 
@@ -106,9 +106,9 @@ function RechargeModel:GetGrowJijinTabData()  --成长基金数据
 	-- end
 
 	local allRewardCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(allRewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.GrowthFund then
-			table.insert(rtnTabDataGrow, {cfgVal.condition, cfgVal.reward, cfgVal.id})
+	for k , v in pairs(allRewardCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.GrowthFund then
+			table.insert(rtnTabDataGrow, {v.condition, v.reward, v.id})
 		end
 	end
 
@@ -129,9 +129,9 @@ function RechargeModel:GetAllTabData()
 	-- end
 
 	local allRewardCfg = GetCfgData("reward")
-	for k , cfgVal in pairs(allRewardCfg) do
-		if type(k) == 'number' and cfgVal and cfgVal.type == RewardConst.Type.GeneralWelfare then
-			table.insert(rtnTabDataAll, {cfgVal.condition, cfgVal.reward, cfgVal.id})
+	for k , v in pairs(allRewardCfg) do
+		if type(v) ~= 'function' and v and v.type == RewardConst.Type.GeneralWelfare then
+			table.insert(rtnTabDataAll, {v.condition, v.reward, v.id})
 		end
 	end
 
@@ -633,7 +633,7 @@ function RechargeModel:GetSevenCfgData()
 		self.sevenCfgData = {}
 		local cfg = GetCfgData("chargeActivity") or {}
 		for k, v in pairs(cfg) do
-			if type(k) == "number" then
+			if type(v) ~= 'function' then
 				self.sevenCfgData[k] = clone(v)
 				self.sevenCfgData[k].startDate = self:GetMilliStampByStr(self.sevenCfgData[k].startDate)
 				self.sevenCfgData[k].endDate = self:GetMilliStampByStr(self.sevenCfgData[k].endDate)

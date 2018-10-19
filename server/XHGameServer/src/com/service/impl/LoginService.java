@@ -169,6 +169,7 @@ public class LoginService implements ILoginService {
 				oldCon.setReconnectd(true);
 			}
 			
+			gameMessage.getConnection().setServerNo(serverNo);
 			gameSocketService.addConnectionCache(userId, gameMessage.getConnection());
 			
 			boolean newRegFlag = true;
@@ -251,6 +252,7 @@ public class LoginService implements ILoginService {
 				oldCon.setReconnectd(true);
 			}
 			
+			gameMessage.getConnection().setServerNo(serverNo);
 			gameSocketService.addConnectionCache(userId, gameMessage.getConnection());
 			
 			this.enterGame(playerId, 0);
